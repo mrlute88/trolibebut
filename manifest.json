@@ -1,0 +1,120 @@
+{
+  "manifest_version": 3,
+  "name": "Trợ lý nhận xét vnEdu (Lớp 1 - 12)",
+  "version": "1.2.1",
+  "description": "Hỗ trợ giáo viên nhập nhận xét học sinh thông minh cho tất cả các môn từ lớp 1 đến lớp 12 (Thông tư 27 & Thông tư 22) trên vnEdu. Tuyệt đối không tự bấm Lưu/Ghi.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Trợ lý nhận xét vnEdu",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.vnedu.vn/*",
+    "*://vnedu.vn/*",
+    "*://id.vnedu.vn/*",
+    "*://localhost/*",
+    "*://127.0.0.1/*",
+    "https://raw.githubusercontent.com/*",
+    "https://cdn.jsdelivr.net/*",
+    "https://github.com/*",
+    "file:///*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.vnedu.vn/*",
+        "*://vnedu.vn/*",
+        "*://id.vnedu.vn/*",
+        "*://localhost/*",
+        "*://127.0.0.1/*",
+        "file:///*"
+      ],
+      "all_frames": true,
+      "js": [
+        "src/utils/logger.js",
+        "src/utils/confidence.js",
+        "src/utils/vietnamese-name.js",
+        "src/utils/dom-utils.js",
+        "src/utils/quality-checker.js",
+        "src/utils/circular27-rules.js",
+        "src/storage/chrome-storage.js",
+        "src/adapters/vnedu-adapter.js",
+        "src/adapters/vnedu-table-adapter.js",
+        "src/adapters/vnedu-grid-adapter.js",
+        "src/adapters/vnedu-form-adapter.js",
+        "src/ai/offline-templates.js",
+        "src/ai/prompt-builder.js",
+        "src/ai/ai-provider.js",
+        "src/ai/comment-generator.js",
+        "src/excel/excel-handler.js",
+        "src/excel/sample-template.js",
+        "src/content/page-detector.js",
+        "src/content/selector-memory.js",
+        "src/content/dom-inspector.js",
+        "src/content/dom-scanner.js",
+        "src/content/mutation-observer.js",
+        "src/content/fill-engine.js",
+        "src/services/cloud-sync.js",
+        "src/utils/license-manager.js",
+        "src/ui/overlay.js",
+        "src/content/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/ui/overlay.css",
+        "icons/icon-16.png",
+        "icons/icon-48.png",
+        "icons/icon-128.png",
+        "icons/ai-mascot.png"
+      ],
+      "matches": [
+        "*://*.vnedu.vn/*",
+        "*://vnedu.vn/*",
+        "*://id.vnedu.vn/*",
+        "*://localhost/*",
+        "*://127.0.0.1/*",
+        "file:///*"
+      ]
+    }
+  ],
+  "commands": {
+    "toggle-panel": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+R",
+        "mac": "Command+Shift+R"
+      },
+      "description": "Mở hoặc đóng bảng điều khiển Trợ lý nhận xét"
+    },
+    "scan-page": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Quét lại cấu trúc trang vnEdu hiện tại"
+    }
+  }
+}

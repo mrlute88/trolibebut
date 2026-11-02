@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trợ lý nhận xét vnEdu</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Hero Header with Mascot -->
+    <div class="popup-hero">
+      <div class="mascot-badge-wrap">
+        <div class="mascot-glow"></div>
+        <img src="../icons/ai-mascot.png" class="mascot-avatar" alt="Trợ lý AI" />
+      </div>
+      <div class="hero-text-wrap">
+        <div class="title">Trợ lý nhận xét vnEdu</div>
+        <div class="subtitle">Lớp 1 - 12 • Thông tư 27 & 22</div>
+      </div>
+    </div>
+
+    <!-- Status Card -->
+    <div class="status-card" id="status-card">
+      <div class="status-indicator"></div>
+      <div class="status-content">
+        <div class="status-title" id="status-title">Đang kiểm tra tab vnEdu...</div>
+        <div class="status-desc" id="status-desc">Vui lòng đăng nhập và mở sổ nhận xét trên vnEdu để sử dụng.</div>
+      </div>
+    </div>
+
+    <!-- Actions (3D Pill Buttons matching main UI) -->
+    <div class="action-list">
+      <button class="btn-pill-3d btn-primary-3d" id="btn-quick-fill">
+        <span class="btn-bezel">
+          <span class="btn-core">
+            <span class="btn-gloss"></span>
+            <span class="btn-label">
+              <span class="btn-icon">⚡</span>
+              <span class="btn-text">Điền Nhận Xét Ngay</span>
+              <span class="btn-sparkle">✦ ━━━━ ✦</span>
+            </span>
+          </span>
+        </span>
+      </button>
+
+      <button class="btn-pill-3d btn-license-3d" id="btn-activate-license" style="display: none;">
+        <span class="btn-bezel">
+          <span class="btn-core">
+            <span class="btn-gloss"></span>
+            <span class="btn-label">
+              <span class="btn-icon">🔑</span>
+              <span class="btn-text">Kích hoạt bản quyền</span>
+              <span class="btn-sparkle">✦ ━━━━ ✦</span>
+            </span>
+          </span>
+        </span>
+      </button>
+    </div>
+
+    <div class="footer">
+      <span>✨ Trợ lý AI • Tiết kiệm 95% thời gian nhập điểm</span>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

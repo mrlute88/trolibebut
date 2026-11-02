@@ -1,0 +1,864 @@
+/* vnEdu Assistant Scoped Overlay Styles (Inside Shadow DOM) - 3D Pastel & Glassmorphism Theme */
+:host {
+  all: initial;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #0F172A;
+  font-size: 13px;
+  line-height: 1.45;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Minimal Container at bottom right - kích thước nhỏ gọn hơn, không che thanh công cụ & menu vnEdu */
+.vnedu-minimal-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 2147483647;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Mascot & Action Button Wrapper */
+.vnedu-mascot-widget-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+}
+
+/* Chibi AI Mascot floating above button - Kích thước nhỏ gọn tinh tế */
+.vnedu-mascot-container {
+  position: absolute;
+  bottom: calc(100% - 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+  cursor: grab;
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 10;
+  animation: mascotBob 3.5s ease-in-out infinite;
+}
+
+.vnedu-mascot-container:active {
+  cursor: grabbing;
+}
+
+@keyframes mascotBob {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-5px) rotate(1.2deg);
+  }
+}
+
+.vnedu-mascot-img {
+  width: 44px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 4px 10px rgba(99, 102, 241, 0.35));
+  transition: transform 0.25s ease;
+  pointer-events: none;
+}
+
+.vnedu-mascot-glow {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 38px;
+  height: 9px;
+  background: radial-gradient(ellipse, rgba(56, 189, 248, 0.55) 0%, rgba(192, 132, 252, 0.35) 50%, transparent 75%);
+  border-radius: 50%;
+  filter: blur(3px);
+  z-index: -1;
+  animation: glowPulse 3.5s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    opacity: 0.95;
+    transform: translateX(-50%) scale(1.15);
+  }
+}
+
+/* Mascot Speech Bubble */
+.vnedu-mascot-speech {
+  position: absolute;
+  bottom: calc(100% + 2px);
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #2563EB;
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px -2px rgba(99, 102, 241, 0.28), 0 0 0 1px rgba(224, 231, 255, 0.9);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px) scale(0.9);
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px -3px rgba(99, 102, 241, 0.3), 0 0 0 1px rgba(224, 231, 255, 0.9);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(6px) scale(0.9);
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.vnedu-mascot-speech::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.96) transparent transparent transparent;
+}
+
+.vnedu-mascot-widget-wrapper:hover .vnedu-mascot-speech {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Tự động ẩn bong bóng nói khi khung thông báo tiến trình đang bật */
+.vnedu-minimal-container.has-active-toast .vnedu-mascot-speech,
+.vnedu-minimal-container:has(#vnedu-status-toast:not([style*="display: none"])) .vnedu-mascot-speech {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.vnedu-mascot-widget-wrapper:hover .vnedu-mascot-container {
+  transform: translateX(-50%) translateY(-6px) scale(1.06);
+}
+
+/* Action Group */
+.vnedu-action-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  pointer-events: auto;
+  position: relative;
+  z-index: 5;
+}
+
+/* 3D Pill Button (Inspired by Reference Design) */
+.vnedu-btn-pill-3d {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  font-family: inherit;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Outer 3D Porcelain Bezel */
+.btn-pill-outer-bezel {
+  display: inline-flex;
+  padding: 3.5px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #EFF6FF 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.95);
+  border-radius: 9999px;
+  box-shadow: 
+    0 10px 20px -3px rgba(99, 102, 241, 0.35),
+    0 4px 8px -2px rgba(0, 0, 0, 0.1),
+    inset 0 2px 3px rgba(255, 255, 255, 1),
+    inset 0 -2.5px 4px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Inner Glossy Candy Core */
+.btn-pill-inner-core {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 18px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #38BDF8 0%, #60A5FA 25%, #818CF8 52%, #C084FC 80%, #F472B6 100%);
+  box-shadow: 
+    inset 0 1.5px 3px rgba(255, 255, 255, 0.75),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.18);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Top curved gloss highlight */
+.btn-pill-highlight {
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 8%;
+  height: 52%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.12) 65%, transparent 100%);
+  border-radius: 9999px 9999px 0 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.btn-pill-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-pill-icon {
+  font-size: 15px;
+  filter: drop-shadow(0 1.5px 3px rgba(0, 0, 0, 0.2));
+  transition: transform 0.25s ease;
+}
+
+.btn-pill-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-pill-text {
+  color: #FFFFFF;
+  font-size: 13.5px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  text-shadow: 0 1px 3px rgba(30, 27, 75, 0.45);
+  font-family: inherit;
+  transition: text-shadow 0.25s ease;
+}
+
+.btn-pill-sparkle-line {
+  font-size: 7.5px;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 1px;
+  margin-top: -2px;
+  line-height: 1;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+}
+
+/* ========================================================= */
+/* HIỆU ỨNG TRONG SUỐT KHI TRỎ CHUỘT VÀO (TRANSLUCENT HOVER) */
+/* ========================================================= */
+.vnedu-btn-pill-3d:hover .btn-pill-outer-bezel {
+  background: rgba(255, 255, 255, 0.35) !important;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 
+    0 16px 36px rgba(129, 140, 248, 0.5),
+    inset 0 0 16px rgba(255, 255, 255, 0.65);
+  transform: translateY(-3px) scale(1.025);
+}
+
+.vnedu-btn-pill-3d:hover .btn-pill-inner-core {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.38) 0%, rgba(129, 140, 248, 0.38) 50%, rgba(244, 114, 182, 0.38) 100%) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 
+    inset 0 1.5px 4px rgba(255, 255, 255, 0.85),
+    inset 0 -1.5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vnedu-btn-pill-3d:hover .btn-pill-text {
+  text-shadow: 0 0 14px rgba(255, 255, 255, 0.95), 0 2px 8px rgba(99, 102, 241, 0.6);
+}
+
+.vnedu-btn-pill-3d:hover .btn-pill-icon {
+  transform: scale(1.15) rotate(5deg);
+}
+
+.vnedu-btn-pill-3d:active .btn-pill-outer-bezel {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
+}
+
+/* Unlicensed State */
+.vnedu-btn-pill-3d.vnedu-btn-unlicensed .btn-pill-inner-core {
+  background: linear-gradient(135deg, #0284C7 0%, #2563EB 50%, #7C3AED 100%);
+}
+
+.vnedu-btn-pill-3d.vnedu-btn-unlicensed:hover .btn-pill-inner-core {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.4) 0%, rgba(37, 99, 235, 0.4) 50%, rgba(124, 58, 237, 0.4) 100%) !important;
+}
+
+.vnedu-btn-pill-3d.disabled,
+.vnedu-btn-pill-3d:disabled {
+  opacity: 0.85;
+  cursor: wait;
+  pointer-events: none;
+}
+
+/* 3D Key Icon Button */
+.vnedu-btn-key-3d {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  transition: all 0.25s ease;
+}
+
+.btn-key-outer-bezel {
+  display: inline-flex;
+  padding: 3px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #EFF6FF 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  box-shadow: 
+    0 8px 18px -2px rgba(99, 102, 241, 0.35),
+    0 3px 8px -1px rgba(0, 0, 0, 0.1),
+    inset 0 1.5px 2px rgba(255, 255, 255, 1);
+  transition: all 0.25s ease;
+}
+
+.btn-key-inner-core {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FDE047 0%, #F59E0B 50%, #EA580C 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    inset 0 1.5px 3px rgba(255, 255, 255, 0.7),
+    inset 0 -1.5px 3px rgba(0, 0, 0, 0.15);
+  transition: all 0.25s ease;
+}
+
+.btn-key-emoji {
+  font-size: 13px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.vnedu-btn-key-3d:hover .btn-key-outer-bezel {
+  background: rgba(255, 255, 255, 0.35) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 14px 28px rgba(245, 158, 11, 0.45);
+  transform: translateY(-3px) scale(1.06);
+}
+
+.vnedu-btn-key-3d:hover .btn-key-inner-core {
+  background: linear-gradient(135deg, rgba(253, 224, 71, 0.4) 0%, rgba(245, 158, 11, 0.4) 50%, rgba(234, 88, 12, 0.4) 100%) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Sleek Progress / Status Toast - Nằm cao hẳn lên trên trợ lý AI, không bao giờ bị che khuất */
+.vnedu-status-toast {
+  pointer-events: auto;
+  position: relative;
+  z-index: 30;
+  margin-bottom: 50px; /* Đẩy khung thông báo lên cao hoàn toàn phía trên đầu bé trợ lý AI */
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: #FFFFFF;
+  border-radius: 18px;
+  padding: 14px 18px;
+  min-width: 320px;
+  max-width: 420px;
+  box-shadow: 
+    0 24px 48px -8px rgba(15, 23, 42, 0.6),
+    0 0 24px rgba(129, 140, 248, 0.3),
+    inset 0 1px 2px rgba(255, 255, 255, 0.25);
+  border: 1.5px solid rgba(255, 255, 255, 0.22);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: toastFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes toastFadeIn {
+  from { opacity: 0; transform: translateY(12px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.toast-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.toast-msg {
+  font-size: 13px;
+  font-weight: 600;
+  color: #F8FAFC;
+  line-height: 1.45;
+  white-space: pre-line;
+}
+
+.toast-cancel-btn {
+  background: rgba(239, 68, 68, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.toast-cancel-btn:hover {
+  background: #DC2626;
+  transform: scale(1.04);
+}
+
+.toast-progress-bar-bg {
+  width: 100%;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.toast-progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #38BDF8 0%, #818CF8 50%, #F472B6 100%);
+  box-shadow: 0 0 12px rgba(129, 140, 248, 0.8);
+  width: 0%;
+  transition: width 0.2s ease;
+  border-radius: 999px;
+}
+
+.toast-footer-note {
+  font-size: 11px;
+  color: #94A3B8;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Glassmorphism License Modal */
+.vnedu-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.vnedu-modal-box {
+  background: #FFFFFF;
+  border-radius: 22px;
+  width: 390px;
+  max-width: calc(100vw - 32px);
+  box-shadow: 
+    0 30px 60px -12px rgba(99, 102, 241, 0.35),
+    0 10px 20px -5px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  animation: boxPop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes boxPop {
+  from { opacity: 0; transform: scale(0.94); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.vnedu-modal-header {
+  background: linear-gradient(135deg, #F0F9FF 0%, #F5F3FF 50%, #FDF2F8 100%);
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #1E293B;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-title-mascot {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(99, 102, 241, 0.3));
+}
+
+.btn-modal-close {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(203, 213, 225, 0.6);
+  font-size: 14px;
+  color: #64748B;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.btn-modal-close:hover {
+  background: #E2E8F0;
+  color: #0F172A;
+  transform: rotate(90deg);
+}
+
+.vnedu-modal-body {
+  padding: 20px 22px 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-account-badge {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #1E293B;
+  line-height: 1.5;
+}
+
+.modal-status-badge {
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.modal-status-badge.status-active {
+  background: #F0FDF4;
+  border: 1px solid #BBF7D0;
+  color: #166534;
+}
+
+.modal-status-badge.status-warning {
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  color: #92400E;
+}
+
+.modal-status-badge.status-mismatch {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: #991B1B;
+}
+
+.modal-secondary-link {
+  color: #64748B;
+  font-size: 11.5px;
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+  transition: color 0.15s;
+}
+
+.modal-secondary-link:hover {
+  color: #DC2626;
+}
+
+.modal-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #334155;
+  text-align: left;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 2px solid #E2E8F0;
+  border-radius: 12px;
+  font-size: 13px;
+  font-family: monospace;
+  outline: none;
+  transition: all 0.2s;
+  box-sizing: border-box;
+  background: #F8FAFC;
+}
+
+.modal-input:focus {
+  border-color: #818CF8;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 4px rgba(129, 140, 248, 0.18);
+}
+
+.modal-error {
+  font-size: 12px;
+  color: #DC2626;
+  min-height: 16px;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.modal-submit-btn-3d {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #38BDF8 0%, #60A5FA 30%, #818CF8 60%, #C084FC 100%);
+  color: #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 
+    0 10px 22px rgba(99, 102, 241, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.6);
+  transition: all 0.22s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.modal-submit-btn-3d:hover {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.4) 0%, rgba(129, 140, 248, 0.4) 50%, rgba(192, 132, 252, 0.4) 100%) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #1E293B;
+  border-color: rgba(129, 140, 248, 0.8);
+  box-shadow: 0 14px 28px rgba(99, 102, 241, 0.45);
+  transform: translateY(-2px);
+}
+
+/* Modal Xác Nhận Lưu Nhận Xét Học Sinh */
+.vnedu-confirm-box {
+  max-width: 440px;
+  width: 90vw;
+  background: #0F172A;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+  color: #F8FAFC;
+  overflow: hidden;
+  animation: modalPopIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.confirm-header {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.2) 0%, rgba(129, 140, 248, 0.15) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirm-header .modal-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #38BDF8;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.confirm-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.confirm-student-badge {
+  background: rgba(30, 41, 59, 0.9);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 13.5px;
+  color: #E2E8F0;
+  line-height: 1.4;
+}
+
+.confirm-student-badge b {
+  color: #F8FAFC;
+  font-size: 14px;
+}
+
+.confirm-student-badge .badge-idx {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 7px;
+  font-size: 11px;
+  font-weight: 700;
+  background: rgba(56, 189, 248, 0.25);
+  color: #38BDF8;
+  border-radius: 6px;
+}
+
+.confirm-prompt-msg {
+  font-size: 13px;
+  line-height: 1.55;
+  color: #CBD5E1;
+}
+
+.confirm-prompt-msg b {
+  color: #38BDF8;
+}
+
+.confirm-actions-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.btn-confirm-save-primary {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #38BDF8 0%, #60A5FA 30%, #818CF8 70%, #C084FC 100%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+  transition: all 0.18s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  outline: none;
+}
+
+.btn-confirm-save-primary:hover {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.4) 0%, rgba(129, 140, 248, 0.4) 50%, rgba(192, 132, 252, 0.4) 100%) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.5);
+}
+
+.btn-confirm-save-success {
+  width: 100%;
+  padding: 11px 16px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+  transition: all 0.18s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  outline: none;
+}
+
+.btn-confirm-save-success:hover {
+  background: linear-gradient(135deg, #34D399 0%, #059669 100%) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.5);
+}
+
+.btn-confirm-save-primary .kbd-hint,
+.btn-confirm-save-success .kbd-hint,
+.btn-confirm-save-secondary .kbd-hint {
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.85;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.countdown-badge {
+  display: inline-block;
+  padding: 1.5px 8px;
+  background: rgba(255, 255, 255, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 4px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: countdownPulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes countdownPulse {
+  0% { transform: scale(1); background: rgba(255, 255, 255, 0.25); }
+  100% { transform: scale(1.08); background: rgba(255, 255, 255, 0.42); }
+}
+
+.btn-confirm-save-secondary {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #E2E8F0;
+  background: rgba(51, 65, 85, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  outline: none;
+}
+
+.btn-confirm-save-secondary:hover {
+  background: rgba(225, 29, 72, 0.85);
+  color: #FFFFFF;
+  border-color: rgba(225, 29, 72, 0.9);
+}

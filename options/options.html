@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Cài đặt - Trợ lý nhận xét vnEdu</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">📘</div>
+      <div>
+        <h1>CÀI ĐẶT TRỢ LÝ NHẬN XÉT VNEDU</h1>
+        <p class="subtitle">Tùy chỉnh thông số vận hành, bảo mật và kết nối AI</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🔒 1. Bảo mật & Quyền riêng tư</h2>
+      <div class="form-check">
+        <input type="checkbox" id="chk-anonymize">
+        <label for="chk-anonymize">
+          <strong>Ẩn danh tên học sinh khi gửi qua API AI (Khuyên dùng)</strong>
+          <span class="help-text">Tên học sinh sẽ được thay thế bằng danh xưng sư phạm "Em" trước khi gửi tới server AI nhằm bảo mật thông tin học sinh tuyệt đối.</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>⚡ 2. Thông số điền an toàn</h2>
+      <div class="form-group">
+        <label for="inp-delay">Độ trễ giữa các dòng (Mili-giây, từ 300ms đến 1500ms):</label>
+        <input type="number" id="inp-delay" min="300" max="1500" step="50" class="form-control">
+        <span class="help-text">Khoảng nghỉ giúp trình duyệt render giao diện mượt mà và tránh kích hoạt tường lửa hệ thống trường học.</span>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="chk-multipage">
+        <label for="chk-multipage">
+          <strong>Cho phép xử lý nhiều trang (Pagination)</strong>
+          <span class="help-text">Nếu danh sách học sinh chia làm nhiều trang, cho phép extension tự ghi nhớ và tiếp tục sau khi giáo viên chuyển trang.</span>
+        </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="chk-strict-check" checked>
+        <label for="chk-strict-check">
+          <strong>Kiểm tra nghiêm ngặt tên học sinh theo từng dòng (Chống điền lệch)</strong>
+          <span class="help-text">Tự động đối chiếu tên học sinh tại dòng DOM trước khi gán nhận xét. Khuyên dùng luôn bật. Bỏ chọn nếu giao diện bảng vnEdu của trường bạn không hiển thị tên học sinh ở dạng chữ.</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🤖 3. Cấu hình Trí tuệ nhân tạo (AI)</h2>
+      <div class="form-group">
+        <label for="sel-provider">Nhà cung cấp nhận xét:</label>
+        <select id="sel-provider" class="form-control">
+          <option value="offline">Mẫu Offline Lớp 1 - 12 (Thông tư 27 & 22 - Miễn phí, không cần mạng/API Key)</option>
+          <option value="gemini">Google Gemini API (Miễn phí qua Google AI Studio)</option>
+          <option value="openai">OpenAI (ChatGPT API)</option>
+        </select>
+      </div>
+
+      <div class="form-group" id="group-gemini">
+        <label for="inp-gemini-key">Google Gemini API Key:</label>
+        <input type="password" id="inp-gemini-key" class="form-control" placeholder="AIzaSy...">
+        <span class="help-text">Lấy khóa API miễn phí tại: <a href="https://aistudio.google.com" target="_blank">Google AI Studio</a></span>
+      </div>
+
+      <div class="form-group" id="group-openai" style="display: none;">
+        <label for="inp-openai-key">OpenAI API Key:</label>
+        <input type="password" id="inp-openai-key" class="form-control" placeholder="sk-...">
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-primary" id="btn-save">💾 Lưu thay đổi</button>
+      <button class="btn btn-secondary" id="btn-reset">Khôi phục mặc định</button>
+      <span class="save-status" id="save-status"></span>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

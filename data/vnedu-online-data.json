@@ -1,0 +1,75 @@
+{
+  "version": "1.2.1",
+  "dataVersion": "2026.11.02.1",
+  "updatedAt": "2026-11-02",
+  "author": "Team Tin Học",
+  "announcement": {
+    "id": "notice_2026_11_02",
+    "enabled": true,
+    "title": "Cập nhật dữ liệu từ xa",
+    "message": "✓ Tiện ích đã tự động cập nhật ngân hàng mẫu nhận xét mới nhất từ Team Tin Học!",
+    "showOnce": true
+  },
+  "subjectAliases": [
+    {
+      "name": "Tăng Cường Tiếng Việt",
+      "regex": "(?:^|\\b)(?:tăng\\s*cường\\s*tiếng\\s*việt|tăng\\s*cường\\s*tv|t\\.?c\\.?\\s*tiếng\\s*việt|tc[\\s\\-_.]*tv|tctv)(?:\\b|$)|tang\\s*cuong\\s*tieng\\s*viet"
+    },
+    {
+      "name": "Tăng Cường Toán",
+      "regex": "(?:^|\\b)(?:tăng\\s*cường\\s*toán|t\\.?c\\.?\\s*toán|tc[\\s\\-_.]*t|tct)(?:\\b|$)|tang\\s*cuong\\s*toan"
+    },
+    {
+      "name": "Tự nhiên và Xã hội",
+      "regex": "tự\\s*nhiên\\s*(?:và|&)?\\s*xã\\s*hội|tu\\s*nhien\\s*(?:va|&)?\\s*xa\\s*hoi|\\btn[\\s\\-_.]*xh\\b|\\bt\\.?n\\.?x\\.?h\\b"
+    },
+    {
+      "name": "Lịch sử và Địa lí",
+      "regex": "lịch\\s*sử\\s*(?:và|&)?\\s*địa\\s*l[íy]|lich\\s*su\\s*(?:va|&)?\\s*dia\\s*l[iy]|\\bls[\\s\\-_&.]*đl\\b|\\blsdl\\b"
+    }
+  ],
+  "customTemplates": {
+    "PRIMARY": {
+      "GK1": {
+        "Tiếng Việt": {
+          "T": [
+            "Đọc to, rõ ràng, lưu loát; phát âm chuẩn và biết ngắt nghỉ đúng dấu câu.",
+            "Nắm chắc các âm vần đã học, viết đúng độ cao và nét chữ đều đẹp.",
+            "Vốn từ phong phú, biết dùng từ đặt câu rõ ràng và biểu cảm."
+          ],
+          "H": [
+            "Đọc bài rõ ràng, nhận biết đúng các âm vần và có tiến bộ trong giờ học.",
+            "Viết bài đúng tiến độ, chữ viết tương đối đều nét và sạch sẽ.",
+            "Hiểu nội dung bài đọc, trả lời được các câu hỏi cơ bản của bài."
+          ],
+          "C": [
+            "Cần rèn thêm kỹ năng đánh vần và luyện đọc trôi chảy hơn mỗi ngày.",
+            "Cần chú ý nắn nót độ cao con chữ và giữ vở cẩn thận hơn.",
+            "Cần mạnh dạn, tự tin hơn khi phát biểu và luyện trả lời trọn câu."
+          ]
+        },
+        "Toán": {
+          "T": [
+            "Nắm vững các phép tính, tư duy toán học nhanh và trình bày bài khoa học.",
+            "Tiếp thu bài rất nhanh, tích cực tham gia xây dựng bài và giải toán tự tin."
+          ],
+          "H": [
+            "Hoàn thành các bài tập toán theo yêu cầu, có ý thức học tập tốt.",
+            "Biết vận dụng các kiến thức đã học để giải toán, tính toán cẩn thận."
+          ],
+          "C": [
+            "Cần rèn luyện thêm kỹ năng tính toán và chú ý đọc kỹ yêu cầu đề bài.",
+            "Cần tập trung hơn trong giờ học và tích cực luyện tập thêm các dạng toán cơ bản."
+          ]
+        }
+      }
+    }
+  },
+  "latestRelease": {
+    "version": "1.2.1",
+    "releaseDate": "2026-11-02",
+    "description": "Bản cập nhật v1.2.1: Nhận diện viết tắt TCTV, TCT, TN-XH; đếm ngược tự động lưu phẩm chất - năng lực; đồng bộ dữ liệu đám mây.",
+    "downloadUrl": "https://github.com/mrlute88/trolibebut"
+  }
+}
+
