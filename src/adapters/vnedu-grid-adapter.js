@@ -1026,6 +1026,275 @@
       return true;
     }
 
+    writeRatingToGridCell(cell, ratingValue) {
+      if (!cell || !ratingValue) return false;
+      const innerDiv = cell.querySelector('.x-grid3-cell-inner') || cell;
+
+      // 1. Cập nhật DOM trực quan
+      innerDiv.textContent = ratingValue;
+      innerDiv.innerText = ratingValue;
+      cell.setAttribute('data-value', ratingValue);
+
+      // 2. Kích hoạt sự kiện ExtJS
+      try {
+        cell.dispatchEvent(new MouseEvent('mousedown', { bubbles: true, cancelable: true }));
+        cell.dispatchEvent(new MouseEvent('mouseup', { bubbles: true, cancelable: true }));
+        cell.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
+      } catch (e) {}
+
+      // 3. Cập nhật ExtJS Store record nếu có
+      try {
+        const row = cell.closest('.x-grid3-row, tr');
+        const win = (cell.ownerDocument && cell.ownerDocument.defaultView) || (typeof window !== 'undefined' ? window : global);
+        if (win.Ext && win.Ext.getCmp && row) {
+          const gridEl = cell.closest('.x-grid3, .x-grid, .x-panel');
+          if (gridEl) {
+            const grid = win.Ext.getCmp(gridEl.id);
+            if (grid && typeof grid.getStore === 'function') {
+              const rowIndex = Array.from(row.parentElement ? row.parentElement.children : []).indexOf(row);
+              if (rowIndex >= 0) {
+                const record = grid.getStore().getAt(rowIndex);
+                if (record && record.set) {
+                  const cellIndex = Array.from(cell.parentElement.children).indexOf(cell);
+                  const colModel = grid.getColumnModel && grid.getColumnModel();
+                  const dataIndex = colModel && colModel.getDataIndex && colModel.getDataIndex(cellIndex);
+                  if (dataIndex) {
+                    record.set(dataIndex, ratingValue);
+                  }
+                }
+              }
+            }
+          }
+        }
+      } catch (e) {}
+
+      // 4. Hiệu ứng nhấp nháy xanh lá báo hiệu đã điền
+      try {
+        cell.style.transition = 'background-color 0.3s ease';
+        cell.style.backgroundColor = '#DCFCE7';
+        setTimeout(() => {
+          cell.style.backgroundColor = '';
+        }, 700);
+      } catch (e) {}
+
+      return true;
+    }
+
+    isCompetencySummaryGrid() {
+      const scope = this._getScope();
+      const allHeaders = Array.from(scope.querySelectorAll('.x-grid3-header, thead, .x-grid-header-row, [role="rowheader"]'));
+      const headerText = allHeaders.map(h => (h.textContent || '').trim()).join(' ').toLowerCase();
+
+      const hasCompetency = /năng\s*lực(?:\s*cốt\s*lõi|\s*chung|\s*đặc\s*thù)?/i.test(headerText) ||
+                            (headerText.includes('tự chủ') && headerText.includes('giao tiếp'));
+      const hasQuality = /phẩm\s*chất(?:\s*chủ\s*yếu)?/i.test(headerText) ||
+                         (headerText.includes('yêu nước') && headerText.includes('nhân ái'));
+      const hasSubject = /môn\s*học/i.test(headerText) ||
+                         (headerText.includes('tiếng việt') && headerText.includes('toán'));
+
+      return hasCompetency && hasQuality && hasSubject;
+    }
+
+    getSummaryGridStructure() {
+      const { locked, normal } = this._getSplitContainers();
+      const scope = normal || this._getScope();
+
+      let allHeaderRows = Array.from(scope.querySelectorAll(
+        '.x-grid3-header .x-grid3-hd-row, thead tr, .x-grid-header-row, [role="rowheader"]'
+      )).filter(r => !locked || !locked.contains(r));
+
+      if (allHeaderRows.length === 0) {
+        allHeaderRows = Array.from(document.querySelectorAll(
+          '.x-grid3-header .x-grid3-hd-row, thead tr, .x-grid-header-row, [role="rowheader"]'
+        )).filter(r => !locked || !locked.contains(r));
+      }
+
+      const sampleRow = scope.querySelector('.x-grid3-row, tbody tr, .x-grid-row');
+      const mappedColumns = this._analyzeMultiRowHeaders(allHeaderRows, sampleRow);
+
+      const subjectColumns = {};
+      const targetColumns = [];
+
+      mappedColumns.forEach(col => {
+        const rawTxt = col.combinedText || '';
+        const txt = (rawTxt.normalize ? rawTxt.normalize('NFC') : rawTxt).toLowerCase();
+        const isTargetSection = /năng\s*lực|phẩm\s*chất/i.test(txt);
+
+        if (isTargetSection) {
+          // 1. Target columns trong khung đỏ:
+          if (/tự\s*chủ/i.test(txt)) {
+            targetColumns.push({ key: 'tự chủ và tự học', name: 'Tự chủ và tự học', index: col.index, colClass: col.colClass });
+          } else if (/giao\s*tiếp/i.test(txt)) {
+            targetColumns.push({ key: 'giao tiếp và hợp tác', name: 'Giao tiếp và hợp tác', index: col.index, colClass: col.colClass });
+          } else if (/gqvđ|giải\s*quyết\s*vấn\s*đề|sáng\s*tạo/i.test(txt)) {
+            targetColumns.push({ key: 'gqvd và sáng tạo', name: 'GQVĐ và sáng tạo', index: col.index, colClass: col.colClass });
+          } else if (/ngôn\s*ngữ/i.test(txt)) {
+            targetColumns.push({ key: 'ngôn ngữ', name: 'Ngôn ngữ', index: col.index, colClass: col.colClass });
+          } else if (/tính\s*toán/i.test(txt)) {
+            targetColumns.push({ key: 'tính toán', name: 'Tính toán', index: col.index, colClass: col.colClass });
+          } else if (/khoa\s*học/i.test(txt)) {
+            targetColumns.push({ key: 'khoa học', name: 'Khoa học', index: col.index, colClass: col.colClass });
+          } else if (/công\s*nghệ/i.test(txt)) {
+            targetColumns.push({ key: 'công nghệ', name: 'Công nghệ', index: col.index, colClass: col.colClass });
+          } else if (/tin\s*học/i.test(txt)) {
+            targetColumns.push({ key: 'tin học', name: 'Tin học', index: col.index, colClass: col.colClass });
+          } else if (/thẩm\s*m[ĩỹ]/i.test(txt)) {
+            targetColumns.push({ key: 'thẩm mĩ', name: 'Thẩm mĩ', index: col.index, colClass: col.colClass });
+          } else if (/thể\s*chất/i.test(txt)) {
+            targetColumns.push({ key: 'thể chất', name: 'Thể chất', index: col.index, colClass: col.colClass });
+          } else if (/yêu\s*nước/i.test(txt)) {
+            targetColumns.push({ key: 'yêu nước', name: 'Yêu nước', index: col.index, colClass: col.colClass });
+          } else if (/nhân\s*ái/i.test(txt)) {
+            targetColumns.push({ key: 'nhân ái', name: 'Nhân ái', index: col.index, colClass: col.colClass });
+          } else if (/chăm\s*chỉ/i.test(txt)) {
+            targetColumns.push({ key: 'chăm chỉ', name: 'Chăm chỉ', index: col.index, colClass: col.colClass });
+          } else if (/trung\s*thực/i.test(txt)) {
+            targetColumns.push({ key: 'trung thực', name: 'Trung thực', index: col.index, colClass: col.colClass });
+          } else if (/trách\s*nhiệm/i.test(txt)) {
+            targetColumns.push({ key: 'trách nhiệm', name: 'Trách nhiệm', index: col.index, colClass: col.colClass });
+          }
+        } else {
+          // 2. Subject columns ở bên trái:
+          const isScore = /điểm|ktđk|đkt/i.test(txt);
+          const isRating = /mức|đạt|xl/i.test(txt) || !isScore;
+
+          if (/tiếng\s*việt/i.test(txt)) {
+            if (isScore) subjectColumns['Tiếng Việt__score'] = col;
+            else if (isRating) subjectColumns['Tiếng Việt__rating'] = col;
+          } else if (/toán/i.test(txt)) {
+            if (isScore) subjectColumns['Toán__score'] = col;
+            else if (isRating) subjectColumns['Toán__rating'] = col;
+          } else if (/khoa\s*học/i.test(txt)) {
+            if (isScore) subjectColumns['Khoa học__score'] = col;
+            else if (isRating) subjectColumns['Khoa học__rating'] = col;
+          } else if (/lịch\s*sử|địa\s*l[íy]|ls[\s\-_]*đl/i.test(txt)) {
+            if (isScore) subjectColumns['Lịch sử và Địa lí__score'] = col;
+            else if (isRating) subjectColumns['Lịch sử và Địa lí__rating'] = col;
+          } else if (/tự\s*nhiên|tn[\s\-_]*xh/i.test(txt)) {
+            if (isScore) subjectColumns['TN-XH__score'] = col;
+            else if (isRating) subjectColumns['TN-XH__rating'] = col;
+          } else if (/tiếng\s*anh|ngoại\s*ngữ/i.test(txt)) {
+            if (isScore) subjectColumns['Tiếng Anh__score'] = col;
+            else if (isRating) subjectColumns['Tiếng Anh__rating'] = col;
+          } else if (/đạo\s*đức/i.test(txt)) {
+            subjectColumns['Đạo đức__rating'] = col;
+          } else if (/âm\s*nhạc/i.test(txt)) {
+            subjectColumns['Âm nhạc__rating'] = col;
+          } else if (/mĩ\s*thuật|mỹ\s*thuật/i.test(txt)) {
+            subjectColumns['Mĩ thuật__rating'] = col;
+          } else if (/tin\s*học/i.test(txt) && /công\s*nghệ/i.test(txt)) {
+            // Header chứa cả 2 cụm từ (ví dụ: "Tin học và Công nghệ (Công nghệ)") -> kiểm tra phân môn con
+            const isSubCN = /\(\s*công\s*nghệ\s*\)/i.test(txt) || /công\s*nghệ/i.test(col.bottomText || '');
+            if (isSubCN) {
+              if (isScore) subjectColumns['Công nghệ__score'] = col;
+              else if (isRating) subjectColumns['Công nghệ__rating'] = col;
+            } else {
+              if (isScore) subjectColumns['Tin học__score'] = col;
+              else if (isRating) subjectColumns['Tin học__rating'] = col;
+            }
+          } else if (/tin\s*học/i.test(txt)) {
+            if (isScore) subjectColumns['Tin học__score'] = col;
+            else if (isRating) subjectColumns['Tin học__rating'] = col;
+          } else if (/công\s*nghệ/i.test(txt)) {
+            if (isScore) subjectColumns['Công nghệ__score'] = col;
+            else if (isRating) subjectColumns['Công nghệ__rating'] = col;
+          } else if (/thể\s*chất|gdtc/i.test(txt)) {
+            subjectColumns['Giáo dục thể chất__rating'] = col;
+          } else if (/trải\s*nghiệm|hđtn/i.test(txt)) {
+            subjectColumns['Hoạt động trải nghiệm__rating'] = col;
+          }
+        }
+      });
+
+      return { subjectColumns, targetColumns };
+    }
+
+    async fillSummaryGridCompetencies(options = {}) {
+      const { onProgress, shouldCancel } = options;
+      const { locked, normal } = this._getSplitContainers();
+      const scope = normal || this._getScope();
+      const structure = this.getSummaryGridStructure();
+      if (!structure || structure.targetColumns.length === 0) {
+        return { success: false, reason: 'Không xác định được các cột Năng lực và Phẩm chất trên bảng vnEdu.' };
+      }
+
+      // Lấy danh sách học sinh từ locked grid hoặc scope
+      const students = this.detectStudents();
+      if (students.length === 0) {
+        return { success: false, reason: 'Không tìm thấy danh sách học sinh trên bảng.' };
+      }
+
+      // Lấy các dòng tương ứng ở normal grid (phần scroller chứa các ô điểm và năng lực)
+      const dataRows = Array.from(
+        scope.querySelectorAll('.x-grid3-row, .x-grid-row, tbody tr')
+      ).filter(r => !this._isHeaderRow(r));
+
+      const detectedGrade = this.detectClass()?.grade || '1';
+      let filledCount = 0;
+
+      for (let i = 0; i < dataRows.length; i++) {
+        if (typeof shouldCancel === 'function' && shouldCancel()) {
+          break;
+        }
+
+        const row = dataRows[i];
+        const student = students[i] || { studentName: `Học sinh ${i + 1}` };
+        const cells = Array.from(row.querySelectorAll('td, .x-grid3-cell'));
+
+        // 1. Đọc dữ liệu các môn học của học sinh từ row
+        const studentSubjects = {};
+        for (const [subKey, colInfo] of Object.entries(structure.subjectColumns)) {
+          const cell = colInfo.colClass ? row.querySelector('.' + colInfo.colClass) : cells[colInfo.index];
+          if (!cell) continue;
+          const txt = (cell.textContent || '').trim();
+          const [subName, subProp] = subKey.split('__');
+          if (!studentSubjects[subName]) studentSubjects[subName] = { rating: null, score: null };
+          if (subProp === 'rating') {
+            studentSubjects[subName].rating = txt;
+          } else if (subProp === 'score') {
+            studentSubjects[subName].score = txt;
+          }
+        }
+
+        // 2. Chạy bộ suy luận
+        const inferenceModule = (typeof VnEduCompetencyInference !== 'undefined' ? VnEduCompetencyInference : null) ||
+                                (typeof require === 'function' ? require('../utils/competency-inference') : null);
+        if (!inferenceModule || typeof inferenceModule.inferStudentCompetencies !== 'function') {
+          return { success: false, reason: 'Không tìm thấy bộ suy luận VnEduCompetencyInference.' };
+        }
+
+        const inferenceResult = inferenceModule.inferStudentCompetencies({
+          name: student.studentName,
+          subjects: studentSubjects
+        }, detectedGrade);
+
+        // 3. Điền giá trị suy luận vào từng cột mục tiêu
+        for (const targetCol of structure.targetColumns) {
+          const targetVal = inferenceResult.rawMap[targetCol.key];
+          if (!targetVal) continue;
+
+          const cell = targetCol.colClass ? row.querySelector('.' + targetCol.colClass) : cells[targetCol.index];
+          if (cell) {
+            this.writeRatingToGridCell(cell, targetVal);
+          }
+        }
+
+        filledCount++;
+
+        if (typeof onProgress === 'function') {
+          onProgress({
+            currentIndex: i + 1,
+            totalStudents: dataRows.length,
+            studentName: student.studentName
+          });
+        }
+
+        await new Promise(r => setTimeout(r, 60));
+      }
+
+      return { success: true, count: filledCount, total: dataRows.length };
+    }
+
     async fillComment(mappingItem, text, options = {}) {
       if (!mappingItem || !mappingItem.commentField || !mappingItem.commentField.element) {
         return false;

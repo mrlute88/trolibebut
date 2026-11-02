@@ -248,14 +248,33 @@
     } else {
       btnMain.className = 'vnedu-btn-pill-3d';
       const teacher = currentLicenseRecord?.teacher || currentLicenseDetails?.currentTeacher || '';
-      btnMain.title = teacher
-        ? `Trợ lý nhận xét (Đã kích hoạt cho GV: ${teacher})`
-        : 'Tự động nhận diện Khối lớp, Môn học và Kỳ kiểm tra trên vnEdu để điền nhận xét';
-      iconSpan.textContent = '⚡';
-      textSpan.textContent = 'Điền Nhận Xét';
-      if (mascotSpeech) {
-        const shortName = teacher ? teacher.split(' ').slice(-1)[0] : '';
-        mascotSpeech.textContent = shortName ? `Chào Thầy/Cô ${shortName}! Sẵn sàng ✨` : 'Em sẵn sàng điền nhận xét! ✨';
+
+      // Kiểm tra xem có đang mở Bảng tổng hợp Năng lực - Phẩm chất hay không
+      let isSummaryGrid = false;
+      try {
+        const gridAdapter = window.VnEduGridAdapter ? new window.VnEduGridAdapter() : null;
+        if (gridAdapter && typeof gridAdapter.isCompetencySummaryGrid === 'function') {
+          isSummaryGrid = gridAdapter.isCompetencySummaryGrid();
+        }
+      } catch (e) {}
+
+      if (isSummaryGrid) {
+        btnMain.title = 'Tự động đọc điểm số các môn bên trái và suy luận xếp loại T/Đ/C cho Năng lực - Phẩm chất bên phải';
+        iconSpan.textContent = '⚡';
+        textSpan.textContent = 'Điền NL - PC (T, Đ, C)';
+        if (mascotSpeech) {
+          mascotSpeech.textContent = 'Em đã nhận diện Bảng tổng hợp NL-PC! Bấm để điền nhé ✨';
+        }
+      } else {
+        btnMain.title = teacher
+          ? `Trợ lý nhận xét (Đã kích hoạt cho GV: ${teacher})`
+          : 'Tự động nhận diện Khối lớp, Môn học và Kỳ kiểm tra trên vnEdu để điền nhận xét';
+        iconSpan.textContent = '⚡';
+        textSpan.textContent = 'Điền Nhận Xét';
+        if (mascotSpeech) {
+          const shortName = teacher ? teacher.split(' ').slice(-1)[0] : '';
+          mascotSpeech.textContent = shortName ? `Chào Thầy/Cô ${shortName}! Sẵn sàng ✨` : 'Em sẵn sàng điền nhận xét! ✨';
+        }
       }
       if (btnKey) btnKey.style.display = 'inline-flex';
     }
@@ -606,6 +625,33 @@
         updateMainButtonUI();
         showToast('⚠️ Không tìm thấy danh sách học sinh trên sổ nhận xét vnEdu hiện tại.\nThầy/Cô vui lòng mở đúng trang Sổ đánh giá môn học hoặc Phẩm chất - Năng lực.', null, true, false);
         setTimeout(hideToast, 4500);
+        return;
+      }
+
+      // KIỂM TRA CHUYÊN BIỆT: BẢNG TỔNG HỢP ĐÁNH GIÁ GIÁO DỤC / NĂNG LỰC - PHẨM CHẤT
+      const summaryAdapter = scanReport?.adapter || (deps.DOMScanner?.getAdapter ? deps.DOMScanner.getAdapter() : null) || (window.VnEduGridAdapter ? new window.VnEduGridAdapter() : null);
+      if (summaryAdapter && typeof summaryAdapter.isCompetencySummaryGrid === 'function' && summaryAdapter.isCompetencySummaryGrid()) {
+        showToast('🚀 Đang quét các cột môn học và chuẩn bị suy luận Năng lực - Phẩm chất...', 10, false, true);
+
+        const result = await summaryAdapter.fillSummaryGridCompetencies({
+          onProgress: ({ currentIndex, totalStudents, studentName }) => {
+            const pct = Math.round((currentIndex / totalStudents) * 100);
+            showToast(`⚡ Đang suy luận & điền NL-PC: ${studentName} (${currentIndex}/${totalStudents})...`, pct, false, true);
+          },
+          shouldCancel: () => !isFillingActive
+        });
+
+        isFillingActive = false;
+        if (btnMain) btnMain.classList.remove('disabled');
+        updateMainButtonUI();
+
+        if (result && result.success) {
+          showToast(`✓ Đã tự động suy luận & điền xong NL-PC cho ${result.count}/${result.total} học sinh!\n🔒 Thầy/Cô vui lòng rà soát lại và tự bấm nút "Lưu" hoặc "Ghi" trên vnEdu.`, null, false, false);
+          setTimeout(hideToast, 8500);
+        } else {
+          showToast(`⚠️ ${result?.reason || 'Có lỗi khi phân tích dữ liệu trên bảng.'}`, null, true, false);
+          setTimeout(hideToast, 5000);
+        }
         return;
       }
 

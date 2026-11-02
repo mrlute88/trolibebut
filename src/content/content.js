@@ -16,6 +16,7 @@
   const DOMUtils = window.VnEduDOMUtils;
   const QualityChecker = window.VnEduQualityChecker;
   const Circular27Rules = window.VnEduCircular27Rules;
+  const CompetencyInference = window.VnEduCompetencyInference;
   const BaseAdapter = window.VnEduBaseAdapter;
   const TableAdapter = window.VnEduTableAdapter;
   const GridAdapter = window.VnEduGridAdapter;
@@ -71,6 +72,7 @@
     DOMUtils,
     QualityChecker,
     Circular27Rules,
+    CompetencyInference,
     BaseAdapter,
     PageDetector,
     DOMScanner,

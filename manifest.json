@@ -57,6 +57,7 @@
         "src/utils/dom-utils.js",
         "src/utils/quality-checker.js",
         "src/utils/circular27-rules.js",
+        "src/utils/competency-inference.js",
         "src/storage/chrome-storage.js",
         "src/adapters/vnedu-adapter.js",
         "src/adapters/vnedu-table-adapter.js",
