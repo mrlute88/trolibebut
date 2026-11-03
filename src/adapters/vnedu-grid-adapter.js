@@ -1232,7 +1232,7 @@
 
       const detectedGrade = this.detectClass()?.grade || '1';
       let filledCount = 0;
-      const allUpdates = [];
+      const studentDataList = [];
 
       for (let i = 0; i < dataRows.length; i++) {
         if (typeof shouldCancel === 'function' && shouldCancel()) {
@@ -1270,38 +1270,19 @@
           subjects: studentSubjects
         }, detectedGrade);
 
-        // 3. Gom và điền giá trị suy luận vào từng cột mục tiêu
-        const rowFieldUpdates = {};
-        const rowValuesByIndex = {};
-        const rowValuesByColClass = {};
-
+        // 3. Gom dữ liệu chỉ tiêu năng lực - phẩm chất (không gán DOM trực tiếp để tránh làm đơ ô)
+        const studentInput = {};
         for (const targetCol of structure.targetColumns) {
           const targetVal = inferenceResult.rawMap[targetCol.key];
           if (!targetVal) continue;
 
-          rowFieldUpdates[targetCol.key] = targetVal;
+          studentInput[targetCol.key] = targetVal;
           if (targetCol.index !== undefined) {
-            rowValuesByIndex[targetCol.index] = targetVal;
-          }
-          if (targetCol.colClass) {
-            rowValuesByColClass[targetCol.colClass] = targetVal;
-          }
-
-          const cell = targetCol.colClass ? row.querySelector('.' + targetCol.colClass) : cells[targetCol.index];
-          if (cell) {
-            this.writeRatingToGridCell(cell, targetVal);
+            studentInput[targetCol.index] = targetVal;
           }
         }
 
-        if (Object.keys(rowFieldUpdates).length > 0) {
-          allUpdates.push({
-            rowIndex: i,
-            fields: rowFieldUpdates,
-            byIndex: rowValuesByIndex,
-            byColClass: rowValuesByColClass
-          });
-        }
-
+        studentDataList.push(studentInput);
         filledCount++;
 
         if (typeof onProgress === 'function') {
@@ -1311,15 +1292,12 @@
             studentName: student.studentName
           });
         }
-
-        await new Promise(r => setTimeout(r, 60));
       }
 
-      // 4. CẬP NHẬT EXTJS STORE TRỰC TIẾP TRONG MAIN WORLD
-      // Đảm bảo toàn bộ records trong ExtJS Store được đánh dấu modified (record.dirty = true)
-      // Khi giáo viên bấm nút "Lưu" trên vnEdu, vnEdu sẽ nhận diện đầy đủ và lưu lên hệ thống!
+      // 4. CẬP NHẬT AN TOÀN QUA API GỐC EXTJS STORE (fillVnEduDataSafely)
+      // Tự động dò tên cột dataIndex, gán qua record.set, tự động gắn cờ dirty đỏ và giữ nguyên click sửa ô 100%
       let storeBridgeResult = null;
-      if (allUpdates.length > 0) {
+      if (studentDataList.length > 0) {
         try {
           const gridEl = scope.closest('.x-grid3, .x-panel, .x-grid-panel, .x-window') ||
                          scope.querySelector('.x-grid3') ||
@@ -1327,19 +1305,14 @@
           if (gridEl) {
             gridEl.setAttribute('data-vnedu-active-grid', 'true');
           }
-          const gridId = gridEl ? gridEl.id : null;
 
           const bridge = (typeof window !== 'undefined' && window.PageBridge) || null;
-          if (bridge && typeof bridge.applyStoreUpdates === 'function') {
-            storeBridgeResult = await bridge.applyStoreUpdates({
-              gridId: gridId,
-              updates: allUpdates,
-              targetColumns: structure.targetColumns
-            });
-            console.log('[vnEdu Adapter] ExtJS Store bridge update result:', storeBridgeResult);
+          if (bridge && typeof bridge.fillVnEduDataSafely === 'function') {
+            storeBridgeResult = await bridge.fillVnEduDataSafely(studentDataList);
+            console.log('[vnEdu Adapter] Kết quả fillVnEduDataSafely:', storeBridgeResult);
           }
         } catch (e) {
-          console.warn('[vnEdu Adapter] Lỗi khi gọi ExtJS Store bridge:', e);
+          console.warn('[vnEdu Adapter] Lỗi khi gọi fillVnEduDataSafely:', e);
         }
       }
 
