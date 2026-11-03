@@ -259,11 +259,11 @@
       } catch (e) {}
 
       if (isSummaryGrid) {
-        btnMain.title = 'Tự động đọc điểm số các môn bên trái và suy luận xếp loại NL-PC theo mã số: Đ=1, C=2, T=3';
+        btnMain.title = 'Tự động đọc điểm số các môn bên trái và suy luận xếp loại T/Đ/C cho Năng lực - Phẩm chất bên phải';
         iconSpan.textContent = '⚡';
-        textSpan.textContent = 'Điền NL - PC (1, 2, 3)';
+        textSpan.textContent = 'Điền NL - PC (T, Đ, C)';
         if (mascotSpeech) {
-          mascotSpeech.textContent = 'Em đã nhận diện Bảng tổng hợp NL-PC! Điền mã số Đ=1, C=2, T=3 nhé ✨';
+          mascotSpeech.textContent = 'Em đã nhận diện Bảng tổng hợp NL-PC! Bấm để điền nhé ✨';
         }
       } else {
         btnMain.title = teacher
@@ -631,12 +631,15 @@
       // KIỂM TRA CHUYÊN BIỆT: BẢNG TỔNG HỢP ĐÁNH GIÁ GIÁO DỤC / NĂNG LỰC - PHẨM CHẤT
       const summaryAdapter = scanReport?.adapter || (deps.DOMScanner?.getAdapter ? deps.DOMScanner.getAdapter() : null) || (window.VnEduGridAdapter ? new window.VnEduGridAdapter() : null);
       if (summaryAdapter && typeof summaryAdapter.isCompetencySummaryGrid === 'function' && summaryAdapter.isCompetencySummaryGrid()) {
-        showToast('🚀 Đang quét các cột môn học và chuẩn bị suy luận Năng lực - Phẩm chất...', 10, false, true);
+        showToast('🚀 Đang quét các cột môn học và chuẩn bị nhập từng ô (1 giây/ô)...', 5, false, true);
 
         const result = await summaryAdapter.fillSummaryGridCompetencies({
-          onProgress: ({ currentIndex, totalStudents, studentName }) => {
-            const pct = Math.round((currentIndex / totalStudents) * 100);
-            showToast(`⚡ Đang suy luận & điền NL-PC (Đ=1, C=2, T=3): ${studentName} (${currentIndex}/${totalStudents})...`, pct, false, true);
+          cellDelay: 1000, // Mỗi ô dừng 1 giây theo đúng yêu cầu
+          onProgress: ({ currentIndex, totalStudents, studentName, currentCell, totalCells, cellName, ratingVal }) => {
+            const pct = (totalCells && totalCells > 0)
+              ? Math.round((currentCell / totalCells) * 100)
+              : Math.round((currentIndex / totalStudents) * 100);
+            showToast(`✍️ [${currentIndex}/${totalStudents}] ${studentName}\n👉 Nhập "${ratingVal}" vào ô: ${cellName} (${currentCell}/${totalCells})...`, pct, false, true);
           },
           shouldCancel: () => !isFillingActive
         });
@@ -649,7 +652,7 @@
           const modNote = (result.storeBridge && result.storeBridge.modifiedCount > 0)
             ? ` (Đã ghi nhận ${result.storeBridge.modifiedCount} bản ghi vào hệ thống vnEdu)`
             : '';
-          showToast(`✓ Đã tự động suy luận & điền xong NL-PC theo mã số (Đ=1, C=2, T=3) cho ${result.count}/${result.total} học sinh!${modNote}\n🔒 Thầy/Cô bấm nút "Lưu" hoặc "Ghi" trên vnEdu để hoàn tất.`, null, false, false);
+          showToast(`✓ Đã tự động suy luận & điền xong NL-PC cho ${result.count}/${result.total} học sinh!${modNote}\n🔒 Thầy/Cô bấm nút "Lưu" hoặc "Ghi" trên vnEdu để hoàn tất.`, null, false, false);
           setTimeout(hideToast, 8500);
         } else {
           showToast(`⚠️ ${result?.reason || 'Có lỗi khi phân tích dữ liệu trên bảng.'}`, null, true, false);

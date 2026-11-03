@@ -144,7 +144,163 @@
   }
 
   /**
-   * Cập nhật trực tiếp dữ liệu vào ExtJS Store của Grid
+   * Bật các nút "Lưu" / "Ghi" trên vnEdu
+   */
+  function enableSaveButtons(grid) {
+    const Ext = window.Ext;
+    if (!Ext) return;
+
+    try {
+      if (grid && grid.getTopToolbar) {
+        const topToolbar = grid.getTopToolbar();
+        if (topToolbar && topToolbar.items) {
+          topToolbar.items.each(function (btn) {
+            if (btn && btn.text && /lưu|ghi/i.test(btn.text)) {
+              if (btn.enable) btn.enable();
+              if (btn.setDisabled) btn.setDisabled(false);
+            }
+          });
+        }
+      }
+
+      if (Ext.ComponentMgr && Ext.ComponentMgr.all) {
+        Ext.ComponentMgr.all.each(function (cmp) {
+          if (cmp && cmp.isXType && cmp.isXType('button')) {
+            const btnText = cmp.getText ? cmp.getText() : (cmp.text || '');
+            if (/lưu|ghi/i.test(btnText)) {
+              if (cmp.enable) cmp.enable();
+              if (cmp.setDisabled) cmp.setDisabled(false);
+            }
+          }
+        });
+      }
+    } catch (e) {}
+  }
+
+  /**
+   * CẬP NHẬT TỪNG Ô ĐƠN LẺ TRONG STORE
+   * Hỗ trợ chế độ nhập từng ô mỗi 1 giây theo đúng yêu cầu
+   */
+  function applySingleCellUpdate(payload) {
+    const Ext = window.Ext;
+    if (!Ext) return { success: false, reason: 'window.Ext chưa sẵn sàng' };
+
+    const grid = findActiveGrid(payload.gridId);
+    if (!grid) return { success: false, reason: 'Không tìm thấy Grid' };
+
+    const store = grid.getStore ? grid.getStore() : grid.store;
+    const colModel = grid.getColumnModel ? grid.getColumnModel() : grid.colModel;
+    if (!store || !colModel) return { success: false };
+
+    const rowIndex = payload.rowIndex;
+    const rec = store.getAt ? store.getAt(rowIndex) : (store.data && store.data.items ? store.data.items[rowIndex] : null);
+    if (!rec) return { success: false, reason: 'Không tìm thấy record dòng ' + rowIndex };
+
+    const normKey = normalizeText(payload.colKey);
+    let dataIndex = null;
+    let targetColIdx = -1;
+
+    const colCount = colModel.getColumnCount ? colModel.getColumnCount() : (colModel.columns ? colModel.columns.length : 0);
+    for (let ci = 0; ci < colCount; ci++) {
+      const dIndex = colModel.getDataIndex ? colModel.getDataIndex(ci) : (colModel.columns && colModel.columns[ci] ? colModel.columns[ci].dataIndex : null);
+      const header = colModel.getColumnHeader ? colModel.getColumnHeader(ci) : (colModel.columns && colModel.columns[ci] ? colModel.columns[ci].header : '');
+      const colId = colModel.getColumnId ? colModel.getColumnId(ci) : (colModel.columns && colModel.columns[ci] ? colModel.columns[ci].id : null);
+
+      if (matchCanonicalKey(header) === normKey) {
+        dataIndex = dIndex;
+        targetColIdx = ci;
+        break;
+      }
+      if (payload.colClass && colId && payload.colClass.includes(String(colId))) {
+        dataIndex = dIndex;
+        targetColIdx = ci;
+        break;
+      }
+      if (payload.colIndex !== undefined && ci === payload.colIndex) {
+        dataIndex = dIndex;
+        targetColIdx = ci;
+      }
+    }
+
+    if (!dataIndex) {
+      if (rec.data && rec.data[normKey] !== undefined) dataIndex = normKey;
+      else if (rec.data && rec.data[payload.colKey] !== undefined) dataIndex = payload.colKey;
+    }
+
+    if (!dataIndex) return { success: false, reason: 'Không tìm thấy dataIndex cho ' + payload.colKey };
+
+    const val = payload.value;
+    const oldVal = rec.get ? rec.get(dataIndex) : rec.data[dataIndex];
+
+    // 1. Thử dùng startEditing của EditorGridPanel để kích hoạt toàn bộ cơ chế của vnEdu
+    if (targetColIdx >= 0 && typeof grid.startEditing === 'function') {
+      try {
+        grid.startEditing(rowIndex, targetColIdx);
+        const editor = grid.activeEditor;
+        if (editor) {
+          if (editor.field && typeof editor.field.setValue === 'function') {
+            editor.field.setValue(val);
+          } else if (typeof editor.setValue === 'function') {
+            editor.setValue(val);
+          }
+          if (typeof editor.completeEdit === 'function') {
+            editor.completeEdit();
+          }
+        }
+      } catch (e) {}
+    }
+
+    // 2. Đảm bảo cập nhật trực tiếp vào Record
+    if (typeof rec.beginEdit === 'function') rec.beginEdit();
+    if (typeof rec.set === 'function') {
+      rec.set(dataIndex, val);
+    } else {
+      rec.data[dataIndex] = val;
+    }
+    rec.dirty = true;
+    if (!rec.modified) rec.modified = {};
+    if (rec.modified[dataIndex] === undefined) {
+      rec.modified[dataIndex] = (oldVal !== undefined && oldVal !== null) ? oldVal : '';
+    }
+    if (typeof rec.endEdit === 'function') rec.endEdit();
+
+    if (!store.modified) store.modified = [];
+    if (store.modified.indexOf(rec) === -1) {
+      store.modified.push(rec);
+    }
+
+    // Kích hoạt sự kiện update và afteredit
+    try {
+      if (store.fireEvent && Ext.data && Ext.data.Record) {
+        store.fireEvent('update', store, rec, Ext.data.Record.EDIT);
+      }
+      if (grid.fireEvent) {
+        grid.fireEvent('afteredit', {
+          grid: grid,
+          record: rec,
+          field: dataIndex,
+          value: val,
+          originalValue: oldVal,
+          row: rowIndex,
+          column: targetColIdx
+        });
+      }
+    } catch (e) {}
+
+    // Bật nút Lưu
+    enableSaveButtons(grid);
+
+    return {
+      success: true,
+      rowIndex: rowIndex,
+      dataIndex: dataIndex,
+      value: val,
+      dirtyCount: store.modified.length
+    };
+  }
+
+  /**
+   * Cập nhật toàn bộ mảng thay đổi vào ExtJS Store của Grid (Đồng bộ hàng loạt / chốt sổ)
    */
   function applyStoreUpdates(payload) {
     const Ext = window.Ext;
@@ -164,7 +320,6 @@
       return { success: false, reason: 'ExtJS Grid không có Store hoặc ColumnModel' };
     }
 
-    // Đảm bảo mảng modified của store tồn tại
     if (!store.modified) {
       store.modified = [];
     }
@@ -173,7 +328,6 @@
     const keyToDataIndex = {};
     const colIdToDataIndex = {};
 
-    // 1. Ánh xạ trực tiếp từ ColumnModel config
     for (let ci = 0; ci < colCount; ci++) {
       const dIndex = colModel.getDataIndex ? colModel.getDataIndex(ci) : (colModel.columns && colModel.columns[ci] ? colModel.columns[ci].dataIndex : null);
       const header = colModel.getColumnHeader ? colModel.getColumnHeader(ci) : (colModel.columns && colModel.columns[ci] ? colModel.columns[ci].header : '');
@@ -183,7 +337,6 @@
 
       if (colId) {
         colIdToDataIndex[String(colId)] = dIndex;
-        // Cũng lưu dạng số nếu colId có tiền tố 'col-'
         const numId = String(colId).replace(/^.*(?:col|td|hd)-/, '');
         if (numId) colIdToDataIndex[numId] = dIndex;
       }
@@ -194,7 +347,7 @@
       }
     }
 
-    // 2. Nếu colModel.getColumnHeader chưa có đầy đủ (do vnEdu nhóm cột nhiều tầng), quét tiêu đề DOM của Grid
+    // Nếu colModel.getColumnHeader chưa có đầy đủ (do vnEdu nhóm cột nhiều tầng), quét tiêu đề DOM
     const missingKeys = [
       'tự chủ và tự học', 'giao tiếp và hợp tác', 'gqvd và sáng tạo',
       'ngôn ngữ', 'tính toán', 'khoa học', 'công nghệ', 'tin học',
@@ -209,7 +362,6 @@
         const text = hd.textContent || '';
         const matched = matchCanonicalKey(text);
         if (matched && !keyToDataIndex[matched]) {
-          // Trích xuất class cột (vd: x-grid3-hd-18 hoặc x-grid3-col-18)
           const cls = (hd.className || '') + ' ' + (hd.parentElement ? hd.parentElement.className : '');
           const matchCls = cls.match(/x-grid3-(?:hd|td|col)-([a-zA-Z0-9_-]+)/);
           if (matchCls) {
@@ -227,21 +379,18 @@
       });
     }
 
-    // 3. Sử dụng cấu trúc targetColumns gửi kèm từ content script nếu có
     if (Array.isArray(payload.targetColumns)) {
       payload.targetColumns.forEach(tc => {
         if (!tc || !tc.key) return;
         const normK = normalizeText(tc.key);
 
         if (!keyToDataIndex[normK]) {
-          // Thử qua colClass (vd: "x-grid3-td-20")
           if (tc.colClass) {
             const numMatch = tc.colClass.match(/x-grid3-(?:td|col|hd)-([a-zA-Z0-9_-]+)/);
             if (numMatch && colIdToDataIndex[numMatch[1]]) {
               keyToDataIndex[normK] = colIdToDataIndex[numMatch[1]];
             }
           }
-          // Thử qua colIndex
           if (!keyToDataIndex[normK] && tc.index !== undefined && colModel.getDataIndex) {
             const d = colModel.getDataIndex(tc.index);
             if (d) keyToDataIndex[normK] = d;
@@ -249,8 +398,6 @@
         }
       });
     }
-
-    console.log('[vnEdu Main Bridge] Ánh xạ cột NL-PC sang Store dataIndex:', keyToDataIndex);
 
     const updates = payload.updates || [];
     let updatedRows = 0;
@@ -271,14 +418,7 @@
 
       for (const rawKey in fields) {
         const val = fields[rawKey];
-        if (val === undefined || val === null || val === '') continue;
-
-        // Chuyển đổi mã số theo quy tắc: "Đ" -> 1, "C" -> 2, "T" -> 3
-        let storeVal = val;
-        const s = String(val).trim().toUpperCase();
-        if (s === 'Đ' || s === 'D' || s === '1') storeVal = 1;
-        else if (s === 'C' || s === '2') storeVal = 2;
-        else if (s === 'T' || s === '3') storeVal = 3;
+        if (!val) continue;
 
         const canonicalKey = normalizeText(rawKey);
         const dataIndex = keyToDataIndex[canonicalKey] ||
@@ -287,14 +427,13 @@
 
         if (dataIndex) {
           const oldVal = rec.get ? rec.get(dataIndex) : rec.data[dataIndex];
-          if (oldVal != storeVal) {
+          if (oldVal !== val) {
             if (typeof rec.set === 'function') {
-              rec.set(dataIndex, storeVal);
+              rec.set(dataIndex, val);
             } else {
-              rec.data[dataIndex] = storeVal;
+              rec.data[dataIndex] = val;
             }
 
-            // Đảm bảo record được đánh dấu modified
             rec.dirty = true;
             if (!rec.modified) rec.modified = {};
             if (rec.modified[dataIndex] === undefined) {
@@ -304,14 +443,13 @@
             rowModified = true;
             updatedCells++;
 
-            // Kích hoạt sự kiện afteredit trên Grid để vnEdu nhận diện
             try {
               if (grid.fireEvent) {
                 grid.fireEvent('afteredit', {
                   grid: grid,
                   record: rec,
                   field: dataIndex,
-                  value: storeVal,
+                  value: val,
                   originalValue: oldVal,
                   row: rowIndex
                 });
@@ -339,44 +477,20 @@
       }
     }
 
-    // Refresh view để ExtJS hiển thị ngay cờ đỏ dirty mark (.x-grid3-dirty-cell)
+    // Refresh view để ExtJS hiển thị cờ đỏ dirty mark
     try {
       if (grid.getView && grid.getView().refresh) {
         grid.getView().refresh(false);
       }
     } catch (e) {}
 
-    // Bật nút "Lưu" / "Ghi" trên vnEdu (nếu đang bị disable)
-    try {
-      // 1. Kiểm tra trên toolbar của grid
-      const topToolbar = grid.getTopToolbar ? grid.getTopToolbar() : null;
-      if (topToolbar && topToolbar.items) {
-        topToolbar.items.each(function (btn) {
-          if (btn && btn.text && /lưu|ghi/i.test(btn.text)) {
-            if (btn.enable) btn.enable();
-            if (btn.setDisabled) btn.setDisabled(false);
-          }
-        });
-      }
-
-      // 2. Kiểm tra trên toàn bộ Ext.ComponentMgr
-      if (Ext.ComponentMgr && Ext.ComponentMgr.all) {
-        Ext.ComponentMgr.all.each(function (cmp) {
-          if (cmp && cmp.isXType && cmp.isXType('button')) {
-            const btnText = cmp.getText ? cmp.getText() : (cmp.text || '');
-            if (/lưu|ghi/i.test(btnText)) {
-              if (cmp.enable) cmp.enable();
-              if (cmp.setDisabled) cmp.setDisabled(false);
-            }
-          }
-        });
-      }
-    } catch (e) {}
+    // Bật nút Lưu
+    enableSaveButtons(grid);
 
     const modifiedRecords = store.getModifiedRecords ? store.getModifiedRecords() : (store.modified || []);
     const modifiedCount = modifiedRecords.length;
 
-    console.log(`[vnEdu Main Bridge] Hoàn tất cập nhật: ${updatedRows} dòng, ${updatedCells} ô. Tổng records modified trong Store: ${modifiedCount}`);
+    console.log(`[vnEdu Main Bridge] Hoàn tất đồng bộ: ${updatedRows} dòng, ${updatedCells} ô. Tổng records modified trong Store: ${modifiedCount}`);
 
     return {
       success: true,
@@ -387,7 +501,7 @@
     };
   }
 
-  // Lắng nghe yêu cầu cập nhật từ Content Script qua CustomEvent
+  // 1. Lắng nghe cập nhật hàng loạt từ Content Script
   window.addEventListener('VNEDU_EXTJS_GRID_UPDATE_REQUEST', function (event) {
     if (!event || !event.detail) return;
     const { requestId, payload } = event.detail;
@@ -405,7 +519,20 @@
     }
   });
 
+  // 2. Lắng nghe cập nhật từng ô đơn lẻ (chế độ nhập chậm 1 giây / ô)
+  window.addEventListener('VNEDU_EXTJS_GRID_CELL_UPDATE_REQUEST', function (event) {
+    if (!event || !event.detail) return;
+    const { payload } = event.detail;
+
+    try {
+      applySingleCellUpdate(payload || {});
+    } catch (err) {
+      console.warn('[vnEdu Main Bridge] Lỗi applySingleCellUpdate:', err);
+    }
+  });
+
   // Đăng ký toàn cục để có thể gọi trực tiếp
   window.__vneduApplyExtJsGridUpdates = applyStoreUpdates;
+  window.__vneduApplyExtJsSingleCellUpdate = applySingleCellUpdate;
   window.__VNEDU_PAGE_BRIDGE_MAIN_READY__ = true;
 })();
