@@ -646,7 +646,10 @@
         updateMainButtonUI();
 
         if (result && result.success) {
-          showToast(`✓ Đã tự động suy luận & điền xong NL-PC cho ${result.count}/${result.total} học sinh!\n🔒 Thầy/Cô vui lòng rà soát lại và tự bấm nút "Lưu" hoặc "Ghi" trên vnEdu.`, null, false, false);
+          const modNote = (result.storeBridge && result.storeBridge.modifiedCount > 0)
+            ? ` (Đã ghi nhận ${result.storeBridge.modifiedCount} bản ghi vào hệ thống vnEdu)`
+            : '';
+          showToast(`✓ Đã tự động suy luận & điền xong NL-PC cho ${result.count}/${result.total} học sinh!${modNote}\n🔒 Thầy/Cô bấm nút "Lưu" hoặc "Ghi" trên vnEdu để hoàn tất.`, null, false, false);
           setTimeout(hideToast, 8500);
         } else {
           showToast(`⚠️ ${result?.reason || 'Có lỗi khi phân tích dữ liệu trên bảng.'}`, null, true, false);
