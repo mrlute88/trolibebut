@@ -1038,37 +1038,34 @@
       // Thêm cờ đỏ dirty cell của ExtJS
       cell.classList.add('x-grid3-dirty-cell');
 
-      // 2. Kích hoạt sự kiện chuột mô phỏng thao tác giáo viên chọn ô
+      // 2. Giả lập chu kỳ tương tác DOM (mousedown, click, dblclick) và kích hoạt ExtJS Editor nếu có
       try {
-        if (typeof cell.focus === 'function') cell.focus();
         cell.dispatchEvent(new MouseEvent('mousedown', { bubbles: true, cancelable: true }));
         cell.dispatchEvent(new MouseEvent('mouseup', { bubbles: true, cancelable: true }));
         cell.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
         cell.dispatchEvent(new MouseEvent('dblclick', { bubbles: true, cancelable: true }));
-      } catch (e) {}
 
-      // 3. Nếu vnEdu mở khung editor nhập liệu nổi (ExtJS GridEditor)
-      try {
-        const activeInput = cell.querySelector('input, select') ||
-                            document.querySelector('.x-grid-editor input, .x-editor input, input.x-form-text:focus');
+        // Kiểm tra xem ExtJS Editor có mở thẻ input nổi nào không
+        const activeInput = cell.querySelector('input, textarea') ||
+                            document.querySelector('.x-grid-editor input, .x-editor input, input.x-form-focus');
         if (activeInput) {
           activeInput.focus();
           activeInput.value = ratingValue;
           activeInput.dispatchEvent(new Event('input', { bubbles: true }));
           activeInput.dispatchEvent(new Event('change', { bubbles: true }));
-          activeInput.dispatchEvent(new KeyboardEvent('keydown', { bubbles: true, key: 'Enter', keyCode: 13, which: 13 }));
-          activeInput.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true, key: 'Enter', keyCode: 13, which: 13 }));
+          activeInput.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', keyCode: 13, which: 13, bubbles: true }));
+          activeInput.dispatchEvent(new KeyboardEvent('keyup', { key: 'Enter', keyCode: 13, which: 13, bubbles: true }));
           activeInput.blur();
         }
       } catch (e) {}
 
-      // 4. Kích hoạt sự kiện bàn phím trên cell
+      // 3. Hiệu ứng nhấp nháy xanh lá báo hiệu đã điền
       try {
-        const keyChar = ratingValue;
-        const keyCode = keyChar.charCodeAt(0);
-        cell.dispatchEvent(new KeyboardEvent('keydown', { bubbles: true, key: keyChar, keyCode: keyCode, which: keyCode }));
-        cell.dispatchEvent(new KeyboardEvent('keypress', { bubbles: true, key: keyChar, keyCode: keyCode, which: keyCode }));
-        cell.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true, key: keyChar, keyCode: keyCode, which: keyCode }));
+        cell.style.transition = 'background-color 0.3s ease';
+        cell.style.backgroundColor = '#DCFCE7';
+        setTimeout(() => {
+          cell.style.backgroundColor = '';
+        }, 700);
       } catch (e) {}
 
       return true;
@@ -1205,10 +1202,6 @@
 
     async fillSummaryGridCompetencies(options = {}) {
       const { onProgress, shouldCancel } = options;
-      const cellDelayMs = (typeof options.cellDelay === 'number' && options.cellDelay >= 0)
-        ? options.cellDelay
-        : 1000; // Mỗi ô đúng 1 giây (1000ms) theo yêu cầu người dùng
-
       const { locked, normal } = this._getSplitContainers();
       const scope = normal || this._getScope();
       const structure = this.getSummaryGridStructure();
@@ -1230,13 +1223,6 @@
       const detectedGrade = this.detectClass()?.grade || '1';
       let filledCount = 0;
       const allUpdates = [];
-
-      const gridEl = scope.closest('.x-grid3, .x-panel, .x-grid-panel') || document.querySelector('.x-grid3');
-      const gridId = gridEl ? gridEl.id : null;
-
-      const totalStudents = dataRows.length;
-      const totalCellsToFill = totalStudents * structure.targetColumns.length;
-      let currentCellIndex = 0;
 
       for (let i = 0; i < dataRows.length; i++) {
         if (typeof shouldCancel === 'function' && shouldCancel()) {
@@ -1274,73 +1260,17 @@
           subjects: studentSubjects
         }, detectedGrade);
 
-        // 3. NHẬP TỪNG Ô MỘT (MỖI Ô 1 GIÂY), KHÔNG QUÉT NHANH
+        // 3. Gom và điền giá trị suy luận vào từng cột mục tiêu
         const rowFieldUpdates = {};
         for (const targetCol of structure.targetColumns) {
-          if (typeof shouldCancel === 'function' && shouldCancel()) {
-            break;
-          }
-
           const targetVal = inferenceResult.rawMap[targetCol.key];
           if (!targetVal) continue;
 
           rowFieldUpdates[targetCol.key] = targetVal;
-          currentCellIndex++;
 
           const cell = targetCol.colClass ? row.querySelector('.' + targetCol.colClass) : cells[targetCol.index];
           if (cell) {
-            // A. Cuộn ô vào tầm nhìn
-            try {
-              cell.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
-            } catch (e) {}
-
-            // B. Hiệu ứng tiêu điểm: viền xanh nổi bật + nền vàng biểu thị đang được gõ
-            const prevOutline = cell.style.outline;
-            cell.style.outline = '2px solid #2563eb';
-            cell.style.backgroundColor = '#FEF08A';
-            cell.style.transition = 'all 0.15s ease';
-
-            // C. Thông báo tiến trình thời gian thực từng ô
-            if (typeof onProgress === 'function') {
-              onProgress({
-                currentIndex: i + 1,
-                totalStudents: totalStudents,
-                studentName: student.studentName,
-                currentCell: currentCellIndex,
-                totalCells: totalCellsToFill,
-                cellName: targetCol.name,
-                ratingVal: targetVal
-              });
-            }
-
-            // D. Ghi giá trị vào ô trên DOM + kích hoạt đầy đủ sự kiện chuột & bàn phím
             this.writeRatingToGridCell(cell, targetVal);
-
-            // E. Cập nhật trực tiếp vào ExtJS Store của vnEdu trong Main World cho ô này
-            try {
-              if (typeof window !== 'undefined' && window.PageBridge && typeof window.PageBridge.applySingleCellUpdate === 'function') {
-                window.PageBridge.applySingleCellUpdate({
-                  gridId: gridId,
-                  rowIndex: i,
-                  colIndex: targetCol.index,
-                  colClass: targetCol.colClass,
-                  colKey: targetCol.key,
-                  value: targetVal
-                });
-              }
-            } catch (e) {}
-
-            // F. Chờ đúng thời gian quy định (mỗi ô 1 giây = 1000ms)
-            if (cellDelayMs > 0) {
-              await new Promise(r => setTimeout(r, cellDelayMs));
-            }
-
-            // G. Hoàn tất ô: khôi phục viền và chuyển sang màu xanh lá báo thành công
-            cell.style.outline = prevOutline || '';
-            cell.style.backgroundColor = '#DCFCE7';
-            setTimeout(() => {
-              cell.style.backgroundColor = '';
-            }, 600);
           }
         }
 
@@ -1352,12 +1282,27 @@
         }
 
         filledCount++;
+
+        if (typeof onProgress === 'function') {
+          onProgress({
+            currentIndex: i + 1,
+            totalStudents: dataRows.length,
+            studentName: student.studentName
+          });
+        }
+
+        await new Promise(r => setTimeout(r, 60));
       }
 
-      // 4. ĐỒNG BỘ TOÀN DIỆN LẦN CUỐI VÀ REFRESH STORE VIEW
+      // 4. CẬP NHẬT EXTJS STORE TRỰC TIẾP TRONG MAIN WORLD
+      // Đảm bảo toàn bộ records trong ExtJS Store được đánh dấu modified (record.dirty = true)
+      // Khi giáo viên bấm nút "Lưu" trên vnEdu, vnEdu sẽ nhận diện đầy đủ và lưu lên hệ thống!
       let storeBridgeResult = null;
       if (allUpdates.length > 0) {
         try {
+          const gridEl = scope.closest('.x-grid3, .x-panel, .x-grid-panel') || document.querySelector('.x-grid3');
+          const gridId = gridEl ? gridEl.id : null;
+
           const bridge = (typeof window !== 'undefined' && window.PageBridge) || null;
           if (bridge && typeof bridge.applyStoreUpdates === 'function') {
             storeBridgeResult = await bridge.applyStoreUpdates({
@@ -1365,7 +1310,7 @@
               updates: allUpdates,
               targetColumns: structure.targetColumns
             });
-            console.log('[vnEdu Adapter] Final ExtJS Store bridge update result:', storeBridgeResult);
+            console.log('[vnEdu Adapter] ExtJS Store bridge update result:', storeBridgeResult);
           }
         } catch (e) {
           console.warn('[vnEdu Adapter] Lỗi khi gọi ExtJS Store bridge:', e);

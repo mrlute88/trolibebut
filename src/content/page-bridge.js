@@ -32,28 +32,11 @@
     }
   }
 
+  // Khởi động tiêm sớm nếu cần
   ensureBridgeInjected();
 
   /**
-   * Cập nhật ngay lập tức từng ô đơn lẻ (cho chế độ nhập 1 giây / ô)
-   * @param {Object} payload { gridId, rowIndex, colIndex, colClass, colKey, value }
-   */
-  function applySingleCellUpdate(payload) {
-    try {
-      ensureBridgeInjected();
-      if (typeof window.__vneduApplyExtJsSingleCellUpdate === 'function') {
-        return window.__vneduApplyExtJsSingleCellUpdate(payload);
-      }
-      window.dispatchEvent(new CustomEvent('VNEDU_EXTJS_GRID_CELL_UPDATE_REQUEST', {
-        detail: { payload: payload || {} }
-      }));
-    } catch (e) {
-      console.warn('[PageBridge] Lỗi khi gửi cập nhật ô đơn lẻ:', e);
-    }
-  }
-
-  /**
-   * Gửi yêu cầu cập nhật đồng bộ toàn bộ ExtJS Store sang Main World
+   * Gửi yêu cầu cập nhật ExtJS Store sang Main World
    * @param {Object} payload { gridId, updates, targetColumns }
    * @returns {Promise<Object>}
    */
@@ -94,7 +77,7 @@
         }
       }));
 
-      // Timeout dự phòng
+      // Timeout dự phòng: nếu sau 1000ms không có phản hồi, thử tiêm lại và kết thúc
       timeoutId = setTimeout(function () {
         if (!isResolved) {
           cleanup();
@@ -107,7 +90,6 @@
 
   // Xuất ra phạm vi toàn cục của Content Script
   window.PageBridge = {
-    applySingleCellUpdate: applySingleCellUpdate,
     applyStoreUpdates: applyStoreUpdates,
     ensureBridgeInjected: ensureBridgeInjected
   };
@@ -116,3 +98,4 @@
     module.exports = window.PageBridge;
   }
 })();
+

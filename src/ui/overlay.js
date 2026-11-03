@@ -631,15 +631,12 @@
       // KIỂM TRA CHUYÊN BIỆT: BẢNG TỔNG HỢP ĐÁNH GIÁ GIÁO DỤC / NĂNG LỰC - PHẨM CHẤT
       const summaryAdapter = scanReport?.adapter || (deps.DOMScanner?.getAdapter ? deps.DOMScanner.getAdapter() : null) || (window.VnEduGridAdapter ? new window.VnEduGridAdapter() : null);
       if (summaryAdapter && typeof summaryAdapter.isCompetencySummaryGrid === 'function' && summaryAdapter.isCompetencySummaryGrid()) {
-        showToast('🚀 Đang quét các cột môn học và chuẩn bị nhập từng ô (1 giây/ô)...', 5, false, true);
+        showToast('🚀 Đang quét các cột môn học và chuẩn bị suy luận Năng lực - Phẩm chất...', 10, false, true);
 
         const result = await summaryAdapter.fillSummaryGridCompetencies({
-          cellDelay: 1000, // Mỗi ô dừng 1 giây theo đúng yêu cầu
-          onProgress: ({ currentIndex, totalStudents, studentName, currentCell, totalCells, cellName, ratingVal }) => {
-            const pct = (totalCells && totalCells > 0)
-              ? Math.round((currentCell / totalCells) * 100)
-              : Math.round((currentIndex / totalStudents) * 100);
-            showToast(`✍️ [${currentIndex}/${totalStudents}] ${studentName}\n👉 Nhập "${ratingVal}" vào ô: ${cellName} (${currentCell}/${totalCells})...`, pct, false, true);
+          onProgress: ({ currentIndex, totalStudents, studentName }) => {
+            const pct = Math.round((currentIndex / totalStudents) * 100);
+            showToast(`⚡ Đang suy luận & điền NL-PC: ${studentName} (${currentIndex}/${totalStudents})...`, pct, false, true);
           },
           shouldCancel: () => !isFillingActive
         });
