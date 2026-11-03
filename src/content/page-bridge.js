@@ -11,6 +11,10 @@
   function ensureBridgeInjected() {
     if (scriptInjected) return;
     try {
+      if (typeof window !== 'undefined' && (window.__VNEDU_PAGE_BRIDGE_MAIN_INITIALIZED__ || window.fillVnEduDataSafely)) {
+        scriptInjected = true;
+        return;
+      }
       if (document.getElementById('__vnedu_page_bridge_main_tag__')) {
         scriptInjected = true;
         return;
@@ -66,7 +70,7 @@
       document.addEventListener('VNEDU_FILL_DATA_SAFELY_RESPONSE', onResponse);
       window.addEventListener('VNEDU_FILL_DATA_SAFELY_RESPONSE', onResponse);
 
-      // 1. Phát sự kiện CustomEvent
+      // 1. Gửi yêu cầu qua CustomEvent chuẩn CSP (an toàn 100% với Manifest V3)
       const reqEvent = new CustomEvent('VNEDU_FILL_DATA_SAFELY_REQUEST', {
         detail: {
           requestId: requestId,
@@ -78,52 +82,14 @@
       document.dispatchEvent(reqEvent);
       window.dispatchEvent(reqEvent);
 
-      // 2. Đồng thời kích hoạt trực tiếp qua tiêm inline script trong Main World
-      try {
-        const inlineScript = document.createElement('script');
-        const dataJson = JSON.stringify(studentDataList || []);
-        inlineScript.textContent = `
-          (function() {
-            try {
-              var data = ${dataJson};
-              var res = null;
-              if (typeof window.fillVnEduDataSafely === 'function') {
-                res = window.fillVnEduDataSafely(data);
-              } else if (typeof window.__vneduFillVnEduDataSafely === 'function') {
-                res = window.__vneduFillVnEduDataSafely(data);
-              }
-              if (res) {
-                var respEvent = new CustomEvent('VNEDU_FILL_DATA_SAFELY_RESPONSE', {
-                  detail: { requestId: '${requestId}', success: true, result: res },
-                  bubbles: true
-                });
-                document.dispatchEvent(respEvent);
-                window.dispatchEvent(respEvent);
-              }
-            } catch(e) {
-              var errEvent = new CustomEvent('VNEDU_FILL_DATA_SAFELY_RESPONSE', {
-                detail: { requestId: '${requestId}', success: false, error: e.message || String(e) },
-                bubbles: true
-              });
-              document.dispatchEvent(errEvent);
-              window.dispatchEvent(errEvent);
-            }
-          })();
-        `;
-        (document.head || document.documentElement).appendChild(inlineScript);
-        inlineScript.remove();
-      } catch (e) {
-        console.log('[PageBridge] Thông báo inline fallback:', e && e.message ? e.message : e);
-      }
-
-      // Timeout 2500ms
+      // Timeout 1500ms
       timeoutId = setTimeout(function () {
         if (!isResolved) {
           cleanup();
           console.log('[PageBridge] Bảng điểm hoàn tất cập nhật qua DOM input.');
           resolve({ success: true, isCustomTable: true });
         }
-      }, 2500);
+      }, 1500);
     });
   }
 
