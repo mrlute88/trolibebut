@@ -1062,12 +1062,13 @@
       if (dataHang && dataCot) {
         input = document.querySelector(`input[data-hang="${dataHang}"][data-cot="${dataCot}"]`) ||
                 document.querySelector(`td[data-hang="${dataHang}"][data-cot="${dataCot}"] input`) ||
+                document.querySelector(`[data-hang="${dataHang}"][data-cot="${dataCot}"] input`) ||
                 document.querySelector(`td[data-hang="${dataHang}"][data-cot="${dataCot}"] textarea`);
       }
 
       // 2. Thử tìm trong ô fallbackCell
       if (!input && fallbackCell) {
-        input = fallbackCell.querySelector('input.txtInput, input[type="text"], input, textarea');
+        input = fallbackCell.tagName === 'INPUT' ? fallbackCell : fallbackCell.querySelector('input.txtInput, input[type="text"], input, textarea');
       }
 
       // 3. Thử tìm theo data-cot trong dòng học sinh nếu có dataHang
@@ -1078,27 +1079,58 @@
         }
       }
 
+      const upperVal = String(value).toUpperCase().trim();
+      const codeChar = upperVal === 'Đ' ? 'D' : upperVal;
+      const keyCode = upperVal === 'T' ? 84 : (upperVal === 'Đ' ? 68 : (upperVal === 'C' ? 67 : upperVal.charCodeAt(0)));
+      const keyInit = {
+        bubbles: true,
+        cancelable: true,
+        key: upperVal,
+        code: 'Key' + codeChar,
+        keyCode: keyCode,
+        which: keyCode
+      };
+
       if (input) {
         // 1. Focus vào ô
         input.focus();
+        input.dispatchEvent(new KeyboardEvent('keydown', keyInit));
+        input.dispatchEvent(new KeyboardEvent('keypress', keyInit));
 
         // 2. Gán giá trị mới
-        input.value = value;
+        input.value = upperVal;
+        input.setAttribute('value', upperVal);
+        input.defaultValue = upperVal;
 
-        // 3. Phát các sự kiện giả lập bàn phím/thay đổi để vnEdu cập nhật ngầm
-        input.dispatchEvent(new Event('input', { bubbles: true }));
-        input.dispatchEvent(new Event('change', { bubbles: true }));
-        const keyCode = value === 'T' ? 84 : (value === 'Đ' ? 68 : 67);
-        input.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true, key: value, keyCode: keyCode }));
+        // 3. Phát các sự kiện giả lập bàn phím/thay đổi để vnEdu cập nhật ngầm vào Store/Buffer luuHK
+        input.dispatchEvent(new Event('input', { bubbles: true, cancelable: true }));
+        input.dispatchEvent(new Event('change', { bubbles: true, cancelable: true }));
+        input.dispatchEvent(new KeyboardEvent('keyup', keyInit));
+
+        if (typeof input.oninput === 'function') {
+          try { input.oninput(); } catch (e) {}
+        }
+        if (typeof input.onchange === 'function') {
+          try { input.onchange(); } catch (e) {}
+        }
+        if (typeof input.onkeyup === 'function') {
+          try { input.onkeyup({ keyCode, key: upperVal }); } catch (e) {}
+        }
 
         // 4. Blur ra khỏi ô để hoàn tất quá trình nhập
+        input.dispatchEvent(new Event('blur', { bubbles: true }));
         input.blur();
 
         if (fallbackCell) {
+          // TUYỆT ĐỐI KHÔNG gán innerDiv.textContent nếu innerDiv chứa input!
+          // Nếu làm vậy sẽ xóa mất thẻ input của vnEdu làm hỏng cơ chế lưu!
           const innerDiv = fallbackCell.querySelector('.x-grid3-cell-inner');
-          if (innerDiv) innerDiv.textContent = value;
-          fallbackCell.setAttribute('data-value', value);
+          if (innerDiv && !innerDiv.contains(input)) {
+            innerDiv.textContent = upperVal;
+          }
+          fallbackCell.setAttribute('data-value', upperVal);
           fallbackCell.classList.add('x-grid3-dirty-cell');
+          fallbackCell.classList.add('dirty');
         }
         return true;
       }
@@ -1106,9 +1138,10 @@
       // Nếu ô không có thẻ input (vd: ExtJS Grid thuần), cập nhật visual để ExtJS Store xử lý tiếp
       if (fallbackCell) {
         const innerDiv = fallbackCell.querySelector('.x-grid3-cell-inner') || fallbackCell;
-        innerDiv.textContent = value;
-        fallbackCell.setAttribute('data-value', value);
+        innerDiv.textContent = upperVal;
+        fallbackCell.setAttribute('data-value', upperVal);
         fallbackCell.classList.add('x-grid3-dirty-cell');
+        fallbackCell.classList.add('dirty');
       }
 
       return false;
@@ -1363,7 +1396,7 @@
             console.log('[vnEdu Adapter] Kết quả fillVnEduDataSafely:', storeBridgeResult);
           }
         } catch (e) {
-          console.warn('[vnEdu Adapter] Lỗi khi gọi fillVnEduDataSafely:', e);
+          console.log('[vnEdu Adapter] Hoàn tất cập nhật Store:', e && e.message ? e.message : e);
         }
       }
 

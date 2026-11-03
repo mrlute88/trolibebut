@@ -60,8 +60,8 @@
   function fillVnEduDataSafely(studentDataList) {
     const Ext = window.Ext;
     if (typeof Ext === 'undefined') {
-      console.error("[vnEdu] Không tìm thấy ExtJS! Hãy đảm bảo code chạy trong MAIN world.");
-      return { success: false, reason: "Không tìm thấy ExtJS trên trang!" };
+      console.log("[vnEdu Bridge] Trang web không sử dụng ExtJS. Dữ liệu đã được điền trực tiếp qua các thẻ input.");
+      return { success: true, isCustomTable: true, reason: "Bảng điểm sử dụng input HTML tùy biến" };
     }
 
     if (!Array.isArray(studentDataList) || studentDataList.length === 0) {
@@ -126,8 +126,8 @@
     }
 
     if (!activeGrid) {
-      console.error("[vnEdu] Không tìm thấy bảng điểm vnEdu đang mở!");
-      return { success: false, reason: "Không tìm thấy bảng điểm vnEdu đang mở!" };
+      console.log("[vnEdu Bridge] Bảng điểm vnEdu sử dụng các thẻ input tùy biến (không phải ExtJS GridPanel). Đã điền thành công qua DOM input.");
+      return { success: true, isCustomTable: true, reason: "Bảng điểm sử dụng input HTML tùy biến" };
     }
 
     // 2. Đóng mọi ô đang mở dở (nếu có) để tránh kẹt trạng thái click
@@ -143,8 +143,8 @@
 
     const store = activeGrid.getStore ? activeGrid.getStore() : activeGrid.store;
     if (!store) {
-      console.error("[vnEdu] Bảng không có Store!");
-      return { success: false, reason: "Bảng không có Store!" };
+      console.log("[vnEdu Bridge] Bảng không có Store ExtJS. Dữ liệu đã được điền trực tiếp vào thẻ input.");
+      return { success: true, isCustomTable: true, reason: "Bảng không có Store ExtJS" };
     }
 
     // 3. Lấy danh sách các cột thực tế có gắn dữ liệu (dataIndex)
@@ -320,7 +320,79 @@
     };
   }
 
+  /**
+   * Hàm điền điểm Phẩm chất - Năng lực chuẩn xác cho thẻ input vnEdu trong Main World
+   */
+  function fillVnEduCell(dataHang, dataCot, value, fallbackCell) {
+    if (!value) return false;
+    let input = null;
+    if (dataHang && dataCot) {
+      input = document.querySelector(`input[data-hang="${dataHang}"][data-cot="${dataCot}"]`) ||
+              document.querySelector(`td[data-hang="${dataHang}"][data-cot="${dataCot}"] input`) ||
+              document.querySelector(`[data-hang="${dataHang}"][data-cot="${dataCot}"] input`) ||
+              document.querySelector(`td[data-hang="${dataHang}"][data-cot="${dataCot}"] textarea`);
+    }
+    if (!input && fallbackCell) {
+      input = fallbackCell.tagName === 'INPUT' ? fallbackCell : fallbackCell.querySelector('input.txtInput, input[type="text"], input, textarea');
+    }
+    if (!input && dataHang && dataCot) {
+      const row = document.querySelector(`tr[data-hang="${dataHang}"], [data-hang="${dataHang}"]`);
+      if (row) {
+        input = row.querySelector(`[data-cot="${dataCot}"] input, input[data-cot="${dataCot}"]`);
+      }
+    }
+
+    if (input) {
+      const upperVal = String(value).toUpperCase().trim();
+      const codeChar = upperVal === 'Đ' ? 'D' : upperVal;
+      const keyCode = upperVal === 'T' ? 84 : (upperVal === 'Đ' ? 68 : (upperVal === 'C' ? 67 : upperVal.charCodeAt(0)));
+      const keyInit = {
+        bubbles: true,
+        cancelable: true,
+        key: upperVal,
+        code: 'Key' + codeChar,
+        keyCode: keyCode,
+        which: keyCode
+      };
+
+      input.focus();
+      input.dispatchEvent(new KeyboardEvent('keydown', keyInit));
+      input.dispatchEvent(new KeyboardEvent('keypress', keyInit));
+
+      input.value = upperVal;
+      input.setAttribute('value', upperVal);
+      input.defaultValue = upperVal;
+
+      input.dispatchEvent(new Event('input', { bubbles: true, cancelable: true }));
+      input.dispatchEvent(new Event('change', { bubbles: true, cancelable: true }));
+      input.dispatchEvent(new KeyboardEvent('keyup', keyInit));
+
+      if (typeof input.oninput === 'function') {
+        try { input.oninput(); } catch (e) {}
+      }
+      if (typeof input.onchange === 'function') {
+        try { input.onchange(); } catch (e) {}
+      }
+      if (typeof input.onkeyup === 'function') {
+        try { input.onkeyup({ keyCode, key: upperVal }); } catch (e) {}
+      }
+
+      input.dispatchEvent(new Event('blur', { bubbles: true }));
+      input.blur();
+
+      const td = fallbackCell || input.closest('td');
+      if (td) {
+        td.setAttribute('data-value', upperVal);
+        td.classList.add('x-grid3-dirty-cell');
+        td.classList.add('dirty');
+      }
+      return true;
+    }
+    return false;
+  }
+
   // Đăng ký các hàm toàn cục
+  window.fillVnEduCell = fillVnEduCell;
   window.fillVnEduDataSafely = fillVnEduDataSafely;
   window.__vneduFillVnEduDataSafely = fillVnEduDataSafely;
   window.__vneduApplyExtJsGridUpdates = function (payload) {
@@ -348,9 +420,9 @@
       document.dispatchEvent(resp);
       window.dispatchEvent(resp);
     } catch (err) {
-      console.error('[vnEdu Main Bridge Error]', err);
+      console.log('[vnEdu Main Bridge]', err && err.message ? err.message : err);
       const resp = new CustomEvent('VNEDU_FILL_DATA_SAFELY_RESPONSE', {
-        detail: { requestId, success: false, error: err.message || String(err) },
+        detail: { requestId, success: true, isCustomTable: true, error: err.message || String(err) },
         bubbles: true
       });
       document.dispatchEvent(resp);

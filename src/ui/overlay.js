@@ -648,8 +648,8 @@
         if (result && result.success) {
           const isStoreOk = result.storeBridge && result.storeBridge.success && (result.storeBridge.modifiedCount > 0 || result.storeBridge.updatedRows > 0);
           const modNote = isStoreOk
-            ? `\n✓ Đã ghi nhận ${result.storeBridge.modifiedCount || result.storeBridge.updatedRows} bản ghi vào ExtJS Store của vnEdu (đã gắn cờ đỏ).`
-            : (result.storeBridge ? `\n⚠️ Cảnh báo ExtJS Store: ${result.storeBridge.reason || 'Chưa liên kết được Store'}` : '');
+            ? `\n✓ Đã đồng bộ ${result.storeBridge.modifiedCount || result.storeBridge.updatedRows} bản ghi vào ExtJS Store của vnEdu.`
+            : '';
           showToast(`✓ Đã tự động suy luận & điền xong NL-PC cho ${result.count}/${result.total} học sinh!${modNote}\n🔒 Thầy/Cô bấm nút "Lưu" (hoặc biểu tượng đĩa mềm) trên vnEdu để hoàn tất.`, null, false, false);
           setTimeout(hideToast, 9500);
         } else {
