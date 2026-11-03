@@ -517,6 +517,7 @@
         const cellsInCol = [];
         const textsInCol = [];
         let colClass = '';
+        let dataCot = '';
         for (let r = 0; r < grid.length; r++) {
           const cell = grid[r] ? grid[r][c] : null;
           if (cell && !cellsInCol.includes(cell)) {
@@ -527,16 +528,24 @@
               const match = cell.className.match(/(?:x-grid3-td-|x-grid3-hd-|x-grid3-col-)([a-zA-Z0-9_\-]+)/);
               if (match) colClass = 'x-grid3-td-' + match[1];
             }
+            if (!dataCot) {
+              dataCot = cell.getAttribute ? (cell.getAttribute('data-cot') || cell.querySelector?.('[data-cot]')?.getAttribute('data-cot') || '') : '';
+            }
           }
         }
 
-        // Nếu header chưa có colClass (do nhóm cột nhiều tầng), trích xuất từ sampleDataRow
-        if (!colClass && sampleDataRow) {
+        // Nếu header chưa có colClass hoặc dataCot, trích xuất từ sampleDataRow
+        if (sampleDataRow) {
           const sampleCells = Array.from(sampleDataRow.querySelectorAll ? sampleDataRow.querySelectorAll('td, [role="gridcell"], .x-grid3-cell') : sampleDataRow.children);
           const sCell = sampleCells[c];
-          if (sCell && sCell.className) {
-            const match = sCell.className.match(/(?:x-grid3-td-|x-grid3-hd-|x-grid3-col-)([a-zA-Z0-9_\-]+)/);
-            if (match) colClass = 'x-grid3-td-' + match[1];
+          if (sCell) {
+            if (!colClass && sCell.className) {
+              const match = sCell.className.match(/(?:x-grid3-td-|x-grid3-hd-|x-grid3-col-)([a-zA-Z0-9_\-]+)/);
+              if (match) colClass = 'x-grid3-td-' + match[1];
+            }
+            if (!dataCot) {
+              dataCot = sCell.getAttribute ? (sCell.getAttribute('data-cot') || sCell.querySelector?.('[data-cot]')?.getAttribute('data-cot') || '') : '';
+            }
           }
         }
         columns.push({
@@ -545,6 +554,7 @@
           bottomText: textsInCol.length > 0 ? textsInCol[textsInCol.length - 1] : '',
           texts: textsInCol,
           colClass,
+          dataCot,
           cells: cellsInCol
         });
       }
@@ -1036,49 +1046,77 @@
       return true;
     }
 
-    writeRatingToGridCell(cell, ratingValue) {
-      if (!cell || !ratingValue) return false;
-      const innerDiv = cell.querySelector('.x-grid3-cell-inner') || cell;
+    /**
+     * Hàm điền điểm Phẩm chất - Năng lực chuẩn xác cho vnEdu
+     * @param {String} dataHang - Giá trị thuộc tính data-hang của học sinh (ví dụ: "H_5064306607")
+     * @param {String} dataCot - Giá trị thuộc tính data-cot của cột (ví dụ: "T_1", "T_2"...)
+     * @param {String} value - Giá trị cần điền ("T", "Đ", hoặc "C")
+     * @param {HTMLElement} [fallbackCell] - Ô td trong bảng nếu cần trích xuất trực tiếp
+     */
+    fillVnEduCell(dataHang, dataCot, value, fallbackCell) {
+      if (!value) return false;
 
-      // 1. Cập nhật DOM trực quan
-      innerDiv.textContent = ratingValue;
-      innerDiv.innerText = ratingValue;
-      cell.setAttribute('data-value', ratingValue);
+      let input = null;
 
-      // Thêm cờ đỏ dirty cell của ExtJS
-      cell.classList.add('x-grid3-dirty-cell');
+      // 1. Tìm đúng thẻ input dựa trên data-hang và data-cot trong bảng vnEdu
+      if (dataHang && dataCot) {
+        input = document.querySelector(`input[data-hang="${dataHang}"][data-cot="${dataCot}"]`) ||
+                document.querySelector(`td[data-hang="${dataHang}"][data-cot="${dataCot}"] input`) ||
+                document.querySelector(`td[data-hang="${dataHang}"][data-cot="${dataCot}"] textarea`);
+      }
 
-      // 2. Giả lập chu kỳ tương tác DOM (mousedown, click, dblclick) và kích hoạt ExtJS Editor nếu có
-      try {
-        cell.dispatchEvent(new MouseEvent('mousedown', { bubbles: true, cancelable: true }));
-        cell.dispatchEvent(new MouseEvent('mouseup', { bubbles: true, cancelable: true }));
-        cell.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
-        cell.dispatchEvent(new MouseEvent('dblclick', { bubbles: true, cancelable: true }));
+      // 2. Thử tìm trong ô fallbackCell
+      if (!input && fallbackCell) {
+        input = fallbackCell.querySelector('input.txtInput, input[type="text"], input, textarea');
+      }
 
-        // Kiểm tra xem ExtJS Editor có mở thẻ input nổi nào không
-        const activeInput = cell.querySelector('input, textarea') ||
-                            document.querySelector('.x-grid-editor input, .x-editor input, input.x-form-focus');
-        if (activeInput) {
-          activeInput.focus();
-          activeInput.value = ratingValue;
-          activeInput.dispatchEvent(new Event('input', { bubbles: true }));
-          activeInput.dispatchEvent(new Event('change', { bubbles: true }));
-          activeInput.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', keyCode: 13, which: 13, bubbles: true }));
-          activeInput.dispatchEvent(new KeyboardEvent('keyup', { key: 'Enter', keyCode: 13, which: 13, bubbles: true }));
-          activeInput.blur();
+      // 3. Thử tìm theo data-cot trong dòng học sinh nếu có dataHang
+      if (!input && dataHang && dataCot) {
+        const row = document.querySelector(`tr[data-hang="${dataHang}"]`) || document.querySelector(`[data-hang="${dataHang}"]`);
+        if (row) {
+          input = row.querySelector(`[data-cot="${dataCot}"] input, input[data-cot="${dataCot}"]`);
         }
-      } catch (e) {}
+      }
 
-      // 3. Hiệu ứng nhấp nháy xanh lá báo hiệu đã điền
-      try {
-        cell.style.transition = 'background-color 0.3s ease';
-        cell.style.backgroundColor = '#DCFCE7';
-        setTimeout(() => {
-          cell.style.backgroundColor = '';
-        }, 700);
-      } catch (e) {}
+      if (input) {
+        // 1. Focus vào ô
+        input.focus();
 
-      return true;
+        // 2. Gán giá trị mới
+        input.value = value;
+
+        // 3. Phát các sự kiện giả lập bàn phím/thay đổi để vnEdu cập nhật ngầm
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+        input.dispatchEvent(new Event('change', { bubbles: true }));
+        const keyCode = value === 'T' ? 84 : (value === 'Đ' ? 68 : 67);
+        input.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true, key: value, keyCode: keyCode }));
+
+        // 4. Blur ra khỏi ô để hoàn tất quá trình nhập
+        input.blur();
+
+        if (fallbackCell) {
+          const innerDiv = fallbackCell.querySelector('.x-grid3-cell-inner');
+          if (innerDiv) innerDiv.textContent = value;
+          fallbackCell.setAttribute('data-value', value);
+          fallbackCell.classList.add('x-grid3-dirty-cell');
+        }
+        return true;
+      }
+
+      // Nếu ô không có thẻ input (vd: ExtJS Grid thuần), cập nhật visual để ExtJS Store xử lý tiếp
+      if (fallbackCell) {
+        const innerDiv = fallbackCell.querySelector('.x-grid3-cell-inner') || fallbackCell;
+        innerDiv.textContent = value;
+        fallbackCell.setAttribute('data-value', value);
+        fallbackCell.classList.add('x-grid3-dirty-cell');
+      }
+
+      return false;
+    }
+
+    writeRatingToGridCell(cell, ratingValue, dataHang, dataCot) {
+      if (!cell || !ratingValue) return false;
+      return this.fillVnEduCell(dataHang, dataCot, ratingValue, cell);
     }
 
     isCompetencySummaryGrid() {
@@ -1124,35 +1162,35 @@
         if (isTargetSection) {
           // 1. Target columns trong khung đỏ:
           if (/tự\s*chủ/i.test(txt)) {
-            targetColumns.push({ key: 'tự chủ và tự học', name: 'Tự chủ và tự học', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'tự chủ và tự học', name: 'Tự chủ và tự học', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/giao\s*tiếp/i.test(txt)) {
-            targetColumns.push({ key: 'giao tiếp và hợp tác', name: 'Giao tiếp và hợp tác', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'giao tiếp và hợp tác', name: 'Giao tiếp và hợp tác', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/gqvđ|giải\s*quyết\s*vấn\s*đề|sáng\s*tạo/i.test(txt)) {
-            targetColumns.push({ key: 'gqvd và sáng tạo', name: 'GQVĐ và sáng tạo', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'gqvd và sáng tạo', name: 'GQVĐ và sáng tạo', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/ngôn\s*ngữ/i.test(txt)) {
-            targetColumns.push({ key: 'ngôn ngữ', name: 'Ngôn ngữ', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'ngôn ngữ', name: 'Ngôn ngữ', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/tính\s*toán/i.test(txt)) {
-            targetColumns.push({ key: 'tính toán', name: 'Tính toán', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'tính toán', name: 'Tính toán', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/khoa\s*học/i.test(txt)) {
-            targetColumns.push({ key: 'khoa học', name: 'Khoa học', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'khoa học', name: 'Khoa học', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/công\s*nghệ/i.test(txt)) {
-            targetColumns.push({ key: 'công nghệ', name: 'Công nghệ', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'công nghệ', name: 'Công nghệ', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/tin\s*học/i.test(txt)) {
-            targetColumns.push({ key: 'tin học', name: 'Tin học', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'tin học', name: 'Tin học', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/thẩm\s*m[ĩỹ]/i.test(txt)) {
-            targetColumns.push({ key: 'thẩm mĩ', name: 'Thẩm mĩ', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'thẩm mĩ', name: 'Thẩm mĩ', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/thể\s*chất/i.test(txt)) {
-            targetColumns.push({ key: 'thể chất', name: 'Thể chất', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'thể chất', name: 'Thể chất', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/yêu\s*nước/i.test(txt)) {
-            targetColumns.push({ key: 'yêu nước', name: 'Yêu nước', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'yêu nước', name: 'Yêu nước', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/nhân\s*ái/i.test(txt)) {
-            targetColumns.push({ key: 'nhân ái', name: 'Nhân ái', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'nhân ái', name: 'Nhân ái', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/chăm\s*chỉ/i.test(txt)) {
-            targetColumns.push({ key: 'chăm chỉ', name: 'Chăm chỉ', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'chăm chỉ', name: 'Chăm chỉ', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/trung\s*thực/i.test(txt)) {
-            targetColumns.push({ key: 'trung thực', name: 'Trung thực', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'trung thực', name: 'Trung thực', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           } else if (/trách\s*nhiệm/i.test(txt)) {
-            targetColumns.push({ key: 'trách nhiệm', name: 'Trách nhiệm', index: col.index, colClass: col.colClass });
+            targetColumns.push({ key: 'trách nhiệm', name: 'Trách nhiệm', index: col.index, colClass: col.colClass, dataCot: col.dataCot });
           }
         } else {
           // 2. Subject columns ở bên trái:
@@ -1243,12 +1281,18 @@
         const student = students[i] || { studentName: `Học sinh ${i + 1}` };
         const cells = Array.from(row.querySelectorAll('td, .x-grid3-cell'));
 
+        // Lấy mã hàng (data-hang) của học sinh
+        const dataHang = row.getAttribute('data-hang') ||
+                         row.querySelector('[data-hang]')?.getAttribute('data-hang') ||
+                         cells[0]?.getAttribute('data-hang') ||
+                         (row.id && (row.id.startsWith('H_') || row.id.startsWith('row_')) ? row.id : '');
+
         // 1. Đọc dữ liệu các môn học của học sinh từ row
         const studentSubjects = {};
         for (const [subKey, colInfo] of Object.entries(structure.subjectColumns)) {
           const cell = colInfo.colClass ? row.querySelector('.' + colInfo.colClass) : cells[colInfo.index];
           if (!cell) continue;
-          const txt = (cell.textContent || '').trim();
+          const txt = (cell.textContent || (cell.querySelector('input')?.value) || '').trim();
           const [subName, subProp] = subKey.split('__');
           if (!studentSubjects[subName]) studentSubjects[subName] = { rating: null, score: null };
           if (subProp === 'rating') {
@@ -1270,7 +1314,7 @@
           subjects: studentSubjects
         }, detectedGrade);
 
-        // 3. Gom dữ liệu chỉ tiêu năng lực - phẩm chất (không gán DOM trực tiếp để tránh làm đơ ô)
+        // 3. Gom và điền trực tiếp vào từng ô input của vnEdu theo chuẩn fillVnEduCell
         const studentInput = {};
         for (const targetCol of structure.targetColumns) {
           const targetVal = inferenceResult.rawMap[targetCol.key];
@@ -1280,6 +1324,12 @@
           if (targetCol.index !== undefined) {
             studentInput[targetCol.index] = targetVal;
           }
+
+          const cell = targetCol.colClass ? row.querySelector('.' + targetCol.colClass) : cells[targetCol.index];
+          const dataCot = targetCol.dataCot || cell?.getAttribute('data-cot') || cell?.querySelector('[data-cot]')?.getAttribute('data-cot') || '';
+
+          // Thực hiện điền chuẩn xác bằng input.value + change + keyup + blur
+          this.fillVnEduCell(dataHang, dataCot, targetVal, cell);
         }
 
         studentDataList.push(studentInput);
@@ -1292,10 +1342,11 @@
             studentName: student.studentName
           });
         }
+
+        await new Promise(r => setTimeout(r, 20));
       }
 
-      // 4. CẬP NHẬT AN TOÀN QUA API GỐC EXTJS STORE (fillVnEduDataSafely)
-      // Tự động dò tên cột dataIndex, gán qua record.set, tự động gắn cờ dirty đỏ và giữ nguyên click sửa ô 100%
+      // 4. ĐỒNG THỜI KÍCH HOẠT QUA EXTJS STORE API (fillVnEduDataSafely - Bảo vệ kép 100%)
       let storeBridgeResult = null;
       if (studentDataList.length > 0) {
         try {
