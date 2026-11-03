@@ -1027,22 +1027,37 @@
     }
 
     writeRatingToGridCell(cell, ratingValue) {
-      if (!cell || !ratingValue) return false;
+      if (!cell || ratingValue === undefined || ratingValue === null) return false;
       const innerDiv = cell.querySelector('.x-grid3-cell-inner') || cell;
 
-      // 1. Cập nhật DOM trực quan
-      innerDiv.textContent = ratingValue;
-      innerDiv.innerText = ratingValue;
-      cell.setAttribute('data-value', ratingValue);
+      // Chuẩn hóa sang số theo quy tắc vnEdu: "Đ" -> 1, "C" -> 2, "T" -> 3
+      let numericVal = ratingValue;
+      const s = String(ratingValue).trim().toUpperCase();
+      if (s === 'Đ' || s === 'D' || s === '1') numericVal = 1;
+      else if (s === 'C' || s === '2') numericVal = 2;
+      else if (s === 'T' || s === '3') numericVal = 3;
+
+      const textVal = String(numericVal);
+
+      // 1. Cập nhật DOM trực quan với mã số 1, 2, 3
+      innerDiv.textContent = textVal;
+      innerDiv.innerText = textVal;
+      cell.setAttribute('data-value', textVal);
+      cell.setAttribute('data-rating', textVal);
 
       // Thêm cờ đỏ dirty cell của ExtJS
       cell.classList.add('x-grid3-dirty-cell');
 
-      // 2. Kích hoạt sự kiện ExtJS
+      // 2. Kích hoạt sự kiện ExtJS (chuột và phím số 1, 2, 3)
       try {
         cell.dispatchEvent(new MouseEvent('mousedown', { bubbles: true, cancelable: true }));
         cell.dispatchEvent(new MouseEvent('mouseup', { bubbles: true, cancelable: true }));
         cell.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
+
+        const keyCode = 48 + Number(numericVal);
+        cell.dispatchEvent(new KeyboardEvent('keydown', { key: textVal, keyCode: keyCode, bubbles: true }));
+        cell.dispatchEvent(new KeyboardEvent('keypress', { key: textVal, keyCode: keyCode, bubbles: true }));
+        cell.dispatchEvent(new KeyboardEvent('keyup', { key: textVal, keyCode: keyCode, bubbles: true }));
       } catch (e) {}
 
       // 3. Hiệu ứng nhấp nháy xanh lá báo hiệu đã điền
@@ -1246,11 +1261,17 @@
           subjects: studentSubjects
         }, detectedGrade);
 
-        // 3. Gom và điền giá trị suy luận vào từng cột mục tiêu
+        // 3. Gom và điền giá trị suy luận vào từng cột mục tiêu (Quy tắc: Đ -> 1, C -> 2, T -> 3)
         const rowFieldUpdates = {};
         for (const targetCol of structure.targetColumns) {
-          const targetVal = inferenceResult.rawMap[targetCol.key];
-          if (!targetVal) continue;
+          const rawVal = inferenceResult.rawMap[targetCol.key];
+          if (rawVal === undefined || rawVal === null || rawVal === '') continue;
+
+          let targetVal = rawVal;
+          const s = String(rawVal).trim().toUpperCase();
+          if (s === 'Đ' || s === 'D' || s === '1') targetVal = 1;
+          else if (s === 'C' || s === '2') targetVal = 2;
+          else if (s === 'T' || s === '3') targetVal = 3;
 
           rowFieldUpdates[targetCol.key] = targetVal;
 

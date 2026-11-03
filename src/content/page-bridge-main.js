@@ -271,7 +271,14 @@
 
       for (const rawKey in fields) {
         const val = fields[rawKey];
-        if (!val) continue;
+        if (val === undefined || val === null || val === '') continue;
+
+        // Chuyển đổi mã số theo quy tắc: "Đ" -> 1, "C" -> 2, "T" -> 3
+        let storeVal = val;
+        const s = String(val).trim().toUpperCase();
+        if (s === 'Đ' || s === 'D' || s === '1') storeVal = 1;
+        else if (s === 'C' || s === '2') storeVal = 2;
+        else if (s === 'T' || s === '3') storeVal = 3;
 
         const canonicalKey = normalizeText(rawKey);
         const dataIndex = keyToDataIndex[canonicalKey] ||
@@ -280,11 +287,11 @@
 
         if (dataIndex) {
           const oldVal = rec.get ? rec.get(dataIndex) : rec.data[dataIndex];
-          if (oldVal !== val) {
+          if (oldVal != storeVal) {
             if (typeof rec.set === 'function') {
-              rec.set(dataIndex, val);
+              rec.set(dataIndex, storeVal);
             } else {
-              rec.data[dataIndex] = val;
+              rec.data[dataIndex] = storeVal;
             }
 
             // Đảm bảo record được đánh dấu modified
@@ -304,7 +311,7 @@
                   grid: grid,
                   record: rec,
                   field: dataIndex,
-                  value: val,
+                  value: storeVal,
                   originalValue: oldVal,
                   row: rowIndex
                 });

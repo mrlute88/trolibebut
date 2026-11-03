@@ -54,6 +54,21 @@
   }
 
   /**
+   * Chuyển đổi mức xếp loại Năng lực - Phẩm chất sang mã số lưu trữ trên vnEdu
+   * Quy tắc của vnEdu:
+   *  "Đ" (Đạt)         -> 1
+   *  "C" (Cần cố gắng) -> 2
+   *  "T" (Tốt)         -> 3
+   */
+  function ratingToNumeric(rating) {
+    const r = String(rating || '').trim().toUpperCase();
+    if (r === 'Đ' || r === 'D' || r === '1') return 1;
+    if (r === 'C' || r === '2') return 2;
+    if (r === 'T' || r === '3') return 3;
+    return 1;
+  }
+
+  /**
    * Động cơ suy luận 15 chỉ số Năng lực & Phẩm chất chuẩn Thông tư 27
    * @param {Object} studentRowData Thông tin học sinh và các môn học
    * @param {string|number} grade Khối lớp ('1', '2', '3', '4', '5')
@@ -376,8 +391,28 @@
       trungThuc: pcTrungThuc,
       trachNhiem: pcTrachNhiem,
 
-      // Mapping danh pháp hiển thị cột tiếng Việt trên ExtJS Grid
+      // Mapping danh pháp mã số chuẩn vnEdu: Đ = 1, C = 2, T = 3
       rawMap: {
+        'tự chủ và tự học': ratingToNumeric(nlTuChu),
+        'giao tiếp và hợp tác': ratingToNumeric(nlGiaoTiep),
+        'gqvd và sáng tạo': ratingToNumeric(nlGQVD),
+        'giải quyết vấn đề và sáng tạo': ratingToNumeric(nlGQVD),
+        'ngôn ngữ': ratingToNumeric(nlNgonNgu),
+        'tính toán': ratingToNumeric(nlTinhToan),
+        'khoa học': ratingToNumeric(nlKhoaHoc),
+        'công nghệ': ratingToNumeric(nlCongNghe),
+        'tin học': ratingToNumeric(nlTinHoc),
+        'thẩm mĩ': ratingToNumeric(nlThamMi),
+        'thẩm mỹ': ratingToNumeric(nlThamMi),
+        'thể chất': ratingToNumeric(nlTheChat),
+        'yêu nước': ratingToNumeric(pcYeuNuoc),
+        'nhân ái': ratingToNumeric(pcNhanAi),
+        'chăm chỉ': ratingToNumeric(pcChamChi),
+        'trung thực': ratingToNumeric(pcTrungThuc),
+        'trách nhiệm': ratingToNumeric(pcTrachNhiem)
+      },
+      // Mapping dạng chữ cái T / Đ / C dự phòng
+      rawMapLetters: {
         'tự chủ và tự học': nlTuChu,
         'giao tiếp và hợp tác': nlGiaoTiep,
         'gqvd và sáng tạo': nlGQVD,
@@ -401,6 +436,7 @@
 
   return {
     normalizeSubjectRating,
+    ratingToNumeric,
     inferStudentCompetencies
   };
 });

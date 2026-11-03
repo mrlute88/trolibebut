@@ -259,11 +259,11 @@
       } catch (e) {}
 
       if (isSummaryGrid) {
-        btnMain.title = 'Tự động đọc điểm số các môn bên trái và suy luận xếp loại T/Đ/C cho Năng lực - Phẩm chất bên phải';
+        btnMain.title = 'Tự động đọc điểm số các môn bên trái và suy luận xếp loại NL-PC theo mã số: Đ=1, C=2, T=3';
         iconSpan.textContent = '⚡';
-        textSpan.textContent = 'Điền NL - PC (T, Đ, C)';
+        textSpan.textContent = 'Điền NL - PC (1, 2, 3)';
         if (mascotSpeech) {
-          mascotSpeech.textContent = 'Em đã nhận diện Bảng tổng hợp NL-PC! Bấm để điền nhé ✨';
+          mascotSpeech.textContent = 'Em đã nhận diện Bảng tổng hợp NL-PC! Điền mã số Đ=1, C=2, T=3 nhé ✨';
         }
       } else {
         btnMain.title = teacher
@@ -636,7 +636,7 @@
         const result = await summaryAdapter.fillSummaryGridCompetencies({
           onProgress: ({ currentIndex, totalStudents, studentName }) => {
             const pct = Math.round((currentIndex / totalStudents) * 100);
-            showToast(`⚡ Đang suy luận & điền NL-PC: ${studentName} (${currentIndex}/${totalStudents})...`, pct, false, true);
+            showToast(`⚡ Đang suy luận & điền NL-PC (Đ=1, C=2, T=3): ${studentName} (${currentIndex}/${totalStudents})...`, pct, false, true);
           },
           shouldCancel: () => !isFillingActive
         });
@@ -649,7 +649,7 @@
           const modNote = (result.storeBridge && result.storeBridge.modifiedCount > 0)
             ? ` (Đã ghi nhận ${result.storeBridge.modifiedCount} bản ghi vào hệ thống vnEdu)`
             : '';
-          showToast(`✓ Đã tự động suy luận & điền xong NL-PC cho ${result.count}/${result.total} học sinh!${modNote}\n🔒 Thầy/Cô bấm nút "Lưu" hoặc "Ghi" trên vnEdu để hoàn tất.`, null, false, false);
+          showToast(`✓ Đã tự động suy luận & điền xong NL-PC theo mã số (Đ=1, C=2, T=3) cho ${result.count}/${result.total} học sinh!${modNote}\n🔒 Thầy/Cô bấm nút "Lưu" hoặc "Ghi" trên vnEdu để hoàn tất.`, null, false, false);
           setTimeout(hideToast, 8500);
         } else {
           showToast(`⚠️ ${result?.reason || 'Có lỗi khi phân tích dữ liệu trên bảng.'}`, null, true, false);
