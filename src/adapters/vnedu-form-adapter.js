@@ -847,9 +847,14 @@
       const period = options.period || this.detectedPeriod || 'GK1';
       const edLevel = options.educationLevel || 'PRIMARY';
 
+      const classInfo = this.detectClass ? this.detectClass() : null;
+      const detectedGrade = classInfo?.grade || (classInfo?.className ? classInfo.className.match(/^(1[0-2]|[1-9])/)?.[1] : '') || options.grade || '';
+
       const commentVars = {
         period: period,
         educationLevel: edLevel,
+        grade: detectedGrade,
+        className: classInfo?.className || '',
         studentIndex: studentIdx,
         maxLength: 80
       };

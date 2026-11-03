@@ -43,7 +43,7 @@ chrome.commands.onCommand.addListener(async (command) => {
       await chrome.tabs.sendMessage(tab.id, { action: 'SCAN_PAGE' });
     }
   } catch (err) {
-    console.warn('[vnEdu Assistant] Không thể gửi lệnh tới tab:', err);
+    console.log('[vnEdu Assistant] Thông báo gửi lệnh tới tab:', err && err.message ? err.message : err);
   }
 });
 

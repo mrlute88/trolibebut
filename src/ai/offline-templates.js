@@ -136,21 +136,21 @@
                 "Tính toán nhanh, chính xác, hiểu bài và vận dụng tốt các phép tính vào giải toán.",
                 "Nắm chắc kiến thức toán học, viết chữ số cẩn thận.",
                 "Kỹ năng làm tính rất tốt, tiếp thu bài nhanh.",
-                "Tư duy số học nhanh nhẹn, hoàn thành các bài toán đúng giờ và luôn nhiệt tình giúp đỡ bạn.",
+                "Tư duy số học nhanh nhẹn, hoàn thành các bài toán đúng giờ và luôn nhiệt tình giúp đỡ bạn bè.",
                 "Tính nhẩm nhanh, nắm vững bảng cộng trừ nhân chia, trình bày bài sạch sẽ và khoa học.",
                 "Hiểu bài sâu, giải toán có lời văn mạch lạc, câu lời giải và phép tính rất chuẩn xác.",
                 "Có năng khiếu toán học, tư duy logic tốt.",
                 "Làm bài tự giác, tính toán cẩn thận và chuẩn xác.",
                 "Nắm chắc các dạng toán hình học và đại số cơ bản, vẽ hình chuẩn xác và đẹp mắt.",
                 "Tiếp thu bài rất nhanh, có nhiều cách giải thông minh và sáng tạo trong giờ toán.",
-                "Thao tác tính toán nhanh nhẹn, luôn tập trung nghe giảng và tích cực tham gia thảo.",
+                "Thao tác tính toán nhanh nhẹn, luôn tập trung nghe giảng và tích cực tham gia thảo luận.",
                 "Nắm vững quy tắc và thứ tự thực hiện các phép tính.",
                 "Chăm chỉ, cẩn thận trong từng phép tính, chữ số rõ ràng.",
                 "Giải toán tự tin, nắm vững bản chất bài toán.",
                 "Kỹ năng tính nhẩm và giải toán có lời văn xuất sắc.",
                 "Học toán rất tập trung, luôn tìm tòi các phương pháp tính nhanh và hiệu quả nhất.",
                 "Tư duy toán học linh hoạt, biết liên hệ các phép toán vào các tình huống thực tế.",
-                "Hiểu bài ngay tại lớp, hoàn thành xuất sắc các phiếu bài tập toán và giúp đỡ bạn.",
+                "Hiểu bài ngay tại lớp, hoàn thành xuất sắc các phiếu bài tập toán và giúp đỡ bạn bè.",
                 "Tính toán chu đáo, cẩn thận, không để xảy ra sai sót nhỏ, trình bày vở sạch chữ đẹp.",
                 "Rất tự giác học tập, chủ động làm thêm các bài toán mở rộng và phát biểu tự tin.",
                 "Có tư duy logic tốt, khả năng phân tích và tổng hợp số liệu bài toán rất nhanh nhạy.",
@@ -236,7 +236,7 @@
                 "Có tinh thần học hỏi, hoàn thành bài viết đúng thời gian.",
                 "Tiếp thu bài đều đặn, hiểu bài, cần rèn thêm thói quen kiểm tra lại bài sau khi viết.",
                 "Đọc bài đúng tiến độ, cần rèn luyện thêm để phát âm chuẩn các thanh điệu tiếng Việt.",
-                "Có cố gắng trong học tập, hoàn thành tốt các nội dung cơ bản theo chuẩn kiến thức kỹ."
+                "Có cố gắng trong học tập, hoàn thành tốt các nội dung cơ bản theo chuẩn kiến thức kỹ năng."
             ],
             "C": [
                 "Tốc độ đọc còn chậm, chữ viết chưa đều.",
@@ -249,8 +249,8 @@
         },
         "Tiếng Anh": {
             "T": [
-                "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen.",
-                "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò.",
+                "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen thuộc.",
+                "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò chơi học tập.",
                 "Có ngữ điệu tự nhiên, phản xạ tiếng Anh rất nhạy bén.",
                 "Tự tin thể hiện kỹ năng nghe nói trước lớp, phát âm to rõ, đúng trọng âm và ngữ điệu.",
                 "Kỹ năng nghe hiểu rất tốt, làm đúng các bài tập nghe và nhanh nhẹn nắm bắt thông tin.",
@@ -260,12 +260,12 @@
                 "Có năng khiếu ngoại ngữ, nhớ mặt chữ và nghĩa từ vựng rất nhanh.",
                 "Kỹ năng viết từ và mẫu câu tiếng Anh chính xác, chữ viết sạch đẹp.",
                 "Tự tin đóng vai trong các đoạn hội thoại.",
-                "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào.",
+                "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào hứng.",
                 "Khả năng ghi nhớ từ mới xuất sắc, nắm chắc cấu trúc câu và sử dụng đúng ngữ cảnh.",
                 "Phản xạ ngôn ngữ nhanh nhẹn, luôn chủ động giơ tay trả lời các câu hỏi.",
                 "Nghe hiểu chuẩn xác các bài đàm thoại ngắn.",
-                "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ.",
-                "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi.",
+                "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ học.",
+                "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi ngày.",
                 "Kỹ năng đọc hiểu bài khóa tiếng Anh tốt.",
                 "Nắm chắc các mẫu câu hỏi và trả lời về bản thân, gia đình, trường học, bạn bè.",
                 "Hoàn thành xuất sắc các bài kiểm tra định kỳ.",
@@ -282,14 +282,14 @@
                 "Có cố gắng trong học tập, hoàn thành bài tập nghe và nối tranh đúng theo yêu cầu.",
                 "Đọc được các từ ngữ quen thuộc, cần luyện tập đọc thành câu trôi chảy và tự nhiên.",
                 "Có ý thức chuẩn bị bài trước khi đến lớp, cần tích cực giơ tay phát biểu nhiều hơn.",
-                "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký.",
+                "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký tự.",
                 "Nghe hiểu các lệnh đơn giản trong lớp, cần rèn thêm phản xạ trả lời câu hỏi ngắn.",
                 "Tham gia đầy đủ các hoạt động nhóm, cần chủ động hơn trong phần luyện nói đôi bạn.",
                 "Biết cách ghép từ thành câu đơn giản, cần rèn thêm vốn từ vựng mở rộng.",
                 "Hoàn thành các phiếu học tập đúng thời gian, cần chú ý ngữ điệu khi đọc câu hỏi.",
                 "Có tinh thần học hỏi, cần kiên trì nghe lại các bài nghe mẫu trên ứng dụng hoặc đĩa.",
-                "Nắm được các chủ đề về số đếm, màu sắc, con.",
-                "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống.",
+                "Nắm được các chủ đề về số đếm, màu sắc, con vật.",
+                "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống nhau.",
                 "Có ý thức học tập tốt, hoàn thành các nhiệm vụ giáo viên giao, cần tự tin hơn vào bản thân.",
                 "Hiểu bài cơ bản, cần rèn luyện thói quen tự ôn từ vựng 15 phút mỗi ngày ở nhà.",
                 "Tham gia hào hứng các trò chơi ôn tập, cần cẩn thận hơn khi làm các bài kiểm tra.",
@@ -297,7 +297,7 @@
                 "Đạt chuẩn kiến thức kỹ năng môn học, cần mạnh dạn thực hành nói tiếng Anh nhiều hơn."
             ],
             "C": [
-                "Vốn từ còn hạn chế, phát âm chưa.",
+                "Vốn từ còn hạn chế, phát âm chưa chuẩn.",
                 "Còn rụt rè khi thực hành nói, kỹ năng nghe chưa tốt.",
                 "Hay quên từ vựng và mẫu câu cơ bản, cần viết lại từ mới nhiều lần để ghi nhớ tốt hơn.",
                 "Chưa nắm chắc các cấu trúc câu đơn giản.",
@@ -308,12 +308,12 @@
         "Tự nhiên và Xã hội": {
             "T": [
                 "Thích tìm hiểu thế giới tự nhiên và xã hội xung quanh.",
-                "Hiểu biết phong phú về môi trường sống, cơ thể người và biết cách chăm sóc.",
+                "Hiểu biết phong phú về môi trường sống, cơ thể người và biết cách chăm sóc bản thân.",
                 "Tiếp thu bài nhanh, tích cực phát biểu.",
                 "Có ý thức bảo vệ môi trường rất tốt, biết phân loại rác và nhắc nhở các bạn giữ gìn.",
                 "Kỹ năng quan sát tranh và mô hình xuất sắc.",
-                "Ham học hỏi, thích khám phá các loài cây cối.",
-                "Nắm chắc kiến thức bài học, biết tự bảo vệ bản thân trước các nguy cơ tai nạn thương.",
+                "Ham học hỏi, thích khám phá các loài cây cối và con vật.",
+                "Nắm chắc kiến thức bài học, biết tự bảo vệ bản thân trước các nguy cơ tai nạn thương tích.",
                 "Chăm ngoan, hiểu bài sâu sắc, có lối sống lành mạnh, gọn gàng.",
                 "Rất tích cực trong các hoạt động nhóm, đóng góp nhiều ý tưởng hay khi tìm hiểu bài mới.",
                 "Khả năng quan sát tinh tế, ghi nhớ tốt các đặc điểm sinh học và thói quen của sinh vật.",
@@ -434,7 +434,7 @@
                 "Nắm chắc đặc điểm khí hậu, đất đai, sông ngòi các vùng: Bắc Bộ, Trung Bộ, Nam Bộ.",
                 "Tự hào về các vị anh hùng dân tộc, biết kể lại các trận đánh lịch sử một cách hào.",
                 "Khả năng so sánh đặc điểm tự nhiên và hoạt động sản xuất của các vùng miền rất chính.",
-                "Rất tích cực giơ tay xây dựng bài, trả lời câu hỏi tự tin và có nhiều hiểu biết mở.",
+                "Rất tích cực giơ tay xây dựng bài, trả lời câu hỏi tự tin và có nhiều hiểu biết mở rộng.",
                 "Nắm chắc vị trí địa lí, giới hạn lãnh thổ Việt Nam trên bản đồ thế giới và khu vực.",
                 "Hiểu được nguyên nhân và bài học kinh nghiệm của các sự kiện lịch sử quan trọng.",
                 "Có kỹ năng vẽ sơ đồ tư duy hệ thống hóa các triều đại lịch sử Việt Nam rất đẹp và dễ.",
@@ -466,7 +466,7 @@
                 "Nắm được các dạng địa hình chính của Việt Nam: đồi núi, đồng bằng, bờ biển.",
                 "Có tiến bộ trong việc ghi nhớ tên các triều đại lịch sử trọng tâm.",
                 "Tham gia tốt các buổi ôn tập, cần phát huy hơn nữa tinh thần chăm chỉ, tự giác.",
-                "Đạt chuẩn kiến thức kỹ năng môn học, cần trau dồi thêm vốn hiểu biết về địa lí quê.",
+                "Đạt chuẩn kiến thức kỹ năng môn học, cần trau dồi thêm vốn hiểu biết về địa lí quê hương.",
                 "Hiểu bài, hoàn thành các nội dung bài học theo đúng tiến độ chương trình.",
                 "Nắm được các kiến thức cơ bản giữa kì 1, nắm được các mốc lịch sử và sự kiện chính."
             ],
@@ -816,7 +816,7 @@
                 "Có tinh thần đồng đội tốt, luôn hỗ trợ các bạn trong các trò chơi tiếp sức.",
                 "Biết cách bảo quản dụng cụ thể dục: bóng, cầu, dây nhảy sau khi tập luyện xong.",
                 "Đạt kết quả tốt trong các bài kiểm tra thể chất định kỳ của học kỳ.",
-                "Chăm chỉ tập luyện, cần duy trì thói quen tập thể dục mỗi ngày ở nhà để nâng cao sức."
+                "Chăm chỉ tập luyện, cần duy trì thói quen tập thể dục mỗi ngày ở nhà để nâng cao sức khỏe."
             ],
             "C": [
                 "Thể lực còn yếu, tiếp thu động tác còn chậm, chưa thực hiện đúng kỹ thuật động tác.",
@@ -858,7 +858,7 @@
                 "Biết tự chuẩn bị đồ dùng học tập và trang phục chỉnh tề trước khi đến trường.",
                 "Hòa đồng với bạn bè, tham gia tích cực các trò chơi tập thể và hoạt động nhóm.",
                 "Biết giúp đỡ cha mẹ một số công việc nhà vừa sức: quét nhà, rửa ấm chén, gấp quần áo.",
-                "Có ý thức bảo vệ môi trường, biết bỏ rác đúng nơi quy định và giữ gìn vệ sinh lớp.",
+                "Có ý thức bảo vệ môi trường, biết bỏ rác đúng nơi quy định và giữ gìn vệ sinh lớp học.",
                 "Biết lắng nghe và tôn trọng ý kiến của các bạn trong nhóm khi cùng thảo luận.",
                 "Tham gia đóng vai xử lý tình huống, cần tự tin hơn khi phát biểu trước tập thể.",
                 "Nắm được các kỹ năng tự bảo vệ bản thân khi ở nhà một mình hoặc đi ngoài đường.",
@@ -896,11 +896,11 @@
                 "Rất tích cực tham gia các buổi giao lưu văn hóa, văn nghệ tiếng dân tộc của trường.",
                 "Chăm chỉ luyện viết chữ, hoàn thành xuất sắc các bài tập chính tả và đọc hiểu bài.",
                 "Hiểu sâu sắc ý nghĩa các câu chuyện cổ tích và phong tục tập quán truyền thống.",
-                "Luôn là tấm gương sáng, nhiệt tình giúp đỡ các bạn trong lớp cùng học tốt tiếng dân.",
+                "Luôn là tấm gương sáng, nhiệt tình giúp đỡ các bạn trong lớp cùng học tốt tiếng dân tộc.",
                 "Khả năng nhớ mặt chữ nhanh, phát âm chuẩn các âm khó đặc trưng của ngôn ngữ dân tộc.",
                 "Thao tác dịch đoạn văn ngắn rất mạch lạc, câu văn tự nhiên và giữ đúng tinh thần gốc.",
                 "Có ý thức gìn giữ và phát huy tiếng nói.",
-                "Tự giác học bài, đọc thêm nhiều sách truyện song ngữ để mở rộng vốn từ vựng phong.",
+                "Tự giác học bài, đọc thêm nhiều sách truyện song ngữ để mở rộng vốn từ vựng phong phú.",
                 "Kỹ năng nghe hiểu tiếng dân tộc rất tốt, trả lời nhanh các câu hỏi của giáo viên.",
                 "Tự tin thuyết trình giới thiệu nét đẹp trang phục và phong tục quê hương.",
                 "Chữ viết sạch đẹp, trình bày vở cẩn thận.",
@@ -914,18 +914,18 @@
                 "Nắm được các từ vựng và câu giao tiếp cơ bản bằng tiếng dân tộc.",
                 "Biết cách đọc và viết các chữ cái, từ ngữ thông dụng theo hướng dẫn của giáo viên.",
                 "Đọc bài tương đối lưu loát, cần rèn luyện thêm để phát âm thật chuẩn xác các âm khó.",
-                "Có ý thức học tập chăm chỉ, ghi chép bài đầy đủ và giữ gìn sách vở sạch.",
+                "Có ý thức học tập chăm chỉ, ghi chép bài đầy đủ và giữ gìn sách vở sạch đẹp.",
                 "Hiểu được nội dung các bài khóa đơn giản.",
-                "Tập viết chữ tiếng dân tộc đúng mẫu, cần rèn thêm độ đều nét và khoảng cách giữa.",
+                "Tập viết chữ tiếng dân tộc đúng mẫu, cần rèn thêm độ đều nét và khoảng cách giữa các chữ.",
                 "Tham gia học tập đầy đủ, lắng nghe giáo viên giảng bài và chăm chú luyện phát âm trên lớp.",
-                "Nhớ được nghĩa của các từ vựng theo chủ đề quen thuộc: gia đình, bản làng, con.",
+                "Nhớ được nghĩa của các từ vựng theo chủ đề quen thuộc: gia đình, bản làng, con vật.",
                 "Biết dịch các câu ngắn đơn giản, cần rèn thêm vốn từ để dịch câu dài lưu loát hơn.",
                 "Có tình yêu đối với tiếng nói của dân tộc mình.",
                 "Hoàn thành các bài tập trong vở bài tập đúng hạn.",
                 "Tham gia tốt các hoạt động tập đọc và luyện nói đôi bạn cùng các bạn trong lớp.",
                 "Biết kính trọng các nghệ nhân và người lớn tuổi am hiểu văn hóa dân tộc ở địa phương.",
                 "Nghe hiểu các chỉ dẫn cơ bản của giáo viên bằng tiếng dân tộc trong giờ học.",
-                "Có tinh thần học hỏi, cần chăm chỉ trò chuyện bằng tiếng dân tộc nhiều hơn với người.",
+                "Có tinh thần học hỏi, cần chăm chỉ trò chuyện bằng tiếng dân tộc nhiều hơn với mọi người.",
                 "Biết viết đúng dấu thanh và các ký tự đặc biệt của chữ viết tiếng dân tộc.",
                 "Tiếp thu bài đạt yêu cầu, cần tích cực giơ tay phát biểu xây dựng bài học hơn nữa.",
                 "Tham gia vui vẻ các trò chơi đố vui từ vựng tiếng dân tộc do giáo viên tổ chức.",
@@ -970,7 +970,7 @@
             ],
             "H": [
                 "Nắm được kiến thức cơ bản của môn học, hoàn thành bài tập đầy đủ theo yêu cầu.",
-                "Có ý thức học tập chăm chỉ, chú ý lắng nghe giáo viên giảng bài và ghi chép bài cẩn.",
+                "Có ý thức học tập chăm chỉ, chú ý lắng nghe giáo viên giảng bài và ghi chép bài cẩn thận.",
                 "Hiểu bài, làm được các bài tập quen thuộc, cần tự tin hơn khi lên bảng làm bài.",
                 "Tiếp thu bài tốt, có tinh thần rèn luyện nền nếp.",
                 "Hoàn thành bài tập tại lớp đúng thời gian.",
@@ -1008,21 +1008,21 @@
                 "Tính toán nhanh, chính xác, hiểu bài và vận dụng tốt các phép tính vào giải toán.",
                 "Nắm chắc kiến thức toán học, viết chữ số cẩn thận.",
                 "Kỹ năng làm tính rất tốt, tiếp thu bài nhanh.",
-                "Tư duy số học nhanh nhẹn, hoàn thành các bài toán đúng giờ và luôn nhiệt tình giúp đỡ bạn.",
+                "Tư duy số học nhanh nhẹn, hoàn thành các bài toán đúng giờ và luôn nhiệt tình giúp đỡ bạn bè.",
                 "Tính nhẩm nhanh, nắm vững bảng cộng trừ nhân chia, trình bày bài sạch sẽ và khoa học.",
                 "Hiểu bài sâu, giải toán có lời văn mạch lạc, câu lời giải và phép tính rất chuẩn xác.",
                 "Có năng khiếu toán học, tư duy logic tốt.",
                 "Làm bài tự giác, tính toán cẩn thận và chuẩn xác.",
                 "Nắm chắc các dạng toán hình học và đại số cơ bản, vẽ hình chuẩn xác và đẹp mắt.",
                 "Tiếp thu bài rất nhanh, có nhiều cách giải thông minh và sáng tạo trong giờ toán.",
-                "Thao tác tính toán nhanh nhẹn, luôn tập trung nghe giảng và tích cực tham gia thảo.",
+                "Thao tác tính toán nhanh nhẹn, luôn tập trung nghe giảng và tích cực tham gia thảo luận.",
                 "Nắm vững quy tắc và thứ tự thực hiện các phép tính.",
                 "Chăm chỉ, cẩn thận trong từng phép tính, chữ số rõ ràng.",
                 "Giải toán tự tin, nắm vững bản chất bài toán.",
                 "Kỹ năng tính nhẩm và giải toán có lời văn xuất sắc.",
                 "Học toán rất tập trung, luôn tìm tòi các phương pháp tính nhanh và hiệu quả nhất.",
                 "Tư duy toán học linh hoạt, biết liên hệ các phép toán vào các tình huống thực tế.",
-                "Hiểu bài ngay tại lớp, hoàn thành xuất sắc các phiếu bài tập toán và giúp đỡ bạn.",
+                "Hiểu bài ngay tại lớp, hoàn thành xuất sắc các phiếu bài tập toán và giúp đỡ bạn bè.",
                 "Tính toán chu đáo, cẩn thận, không để xảy ra sai sót nhỏ, trình bày vở sạch chữ đẹp.",
                 "Rất tự giác học tập, chủ động làm thêm các bài toán mở rộng và phát biểu tự tin.",
                 "Có tư duy logic tốt, khả năng phân tích và tổng hợp số liệu bài toán rất nhanh nhạy.",
@@ -1108,7 +1108,7 @@
                 "Có tinh thần học hỏi, hoàn thành bài viết đúng thời gian.",
                 "Tiếp thu bài đều đặn, hiểu bài, cần rèn thêm thói quen kiểm tra lại bài sau khi viết.",
                 "Đọc bài đúng tiến độ, cần rèn luyện thêm để phát âm chuẩn các thanh điệu tiếng Việt.",
-                "Có cố gắng trong học tập, hoàn thành tốt các nội dung cơ bản theo chuẩn kiến thức kỹ."
+                "Có cố gắng trong học tập, hoàn thành tốt các nội dung cơ bản theo chuẩn kiến thức kỹ năng."
             ],
             "C": [
                 "Tốc độ đọc còn chậm, chữ viết chưa đều.",
@@ -1121,8 +1121,8 @@
         },
         "Tiếng Anh": {
             "T": [
-                "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen.",
-                "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò.",
+                "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen thuộc.",
+                "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò chơi học tập.",
                 "Có ngữ điệu tự nhiên, phản xạ tiếng Anh rất nhạy bén.",
                 "Tự tin thể hiện kỹ năng nghe nói trước lớp, phát âm to rõ, đúng trọng âm và ngữ điệu.",
                 "Kỹ năng nghe hiểu rất tốt, làm đúng các bài tập nghe và nhanh nhẹn nắm bắt thông tin.",
@@ -1132,12 +1132,12 @@
                 "Có năng khiếu ngoại ngữ, nhớ mặt chữ và nghĩa từ vựng rất nhanh.",
                 "Kỹ năng viết từ và mẫu câu tiếng Anh chính xác, chữ viết sạch đẹp.",
                 "Tự tin đóng vai trong các đoạn hội thoại.",
-                "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào.",
+                "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào hứng.",
                 "Khả năng ghi nhớ từ mới xuất sắc, nắm chắc cấu trúc câu và sử dụng đúng ngữ cảnh.",
                 "Phản xạ ngôn ngữ nhanh nhẹn, luôn chủ động giơ tay trả lời các câu hỏi.",
                 "Nghe hiểu chuẩn xác các bài đàm thoại ngắn.",
-                "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ.",
-                "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi.",
+                "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ học.",
+                "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi ngày.",
                 "Kỹ năng đọc hiểu bài khóa tiếng Anh tốt.",
                 "Nắm chắc các mẫu câu hỏi và trả lời về bản thân, gia đình, trường học, bạn bè.",
                 "Hoàn thành xuất sắc các bài kiểm tra định kỳ.",
@@ -1154,14 +1154,14 @@
                 "Có cố gắng trong học tập, hoàn thành bài tập nghe và nối tranh đúng theo yêu cầu.",
                 "Đọc được các từ ngữ quen thuộc, cần luyện tập đọc thành câu trôi chảy và tự nhiên.",
                 "Có ý thức chuẩn bị bài trước khi đến lớp, cần tích cực giơ tay phát biểu nhiều hơn.",
-                "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký.",
+                "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký tự.",
                 "Nghe hiểu các lệnh đơn giản trong lớp, cần rèn thêm phản xạ trả lời câu hỏi ngắn.",
                 "Tham gia đầy đủ các hoạt động nhóm, cần chủ động hơn trong phần luyện nói đôi bạn.",
                 "Biết cách ghép từ thành câu đơn giản, cần rèn thêm vốn từ vựng mở rộng.",
                 "Hoàn thành các phiếu học tập đúng thời gian, cần chú ý ngữ điệu khi đọc câu hỏi.",
                 "Có tinh thần học hỏi, cần kiên trì nghe lại các bài nghe mẫu trên ứng dụng hoặc đĩa.",
-                "Nắm được các chủ đề về số đếm, màu sắc, con.",
-                "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống.",
+                "Nắm được các chủ đề về số đếm, màu sắc, con vật.",
+                "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống nhau.",
                 "Có ý thức học tập tốt, hoàn thành các nhiệm vụ giáo viên giao, cần tự tin hơn vào bản thân.",
                 "Hiểu bài cơ bản, cần rèn luyện thói quen tự ôn từ vựng 15 phút mỗi ngày ở nhà.",
                 "Tham gia hào hứng các trò chơi ôn tập, cần cẩn thận hơn khi làm các bài kiểm tra.",
@@ -1169,7 +1169,7 @@
                 "Đạt chuẩn kiến thức kỹ năng môn học, cần mạnh dạn thực hành nói tiếng Anh nhiều hơn."
             ],
             "C": [
-                "Vốn từ còn hạn chế, phát âm chưa.",
+                "Vốn từ còn hạn chế, phát âm chưa chuẩn.",
                 "Còn rụt rè khi thực hành nói, kỹ năng nghe chưa tốt.",
                 "Hay quên từ vựng và mẫu câu cơ bản, cần viết lại từ mới nhiều lần để ghi nhớ tốt hơn.",
                 "Chưa nắm chắc các cấu trúc câu đơn giản.",
@@ -1180,12 +1180,12 @@
         "Tự nhiên và Xã hội": {
             "T": [
                 "Thích tìm hiểu thế giới tự nhiên và xã hội xung quanh.",
-                "Hiểu biết phong phú về môi trường sống, cơ thể người và biết cách chăm sóc.",
+                "Hiểu biết phong phú về môi trường sống, cơ thể người và biết cách chăm sóc bản thân.",
                 "Tiếp thu bài nhanh, tích cực phát biểu.",
                 "Có ý thức bảo vệ môi trường rất tốt, biết phân loại rác và nhắc nhở các bạn giữ gìn.",
                 "Kỹ năng quan sát tranh và mô hình xuất sắc.",
-                "Ham học hỏi, thích khám phá các loài cây cối.",
-                "Nắm chắc kiến thức bài học, biết tự bảo vệ bản thân trước các nguy cơ tai nạn thương.",
+                "Ham học hỏi, thích khám phá các loài cây cối và con vật.",
+                "Nắm chắc kiến thức bài học, biết tự bảo vệ bản thân trước các nguy cơ tai nạn thương tích.",
                 "Chăm ngoan, hiểu bài sâu sắc, có lối sống lành mạnh, gọn gàng.",
                 "Rất tích cực trong các hoạt động nhóm, đóng góp nhiều ý tưởng hay khi tìm hiểu bài mới.",
                 "Khả năng quan sát tinh tế, ghi nhớ tốt các đặc điểm sinh học và thói quen của sinh vật.",
@@ -1306,7 +1306,7 @@
                 "Nắm chắc đặc điểm khí hậu, đất đai, sông ngòi các vùng: Bắc Bộ, Trung Bộ, Nam Bộ.",
                 "Tự hào về các vị anh hùng dân tộc, biết kể lại các trận đánh lịch sử một cách hào.",
                 "Khả năng so sánh đặc điểm tự nhiên và hoạt động sản xuất của các vùng miền rất chính.",
-                "Rất tích cực giơ tay xây dựng bài, trả lời câu hỏi tự tin và có nhiều hiểu biết mở.",
+                "Rất tích cực giơ tay xây dựng bài, trả lời câu hỏi tự tin và có nhiều hiểu biết mở rộng.",
                 "Nắm chắc vị trí địa lí, giới hạn lãnh thổ Việt Nam trên bản đồ thế giới và khu vực.",
                 "Hiểu được nguyên nhân và bài học kinh nghiệm của các sự kiện lịch sử quan trọng.",
                 "Có kỹ năng vẽ sơ đồ tư duy hệ thống hóa các triều đại lịch sử Việt Nam rất đẹp và dễ.",
@@ -1339,7 +1339,7 @@
                 "Nắm được các dạng địa hình chính của Việt Nam: đồi núi, đồng bằng, bờ biển.",
                 "Có tiến bộ trong việc ghi nhớ tên các triều đại lịch sử trọng tâm.",
                 "Tham gia tốt các buổi ôn tập, cần phát huy hơn nữa tinh thần chăm chỉ, tự giác.",
-                "Đạt chuẩn kiến thức kỹ năng môn học, cần trau dồi thêm vốn hiểu biết về địa lí quê.",
+                "Đạt chuẩn kiến thức kỹ năng môn học, cần trau dồi thêm vốn hiểu biết về địa lí quê hương.",
                 "Hiểu bài, hoàn thành các nội dung bài học theo đúng tiến độ chương trình."
             ],
             "C": [
@@ -1688,7 +1688,7 @@
                 "Có tinh thần đồng đội tốt, luôn hỗ trợ các bạn trong các trò chơi tiếp sức.",
                 "Biết cách bảo quản dụng cụ thể dục: bóng, cầu, dây nhảy sau khi tập luyện xong.",
                 "Đạt kết quả tốt trong các bài kiểm tra thể chất định kỳ của học kỳ.",
-                "Chăm chỉ tập luyện, cần duy trì thói quen tập thể dục mỗi ngày ở nhà để nâng cao sức."
+                "Chăm chỉ tập luyện, cần duy trì thói quen tập thể dục mỗi ngày ở nhà để nâng cao sức khỏe."
             ],
             "C": [
                 "Thể lực còn yếu, tiếp thu động tác còn chậm, chưa thực hiện đúng kỹ thuật động tác.",
@@ -1768,11 +1768,11 @@
                 "Rất tích cực tham gia các buổi giao lưu văn hóa, văn nghệ tiếng dân tộc của trường.",
                 "Chăm chỉ luyện viết chữ, hoàn thành xuất sắc các bài tập chính tả và đọc hiểu bài.",
                 "Hiểu sâu sắc ý nghĩa các câu chuyện cổ tích và phong tục tập quán truyền thống.",
-                "Luôn là tấm gương sáng, nhiệt tình giúp đỡ các bạn trong lớp cùng học tốt tiếng dân.",
+                "Luôn là tấm gương sáng, nhiệt tình giúp đỡ các bạn trong lớp cùng học tốt tiếng dân tộc.",
                 "Khả năng nhớ mặt chữ nhanh, phát âm chuẩn các âm khó đặc trưng của ngôn ngữ dân tộc.",
                 "Thao tác dịch đoạn văn ngắn rất mạch lạc, câu văn tự nhiên và giữ đúng tinh thần gốc.",
                 "Có ý thức gìn giữ và phát huy tiếng nói.",
-                "Tự giác học bài, đọc thêm nhiều sách truyện song ngữ để mở rộng vốn từ vựng phong.",
+                "Tự giác học bài, đọc thêm nhiều sách truyện song ngữ để mở rộng vốn từ vựng phong phú.",
                 "Kỹ năng nghe hiểu tiếng dân tộc rất tốt, trả lời nhanh các câu hỏi của giáo viên.",
                 "Tự tin thuyết trình giới thiệu nét đẹp trang phục và phong tục quê hương.",
                 "Chữ viết sạch đẹp, trình bày vở cẩn thận.",
@@ -1786,18 +1786,18 @@
                 "Nắm được các từ vựng và câu giao tiếp cơ bản bằng tiếng dân tộc.",
                 "Biết cách đọc và viết các chữ cái, từ ngữ thông dụng theo hướng dẫn của giáo viên.",
                 "Đọc bài tương đối lưu loát, cần rèn luyện thêm để phát âm thật chuẩn xác các âm khó.",
-                "Có ý thức học tập chăm chỉ, ghi chép bài đầy đủ và giữ gìn sách vở sạch.",
+                "Có ý thức học tập chăm chỉ, ghi chép bài đầy đủ và giữ gìn sách vở sạch đẹp.",
                 "Hiểu được nội dung các bài khóa đơn giản.",
-                "Tập viết chữ tiếng dân tộc đúng mẫu, cần rèn thêm độ đều nét và khoảng cách giữa.",
+                "Tập viết chữ tiếng dân tộc đúng mẫu, cần rèn thêm độ đều nét và khoảng cách giữa các chữ.",
                 "Tham gia học tập đầy đủ, lắng nghe giáo viên giảng bài và chăm chú luyện phát âm trên lớp.",
-                "Nhớ được nghĩa của các từ vựng theo chủ đề quen thuộc: gia đình, bản làng, con.",
+                "Nhớ được nghĩa của các từ vựng theo chủ đề quen thuộc: gia đình, bản làng, con vật.",
                 "Biết dịch các câu ngắn đơn giản, cần rèn thêm vốn từ để dịch câu dài lưu loát hơn.",
                 "Có tình yêu đối với tiếng nói của dân tộc mình.",
                 "Hoàn thành các bài tập trong vở bài tập đúng hạn.",
                 "Tham gia tốt các hoạt động tập đọc và luyện nói đôi bạn cùng các bạn trong lớp.",
                 "Biết kính trọng các nghệ nhân và người lớn tuổi am hiểu văn hóa dân tộc ở địa phương.",
                 "Nghe hiểu các chỉ dẫn cơ bản của giáo viên bằng tiếng dân tộc trong giờ học.",
-                "Có tinh thần học hỏi, cần chăm chỉ trò chuyện bằng tiếng dân tộc nhiều hơn với người.",
+                "Có tinh thần học hỏi, cần chăm chỉ trò chuyện bằng tiếng dân tộc nhiều hơn với mọi người.",
                 "Biết viết đúng dấu thanh và các ký tự đặc biệt của chữ viết tiếng dân tộc.",
                 "Tiếp thu bài đạt yêu cầu, cần tích cực giơ tay phát biểu xây dựng bài học hơn nữa.",
                 "Tham gia vui vẻ các trò chơi đố vui từ vựng tiếng dân tộc do giáo viên tổ chức.",
@@ -1842,7 +1842,7 @@
             ],
             "H": [
                 "Nắm được kiến thức cơ bản của môn học, hoàn thành bài tập đầy đủ theo yêu cầu.",
-                "Có ý thức học tập chăm chỉ, chú ý lắng nghe giáo viên giảng bài và ghi chép bài cẩn.",
+                "Có ý thức học tập chăm chỉ, chú ý lắng nghe giáo viên giảng bài và ghi chép bài cẩn thận.",
                 "Hiểu bài, làm được các bài tập quen thuộc, cần tự tin hơn khi lên bảng làm bài.",
                 "Tiếp thu bài tốt, có tinh thần rèn luyện nền nếp.",
                 "Hoàn thành bài tập tại lớp đúng thời gian.",
@@ -1880,21 +1880,21 @@
                 "Tính toán nhanh, chính xác, hiểu bài và vận dụng tốt các phép tính vào giải toán.",
                 "Nắm chắc kiến thức toán học, viết chữ số cẩn thận.",
                 "Kỹ năng làm tính rất tốt, tiếp thu bài nhanh.",
-                "Tư duy số học nhanh nhẹn, hoàn thành các bài toán đúng giờ và luôn nhiệt tình giúp đỡ bạn.",
+                "Tư duy số học nhanh nhẹn, hoàn thành các bài toán đúng giờ và luôn nhiệt tình giúp đỡ bạn bè.",
                 "Tính nhẩm nhanh, nắm vững bảng cộng trừ nhân chia, trình bày bài sạch sẽ và khoa học.",
                 "Hiểu bài sâu, giải toán có lời văn mạch lạc, câu lời giải và phép tính rất chuẩn xác.",
                 "Có năng khiếu toán học, tư duy logic tốt.",
                 "Làm bài tự giác, tính toán cẩn thận và chuẩn xác.",
                 "Nắm chắc các dạng toán hình học và đại số cơ bản, vẽ hình chuẩn xác và đẹp mắt.",
                 "Tiếp thu bài rất nhanh, có nhiều cách giải thông minh và sáng tạo trong giờ toán.",
-                "Thao tác tính toán nhanh nhẹn, luôn tập trung nghe giảng và tích cực tham gia thảo.",
+                "Thao tác tính toán nhanh nhẹn, luôn tập trung nghe giảng và tích cực tham gia thảo luận.",
                 "Nắm vững quy tắc và thứ tự thực hiện các phép tính.",
                 "Chăm chỉ, cẩn thận trong từng phép tính, chữ số rõ ràng.",
                 "Giải toán tự tin, nắm vững bản chất bài toán.",
                 "Kỹ năng tính nhẩm và giải toán có lời văn xuất sắc.",
                 "Học toán rất tập trung, luôn tìm tòi các phương pháp tính nhanh và hiệu quả nhất.",
                 "Tư duy toán học linh hoạt, biết liên hệ các phép toán vào các tình huống thực tế.",
-                "Hiểu bài ngay tại lớp, hoàn thành xuất sắc các phiếu bài tập toán và giúp đỡ bạn.",
+                "Hiểu bài ngay tại lớp, hoàn thành xuất sắc các phiếu bài tập toán và giúp đỡ bạn bè.",
                 "Tính toán chu đáo, cẩn thận, không để xảy ra sai sót nhỏ, trình bày vở sạch chữ đẹp.",
                 "Rất tự giác học tập, chủ động làm thêm các bài toán mở rộng và phát biểu tự tin.",
                 "Có tư duy logic tốt, khả năng phân tích và tổng hợp số liệu bài toán rất nhanh nhạy.",
@@ -1980,7 +1980,7 @@
                 "Có tinh thần học hỏi, hoàn thành bài viết đúng thời gian.",
                 "Tiếp thu bài đều đặn, hiểu bài, cần rèn thêm thói quen kiểm tra lại bài sau khi viết.",
                 "Đọc bài đúng tiến độ, cần rèn luyện thêm để phát âm chuẩn các thanh điệu tiếng Việt.",
-                "Có cố gắng trong học tập, hoàn thành tốt các nội dung cơ bản theo chuẩn kiến thức kỹ."
+                "Có cố gắng trong học tập, hoàn thành tốt các nội dung cơ bản theo chuẩn kiến thức kỹ năng."
             ],
             "C": [
                 "Tốc độ đọc còn chậm, chữ viết chưa đều.",
@@ -1993,8 +1993,8 @@
         },
         "Tiếng Anh": {
             "T": [
-                "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen.",
-                "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò.",
+                "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen thuộc.",
+                "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò chơi học tập.",
                 "Có ngữ điệu tự nhiên, phản xạ tiếng Anh rất nhạy bén.",
                 "Tự tin thể hiện kỹ năng nghe nói trước lớp, phát âm to rõ, đúng trọng âm và ngữ điệu.",
                 "Kỹ năng nghe hiểu rất tốt, làm đúng các bài tập nghe và nhanh nhẹn nắm bắt thông tin.",
@@ -2004,12 +2004,12 @@
                 "Có năng khiếu ngoại ngữ, nhớ mặt chữ và nghĩa từ vựng rất nhanh.",
                 "Kỹ năng viết từ và mẫu câu tiếng Anh chính xác, chữ viết sạch đẹp.",
                 "Tự tin đóng vai trong các đoạn hội thoại.",
-                "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào.",
+                "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào hứng.",
                 "Khả năng ghi nhớ từ mới xuất sắc, nắm chắc cấu trúc câu và sử dụng đúng ngữ cảnh.",
                 "Phản xạ ngôn ngữ nhanh nhẹn, luôn chủ động giơ tay trả lời các câu hỏi.",
                 "Nghe hiểu chuẩn xác các bài đàm thoại ngắn.",
-                "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ.",
-                "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi.",
+                "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ học.",
+                "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi ngày.",
                 "Kỹ năng đọc hiểu bài khóa tiếng Anh tốt.",
                 "Nắm chắc các mẫu câu hỏi và trả lời về bản thân, gia đình, trường học, bạn bè.",
                 "Hoàn thành xuất sắc các bài kiểm tra định kỳ.",
@@ -2026,14 +2026,14 @@
                 "Có cố gắng trong học tập, hoàn thành bài tập nghe và nối tranh đúng theo yêu cầu.",
                 "Đọc được các từ ngữ quen thuộc, cần luyện tập đọc thành câu trôi chảy và tự nhiên.",
                 "Có ý thức chuẩn bị bài trước khi đến lớp, cần tích cực giơ tay phát biểu nhiều hơn.",
-                "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký.",
+                "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký tự.",
                 "Nghe hiểu các lệnh đơn giản trong lớp, cần rèn thêm phản xạ trả lời câu hỏi ngắn.",
                 "Tham gia đầy đủ các hoạt động nhóm, cần chủ động hơn trong phần luyện nói đôi bạn.",
                 "Biết cách ghép từ thành câu đơn giản, cần rèn thêm vốn từ vựng mở rộng.",
                 "Hoàn thành các phiếu học tập đúng thời gian, cần chú ý ngữ điệu khi đọc câu hỏi.",
                 "Có tinh thần học hỏi, cần kiên trì nghe lại các bài nghe mẫu trên ứng dụng hoặc đĩa.",
-                "Nắm được các chủ đề về số đếm, màu sắc, con.",
-                "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống.",
+                "Nắm được các chủ đề về số đếm, màu sắc, con vật.",
+                "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống nhau.",
                 "Có ý thức học tập tốt, hoàn thành các nhiệm vụ giáo viên giao, cần tự tin hơn vào bản thân.",
                 "Hiểu bài cơ bản, cần rèn luyện thói quen tự ôn từ vựng 15 phút mỗi ngày ở nhà.",
                 "Tham gia hào hứng các trò chơi ôn tập, cần cẩn thận hơn khi làm các bài kiểm tra.",
@@ -2041,7 +2041,7 @@
                 "Đạt chuẩn kiến thức kỹ năng môn học, cần mạnh dạn thực hành nói tiếng Anh nhiều hơn."
             ],
             "C": [
-                "Vốn từ còn hạn chế, phát âm chưa.",
+                "Vốn từ còn hạn chế, phát âm chưa chuẩn.",
                 "Còn rụt rè khi thực hành nói, kỹ năng nghe chưa tốt.",
                 "Hay quên từ vựng và mẫu câu cơ bản, cần viết lại từ mới nhiều lần để ghi nhớ tốt hơn.",
                 "Chưa nắm chắc các cấu trúc câu đơn giản.",
@@ -2052,12 +2052,12 @@
         "Tự nhiên và Xã hội": {
             "T": [
                 "Thích tìm hiểu thế giới tự nhiên và xã hội xung quanh.",
-                "Hiểu biết phong phú về môi trường sống, cơ thể người và biết cách chăm sóc.",
+                "Hiểu biết phong phú về môi trường sống, cơ thể người và biết cách chăm sóc bản thân.",
                 "Tiếp thu bài nhanh, tích cực phát biểu.",
                 "Có ý thức bảo vệ môi trường rất tốt, biết phân loại rác và nhắc nhở các bạn giữ gìn.",
                 "Kỹ năng quan sát tranh và mô hình xuất sắc.",
-                "Ham học hỏi, thích khám phá các loài cây cối.",
-                "Nắm chắc kiến thức bài học, biết tự bảo vệ bản thân trước các nguy cơ tai nạn thương.",
+                "Ham học hỏi, thích khám phá các loài cây cối và con vật.",
+                "Nắm chắc kiến thức bài học, biết tự bảo vệ bản thân trước các nguy cơ tai nạn thương tích.",
                 "Chăm ngoan, hiểu bài sâu sắc, có lối sống lành mạnh, gọn gàng.",
                 "Rất tích cực trong các hoạt động nhóm, đóng góp nhiều ý tưởng hay khi tìm hiểu bài mới.",
                 "Khả năng quan sát tinh tế, ghi nhớ tốt các đặc điểm sinh học và thói quen của sinh vật.",
@@ -2178,7 +2178,7 @@
                 "Nắm chắc đặc điểm khí hậu, đất đai, sông ngòi các vùng: Bắc Bộ, Trung Bộ, Nam Bộ.",
                 "Tự hào về các vị anh hùng dân tộc, biết kể lại các trận đánh lịch sử một cách hào.",
                 "Khả năng so sánh đặc điểm tự nhiên và hoạt động sản xuất của các vùng miền rất chính.",
-                "Rất tích cực giơ tay xây dựng bài, trả lời câu hỏi tự tin và có nhiều hiểu biết mở.",
+                "Rất tích cực giơ tay xây dựng bài, trả lời câu hỏi tự tin và có nhiều hiểu biết mở rộng.",
                 "Nắm chắc vị trí địa lí, giới hạn lãnh thổ Việt Nam trên bản đồ thế giới và khu vực.",
                 "Hiểu được nguyên nhân và bài học kinh nghiệm của các sự kiện lịch sử quan trọng.",
                 "Có kỹ năng vẽ sơ đồ tư duy hệ thống hóa các triều đại lịch sử Việt Nam rất đẹp và dễ.",
@@ -2211,7 +2211,7 @@
                 "Nắm được các dạng địa hình chính của Việt Nam: đồi núi, đồng bằng, bờ biển.",
                 "Có tiến bộ trong việc ghi nhớ tên các triều đại lịch sử trọng tâm.",
                 "Tham gia tốt các buổi ôn tập, cần phát huy hơn nữa tinh thần chăm chỉ, tự giác.",
-                "Đạt chuẩn kiến thức kỹ năng môn học, cần trau dồi thêm vốn hiểu biết về địa lí quê.",
+                "Đạt chuẩn kiến thức kỹ năng môn học, cần trau dồi thêm vốn hiểu biết về địa lí quê hương.",
                 "Hiểu bài, hoàn thành các nội dung bài học theo đúng tiến độ chương trình."
             ],
             "C": [
@@ -2560,7 +2560,7 @@
                 "Có tinh thần đồng đội tốt, luôn hỗ trợ các bạn trong các trò chơi tiếp sức.",
                 "Biết cách bảo quản dụng cụ thể dục: bóng, cầu, dây nhảy sau khi tập luyện xong.",
                 "Đạt kết quả tốt trong các bài kiểm tra thể chất định kỳ của học kỳ.",
-                "Chăm chỉ tập luyện, cần duy trì thói quen tập thể dục mỗi ngày ở nhà để nâng cao sức."
+                "Chăm chỉ tập luyện, cần duy trì thói quen tập thể dục mỗi ngày ở nhà để nâng cao sức khỏe."
             ],
             "C": [
                 "Thể lực còn yếu, tiếp thu động tác còn chậm, chưa thực hiện đúng kỹ thuật động tác.",
@@ -2602,7 +2602,7 @@
                 "Biết tự chuẩn bị đồ dùng học tập và trang phục chỉnh tề trước khi đến trường.",
                 "Hòa đồng với bạn bè, tham gia tích cực các trò chơi tập thể và hoạt động nhóm.",
                 "Biết giúp đỡ cha mẹ một số công việc nhà vừa sức: quét nhà, rửa ấm chén, gấp quần áo.",
-                "Có ý thức bảo vệ môi trường, biết bỏ rác đúng nơi quy định và giữ gìn vệ sinh lớp.",
+                "Có ý thức bảo vệ môi trường, biết bỏ rác đúng nơi quy định và giữ gìn vệ sinh lớp học.",
                 "Biết lắng nghe và tôn trọng ý kiến của các bạn trong nhóm khi cùng thảo luận.",
                 "Tham gia đóng vai xử lý tình huống, cần tự tin hơn khi phát biểu trước tập thể.",
                 "Nắm được các kỹ năng tự bảo vệ bản thân khi ở nhà một mình hoặc đi ngoài đường.",
@@ -2640,11 +2640,11 @@
                 "Rất tích cực tham gia các buổi giao lưu văn hóa, văn nghệ tiếng dân tộc của trường.",
                 "Chăm chỉ luyện viết chữ, hoàn thành xuất sắc các bài tập chính tả và đọc hiểu bài.",
                 "Hiểu sâu sắc ý nghĩa các câu chuyện cổ tích và phong tục tập quán truyền thống.",
-                "Luôn là tấm gương sáng, nhiệt tình giúp đỡ các bạn trong lớp cùng học tốt tiếng dân.",
+                "Luôn là tấm gương sáng, nhiệt tình giúp đỡ các bạn trong lớp cùng học tốt tiếng dân tộc.",
                 "Khả năng nhớ mặt chữ nhanh, phát âm chuẩn các âm khó đặc trưng của ngôn ngữ dân tộc.",
                 "Thao tác dịch đoạn văn ngắn rất mạch lạc, câu văn tự nhiên và giữ đúng tinh thần gốc.",
                 "Có ý thức gìn giữ và phát huy tiếng nói.",
-                "Tự giác học bài, đọc thêm nhiều sách truyện song ngữ để mở rộng vốn từ vựng phong.",
+                "Tự giác học bài, đọc thêm nhiều sách truyện song ngữ để mở rộng vốn từ vựng phong phú.",
                 "Kỹ năng nghe hiểu tiếng dân tộc rất tốt, trả lời nhanh các câu hỏi của giáo viên.",
                 "Tự tin thuyết trình giới thiệu nét đẹp trang phục và phong tục quê hương.",
                 "Chữ viết sạch đẹp, trình bày vở cẩn thận.",
@@ -2658,18 +2658,18 @@
                 "Nắm được các từ vựng và câu giao tiếp cơ bản bằng tiếng dân tộc.",
                 "Biết cách đọc và viết các chữ cái, từ ngữ thông dụng theo hướng dẫn của giáo viên.",
                 "Đọc bài tương đối lưu loát, cần rèn luyện thêm để phát âm thật chuẩn xác các âm khó.",
-                "Có ý thức học tập chăm chỉ, ghi chép bài đầy đủ và giữ gìn sách vở sạch.",
+                "Có ý thức học tập chăm chỉ, ghi chép bài đầy đủ và giữ gìn sách vở sạch đẹp.",
                 "Hiểu được nội dung các bài khóa đơn giản.",
-                "Tập viết chữ tiếng dân tộc đúng mẫu, cần rèn thêm độ đều nét và khoảng cách giữa.",
+                "Tập viết chữ tiếng dân tộc đúng mẫu, cần rèn thêm độ đều nét và khoảng cách giữa các chữ.",
                 "Tham gia học tập đầy đủ, lắng nghe giáo viên giảng bài và chăm chú luyện phát âm trên lớp.",
-                "Nhớ được nghĩa của các từ vựng theo chủ đề quen thuộc: gia đình, bản làng, con.",
+                "Nhớ được nghĩa của các từ vựng theo chủ đề quen thuộc: gia đình, bản làng, con vật.",
                 "Biết dịch các câu ngắn đơn giản, cần rèn thêm vốn từ để dịch câu dài lưu loát hơn.",
                 "Có tình yêu đối với tiếng nói của dân tộc mình.",
                 "Hoàn thành các bài tập trong vở bài tập đúng hạn.",
                 "Tham gia tốt các hoạt động tập đọc và luyện nói đôi bạn cùng các bạn trong lớp.",
                 "Biết kính trọng các nghệ nhân và người lớn tuổi am hiểu văn hóa dân tộc ở địa phương.",
                 "Nghe hiểu các chỉ dẫn cơ bản của giáo viên bằng tiếng dân tộc trong giờ học.",
-                "Có tinh thần học hỏi, cần chăm chỉ trò chuyện bằng tiếng dân tộc nhiều hơn với người.",
+                "Có tinh thần học hỏi, cần chăm chỉ trò chuyện bằng tiếng dân tộc nhiều hơn với mọi người.",
                 "Biết viết đúng dấu thanh và các ký tự đặc biệt của chữ viết tiếng dân tộc.",
                 "Tiếp thu bài đạt yêu cầu, cần tích cực giơ tay phát biểu xây dựng bài học hơn nữa.",
                 "Tham gia vui vẻ các trò chơi đố vui từ vựng tiếng dân tộc do giáo viên tổ chức.",
@@ -2714,7 +2714,7 @@
             ],
             "H": [
                 "Nắm được kiến thức cơ bản của môn học, hoàn thành bài tập đầy đủ theo yêu cầu.",
-                "Có ý thức học tập chăm chỉ, chú ý lắng nghe giáo viên giảng bài và ghi chép bài cẩn.",
+                "Có ý thức học tập chăm chỉ, chú ý lắng nghe giáo viên giảng bài và ghi chép bài cẩn thận.",
                 "Hiểu bài, làm được các bài tập quen thuộc, cần tự tin hơn khi lên bảng làm bài.",
                 "Tiếp thu bài tốt, có tinh thần rèn luyện nền nếp.",
                 "Hoàn thành bài tập tại lớp đúng thời gian.",
@@ -2752,21 +2752,21 @@
                 "Tính toán nhanh, chính xác, hiểu bài và vận dụng tốt các phép tính vào giải toán.",
                 "Nắm chắc kiến thức toán học, viết chữ số cẩn thận.",
                 "Kỹ năng làm tính rất tốt, tiếp thu bài nhanh.",
-                "Tư duy số học nhanh nhẹn, hoàn thành các bài toán đúng giờ và luôn nhiệt tình giúp đỡ bạn.",
+                "Tư duy số học nhanh nhẹn, hoàn thành các bài toán đúng giờ và luôn nhiệt tình giúp đỡ bạn bè.",
                 "Tính nhẩm nhanh, nắm vững bảng cộng trừ nhân chia, trình bày bài sạch sẽ và khoa học.",
                 "Hiểu bài sâu, giải toán có lời văn mạch lạc, câu lời giải và phép tính rất chuẩn xác.",
                 "Có năng khiếu toán học, tư duy logic tốt.",
                 "Làm bài tự giác, tính toán cẩn thận và chuẩn xác.",
                 "Nắm chắc các dạng toán hình học và đại số cơ bản, vẽ hình chuẩn xác và đẹp mắt.",
                 "Tiếp thu bài rất nhanh, có nhiều cách giải thông minh và sáng tạo trong giờ toán.",
-                "Thao tác tính toán nhanh nhẹn, luôn tập trung nghe giảng và tích cực tham gia thảo.",
+                "Thao tác tính toán nhanh nhẹn, luôn tập trung nghe giảng và tích cực tham gia thảo luận.",
                 "Nắm vững quy tắc và thứ tự thực hiện các phép tính.",
                 "Chăm chỉ, cẩn thận trong từng phép tính, chữ số rõ ràng.",
                 "Giải toán tự tin, nắm vững bản chất bài toán.",
                 "Kỹ năng tính nhẩm và giải toán có lời văn xuất sắc.",
                 "Học toán rất tập trung, luôn tìm tòi các phương pháp tính nhanh và hiệu quả nhất.",
                 "Tư duy toán học linh hoạt, biết liên hệ các phép toán vào các tình huống thực tế.",
-                "Hiểu bài ngay tại lớp, hoàn thành xuất sắc các phiếu bài tập toán và giúp đỡ bạn.",
+                "Hiểu bài ngay tại lớp, hoàn thành xuất sắc các phiếu bài tập toán và giúp đỡ bạn bè.",
                 "Tính toán chu đáo, cẩn thận, không để xảy ra sai sót nhỏ, trình bày vở sạch chữ đẹp.",
                 "Rất tự giác học tập, chủ động làm thêm các bài toán mở rộng và phát biểu tự tin.",
                 "Có tư duy logic tốt, khả năng phân tích và tổng hợp số liệu bài toán rất nhanh nhạy.",
@@ -2852,7 +2852,7 @@
                 "Có tinh thần học hỏi, hoàn thành bài viết đúng thời gian.",
                 "Tiếp thu bài đều đặn, hiểu bài, cần rèn thêm thói quen kiểm tra lại bài sau khi viết.",
                 "Đọc bài đúng tiến độ, cần rèn luyện thêm để phát âm chuẩn các thanh điệu tiếng Việt.",
-                "Có cố gắng trong học tập, hoàn thành tốt các nội dung cơ bản theo chuẩn kiến thức kỹ."
+                "Có cố gắng trong học tập, hoàn thành tốt các nội dung cơ bản theo chuẩn kiến thức kỹ năng."
             ],
             "C": [
                 "Tốc độ đọc còn chậm, chữ viết chưa đều.",
@@ -2865,8 +2865,8 @@
         },
         "Tiếng Anh": {
             "T": [
-                "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen.",
-                "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò.",
+                "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen thuộc.",
+                "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò chơi học tập.",
                 "Có ngữ điệu tự nhiên, phản xạ tiếng Anh rất nhạy bén.",
                 "Tự tin thể hiện kỹ năng nghe nói trước lớp, phát âm to rõ, đúng trọng âm và ngữ điệu.",
                 "Kỹ năng nghe hiểu rất tốt, làm đúng các bài tập nghe và nhanh nhẹn nắm bắt thông tin.",
@@ -2876,12 +2876,12 @@
                 "Có năng khiếu ngoại ngữ, nhớ mặt chữ và nghĩa từ vựng rất nhanh.",
                 "Kỹ năng viết từ và mẫu câu tiếng Anh chính xác, chữ viết sạch đẹp.",
                 "Tự tin đóng vai trong các đoạn hội thoại.",
-                "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào.",
+                "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào hứng.",
                 "Khả năng ghi nhớ từ mới xuất sắc, nắm chắc cấu trúc câu và sử dụng đúng ngữ cảnh.",
                 "Phản xạ ngôn ngữ nhanh nhẹn, luôn chủ động giơ tay trả lời các câu hỏi.",
                 "Nghe hiểu chuẩn xác các bài đàm thoại ngắn.",
-                "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ.",
-                "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi.",
+                "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ học.",
+                "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi ngày.",
                 "Kỹ năng đọc hiểu bài khóa tiếng Anh tốt.",
                 "Nắm chắc các mẫu câu hỏi và trả lời về bản thân, gia đình, trường học, bạn bè.",
                 "Hoàn thành xuất sắc các bài kiểm tra định kỳ.",
@@ -2898,14 +2898,14 @@
                 "Có cố gắng trong học tập, hoàn thành bài tập nghe và nối tranh đúng theo yêu cầu.",
                 "Đọc được các từ ngữ quen thuộc, cần luyện tập đọc thành câu trôi chảy và tự nhiên.",
                 "Có ý thức chuẩn bị bài trước khi đến lớp, cần tích cực giơ tay phát biểu nhiều hơn.",
-                "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký.",
+                "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký tự.",
                 "Nghe hiểu các lệnh đơn giản trong lớp, cần rèn thêm phản xạ trả lời câu hỏi ngắn.",
                 "Tham gia đầy đủ các hoạt động nhóm, cần chủ động hơn trong phần luyện nói đôi bạn.",
                 "Biết cách ghép từ thành câu đơn giản, cần rèn thêm vốn từ vựng mở rộng.",
                 "Hoàn thành các phiếu học tập đúng thời gian, cần chú ý ngữ điệu khi đọc câu hỏi.",
                 "Có tinh thần học hỏi, cần kiên trì nghe lại các bài nghe mẫu trên ứng dụng hoặc đĩa.",
-                "Nắm được các chủ đề về số đếm, màu sắc, con.",
-                "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống.",
+                "Nắm được các chủ đề về số đếm, màu sắc, con vật.",
+                "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống nhau.",
                 "Có ý thức học tập tốt, hoàn thành các nhiệm vụ giáo viên giao, cần tự tin hơn vào bản thân.",
                 "Hiểu bài cơ bản, cần rèn luyện thói quen tự ôn từ vựng 15 phút mỗi ngày ở nhà.",
                 "Tham gia hào hứng các trò chơi ôn tập, cần cẩn thận hơn khi làm các bài kiểm tra.",
@@ -2913,7 +2913,7 @@
                 "Đạt chuẩn kiến thức kỹ năng môn học, cần mạnh dạn thực hành nói tiếng Anh nhiều hơn."
             ],
             "C": [
-                "Vốn từ còn hạn chế, phát âm chưa.",
+                "Vốn từ còn hạn chế, phát âm chưa chuẩn.",
                 "Còn rụt rè khi thực hành nói, kỹ năng nghe chưa tốt.",
                 "Hay quên từ vựng và mẫu câu cơ bản, cần viết lại từ mới nhiều lần để ghi nhớ tốt hơn.",
                 "Chưa nắm chắc các cấu trúc câu đơn giản.",
@@ -2924,12 +2924,12 @@
         "Tự nhiên và Xã hội": {
             "T": [
                 "Thích tìm hiểu thế giới tự nhiên và xã hội xung quanh.",
-                "Hiểu biết phong phú về môi trường sống, cơ thể người và biết cách chăm sóc.",
+                "Hiểu biết phong phú về môi trường sống, cơ thể người và biết cách chăm sóc bản thân.",
                 "Tiếp thu bài nhanh, tích cực phát biểu.",
                 "Có ý thức bảo vệ môi trường rất tốt, biết phân loại rác và nhắc nhở các bạn giữ gìn.",
                 "Kỹ năng quan sát tranh và mô hình xuất sắc.",
-                "Ham học hỏi, thích khám phá các loài cây cối.",
-                "Nắm chắc kiến thức bài học, biết tự bảo vệ bản thân trước các nguy cơ tai nạn thương.",
+                "Ham học hỏi, thích khám phá các loài cây cối và con vật.",
+                "Nắm chắc kiến thức bài học, biết tự bảo vệ bản thân trước các nguy cơ tai nạn thương tích.",
                 "Chăm ngoan, hiểu bài sâu sắc, có lối sống lành mạnh, gọn gàng.",
                 "Rất tích cực trong các hoạt động nhóm, đóng góp nhiều ý tưởng hay khi tìm hiểu bài mới.",
                 "Khả năng quan sát tinh tế, ghi nhớ tốt các đặc điểm sinh học và thói quen của sinh vật.",
@@ -3050,7 +3050,7 @@
                 "Nắm chắc đặc điểm khí hậu, đất đai, sông ngòi các vùng: Bắc Bộ, Trung Bộ, Nam Bộ.",
                 "Tự hào về các vị anh hùng dân tộc, biết kể lại các trận đánh lịch sử một cách hào.",
                 "Khả năng so sánh đặc điểm tự nhiên và hoạt động sản xuất của các vùng miền rất chính.",
-                "Rất tích cực giơ tay xây dựng bài, trả lời câu hỏi tự tin và có nhiều hiểu biết mở.",
+                "Rất tích cực giơ tay xây dựng bài, trả lời câu hỏi tự tin và có nhiều hiểu biết mở rộng.",
                 "Nắm chắc vị trí địa lí, giới hạn lãnh thổ Việt Nam trên bản đồ thế giới và khu vực.",
                 "Hiểu được nguyên nhân và bài học kinh nghiệm của các sự kiện lịch sử quan trọng.",
                 "Có kỹ năng vẽ sơ đồ tư duy hệ thống hóa các triều đại lịch sử Việt Nam rất đẹp và dễ.",
@@ -3083,7 +3083,7 @@
                 "Nắm được các dạng địa hình chính của Việt Nam: đồi núi, đồng bằng, bờ biển.",
                 "Có tiến bộ trong việc ghi nhớ tên các triều đại lịch sử trọng tâm.",
                 "Tham gia tốt các buổi ôn tập, cần phát huy hơn nữa tinh thần chăm chỉ, tự giác.",
-                "Đạt chuẩn kiến thức kỹ năng môn học, cần trau dồi thêm vốn hiểu biết về địa lí quê.",
+                "Đạt chuẩn kiến thức kỹ năng môn học, cần trau dồi thêm vốn hiểu biết về địa lí quê hương.",
                 "Hiểu bài, hoàn thành các nội dung bài học theo đúng tiến độ chương trình."
             ],
             "C": [
@@ -3432,7 +3432,7 @@
                 "Có tinh thần đồng đội tốt, luôn hỗ trợ các bạn trong các trò chơi tiếp sức.",
                 "Biết cách bảo quản dụng cụ thể dục: bóng, cầu, dây nhảy sau khi tập luyện xong.",
                 "Đạt kết quả tốt trong các bài kiểm tra thể chất định kỳ của học kỳ.",
-                "Chăm chỉ tập luyện, cần duy trì thói quen tập thể dục mỗi ngày ở nhà để nâng cao sức."
+                "Chăm chỉ tập luyện, cần duy trì thói quen tập thể dục mỗi ngày ở nhà để nâng cao sức khỏe."
             ],
             "C": [
                 "Thể lực còn yếu, tiếp thu động tác còn chậm, chưa thực hiện đúng kỹ thuật động tác.",
@@ -3512,11 +3512,11 @@
                 "Rất tích cực tham gia các buổi giao lưu văn hóa, văn nghệ tiếng dân tộc của trường.",
                 "Chăm chỉ luyện viết chữ, hoàn thành xuất sắc các bài tập chính tả và đọc hiểu bài.",
                 "Hiểu sâu sắc ý nghĩa các câu chuyện cổ tích và phong tục tập quán truyền thống.",
-                "Luôn là tấm gương sáng, nhiệt tình giúp đỡ các bạn trong lớp cùng học tốt tiếng dân.",
+                "Luôn là tấm gương sáng, nhiệt tình giúp đỡ các bạn trong lớp cùng học tốt tiếng dân tộc.",
                 "Khả năng nhớ mặt chữ nhanh, phát âm chuẩn các âm khó đặc trưng của ngôn ngữ dân tộc.",
                 "Thao tác dịch đoạn văn ngắn rất mạch lạc, câu văn tự nhiên và giữ đúng tinh thần gốc.",
                 "Có ý thức gìn giữ và phát huy tiếng nói.",
-                "Tự giác học bài, đọc thêm nhiều sách truyện song ngữ để mở rộng vốn từ vựng phong.",
+                "Tự giác học bài, đọc thêm nhiều sách truyện song ngữ để mở rộng vốn từ vựng phong phú.",
                 "Kỹ năng nghe hiểu tiếng dân tộc rất tốt, trả lời nhanh các câu hỏi của giáo viên.",
                 "Tự tin thuyết trình giới thiệu nét đẹp trang phục và phong tục quê hương.",
                 "Chữ viết sạch đẹp, trình bày vở cẩn thận.",
@@ -3530,18 +3530,18 @@
                 "Nắm được các từ vựng và câu giao tiếp cơ bản bằng tiếng dân tộc.",
                 "Biết cách đọc và viết các chữ cái, từ ngữ thông dụng theo hướng dẫn của giáo viên.",
                 "Đọc bài tương đối lưu loát, cần rèn luyện thêm để phát âm thật chuẩn xác các âm khó.",
-                "Có ý thức học tập chăm chỉ, ghi chép bài đầy đủ và giữ gìn sách vở sạch.",
+                "Có ý thức học tập chăm chỉ, ghi chép bài đầy đủ và giữ gìn sách vở sạch đẹp.",
                 "Hiểu được nội dung các bài khóa đơn giản.",
-                "Tập viết chữ tiếng dân tộc đúng mẫu, cần rèn thêm độ đều nét và khoảng cách giữa.",
+                "Tập viết chữ tiếng dân tộc đúng mẫu, cần rèn thêm độ đều nét và khoảng cách giữa các chữ.",
                 "Tham gia học tập đầy đủ, lắng nghe giáo viên giảng bài và chăm chú luyện phát âm trên lớp.",
-                "Nhớ được nghĩa của các từ vựng theo chủ đề quen thuộc: gia đình, bản làng, con.",
+                "Nhớ được nghĩa của các từ vựng theo chủ đề quen thuộc: gia đình, bản làng, con vật.",
                 "Biết dịch các câu ngắn đơn giản, cần rèn thêm vốn từ để dịch câu dài lưu loát hơn.",
                 "Có tình yêu đối với tiếng nói của dân tộc mình.",
                 "Hoàn thành các bài tập trong vở bài tập đúng hạn.",
                 "Tham gia tốt các hoạt động tập đọc và luyện nói đôi bạn cùng các bạn trong lớp.",
                 "Biết kính trọng các nghệ nhân và người lớn tuổi am hiểu văn hóa dân tộc ở địa phương.",
                 "Nghe hiểu các chỉ dẫn cơ bản của giáo viên bằng tiếng dân tộc trong giờ học.",
-                "Có tinh thần học hỏi, cần chăm chỉ trò chuyện bằng tiếng dân tộc nhiều hơn với người.",
+                "Có tinh thần học hỏi, cần chăm chỉ trò chuyện bằng tiếng dân tộc nhiều hơn với mọi người.",
                 "Biết viết đúng dấu thanh và các ký tự đặc biệt của chữ viết tiếng dân tộc.",
                 "Tiếp thu bài đạt yêu cầu, cần tích cực giơ tay phát biểu xây dựng bài học hơn nữa.",
                 "Tham gia vui vẻ các trò chơi đố vui từ vựng tiếng dân tộc do giáo viên tổ chức.",
@@ -3586,7 +3586,7 @@
             ],
             "H": [
                 "Nắm được kiến thức cơ bản của môn học, hoàn thành bài tập đầy đủ theo yêu cầu.",
-                "Có ý thức học tập chăm chỉ, chú ý lắng nghe giáo viên giảng bài và ghi chép bài cẩn.",
+                "Có ý thức học tập chăm chỉ, chú ý lắng nghe giáo viên giảng bài và ghi chép bài cẩn thận.",
                 "Hiểu bài, làm được các bài tập quen thuộc, cần tự tin hơn khi lên bảng làm bài.",
                 "Tiếp thu bài tốt, có tinh thần rèn luyện nền nếp.",
                 "Hoàn thành bài tập tại lớp đúng thời gian.",
@@ -3666,7 +3666,7 @@
                 "Thực hiện tốt các nhiệm vụ giáo viên giao, cần phát huy tính chủ động trong học tập.",
                 "Nhớ được tác giả, tác phẩm và hoàn cảnh sáng tác của các văn bản trọng tâm.",
                 "Có thái độ học tập tích cực, cần chú ý liên kết giữa các câu trong đoạn văn chặt chẽ.",
-                "Tiếp thu bài đạt yêu cầu, cần kiên trì luyện viết văn thường xuyên để nâng cao kỹ.",
+                "Tiếp thu bài đạt yêu cầu, cần kiên trì luyện viết văn thường xuyên để nâng cao kỹ năng viết.",
                 "Biết phân biệt văn bản nghị luận và văn bản thông tin.",
                 "Có tinh thần cầu tiến, chăm chỉ ôn bài."
             ],
@@ -3894,7 +3894,7 @@
                 "Có cố gắng trong học tập, cần chú ý ôn tập thường xuyên để không bị nhầm lẫn các mốc.",
                 "Nắm được sự phân chia thời gian theo thế kỷ và kỷ nguyên trong lịch sử nhân loại.",
                 "Biết liên hệ kiến thức địa lí bài học với tình hình phát triển kinh tế của quê hương.",
-                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi lên bảng chỉ bản đồ trước tập thể lớp.",
+                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi lên bảng chỉ bản đồ trước tập thể lớp học.",
                 "Chữ viết rõ ràng, trình bày bài cẩn thận.",
                 "Nhận thức đúng đắn về vai trò của lịch sử trong việc bồi dưỡng nhân cách người học.",
                 "Hiểu bài tại lớp, cần dành thêm thời gian đọc lại bài học trong sách để nhớ bài sâu.",
@@ -3950,7 +3950,7 @@
                 "Nhận biết được tác hại của các tệ nạn xã hội và có ý thức tự bảo vệ bản thân.",
                 "Biết tiết kiệm thời gian và tiền bạc, không lãng phí đồ dùng học tập.",
                 "Có thái độ tôn trọng người khác, không tham gia vào các hành vi bắt nạt hay kỳ thị.",
-                "Ghi chép bài đầy đủ, chú ý nghe giảng, cần mạnh dạn phát biểu ý kiến cá nhân nhiều.",
+                "Ghi chép bài đầy đủ, chú ý nghe giảng, cần mạnh dạn phát biểu ý kiến cá nhân nhiều hơn.",
                 "Biết cách ứng xử khi gặp các tình huống xung đột nhỏ trong lớp học theo hướng.",
                 "Tích cực tham gia các buổi sinh hoạt chuyên đề về an toàn giao thông và phòng chống.",
                 "Có tinh thần học hỏi các tấm gương người tốt việc tốt trong đời sống hằng ngày.",
@@ -4031,7 +4031,7 @@
             "T": [
                 "Nắm chắc nguyên lý kỹ thuật, gia công và lắp ráp mô hình rất khéo léo, chuẩn xác.",
                 "Đọc và phân tích bản vẽ kỹ thuật rất thành thạo.",
-                "Có kiến thức phong phú về công nghệ, nắm vững nguyên lý hoạt động của các thiết bị.",
+                "Có kiến thức phong phú về công nghệ, nắm vững nguyên lý hoạt động của các thiết bị công nghệ.",
                 "Sử dụng an toàn và thành thạo các dụng cụ gia công: kìm, tua vít, cưa, khoan, mỏ hàn.",
                 "Sáng tạo trong các dự án học tập công nghệ, hoàn thành sản phẩm thực hành xuất sắc.",
                 "Ý thức an toàn lao động và bảo hộ lao động tuyệt vời.",
@@ -4041,7 +4041,7 @@
                 "Chăm chỉ, kiên nhẫn, sản phẩm làm ra luôn đạt độ chính xác và tính thẩm mỹ rất cao.",
                 "Nhiệt tình hướng dẫn và hỗ trợ các bạn cùng bàn hoàn thành sản phẩm đúng tiến độ.",
                 "Biết vận dụng kiến thức công nghệ để sửa chữa một số đồ dùng điện đơn giản trong gia.",
-                "Tự tin thuyết trình giới thiệu về quy trình công nghệ và sản phẩm trước tập thể lớp.",
+                "Tự tin thuyết trình giới thiệu về quy trình công nghệ và sản phẩm trước tập thể lớp học.",
                 "Có tư duy kinh tế và tiết kiệm chi phí trong việc lựa chọn nguyên vật liệu gia công.",
                 "Học tập hăng say, luôn có những ý tưởng cải tiến kỹ thuật rất thông minh và thực tế.",
                 "Nắm vững kiến thức dinh dưỡng, chế biến và bảo quản thực phẩm an toàn vệ.",
@@ -4146,7 +4146,7 @@
         "Âm nhạc": {
             "T": [
                 "Hát đúng cao độ, trường độ, giai điệu; giọng hát trong trẻo.",
-                "Tự tin biểu diễn đơn ca, song ca trước tập thể lớp.",
+                "Tự tin biểu diễn đơn ca, song ca trước tập thể lớp học.",
                 "Khả năng cảm thụ âm nhạc xuất sắc, gõ đệm theo phách.",
                 "Đọc nhạc rất chuẩn cao độ và trường độ các bài tập đọc nhạc có nốt hoa mỹ và nhịp.",
                 "Sử dụng thành thạo nhạc cụ gõ hoặc nhạc cụ giai điệu (sáo recorder.",
@@ -4413,7 +4413,7 @@
                 "Biết chia sẻ những nét đẹp văn hóa quê hương với bạn bè khi cùng thảo luận bài học.",
                 "Làm bài kiểm tra nghiêm túc, đạt chuẩn kiến thức kỹ năng môn Giáo dục địa phương.",
                 "Nắm được các ngành kinh tế chủ yếu của địa phương: nông nghiệp, công nghiệp.",
-                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm tư liệu thực tế để bài viết phong.",
+                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm tư liệu thực tế để bài viết phong phú hơn.",
                 "Tham gia tích cực các hoạt động đền ơn đáp nghĩa.",
                 "Hiểu được trách nhiệm của học sinh đối với sự nghiệp xây dựng và bảo vệ quê hương.",
                 "Trình bày bài thu hoạch rõ ràng, sạch sẽ, có ý thức tìm tòi thêm hình ảnh minh họa.",
@@ -4474,7 +4474,7 @@
                 "Có cố gắng trong học tập, cần chú ý kiểm tra lại chính tả trước khi nộp bài.",
                 "Biết cách tra cứu từ điển song ngữ để tìm nghĩa của các từ vựng mới chưa học.",
                 "Tham gia vui vẻ vào các trò chơi học tập tiếng dân tộc do giáo viên tổ chức trên lớp.",
-                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với người.",
+                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với mọi người.",
                 "Trình bày bài vở sạch sẽ, rõ ràng, hoàn thành tốt các bài tập trong sách bài tập.",
                 "Có thái độ tôn trọng các giá trị văn hóa và ngôn ngữ truyền thống của quê hương.",
                 "Chăm chỉ ôn bài trước các kỳ kiểm tra, có tinh thần cầu tiến trong học tập môn học.",
@@ -4654,7 +4654,7 @@
                 "Thực hiện tốt các nhiệm vụ giáo viên giao, cần phát huy tính chủ động trong học tập.",
                 "Nhớ được tác giả, tác phẩm và hoàn cảnh sáng tác của các văn bản trọng tâm.",
                 "Có thái độ học tập tích cực, cần chú ý liên kết giữa các câu trong đoạn văn chặt chẽ.",
-                "Tiếp thu bài đạt yêu cầu, cần kiên trì luyện viết văn thường xuyên để nâng cao kỹ.",
+                "Tiếp thu bài đạt yêu cầu, cần kiên trì luyện viết văn thường xuyên để nâng cao kỹ năng viết.",
                 "Biết phân biệt văn bản nghị luận và văn bản thông tin.",
                 "Có tinh thần cầu tiến, chăm chỉ ôn bài."
             ],
@@ -4882,7 +4882,7 @@
                 "Có cố gắng trong học tập, cần chú ý ôn tập thường xuyên để không bị nhầm lẫn các mốc.",
                 "Nắm được sự phân chia thời gian theo thế kỷ và kỷ nguyên trong lịch sử nhân loại.",
                 "Biết liên hệ kiến thức địa lí bài học với tình hình phát triển kinh tế của quê hương.",
-                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi lên bảng chỉ bản đồ trước tập thể lớp.",
+                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi lên bảng chỉ bản đồ trước tập thể lớp học.",
                 "Chữ viết rõ ràng, trình bày bài cẩn thận.",
                 "Nhận thức đúng đắn về vai trò của lịch sử trong việc bồi dưỡng nhân cách người học.",
                 "Hiểu bài tại lớp, cần dành thêm thời gian đọc lại bài học trong sách để nhớ bài sâu.",
@@ -4938,7 +4938,7 @@
                 "Nhận biết được tác hại của các tệ nạn xã hội và có ý thức tự bảo vệ bản thân.",
                 "Biết tiết kiệm thời gian và tiền bạc, không lãng phí đồ dùng học tập.",
                 "Có thái độ tôn trọng người khác, không tham gia vào các hành vi bắt nạt hay kỳ thị.",
-                "Ghi chép bài đầy đủ, chú ý nghe giảng, cần mạnh dạn phát biểu ý kiến cá nhân nhiều.",
+                "Ghi chép bài đầy đủ, chú ý nghe giảng, cần mạnh dạn phát biểu ý kiến cá nhân nhiều hơn.",
                 "Biết cách ứng xử khi gặp các tình huống xung đột nhỏ trong lớp học theo hướng.",
                 "Tích cực tham gia các buổi sinh hoạt chuyên đề về an toàn giao thông và phòng chống.",
                 "Có tinh thần học hỏi các tấm gương người tốt việc tốt trong đời sống hằng ngày.",
@@ -5000,7 +5000,7 @@
                 "Có tinh thần hợp tác tốt với bạn ngồi cùng máy trong các bài tập thực hành đôi.",
                 "Hiểu được vai trò của tin học trong cuộc cách mạng công nghiệp lần thứ tư.",
                 "Biết cách định dạng phông chữ, cỡ chữ, màu sắc và căn lề cho bảng dữ liệu.",
-                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi thử sức với các bài tập lập trình mở.",
+                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi thử sức với các bài tập lập trình mở rộng.",
                 "Có ý thức tự giác học bài, cần dành thêm thời gian thực hành máy tính ở nhà nếu có.",
                 "Trình bày sản phẩm thực hành sạch sẽ, đúng yêu cầu kỹ thuật của bài học.",
                 "Đạt chuẩn kiến thức kỹ năng môn Tin học theo chương trình GDPT 2018.",
@@ -5029,7 +5029,7 @@
                 "Chăm chỉ, kiên nhẫn, sản phẩm làm ra luôn đạt độ chính xác và tính thẩm mỹ rất cao.",
                 "Nhiệt tình hướng dẫn và hỗ trợ các bạn cùng bàn hoàn thành sản phẩm đúng tiến độ.",
                 "Biết vận dụng kiến thức công nghệ để sửa chữa một số đồ dùng điện đơn giản trong gia.",
-                "Tự tin thuyết trình giới thiệu về quy trình công nghệ và sản phẩm trước tập thể lớp.",
+                "Tự tin thuyết trình giới thiệu về quy trình công nghệ và sản phẩm trước tập thể lớp học.",
                 "Có tư duy kinh tế và tiết kiệm chi phí trong việc lựa chọn nguyên vật liệu gia công.",
                 "Học tập hăng say, luôn có những ý tưởng cải tiến kỹ thuật rất thông minh và thực tế.",
                 "Nắm vững kiến thức dinh dưỡng, chế biến và bảo quản thực phẩm an toàn vệ.",
@@ -5134,7 +5134,7 @@
         "Âm nhạc": {
             "T": [
                 "Hát đúng cao độ, trường độ, giai điệu; giọng hát trong trẻo.",
-                "Tự tin biểu diễn đơn ca, song ca trước tập thể lớp.",
+                "Tự tin biểu diễn đơn ca, song ca trước tập thể lớp học.",
                 "Khả năng cảm thụ âm nhạc xuất sắc, gõ đệm theo phách.",
                 "Đọc nhạc rất chuẩn cao độ và trường độ các bài tập đọc nhạc có nốt hoa mỹ và nhịp.",
                 "Sử dụng thành thạo nhạc cụ gõ hoặc nhạc cụ giai điệu (sáo recorder.",
@@ -5401,7 +5401,7 @@
                 "Biết chia sẻ những nét đẹp văn hóa quê hương với bạn bè khi cùng thảo luận bài học.",
                 "Làm bài kiểm tra nghiêm túc, đạt chuẩn kiến thức kỹ năng môn Giáo dục địa phương.",
                 "Nắm được các ngành kinh tế chủ yếu của địa phương: nông nghiệp, công nghiệp.",
-                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm tư liệu thực tế để bài viết phong.",
+                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm tư liệu thực tế để bài viết phong phú hơn.",
                 "Tham gia tích cực các hoạt động đền ơn đáp nghĩa.",
                 "Hiểu được trách nhiệm của học sinh đối với sự nghiệp xây dựng và bảo vệ quê hương.",
                 "Trình bày bài thu hoạch rõ ràng, sạch sẽ, có ý thức tìm tòi thêm hình ảnh minh họa.",
@@ -5462,7 +5462,7 @@
                 "Có cố gắng trong học tập, cần chú ý kiểm tra lại chính tả trước khi nộp bài.",
                 "Biết cách tra cứu từ điển song ngữ để tìm nghĩa của các từ vựng mới chưa học.",
                 "Tham gia vui vẻ vào các trò chơi học tập tiếng dân tộc do giáo viên tổ chức trên lớp.",
-                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với người.",
+                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với mọi người.",
                 "Trình bày bài vở sạch sẽ, rõ ràng, hoàn thành tốt các bài tập trong sách bài tập.",
                 "Có thái độ tôn trọng các giá trị văn hóa và ngôn ngữ truyền thống của quê hương.",
                 "Chăm chỉ ôn bài trước các kỳ kiểm tra, có tinh thần cầu tiến trong học tập môn học.",
@@ -5642,7 +5642,7 @@
                 "Thực hiện tốt các nhiệm vụ giáo viên giao, cần phát huy tính chủ động trong học tập.",
                 "Nhớ được tác giả, tác phẩm và hoàn cảnh sáng tác của các văn bản trọng tâm.",
                 "Có thái độ học tập tích cực, cần chú ý liên kết giữa các câu trong đoạn văn chặt chẽ.",
-                "Tiếp thu bài đạt yêu cầu, cần kiên trì luyện viết văn thường xuyên để nâng cao kỹ.",
+                "Tiếp thu bài đạt yêu cầu, cần kiên trì luyện viết văn thường xuyên để nâng cao kỹ năng viết.",
                 "Biết phân biệt văn bản nghị luận và văn bản thông tin.",
                 "Có tinh thần cầu tiến, chăm chỉ ôn bài."
             ],
@@ -5870,7 +5870,7 @@
                 "Có cố gắng trong học tập, cần chú ý ôn tập thường xuyên để không bị nhầm lẫn các mốc.",
                 "Nắm được sự phân chia thời gian theo thế kỷ và kỷ nguyên trong lịch sử nhân loại.",
                 "Biết liên hệ kiến thức địa lí bài học với tình hình phát triển kinh tế của quê hương.",
-                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi lên bảng chỉ bản đồ trước tập thể lớp.",
+                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi lên bảng chỉ bản đồ trước tập thể lớp học.",
                 "Chữ viết rõ ràng, trình bày bài cẩn thận.",
                 "Nhận thức đúng đắn về vai trò của lịch sử trong việc bồi dưỡng nhân cách người học.",
                 "Hiểu bài tại lớp, cần dành thêm thời gian đọc lại bài học trong sách để nhớ bài sâu.",
@@ -5926,7 +5926,7 @@
                 "Nhận biết được tác hại của các tệ nạn xã hội và có ý thức tự bảo vệ bản thân.",
                 "Biết tiết kiệm thời gian và tiền bạc, không lãng phí đồ dùng học tập.",
                 "Có thái độ tôn trọng người khác, không tham gia vào các hành vi bắt nạt hay kỳ thị.",
-                "Ghi chép bài đầy đủ, chú ý nghe giảng, cần mạnh dạn phát biểu ý kiến cá nhân nhiều.",
+                "Ghi chép bài đầy đủ, chú ý nghe giảng, cần mạnh dạn phát biểu ý kiến cá nhân nhiều hơn.",
                 "Biết cách ứng xử khi gặp các tình huống xung đột nhỏ trong lớp học theo hướng.",
                 "Tích cực tham gia các buổi sinh hoạt chuyên đề về an toàn giao thông và phòng chống.",
                 "Có tinh thần học hỏi các tấm gương người tốt việc tốt trong đời sống hằng ngày.",
@@ -5988,7 +5988,7 @@
                 "Có tinh thần hợp tác tốt với bạn ngồi cùng máy trong các bài tập thực hành đôi.",
                 "Hiểu được vai trò của tin học trong cuộc cách mạng công nghiệp lần thứ tư.",
                 "Biết cách định dạng phông chữ, cỡ chữ, màu sắc và căn lề cho bảng dữ liệu.",
-                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi thử sức với các bài tập lập trình mở.",
+                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi thử sức với các bài tập lập trình mở rộng.",
                 "Có ý thức tự giác học bài, cần dành thêm thời gian thực hành máy tính ở nhà nếu có.",
                 "Trình bày sản phẩm thực hành sạch sẽ, đúng yêu cầu kỹ thuật của bài học.",
                 "Đạt chuẩn kiến thức kỹ năng môn Tin học theo chương trình GDPT 2018.",
@@ -6017,7 +6017,7 @@
                 "Chăm chỉ, kiên nhẫn, sản phẩm làm ra luôn đạt độ chính xác và tính thẩm mỹ rất cao.",
                 "Nhiệt tình hướng dẫn và hỗ trợ các bạn cùng bàn hoàn thành sản phẩm đúng tiến độ.",
                 "Biết vận dụng kiến thức công nghệ để sửa chữa một số đồ dùng điện đơn giản trong gia.",
-                "Tự tin thuyết trình giới thiệu về quy trình công nghệ và sản phẩm trước tập thể lớp.",
+                "Tự tin thuyết trình giới thiệu về quy trình công nghệ và sản phẩm trước tập thể lớp học.",
                 "Có tư duy kinh tế và tiết kiệm chi phí trong việc lựa chọn nguyên vật liệu gia công.",
                 "Học tập hăng say, luôn có những ý tưởng cải tiến kỹ thuật rất thông minh và thực tế.",
                 "Nắm vững kiến thức dinh dưỡng, chế biến và bảo quản thực phẩm an toàn vệ.",
@@ -6122,7 +6122,7 @@
         "Âm nhạc": {
             "T": [
                 "Hát đúng cao độ, trường độ, giai điệu; giọng hát trong trẻo.",
-                "Tự tin biểu diễn đơn ca, song ca trước tập thể lớp.",
+                "Tự tin biểu diễn đơn ca, song ca trước tập thể lớp học.",
                 "Khả năng cảm thụ âm nhạc xuất sắc, gõ đệm theo phách.",
                 "Đọc nhạc rất chuẩn cao độ và trường độ các bài tập đọc nhạc có nốt hoa mỹ và nhịp.",
                 "Sử dụng thành thạo nhạc cụ gõ hoặc nhạc cụ giai điệu (sáo recorder.",
@@ -6389,7 +6389,7 @@
                 "Biết chia sẻ những nét đẹp văn hóa quê hương với bạn bè khi cùng thảo luận bài học.",
                 "Làm bài kiểm tra nghiêm túc, đạt chuẩn kiến thức kỹ năng môn Giáo dục địa phương.",
                 "Nắm được các ngành kinh tế chủ yếu của địa phương: nông nghiệp, công nghiệp.",
-                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm tư liệu thực tế để bài viết phong.",
+                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm tư liệu thực tế để bài viết phong phú hơn.",
                 "Tham gia tích cực các hoạt động đền ơn đáp nghĩa.",
                 "Hiểu được trách nhiệm của học sinh đối với sự nghiệp xây dựng và bảo vệ quê hương.",
                 "Trình bày bài thu hoạch rõ ràng, sạch sẽ, có ý thức tìm tòi thêm hình ảnh minh họa.",
@@ -6450,7 +6450,7 @@
                 "Có cố gắng trong học tập, cần chú ý kiểm tra lại chính tả trước khi nộp bài.",
                 "Biết cách tra cứu từ điển song ngữ để tìm nghĩa của các từ vựng mới chưa học.",
                 "Tham gia vui vẻ vào các trò chơi học tập tiếng dân tộc do giáo viên tổ chức trên lớp.",
-                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với người.",
+                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với mọi người.",
                 "Trình bày bài vở sạch sẽ, rõ ràng, hoàn thành tốt các bài tập trong sách bài tập.",
                 "Có thái độ tôn trọng các giá trị văn hóa và ngôn ngữ truyền thống của quê hương.",
                 "Chăm chỉ ôn bài trước các kỳ kiểm tra, có tinh thần cầu tiến trong học tập môn học.",
@@ -6630,7 +6630,7 @@
                 "Thực hiện tốt các nhiệm vụ giáo viên giao, cần phát huy tính chủ động trong học tập.",
                 "Nhớ được tác giả, tác phẩm và hoàn cảnh sáng tác của các văn bản trọng tâm.",
                 "Có thái độ học tập tích cực, cần chú ý liên kết giữa các câu trong đoạn văn chặt chẽ.",
-                "Tiếp thu bài đạt yêu cầu, cần kiên trì luyện viết văn thường xuyên để nâng cao kỹ.",
+                "Tiếp thu bài đạt yêu cầu, cần kiên trì luyện viết văn thường xuyên để nâng cao kỹ năng viết.",
                 "Biết phân biệt văn bản nghị luận và văn bản thông tin.",
                 "Có tinh thần cầu tiến, chăm chỉ ôn bài."
             ],
@@ -6858,7 +6858,7 @@
                 "Có cố gắng trong học tập, cần chú ý ôn tập thường xuyên để không bị nhầm lẫn các mốc.",
                 "Nắm được sự phân chia thời gian theo thế kỷ và kỷ nguyên trong lịch sử nhân loại.",
                 "Biết liên hệ kiến thức địa lí bài học với tình hình phát triển kinh tế của quê hương.",
-                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi lên bảng chỉ bản đồ trước tập thể lớp.",
+                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi lên bảng chỉ bản đồ trước tập thể lớp học.",
                 "Chữ viết rõ ràng, trình bày bài cẩn thận.",
                 "Nhận thức đúng đắn về vai trò của lịch sử trong việc bồi dưỡng nhân cách người học.",
                 "Hiểu bài tại lớp, cần dành thêm thời gian đọc lại bài học trong sách để nhớ bài sâu.",
@@ -6914,7 +6914,7 @@
                 "Nhận biết được tác hại của các tệ nạn xã hội và có ý thức tự bảo vệ bản thân.",
                 "Biết tiết kiệm thời gian và tiền bạc, không lãng phí đồ dùng học tập.",
                 "Có thái độ tôn trọng người khác, không tham gia vào các hành vi bắt nạt hay kỳ thị.",
-                "Ghi chép bài đầy đủ, chú ý nghe giảng, cần mạnh dạn phát biểu ý kiến cá nhân nhiều.",
+                "Ghi chép bài đầy đủ, chú ý nghe giảng, cần mạnh dạn phát biểu ý kiến cá nhân nhiều hơn.",
                 "Biết cách ứng xử khi gặp các tình huống xung đột nhỏ trong lớp học theo hướng.",
                 "Tích cực tham gia các buổi sinh hoạt chuyên đề về an toàn giao thông và phòng chống.",
                 "Có tinh thần học hỏi các tấm gương người tốt việc tốt trong đời sống hằng ngày.",
@@ -6976,7 +6976,7 @@
                 "Có tinh thần hợp tác tốt với bạn ngồi cùng máy trong các bài tập thực hành đôi.",
                 "Hiểu được vai trò của tin học trong cuộc cách mạng công nghiệp lần thứ tư.",
                 "Biết cách định dạng phông chữ, cỡ chữ, màu sắc và căn lề cho bảng dữ liệu.",
-                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi thử sức với các bài tập lập trình mở.",
+                "Tiếp thu bài tương đối tốt, cần tự tin hơn khi thử sức với các bài tập lập trình mở rộng.",
                 "Có ý thức tự giác học bài, cần dành thêm thời gian thực hành máy tính ở nhà nếu có.",
                 "Trình bày sản phẩm thực hành sạch sẽ, đúng yêu cầu kỹ thuật của bài học.",
                 "Đạt chuẩn kiến thức kỹ năng môn Tin học theo chương trình GDPT 2018.",
@@ -7005,7 +7005,7 @@
                 "Chăm chỉ, kiên nhẫn, sản phẩm làm ra luôn đạt độ chính xác và tính thẩm mỹ rất cao.",
                 "Nhiệt tình hướng dẫn và hỗ trợ các bạn cùng bàn hoàn thành sản phẩm đúng tiến độ.",
                 "Biết vận dụng kiến thức công nghệ để sửa chữa một số đồ dùng điện đơn giản trong gia.",
-                "Tự tin thuyết trình giới thiệu về quy trình công nghệ và sản phẩm trước tập thể lớp.",
+                "Tự tin thuyết trình giới thiệu về quy trình công nghệ và sản phẩm trước tập thể lớp học.",
                 "Có tư duy kinh tế và tiết kiệm chi phí trong việc lựa chọn nguyên vật liệu gia công.",
                 "Học tập hăng say, luôn có những ý tưởng cải tiến kỹ thuật rất thông minh và thực tế.",
                 "Nắm vững kiến thức dinh dưỡng, chế biến và bảo quản thực phẩm an toàn vệ.",
@@ -7110,7 +7110,7 @@
         "Âm nhạc": {
             "T": [
                 "Hát đúng cao độ, trường độ, giai điệu; giọng hát trong trẻo.",
-                "Tự tin biểu diễn đơn ca, song ca trước tập thể lớp.",
+                "Tự tin biểu diễn đơn ca, song ca trước tập thể lớp học.",
                 "Khả năng cảm thụ âm nhạc xuất sắc, gõ đệm theo phách.",
                 "Đọc nhạc rất chuẩn cao độ và trường độ các bài tập đọc nhạc có nốt hoa mỹ và nhịp.",
                 "Sử dụng thành thạo nhạc cụ gõ hoặc nhạc cụ giai điệu (sáo recorder.",
@@ -7377,7 +7377,7 @@
                 "Biết chia sẻ những nét đẹp văn hóa quê hương với bạn bè khi cùng thảo luận bài học.",
                 "Làm bài kiểm tra nghiêm túc, đạt chuẩn kiến thức kỹ năng môn Giáo dục địa phương.",
                 "Nắm được các ngành kinh tế chủ yếu của địa phương: nông nghiệp, công nghiệp.",
-                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm tư liệu thực tế để bài viết phong.",
+                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm tư liệu thực tế để bài viết phong phú hơn.",
                 "Tham gia tích cực các hoạt động đền ơn đáp nghĩa.",
                 "Hiểu được trách nhiệm của học sinh đối với sự nghiệp xây dựng và bảo vệ quê hương.",
                 "Trình bày bài thu hoạch rõ ràng, sạch sẽ, có ý thức tìm tòi thêm hình ảnh minh họa.",
@@ -7438,7 +7438,7 @@
                 "Có cố gắng trong học tập, cần chú ý kiểm tra lại chính tả trước khi nộp bài.",
                 "Biết cách tra cứu từ điển song ngữ để tìm nghĩa của các từ vựng mới chưa học.",
                 "Tham gia vui vẻ vào các trò chơi học tập tiếng dân tộc do giáo viên tổ chức trên lớp.",
-                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với người.",
+                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với mọi người.",
                 "Trình bày bài vở sạch sẽ, rõ ràng, hoàn thành tốt các bài tập trong sách bài tập.",
                 "Có thái độ tôn trọng các giá trị văn hóa và ngôn ngữ truyền thống của quê hương.",
                 "Chăm chỉ ôn bài trước các kỳ kiểm tra, có tinh thần cầu tiến trong học tập môn học.",
@@ -7582,7 +7582,7 @@
                 "Cảm thụ văn học tinh tế, nắm chắc phong cách nghệ thuật của các tác giả lớn.",
                 "Kỹ năng đọc hiểu văn bản nâng cao rất nhạy bén.",
                 "Bài viết có bố cục sáng rõ, luận điểm mạch lạc.",
-                "Ham đọc sách và tài liệu chuyên khảo, luôn có những liên hệ văn học sâu rộng giữa.",
+                "Ham đọc sách và tài liệu chuyên khảo, luôn có những liên hệ văn học sâu rộng giữa tác phẩm và đời sống.",
                 "Nắm vững đặc trưng các thể loại: bi kịch, phóng sự, truyện thơ, ký, tùy bút.",
                 "Khả năng tranh luận và thuyết trình các vấn đề văn học trước lớp rất đĩnh đạc.",
                 "Tự giác học tập, chuẩn bị bài chu đáo, bài kiểm tra định kỳ luôn đạt điểm số xuất.",
@@ -8290,7 +8290,7 @@
                 "Tác phong đi lại, xưng hô, chào hỏi đậm chất người lính cách mạng.",
                 "Có phương pháp tự học khoa học, nghiên cứu sâu các chiến dịch quân sự lớn: Điện Biên.",
                 "Kỹ năng mắc võng, đào công sự ngụy trang và sinh hoạt dã ngoại thao trường rất nhanh.",
-                "Luôn là hạt nhân nòng cốt, gương mẫu chỉ huy trung đội học sinh thực hiện các nhiệm.",
+                "Luôn là hạt nhân nòng cốt, gương mẫu chỉ huy trung đội học sinh thực hiện các nhiệm vụ được giao.",
                 "Có tinh thần tương thân tương ái, sẵn sàng chia sẻ khó khăn.",
                 "Nắm vững toàn diện chuẩn đầu ra môn Giáo dục quốc phòng và an ninh THPT theo chương.",
                 "Có nguyện vọng và quyết tâm thi vào các học viện, nhà trường quân đội.",
@@ -8375,7 +8375,7 @@
                 "Biết chia sẻ, đồng cảm với bạn bè xung quanh, có tinh thần tương thân tương ái.",
                 "Đạt chuẩn môn Hoạt động trải nghiệm, hướng nghiệp theo Thông tư 22/2021/TT-BGDĐT.",
                 "Có tinh thần cầu tiến, luôn sẵn sàng lắng nghe sự định hướng đúng đắn của giáo viên.",
-                "Chăm chỉ rèn luyện các kỹ năng mềm cần thiết để chuẩn bị hành trang bước vào giai.",
+                "Chăm chỉ rèn luyện các kỹ năng mềm cần thiết để chuẩn bị hành trang bước vào giai đoạn mới.",
                 "Hoàn thành tốt các mục tiêu rèn luyện đề ra cho năm học."
             ],
             "C": [
@@ -8384,7 +8384,7 @@
                 "Chưa hoàn thành bài thu hoạch trải nghiệm đúng hạn, bài làm còn sơ sài.",
                 "Còn rụt rè, e ngại khi tham gia các hoạt động tập thể và các buổi tư vấn nghề nghiệp.",
                 "Chưa có ý thức tìm hiểu về năng lực bản thân và các ngành nghề.",
-                "Cần tích cực mở lòng tham gia các hoạt động Đoàn - Hội để rèn luyện sự tự tin và kỹ."
+                "Cần tích cực mở lòng tham gia các hoạt động Đoàn - Hội để rèn luyện sự tự tin và kỹ năng giao tiếp."
             ]
         },
         "Nội dung giáo dục địa phương": {
@@ -8425,7 +8425,7 @@
                 "Biết chia sẻ những nét đẹp văn hóa quê hương với bạn bè khi cùng thảo luận bài học.",
                 "Làm bài kiểm tra nghiêm túc, đạt chuẩn kiến thức kỹ năng môn Giáo dục địa phương.",
                 "Nắm được các vấn đề ô nhiễm môi trường và giải pháp bảo vệ tài nguyên thiên nhiên.",
-                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm số liệu thực tế để bài viết phong.",
+                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm số liệu thực tế để bài viết phong phú hơn.",
                 "Tham gia tích cực các hoạt động đền ơn đáp nghĩa.",
                 "Hiểu được trách nhiệm của thế hệ trẻ đối với sự nghiệp xây dựng và bảo vệ quê hương.",
                 "Trình bày bài thu hoạch rõ ràng, sạch.",
@@ -8602,7 +8602,7 @@
                 "Có cố gắng trong học tập, cần chú ý kiểm tra lại chính tả trước khi nộp bài.",
                 "Biết cách tra cứu từ điển song ngữ để tìm nghĩa của các từ vựng mới chưa học.",
                 "Tham gia vui vẻ vào các trò chơi học tập tiếng dân tộc do giáo viên tổ chức trên lớp.",
-                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với người.",
+                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với mọi người.",
                 "Trình bày bài vở sạch sẽ, rõ ràng, hoàn thành tốt các bài tập trong sách bài tập.",
                 "Có thái độ tôn trọng các giá trị văn hóa và ngôn ngữ truyền thống của quê hương.",
                 "Chăm chỉ ôn bài trước các kỳ kiểm tra, có tinh thần cầu tiến trong học tập môn học.",
@@ -8744,7 +8744,7 @@
                 "Cảm thụ văn học tinh tế, nắm chắc phong cách nghệ thuật của các tác giả lớn.",
                 "Kỹ năng đọc hiểu văn bản nâng cao rất nhạy bén.",
                 "Bài viết có bố cục sáng rõ, luận điểm mạch lạc.",
-                "Ham đọc sách và tài liệu chuyên khảo, luôn có những liên hệ văn học sâu rộng giữa.",
+                "Ham đọc sách và tài liệu chuyên khảo, luôn có những liên hệ văn học sâu rộng giữa tác phẩm và đời sống.",
                 "Nắm vững đặc trưng các thể loại: bi kịch, phóng sự, truyện thơ, ký, tùy bút.",
                 "Khả năng tranh luận và thuyết trình các vấn đề văn học trước lớp rất đĩnh đạc.",
                 "Tự giác học tập, chuẩn bị bài chu đáo, bài kiểm tra định kỳ luôn đạt điểm số xuất.",
@@ -9452,7 +9452,7 @@
                 "Tác phong đi lại, xưng hô, chào hỏi đậm chất người lính cách mạng.",
                 "Có phương pháp tự học khoa học, nghiên cứu sâu các chiến dịch quân sự lớn: Điện Biên.",
                 "Kỹ năng mắc võng, đào công sự ngụy trang và sinh hoạt dã ngoại thao trường rất nhanh.",
-                "Luôn là hạt nhân nòng cốt, gương mẫu chỉ huy trung đội học sinh thực hiện các nhiệm.",
+                "Luôn là hạt nhân nòng cốt, gương mẫu chỉ huy trung đội học sinh thực hiện các nhiệm vụ được giao.",
                 "Có tinh thần tương thân tương ái, sẵn sàng chia sẻ khó khăn.",
                 "Nắm vững toàn diện chuẩn đầu ra môn Giáo dục quốc phòng và an ninh THPT theo chương.",
                 "Có nguyện vọng và quyết tâm thi vào các học viện, nhà trường quân đội.",
@@ -9537,7 +9537,7 @@
                 "Biết chia sẻ, đồng cảm với bạn bè xung quanh, có tinh thần tương thân tương ái.",
                 "Đạt chuẩn môn Hoạt động trải nghiệm, hướng nghiệp theo Thông tư 22/2021/TT-BGDĐT.",
                 "Có tinh thần cầu tiến, luôn sẵn sàng lắng nghe sự định hướng đúng đắn của giáo viên.",
-                "Chăm chỉ rèn luyện các kỹ năng mềm cần thiết để chuẩn bị hành trang bước vào giai.",
+                "Chăm chỉ rèn luyện các kỹ năng mềm cần thiết để chuẩn bị hành trang bước vào giai đoạn mới.",
                 "Hoàn thành tốt các mục tiêu rèn luyện đề ra cho năm học."
             ],
             "C": [
@@ -9546,7 +9546,7 @@
                 "Chưa hoàn thành bài thu hoạch trải nghiệm đúng hạn, bài làm còn sơ sài.",
                 "Còn rụt rè, e ngại khi tham gia các hoạt động tập thể và các buổi tư vấn nghề nghiệp.",
                 "Chưa có ý thức tìm hiểu về năng lực bản thân và các ngành nghề.",
-                "Cần tích cực mở lòng tham gia các hoạt động Đoàn - Hội để rèn luyện sự tự tin và kỹ."
+                "Cần tích cực mở lòng tham gia các hoạt động Đoàn - Hội để rèn luyện sự tự tin và kỹ năng giao tiếp."
             ]
         },
         "Nội dung giáo dục địa phương": {
@@ -9587,7 +9587,7 @@
                 "Biết chia sẻ những nét đẹp văn hóa quê hương với bạn bè khi cùng thảo luận bài học.",
                 "Làm bài kiểm tra nghiêm túc, đạt chuẩn kiến thức kỹ năng môn Giáo dục địa phương.",
                 "Nắm được các vấn đề ô nhiễm môi trường và giải pháp bảo vệ tài nguyên thiên nhiên.",
-                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm số liệu thực tế để bài viết phong.",
+                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm số liệu thực tế để bài viết phong phú hơn.",
                 "Tham gia tích cực các hoạt động đền ơn đáp nghĩa.",
                 "Hiểu được trách nhiệm của thế hệ trẻ đối với sự nghiệp xây dựng và bảo vệ quê hương.",
                 "Trình bày bài thu hoạch rõ ràng, sạch.",
@@ -9764,7 +9764,7 @@
                 "Có cố gắng trong học tập, cần chú ý kiểm tra lại chính tả trước khi nộp bài.",
                 "Biết cách tra cứu từ điển song ngữ để tìm nghĩa của các từ vựng mới chưa học.",
                 "Tham gia vui vẻ vào các trò chơi học tập tiếng dân tộc do giáo viên tổ chức trên lớp.",
-                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với người.",
+                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với mọi người.",
                 "Trình bày bài vở sạch sẽ, rõ ràng, hoàn thành tốt các bài tập trong sách bài tập.",
                 "Có thái độ tôn trọng các giá trị văn hóa và ngôn ngữ truyền thống của quê hương.",
                 "Chăm chỉ ôn bài trước các kỳ kiểm tra, có tinh thần cầu tiến trong học tập môn học.",
@@ -9906,7 +9906,7 @@
                 "Cảm thụ văn học tinh tế, nắm chắc phong cách nghệ thuật của các tác giả lớn.",
                 "Kỹ năng đọc hiểu văn bản nâng cao rất nhạy bén.",
                 "Bài viết có bố cục sáng rõ, luận điểm mạch lạc.",
-                "Ham đọc sách và tài liệu chuyên khảo, luôn có những liên hệ văn học sâu rộng giữa.",
+                "Ham đọc sách và tài liệu chuyên khảo, luôn có những liên hệ văn học sâu rộng giữa tác phẩm và đời sống.",
                 "Nắm vững đặc trưng các thể loại: bi kịch, phóng sự, truyện thơ, ký, tùy bút.",
                 "Khả năng tranh luận và thuyết trình các vấn đề văn học trước lớp rất đĩnh đạc.",
                 "Tự giác học tập, chuẩn bị bài chu đáo, bài kiểm tra định kỳ luôn đạt điểm số xuất.",
@@ -10614,7 +10614,7 @@
                 "Tác phong đi lại, xưng hô, chào hỏi đậm chất người lính cách mạng.",
                 "Có phương pháp tự học khoa học, nghiên cứu sâu các chiến dịch quân sự lớn: Điện Biên.",
                 "Kỹ năng mắc võng, đào công sự ngụy trang và sinh hoạt dã ngoại thao trường rất nhanh.",
-                "Luôn là hạt nhân nòng cốt, gương mẫu chỉ huy trung đội học sinh thực hiện các nhiệm.",
+                "Luôn là hạt nhân nòng cốt, gương mẫu chỉ huy trung đội học sinh thực hiện các nhiệm vụ được giao.",
                 "Có tinh thần tương thân tương ái, sẵn sàng chia sẻ khó khăn.",
                 "Nắm vững toàn diện chuẩn đầu ra môn Giáo dục quốc phòng và an ninh THPT theo chương.",
                 "Có nguyện vọng và quyết tâm thi vào các học viện, nhà trường quân đội.",
@@ -10699,7 +10699,7 @@
                 "Biết chia sẻ, đồng cảm với bạn bè xung quanh, có tinh thần tương thân tương ái.",
                 "Đạt chuẩn môn Hoạt động trải nghiệm, hướng nghiệp theo Thông tư 22/2021/TT-BGDĐT.",
                 "Có tinh thần cầu tiến, luôn sẵn sàng lắng nghe sự định hướng đúng đắn của giáo viên.",
-                "Chăm chỉ rèn luyện các kỹ năng mềm cần thiết để chuẩn bị hành trang bước vào giai.",
+                "Chăm chỉ rèn luyện các kỹ năng mềm cần thiết để chuẩn bị hành trang bước vào giai đoạn mới.",
                 "Hoàn thành tốt các mục tiêu rèn luyện đề ra cho năm học."
             ],
             "C": [
@@ -10708,7 +10708,7 @@
                 "Chưa hoàn thành bài thu hoạch trải nghiệm đúng hạn, bài làm còn sơ sài.",
                 "Còn rụt rè, e ngại khi tham gia các hoạt động tập thể và các buổi tư vấn nghề nghiệp.",
                 "Chưa có ý thức tìm hiểu về năng lực bản thân và các ngành nghề.",
-                "Cần tích cực mở lòng tham gia các hoạt động Đoàn - Hội để rèn luyện sự tự tin và kỹ."
+                "Cần tích cực mở lòng tham gia các hoạt động Đoàn - Hội để rèn luyện sự tự tin và kỹ năng giao tiếp."
             ]
         },
         "Nội dung giáo dục địa phương": {
@@ -10749,7 +10749,7 @@
                 "Biết chia sẻ những nét đẹp văn hóa quê hương với bạn bè khi cùng thảo luận bài học.",
                 "Làm bài kiểm tra nghiêm túc, đạt chuẩn kiến thức kỹ năng môn Giáo dục địa phương.",
                 "Nắm được các vấn đề ô nhiễm môi trường và giải pháp bảo vệ tài nguyên thiên nhiên.",
-                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm số liệu thực tế để bài viết phong.",
+                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm số liệu thực tế để bài viết phong phú hơn.",
                 "Tham gia tích cực các hoạt động đền ơn đáp nghĩa.",
                 "Hiểu được trách nhiệm của thế hệ trẻ đối với sự nghiệp xây dựng và bảo vệ quê hương.",
                 "Trình bày bài thu hoạch rõ ràng, sạch.",
@@ -10926,7 +10926,7 @@
                 "Có cố gắng trong học tập, cần chú ý kiểm tra lại chính tả trước khi nộp bài.",
                 "Biết cách tra cứu từ điển song ngữ để tìm nghĩa của các từ vựng mới chưa học.",
                 "Tham gia vui vẻ vào các trò chơi học tập tiếng dân tộc do giáo viên tổ chức trên lớp.",
-                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với người.",
+                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với mọi người.",
                 "Trình bày bài vở sạch sẽ, rõ ràng, hoàn thành tốt các bài tập trong sách bài tập.",
                 "Có thái độ tôn trọng các giá trị văn hóa và ngôn ngữ truyền thống của quê hương.",
                 "Chăm chỉ ôn bài trước các kỳ kiểm tra, có tinh thần cầu tiến trong học tập môn học.",
@@ -11068,7 +11068,7 @@
                 "Cảm thụ văn học tinh tế, nắm chắc phong cách nghệ thuật của các tác giả lớn.",
                 "Kỹ năng đọc hiểu văn bản nâng cao rất nhạy bén.",
                 "Bài viết có bố cục sáng rõ, luận điểm mạch lạc.",
-                "Ham đọc sách và tài liệu chuyên khảo, luôn có những liên hệ văn học sâu rộng giữa.",
+                "Ham đọc sách và tài liệu chuyên khảo, luôn có những liên hệ văn học sâu rộng giữa tác phẩm và đời sống.",
                 "Nắm vững đặc trưng các thể loại: bi kịch, phóng sự, truyện thơ, ký, tùy bút.",
                 "Khả năng tranh luận và thuyết trình các vấn đề văn học trước lớp rất đĩnh đạc.",
                 "Tự giác học tập, chuẩn bị bài chu đáo, bài kiểm tra định kỳ luôn đạt điểm số xuất.",
@@ -11776,7 +11776,7 @@
                 "Tác phong đi lại, xưng hô, chào hỏi đậm chất người lính cách mạng.",
                 "Có phương pháp tự học khoa học, nghiên cứu sâu các chiến dịch quân sự lớn: Điện Biên.",
                 "Kỹ năng mắc võng, đào công sự ngụy trang và sinh hoạt dã ngoại thao trường rất nhanh.",
-                "Luôn là hạt nhân nòng cốt, gương mẫu chỉ huy trung đội học sinh thực hiện các nhiệm.",
+                "Luôn là hạt nhân nòng cốt, gương mẫu chỉ huy trung đội học sinh thực hiện các nhiệm vụ được giao.",
                 "Có tinh thần tương thân tương ái, sẵn sàng chia sẻ khó khăn.",
                 "Nắm vững toàn diện chuẩn đầu ra môn Giáo dục quốc phòng và an ninh THPT theo chương.",
                 "Có nguyện vọng và quyết tâm thi vào các học viện, nhà trường quân đội.",
@@ -11861,7 +11861,7 @@
                 "Biết chia sẻ, đồng cảm với bạn bè xung quanh, có tinh thần tương thân tương ái.",
                 "Đạt chuẩn môn Hoạt động trải nghiệm, hướng nghiệp theo Thông tư 22/2021/TT-BGDĐT.",
                 "Có tinh thần cầu tiến, luôn sẵn sàng lắng nghe sự định hướng đúng đắn của giáo viên.",
-                "Chăm chỉ rèn luyện các kỹ năng mềm cần thiết để chuẩn bị hành trang bước vào giai.",
+                "Chăm chỉ rèn luyện các kỹ năng mềm cần thiết để chuẩn bị hành trang bước vào giai đoạn mới.",
                 "Hoàn thành tốt các mục tiêu rèn luyện đề ra cho năm học."
             ],
             "C": [
@@ -11870,7 +11870,7 @@
                 "Chưa hoàn thành bài thu hoạch trải nghiệm đúng hạn, bài làm còn sơ sài.",
                 "Còn rụt rè, e ngại khi tham gia các hoạt động tập thể và các buổi tư vấn nghề nghiệp.",
                 "Chưa có ý thức tìm hiểu về năng lực bản thân và các ngành nghề.",
-                "Cần tích cực mở lòng tham gia các hoạt động Đoàn - Hội để rèn luyện sự tự tin và kỹ."
+                "Cần tích cực mở lòng tham gia các hoạt động Đoàn - Hội để rèn luyện sự tự tin và kỹ năng giao tiếp."
             ]
         },
         "Nội dung giáo dục địa phương": {
@@ -11911,7 +11911,7 @@
                 "Biết chia sẻ những nét đẹp văn hóa quê hương với bạn bè khi cùng thảo luận bài học.",
                 "Làm bài kiểm tra nghiêm túc, đạt chuẩn kiến thức kỹ năng môn Giáo dục địa phương.",
                 "Nắm được các vấn đề ô nhiễm môi trường và giải pháp bảo vệ tài nguyên thiên nhiên.",
-                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm số liệu thực tế để bài viết phong.",
+                "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm số liệu thực tế để bài viết phong phú hơn.",
                 "Tham gia tích cực các hoạt động đền ơn đáp nghĩa.",
                 "Hiểu được trách nhiệm của thế hệ trẻ đối với sự nghiệp xây dựng và bảo vệ quê hương.",
                 "Trình bày bài thu hoạch rõ ràng, sạch.",
@@ -12088,7 +12088,7 @@
                 "Có cố gắng trong học tập, cần chú ý kiểm tra lại chính tả trước khi nộp bài.",
                 "Biết cách tra cứu từ điển song ngữ để tìm nghĩa của các từ vựng mới chưa học.",
                 "Tham gia vui vẻ vào các trò chơi học tập tiếng dân tộc do giáo viên tổ chức trên lớp.",
-                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với người.",
+                "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với mọi người.",
                 "Trình bày bài vở sạch sẽ, rõ ràng, hoàn thành tốt các bài tập trong sách bài tập.",
                 "Có thái độ tôn trọng các giá trị văn hóa và ngôn ngữ truyền thống của quê hương.",
                 "Chăm chỉ ôn bài trước các kỳ kiểm tra, có tinh thần cầu tiến trong học tập môn học.",
@@ -12231,21 +12231,21 @@
             "Tính toán nhanh, chính xác, hiểu bài và vận dụng tốt các phép tính vào giải toán.",
             "Nắm chắc kiến thức toán học, viết chữ số cẩn thận.",
             "Kỹ năng làm tính rất tốt, tiếp thu bài nhanh.",
-            "Tư duy số học nhanh nhẹn, hoàn thành các bài toán đúng giờ và luôn nhiệt tình giúp đỡ bạn.",
+            "Tư duy số học nhanh nhẹn, hoàn thành các bài toán đúng giờ và luôn nhiệt tình giúp đỡ bạn bè.",
             "Tính nhẩm nhanh, nắm vững bảng cộng trừ nhân chia, trình bày bài sạch sẽ và khoa học.",
             "Hiểu bài sâu, giải toán có lời văn mạch lạc, câu lời giải và phép tính rất chuẩn xác.",
             "Có năng khiếu toán học, tư duy logic tốt.",
             "Làm bài tự giác, tính toán cẩn thận và chuẩn xác.",
             "Nắm chắc các dạng toán hình học và đại số cơ bản, vẽ hình chuẩn xác và đẹp mắt.",
             "Tiếp thu bài rất nhanh, có nhiều cách giải thông minh và sáng tạo trong giờ toán.",
-            "Thao tác tính toán nhanh nhẹn, luôn tập trung nghe giảng và tích cực tham gia thảo.",
+            "Thao tác tính toán nhanh nhẹn, luôn tập trung nghe giảng và tích cực tham gia thảo luận.",
             "Nắm vững quy tắc và thứ tự thực hiện các phép tính.",
             "Chăm chỉ, cẩn thận trong từng phép tính, chữ số rõ ràng.",
             "Giải toán tự tin, nắm vững bản chất bài toán.",
             "Kỹ năng tính nhẩm và giải toán có lời văn xuất sắc.",
             "Học toán rất tập trung, luôn tìm tòi các phương pháp tính nhanh và hiệu quả nhất.",
             "Tư duy toán học linh hoạt, biết liên hệ các phép toán vào các tình huống thực tế.",
-            "Hiểu bài ngay tại lớp, hoàn thành xuất sắc các phiếu bài tập toán và giúp đỡ bạn.",
+            "Hiểu bài ngay tại lớp, hoàn thành xuất sắc các phiếu bài tập toán và giúp đỡ bạn bè.",
             "Tính toán chu đáo, cẩn thận, không để xảy ra sai sót nhỏ, trình bày vở sạch chữ đẹp.",
             "Rất tự giác học tập, chủ động làm thêm các bài toán mở rộng và phát biểu tự tin.",
             "Có tư duy logic tốt, khả năng phân tích và tổng hợp số liệu bài toán rất nhanh nhạy.",
@@ -12331,7 +12331,7 @@
             "Có tinh thần học hỏi, hoàn thành bài viết đúng thời gian.",
             "Tiếp thu bài đều đặn, hiểu bài, cần rèn thêm thói quen kiểm tra lại bài sau khi viết.",
             "Đọc bài đúng tiến độ, cần rèn luyện thêm để phát âm chuẩn các thanh điệu tiếng Việt.",
-            "Có cố gắng trong học tập, hoàn thành tốt các nội dung cơ bản theo chuẩn kiến thức kỹ."
+            "Có cố gắng trong học tập, hoàn thành tốt các nội dung cơ bản theo chuẩn kiến thức kỹ năng."
         ],
         "C": [
             "Tốc độ đọc còn chậm, chữ viết chưa đều.",
@@ -12344,8 +12344,8 @@
     },
     "Tiếng Anh": {
         "T": [
-            "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen.",
-            "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò.",
+            "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen thuộc.",
+            "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò chơi học tập.",
             "Có ngữ điệu tự nhiên, phản xạ tiếng Anh rất nhạy bén.",
             "Tự tin thể hiện kỹ năng nghe nói trước lớp, phát âm to rõ, đúng trọng âm và ngữ điệu.",
             "Kỹ năng nghe hiểu rất tốt, làm đúng các bài tập nghe và nhanh nhẹn nắm bắt thông tin.",
@@ -12355,12 +12355,12 @@
             "Có năng khiếu ngoại ngữ, nhớ mặt chữ và nghĩa từ vựng rất nhanh.",
             "Kỹ năng viết từ và mẫu câu tiếng Anh chính xác, chữ viết sạch đẹp.",
             "Tự tin đóng vai trong các đoạn hội thoại.",
-            "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào.",
+            "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào hứng.",
             "Khả năng ghi nhớ từ mới xuất sắc, nắm chắc cấu trúc câu và sử dụng đúng ngữ cảnh.",
             "Phản xạ ngôn ngữ nhanh nhẹn, luôn chủ động giơ tay trả lời các câu hỏi.",
             "Nghe hiểu chuẩn xác các bài đàm thoại ngắn.",
-            "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ.",
-            "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi.",
+            "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ học.",
+            "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi ngày.",
             "Kỹ năng đọc hiểu bài khóa tiếng Anh tốt.",
             "Nắm chắc các mẫu câu hỏi và trả lời về bản thân, gia đình, trường học, bạn bè.",
             "Hoàn thành xuất sắc các bài kiểm tra định kỳ.",
@@ -12377,14 +12377,14 @@
             "Có cố gắng trong học tập, hoàn thành bài tập nghe và nối tranh đúng theo yêu cầu.",
             "Đọc được các từ ngữ quen thuộc, cần luyện tập đọc thành câu trôi chảy và tự nhiên.",
             "Có ý thức chuẩn bị bài trước khi đến lớp, cần tích cực giơ tay phát biểu nhiều hơn.",
-            "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký.",
+            "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký tự.",
             "Nghe hiểu các lệnh đơn giản trong lớp, cần rèn thêm phản xạ trả lời câu hỏi ngắn.",
             "Tham gia đầy đủ các hoạt động nhóm, cần chủ động hơn trong phần luyện nói đôi bạn.",
             "Biết cách ghép từ thành câu đơn giản, cần rèn thêm vốn từ vựng mở rộng.",
             "Hoàn thành các phiếu học tập đúng thời gian, cần chú ý ngữ điệu khi đọc câu hỏi.",
             "Có tinh thần học hỏi, cần kiên trì nghe lại các bài nghe mẫu trên ứng dụng hoặc đĩa.",
-            "Nắm được các chủ đề về số đếm, màu sắc, con.",
-            "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống.",
+            "Nắm được các chủ đề về số đếm, màu sắc, con vật.",
+            "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống nhau.",
             "Có ý thức học tập tốt, hoàn thành các nhiệm vụ giáo viên giao, cần tự tin hơn vào bản thân.",
             "Hiểu bài cơ bản, cần rèn luyện thói quen tự ôn từ vựng 15 phút mỗi ngày ở nhà.",
             "Tham gia hào hứng các trò chơi ôn tập, cần cẩn thận hơn khi làm các bài kiểm tra.",
@@ -12392,7 +12392,7 @@
             "Đạt chuẩn kiến thức kỹ năng môn học, cần mạnh dạn thực hành nói tiếng Anh nhiều hơn."
         ],
         "C": [
-            "Vốn từ còn hạn chế, phát âm chưa.",
+            "Vốn từ còn hạn chế, phát âm chưa chuẩn.",
             "Còn rụt rè khi thực hành nói, kỹ năng nghe chưa tốt.",
             "Hay quên từ vựng và mẫu câu cơ bản, cần viết lại từ mới nhiều lần để ghi nhớ tốt hơn.",
             "Chưa nắm chắc các cấu trúc câu đơn giản.",
@@ -12403,12 +12403,12 @@
     "Tự nhiên và Xã hội": {
         "T": [
             "Thích tìm hiểu thế giới tự nhiên và xã hội xung quanh.",
-            "Hiểu biết phong phú về môi trường sống, cơ thể người và biết cách chăm sóc.",
+            "Hiểu biết phong phú về môi trường sống, cơ thể người và biết cách chăm sóc bản thân.",
             "Tiếp thu bài nhanh, tích cực phát biểu.",
             "Có ý thức bảo vệ môi trường rất tốt, biết phân loại rác và nhắc nhở các bạn giữ gìn.",
             "Kỹ năng quan sát tranh và mô hình xuất sắc.",
-            "Ham học hỏi, thích khám phá các loài cây cối.",
-            "Nắm chắc kiến thức bài học, biết tự bảo vệ bản thân trước các nguy cơ tai nạn thương.",
+            "Ham học hỏi, thích khám phá các loài cây cối và con vật.",
+            "Nắm chắc kiến thức bài học, biết tự bảo vệ bản thân trước các nguy cơ tai nạn thương tích.",
             "Chăm ngoan, hiểu bài sâu sắc, có lối sống lành mạnh, gọn gàng.",
             "Rất tích cực trong các hoạt động nhóm, đóng góp nhiều ý tưởng hay khi tìm hiểu bài mới.",
             "Khả năng quan sát tinh tế, ghi nhớ tốt các đặc điểm sinh học và thói quen của sinh vật.",
@@ -12529,7 +12529,7 @@
             "Nắm chắc đặc điểm khí hậu, đất đai, sông ngòi các vùng: Bắc Bộ, Trung Bộ, Nam Bộ.",
             "Tự hào về các vị anh hùng dân tộc, biết kể lại các trận đánh lịch sử một cách hào.",
             "Khả năng so sánh đặc điểm tự nhiên và hoạt động sản xuất của các vùng miền rất chính.",
-            "Rất tích cực giơ tay xây dựng bài, trả lời câu hỏi tự tin và có nhiều hiểu biết mở.",
+            "Rất tích cực giơ tay xây dựng bài, trả lời câu hỏi tự tin và có nhiều hiểu biết mở rộng.",
             "Nắm chắc vị trí địa lí, giới hạn lãnh thổ Việt Nam trên bản đồ thế giới và khu vực.",
             "Hiểu được nguyên nhân và bài học kinh nghiệm của các sự kiện lịch sử quan trọng.",
             "Có kỹ năng vẽ sơ đồ tư duy hệ thống hóa các triều đại lịch sử Việt Nam rất đẹp và dễ.",
@@ -12562,7 +12562,7 @@
             "Nắm được các dạng địa hình chính của Việt Nam: đồi núi, đồng bằng, bờ biển.",
             "Có tiến bộ trong việc ghi nhớ tên các triều đại lịch sử trọng tâm.",
             "Tham gia tốt các buổi ôn tập, cần phát huy hơn nữa tinh thần chăm chỉ, tự giác.",
-            "Đạt chuẩn kiến thức kỹ năng môn học, cần trau dồi thêm vốn hiểu biết về địa lí quê.",
+            "Đạt chuẩn kiến thức kỹ năng môn học, cần trau dồi thêm vốn hiểu biết về địa lí quê hương.",
             "Hiểu bài, hoàn thành các nội dung bài học theo đúng tiến độ chương trình."
         ],
         "C": [
@@ -12911,7 +12911,7 @@
             "Có tinh thần đồng đội tốt, luôn hỗ trợ các bạn trong các trò chơi tiếp sức.",
             "Biết cách bảo quản dụng cụ thể dục: bóng, cầu, dây nhảy sau khi tập luyện xong.",
             "Đạt kết quả tốt trong các bài kiểm tra thể chất định kỳ của học kỳ.",
-            "Chăm chỉ tập luyện, cần duy trì thói quen tập thể dục mỗi ngày ở nhà để nâng cao sức."
+            "Chăm chỉ tập luyện, cần duy trì thói quen tập thể dục mỗi ngày ở nhà để nâng cao sức khỏe."
         ],
         "C": [
             "Thể lực còn yếu, tiếp thu động tác còn chậm, chưa thực hiện đúng kỹ thuật động tác.",
@@ -12991,11 +12991,11 @@
             "Rất tích cực tham gia các buổi giao lưu văn hóa, văn nghệ tiếng dân tộc của trường.",
             "Chăm chỉ luyện viết chữ, hoàn thành xuất sắc các bài tập chính tả và đọc hiểu bài.",
             "Hiểu sâu sắc ý nghĩa các câu chuyện cổ tích và phong tục tập quán truyền thống.",
-            "Luôn là tấm gương sáng, nhiệt tình giúp đỡ các bạn trong lớp cùng học tốt tiếng dân.",
+            "Luôn là tấm gương sáng, nhiệt tình giúp đỡ các bạn trong lớp cùng học tốt tiếng dân tộc.",
             "Khả năng nhớ mặt chữ nhanh, phát âm chuẩn các âm khó đặc trưng của ngôn ngữ dân tộc.",
             "Thao tác dịch đoạn văn ngắn rất mạch lạc, câu văn tự nhiên và giữ đúng tinh thần gốc.",
             "Có ý thức gìn giữ và phát huy tiếng nói.",
-            "Tự giác học bài, đọc thêm nhiều sách truyện song ngữ để mở rộng vốn từ vựng phong.",
+            "Tự giác học bài, đọc thêm nhiều sách truyện song ngữ để mở rộng vốn từ vựng phong phú.",
             "Kỹ năng nghe hiểu tiếng dân tộc rất tốt, trả lời nhanh các câu hỏi của giáo viên.",
             "Tự tin thuyết trình giới thiệu nét đẹp trang phục và phong tục quê hương.",
             "Chữ viết sạch đẹp, trình bày vở cẩn thận.",
@@ -13009,18 +13009,18 @@
             "Nắm được các từ vựng và câu giao tiếp cơ bản bằng tiếng dân tộc.",
             "Biết cách đọc và viết các chữ cái, từ ngữ thông dụng theo hướng dẫn của giáo viên.",
             "Đọc bài tương đối lưu loát, cần rèn luyện thêm để phát âm thật chuẩn xác các âm khó.",
-            "Có ý thức học tập chăm chỉ, ghi chép bài đầy đủ và giữ gìn sách vở sạch.",
+            "Có ý thức học tập chăm chỉ, ghi chép bài đầy đủ và giữ gìn sách vở sạch đẹp.",
             "Hiểu được nội dung các bài khóa đơn giản.",
-            "Tập viết chữ tiếng dân tộc đúng mẫu, cần rèn thêm độ đều nét và khoảng cách giữa.",
+            "Tập viết chữ tiếng dân tộc đúng mẫu, cần rèn thêm độ đều nét và khoảng cách giữa các chữ.",
             "Tham gia học tập đầy đủ, lắng nghe giáo viên giảng bài và chăm chú luyện phát âm trên lớp.",
-            "Nhớ được nghĩa của các từ vựng theo chủ đề quen thuộc: gia đình, bản làng, con.",
+            "Nhớ được nghĩa của các từ vựng theo chủ đề quen thuộc: gia đình, bản làng, con vật.",
             "Biết dịch các câu ngắn đơn giản, cần rèn thêm vốn từ để dịch câu dài lưu loát hơn.",
             "Có tình yêu đối với tiếng nói của dân tộc mình.",
             "Hoàn thành các bài tập trong vở bài tập đúng hạn.",
             "Tham gia tốt các hoạt động tập đọc và luyện nói đôi bạn cùng các bạn trong lớp.",
             "Biết kính trọng các nghệ nhân và người lớn tuổi am hiểu văn hóa dân tộc ở địa phương.",
             "Nghe hiểu các chỉ dẫn cơ bản của giáo viên bằng tiếng dân tộc trong giờ học.",
-            "Có tinh thần học hỏi, cần chăm chỉ trò chuyện bằng tiếng dân tộc nhiều hơn với người.",
+            "Có tinh thần học hỏi, cần chăm chỉ trò chuyện bằng tiếng dân tộc nhiều hơn với mọi người.",
             "Biết viết đúng dấu thanh và các ký tự đặc biệt của chữ viết tiếng dân tộc.",
             "Tiếp thu bài đạt yêu cầu, cần tích cực giơ tay phát biểu xây dựng bài học hơn nữa.",
             "Tham gia vui vẻ các trò chơi đố vui từ vựng tiếng dân tộc do giáo viên tổ chức.",
@@ -13065,7 +13065,7 @@
         ],
         "H": [
             "Nắm được kiến thức cơ bản của môn học, hoàn thành bài tập đầy đủ theo yêu cầu.",
-            "Có ý thức học tập chăm chỉ, chú ý lắng nghe giáo viên giảng bài và ghi chép bài cẩn.",
+            "Có ý thức học tập chăm chỉ, chú ý lắng nghe giáo viên giảng bài và ghi chép bài cẩn thận.",
             "Hiểu bài, làm được các bài tập quen thuộc, cần tự tin hơn khi lên bảng làm bài.",
             "Tiếp thu bài tốt, có tinh thần rèn luyện nền nếp.",
             "Hoàn thành bài tập tại lớp đúng thời gian.",
@@ -13143,7 +13143,7 @@
             "Thực hiện tốt các nhiệm vụ giáo viên giao, cần phát huy tính chủ động trong học tập.",
             "Nhớ được tác giả, tác phẩm và hoàn cảnh sáng tác của các văn bản trọng tâm.",
             "Có thái độ học tập tích cực, cần chú ý liên kết giữa các câu trong đoạn văn chặt chẽ.",
-            "Tiếp thu bài đạt yêu cầu, cần kiên trì luyện viết văn thường xuyên để nâng cao kỹ.",
+            "Tiếp thu bài đạt yêu cầu, cần kiên trì luyện viết văn thường xuyên để nâng cao kỹ năng viết.",
             "Biết phân biệt văn bản nghị luận và văn bản thông tin.",
             "Có tinh thần cầu tiến, chăm chỉ ôn bài."
         ],
@@ -13371,7 +13371,7 @@
             "Có cố gắng trong học tập, cần chú ý ôn tập thường xuyên để không bị nhầm lẫn các mốc.",
             "Nắm được sự phân chia thời gian theo thế kỷ và kỷ nguyên trong lịch sử nhân loại.",
             "Biết liên hệ kiến thức địa lí bài học với tình hình phát triển kinh tế của quê hương.",
-            "Tiếp thu bài tương đối tốt, cần tự tin hơn khi lên bảng chỉ bản đồ trước tập thể lớp.",
+            "Tiếp thu bài tương đối tốt, cần tự tin hơn khi lên bảng chỉ bản đồ trước tập thể lớp học.",
             "Chữ viết rõ ràng, trình bày bài cẩn thận.",
             "Nhận thức đúng đắn về vai trò của lịch sử trong việc bồi dưỡng nhân cách người học.",
             "Hiểu bài tại lớp, cần dành thêm thời gian đọc lại bài học trong sách để nhớ bài sâu.",
@@ -13427,7 +13427,7 @@
             "Nhận biết được tác hại của các tệ nạn xã hội và có ý thức tự bảo vệ bản thân.",
             "Biết tiết kiệm thời gian và tiền bạc, không lãng phí đồ dùng học tập.",
             "Có thái độ tôn trọng người khác, không tham gia vào các hành vi bắt nạt hay kỳ thị.",
-            "Ghi chép bài đầy đủ, chú ý nghe giảng, cần mạnh dạn phát biểu ý kiến cá nhân nhiều.",
+            "Ghi chép bài đầy đủ, chú ý nghe giảng, cần mạnh dạn phát biểu ý kiến cá nhân nhiều hơn.",
             "Biết cách ứng xử khi gặp các tình huống xung đột nhỏ trong lớp học theo hướng.",
             "Tích cực tham gia các buổi sinh hoạt chuyên đề về an toàn giao thông và phòng chống.",
             "Có tinh thần học hỏi các tấm gương người tốt việc tốt trong đời sống hằng ngày.",
@@ -13489,7 +13489,7 @@
             "Có tinh thần hợp tác tốt với bạn ngồi cùng máy trong các bài tập thực hành đôi.",
             "Hiểu được vai trò của tin học trong cuộc cách mạng công nghiệp lần thứ tư.",
             "Biết cách định dạng phông chữ, cỡ chữ, màu sắc và căn lề cho bảng dữ liệu.",
-            "Tiếp thu bài tương đối tốt, cần tự tin hơn khi thử sức với các bài tập lập trình mở.",
+            "Tiếp thu bài tương đối tốt, cần tự tin hơn khi thử sức với các bài tập lập trình mở rộng.",
             "Có ý thức tự giác học bài, cần dành thêm thời gian thực hành máy tính ở nhà nếu có.",
             "Trình bày sản phẩm thực hành sạch sẽ, đúng yêu cầu kỹ thuật của bài học.",
             "Đạt chuẩn kiến thức kỹ năng môn Tin học theo chương trình GDPT 2018.",
@@ -13518,7 +13518,7 @@
             "Chăm chỉ, kiên nhẫn, sản phẩm làm ra luôn đạt độ chính xác và tính thẩm mỹ rất cao.",
             "Nhiệt tình hướng dẫn và hỗ trợ các bạn cùng bàn hoàn thành sản phẩm đúng tiến độ.",
             "Biết vận dụng kiến thức công nghệ để sửa chữa một số đồ dùng điện đơn giản trong gia.",
-            "Tự tin thuyết trình giới thiệu về quy trình công nghệ và sản phẩm trước tập thể lớp.",
+            "Tự tin thuyết trình giới thiệu về quy trình công nghệ và sản phẩm trước tập thể lớp học.",
             "Có tư duy kinh tế và tiết kiệm chi phí trong việc lựa chọn nguyên vật liệu gia công.",
             "Học tập hăng say, luôn có những ý tưởng cải tiến kỹ thuật rất thông minh và thực tế.",
             "Nắm vững kiến thức dinh dưỡng, chế biến và bảo quản thực phẩm an toàn vệ.",
@@ -13623,7 +13623,7 @@
     "Âm nhạc": {
         "T": [
             "Hát đúng cao độ, trường độ, giai điệu; giọng hát trong trẻo.",
-            "Tự tin biểu diễn đơn ca, song ca trước tập thể lớp.",
+            "Tự tin biểu diễn đơn ca, song ca trước tập thể lớp học.",
             "Khả năng cảm thụ âm nhạc xuất sắc, gõ đệm theo phách.",
             "Đọc nhạc rất chuẩn cao độ và trường độ các bài tập đọc nhạc có nốt hoa mỹ và nhịp.",
             "Sử dụng thành thạo nhạc cụ gõ hoặc nhạc cụ giai điệu (sáo recorder.",
@@ -13890,7 +13890,7 @@
             "Biết chia sẻ những nét đẹp văn hóa quê hương với bạn bè khi cùng thảo luận bài học.",
             "Làm bài kiểm tra nghiêm túc, đạt chuẩn kiến thức kỹ năng môn Giáo dục địa phương.",
             "Nắm được các ngành kinh tế chủ yếu của địa phương: nông nghiệp, công nghiệp.",
-            "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm tư liệu thực tế để bài viết phong.",
+            "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm tư liệu thực tế để bài viết phong phú hơn.",
             "Tham gia tích cực các hoạt động đền ơn đáp nghĩa.",
             "Hiểu được trách nhiệm của học sinh đối với sự nghiệp xây dựng và bảo vệ quê hương.",
             "Trình bày bài thu hoạch rõ ràng, sạch sẽ, có ý thức tìm tòi thêm hình ảnh minh họa.",
@@ -13951,7 +13951,7 @@
             "Có cố gắng trong học tập, cần chú ý kiểm tra lại chính tả trước khi nộp bài.",
             "Biết cách tra cứu từ điển song ngữ để tìm nghĩa của các từ vựng mới chưa học.",
             "Tham gia vui vẻ vào các trò chơi học tập tiếng dân tộc do giáo viên tổ chức trên lớp.",
-            "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với người.",
+            "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với mọi người.",
             "Trình bày bài vở sạch sẽ, rõ ràng, hoàn thành tốt các bài tập trong sách bài tập.",
             "Có thái độ tôn trọng các giá trị văn hóa và ngôn ngữ truyền thống của quê hương.",
             "Chăm chỉ ôn bài trước các kỳ kiểm tra, có tinh thần cầu tiến trong học tập môn học.",
@@ -14093,7 +14093,7 @@
             "Cảm thụ văn học tinh tế, nắm chắc phong cách nghệ thuật của các tác giả lớn.",
             "Kỹ năng đọc hiểu văn bản nâng cao rất nhạy bén.",
             "Bài viết có bố cục sáng rõ, luận điểm mạch lạc.",
-            "Ham đọc sách và tài liệu chuyên khảo, luôn có những liên hệ văn học sâu rộng giữa.",
+            "Ham đọc sách và tài liệu chuyên khảo, luôn có những liên hệ văn học sâu rộng giữa tác phẩm và đời sống.",
             "Nắm vững đặc trưng các thể loại: bi kịch, phóng sự, truyện thơ, ký, tùy bút.",
             "Khả năng tranh luận và thuyết trình các vấn đề văn học trước lớp rất đĩnh đạc.",
             "Tự giác học tập, chuẩn bị bài chu đáo, bài kiểm tra định kỳ luôn đạt điểm số xuất.",
@@ -14800,7 +14800,7 @@
             "Tác phong đi lại, xưng hô, chào hỏi đậm chất người lính cách mạng.",
             "Có phương pháp tự học khoa học, nghiên cứu sâu các chiến dịch quân sự lớn: Điện Biên.",
             "Kỹ năng mắc võng, đào công sự ngụy trang và sinh hoạt dã ngoại thao trường rất nhanh.",
-            "Luôn là hạt nhân nòng cốt, gương mẫu chỉ huy trung đội học sinh thực hiện các nhiệm.",
+            "Luôn là hạt nhân nòng cốt, gương mẫu chỉ huy trung đội học sinh thực hiện các nhiệm vụ được giao.",
             "Có tinh thần tương thân tương ái, sẵn sàng chia sẻ khó khăn.",
             "Nắm vững toàn diện chuẩn đầu ra môn Giáo dục quốc phòng và an ninh THPT theo chương.",
             "Có nguyện vọng và quyết tâm thi vào các học viện, nhà trường quân đội.",
@@ -14885,7 +14885,7 @@
             "Biết chia sẻ, đồng cảm với bạn bè xung quanh, có tinh thần tương thân tương ái.",
             "Đạt chuẩn môn Hoạt động trải nghiệm, hướng nghiệp theo Thông tư 22/2021/TT-BGDĐT.",
             "Có tinh thần cầu tiến, luôn sẵn sàng lắng nghe sự định hướng đúng đắn của giáo viên.",
-            "Chăm chỉ rèn luyện các kỹ năng mềm cần thiết để chuẩn bị hành trang bước vào giai.",
+            "Chăm chỉ rèn luyện các kỹ năng mềm cần thiết để chuẩn bị hành trang bước vào giai đoạn mới.",
             "Hoàn thành tốt các mục tiêu rèn luyện đề ra cho năm học."
         ],
         "C": [
@@ -14894,7 +14894,7 @@
             "Chưa hoàn thành bài thu hoạch trải nghiệm đúng hạn, bài làm còn sơ sài.",
             "Còn rụt rè, e ngại khi tham gia các hoạt động tập thể và các buổi tư vấn nghề nghiệp.",
             "Chưa có ý thức tìm hiểu về năng lực bản thân và các ngành nghề.",
-            "Cần tích cực mở lòng tham gia các hoạt động Đoàn - Hội để rèn luyện sự tự tin và kỹ."
+            "Cần tích cực mở lòng tham gia các hoạt động Đoàn - Hội để rèn luyện sự tự tin và kỹ năng giao tiếp."
         ]
     },
     "Nội dung giáo dục địa phương": {
@@ -14935,7 +14935,7 @@
             "Biết chia sẻ những nét đẹp văn hóa quê hương với bạn bè khi cùng thảo luận bài học.",
             "Làm bài kiểm tra nghiêm túc, đạt chuẩn kiến thức kỹ năng môn Giáo dục địa phương.",
             "Nắm được các vấn đề ô nhiễm môi trường và giải pháp bảo vệ tài nguyên thiên nhiên.",
-            "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm số liệu thực tế để bài viết phong.",
+            "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm số liệu thực tế để bài viết phong phú hơn.",
             "Tham gia tích cực các hoạt động đền ơn đáp nghĩa.",
             "Hiểu được trách nhiệm của thế hệ trẻ đối với sự nghiệp xây dựng và bảo vệ quê hương.",
             "Trình bày bài thu hoạch rõ ràng, sạch.",
@@ -15112,7 +15112,7 @@
             "Có cố gắng trong học tập, cần chú ý kiểm tra lại chính tả trước khi nộp bài.",
             "Biết cách tra cứu từ điển song ngữ để tìm nghĩa của các từ vựng mới chưa học.",
             "Tham gia vui vẻ vào các trò chơi học tập tiếng dân tộc do giáo viên tổ chức trên lớp.",
-            "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với người.",
+            "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với mọi người.",
             "Trình bày bài vở sạch sẽ, rõ ràng, hoàn thành tốt các bài tập trong sách bài tập.",
             "Có thái độ tôn trọng các giá trị văn hóa và ngôn ngữ truyền thống của quê hương.",
             "Chăm chỉ ôn bài trước các kỳ kiểm tra, có tinh thần cầu tiến trong học tập môn học.",
@@ -15318,7 +15318,7 @@
         "Có ý thức kỷ luật tốt, chấp hành nghiêm túc nội quy trường lớp.",
         "Thật thà, trung thực trong học tập và rèn luyện, được giáo viên tin yêu.",
         "Chăm chỉ đi học đều, đúng giờ, giữ gìn sách vở và đồ dùng cẩn thận.",
-        "Có tinh thần trách nhiệm cao, tích cực tham gia các phong trào của lớp.",
+        "Có tinh thần trách nhiệm cao, tích cực tham gia các phong trào của lớp học.",
         "Lễ phép với giáo viên, biết nói lời cảm ơn và xin lỗi đúng lúc.",
         "Biết yêu thương, chia sẻ với bạn khó khăn, sống chan hòa với tập.",
         "Nghiêm túc trong giờ chào cờ, có ý thức bảo vệ tài sản của nhà trường.",
@@ -15404,7 +15404,7 @@
     },
     "Giao tiếp và hợp tác": {
       "T": [
-        "Diễn đạt to, rõ ràng, tự tin chia sẻ ý kiến của mình trước tập thể lớp.",
+        "Diễn đạt to, rõ ràng, tự tin chia sẻ ý kiến của mình trước tập thể lớp học.",
         "Biết lắng nghe và tôn trọng ý kiến bạn bè, hợp tác rất tích cực trong nhóm.",
         "Giao tiếp hòa nhã, lịch thiệp, biết dùng từ ngữ phù hợp trong giao tiếp.",
         "Phối hợp nhịp nhàng với bạn trong tổ để hoàn thành xuất sắc nhiệm vụ.",
@@ -15497,13 +15497,13 @@
       "H": [
         "Hòa đồng với bạn bè, biết giúp đỡ bạn khi được phân công việc chung.",
         "Lễ phép với giáo viên, cần cởi mở và chia sẻ nhiều hơn với các bạn.",
-        "Có tinh thần tương thân tương ái, tham gia tốt các phong trào của lớp.",
+        "Có tinh thần tương thân tương ái, tham gia tốt các phong trào của lớp học.",
         "Biết nhường nhịn bạn bè, cần phát huy tinh thần đoàn kết, giúp đỡ nhau.",
         "Yêu thương gia đình và bạn bè, luôn giữ thái độ cư xử nhã nhặn, đúng mực."
       ],
       "C": [
         "Cần rèn luyện lòng kiên nhẫn, tránh cáu gắt và biết nhường nhịn bạn bè.",
-        "Cần chủ động chia sẻ, giúp đỡ bạn bè và hòa nhập tốt hơn với lớp."
+        "Cần chủ động chia sẻ, giúp đỡ bạn bè và hòa nhập tốt hơn với lớp học."
       ]
     },
     "Chăm chỉ": {
@@ -15632,7 +15632,7 @@
         "Có ý thức kỷ luật tốt, chấp hành nghiêm túc nội quy trường lớp.",
         "Thật thà, trung thực trong học tập và rèn luyện, được giáo viên tin yêu.",
         "Chăm chỉ đi học đều, đúng giờ, giữ gìn sách vở và đồ dùng cẩn thận.",
-        "Có tinh thần trách nhiệm cao, tích cực tham gia các phong trào của lớp.",
+        "Có tinh thần trách nhiệm cao, tích cực tham gia các phong trào của lớp học.",
         "Lễ phép với giáo viên, biết nói lời cảm ơn và xin lỗi đúng lúc.",
         "Biết yêu thương, chia sẻ với bạn khó khăn, sống chan hòa với tập.",
         "Nghiêm túc trong giờ chào cờ, có ý thức bảo vệ tài sản của nhà trường.",
@@ -15718,7 +15718,7 @@
     },
     "Giao tiếp và hợp tác": {
       "T": [
-        "Diễn đạt to, rõ ràng, tự tin chia sẻ ý kiến của mình trước tập thể lớp.",
+        "Diễn đạt to, rõ ràng, tự tin chia sẻ ý kiến của mình trước tập thể lớp học.",
         "Biết lắng nghe và tôn trọng ý kiến bạn bè, hợp tác rất tích cực trong nhóm.",
         "Giao tiếp hòa nhã, lịch thiệp, biết dùng từ ngữ phù hợp trong giao tiếp.",
         "Phối hợp nhịp nhàng với bạn trong tổ để hoàn thành xuất sắc nhiệm vụ.",
@@ -15811,13 +15811,13 @@
       "H": [
         "Hòa đồng với bạn bè, biết giúp đỡ bạn khi được phân công việc chung.",
         "Lễ phép với giáo viên, cần cởi mở và chia sẻ nhiều hơn với các bạn.",
-        "Có tinh thần tương thân tương ái, tham gia tốt các phong trào của lớp.",
+        "Có tinh thần tương thân tương ái, tham gia tốt các phong trào của lớp học.",
         "Biết nhường nhịn bạn bè, cần phát huy tinh thần đoàn kết, giúp đỡ nhau.",
         "Yêu thương gia đình và bạn bè, luôn giữ thái độ cư xử nhã nhặn, đúng mực."
       ],
       "C": [
         "Cần rèn luyện lòng kiên nhẫn, tránh cáu gắt và biết nhường nhịn bạn bè.",
-        "Cần chủ động chia sẻ, giúp đỡ bạn bè và hòa nhập tốt hơn với lớp."
+        "Cần chủ động chia sẻ, giúp đỡ bạn bè và hòa nhập tốt hơn với lớp học."
       ]
     },
     "Chăm chỉ": {
@@ -15946,7 +15946,7 @@
         "Có ý thức kỷ luật tốt, chấp hành nghiêm túc nội quy trường lớp.",
         "Thật thà, trung thực trong học tập và rèn luyện, được giáo viên tin yêu.",
         "Chăm chỉ đi học đều, đúng giờ, giữ gìn sách vở và đồ dùng cẩn thận.",
-        "Có tinh thần trách nhiệm cao, tích cực tham gia các phong trào của lớp.",
+        "Có tinh thần trách nhiệm cao, tích cực tham gia các phong trào của lớp học.",
         "Lễ phép với giáo viên, biết nói lời cảm ơn và xin lỗi đúng lúc.",
         "Biết yêu thương, chia sẻ với bạn khó khăn, sống chan hòa với tập.",
         "Nghiêm túc trong giờ chào cờ, có ý thức bảo vệ tài sản của nhà trường.",
@@ -16032,7 +16032,7 @@
     },
     "Giao tiếp và hợp tác": {
       "T": [
-        "Diễn đạt to, rõ ràng, tự tin chia sẻ ý kiến của mình trước tập thể lớp.",
+        "Diễn đạt to, rõ ràng, tự tin chia sẻ ý kiến của mình trước tập thể lớp học.",
         "Biết lắng nghe và tôn trọng ý kiến bạn bè, hợp tác rất tích cực trong nhóm.",
         "Giao tiếp hòa nhã, lịch thiệp, biết dùng từ ngữ phù hợp trong giao tiếp.",
         "Phối hợp nhịp nhàng với bạn trong tổ để hoàn thành xuất sắc nhiệm vụ.",
@@ -16125,13 +16125,13 @@
       "H": [
         "Hòa đồng với bạn bè, biết giúp đỡ bạn khi được phân công việc chung.",
         "Lễ phép với giáo viên, cần cởi mở và chia sẻ nhiều hơn với các bạn.",
-        "Có tinh thần tương thân tương ái, tham gia tốt các phong trào của lớp.",
+        "Có tinh thần tương thân tương ái, tham gia tốt các phong trào của lớp học.",
         "Biết nhường nhịn bạn bè, cần phát huy tinh thần đoàn kết, giúp đỡ nhau.",
         "Yêu thương gia đình và bạn bè, luôn giữ thái độ cư xử nhã nhặn, đúng mực."
       ],
       "C": [
         "Cần rèn luyện lòng kiên nhẫn, tránh cáu gắt và biết nhường nhịn bạn bè.",
-        "Cần chủ động chia sẻ, giúp đỡ bạn bè và hòa nhập tốt hơn với lớp."
+        "Cần chủ động chia sẻ, giúp đỡ bạn bè và hòa nhập tốt hơn với lớp học."
       ]
     },
     "Chăm chỉ": {
@@ -16260,7 +16260,7 @@
         "Có ý thức kỷ luật tốt, chấp hành nghiêm túc nội quy trường lớp.",
         "Thật thà, trung thực trong học tập và rèn luyện, được giáo viên tin yêu.",
         "Chăm chỉ đi học đều, đúng giờ, giữ gìn sách vở và đồ dùng cẩn thận.",
-        "Có tinh thần trách nhiệm cao, tích cực tham gia các phong trào của lớp.",
+        "Có tinh thần trách nhiệm cao, tích cực tham gia các phong trào của lớp học.",
         "Lễ phép với giáo viên, biết nói lời cảm ơn và xin lỗi đúng lúc.",
         "Biết yêu thương, chia sẻ với bạn khó khăn, sống chan hòa với tập.",
         "Nghiêm túc trong giờ chào cờ, có ý thức bảo vệ tài sản của nhà trường.",
@@ -16346,7 +16346,7 @@
     },
     "Giao tiếp và hợp tác": {
       "T": [
-        "Diễn đạt to, rõ ràng, tự tin chia sẻ ý kiến của mình trước tập thể lớp.",
+        "Diễn đạt to, rõ ràng, tự tin chia sẻ ý kiến của mình trước tập thể lớp học.",
         "Biết lắng nghe và tôn trọng ý kiến bạn bè, hợp tác rất tích cực trong nhóm.",
         "Giao tiếp hòa nhã, lịch thiệp, biết dùng từ ngữ phù hợp trong giao tiếp.",
         "Phối hợp nhịp nhàng với bạn trong tổ để hoàn thành xuất sắc nhiệm vụ.",
@@ -16439,13 +16439,13 @@
       "H": [
         "Hòa đồng với bạn bè, biết giúp đỡ bạn khi được phân công việc chung.",
         "Lễ phép với giáo viên, cần cởi mở và chia sẻ nhiều hơn với các bạn.",
-        "Có tinh thần tương thân tương ái, tham gia tốt các phong trào của lớp.",
+        "Có tinh thần tương thân tương ái, tham gia tốt các phong trào của lớp học.",
         "Biết nhường nhịn bạn bè, cần phát huy tinh thần đoàn kết, giúp đỡ nhau.",
         "Yêu thương gia đình và bạn bè, luôn giữ thái độ cư xử nhã nhặn, đúng mực."
       ],
       "C": [
         "Cần rèn luyện lòng kiên nhẫn, tránh cáu gắt và biết nhường nhịn bạn bè.",
-        "Cần chủ động chia sẻ, giúp đỡ bạn bè và hòa nhập tốt hơn với lớp."
+        "Cần chủ động chia sẻ, giúp đỡ bạn bè và hòa nhập tốt hơn với lớp học."
       ]
     },
     "Chăm chỉ": {
@@ -16539,7 +16539,7 @@
       ],
       "K": [
         "Chấp hành tốt nội quy trong đầu năm, ngoan ngoãn, lễ phép với giáo viên.",
-        "Có ý thức rèn luyện đạo đức, cần chủ động hơn trong phong trào của lớp.",
+        "Có ý thức rèn luyện đạo đức, cần chủ động hơn trong phong trào của lớp học.",
         "Ngoan ngoãn, thật thà, thực hiện đúng các quy định nề nếp và trang phục.",
         "Có tinh thần đoàn kết, giúp đỡ bạn bè, cần mạnh dạn đóng góp ý kiến hơn.",
         "Ý thức kỷ luật tốt, không vi phạm nội quy, cần năng nổ hơn.",
@@ -16613,7 +16613,7 @@
       ],
       "K": [
         "Chấp hành tốt nội quy trong kì 1, ngoan ngoãn, lễ phép với giáo viên.",
-        "Có ý thức rèn luyện đạo đức, cần chủ động hơn trong phong trào của lớp.",
+        "Có ý thức rèn luyện đạo đức, cần chủ động hơn trong phong trào của lớp học.",
         "Ngoan ngoãn, thật thà, thực hiện đúng các quy định nề nếp và trang phục.",
         "Có tinh thần đoàn kết, giúp đỡ bạn bè, cần mạnh dạn đóng góp ý kiến hơn.",
         "Ý thức kỷ luật tốt, không vi phạm nội quy, cần năng nổ hơn.",
@@ -16687,7 +16687,7 @@
       ],
       "K": [
         "Chấp hành tốt nội quy trong giữa kì 2, ngoan ngoãn, lễ phép với giáo viên.",
-        "Có ý thức rèn luyện đạo đức, cần chủ động hơn trong phong trào của lớp.",
+        "Có ý thức rèn luyện đạo đức, cần chủ động hơn trong phong trào của lớp học.",
         "Ngoan ngoãn, thật thà, thực hiện đúng các quy định nề nếp và trang phục.",
         "Có tinh thần đoàn kết, giúp đỡ bạn bè, cần mạnh dạn đóng góp ý kiến hơn.",
         "Ý thức kỷ luật tốt, không vi phạm nội quy, cần năng nổ hơn.",
@@ -16761,7 +16761,7 @@
       ],
       "K": [
         "Chấp hành tốt nội quy trong cả năm, ngoan ngoãn, lễ phép với giáo viên.",
-        "Có ý thức rèn luyện đạo đức, cần chủ động hơn trong phong trào của lớp.",
+        "Có ý thức rèn luyện đạo đức, cần chủ động hơn trong phong trào của lớp học.",
         "Ngoan ngoãn, thật thà, thực hiện đúng các quy định nề nếp và trang phục.",
         "Có tinh thần đoàn kết, giúp đỡ bạn bè, cần mạnh dạn đóng góp ý kiến hơn.",
         "Ý thức kỷ luật tốt, không vi phạm nội quy, cần năng nổ hơn.",
@@ -16927,7 +16927,7 @@
             "Có tinh thần học hỏi, hoàn thành bài viết đúng thời gian.",
             "Tiếp thu bài đều đặn, hiểu bài, cần rèn thêm thói quen kiểm tra lại bài sau khi viết.",
             "Đọc bài đúng tiến độ, cần rèn luyện thêm để phát âm chuẩn các thanh điệu tiếng Việt.",
-            "Có cố gắng trong học tập, hoàn thành tốt các nội dung cơ bản theo chuẩn kiến thức kỹ."
+            "Có cố gắng trong học tập, hoàn thành tốt các nội dung cơ bản theo chuẩn kiến thức kỹ năng."
         ],
         "C": [
             "Tốc độ đọc còn chậm, chữ viết chưa đều.",
@@ -16999,12 +16999,12 @@
     "Tự nhiên và Xã hội": {
         "T": [
             "Thích tìm hiểu thế giới tự nhiên và xã hội xung quanh.",
-            "Hiểu biết phong phú về môi trường sống, cơ thể người và biết cách chăm sóc.",
+            "Hiểu biết phong phú về môi trường sống, cơ thể người và biết cách chăm sóc bản thân.",
             "Tiếp thu bài nhanh, tích cực phát biểu.",
             "Có ý thức bảo vệ môi trường rất tốt, biết phân loại rác và nhắc nhở các bạn giữ gìn.",
             "Kỹ năng quan sát tranh và mô hình xuất sắc.",
-            "Ham học hỏi, thích khám phá các loài cây cối.",
-            "Nắm chắc kiến thức bài học, biết tự bảo vệ bản thân trước các nguy cơ tai nạn thương.",
+            "Ham học hỏi, thích khám phá các loài cây cối và con vật.",
+            "Nắm chắc kiến thức bài học, biết tự bảo vệ bản thân trước các nguy cơ tai nạn thương tích.",
             "Chăm ngoan, hiểu bài sâu sắc, có lối sống lành mạnh, gọn gàng.",
             "Rất tích cực trong các hoạt động nhóm, đóng góp nhiều ý tưởng hay khi tìm hiểu bài mới.",
             "Khả năng quan sát tinh tế, ghi nhớ tốt các đặc điểm sinh học và thói quen của sinh vật.",
@@ -17153,7 +17153,7 @@
             "Có cố gắng trong học tập, cần chú ý ôn tập thường xuyên để không bị nhầm lẫn các mốc.",
             "Nắm được sự phân chia thời gian theo thế kỷ và kỷ nguyên trong lịch sử nhân loại.",
             "Biết liên hệ kiến thức địa lí bài học với tình hình phát triển kinh tế của quê hương.",
-            "Tiếp thu bài tương đối tốt, cần tự tin hơn khi lên bảng chỉ bản đồ trước tập thể lớp.",
+            "Tiếp thu bài tương đối tốt, cần tự tin hơn khi lên bảng chỉ bản đồ trước tập thể lớp học.",
             "Chữ viết rõ ràng, trình bày bài cẩn thận.",
             "Nhận thức đúng đắn về vai trò của lịch sử trong việc bồi dưỡng nhân cách người học.",
             "Hiểu bài tại lớp, cần dành thêm thời gian đọc lại bài học trong sách để nhớ bài sâu.",
@@ -17616,7 +17616,7 @@
             "Có cố gắng trong học tập, cần chú ý kiểm tra lại chính tả trước khi nộp bài.",
             "Biết cách tra cứu từ điển song ngữ để tìm nghĩa của các từ vựng mới chưa học.",
             "Tham gia vui vẻ vào các trò chơi học tập tiếng dân tộc do giáo viên tổ chức trên lớp.",
-            "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với người.",
+            "Tiếp thu bài tương đối tốt, cần chăm chỉ trò chuyện bằng tiếng dân tộc với mọi người.",
             "Trình bày bài vở sạch sẽ, rõ ràng, hoàn thành tốt các bài tập trong sách bài tập.",
             "Có thái độ tôn trọng các giá trị văn hóa và ngôn ngữ truyền thống của quê hương.",
             "Chăm chỉ ôn bài trước các kỳ kiểm tra, có tinh thần cầu tiến trong học tập môn học.",
@@ -17698,7 +17698,7 @@
             "Cảm thụ văn học tinh tế, nắm chắc phong cách nghệ thuật của các tác giả lớn.",
             "Kỹ năng đọc hiểu văn bản nâng cao rất nhạy bén.",
             "Bài viết có bố cục sáng rõ, luận điểm mạch lạc.",
-            "Ham đọc sách và tài liệu chuyên khảo, luôn có những liên hệ văn học sâu rộng giữa.",
+            "Ham đọc sách và tài liệu chuyên khảo, luôn có những liên hệ văn học sâu rộng giữa tác phẩm và đời sống.",
             "Nắm vững đặc trưng các thể loại: bi kịch, phóng sự, truyện thơ, ký, tùy bút.",
             "Khả năng tranh luận và thuyết trình các vấn đề văn học trước lớp rất đĩnh đạc.",
             "Tự giác học tập, chuẩn bị bài chu đáo, bài kiểm tra định kỳ luôn đạt điểm số xuất.",
@@ -17846,7 +17846,7 @@
             "Nhận biết được tác hại của các tệ nạn xã hội và có ý thức tự bảo vệ bản thân.",
             "Biết tiết kiệm thời gian và tiền bạc, không lãng phí đồ dùng học tập.",
             "Có thái độ tôn trọng người khác, không tham gia vào các hành vi bắt nạt hay kỳ thị.",
-            "Ghi chép bài đầy đủ, chú ý nghe giảng, cần mạnh dạn phát biểu ý kiến cá nhân nhiều.",
+            "Ghi chép bài đầy đủ, chú ý nghe giảng, cần mạnh dạn phát biểu ý kiến cá nhân nhiều hơn.",
             "Biết cách ứng xử khi gặp các tình huống xung đột nhỏ trong lớp học theo hướng.",
             "Tích cực tham gia các buổi sinh hoạt chuyên đề về an toàn giao thông và phòng chống.",
             "Có tinh thần học hỏi các tấm gương người tốt việc tốt trong đời sống hằng ngày.",
@@ -17969,7 +17969,7 @@
             "Biết chia sẻ, đồng cảm với bạn bè xung quanh, có tinh thần tương thân tương ái.",
             "Đạt chuẩn môn Hoạt động trải nghiệm, hướng nghiệp theo Thông tư 22/2021/TT-BGDĐT.",
             "Có tinh thần cầu tiến, luôn sẵn sàng lắng nghe sự định hướng đúng đắn của giáo viên.",
-            "Chăm chỉ rèn luyện các kỹ năng mềm cần thiết để chuẩn bị hành trang bước vào giai.",
+            "Chăm chỉ rèn luyện các kỹ năng mềm cần thiết để chuẩn bị hành trang bước vào giai đoạn mới.",
             "Hoàn thành tốt các mục tiêu rèn luyện đề ra cho năm học."
         ],
         "C": [
@@ -17978,7 +17978,7 @@
             "Chưa hoàn thành bài thu hoạch trải nghiệm đúng hạn, bài làm còn sơ sài.",
             "Còn rụt rè, e ngại khi tham gia các hoạt động tập thể và các buổi tư vấn nghề nghiệp.",
             "Chưa có ý thức tìm hiểu về năng lực bản thân và các ngành nghề.",
-            "Cần tích cực mở lòng tham gia các hoạt động Đoàn - Hội để rèn luyện sự tự tin và kỹ."
+            "Cần tích cực mở lòng tham gia các hoạt động Đoàn - Hội để rèn luyện sự tự tin và kỹ năng giao tiếp."
         ]
     },
     "Nội dung giáo dục địa phương": {
@@ -18019,7 +18019,7 @@
             "Biết chia sẻ những nét đẹp văn hóa quê hương với bạn bè khi cùng thảo luận bài học.",
             "Làm bài kiểm tra nghiêm túc, đạt chuẩn kiến thức kỹ năng môn Giáo dục địa phương.",
             "Nắm được các vấn đề ô nhiễm môi trường và giải pháp bảo vệ tài nguyên thiên nhiên.",
-            "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm số liệu thực tế để bài viết phong.",
+            "Có cố gắng trong học tập, cần chú ý tìm hiểu thêm số liệu thực tế để bài viết phong phú hơn.",
             "Tham gia tích cực các hoạt động đền ơn đáp nghĩa.",
             "Hiểu được trách nhiệm của thế hệ trẻ đối với sự nghiệp xây dựng và bảo vệ quê hương.",
             "Trình bày bài thu hoạch rõ ràng, sạch.",
@@ -18464,7 +18464,7 @@
             "Tác phong đi lại, xưng hô, chào hỏi đậm chất người lính cách mạng.",
             "Có phương pháp tự học khoa học, nghiên cứu sâu các chiến dịch quân sự lớn: Điện Biên.",
             "Kỹ năng mắc võng, đào công sự ngụy trang và sinh hoạt dã ngoại thao trường rất nhanh.",
-            "Luôn là hạt nhân nòng cốt, gương mẫu chỉ huy trung đội học sinh thực hiện các nhiệm.",
+            "Luôn là hạt nhân nòng cốt, gương mẫu chỉ huy trung đội học sinh thực hiện các nhiệm vụ được giao.",
             "Có tinh thần tương thân tương ái, sẵn sàng chia sẻ khó khăn.",
             "Nắm vững toàn diện chuẩn đầu ra môn Giáo dục quốc phòng và an ninh THPT theo chương.",
             "Có nguyện vọng và quyết tâm thi vào các học viện, nhà trường quân đội.",
@@ -18598,8 +18598,8 @@
    */
   // Ngân hàng nhận xét chuyên biệt Tin học Lớp 1 (Chuẩn GDPT 2018 - Thông tư 27)
 const PRIMARY_GRADE_1_TINHOC = {
-  GK1: {
-    T: [
+  "GK1": {
+    "T": [
       "Nhận biết nhanh các bộ phận cơ bản của máy tính, thao tác chuột khéo léo.",
       "Thao tác cầm và di chuyển chuột chuẩn xác, tư thế ngồi học đúng quy cách.",
       "Biết cách bật và tắt máy tính đúng quy trình, an toàn theo hướng dẫn.",
@@ -18623,7 +18623,7 @@ const PRIMARY_GRADE_1_TINHOC = {
       "Thao tác chuột nhẹ nhàng, chuẩn xác, hoàn thành bài tập trước thời gian.",
       "Tác phong nhanh nhẹn, có thói quen giữ gìn vệ sinh chung phòng máy tính."
     ],
-    H: [
+    "H": [
       "Nhận biết được các bộ phận của máy tính: màn hình, thân máy, bàn phím, chuột.",
       "Biết cách bật, tắt máy tính đúng quy trình theo hướng dẫn của giáo viên.",
       "Cầm chuột đúng cách, thực hiện được thao tác di chuyển và nháy chuột cơ bản.",
@@ -18647,7 +18647,7 @@ const PRIMARY_GRADE_1_TINHOC = {
       "Biết lắng nghe giáo viên hướng dẫn và làm theo các bước cơ bản.",
       "Có ý thức bảo vệ mắt, không ngồi quá sát màn hình máy tính."
     ],
-    C: [
+    "C": [
       "Thao tác cầm chuột còn lúng túng, cần rèn luyện thêm để di chuột linh hoạt.",
       "Cần chú ý ngồi đúng tư thế và giữ khoảng cách an toàn với màn hình.",
       "Còn nhầm lẫn nút bật nguồn, cần chú ý quan sát giáo viên hướng dẫn lại.",
@@ -18658,15 +18658,15 @@ const PRIMARY_GRADE_1_TINHOC = {
       "Cần chú ý giữ gìn trật tự và thực hiện đúng nội quy phòng máy tính."
     ]
   },
-  CK1: {
-    T: [
+  "CK1": {
+    "T": [
       "Thao tác kéo thả chuột rất khéo léo, điều khiển chuột nhanh và chuẩn xác.",
       "Sử dụng chuột thành thạo, phân biệt rõ nháy chuột trái và nháy đúp chuột.",
       "Nhận biết tốt phím Enter, phím cách và các phím mũi tên trên bàn phím.",
       "Phối hợp nhịp nhàng giữa quan sát màn hình và điều khiển chuột máy tính.",
       "Hoàn thành xuất sắc các bài tập rèn luyện kỹ năng chuột cuối học kì 1.",
       "Tư duy nhanh nhạy, khéo léo vượt qua các thử thách trong trò chơi học tập.",
-      "Thao tác chuột dứt khoát, hoàn thành bài thực hành sớm và giúp đỡ bạn.",
+      "Thao tác chuột dứt khoát, hoàn thành bài thực hành sớm và giúp đỡ bạn bè cùng tiến bộ.",
       "Làm quen với bàn phím rất nhanh, nhận diện chính xác các phím cơ bản.",
       "Luôn chủ động, tích cực và hào hứng trong các tiết thực hành tin học.",
       "Thực hiện chuẩn xác các thao tác kéo thả hình ảnh trên màn hình máy tính.",
@@ -18683,7 +18683,7 @@ const PRIMARY_GRADE_1_TINHOC = {
       "Điều khiển chuột linh hoạt, hoàn thành tốt các bài luyện tập cuối kì 1.",
       "Tự tin thực hành, phối hợp nhịp nhàng các thao tác chuột được học."
     ],
-    H: [
+    "H": [
       "Thực hiện được thao tác nháy đúp chuột và kéo thả chuột cơ bản.",
       "Nhận biết được phím Enter và phím cách trên bàn phím máy tính.",
       "Biết sử dụng chuột để tham gia các trò chơi học tập rèn luyện kỹ năng.",
@@ -18707,7 +18707,7 @@ const PRIMARY_GRADE_1_TINHOC = {
       "Biết cầm chuột đúng quy cách, thao tác di chuột tương đối nhẹ nhàng.",
       "Thực hiện được các thao tác làm quen máy tính theo chuẩn cuối kì 1."
     ],
-    C: [
+    "C": [
       "Thao tác nháy đúp chuột còn chậm, cần rèn luyện thêm cho ngón tay linh hoạt.",
       "Còn lúng túng khi thực hiện thao tác kéo thả chuột trên màn hình.",
       "Cần chú ý lắng nghe giáo viên hướng dẫn để nhớ vị trí các phím cơ bản.",
@@ -18718,8 +18718,8 @@ const PRIMARY_GRADE_1_TINHOC = {
       "Cần rèn luyện thêm tính kiên nhẫn khi thực hiện bài tập trên máy."
     ]
   },
-  GK2: {
-    T: [
+  "GK2": {
+    "T": [
       "Vẽ tranh trên phần mềm tập vẽ rất khéo léo, tô màu hài hòa và đẹp mắt.",
       "Sử dụng thành thạo các công cụ vẽ hình khối: hình vuông, tròn, đường thẳng.",
       "Biết chọn màu sắc phù hợp và tô màu cẩn thận, không làm lem hình vẽ.",
@@ -18743,7 +18743,7 @@ const PRIMARY_GRADE_1_TINHOC = {
       "Biết sử dụng màu sắc phong phú, tạo ra sản phẩm vẽ sinh động trên máy.",
       "Thao tác chọn hình và tô màu rất dứt khoát, hoàn thành tốt bài vẽ."
     ],
-    H: [
+    "H": [
       "Biết sử dụng công cụ vẽ hình vuông, hình tròn và đường thẳng cơ bản.",
       "Thực hiện được thao tác tô màu vào hình vẽ theo mẫu của giáo viên.",
       "Hoàn thành bài tập vẽ hình đơn giản môn Tin học giữa học kì 2.",
@@ -18767,7 +18767,7 @@ const PRIMARY_GRADE_1_TINHOC = {
       "Biết sử dụng chuột để chọn hộp màu và công cụ vẽ theo hướng dẫn.",
       "Có ý thức hoàn thành sản phẩm vẽ tranh đơn giản trong giờ thực hành."
     ],
-    C: [
+    "C": [
       "Thao tác vẽ và tô màu còn lúng túng, hay để màu tràn ra ngoài hình.",
       "Cần rèn luyện thêm kỹ năng di chuột để vẽ các nét thẳng được ngay ngắn.",
       "Còn quên cách chọn công cụ vẽ hình, cần chú ý theo dõi giáo viên làm mẫu.",
@@ -18778,8 +18778,8 @@ const PRIMARY_GRADE_1_TINHOC = {
       "Cần chú ý ngồi đúng tư thế để không bị mỏi lưng và mỏi mắt."
     ]
   },
-  CK2: {
-    T: [
+  "CK2": {
+    "T": [
       "Thao tác chuột và bàn phím rất khéo léo, tự tin sử dụng máy tính an toàn.",
       "Hoàn thành xuất sắc chương trình Tin học lớp 1, có năng khiếu công nghệ.",
       "Sử dụng thành thạo phần mềm tập vẽ, tạo ra các sản phẩm đẹp và sáng tạo.",
@@ -18803,7 +18803,7 @@ const PRIMARY_GRADE_1_TINHOC = {
       "Thành thạo các kỹ năng làm quen máy tính, tự tin bước vào năm học mới.",
       "Có tinh thần tự giác cao, hoàn thành toàn diện các bài thực hành cả năm."
     ],
-    H: [
+    "H": [
       "Nắm được các thao tác cơ bản với chuột và bàn phím máy tính cả năm học.",
       "Biết bật và tắt máy tính đúng quy trình an toàn theo hướng dẫn giáo viên.",
       "Biết sử dụng phần mềm tập vẽ để tạo ra các bức tranh đơn giản có màu sắc.",
@@ -18827,7 +18827,7 @@ const PRIMARY_GRADE_1_TINHOC = {
       "Có tinh thần chăm chỉ, thực hiện đúng các thao tác máy tính cơ bản.",
       "Thực hiện tốt các bài tập vẽ hình và trò chơi rèn luyện thao tác chuột."
     ],
-    C: [
+    "C": [
       "Thao tác chuột còn chậm, cần rèn luyện thêm để điều khiển chuột linh hoạt.",
       "Còn quên quy trình tắt máy an toàn, cần chú ý thực hiện đúng các bước.",
       "Kỹ năng vẽ và tô màu còn hạn chế, cần chăm chỉ thực hành thêm trên máy.",
@@ -18841,9 +18841,460 @@ const PRIMARY_GRADE_1_TINHOC = {
 };
 
 // Ngân hàng nhận xét chuyên biệt Tin học Lớp 2 (Chuẩn GDPT 2018 - Thông tư 27)
-const PRIMARY_GRADE_2_TINHOC = {
+
+const PRIMARY_GRADE_1_TIENGANH = {
+  "GK1": {
+    "T": [
+      "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen thuộc.",
+      "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò chơi học tập trên lớp.",
+      "Có ngữ điệu tự nhiên, phản xạ tiếng Anh rất nhạy bén.",
+      "Tự tin thể hiện kỹ năng nghe nói trước lớp, phát âm to rõ, đúng trọng âm và ngữ điệu.",
+      "Kỹ năng nghe hiểu rất tốt, làm đúng các bài tập nghe và nhanh nhẹn nắm bắt thông tin.",
+      "Vốn từ vựng tiếng Anh phong phú, biết vận dụng linh hoạt vào giao tiếp hằng ngày.",
+      "Học bài hăng say, tương tác nhiệt tình với giáo viên và các bạn bằng tiếng Anh.",
+      "Có năng khiếu ngoại ngữ, nhớ mặt chữ và nghĩa từ vựng rất nhanh.",
+      "Kỹ năng viết từ và mẫu câu tiếng Anh chính xác, chữ viết sạch đẹp.",
+      "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào hứng.",
+      "Phản xạ ngôn ngữ nhanh nhẹn, luôn chủ động giơ tay trả lời các câu hỏi.",
+      "Nghe hiểu chuẩn xác các bài đàm thoại ngắn.",
+      "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ học.",
+      "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi ngày.",
+      "Kỹ năng đọc hiểu bài khóa tiếng Anh tốt.",
+      "Nắm chắc các mẫu câu hỏi và trả lời về bản thân, gia đình, trường học, bạn bè.",
+      "Hoàn thành xuất sắc các bài kiểm tra định kỳ.",
+      "Tự tin, nhanh nhẹn, có niềm đam mê lớn với môn học và luôn giúp đỡ bạn cùng học tốt.",
+      "Nắm vững kiến thức bài học, biết nghe và nói và tích cực tham gia học tập.",
+      "Tiếp thu bài nhanh, thực hiện tốt nội dung nghe và nói và có ý thức phát huy.",
+      "Tiếp thu bài rất tốt, biết vận dụng nội dung nghe và nói vào nhiệm vụ học tập.",
+      "Thể hiện năng khiếu nổi bật, chủ động khi nghe và nói và hoàn thành tốt yêu cầu.",
+      "Nắm vững kiến thức bài học, biết đọc từ vựng và tích cực tham gia học tập.",
+      "Tiếp thu bài nhanh, thực hiện tốt nội dung đọc từ vựng và có ý thức phát huy.",
+      "Tiếp thu bài rất tốt, biết vận dụng nội dung đọc từ vựng vào nhiệm vụ học tập.",
+      "Thể hiện năng khiếu nổi bật, chủ động khi đọc từ vựng và hoàn thành tốt yêu cầu.",
+      "Nắm vững kiến thức bài học, biết viết câu đơn giản và học tập rất tích cực.",
+      "Nắm vững kiến thức bài học, biết tham gia giao tiếp và học tập rất tích cực.",
+      "Nắm vững kiến thức bài học, biết ghi nhớ mẫu câu và tích cực tham gia học tập.",
+      "Tiếp thu bài rất tốt, phát âm và ghi nhớ từ vựng tương đối tốt.",
+      "Tích cực học Tiếng Anh, biết vận dụng từ vựng và mẫu câu đã học.",
+      "Nắm được nội dung trọng tâm, cần luyện nghe nói thường xuyên hơn.",
+      "Học tập tích cực môn Tiếng Anh, tự tin và mạnh dạn khi giao tiếp.",
+      "Hào hứng làm quen với tiếng Anh, phát âm từ ngữ to, rõ ràng và tự tin.",
+      "Nhớ nhanh các từ vựng chỉ màu sắc, số đếm và các con vật quen thuộc.",
+      "Phản xạ ngôn ngữ nhanh, nhắc lại chuẩn xác các từ tiếng Anh theo cô giáo.",
+      "Rất thích thú tham gia các bài hát, trò chơi tiếng Anh sôi nổi cùng các bạn.",
+      "Tự tin chỉ tranh và gọi tên đúng các đồ vật, con vật bằng tiếng Anh.",
+      "Nghe hiểu tốt các hiệu lệnh đơn giản trong lớp học: Stand up, Sit down."
+    ],
+    "H": [
+      "Nắm được các từ vựng và mẫu câu đơn giản, hoàn thành bài tập.",
+      "Tiếp thu bài đạt yêu cầu, cần tự tin hơn khi thực hành nói tiếng Anh trước lớp.",
+      "Nhớ được các từ vựng theo chủ đề, cần rèn thêm kỹ năng nghe để nhận diện từ nhanh hơn.",
+      "Hiểu được chỉ dẫn của giáo viên trong lớp học, cần rèn thêm sự tự tin khi giao tiếp.",
+      "Có cố gắng trong học tập, hoàn thành bài tập nghe và nối tranh đúng theo yêu cầu.",
+      "Đọc được các từ ngữ quen thuộc, cần luyện tập đọc thành câu trôi chảy và tự nhiên.",
+      "Có ý thức chuẩn bị bài trước khi đến lớp, cần tích cực giơ tay phát biểu nhiều hơn.",
+      "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký tự.",
+      "Nghe hiểu các lệnh đơn giản trong lớp, cần rèn thêm phản xạ trả lời câu hỏi ngắn.",
+      "Tham gia đầy đủ các hoạt động nhóm, cần chủ động hơn trong phần luyện nói đôi bạn.",
+      "Biết cách ghép từ thành câu đơn giản, cần rèn thêm vốn từ vựng mở rộng.",
+      "Hoàn thành các phiếu học tập đúng thời gian, cần chú ý ngữ điệu khi đọc câu hỏi.",
+      "Có tinh thần học hỏi, cần kiên trì nghe lại các bài nghe mẫu trên ứng dụng hoặc đĩa CD nghe mẫu.",
+      "Nắm được các chủ đề về số đếm, màu sắc, con vật.",
+      "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống nhau.",
+      "Có ý thức học tập tốt, hoàn thành các nhiệm vụ giáo viên giao, cần tự tin hơn vào bản thân.",
+      "Hiểu bài cơ bản, cần rèn luyện thói quen tự ôn từ vựng 15 phút mỗi ngày ở nhà.",
+      "Tham gia hào hứng các trò chơi ôn tập, cần cẩn thận hơn khi làm các bài kiểm tra.",
+      "Nắm được kiến thức trọng tâm, cần tiếp tục phát huy tinh thần chăm chỉ, chịu khó.",
+      "Đạt chuẩn kiến thức kỹ năng môn học, cần mạnh dạn thực hành nói tiếng Anh nhiều hơn.",
+      "Đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung nghe và nói ở mức phù hợp.",
+      "Đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung đọc từ vựng ở mức phù hợp.",
+      "Nắm được kiến thức cơ bản, cần luyện thêm từ vựng và mẫu câu quen thuộc.",
+      "Cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh.",
+      "Bước đầu làm quen tốt với môn học, phát âm được các từ tiếng Anh đơn giản.",
+      "Nhớ được các từ vựng cơ bản về màu sắc, số đếm và đồ dùng học tập.",
+      "Biết nhắc lại từ theo giáo viên, cần tự tin phát âm to rõ hơn trước lớp.",
+      "Nghe hiểu các hiệu lệnh đơn giản của giáo viên trong giờ học.",
+      "Tham gia các trò chơi học tập cùng bạn, cần mạnh dạn hơn khi phát biểu.",
+      "Hoàn thành các hoạt động tô màu, nối tranh theo hướng dẫn của giáo viên."
+    ],
+    "C": [
+      "Vốn từ còn hạn chế, phát âm chưa chuẩn.",
+      "Còn rụt rè khi thực hành nói, kỹ năng nghe chưa tốt.",
+      "Hay quên từ vựng và mẫu câu cơ bản, cần viết lại từ mới nhiều lần để ghi nhớ tốt hơn.",
+      "Kỹ năng nhận diện mặt chữ tiếng Anh còn yếu.",
+      "Cần tập trung hơn trong giờ học ngoại ngữ, tự tin hỏi giáo viên khi chưa hiểu rõ bài.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung nghe và nói để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung nghe và nói.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung đọc từ vựng để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung đọc từ vựng.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung viết câu đơn giản để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung viết câu đơn giản.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung tham gia giao tiếp để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung tham gia giao tiếp.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung ghi nhớ mẫu câu để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung ghi nhớ mẫu câu quen thuộc.",
+      "Còn hạn chế về từ vựng và mẫu câu, cần được hỗ trợ thêm.",
+      "Cần luyện tập tiếng Anh thường xuyên hơn để đạt yêu cầu.",
+      "Còn rụt rè, chưa mạnh dạn tham gia phát âm và hát tiếng Anh cùng các bạn.",
+      "Cần tập trung hơn trong giờ học để ghi nhớ các từ vựng đơn giản.",
+      "Khả năng phản xạ còn chậm, cần được giáo viên khích lệ và hỗ trợ thêm.",
+      "Còn ngại nói, cần tự tin tham gia các trò chơi nhận biết từ vựng qua tranh."
+    ]
+  },
+  "CK1": {
+    "T": [
+      "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen thuộc.",
+      "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò chơi học tập trên lớp.",
+      "Có ngữ điệu tự nhiên, phản xạ tiếng Anh rất nhạy bén.",
+      "Tự tin thể hiện kỹ năng nghe nói trước lớp, phát âm to rõ, đúng trọng âm và ngữ điệu.",
+      "Kỹ năng nghe hiểu rất tốt, làm đúng các bài tập nghe và nhanh nhẹn nắm bắt thông tin.",
+      "Vốn từ vựng tiếng Anh phong phú, biết vận dụng linh hoạt vào giao tiếp hằng ngày.",
+      "Học bài hăng say, tương tác nhiệt tình với giáo viên và các bạn bằng tiếng Anh.",
+      "Có năng khiếu ngoại ngữ, nhớ mặt chữ và nghĩa từ vựng rất nhanh.",
+      "Kỹ năng viết từ và mẫu câu tiếng Anh chính xác, chữ viết sạch đẹp.",
+      "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào hứng.",
+      "Phản xạ ngôn ngữ nhanh nhẹn, luôn chủ động giơ tay trả lời các câu hỏi.",
+      "Nghe hiểu chuẩn xác các bài đàm thoại ngắn.",
+      "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ học.",
+      "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi ngày.",
+      "Kỹ năng đọc hiểu bài khóa tiếng Anh tốt.",
+      "Nắm chắc các mẫu câu hỏi và trả lời về bản thân, gia đình, trường học, bạn bè.",
+      "Hoàn thành xuất sắc các bài kiểm tra định kỳ.",
+      "Tự tin, nhanh nhẹn, có niềm đam mê lớn với môn học và luôn giúp đỡ bạn cùng học tốt.",
+      "Nắm vững kiến thức bài học, biết nghe và nói và tích cực tham gia học tập.",
+      "Tiếp thu bài nhanh, thực hiện tốt nội dung nghe và nói và có ý thức phát huy.",
+      "Tiếp thu bài rất tốt, biết vận dụng nội dung nghe và nói vào nhiệm vụ học tập.",
+      "Thể hiện năng khiếu nổi bật, chủ động khi nghe và nói và hoàn thành tốt yêu cầu.",
+      "Nắm vững kiến thức bài học, biết đọc từ vựng và tích cực tham gia học tập.",
+      "Tiếp thu bài nhanh, thực hiện tốt nội dung đọc từ vựng và có ý thức phát huy.",
+      "Tiếp thu bài rất tốt, biết vận dụng nội dung đọc từ vựng vào nhiệm vụ học tập.",
+      "Thể hiện năng khiếu nổi bật, chủ động khi đọc từ vựng và hoàn thành tốt yêu cầu.",
+      "Nắm vững kiến thức bài học, biết viết câu đơn giản và học tập rất tích cực.",
+      "Nắm vững kiến thức bài học, biết tham gia giao tiếp và học tập rất tích cực.",
+      "Nắm vững kiến thức bài học, biết ghi nhớ mẫu câu và tích cực tham gia học tập.",
+      "Tiếp thu bài rất tốt, phát âm và ghi nhớ từ vựng tương đối tốt.",
+      "Tích cực học Tiếng Anh, biết vận dụng từ vựng và mẫu câu đã học.",
+      "Nắm được nội dung trọng tâm, cần luyện nghe nói thường xuyên hơn.",
+      "Học tập tích cực môn Tiếng Anh, tự tin và mạnh dạn khi giao tiếp.",
+      "Tiếp thu tốt chương trình làm quen tiếng Anh học kì 1, phát âm chuẩn xác.",
+      "Vốn từ vựng phong phú về các chủ đề gần gũi, hát tiếng Anh rất hay."
+    ],
+    "H": [
+      "Nắm được các từ vựng và mẫu câu đơn giản, hoàn thành bài tập.",
+      "Tiếp thu bài đạt yêu cầu, cần tự tin hơn khi thực hành nói tiếng Anh trước lớp.",
+      "Nhớ được các từ vựng theo chủ đề, cần rèn thêm kỹ năng nghe để nhận diện từ nhanh hơn.",
+      "Hiểu được chỉ dẫn của giáo viên trong lớp học, cần rèn thêm sự tự tin khi giao tiếp.",
+      "Có cố gắng trong học tập, hoàn thành bài tập nghe và nối tranh đúng theo yêu cầu.",
+      "Đọc được các từ ngữ quen thuộc, cần luyện tập đọc thành câu trôi chảy và tự nhiên.",
+      "Có ý thức chuẩn bị bài trước khi đến lớp, cần tích cực giơ tay phát biểu nhiều hơn.",
+      "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký tự.",
+      "Nghe hiểu các lệnh đơn giản trong lớp, cần rèn thêm phản xạ trả lời câu hỏi ngắn.",
+      "Tham gia đầy đủ các hoạt động nhóm, cần chủ động hơn trong phần luyện nói đôi bạn.",
+      "Biết cách ghép từ thành câu đơn giản, cần rèn thêm vốn từ vựng mở rộng.",
+      "Hoàn thành các phiếu học tập đúng thời gian, cần chú ý ngữ điệu khi đọc câu hỏi.",
+      "Có tinh thần học hỏi, cần kiên trì nghe lại các bài nghe mẫu trên ứng dụng hoặc đĩa CD nghe mẫu.",
+      "Nắm được các chủ đề về số đếm, màu sắc, con vật.",
+      "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống nhau.",
+      "Có ý thức học tập tốt, hoàn thành các nhiệm vụ giáo viên giao, cần tự tin hơn vào bản thân.",
+      "Hiểu bài cơ bản, cần rèn luyện thói quen tự ôn từ vựng 15 phút mỗi ngày ở nhà.",
+      "Tham gia hào hứng các trò chơi ôn tập, cần cẩn thận hơn khi làm các bài kiểm tra.",
+      "Nắm được kiến thức trọng tâm, cần tiếp tục phát huy tinh thần chăm chỉ, chịu khó.",
+      "Đạt chuẩn kiến thức kỹ năng môn học, cần mạnh dạn thực hành nói tiếng Anh nhiều hơn.",
+      "Đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung nghe và nói ở mức phù hợp.",
+      "Đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung đọc từ vựng ở mức phù hợp.",
+      "Nắm được kiến thức cơ bản, cần luyện thêm từ vựng và mẫu câu quen thuộc.",
+      "Cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh.",
+      "Đạt yêu cầu môn làm quen tiếng Anh học kì 1, nhận biết từ qua tranh tốt.",
+      "Hoàn thành các bài tập nối từ và tranh ảnh, cần tích cực phát biểu hơn."
+    ],
+    "C": [
+      "Vốn từ còn hạn chế, phát âm chưa chuẩn.",
+      "Còn rụt rè khi thực hành nói, kỹ năng nghe chưa tốt.",
+      "Hay quên từ vựng và mẫu câu cơ bản, cần viết lại từ mới nhiều lần để ghi nhớ tốt hơn.",
+      "Kỹ năng nhận diện mặt chữ tiếng Anh còn yếu.",
+      "Cần tập trung hơn trong giờ học ngoại ngữ, tự tin hỏi giáo viên khi chưa hiểu rõ bài.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung nghe và nói để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung nghe và nói.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung đọc từ vựng để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung đọc từ vựng.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung viết câu đơn giản để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung viết câu đơn giản.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung tham gia giao tiếp để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung tham gia giao tiếp.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung ghi nhớ mẫu câu để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung ghi nhớ mẫu câu quen thuộc.",
+      "Còn hạn chế về từ vựng và mẫu câu, cần được hỗ trợ thêm.",
+      "Cần luyện tập tiếng Anh thường xuyên hơn để đạt yêu cầu.",
+      "Cần chú ý ôn lại các từ vựng đã học ở học kì 1 để tự tin hơn."
+    ]
+  },
+  "GK2": {
+    "T": [
+      "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen thuộc.",
+      "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò chơi học tập trên lớp.",
+      "Có ngữ điệu tự nhiên, phản xạ tiếng Anh rất nhạy bén.",
+      "Tự tin thể hiện kỹ năng nghe nói trước lớp, phát âm to rõ, đúng trọng âm và ngữ điệu.",
+      "Kỹ năng nghe hiểu rất tốt, làm đúng các bài tập nghe và nhanh nhẹn nắm bắt thông tin.",
+      "Vốn từ vựng tiếng Anh phong phú, biết vận dụng linh hoạt vào giao tiếp hằng ngày.",
+      "Học bài hăng say, tương tác nhiệt tình với giáo viên và các bạn bằng tiếng Anh.",
+      "Có năng khiếu ngoại ngữ, nhớ mặt chữ và nghĩa từ vựng rất nhanh.",
+      "Kỹ năng viết từ và mẫu câu tiếng Anh chính xác, chữ viết sạch đẹp.",
+      "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào hứng.",
+      "Phản xạ ngôn ngữ nhanh nhẹn, luôn chủ động giơ tay trả lời các câu hỏi.",
+      "Nghe hiểu chuẩn xác các bài đàm thoại ngắn.",
+      "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ học.",
+      "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi ngày.",
+      "Kỹ năng đọc hiểu bài khóa tiếng Anh tốt.",
+      "Nắm chắc các mẫu câu hỏi và trả lời về bản thân, gia đình, trường học, bạn bè.",
+      "Hoàn thành xuất sắc các bài kiểm tra định kỳ.",
+      "Tự tin, nhanh nhẹn, có niềm đam mê lớn với môn học và luôn giúp đỡ bạn cùng học tốt.",
+      "Nắm vững kiến thức bài học, biết nghe và nói và tích cực tham gia học tập.",
+      "Tiếp thu bài nhanh, thực hiện tốt nội dung nghe và nói và có ý thức phát huy.",
+      "Tiếp thu bài rất tốt, biết vận dụng nội dung nghe và nói vào nhiệm vụ học tập.",
+      "Thể hiện năng khiếu nổi bật, chủ động khi nghe và nói và hoàn thành tốt yêu cầu.",
+      "Nắm vững kiến thức bài học, biết đọc từ vựng và tích cực tham gia học tập.",
+      "Tiếp thu bài nhanh, thực hiện tốt nội dung đọc từ vựng và có ý thức phát huy.",
+      "Tiếp thu bài rất tốt, biết vận dụng nội dung đọc từ vựng vào nhiệm vụ học tập.",
+      "Thể hiện năng khiếu nổi bật, chủ động khi đọc từ vựng và hoàn thành tốt yêu cầu.",
+      "Nắm vững kiến thức bài học, biết viết câu đơn giản và học tập rất tích cực.",
+      "Nắm vững kiến thức bài học, biết tham gia giao tiếp và học tập rất tích cực.",
+      "Nắm vững kiến thức bài học, biết ghi nhớ mẫu câu và tích cực tham gia học tập.",
+      "Tiếp thu bài rất tốt, phát âm và ghi nhớ từ vựng tương đối tốt.",
+      "Tích cực học Tiếng Anh, biết vận dụng từ vựng và mẫu câu đã học.",
+      "Nắm được nội dung trọng tâm, cần luyện nghe nói thường xuyên hơn.",
+      "Học tập tích cực môn Tiếng Anh, tự tin và mạnh dạn khi giao tiếp."
+    ],
+    "H": [
+      "Nắm được các từ vựng và mẫu câu đơn giản, hoàn thành bài tập.",
+      "Tiếp thu bài đạt yêu cầu, cần tự tin hơn khi thực hành nói tiếng Anh trước lớp.",
+      "Nhớ được các từ vựng theo chủ đề, cần rèn thêm kỹ năng nghe để nhận diện từ nhanh hơn.",
+      "Hiểu được chỉ dẫn của giáo viên trong lớp học, cần rèn thêm sự tự tin khi giao tiếp.",
+      "Có cố gắng trong học tập, hoàn thành bài tập nghe và nối tranh đúng theo yêu cầu.",
+      "Đọc được các từ ngữ quen thuộc, cần luyện tập đọc thành câu trôi chảy và tự nhiên.",
+      "Có ý thức chuẩn bị bài trước khi đến lớp, cần tích cực giơ tay phát biểu nhiều hơn.",
+      "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký tự.",
+      "Nghe hiểu các lệnh đơn giản trong lớp, cần rèn thêm phản xạ trả lời câu hỏi ngắn.",
+      "Tham gia đầy đủ các hoạt động nhóm, cần chủ động hơn trong phần luyện nói đôi bạn.",
+      "Biết cách ghép từ thành câu đơn giản, cần rèn thêm vốn từ vựng mở rộng.",
+      "Hoàn thành các phiếu học tập đúng thời gian, cần chú ý ngữ điệu khi đọc câu hỏi.",
+      "Có tinh thần học hỏi, cần kiên trì nghe lại các bài nghe mẫu trên ứng dụng hoặc đĩa CD nghe mẫu.",
+      "Nắm được các chủ đề về số đếm, màu sắc, con vật.",
+      "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống nhau.",
+      "Có ý thức học tập tốt, hoàn thành các nhiệm vụ giáo viên giao, cần tự tin hơn vào bản thân.",
+      "Hiểu bài cơ bản, cần rèn luyện thói quen tự ôn từ vựng 15 phút mỗi ngày ở nhà.",
+      "Tham gia hào hứng các trò chơi ôn tập, cần cẩn thận hơn khi làm các bài kiểm tra.",
+      "Nắm được kiến thức trọng tâm, cần tiếp tục phát huy tinh thần chăm chỉ, chịu khó.",
+      "Đạt chuẩn kiến thức kỹ năng môn học, cần mạnh dạn thực hành nói tiếng Anh nhiều hơn.",
+      "Đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung nghe và nói ở mức phù hợp.",
+      "Đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung đọc từ vựng ở mức phù hợp.",
+      "Nắm được kiến thức cơ bản, cần luyện thêm từ vựng và mẫu câu quen thuộc.",
+      "Cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh."
+    ],
+    "C": [
+      "Vốn từ còn hạn chế, phát âm chưa chuẩn.",
+      "Còn rụt rè khi thực hành nói, kỹ năng nghe chưa tốt.",
+      "Hay quên từ vựng và mẫu câu cơ bản, cần viết lại từ mới nhiều lần để ghi nhớ tốt hơn.",
+      "Kỹ năng nhận diện mặt chữ tiếng Anh còn yếu.",
+      "Cần tập trung hơn trong giờ học ngoại ngữ, tự tin hỏi giáo viên khi chưa hiểu rõ bài.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung nghe và nói để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung nghe và nói.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung đọc từ vựng để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung đọc từ vựng.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung viết câu đơn giản để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung viết câu đơn giản.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung tham gia giao tiếp để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung tham gia giao tiếp.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung ghi nhớ mẫu câu để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung ghi nhớ mẫu câu quen thuộc.",
+      "Còn hạn chế về từ vựng và mẫu câu, cần được hỗ trợ thêm.",
+      "Cần luyện tập tiếng Anh thường xuyên hơn để đạt yêu cầu."
+    ]
+  },
+  "CK2": {
+    "T": [
+      "Phát âm chuẩn, nhớ từ vựng tốt, phản xạ nhanh và tự tin giao tiếp các mẫu câu quen thuộc.",
+      "Học tập chăm chỉ, tiếp thu bài nhanh, làm đúng các bài tập và tích cực tham gia trò chơi học tập trên lớp.",
+      "Có ngữ điệu tự nhiên, phản xạ tiếng Anh rất nhạy bén.",
+      "Tự tin thể hiện kỹ năng nghe nói trước lớp, phát âm to rõ, đúng trọng âm và ngữ điệu.",
+      "Kỹ năng nghe hiểu rất tốt, làm đúng các bài tập nghe và nhanh nhẹn nắm bắt thông tin.",
+      "Vốn từ vựng tiếng Anh phong phú, biết vận dụng linh hoạt vào giao tiếp hằng ngày.",
+      "Học bài hăng say, tương tác nhiệt tình với giáo viên và các bạn bằng tiếng Anh.",
+      "Có năng khiếu ngoại ngữ, nhớ mặt chữ và nghĩa từ vựng rất nhanh.",
+      "Kỹ năng viết từ và mẫu câu tiếng Anh chính xác, chữ viết sạch đẹp.",
+      "Rất chăm chỉ luyện nghe nói ở nhà, tiếp thu các chủ đề bài học mới rất nhanh và hào hứng.",
+      "Phản xạ ngôn ngữ nhanh nhẹn, luôn chủ động giơ tay trả lời các câu hỏi.",
+      "Nghe hiểu chuẩn xác các bài đàm thoại ngắn.",
+      "Phát âm chuẩn xác, ngữ điệu sinh động, luôn tràn đầy năng lượng tích cực trong giờ học.",
+      "Có tinh thần tự học cao, thích xem phim hoạt hình tiếng Anh và học từ vựng mới mỗi ngày.",
+      "Kỹ năng đọc hiểu bài khóa tiếng Anh tốt.",
+      "Nắm chắc các mẫu câu hỏi và trả lời về bản thân, gia đình, trường học, bạn bè.",
+      "Hoàn thành xuất sắc các bài kiểm tra định kỳ.",
+      "Tự tin, nhanh nhẹn, có niềm đam mê lớn với môn học và luôn giúp đỡ bạn cùng học tốt.",
+      "Nắm vững kiến thức bài học, biết nghe và nói và tích cực tham gia học tập.",
+      "Tiếp thu bài nhanh, thực hiện tốt nội dung nghe và nói và có ý thức phát huy.",
+      "Tiếp thu bài rất tốt, biết vận dụng nội dung nghe và nói vào nhiệm vụ học tập.",
+      "Thể hiện năng khiếu nổi bật, chủ động khi nghe và nói và hoàn thành tốt yêu cầu.",
+      "Nắm vững kiến thức bài học, biết đọc từ vựng và tích cực tham gia học tập.",
+      "Tiếp thu bài nhanh, thực hiện tốt nội dung đọc từ vựng và có ý thức phát huy.",
+      "Tiếp thu bài rất tốt, biết vận dụng nội dung đọc từ vựng vào nhiệm vụ học tập.",
+      "Thể hiện năng khiếu nổi bật, chủ động khi đọc từ vựng và hoàn thành tốt yêu cầu.",
+      "Nắm vững kiến thức bài học, biết viết câu đơn giản và học tập rất tích cực.",
+      "Nắm vững kiến thức bài học, biết tham gia giao tiếp và học tập rất tích cực.",
+      "Nắm vững kiến thức bài học, biết ghi nhớ mẫu câu và tích cực tham gia học tập.",
+      "Tiếp thu bài rất tốt, phát âm và ghi nhớ từ vựng tương đối tốt.",
+      "Tích cực học Tiếng Anh, biết vận dụng từ vựng và mẫu câu đã học.",
+      "Nắm được nội dung trọng tâm, cần luyện nghe nói thường xuyên hơn.",
+      "Học tập tích cực môn Tiếng Anh, tự tin và mạnh dạn khi giao tiếp.",
+      "Hoàn thành xuất sắc môn làm quen tiếng Anh cả năm, phản xạ ngôn ngữ nhanh nhẹn."
+    ],
+    "H": [
+      "Nắm được các từ vựng và mẫu câu đơn giản, hoàn thành bài tập.",
+      "Tiếp thu bài đạt yêu cầu, cần tự tin hơn khi thực hành nói tiếng Anh trước lớp.",
+      "Nhớ được các từ vựng theo chủ đề, cần rèn thêm kỹ năng nghe để nhận diện từ nhanh hơn.",
+      "Hiểu được chỉ dẫn của giáo viên trong lớp học, cần rèn thêm sự tự tin khi giao tiếp.",
+      "Có cố gắng trong học tập, hoàn thành bài tập nghe và nối tranh đúng theo yêu cầu.",
+      "Đọc được các từ ngữ quen thuộc, cần luyện tập đọc thành câu trôi chảy và tự nhiên.",
+      "Có ý thức chuẩn bị bài trước khi đến lớp, cần tích cực giơ tay phát biểu nhiều hơn.",
+      "Nhớ mặt chữ tương đối tốt, cần luyện viết từ mới nhiều lần để tránh nhầm lẫn ký tự.",
+      "Nghe hiểu các lệnh đơn giản trong lớp, cần rèn thêm phản xạ trả lời câu hỏi ngắn.",
+      "Tham gia đầy đủ các hoạt động nhóm, cần chủ động hơn trong phần luyện nói đôi bạn.",
+      "Biết cách ghép từ thành câu đơn giản, cần rèn thêm vốn từ vựng mở rộng.",
+      "Hoàn thành các phiếu học tập đúng thời gian, cần chú ý ngữ điệu khi đọc câu hỏi.",
+      "Có tinh thần học hỏi, cần kiên trì nghe lại các bài nghe mẫu trên ứng dụng hoặc đĩa CD nghe mẫu.",
+      "Nắm được các chủ đề về số đếm, màu sắc, con vật.",
+      "Đọc đúng các từ vựng đã học, cần chú ý phân biệt các từ có cách phát âm gần giống nhau.",
+      "Có ý thức học tập tốt, hoàn thành các nhiệm vụ giáo viên giao, cần tự tin hơn vào bản thân.",
+      "Hiểu bài cơ bản, cần rèn luyện thói quen tự ôn từ vựng 15 phút mỗi ngày ở nhà.",
+      "Tham gia hào hứng các trò chơi ôn tập, cần cẩn thận hơn khi làm các bài kiểm tra.",
+      "Nắm được kiến thức trọng tâm, cần tiếp tục phát huy tinh thần chăm chỉ, chịu khó.",
+      "Đạt chuẩn kiến thức kỹ năng môn học, cần mạnh dạn thực hành nói tiếng Anh nhiều hơn.",
+      "Đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung nghe và nói ở mức phù hợp.",
+      "Đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung đọc từ vựng ở mức phù hợp.",
+      "Nắm được kiến thức cơ bản, cần luyện thêm từ vựng và mẫu câu quen thuộc.",
+      "Cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh.",
+      "Đạt chuẩn yêu cầu môn làm quen tiếng Anh năm học, phát âm to rõ ràng."
+    ],
+    "C": [
+      "Vốn từ còn hạn chế, phát âm chưa chuẩn.",
+      "Còn rụt rè khi thực hành nói, kỹ năng nghe chưa tốt.",
+      "Hay quên từ vựng và mẫu câu cơ bản, cần viết lại từ mới nhiều lần để ghi nhớ tốt hơn.",
+      "Kỹ năng nhận diện mặt chữ tiếng Anh còn yếu.",
+      "Cần tập trung hơn trong giờ học ngoại ngữ, tự tin hỏi giáo viên khi chưa hiểu rõ bài.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung nghe và nói để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung nghe và nói.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung đọc từ vựng để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung đọc từ vựng.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung viết câu đơn giản để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung viết câu đơn giản.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung tham gia giao tiếp để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung tham gia giao tiếp.",
+      "Cần giáo viên hỗ trợ thêm, nhất là nội dung ghi nhớ mẫu câu để tiến bộ hơn.",
+      "Cần cố gắng hơn trong môn Tiếng Anh, chú ý rèn thêm nội dung ghi nhớ mẫu câu quen thuộc.",
+      "Còn hạn chế về từ vựng và mẫu câu, cần được hỗ trợ thêm.",
+      "Cần luyện tập tiếng Anh thường xuyên hơn để đạt yêu cầu.",
+      "Cần tích cực luyện nghe và nhắc lại từ ngữ tiếng Anh nhiều hơn trong hè."
+    ]
+  }
+};
+
+const PRIMARY_GRADE_2_TIENGANH = {
   GK1: {
     T: [
+      "Phát âm chuẩn xác, nhớ từ vựng nhanh và tự tin nói các cụm từ ngắn.",
+      "Hào hứng tương tác với giáo viên và bạn bè trong các hoạt động học tiếng Anh.",
+      "Nhận biết tốt từ ngữ qua tranh ảnh và hành động, phản xạ rất nhanh nhẹn.",
+      "Thuộc các bài hát, bài thơ tiếng Anh ngắn, phát âm to rõ ràng.",
+      "Có tinh thần tự giác, hoàn thành xuất sắc các phiếu học tập làm quen.",
+      "Tự tin thể hiện kỹ năng nghe nói đơn giản trước cả lớp."
+    ],
+    H: [
+      "Nắm được các từ vựng và câu ngắn cơ bản theo chủ đề giữa kì 1.",
+      "Biết nhìn tranh đọc từ và nhắc lại đúng theo hướng dẫn giáo viên.",
+      "Hòa đồng tham gia các hoạt động học tập và trò chơi cùng bạn bè.",
+      "Tiếp thu bài đạt yêu cầu, cần mạnh dạn nói to và rõ hơn trong giờ học.",
+      "Nhận diện được mặt chữ tiếng Anh đơn giản tương ứng với hình ảnh.",
+      "Có cố gắng trong học tập, hoàn thành tốt các nhiệm vụ được giao."
+    ],
+    C: [
+      "Còn rụt rè khi nói tiếng Anh, phát âm còn nhỏ, cần tự tin hơn.",
+      "Chưa nhớ các từ vựng cơ bản, cần dành thời gian ôn lại từ mỗi ngày.",
+      "Cần tập trung hơn trong giờ học và chú ý lắng nghe cô giáo phát âm."
+    ]
+  },
+  CK1: {
+    T: [
+      "Hoàn thành xuất sắc các nội dung Làm quen tiếng Anh học kì 1 lớp 2.",
+      "Vốn từ vựng phong phú, nhớ bài lâu và phát âm rất tự nhiên, chuẩn mực.",
+      "Tự tin trả lời các câu hỏi ngắn và giao tiếp đơn giản theo tranh.",
+      "Say mê học tiếng Anh, tích cực tham gia tất cả các hoạt động trên lớp.",
+      "Phản xạ ngôn ngữ nhanh nhạy, tương tác sôi nổi với giáo viên và các bạn.",
+      "Có năng khiếu ngoại ngữ tốt, xứng đáng là tấm gương cho cả lớp."
+    ],
+    H: [
+      "Nắm chắc các từ vựng và mẫu câu làm quen cơ bản trong học kì 1.",
+      "Nghe hiểu và thực hiện đúng các hiệu lệnh tiếng Anh của giáo viên.",
+      "Nhắc lại được các câu chào hỏi, cảm ơn và chỉ đồ vật quen thuộc.",
+      "Tham gia đầy đủ các hoạt động lớp, cần rèn luyện thêm tính tự tin.",
+      "Đạt chuẩn yêu cầu môn học giai đoạn cuối học kì 1 môn Tiếng Anh.",
+      "Có ý thức học tập tốt, hoàn thành các bài tập trong vở bài tập."
+    ],
+    C: [
+      "Hay quên từ mới, phát âm chưa chuẩn một số âm tiếng Anh đơn giản.",
+      "Còn nhút nhát khi tham gia trò chơi đóng vai, cần tích cực hơn.",
+      "Cần tập trung nghe giảng và chăm chỉ luyện đọc từ mới ở nhà."
+    ]
+  },
+  GK2: {
+    T: [
+      "Nhớ nhanh các từ vựng chủ đề thiên nhiên, đồ ăn và đồ dùng học tập.",
+      "Phát âm rõ ràng, ngữ điệu tự nhiên, phản xạ tiếng Anh rất nhanh nhạy.",
+      "Tự tin trình bày trước lớp các câu ngắn miêu tả đồ vật quen thuộc.",
+      "Tích cực tham gia đóng kịch ngắn và các trò chơi ngôn ngữ hào hứng.",
+      "Hoàn thành xuất sắc mọi nhiệm vụ giáo viên giao trong giờ học.",
+      "Luôn giúp đỡ bạn bè cùng tiến bộ trong các hoạt động luyện nói đôi."
+    ],
+    H: [
+      "Nắm được các từ vựng trọng tâm giai đoạn giữa học kì 2.",
+      "Đọc to, rõ ràng các từ tiếng Anh theo hướng dẫn của giáo viên.",
+      "Biết nối tranh với từ ngữ tương ứng, làm bài tập đầy đủ.",
+      "Tiếp thu bài đạt yêu cầu, cần tích cực phát biểu xây dựng bài hơn.",
+      "Có tiến bộ rõ rệt trong việc phát âm và ghi nhớ mặt chữ tiếng Anh.",
+      "Có ý thức chuẩn bị bài và tham gia sôi nổi các trò chơi trên lớp."
+    ],
+    C: [
+      "Còn lúng túng khi ghép từ thành câu ngắn, cần luyện nói nhiều hơn.",
+      "Kỹ năng nghe nhận diện từ còn hạn chế, cần chú ý lắng nghe bài mẫu.",
+      "Cần tập trung hơn trong giờ học, tránh làm việc riêng trong lớp."
+    ]
+  },
+  CK2: {
+    T: [
+      "Hoàn thành xuất sắc chương trình Làm quen tiếng Anh lớp 2 cả năm học.",
+      "Vốn từ phong phú, phát âm chuẩn xác, phản xạ nhanh và rất tự tin.",
+      "Sẵn sàng bước vào chương trình Tiếng Anh lớp 3 với nền tảng rất vững chắc.",
+      "Say mê học tiếng Anh, diễn đạt tự nhiên các câu giao tiếp hàng ngày.",
+      "Tự tin thể hiện tài năng qua các bài hát và trò chơi ngoại ngữ.",
+      "Đạt thành tích nổi bật môn Tiếng Anh suốt cả năm học lớp 2."
+    ],
+    H: [
+      "Đạt chuẩn yêu cầu môn Tiếng Anh lớp 2 theo chương trình GDPT 2018.",
+      "Nhớ được các từ vựng và câu ngắn quen thuộc suốt cả năm học.",
+      "Nghe hiểu tốt các câu hỏi thông dụng và biết trả lời theo hướng dẫn.",
+      "Có nhiều tiến bộ trong kỹ năng phát âm và nhận biết tranh ảnh.",
+      "Hoàn thành tốt nhiệm vụ học tập, tự tin chuẩn bị lên học Tiếng Anh lớp 3.",
+      "Chăm chỉ học tập, chấp hành nghiêm túc mọi hướng dẫn của giáo viên."
+    ],
+    C: [
+      "Vốn từ tiếng Anh còn ít, cần tích cực ôn tập thêm trong dịp hè.",
+      "Phát âm chưa chuẩn, cần chú ý luyện nghe lại các bài đọc mẫu.",
+      "Cần rèn luyện tính kiên nhẫn và tự tin hơn khi lên học lớp 3."
+    ]
+  }
+};
+
+const PRIMARY_GRADE_2_TINHOC = {
+  "GK1": {
+    "T": [
       "Phân biệt rõ các dạng thông tin cơ bản: chữ, hình ảnh và âm thanh xung quanh.",
       "Thao tác chuột và bàn phím rất nhanh nhẹn, ngồi học đúng tư thế chuẩn.",
       "Bật và tắt máy tính đúng quy trình an toàn, chấp hành tốt nội quy phòng máy.",
@@ -18867,7 +19318,7 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Thao tác chuột khéo léo, hoàn thành bài tập sớm hơn thời gian quy định.",
       "Ý thức bảo vệ máy tính và phòng học bộ môn rất đáng khen ngợi."
     ],
-    H: [
+    "H": [
       "Nhận biết được các dạng thông tin cơ bản: chữ, hình ảnh và âm thanh.",
       "Nắm được cách bật, tắt máy tính đúng quy trình theo hướng dẫn giáo viên.",
       "Thực hiện được các thao tác cơ bản với chuột và làm quen với bàn phím.",
@@ -18891,7 +19342,7 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Biết lắng nghe giáo viên hướng dẫn trước khi bắt đầu thực hành.",
       "Có ý thức giữ khoảng cách an toàn với màn hình máy tính."
     ],
-    C: [
+    "C": [
       "Thao tác chuột còn chậm, cần rèn luyện thêm để điều khiển chuột linh hoạt.",
       "Còn nhầm lẫn giữa thông tin dạng chữ và hình ảnh, cần chú ý nghe giảng.",
       "Cần tập trung hơn trong giờ học và thực hiện đúng hướng dẫn giáo viên.",
@@ -18902,8 +19353,8 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Cần rèn thêm tính kiên nhẫn khi thực hiện bài tập làm quen máy tính."
     ]
   },
-  CK1: {
-    T: [
+  "CK1": {
+    "T": [
       "Sử dụng thành thạo phần mềm tập vẽ, tạo ra nhiều bức tranh có màu sắc đẹp.",
       "Biết kết hợp các hình khối: hình vuông, tròn, elip để vẽ đồ vật quen thuộc.",
       "Thao tác tẩy xóa và đổi màu nét vẽ rất khéo léo, không làm hỏng bức tranh.",
@@ -18927,7 +19378,7 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Điều khiển chuột linh hoạt, hoàn thành tốt các bài tập rèn luyện cuối kì 1.",
       "Tự tin thực hành, phối hợp nhịp nhàng các thao tác chuột được học."
     ],
-    H: [
+    "H": [
       "Biết sử dụng công cụ vẽ hình khối và tô màu trong phần mềm tập vẽ.",
       "Vẽ được các đồ vật đơn giản: ngôi nhà, quả bóng, cây xanh theo mẫu.",
       "Biết cách khởi động và đóng phần mềm học tập theo hướng dẫn giáo viên.",
@@ -18951,7 +19402,7 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Biết sử dụng chuột để chọn hộp màu và công cụ vẽ theo hướng dẫn.",
       "Có ý thức hoàn thành sản phẩm vẽ tranh đơn giản trong giờ thực hành."
     ],
-    C: [
+    "C": [
       "Thao tác vẽ và tô màu còn chậm, màu sắc còn hay bị tràn ra ngoài hình.",
       "Còn lúng túng khi sử dụng công cụ tẩy xóa, cần rèn luyện thêm thao tác chuột.",
       "Cần tập trung hơn trong giờ học, tránh bấm chuột lung tung trên màn hình.",
@@ -18962,8 +19413,8 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Cần chú ý ngồi thẳng lưng và giữ khoảng cách mắt hợp lý với màn hình."
     ]
   },
-  GK2: {
-    T: [
+  "GK2": {
+    "T": [
       "Nhận biết tốt hàng phím cơ sở và vị trí các phím đặc biệt trên bàn phím.",
       "Thao tác bàn phím nhẹ nhàng, đặt tay đúng tư thế làm quen bàn phím.",
       "Sử dụng thành thạo chuột kết hợp bàn phím trong các phần mềm giáo dục.",
@@ -18987,7 +19438,7 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Thao tác máy tính nhanh nhẹn, chuẩn xác, hoàn thành bài tập trước thời gian.",
       "Tác phong nhanh nhẹn, có thói quen giữ gìn vệ sinh chung phòng máy tính."
     ],
-    H: [
+    "H": [
       "Nhận biết được vị trí của hàng phím cơ sở và các phím mũi tên trên bàn phím.",
       "Biết cách sử dụng các phím điều khiển cơ bản trong trò chơi học tập.",
       "Thực hiện được thao tác kết hợp giữa chuột và bàn phím trong giờ thực hành.",
@@ -19011,7 +19462,7 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Biết cầm chuột đúng quy cách, thao tác di chuột tương đối nhẹ nhàng.",
       "Thực hiện được các thao tác làm quen máy tính theo chuẩn giữa kì 2."
     ],
-    C: [
+    "C": [
       "Còn lúng túng khi tìm vị trí các phím mũi tên trên bàn phím máy tính.",
       "Thao tác phối hợp giữa chuột và bàn phím còn chậm, chưa nhịp nhàng.",
       "Cần tập trung hơn trong giờ học, tránh ấn phím lung tung trong khi học.",
@@ -19022,8 +19473,8 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Cần chú ý giữ gìn trật tự và bảo vệ thiết bị trong phòng máy tính."
     ]
   },
-  CK2: {
-    T: [
+  "CK2": {
+    "T": [
       "Hoàn thành xuất sắc chương trình Tin học lớp 2, có kỹ năng công nghệ tốt.",
       "Thao tác chuột và bàn phím rất thuần thục, tự tin sử dụng máy an toàn.",
       "Sử dụng thành thạo phần mềm tập vẽ, tạo ra nhiều sản phẩm rất đẹp mắt.",
@@ -19047,7 +19498,7 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Thành thạo các kỹ năng làm quen máy tính, tự tin bước vào năm học mới.",
       "Có tinh thần tự giác cao, hoàn thành toàn diện các bài thực hành cả năm."
     ],
-    H: [
+    "H": [
       "Nắm được các thao tác cơ bản với chuột và bàn phím suốt cả năm học lớp 2.",
       "Biết cách bật và tắt máy tính đúng quy trình an toàn theo hướng dẫn giáo viên.",
       "Sử dụng được phần mềm tập vẽ để vẽ tranh và tô màu các đồ vật quen thuộc.",
@@ -19071,7 +19522,7 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Có tinh thần chăm chỉ, thực hiện đúng các thao tác máy tính cơ bản.",
       "Thực hiện tốt các bài tập vẽ hình và trò chơi rèn luyện thao tác chuột."
     ],
-    C: [
+    "C": [
       "Thao tác chuột và bàn phím còn chậm, cần rèn luyện thêm để thao tác nhanh hơn.",
       "Còn quên quy trình tắt máy an toàn, cần chú ý thực hiện đúng các bước.",
       "Kỹ năng vẽ tranh trên máy còn hạn chế, cần chăm chỉ thực hành thêm tại lớp.",
@@ -19088,21 +19539,30 @@ const PRIMARY_GRADE_2_TINHOC = {
   const GRADE_CURRICULUM_FORBIDDEN_REGEX = {
     '1': {
       'Tin học': /bảng\s*tính|excel|ô\s*tính|trang\s*tính|hàm\s*tính|powerpoint|trình\s*chiếu|slide|lập\s*trình|viết\s*mã|scratch|python|pascal|vòng\s*lặp|thuật\s*toán|cơ\s*sở\s*dữ\s*liệu|telex|vni|bộ\s*gõ|kiểu\s*gõ|gõ\s*tiếng\s*việt|có\s*dấu|10\s*ngón|mười\s*ngón|phím\s*chức\s*năng|f1|f2|caps|ctrl|alt|shift|thư\s*mục|tệp|tập\s*tin|folder|sao\s*chép|di\s*chuyển\s*tệp|lưu\s*bài\s*vào\s*thư\s*mục|internet|web|mạng|google|soạn\s*thảo|word/i,
-      'Toán': /phân\s*thức|phân\s*số|số\s*thập\s*phân|tỉ\s*số|diện\s*tích|chu\s*vi|thể\s*tích|phương\s*trình|hằng\s*đẳng\s*thức|căn\s*bậc/i,
-      'Tiếng Việt': /nghị\s*luận|miêu\s*tả\s*chi\s*tiết|biện\s*pháp\s*tu\s*từ|nhân\s*hóa|văn\s*bản\s*thông\s*tin/i
+      'Toán': /phân\s*thức|phân\s*số|số\s*thập\s*phân|tỉ\s*số|diện\s*tích|chu\s*vi|thể\s*tích|phương\s*trình|hằng\s*đẳng\s*thức|căn\s*bậc|nhân\s*chia|phép\s*nhân|phép\s*chia|bảng\s*nhân|bảng\s*chia|chia\s*hết|vận\s*tốc/i,
+      'Tiếng Việt': /nghị\s*luận|miêu\s*tả\s*chi\s*tiết|biện\s*pháp\s*tu\s*từ|nhân\s*hóa|văn\s*bản\s*thông\s*tin|đoạn\s*văn|bài\s*văn|tập\s*làm\s*văn|kể\s*chuyện|câu\s*ghép|từ\s*đồng\s*nghĩa|danh\s*từ|động\s*từ|tính\s*từ/i,
+      'Tiếng Anh': /đoạn\s*văn|hội\s*thoại|ngữ\s*pháp|cấu\s*trúc\s*câu|thì\s*quá\s*khứ|viết\s*câu|nối\s*âm|âm\s*đuôi|đọc\s*hiểu\s*đoạn|dịch\s*đoạn|chính\s*tả\s*từ\s*vựng|thuyết\s*trình|bài\s*viết/i
     },
     '2': {
       'Tin học': /bảng\s*tính|excel|ô\s*tính|trang\s*tính|hàm\s*tính|powerpoint|trình\s*chiếu|slide|lập\s*trình|viết\s*mã|scratch|python|pascal|vòng\s*lặp|thuật\s*toán|cơ\s*sở\s*dữ\s*liệu|telex|vni|bộ\s*gõ|kiểu\s*gõ|gõ\s*tiếng\s*việt|có\s*dấu|10\s*ngón|mười\s*ngón|phím\s*chức\s*năng|f1|f2|caps|ctrl|alt|shift|thư\s*mục|tệp|tập\s*tin|folder|sao\s*chép|di\s*chuyển\s*tệp|lưu\s*bài\s*vào\s*thư\s*mục|internet|web|mạng|google|soạn\s*thảo|word/i,
-      'Toán': /phân\s*số|số\s*thập\s*phân|tỉ\s*số|diện\s*tích|thể\s*tích/i
+      'Toán': /phân\s*số|số\s*thập\s*phân|tỉ\s*số|diện\s*tích|thể\s*tích|phân\s*thức|phương\s*trình|vận\s*tốc/i,
+      'Tiếng Việt': /nghị\s*luận|văn\s*bản\s*thông\s*tin|câu\s*ghép|biện\s*pháp\s*tu\s*từ/i,
+      'Tiếng Anh': /đoạn\s*văn|thì\s*quá\s*khứ|thuyết\s*trình|đọc\s*hiểu\s*đoạn|dịch\s*đoạn/i
     },
     '3': {
       'Tin học': /bảng\s*tính|excel|powerpoint|trình\s*chiếu|slide|lập\s*trình|scratch|python/i
     },
     '4': {
-      'Tin học': /scratch|lập\s*trình\s*khối|python|pascal/i
+      'Tin học': /scratch|lập\s*trình\s*khối|python|pascal/i,
+      'Tiếng Anh': /làm\s*quen\s*tiếng\s*anh|làm\s*quen\s*với\s*từ\s*vựng|nhắc\s*lại\s*từ/i,
+      'Toán': /làm\s*quen\s*chữ\s*số|nhận\s*biết\s*mặt\s*số/i,
+      'Tiếng Việt': /làm\s*quen\s*chữ\s*cái|tập\s*ghép\s*vần|tập\s*tô\s*chữ/i
     },
     '5': {
-      'Tin học': /python|pascal|cơ\s*sở\s*dữ\s*liệu|access|csdl/i
+      'Tin học': /python|pascal|cơ\s*sở\s*dữ\s*liệu|access|csdl/i,
+      'Tiếng Anh': /làm\s*quen\s*tiếng\s*anh|làm\s*quen\s*với\s*từ\s*vựng|nhắc\s*lại\s*từ/i,
+      'Toán': /làm\s*quen\s*chữ\s*số|nhận\s*biết\s*mặt\s*số/i,
+      'Tiếng Việt': /làm\s*quen\s*chữ\s*cái|tập\s*ghép\s*vần|tập\s*tô\s*chữ/i
     },
     '6': {
       'Tin học': /bảng\s*tính|excel|ô\s*tính|trang\s*tính|hàm\s*tính|hàm\s*sum|average|powerpoint|trình\s*chiếu|slide|lập\s*trình|viết\s*mã|mã\s*lập\s*trình|scratch|python|pascal|vòng\s*lặp|rẽ\s*nhánh|thuật\s*toán|cơ\s*sở\s*dữ\s*liệu|access|csdl|biên\s*tập\s*video/i,
@@ -19239,6 +19699,28 @@ const PRIMARY_GRADE_2_TINHOC = {
     const clean = subjectInput.trim();
     const edLevel = (educationLevel || '').toUpperCase();
 
+    // 1. Phẩm chất chủ yếu & Năng lực cốt lõi theo Thông tư 27 / GDPT 2018 (ƯU TIÊN TUYỆT ĐỐI HÀNG ĐẦU)
+    if (/chăm\s*chỉ/i.test(clean)) return 'Chăm chỉ';
+    if (/yêu\s*nước/i.test(clean)) return 'Yêu nước';
+    if (/nhân\s*ái/i.test(clean)) return 'Nhân ái';
+    if (/trung\s*thực/i.test(clean)) return 'Trung thực';
+    if (/trách\s*nhiệm/i.test(clean)) return 'Trách nhiệm';
+    if (/tự\s*chủ|tự\s*học/i.test(clean)) return 'Tự chủ và tự học';
+    if (/giao\s*tiếp|hợp\s*tác/i.test(clean)) return 'Giao tiếp và hợp tác';
+    if (/sáng\s*tạo|gqvđ|gqvd|giải\s*quyết\s*vấn\s*đề/i.test(clean)) return 'GQVĐ và sáng tạo';
+    if (/năng\s*lực\s*đặc\s*thù|nl\s*đặc\s*thù/i.test(clean)) return 'Năng lực';
+    if (/năng\s*lực|nl_chung|nl\s*chung/i.test(clean)) return 'Năng lực';
+    if (/phẩm\s*chất|pc_chung|pc\s*chung/i.test(clean)) return 'Phẩm chất';
+
+    // 2. Năng lực đặc thù môn học ánh xạ về môn học tương ứng
+    if (/ngôn\s*ngữ/i.test(clean)) return 'Tiếng Việt';
+    if (/tính\s*toán/i.test(clean)) return 'Toán';
+    if (/thẩm\s*m[ĩỹ]/i.test(clean)) return 'Mĩ thuật';
+    if (/thể\s*chất/i.test(clean)) return 'Giáo dục thể chất';
+    if (/khoa\s*học/i.test(clean) && /năng\s*lực/i.test(clean)) return edLevel === 'PRIMARY' ? 'Khoa học' : 'Khoa học tự nhiên';
+    if (/công\s*nghệ/i.test(clean) && /năng\s*lực/i.test(clean)) return 'Công nghệ';
+    if (/tin\s*học/i.test(clean) && /năng\s*lực/i.test(clean)) return 'Tin học';
+
     // Tăng cường Tiếng Việt (TCTV, TC Tiếng Việt) -> dùng mẫu nhận xét Tiếng Việt
     if (/tăng\s*cường\s*tiếng\s*việt|tctv|tc[\s\-_.]*tv|tc\s*tiếng\s*việt/i.test(clean)) return 'Tiếng Việt';
     if (/tiếng việt/i.test(clean)) return 'Tiếng Việt';
@@ -19309,17 +19791,11 @@ const PRIMARY_GRADE_2_TINHOC = {
     if (/giáo dục địa phương|địa phương|\bgdđp\b/i.test(clean)) {
       return 'Nội dung giáo dục địa phương';
     }
-    if (/tiếng dân tộc|dtts|khmer|chăm|cham|ê-đê|ede|ba\s*na|bana|jrai|gia-rai|mông|hmông|thái|mơ\s*nông|tày|nùng|xơ\s*đăng|ca-dong|churu/i.test(clean)) return 'Tiếng dân tộc';
-    if (/tự chủ|tự học/i.test(clean)) return 'Tự chủ và tự học';
-    if (/giao tiếp|hợp tác/i.test(clean)) return 'Giao tiếp và hợp tác';
-    if (/sáng tạo|gqvđ|giải quyết vấn đề/i.test(clean)) return 'GQVĐ và sáng tạo';
-    if (/yêu nước/i.test(clean)) return 'Yêu nước';
-    if (/nhân ái/i.test(clean)) return 'Nhân ái';
-    if (/chăm chỉ/i.test(clean)) return 'Chăm chỉ';
-    if (/trung thực/i.test(clean)) return 'Trung thực';
-    if (/trách nhiệm/i.test(clean)) return 'Trách nhiệm';
-    if (/năng lực|nl_chung|nl chung/i.test(clean)) return 'Năng lực';
-    if (/phẩm chất|pc_chung|pc chung/i.test(clean)) return 'Phẩm chất';
+
+    // 3. Môn Tiếng dân tộc (CHỈ khớp khi có 'tiếng dân tộc', 'dtts', hoặc tên dân tộc cụ thể; KHÔNG khớp từ 'chăm' trần)
+    if (/tiếng\s*dân\s*tộc|dtts|khmer|tiếng\s*chăm|dân\s*tộc\s*chăm|\bcham\b|ê-đê|ede|ba\s*na|bana|jrai|gia-rai|mông|hmông|thái|mơ\s*nông|tày|nùng|xơ\s*đăng|ca-dong|churu/i.test(clean) && !/chăm\s*chỉ/i.test(clean)) {
+      return 'Tiếng dân tộc';
+    }
     if (/đánh giá rèn luyện|rèn luyện|hạnh kiểm|gvcn|ý kiến của gvcn|nhận xét của gvcn/i.test(clean)) return 'Đánh giá rèn luyện';
 
     for (const s of ALL_SUBJECTS_LIST) {
@@ -21001,7 +21477,7 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Có tiến bộ trong rèn luyện phẩm chất, ngày càng chủ động hơn khi giữ thái độ học tập tốt.",
       "Biết phát huy các phẩm chất tích cực, ngày càng chủ động hơn khi giữ thái độ học tập tốt.",
       "Có phẩm chất tốt, chăm ngoan, trung thực và trách nhiệm.",
-      "Chấp hành tốt nội quy, biết yêu thương và giúp đỡ bạn.",
+      "Chấp hành tốt nội quy, biết yêu thương và giúp đỡ bạn bè.",
       "Cư xử đúng mực, có ý thức rèn luyện phẩm chất tốt.",
       "Có ý thức rèn luyện phẩm chất và chấp hành nội quy.",
       "Biết cư xử phù hợp, có nhiều cố gắng trong sinh hoạt.",
@@ -21213,7 +21689,7 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Cần luyện tập thêm nhân ái, cần chú ý cư xử hòa nhã để tiến bộ sắp tới.",
       "Cần rèn thêm sự quan tâm và chia sẻ với bạn bè.",
       "Cần hòa đồng và biết giúp đỡ bạn nhiều hơn.",
-      "Cần rèn thêm sự quan tâm và chia sẻ với bạn."
+      "Cần rèn thêm sự quan tâm và chia sẻ với bạn bè."
     ]
   },
   "Chăm chỉ": {
@@ -21276,7 +21752,7 @@ const PRIMARY_GRADE_2_TINHOC = {
       "Biết tham gia hoạt động lớp và thực hiện việc được giao.",
       "Chăm chỉ học tập, hoàn thành tốt nhiệm vụ.",
       "Đi học đều, tích cực học tập và hoạt động.",
-      "Có ý thức học tập tốt, biết tự giác hoàn thành việc.",
+      "Có ý thức học tập tốt, biết tự giác hoàn thành công việc.",
       "Giữ nền nếp học tập tốt, có ý thức kỷ luật cao."
     ],
     "H": [
@@ -21865,6 +22341,8 @@ const PRIMARY_GRADE_2_TINHOC = {
     LEVEL_HIGH_SCHOOL_TEMPLATES,
     PRIMARY_GRADE_1_TINHOC,
     PRIMARY_GRADE_2_TINHOC,
+    PRIMARY_GRADE_1_TIENGANH,
+    PRIMARY_GRADE_2_TIENGANH,
     getSubjectsForGrade,
     getSubjectsForLevel,
     renderTemplate,

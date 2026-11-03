@@ -76,7 +76,10 @@
     },
     error: function (message, error) {
       addHistory('ERROR', message, error ? error.message || error : '');
-      console.error(`${LOG_PREFIX} ❌ ${message}`, error);
+      // Dùng console.log để tránh Edge/Chrome ghi nhận thành Error trong trang quản trị tiện ích
+      if (debugMode) {
+        console.log(`${LOG_PREFIX} [Lỗi] ${message}`, error);
+      }
     },
     success: function (message, detail) {
       addHistory('SUCCESS', message, detail);
