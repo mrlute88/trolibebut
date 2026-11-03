@@ -529,6 +529,16 @@
             }
           }
         }
+
+        // Nếu header chưa có colClass (do nhóm cột nhiều tầng), trích xuất từ sampleDataRow
+        if (!colClass && sampleDataRow) {
+          const sampleCells = Array.from(sampleDataRow.querySelectorAll ? sampleDataRow.querySelectorAll('td, [role="gridcell"], .x-grid3-cell') : sampleDataRow.children);
+          const sCell = sampleCells[c];
+          if (sCell && sCell.className) {
+            const match = sCell.className.match(/(?:x-grid3-td-|x-grid3-hd-|x-grid3-col-)([a-zA-Z0-9_\-]+)/);
+            if (match) colClass = 'x-grid3-td-' + match[1];
+          }
+        }
         columns.push({
           index: c,
           combinedText: textsInCol.join(' '),
@@ -1262,11 +1272,20 @@
 
         // 3. Gom và điền giá trị suy luận vào từng cột mục tiêu
         const rowFieldUpdates = {};
+        const rowValuesByIndex = {};
+        const rowValuesByColClass = {};
+
         for (const targetCol of structure.targetColumns) {
           const targetVal = inferenceResult.rawMap[targetCol.key];
           if (!targetVal) continue;
 
           rowFieldUpdates[targetCol.key] = targetVal;
+          if (targetCol.index !== undefined) {
+            rowValuesByIndex[targetCol.index] = targetVal;
+          }
+          if (targetCol.colClass) {
+            rowValuesByColClass[targetCol.colClass] = targetVal;
+          }
 
           const cell = targetCol.colClass ? row.querySelector('.' + targetCol.colClass) : cells[targetCol.index];
           if (cell) {
@@ -1277,7 +1296,9 @@
         if (Object.keys(rowFieldUpdates).length > 0) {
           allUpdates.push({
             rowIndex: i,
-            fields: rowFieldUpdates
+            fields: rowFieldUpdates,
+            byIndex: rowValuesByIndex,
+            byColClass: rowValuesByColClass
           });
         }
 
@@ -1300,7 +1321,12 @@
       let storeBridgeResult = null;
       if (allUpdates.length > 0) {
         try {
-          const gridEl = scope.closest('.x-grid3, .x-panel, .x-grid-panel') || document.querySelector('.x-grid3');
+          const gridEl = scope.closest('.x-grid3, .x-panel, .x-grid-panel, .x-window') ||
+                         scope.querySelector('.x-grid3') ||
+                         document.querySelector('.x-grid3');
+          if (gridEl) {
+            gridEl.setAttribute('data-vnedu-active-grid', 'true');
+          }
           const gridId = gridEl ? gridEl.id : null;
 
           const bridge = (typeof window !== 'undefined' && window.PageBridge) || null;

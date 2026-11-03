@@ -47,6 +47,7 @@
       const requestId = 'vnedu_bridge_' + Date.now() + '_' + Math.random().toString(36).substr(2, 8);
       let isResolved = false;
       let timeoutId = null;
+      let fallbackTimerId = null;
 
       function onResponse(event) {
         if (!event || !event.detail) return;
@@ -64,27 +65,71 @@
         if (isResolved) return;
         isResolved = true;
         if (timeoutId) clearTimeout(timeoutId);
+        if (fallbackTimerId) clearTimeout(fallbackTimerId);
+        document.removeEventListener('VNEDU_EXTJS_GRID_UPDATE_RESPONSE', onResponse);
         window.removeEventListener('VNEDU_EXTJS_GRID_UPDATE_RESPONSE', onResponse);
       }
 
+      // Lắng nghe trên cả document và window để đảm bảo tương thích 100%
+      document.addEventListener('VNEDU_EXTJS_GRID_UPDATE_RESPONSE', onResponse);
       window.addEventListener('VNEDU_EXTJS_GRID_UPDATE_RESPONSE', onResponse);
 
-      // Gửi event yêu cầu cập nhật
-      window.dispatchEvent(new CustomEvent('VNEDU_EXTJS_GRID_UPDATE_REQUEST', {
+      // Gửi event yêu cầu cập nhật (phát trên cả document và window)
+      const reqEvent = new CustomEvent('VNEDU_EXTJS_GRID_UPDATE_REQUEST', {
         detail: {
           requestId: requestId,
           payload: payload || {}
-        }
-      }));
+        },
+        bubbles: true,
+        cancelable: true
+      });
 
-      // Timeout dự phòng: nếu sau 1000ms không có phản hồi, thử tiêm lại và kết thúc
+      document.dispatchEvent(reqEvent);
+      window.dispatchEvent(reqEvent);
+
+      // Fallback sau 250ms: Tiêm trực tiếp lệnh gọi hàm vào Main World
+      fallbackTimerId = setTimeout(function () {
+        if (isResolved) return;
+        try {
+          const inlineScript = document.createElement('script');
+          const payloadJson = JSON.stringify(payload || {});
+          inlineScript.textContent = `
+            (function() {
+              if (typeof window.__vneduApplyExtJsGridUpdates === 'function') {
+                try {
+                  var res = window.__vneduApplyExtJsGridUpdates(${payloadJson});
+                  var evt = new CustomEvent('VNEDU_EXTJS_GRID_UPDATE_RESPONSE', {
+                    detail: { requestId: '${requestId}', success: true, result: res },
+                    bubbles: true
+                  });
+                  document.dispatchEvent(evt);
+                  window.dispatchEvent(evt);
+                } catch (e) {
+                  var evt = new CustomEvent('VNEDU_EXTJS_GRID_UPDATE_RESPONSE', {
+                    detail: { requestId: '${requestId}', success: false, error: e.message || String(e) },
+                    bubbles: true
+                  });
+                  document.dispatchEvent(evt);
+                  window.dispatchEvent(evt);
+                }
+              }
+            })();
+          `;
+          (document.head || document.documentElement).appendChild(inlineScript);
+          inlineScript.remove();
+        } catch (e) {
+          console.warn('[PageBridge] Lỗi khi kích hoạt fallback inline:', e);
+        }
+      }, 250);
+
+      // Timeout dự phòng cuối cùng: 1500ms
       timeoutId = setTimeout(function () {
         if (!isResolved) {
           cleanup();
           console.warn('[PageBridge] Hết thời gian chờ phản hồi từ Main World ExtJS Bridge');
           resolve({ success: false, reason: 'Timeout: Không nhận được phản hồi từ ExtJS Bridge trong Main World' });
         }
-      }, 1200);
+      }, 1500);
     });
   }
 
@@ -98,4 +143,3 @@
     module.exports = window.PageBridge;
   }
 })();
-
