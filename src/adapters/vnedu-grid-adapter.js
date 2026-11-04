@@ -1283,6 +1283,9 @@
             else if (isRating) subjectColumns['Công nghệ__rating'] = col;
           } else if (/thể\s*chất|gdtc/i.test(txt)) {
             subjectColumns['Giáo dục thể chất__rating'] = col;
+          } else if (/tiếng\s*dân\s*tộc|tiếng\s*dt|dân\s*tộc/i.test(txt)) {
+            if (isScore) subjectColumns['Tiếng dân tộc__score'] = col;
+            else if (isRating) subjectColumns['Tiếng dân tộc__rating'] = col;
           } else if (/trải\s*nghiệm|hđtn/i.test(txt)) {
             subjectColumns['Hoạt động trải nghiệm__rating'] = col;
           }

@@ -34,6 +34,7 @@
       if (str === 'T' || str === 'TỐT' || str === 'HOÀN THÀNH TỐT' || str === 'HTT' || str === '2') explicitLvl = 'T';
       else if (str === 'H' || str === 'Đ' || str === 'ĐẠT' || str === 'HOÀN THÀNH' || str === 'HT' || str === '1') explicitLvl = 'H';
       else if (str === 'C' || str === 'CHƯA HOÀN THÀNH' || str === 'CHT' || str === 'CẦN CỐ GẮNG' || str === 'CCG' || str === '0') explicitLvl = 'C';
+      else if (str === 'MIỄN' || str === 'MIEN') return null; // Học sinh được miễn môn học (không tính là môn điểm C hay H)
     }
 
     // Nếu có điểm số dưới 5 thì chắc chắn là Chưa hoàn thành (C)
@@ -92,6 +93,7 @@
     const kh = getSub(['khoa học', 'kh']);
     const lsdl = getSub(['lịch sử và địa lí', 'ls-đl', 'lsdl', 'lịch sử', 'địa lí']);
     const nn1 = getSub(['tiếng anh', 'ngoại ngữ', 'ngoại ngữ 1', 'nn1', 'ta']);
+    const tdt = getSub(['tiếng dân tộc', 'tiếng dt', 'dân tộc', 'tdt']);
     const tin = getSub(['tin học', 'cntt']);
     const cn = getSub(['công nghệ']);
     const dd = getSub(['đạo đức', 'đđ']);
@@ -101,10 +103,10 @@
     const gdtc = getSub(['thể chất', 'gdtc', 'thể dục']);
     const hdtn = getSub(['trải nghiệm', 'hđtn']);
 
-    // Tập hợp tất cả các môn có đánh giá thực tế
+    // Tập hợp tất cả các môn có đánh giá thực tế (học sinh được Miễn môn Tiếng dân tộc thì bỏ qua)
     const allValidRatings = [
       tv.rating, toan.rating, tnxh.rating, kh.rating, lsdl.rating,
-      nn1.rating, tin.rating, cn.rating, dd.rating, an.rating, mt.rating,
+      nn1.rating, tdt.rating, tin.rating, cn.rating, dd.rating, an.rating, mt.rating,
       nt.rating, gdtc.rating, hdtn.rating
     ].filter(Boolean);
 
@@ -141,11 +143,11 @@
     // Nguyên tắc: C -> T -> Đ
     // =========================================================================
 
-    // 1. Ngôn ngữ: Tiếng Việt (chính) & Ngoại ngữ 1 (nếu có)
+    // 1. Ngôn ngữ: Do môn Tiếng Việt chi phối trực tiếp (giữ nguyên mức theo Tiếng Việt để GVCN tự điều chỉnh)
     let nlNgonNgu = 'Đ';
     if (tv.rating === 'C' || (tv.score !== null && tv.score < 5.0)) {
       nlNgonNgu = 'C';
-    } else if (tv.rating === 'T' && (tv.score === null || tv.score >= 9.0) && nn1.rating !== 'C') {
+    } else if (tv.rating === 'T' && (tv.score === null || tv.score >= 9.0)) {
       nlNgonNgu = 'T';
     } else {
       nlNgonNgu = 'Đ';
@@ -174,22 +176,18 @@
         nlKhoaHoc = 'Đ';
       }
     } else {
-      // Khối 4, 5
+      // Khối 4, 5: Ưu tiên xếp loại T nếu 1 trong 2 môn (Khoa học hoặc Lịch sử & Địa lí) có xếp loại T
       const hasC = kh.rating === 'C' || lsdl.rating === 'C' ||
                    (kh.score !== null && kh.score < 5.0) ||
                    (lsdl.score !== null && lsdl.score < 5.0);
       if (hasC) {
         nlKhoaHoc = 'C';
+      } else if (kh.rating === 'T' || lsdl.rating === 'T' ||
+                 (kh.score !== null && kh.score >= 9.0) ||
+                 (lsdl.score !== null && lsdl.score >= 9.0)) {
+        nlKhoaHoc = 'T';
       } else {
-        const totalScore = (kh.score !== null && lsdl.score !== null) ? (kh.score + lsdl.score) : 0;
-        const bothT = (kh.rating === 'T' && lsdl.rating === 'T');
-        const oneTOneHHigh = (kh.rating === 'T' || lsdl.rating === 'T') && totalScore >= 17.0;
-
-        if (bothT || oneTOneHHigh) {
-          nlKhoaHoc = 'T';
-        } else {
-          nlKhoaHoc = 'Đ';
-        }
+        nlKhoaHoc = 'Đ';
       }
     }
 
