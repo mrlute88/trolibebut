@@ -209,7 +209,11 @@
         return { updated: false, currentVersion: currentVer, error: 'CANNOT_CONNECT' };
       }
 
-      // So sánh phiên bản dữ liệu bằng hàm so sánh phiên bản số chuẩn
+      // So sánh phiên bản dữ liệu và mã nguồn ứng dụng (tiện ích)
+      const localAppVersion = (typeof chrome !== 'undefined' && chrome.runtime?.getManifest?.()?.version) || '1.2.1';
+      const remoteAppVersion = remoteData.appVersion || remoteData.version || '1.2.1';
+      const hasAppUpdate = compareVersions(remoteAppVersion, localAppVersion) > 0;
+
       const isNewer = compareVersions(remoteData.dataVersion, currentVer) > 0;
       if (isNewer || force) {
         await storageSet({
@@ -224,11 +228,21 @@
           updated: isNewer,
           currentVersion: remoteData.dataVersion,
           previousVersion: currentVer,
+          hasAppUpdate,
+          remoteAppVersion,
+          localAppVersion,
           remoteData
         };
       }
 
-      return { updated: false, currentVersion: currentVer, remoteData };
+      return {
+        updated: false,
+        currentVersion: currentVer,
+        hasAppUpdate,
+        remoteAppVersion,
+        localAppVersion,
+        remoteData
+      };
     } catch (e) {
       return { updated: false, error: e.message };
     }
@@ -239,8 +253,10 @@
    */
   async function getSyncInfo() {
     const stored = await storageGet([STORAGE_KEY_VERSION, STORAGE_KEY_LAST_CHECK]);
+    const localAppVersion = (typeof chrome !== 'undefined' && chrome.runtime?.getManifest?.()?.version) || '1.2.1';
     return {
       currentVersion: stored[STORAGE_KEY_VERSION] || 'Mặc định cục bộ',
+      localAppVersion,
       lastCheckedTime: stored[STORAGE_KEY_LAST_CHECK] || 0,
       repoUrl: `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}`,
       primaryUrl: PRIMARY_URL

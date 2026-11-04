@@ -1648,6 +1648,10 @@
         if (cloudSyncVerNum && info && info.currentVersion) {
           cloudSyncVerNum.textContent = info.currentVersion;
         }
+        const cloudSyncAppVer = shadowRoot.getElementById('cloud-sync-app-ver');
+        if (cloudSyncAppVer && info && info.localAppVersion) {
+          cloudSyncAppVer.textContent = 'v' + info.localAppVersion;
+        }
       }).catch(() => {});
     }
 
@@ -1668,37 +1672,72 @@
 
         if (res.error) {
           if (cloudSyncMsg) {
+            cloudSyncMsg.style.display = 'block';
             cloudSyncMsg.style.color = '#F87171';
             cloudSyncMsg.textContent = '⚠️ Không thể kết nối GitHub (vui lòng kiểm tra mạng). Đang sử dụng dữ liệu nội bộ an toàn.';
           }
-        } else if (res.updated) {
-          if (cloudSyncBadge) {
-            cloudSyncBadge.textContent = 'Đã cập nhật!';
-            cloudSyncBadge.style.background = 'rgba(16, 185, 129, 0.3)';
-            cloudSyncBadge.style.color = '#10B981';
-          }
-          if (cloudSyncVerNum && res.currentVersion) cloudSyncVerNum.textContent = res.currentVersion;
-          if (cloudSyncMsg) {
-            cloudSyncMsg.style.color = '#34D399';
-            cloudSyncMsg.textContent = `✓ Đã cập nhật thành công ngân hàng nhận xét mới (Bản: ${res.currentVersion})!`;
-          }
-          const mascotSpeech = shadowRoot.getElementById('vnedu-mascot-speech');
-          if (mascotSpeech) {
-            mascotSpeech.textContent = 'Đã cập nhật dữ liệu nhận xét mới! ✨';
-            mascotSpeech.style.opacity = '1';
-            setTimeout(() => { mascotSpeech.style.opacity = ''; }, 6000);
-          }
         } else {
           if (cloudSyncVerNum && res.currentVersion) cloudSyncVerNum.textContent = res.currentVersion;
-          if (cloudSyncMsg) {
-            cloudSyncMsg.style.color = '#34D399';
-            cloudSyncMsg.textContent = `✓ Dữ liệu hiện tại đã là phiên bản mới nhất (${res.currentVersion})!`;
+
+          // Nếu có bản nâng cấp tính năng tiện ích mới trên GitHub
+          if (res.hasAppUpdate) {
+            if (cloudSyncBadge) {
+              cloudSyncBadge.textContent = 'Có bản mới!';
+              cloudSyncBadge.style.background = 'rgba(245, 158, 11, 0.25)';
+              cloudSyncBadge.style.color = '#FBBF24';
+            }
+            if (cloudSyncMsg) {
+              cloudSyncMsg.style.display = 'block';
+              cloudSyncMsg.innerHTML = `
+                <div style="margin-top: 6px; padding: 8px 10px; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 8px; color: #FEF08A; font-size: 11px; line-height: 1.45; text-align: left;">
+                  <b style="color: #FBBF24; display: block; margin-bottom: 4px; font-size: 11.5px;">🚀 CÓ BẢN NÂNG CẤP TÍNH NĂNG MỚI (v${res.remoteAppVersion})!</b>
+                  Máy Thầy/Cô đang dùng bản <b>v${res.localAppVersion}</b>.<br/>
+                  Để cập nhật toàn bộ tính năng và sửa lỗi mới nhất:<br/>
+                  👉 Mở thư mục tiện ích và nhấp đúp file: <b style="color: #38BDF8;">Cap-Nhat-Tien-Ich.bat</b> (chỉ mất 2 giây xong).
+                </div>
+              `;
+            }
+            const mascotSpeech = shadowRoot.getElementById('vnedu-mascot-speech');
+            if (mascotSpeech) {
+              mascotSpeech.textContent = `🚀 Có bản nâng cấp v${res.remoteAppVersion}! Hãy chạy file Cap-Nhat-Tien-Ich.bat`;
+              mascotSpeech.style.opacity = '1';
+              setTimeout(() => { mascotSpeech.style.opacity = ''; }, 8000);
+            }
+          } else if (res.updated) {
+            if (cloudSyncBadge) {
+              cloudSyncBadge.textContent = 'Đã cập nhật!';
+              cloudSyncBadge.style.background = 'rgba(16, 185, 129, 0.3)';
+              cloudSyncBadge.style.color = '#10B981';
+            }
+            if (cloudSyncMsg) {
+              cloudSyncMsg.style.display = 'block';
+              cloudSyncMsg.style.color = '#34D399';
+              cloudSyncMsg.textContent = `✓ Đã cập nhật thành công ngân hàng nhận xét mới (Bản: ${res.currentVersion})!`;
+            }
+            const mascotSpeech = shadowRoot.getElementById('vnedu-mascot-speech');
+            if (mascotSpeech) {
+              mascotSpeech.textContent = 'Đã cập nhật dữ liệu nhận xét mới! ✨';
+              mascotSpeech.style.opacity = '1';
+              setTimeout(() => { mascotSpeech.style.opacity = ''; }, 6000);
+            }
+          } else {
+            if (cloudSyncBadge) {
+              cloudSyncBadge.textContent = 'Sẵn sàng';
+              cloudSyncBadge.style.background = 'rgba(16, 185, 129, 0.2)';
+              cloudSyncBadge.style.color = '#34D399';
+            }
+            if (cloudSyncMsg) {
+              cloudSyncMsg.style.display = 'block';
+              cloudSyncMsg.style.color = '#34D399';
+              cloudSyncMsg.textContent = `✓ Tiện ích và dữ liệu hiện tại đã là phiên bản mới nhất (${res.currentVersion})!`;
+            }
           }
         }
       } catch (err) {
         btnTriggerSync.disabled = false;
         btnTriggerSync.textContent = '🔄 Kiểm tra & Đồng bộ dữ liệu mới';
         if (cloudSyncMsg) {
+          cloudSyncMsg.style.display = 'block';
           cloudSyncMsg.style.color = '#F87171';
           cloudSyncMsg.textContent = '⚠️ Lỗi kiểm tra: ' + err.message;
         }
@@ -1827,8 +1866,9 @@
                 <span style="font-size: 11.5px; font-weight: 700; color: #38BDF8;">🌐 ĐỒNG BỘ DỮ LIỆU ĐÁM MÂY (GITHUB)</span>
                 <span id="cloud-sync-status-badge" style="font-size: 10.5px; padding: 2px 7px; border-radius: 6px; background: rgba(16, 185, 129, 0.2); color: #34D399; font-weight: 600;">Sẵn sàng</span>
               </div>
-              <div id="cloud-sync-version-info" style="font-size: 11px; color: #94A3B8; margin-bottom: 8px;">
-                Phiên bản dữ liệu: <b style="color: #F8FAFC;" id="cloud-sync-ver-num">2026.11.04.1</b>
+              <div id="cloud-sync-version-info" style="font-size: 11px; color: #94A3B8; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
+                <span>Dữ liệu: <b style="color: #F8FAFC;" id="cloud-sync-ver-num">2026.11.04.3</b></span>
+                <span>Tiện ích: <b style="color: #38BDF8;" id="cloud-sync-app-ver">v1.2.7</b></span>
               </div>
               <button type="button" id="btn-trigger-cloud-sync" style="width: 100%; padding: 7px 10px; font-size: 12px; font-weight: 700; color: #F8FAFC; background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 8px; cursor: pointer; transition: all 0.2s ease;">
                 🔄 Kiểm tra &amp; Đồng bộ dữ liệu mới
@@ -1896,7 +1936,14 @@
     if (cloudSync) {
       cloudSync.loadStoredData().then(() => {
         cloudSync.checkAndUpdate(false).then(res => {
-          if (res && res.updated && res.remoteData) {
+          if (res && res.hasAppUpdate) {
+            const mascotSpeech = shadowRoot.getElementById('vnedu-mascot-speech');
+            if (mascotSpeech) {
+              mascotSpeech.textContent = `🚀 Có bản nâng cấp v${res.remoteAppVersion}! Hãy chạy Cap-Nhat-Tien-Ich.bat`;
+              mascotSpeech.style.opacity = '1';
+              setTimeout(() => { mascotSpeech.style.opacity = ''; }, 8000);
+            }
+          } else if (res && res.updated && res.remoteData) {
             const mascotSpeech = shadowRoot.getElementById('vnedu-mascot-speech');
             if (mascotSpeech) {
               mascotSpeech.textContent = 'Đã cập nhật dữ liệu nhận xét mới! ✨';

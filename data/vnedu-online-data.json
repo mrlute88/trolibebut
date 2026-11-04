@@ -1,7 +1,8 @@
 {
-  "version": "1.2.1",
-  "dataVersion": "2026.11.04.2",
-  "updatedAt": "2026-11-02",
+  "version": "1.2.7",
+  "appVersion": "1.2.7",
+  "dataVersion": "2026.11.04.3",
+  "updatedAt": "2026-11-04",
   "author": "Team Tin Học",
   "announcement": {
     "id": "notice_2026_11_02",
