@@ -453,6 +453,12 @@
     _isHeaderRow(r) {
       if (!r) return true;
 
+      // Hàng dữ liệu học sinh trong vnEdu luôn có thuộc tính data-hang (vd: H_5064306607)
+      // Nếu hàng hoặc phần tử con có data-hang thì 100% là hàng dữ liệu học sinh, tuyệt đối không phải header!
+      if (r.getAttribute?.('data-hang') || r.querySelector?.('[data-hang]')) {
+        return false;
+      }
+
       // 1. Thẻ th hoặc thuộc tính header
       if (r.querySelectorAll?.('th').length > 0) return true;
       if (r.getAttribute?.('role')?.includes('header')) return true;
@@ -1374,18 +1380,21 @@
 
         const student = students[i];
 
-        // Khớp chính xác dòng dữ liệu ở normal grid tương ứng với học sinh này:
-        // Cách 1: Khớp chuẩn xác 100% theo mã hàng data-hang (vd: H_5064306607)
-        let row = null;
+        // Khớp dòng dữ liệu ở normal grid tương ứng với học sinh này:
+        let row = dataRows[i] || null;
         const studentDataHang = student.dataHang ||
                                 student.rowElement?.getAttribute?.('data-hang') ||
                                 student.rowElement?.querySelector?.('[data-hang]')?.getAttribute?.('data-hang');
         if (studentDataHang) {
-          row = scope.querySelector(`.x-grid3-row[data-hang="${studentDataHang}"], [data-hang="${studentDataHang}"]`);
-        }
-        // Cách 2: Khớp theo thứ tự index trong danh sách các dòng dữ liệu đã lọc sạch header
-        if (!row && dataRows[i]) {
-          row = dataRows[i];
+          const matchedEl = scope.querySelector(`[data-hang="${studentDataHang}"]`);
+          if (matchedEl) {
+            const containerRow = matchedEl.classList?.contains('x-grid3-row') || matchedEl.classList?.contains('x-grid-row') || matchedEl.tagName === 'TR'
+              ? matchedEl
+              : (matchedEl.closest?.('.x-grid3-row, .x-grid-row, tr') || matchedEl.parentElement?.closest?.('.x-grid3-row, tr') || null);
+            if (containerRow) {
+              row = containerRow;
+            }
+          }
         }
 
         if (!row) {
@@ -1393,19 +1402,26 @@
           continue;
         }
 
-        const cells = Array.from(row.querySelectorAll('td, .x-grid3-cell'));
+        // Đảm bảo row luôn là phần tử hàng thực sự
+        if (!row.classList?.contains('x-grid3-row') && !row.classList?.contains('x-grid-row') && row.tagName !== 'TR') {
+          row = row.closest?.('.x-grid3-row, .x-grid-row, tr') || dataRows[i] || row;
+        }
+
+        const cells = Array.from(row.querySelectorAll ? row.querySelectorAll('td, [role="gridcell"], .x-grid3-cell') : (row.children || []));
 
         // Lấy mã hàng (data-hang) của học sinh
         const dataHang = studentDataHang ||
-                         row.getAttribute('data-hang') ||
-                         row.querySelector('[data-hang]')?.getAttribute('data-hang') ||
-                         cells[0]?.getAttribute('data-hang') ||
+                         row.getAttribute?.('data-hang') ||
+                         row.querySelector?.('[data-hang]')?.getAttribute?.('data-hang') ||
+                         cells[0]?.getAttribute?.('data-hang') ||
                          (row.id && (row.id.startsWith('H_') || row.id.startsWith('row_')) ? row.id : '');
 
         // 1. Đọc dữ liệu các môn học của học sinh từ row
         const studentSubjects = {};
         for (const [subKey, colInfo] of Object.entries(structure.subjectColumns)) {
-          const cell = colInfo.colClass ? row.querySelector('.' + colInfo.colClass) : cells[colInfo.index];
+          const cell = (colInfo.colClass && row.querySelector('.' + colInfo.colClass)) ||
+                       (colInfo.dataCot && row.querySelector(`[data-cot="${colInfo.dataCot}"]`)) ||
+                       cells[colInfo.index] || null;
           if (!cell) continue;
 
           // Trích xuất giá trị ô chính xác (ưu tiên thẻ input nếu có)
@@ -1493,7 +1509,9 @@
             studentInput[targetCol.index] = targetVal;
           }
 
-          const cell = targetCol.colClass ? row.querySelector('.' + targetCol.colClass) : cells[targetCol.index];
+          const cell = (targetCol.colClass && row.querySelector('.' + targetCol.colClass)) ||
+                       (targetCol.dataCot && row.querySelector(`[data-cot="${targetCol.dataCot}"]`)) ||
+                       cells[targetCol.index] || null;
           const dataCot = targetCol.dataCot || cell?.getAttribute('data-cot') || cell?.querySelector('[data-cot]')?.getAttribute('data-cot') || '';
 
           // Thực hiện điền chuẩn xác bằng input.value + change + keyup + blur
