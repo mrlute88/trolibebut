@@ -35,6 +35,7 @@
     "*://localhost/*",
     "*://127.0.0.1/*",
     "https://raw.githubusercontent.com/*",
+    "https://api.github.com/*",
     "https://cdn.jsdelivr.net/*",
     "https://github.com/*",
     "file:///*"

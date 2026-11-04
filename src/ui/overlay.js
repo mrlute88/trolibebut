@@ -1819,7 +1819,7 @@
                 <span id="cloud-sync-status-badge" style="font-size: 10.5px; padding: 2px 7px; border-radius: 6px; background: rgba(16, 185, 129, 0.2); color: #34D399; font-weight: 600;">Sẵn sàng</span>
               </div>
               <div id="cloud-sync-version-info" style="font-size: 11px; color: #94A3B8; margin-bottom: 8px;">
-                Phiên bản dữ liệu: <b style="color: #F8FAFC;" id="cloud-sync-ver-num">2026.11.02.1</b>
+                Phiên bản dữ liệu: <b style="color: #F8FAFC;" id="cloud-sync-ver-num">2026.11.04.1</b>
               </div>
               <button type="button" id="btn-trigger-cloud-sync" style="width: 100%; padding: 7px 10px; font-size: 12px; font-weight: 700; color: #F8FAFC; background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 8px; cursor: pointer; transition: all 0.2s ease;">
                 🔄 Kiểm tra &amp; Đồng bộ dữ liệu mới

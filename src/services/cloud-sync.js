@@ -18,7 +18,8 @@
   const GITHUB_BRANCH = 'main';
   const REMOTE_DATA_PATH = 'data/vnedu-online-data.json';
 
-  // URL chính thức (GitHub Raw) & URL dự phòng siêu tốc (jsDelivr CDN)
+  // URL chính thức: GitHub API (cập nhật tức thì 0s delay), GitHub Raw, và jsDelivr CDN
+  const API_RAW_URL = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/${REMOTE_DATA_PATH}`;
   const PRIMARY_URL = `https://raw.githubusercontent.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/${GITHUB_BRANCH}/${REMOTE_DATA_PATH}`;
   const CDN_FALLBACK_URL = `https://cdn.jsdelivr.net/gh/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}@${GITHUB_BRANCH}/${REMOTE_DATA_PATH}`;
 
@@ -65,9 +66,51 @@
   }
 
   /**
-   * Tải file JSON cấu hình từ GitHub (thử Primary trước, lỗi thì sang CDN)
+   * So sánh phiên bản dữ liệu chuẩn theo từng phân đoạn số (vd: 2026.11.04.1 vs 2026.11.02.1)
+   */
+  function compareVersions(v1, v2) {
+    if (!v1 && !v2) return 0;
+    if (!v1) return -1;
+    if (!v2) return 1;
+    const parts1 = String(v1).split('.').map(p => parseInt(p, 10) || 0);
+    const parts2 = String(v2).split('.').map(p => parseInt(p, 10) || 0);
+    const len = Math.max(parts1.length, parts2.length);
+    for (let i = 0; i < len; i++) {
+      const p1 = parts1[i] || 0;
+      const p2 = parts2[i] || 0;
+      if (p1 > p2) return 1;
+      if (p1 < p2) return -1;
+    }
+    return 0;
+  }
+
+  /**
+   * Tải file JSON cấu hình từ GitHub (thử API trước để lấy dữ liệu mới nhất tức thì, sau đó Raw và CDN)
    */
   async function fetchRemoteData() {
+    // 1. ƯU TIÊN 1: GitHub API với header Accept raw (cập nhật 0s, không bị Fastly CDN cache 5 phút)
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 4000);
+      const apiResp = await fetch(API_RAW_URL, {
+        signal: controller.signal,
+        headers: {
+          'Accept': 'application/vnd.github.v3.raw',
+          'Cache-Control': 'no-cache, no-store'
+        }
+      });
+      clearTimeout(timeoutId);
+      if (apiResp.ok) {
+        const json = await apiResp.json();
+        if (json && json.dataVersion) {
+          return json;
+        }
+      }
+    } catch (e) {
+      // Nếu API bị giới hạn lượt gọi hoặc lỗi mạng, chuyển sang Raw URL
+    }
+
+    // 2. ƯU TIÊN 2 & 3: GitHub Raw URL & CDN Fallback
     const urls = [
       `${PRIMARY_URL}?_nocache=${Date.now()}`,
       `${CDN_FALLBACK_URL}?_nocache=${Date.now()}`
@@ -166,8 +209,8 @@
         return { updated: false, currentVersion: currentVer, error: 'CANNOT_CONNECT' };
       }
 
-      // So sánh phiên bản dữ liệu
-      const isNewer = String(remoteData.dataVersion) > String(currentVer);
+      // So sánh phiên bản dữ liệu bằng hàm so sánh phiên bản số chuẩn
+      const isNewer = compareVersions(remoteData.dataVersion, currentVer) > 0;
       if (isNewer || force) {
         await storageSet({
           [STORAGE_KEY_DATA]: remoteData,
