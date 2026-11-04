@@ -1317,6 +1317,7 @@
 
       const detectedGrade = this.detectClass()?.grade || '1';
       let filledCount = 0;
+      let skippedCount = 0;
       const studentDataList = [];
 
       for (let i = 0; i < dataRows.length; i++) {
@@ -1339,14 +1340,67 @@
         for (const [subKey, colInfo] of Object.entries(structure.subjectColumns)) {
           const cell = colInfo.colClass ? row.querySelector('.' + colInfo.colClass) : cells[colInfo.index];
           if (!cell) continue;
-          const txt = (cell.textContent || (cell.querySelector('input')?.value) || '').trim();
+
+          // Trích xuất giá trị ô chính xác (ưu tiên thẻ input nếu có)
+          const inp = cell.tagName === 'INPUT' ? cell : cell.querySelector('input.txtInput, input[type="text"], input, textarea, select');
+          let txt = '';
+          if (inp && inp.value !== undefined && inp.value !== null) {
+            txt = String(inp.value).trim();
+          }
+          if (!txt && cell.textContent) {
+            txt = cell.textContent.trim();
+          }
+
           const [subName, subProp] = subKey.split('__');
-          if (!studentSubjects[subName]) studentSubjects[subName] = { rating: null, score: null };
+          if (!studentSubjects[subName]) studentSubjects[subName] = { rating: null, score: null, rawCells: {} };
           if (subProp === 'rating') {
             studentSubjects[subName].rating = txt;
           } else if (subProp === 'score') {
             studentSubjects[subName].score = txt;
           }
+          studentSubjects[subName].rawCells[subProp] = txt;
+        }
+
+        // KIỂM TRA ĐẦY ĐỦ CÁC CỘT ĐIỂM HOẶC XẾP LOẠI:
+        // Nếu học sinh chưa có đầy đủ dữ liệu ở các cột môn học hiển thị trên bảng,
+        // (trừ trường hợp Miễn giảm như môn Tiếng dân tộc vẫn tính là có dữ liệu hợp lệ)
+        // thì Extensions sẽ KHÔNG điền xếp loại năng lực - phẩm chất cho học sinh đó.
+        let isMissingData = false;
+        const missingDetails = [];
+
+        for (const [subKey, colInfo] of Object.entries(structure.subjectColumns)) {
+          const [subName, subProp] = subKey.split('__');
+          const cellVal = studentSubjects[subName]?.rawCells?.[subProp] || '';
+
+          // Kiểm tra xem môn học này có thuộc diện Miễn giảm (vd: Tiếng dân tộc) hay không
+          const isExempted = /^(?:miễn|mien|miễn\s*giảm|mien\s*giam|mg)$/i.test(studentSubjects[subName]?.rating || '') ||
+                             /^(?:miễn|mien|miễn\s*giảm|mien\s*giam|mg)$/i.test(studentSubjects[subName]?.score || '');
+
+          if (isExempted) {
+            // Học sinh được Miễn giảm môn này -> Được tính là đã có dữ liệu hợp lệ
+            continue;
+          }
+
+          // Ô dữ liệu phải có nội dung thực tế (không rỗng, không phải dấu gạch rỗng/placeholder)
+          const hasValue = cellVal !== '' && cellVal !== '-' && cellVal !== '--' && cellVal !== '...';
+          if (!hasValue) {
+            isMissingData = true;
+            missingDetails.push(`${subName} (${subProp === 'rating' ? 'Mức' : 'Điểm'})`);
+          }
+        }
+
+        if (isMissingData) {
+          skippedCount++;
+          if (typeof onProgress === 'function') {
+            onProgress({
+              currentIndex: i + 1,
+              totalStudents: dataRows.length,
+              studentName: student.studentName,
+              skipped: true,
+              reason: 'Chưa đủ điểm/xếp loại môn học: ' + missingDetails.join(', ')
+            });
+          }
+          continue;
         }
 
         // 2. Chạy bộ suy luận
@@ -1417,6 +1471,7 @@
       return {
         success: true,
         count: filledCount,
+        skipped: skippedCount,
         total: dataRows.length,
         storeBridge: storeBridgeResult
       };

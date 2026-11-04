@@ -34,7 +34,7 @@
       if (str === 'T' || str === 'TỐT' || str === 'HOÀN THÀNH TỐT' || str === 'HTT' || str === '2') explicitLvl = 'T';
       else if (str === 'H' || str === 'Đ' || str === 'ĐẠT' || str === 'HOÀN THÀNH' || str === 'HT' || str === '1') explicitLvl = 'H';
       else if (str === 'C' || str === 'CHƯA HOÀN THÀNH' || str === 'CHT' || str === 'CẦN CỐ GẮNG' || str === 'CCG' || str === '0') explicitLvl = 'C';
-      else if (str === 'MIỄN' || str === 'MIEN') return null; // Học sinh được miễn môn học (không tính là môn điểm C hay H)
+      else if (str === 'MIỄN' || str === 'MIEN' || str === 'MIỄN GIẢM' || str === 'MIEN GIAM' || str === 'MG') return null; // Học sinh được miễn môn học (không tính là môn điểm C hay H)
     }
 
     // Nếu có điểm số dưới 5 thì chắc chắn là Chưa hoàn thành (C)
@@ -61,6 +61,30 @@
    * @returns {Object} 15 chỉ số xếp loại T / Đ / C
    */
   function inferStudentCompetencies(studentRowData, grade = '1') {
+    // Nếu học sinh chưa có đủ dữ liệu các cột điểm hoặc xếp loại môn học -> Bỏ qua, không điền NL-PC
+    if (studentRowData && studentRowData.isIncomplete) {
+      return {
+        tuChuVaTuHoc: null,
+        giaoTiepVaHopTac: null,
+        gqvdVaSangTao: null,
+        ngonNgu: null,
+        tinhToan: null,
+        khoaHoc: null,
+        congNghe: null,
+        tinHoc: null,
+        thamMi: null,
+        theChat: null,
+        yeuNuoc: null,
+        nhanAi: null,
+        chamChi: null,
+        trungThuc: null,
+        trachNhiem: null,
+        rawMap: {},
+        isIncomplete: true,
+        skippedReason: studentRowData.missingReason || 'Chưa đủ điểm hoặc xếp loại các môn học'
+      };
+    }
+
     const g = String(grade).match(/\d+/)?.[0] || '1';
     const numGrade = parseInt(g, 10);
     const subMap = studentRowData?.subjects || {};

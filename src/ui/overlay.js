@@ -650,8 +650,17 @@
           const modNote = isStoreOk
             ? `\n✓ Đã đồng bộ ${result.storeBridge.modifiedCount || result.storeBridge.updatedRows} bản ghi vào ExtJS Store của vnEdu.`
             : '';
-          showToast(`✓ Đã tự động suy luận & điền xong NL-PC cho ${result.count}/${result.total} học sinh!${modNote}\n🔒 Thầy/Cô bấm nút "Lưu" (hoặc biểu tượng đĩa mềm) trên vnEdu để hoàn tất.`, null, false, false);
-          setTimeout(hideToast, 9500);
+          const skipNote = result.skipped > 0
+            ? `\nℹ️ Bỏ qua ${result.skipped} học sinh chưa có đầy đủ điểm/xếp loại môn học.`
+            : '';
+
+          if (result.count === 0 && result.skipped > 0) {
+            showToast(`⚠️ Không có học sinh nào được điền do toàn bộ ${result.skipped} học sinh chưa có đầy đủ điểm hoặc xếp loại các môn học.\nThầy/Cô vui lòng nhập đủ điểm/xếp loại môn học trước khi suy luận.`, null, true, false);
+            setTimeout(hideToast, 6500);
+          } else {
+            showToast(`✓ Đã tự động suy luận & điền xong NL-PC cho ${result.count}/${result.total} học sinh!${skipNote}${modNote}\n🔒 Thầy/Cô bấm nút "Lưu" (hoặc biểu tượng đĩa mềm) trên vnEdu để hoàn tất.`, null, false, false);
+            setTimeout(hideToast, 9500);
+          }
         } else {
           showToast(`⚠️ ${result?.reason || 'Có lỗi khi phân tích dữ liệu trên bảng.'}`, null, true, false);
           setTimeout(hideToast, 5000);
