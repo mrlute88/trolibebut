@@ -10,6 +10,8 @@ echo ======================================================================
 echo.
 
 set "TARGET_DIR=%~dp0"
+if "%TARGET_DIR:~-1%"=="\" set "TARGET_DIR=%TARGET_DIR:~0,-1%"
+
 set "ZIP_URL=https://github.com/mrlute88/trolibebut/archive/refs/heads/main.zip"
 set "TEMP_ZIP=%TEMP%\vnedu_update_%RANDOM%.zip"
 set "TEMP_DIR=%TEMP%\vnedu_extract_%RANDOM%"
@@ -41,13 +43,29 @@ if not exist "%TEMP_DIR%\trolibebut-main" (
 
 if exist "%TEMP_DIR%\trolibebut-main" (
     robocopy "%TEMP_DIR%\trolibebut-main" "%TARGET_DIR%" /E /XF "Cap-Nhat-Tien-Ich.bat" /NFL /NDL /NJH /NJS >nul
+    if errorlevel 8 (
+        xcopy "%TEMP_DIR%\trolibebut-main\*" "%TARGET_DIR%\" /E /Y /Q >nul 2>&1
+    )
 ) else (
     robocopy "%TEMP_DIR%" "%TARGET_DIR%" /E /XF "Cap-Nhat-Tien-Ich.bat" /NFL /NDL /NJH /NJS >nul
+    if errorlevel 8 (
+        xcopy "%TEMP_DIR%\*" "%TARGET_DIR%\" /E /Y /Q >nul 2>&1
+    )
 )
 
 echo [3/3] Dang don dep cac tep tam...
 if exist "%TEMP_ZIP%" del /f /q "%TEMP_ZIP%" >nul 2>&1
 if exist "%TEMP_DIR%" rd /s /q "%TEMP_DIR%" >nul 2>&1
+
+if not exist "%TARGET_DIR%\manifest.json" (
+    color 0c
+    echo.
+    echo [LOI] Khong the ghi tep vao thu muc hien tai.
+    echo Vui long kiem tra quyen ghi hoac thu chay file voi quyen Administrator.
+    echo.
+    pause
+    exit /b 1
+)
 
 color 0a
 echo.
