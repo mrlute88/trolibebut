@@ -5,7 +5,7 @@ color 0b
 
 echo ======================================================================
 echo   CONG CU CAP NHAT 1-CHAM TIEN ICH TRO LY NHAN XET VNEDU
-echo   Tu dong tai toan bo tinh nang va du lieu moi nhat tu GitHub
+echo   Tu dong tai ma nguon moi, khoi phuc cac tab va phong to trinh duyet
 echo ======================================================================
 echo.
 
@@ -16,7 +16,7 @@ set "ZIP_URL=https://github.com/mrlute88/trolibebut/archive/refs/heads/main.zip"
 set "TEMP_ZIP=%TEMP%\vnedu_update_%RANDOM%.zip"
 set "TEMP_DIR=%TEMP%\vnedu_extract_%RANDOM%"
 
-echo [1/3] Dang tai ban ma nguon moi nhat tu GitHub...
+echo [1/4] Dang tai ban ma nguon moi nhat tu GitHub...
 curl.exe -L -k -s -o "%TEMP_ZIP%" "%ZIP_URL%"
 
 if not exist "%TEMP_ZIP%" (
@@ -34,7 +34,7 @@ if not exist "%TEMP_ZIP%" (
     exit /b 1
 )
 
-echo [2/3] Dang giai nen va cap nhat cac tinh nang tien ich...
+echo [2/4] Dang giai nen va cap nhat cac tinh nang tien ich...
 if not exist "%TEMP_DIR%" mkdir "%TEMP_DIR%"
 tar.exe -xf "%TEMP_ZIP%" -C "%TEMP_DIR%" 2>nul
 if not exist "%TEMP_DIR%\trolibebut-main" (
@@ -53,9 +53,8 @@ if exist "%TEMP_DIR%\trolibebut-main" (
     )
 )
 
-echo [3/3] Dang don dep cac tep tam...
-if exist "%TEMP_ZIP%" del /f /q "%TEMP_ZIP%" >nul 2>&1
-if exist "%TEMP_DIR%" rd /s /q "%TEMP_DIR%" >nul 2>&1
+del /f /q "%TEMP_ZIP%" >nul 2>&1
+rd /s /q "%TEMP_DIR%" >nul 2>&1
 
 if not exist "%TARGET_DIR%\manifest.json" (
     color 0c
@@ -67,30 +66,25 @@ if not exist "%TARGET_DIR%\manifest.json" (
     exit /b 1
 )
 
-color 0a
-echo.
-echo ======================================================================
-echo   DA CAP NHAT THANH CONG TOAN BO TINH NANG MOI NHAT!
-echo ======================================================================
-echo.
+echo [3/4] Dang nhan dien trinh duyet dang su dung...
 
 set "BROWSER_EXE="
-set "BROWSER_EXT_URL="
 set "BROWSER_NAME="
+set "BROWSER_TITLE="
 
 tasklist /fi "imagename eq chrome.exe" 2>nul | find /i "chrome.exe" >nul
 if not errorlevel 1 (
     set "BROWSER_EXE=chrome"
-    set "BROWSER_EXT_URL=chrome://extensions"
     set "BROWSER_NAME=Google Chrome"
+    set "BROWSER_TITLE=Chrome"
 )
 
 if "%BROWSER_EXE%"=="" (
     tasklist /fi "imagename eq msedge.exe" 2>nul | find /i "msedge.exe" >nul
     if not errorlevel 1 (
         set "BROWSER_EXE=msedge"
-        set "BROWSER_EXT_URL=edge://extensions"
         set "BROWSER_NAME=Microsoft Edge"
+        set "BROWSER_TITLE=Edge"
     )
 )
 
@@ -98,62 +92,41 @@ if "%BROWSER_EXE%"=="" (
     tasklist /fi "imagename eq browser.exe" 2>nul | find /i "browser.exe" >nul
     if not errorlevel 1 (
         set "BROWSER_EXE=browser"
-        set "BROWSER_EXT_URL=coccoc://extensions"
         set "BROWSER_NAME=Coc Coc"
+        set "BROWSER_TITLE=Coc Coc"
     )
 )
 
 if "%BROWSER_EXE%"=="" (
     set "BROWSER_EXE=chrome"
-    set "BROWSER_EXT_URL=chrome://extensions"
-    set "BROWSER_NAME=Trinh duyet"
+    set "BROWSER_NAME=Google Chrome"
+    set "BROWSER_TITLE=Chrome"
 )
 
-echo Phat hien trinh duyet dang su dung: %BROWSER_NAME%
-echo.
-echo Thay/Co hay chon 1 trong cac cach de ap dung tien ich moi:
-echo.
-echo  [1] Tu dong khoi dong lai trinh duyet (Tu dong 100%% - Khong can bam gi,
-echo      trinh duyet se dong va mo lai ngay lap tuc, khoi phuc day du cac tab).
-echo.
-echo  [2] Tu dong mo trang Quan ly tien ich (%BROWSER_EXT_URL%
-echo      de Thay/Co bam nut TAI LAI bieu tuong mui ten xoay tron).
-echo.
-echo  [3] De sau (Tu tay lam moi khi thuan tien).
-echo.
-echo ======================================================================
-choice /C 123 /N /M "Bam phim [1], [2] hoac [3] tren ban phim: "
-
-if "%ERRORLEVEL%"=="1" goto :ACTION_RESTART
-if "%ERRORLEVEL%"=="2" goto :ACTION_OPEN_EXT
-goto :ACTION_LATER
-
-:ACTION_RESTART
-echo.
-echo Dang khoi dong lai %BROWSER_NAME% va khoi phuc toan bo cac tab...
+echo Phat hien: %BROWSER_NAME%
+echo Dang dong trinh duyet de giai phong phien ban cu...
 taskkill /f /im %BROWSER_EXE%.exe >nul 2>&1
 timeout /t 1 >nul
-start "" "%BROWSER_EXE%" --restore-last-session
+
+:: Xu ly file Preferences de loai bo trang thai bao loi crash
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$paths = @('$env:LOCALAPPDATA\Google\Chrome\User Data\Default\Preferences', '$env:LOCALAPPDATA\Microsoft\Edge\User Data\Default\Preferences', '$env:LOCALAPPDATA\CocCoc\Browser\User Data\Default\Preferences'); foreach ($p in $paths) { if (Test-Path $p) { try { $t = [System.IO.File]::ReadAllText($p); if ($t -match 'exit_type') { $t = $t -replace '\""exit_type\"":\""Crashed\""', '\""exit_type\"":\""Normal\""' -replace '\""exited_cleanly\"":false', '\""exited_cleanly\"":true'; [System.IO.File]::WriteAllText($p, $t); } } catch {} } }"
+
+echo [4/4] Dang khoi dong lai %BROWSER_NAME%, khoi phuc the va phong to cua so...
+
+:: Khoi dong lai trinh duyet o che do phong to va khoi phuc cac tab dang lam viec
+start "" /MAX "%BROWSER_EXE%" --start-maximized --restore-last-session
+
+:: Tu dong kich hoat cua so, phong to cuc dai va bam nut Restore / Ctrl+Shift+T
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$ws = New-Object -ComObject wscript.shell; for ($i = 0; $i -lt 25; $i++) { Start-Sleep -Milliseconds 200; $p = Get-Process -Name '%BROWSER_EXE%' -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowHandle -ne 0 } | Select-Object -First 1; if ($p -or $ws.AppActivate('%BROWSER_TITLE%')) { if ($p) { $ws.AppActivate($p.Id); } Start-Sleep -Milliseconds 500; $ws.SendKeys('%%{SPACE}x'); Start-Sleep -Milliseconds 400; $ws.SendKeys('{ENTER}'); Start-Sleep -Milliseconds 500; $ws.SendKeys('^+t'); break; } }"
+
+color 0a
 echo.
 echo ======================================================================
-echo   DA KHOI DONG LAI TRINH DUYET VA NAP TIEN ICH MOI THANH CONG!
+echo   DA HOAN TAT CAP NHAT VA KHOI PHUC TRINH DUYET 100%% TU DONG!
 echo ======================================================================
+echo.
+echo Cua so %BROWSER_NAME% da duoc phong to va nap tien ich phien ban moi nhat.
+echo Thay/Co co the tiep tuc su dung vnEdu ngay lap tuc ma khong can bam gi them.
+echo.
 timeout /t 3 >nul
-exit /b 0
-
-:ACTION_OPEN_EXT
-echo.
-echo Dang mo trang Quan ly tien ich: %BROWSER_EXT_URL%
-start "" "%BROWSER_EXE%" "%BROWSER_EXT_URL%"
-echo.
-echo Thay/Co chi can bam nut TAI LAI (bieu tuong xoay tron) tai tien ich!
-echo Sau do quay lai trang vnEdu va bam F5 de su dung.
-echo.
-pause
-exit /b 0
-
-:ACTION_LATER
-echo.
-echo Hoan tat cap nhat ma nguon. Thay/Co co the tu khoi dong lai trinh duyet sau.
-pause
 exit /b 0
