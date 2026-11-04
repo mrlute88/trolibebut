@@ -1,11 +1,11 @@
 @echo off
 chcp 65001 >nul
-title Cập Nhật Tiện Ích Trợ Lý Nhận Xét vnEdu
+title Cap Nhat Tien Ich Tro Ly Nhan Xet vnEdu
 color 0b
 
 echo ======================================================================
-echo   CÔNG CỤ CẬP NHẬT 1-CHẠM TIỆN ÍCH TRỢ LÝ NHẬN XÉT VNEDU
-echo   Tự động tải toàn bộ tính năng và dữ liệu mới nhất từ GitHub
+echo   CONG CU CAP NHAT 1-CHAM TIEN ICH TRO LY NHAN XET VNEDU
+echo   Tu dong tai toan bo tinh nang va du lieu moi nhat tu GitHub
 echo ======================================================================
 echo.
 
@@ -14,25 +14,25 @@ set "ZIP_URL=https://github.com/mrlute88/trolibebut/archive/refs/heads/main.zip"
 set "TEMP_ZIP=%TEMP%\vnedu_update_%RANDOM%.zip"
 set "TEMP_DIR=%TEMP%\vnedu_extract_%RANDOM%"
 
-echo [1/3] Đang tải bản mã nguồn mới nhất từ GitHub...
-curl.exe -L -s -o "%TEMP_ZIP%" "%ZIP_URL%"
+echo [1/3] Dang tai ban ma nguon moi nhat tu GitHub...
+curl.exe -L -k -s -o "%TEMP_ZIP%" "%ZIP_URL%"
 
 if not exist "%TEMP_ZIP%" (
-    echo Đang thử tải bằng PowerShell dự phòng...
+    echo Dang thu tai bang PowerShell du phong...
     powershell -NoProfile -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $ProgressPreference = 'SilentlyContinue'; Invoke-WebRequest -Uri '%ZIP_URL%' -OutFile '%TEMP_ZIP%'"
 )
 
 if not exist "%TEMP_ZIP%" (
     color 0c
     echo.
-    echo ❌ [LỖI] Không thể kết nối hoặc tải bản cập nhật từ GitHub.
-    echo Vui lòng kiểm tra lại kết nối mạng Internet của máy tính.
+    echo [LOI] Khong the ket noi hoac tai ban cap nhat tu GitHub.
+    echo Vui long kiem tra lai ket noi mang Internet cua may tinh.
     echo.
     pause
     exit /b 1
 )
 
-echo [2/3] Đang giải nén và cập nhật các tính năng tiện ích...
+echo [2/3] Dang giai nen va cap nhat cac tinh nang tien ich...
 if not exist "%TEMP_DIR%" mkdir "%TEMP_DIR%"
 tar.exe -xf "%TEMP_ZIP%" -C "%TEMP_DIR%" 2>nul
 if not exist "%TEMP_DIR%\trolibebut-main" (
@@ -45,25 +45,25 @@ if exist "%TEMP_DIR%\trolibebut-main" (
     robocopy "%TEMP_DIR%" "%TARGET_DIR%" /E /XF "Cap-Nhat-Tien-Ich.bat" /NFL /NDL /NJH /NJS >nul
 )
 
-echo [3/3] Đang dọn dẹp các tệp tạm...
-del /f /q "%TEMP_ZIP%" >nul 2>&1
-rd /s /q "%TEMP_DIR%" >nul 2>&1
+echo [3/3] Dang don dep cac tep tam...
+if exist "%TEMP_ZIP%" del /f /q "%TEMP_ZIP%" >nul 2>&1
+if exist "%TEMP_DIR%" rd /s /q "%TEMP_DIR%" >nul 2>&1
 
 color 0a
 echo.
 echo ======================================================================
-echo   ✓ ĐÃ CẬP NHẬT THÀNH CÔNG TOÀN BỘ TÍNH NĂNG MỚI NHẤT!
+echo   DA CAP NHAT THANH CONG TOAN BO TINH NANG MOI NHAT!
 echo ======================================================================
 echo.
-echo Thầy/Cô chỉ cần thực hiện 2 bước đơn giản để áp dụng ngay:
+echo Thay/Co chi can thuc hien 2 buoc don gian de ap dung ngay:
 echo.
-echo  👉 Bước 1: Mở trình duyệt (Chrome, Cốc Cốc, Edge), vào trang Quản lý tiện ích:
-echo              chrome://extensions   (hoặc edge://extensions)
+echo  [Buoc 1] Mo trinh duyet (Chrome, Coc Coc, Edge), vao trang Quan ly tien ich:
+echo           chrome://extensions   (hoac edge://extensions)
 echo.
-echo  👉 Bước 2: Bấm nút TẢI LẠI (biểu tượng mũi tên xoay tròn 🔄)
-echo              ở ô tiện ích "Trợ lý nhận xét vnEdu".
+echo  [Buoc 2] Bam nut TAI LAI (bieu tuong mui ten xoay tron)
+echo           o o tien ich "Tro ly nhan xet vnEdu".
 echo.
-echo  👉 Bước 3: Quay lại trang vnEdu và bấm F5 để sử dụng tính năng mới!
+echo  [Buoc 3] Quay lai trang vnEdu va bam F5 de su dung tinh nang moi!
 echo ======================================================================
 echo.
 pause
