@@ -109,15 +109,15 @@ taskkill /f /im %BROWSER_EXE%.exe >nul 2>&1
 timeout /t 1 >nul
 
 :: Xu ly file Preferences de loai bo trang thai bao loi crash
-powershell -NoProfile -ExecutionPolicy Bypass -Command "$paths = @('$env:LOCALAPPDATA\Google\Chrome\User Data\Default\Preferences', '$env:LOCALAPPDATA\Microsoft\Edge\User Data\Default\Preferences', '$env:LOCALAPPDATA\CocCoc\Browser\User Data\Default\Preferences'); foreach ($p in $paths) { if (Test-Path $p) { try { $t = [System.IO.File]::ReadAllText($p); if ($t -match 'exit_type') { $t = $t -replace '\""exit_type\"":\""Crashed\""', '\""exit_type\"":\""Normal\""' -replace '\""exited_cleanly\"":false', '\""exited_cleanly\"":true'; [System.IO.File]::WriteAllText($p, $t); } } catch {} } }"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$paths = @('%LOCALAPPDATA%\Google\Chrome\User Data\Default\Preferences', '%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\Preferences', '%LOCALAPPDATA%\CocCoc\Browser\User Data\Default\Preferences'); foreach ($p in $paths) { if (Test-Path $p) { try { $t = [System.IO.File]::ReadAllText($p); if ($t -match 'exit_type') { $t = $t -replace '\""exit_type\"":\""Crashed\""', '\""exit_type\"":\""Normal\""' -replace '\""exited_cleanly\"":false', '\""exited_cleanly\"":true'; [System.IO.File]::WriteAllText($p, $t); } } catch {} } }"
 
 echo [4/4] Dang khoi dong lai %BROWSER_NAME%, khoi phuc the va phong to cua so...
 
 :: Khoi dong lai trinh duyet o che do phong to va khoi phuc cac tab dang lam viec
 start "" /MAX "%BROWSER_EXE%" --start-maximized --restore-last-session
 
-:: Tu dong kich hoat cua so, phong to cuc dai va bam nut Restore / Ctrl+Shift+T
-powershell -NoProfile -ExecutionPolicy Bypass -Command "$ws = New-Object -ComObject wscript.shell; for ($i = 0; $i -lt 25; $i++) { Start-Sleep -Milliseconds 200; $p = Get-Process -Name '%BROWSER_EXE%' -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowHandle -ne 0 } | Select-Object -First 1; if ($p -or $ws.AppActivate('%BROWSER_TITLE%')) { if ($p) { $ws.AppActivate($p.Id); } Start-Sleep -Milliseconds 500; $ws.SendKeys('%%{SPACE}x'); Start-Sleep -Milliseconds 400; $ws.SendKeys('{ENTER}'); Start-Sleep -Milliseconds 500; $ws.SendKeys('^+t'); break; } }"
+:: Tu dong kich hoat cua so, phong to cuc dai va bam nut Restore (neu co xuat hien hop thoai)
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$ws = New-Object -ComObject wscript.shell; for ($i = 0; $i -lt 25; $i++) { Start-Sleep -Milliseconds 200; $p = Get-Process -Name '%BROWSER_EXE%' -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowHandle -ne 0 } | Select-Object -First 1; if ($p -or $ws.AppActivate('%BROWSER_TITLE%')) { if ($p) { $ws.AppActivate($p.Id); } Start-Sleep -Milliseconds 500; $ws.SendKeys('%%{SPACE}x'); Start-Sleep -Milliseconds 400; $ws.SendKeys('{ENTER}'); break; } }"
 
 color 0a
 echo.
