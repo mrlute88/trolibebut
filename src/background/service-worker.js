@@ -53,6 +53,12 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     try {
       if (message.action === 'PING') {
         sendResponse({ status: 'PONG', time: Date.now() });
+      } else if (message.action === 'RELOAD_EXTENSION') {
+        sendResponse({ success: true });
+        setTimeout(() => {
+          chrome.runtime.reload();
+        }, 150);
+        return;
       } else {
         sendResponse({ received: true });
       }

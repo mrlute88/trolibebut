@@ -1743,6 +1743,21 @@
         }
       }
     });
+
+    const btnReloadExtension = shadowRoot.getElementById('btn-reload-extension');
+    btnReloadExtension?.addEventListener('click', () => {
+      btnReloadExtension.disabled = true;
+      btnReloadExtension.textContent = '⏳ Đang nạp lại tiện ích...';
+      if (typeof chrome !== 'undefined' && chrome.runtime?.sendMessage) {
+        chrome.runtime.sendMessage({ action: 'RELOAD_EXTENSION' }, () => {
+          setTimeout(() => {
+            window.location.reload();
+          }, 300);
+        });
+      } else {
+        window.location.reload();
+      }
+    });
   }
 
   function initOverlay(deps) {
@@ -1872,6 +1887,9 @@
               </div>
               <button type="button" id="btn-trigger-cloud-sync" style="width: 100%; padding: 7px 10px; font-size: 12px; font-weight: 700; color: #F8FAFC; background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 8px; cursor: pointer; transition: all 0.2s ease;">
                 🔄 Kiểm tra &amp; Đồng bộ dữ liệu mới
+              </button>
+              <button type="button" id="btn-reload-extension" style="width: 100%; margin-top: 6px; padding: 5px 8px; font-size: 11px; font-weight: 600; color: #94A3B8; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 6px; cursor: pointer; transition: all 0.2s ease;">
+                ⚡ Nạp lại tiện ích ngay (Sau khi chạy cập nhật)
               </button>
               <div id="cloud-sync-msg" style="font-size: 11px; color: #FCD34D; margin-top: 6px; display: none; line-height: 1.4;"></div>
             </div>

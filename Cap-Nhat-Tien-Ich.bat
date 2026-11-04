@@ -73,15 +73,87 @@ echo ======================================================================
 echo   DA CAP NHAT THANH CONG TOAN BO TINH NANG MOI NHAT!
 echo ======================================================================
 echo.
-echo Thay/Co chi can thuc hien 2 buoc don gian de ap dung ngay:
+
+set "BROWSER_EXE="
+set "BROWSER_EXT_URL="
+set "BROWSER_NAME="
+
+tasklist /fi "imagename eq chrome.exe" 2>nul | find /i "chrome.exe" >nul
+if not errorlevel 1 (
+    set "BROWSER_EXE=chrome"
+    set "BROWSER_EXT_URL=chrome://extensions"
+    set "BROWSER_NAME=Google Chrome"
+)
+
+if "%BROWSER_EXE%"=="" (
+    tasklist /fi "imagename eq msedge.exe" 2>nul | find /i "msedge.exe" >nul
+    if not errorlevel 1 (
+        set "BROWSER_EXE=msedge"
+        set "BROWSER_EXT_URL=edge://extensions"
+        set "BROWSER_NAME=Microsoft Edge"
+    )
+)
+
+if "%BROWSER_EXE%"=="" (
+    tasklist /fi "imagename eq browser.exe" 2>nul | find /i "browser.exe" >nul
+    if not errorlevel 1 (
+        set "BROWSER_EXE=browser"
+        set "BROWSER_EXT_URL=coccoc://extensions"
+        set "BROWSER_NAME=Coc Coc"
+    )
+)
+
+if "%BROWSER_EXE%"=="" (
+    set "BROWSER_EXE=chrome"
+    set "BROWSER_EXT_URL=chrome://extensions"
+    set "BROWSER_NAME=Trinh duyet"
+)
+
+echo Phat hien trinh duyet dang su dung: %BROWSER_NAME%
 echo.
-echo  [Buoc 1] Mo trinh duyet (Chrome, Coc Coc, Edge), vao trang Quan ly tien ich:
-echo           chrome://extensions   (hoac edge://extensions)
+echo Thay/Co hay chon 1 trong cac cach de ap dung tien ich moi:
 echo.
-echo  [Buoc 2] Bam nut TAI LAI (bieu tuong mui ten xoay tron)
-echo           o o tien ich "Tro ly nhan xet vnEdu".
+echo  [1] Tu dong khoi dong lai trinh duyet (Tu dong 100%% - Khong can bam gi,
+echo      trinh duyet se dong va mo lai ngay lap tuc, khoi phuc day du cac tab).
 echo.
-echo  [Buoc 3] Quay lai trang vnEdu va bam F5 de su dung tinh nang moi!
+echo  [2] Tu dong mo trang Quan ly tien ich (%BROWSER_EXT_URL%
+echo      de Thay/Co bam nut TAI LAI bieu tuong mui ten xoay tron).
+echo.
+echo  [3] De sau (Tu tay lam moi khi thuan tien).
+echo.
 echo ======================================================================
+choice /C 123 /N /M "Bam phim [1], [2] hoac [3] tren ban phim: "
+
+if "%ERRORLEVEL%"=="1" goto :ACTION_RESTART
+if "%ERRORLEVEL%"=="2" goto :ACTION_OPEN_EXT
+goto :ACTION_LATER
+
+:ACTION_RESTART
+echo.
+echo Dang khoi dong lai %BROWSER_NAME% va khoi phuc toan bo cac tab...
+taskkill /f /im %BROWSER_EXE%.exe >nul 2>&1
+timeout /t 1 >nul
+start "" "%BROWSER_EXE%" --restore-last-session
+echo.
+echo ======================================================================
+echo   DA KHOI DONG LAI TRINH DUYET VA NAP TIEN ICH MOI THANH CONG!
+echo ======================================================================
+timeout /t 3 >nul
+exit /b 0
+
+:ACTION_OPEN_EXT
+echo.
+echo Dang mo trang Quan ly tien ich: %BROWSER_EXT_URL%
+start "" "%BROWSER_EXE%" "%BROWSER_EXT_URL%"
+echo.
+echo Thay/Co chi can bam nut TAI LAI (bieu tuong xoay tron) tai tien ich!
+echo Sau do quay lai trang vnEdu va bam F5 de su dung.
 echo.
 pause
+exit /b 0
+
+:ACTION_LATER
+echo.
+echo Hoan tat cap nhat ma nguon. Thay/Co co the tu khoi dong lai trinh duyet sau.
+pause
+exit /b 0
