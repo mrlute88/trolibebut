@@ -718,9 +718,12 @@
       const students = [];
 
       rowElements.forEach((row, idx) => {
-        const cells = Array.from(
-          row.querySelectorAll('td, [role="gridcell"], [role="cell"], .ag-cell, .slick-cell, .x-grid3-cell, .cell, div')
+        let cells = Array.from(
+          row.querySelectorAll('td, [role="gridcell"], [role="cell"], .ag-cell, .slick-cell, .x-grid3-cell, .cell')
         );
+        if (!cells.length) {
+          cells = Array.from(row.children);
+        }
 
         let studentName = '';
         let studentId = '';
@@ -736,12 +739,12 @@
           if (!studentId && /^(HS| học sinh|SV)?\d{4,}$/i.test(txt)) {
             studentId = txt;
           } else if (!VietnameseNameDetector.isHeaderOrLabel(txt)) {
-            // 1. Check if current cell combined with next cell forms a valid Vietnamese name (e.g. "Thạch" + "Bảo")
+            // 1. Check if current cell combined with next cell forms a valid Vietnamese name (e.g. "Thạch" + "Bảo", "Sơn" + "Nam")
             if (i + 1 < cells.length) {
               let nextTxt = VietnameseNameDetector.cleanStudentName((cells[i + 1].textContent || '').trim());
               if (nextTxt && nextTxt.normalize) nextTxt = nextTxt.normalize('NFC');
               const combined = `${txt} ${nextTxt}`.trim();
-              if (VietnameseNameDetector.isVietnameseName(combined) && !VietnameseNameDetector.isHeaderOrLabel(nextTxt)) {
+              if (VietnameseNameDetector.isVietnameseName(combined) && !VietnameseNameDetector.isHeaderOrLabel(combined) && !VietnameseNameDetector.isHeaderOrLabel(nextTxt)) {
                 studentName = combined;
                 break;
               }
@@ -761,6 +764,7 @@
           // Bảng locked chỉ chứa STT và Tên, tuyệt đối không quét xếp loại/điểm số từ bảng này để tránh nhầm STT thành điểm!
           students.push({
             index: idx + 1,
+            rowIndex: idx,
             studentName,
             studentId,
             rowElement: row,
@@ -827,6 +831,7 @@
         if (targetEl) {
           fields.push({
             index: idx + 1,
+            rowIndex: idx,
             element: targetEl,
             rowElement: row,
             confidence: 95,
@@ -894,11 +899,17 @@
       }
 
       // Split layout (ExtJS locked table vs normal viewport table)
-      // Pair 1-to-1 by index
+      // Khớp 1-1 theo rowIndex chính xác hoặc thứ tự
+      const fieldByRowIndex = new Map();
+      fields.forEach((f, idx) => {
+        fieldByRowIndex.set(f.rowIndex !== undefined ? f.rowIndex : idx, f);
+      });
+
       const count = Math.min(validStudents.length, fields.length);
       for (let i = 0; i < count; i++) {
         const st = validStudents[i];
-        const f = fields[i];
+        const rIdx = st.rowIndex !== undefined ? st.rowIndex : i;
+        const f = fieldByRowIndex.get(rIdx) || fields[i];
         if (st && f) {
           // Cross-link row elements for verifyRowIntegrity
           f.pairRowElement = st.rowElement;

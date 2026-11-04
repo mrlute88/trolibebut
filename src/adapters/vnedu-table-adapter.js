@@ -812,7 +812,7 @@
               let nextTxt = VietnameseNameDetector.cleanStudentName(cells[cIdx + 1].textContent.trim());
               if (nextTxt && nextTxt.normalize) nextTxt = nextTxt.normalize('NFC');
               const combined = `${cellText} ${nextTxt}`.trim();
-              if (VietnameseNameDetector.isVietnameseName(combined) && !VietnameseNameDetector.isHeaderOrLabel(nextTxt)) {
+              if (VietnameseNameDetector.isVietnameseName(combined) && !VietnameseNameDetector.isHeaderOrLabel(combined) && !VietnameseNameDetector.isHeaderOrLabel(nextTxt)) {
                 studentName = combined;
                 break;
               }

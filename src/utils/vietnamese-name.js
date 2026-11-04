@@ -24,19 +24,23 @@
     'thia', 'nhan', 'tiêu', 'tieu', 'liêu', 'lieu', 'triệu', 'trieu',
     'khưu', 'khuu', 'trầm', 'tram', 'đổng', 'dong', 'lục', 'luc', 'ma',
     'bàng', 'bang', 'kha', 'sầm', 'sam', 'cầm', 'cam', 'lò', 'lo',
-    'lèo', 'leo', 'viên', 'vien', 'bạc', 'bac', 'hàng', 'hang', 'uông', 'uong'
+    'lèo', 'leo', 'viên', 'vien', 'bạc', 'bac', 'hàng', 'hang', 'uông', 'uong',
+    'diệp', 'diep', 'tào', 'tao', 'nhâm', 'nham', 'phù', 'phu', 'hầu', 'hau',
+    'ung', 'quản', 'quan', 'biện', 'bien', 'chế', 'che', 'ôn', 'on', 'lăng', 'lang'
   ]);
 
   // Words that should NOT be considered a student name (UI elements, headers, buttons)
+  // LƯU Ý QUAN TRỌNG: Tuyệt đối không đưa các tên riêng phổ biến như "nam", "nữ", "đạt", "toán", "trang", "lưu"
+  // vào đây vì sẽ khiến học sinh mang tên này (hoặc tách cột Họ đệm + Tên) bị loại trừ nhầm.
   const EXCLUDED_WORDS = new Set([
-    'họ và tên', 'họ tên', 'tên học sinh', 'học sinh', 'stt', 'mã học sinh', 'mã hs',
+    'họ và tên', 'họ tên', 'tên học sinh', 'học sinh', 'stt', 'số thứ tự', 'mã học sinh', 'mã hs',
     'họ và tên đệm', 'họ và đệm', 'họ đệm', 'họ và chữ đệm', 'họ lót', 'họ', 'tên',
-    'ngày sinh', 'giới tính', 'nữ', 'nam', 'lớp', 'môn học', 'nhận xét', 'đánh giá',
-    'điểm', 'ghi chú', 'thao tác', 'xóa', 'sửa', 'lưu', 'ghi', 'xuất', 'nhập',
-    'tìm kiếm', 'chọn', 'tất cả', 'trang', 'tiếp', 'trước', 'hoàn thành', 'chưa hoàn thành',
-    'tốt', 'đạt', 'cần cố gắng', 'toán', 'tiếng việt', 'tiếng anh', 'khoa học',
+    'ngày sinh', 'năm sinh', 'giới tính', 'lớp', 'môn học', 'nhận xét', 'đánh giá',
+    'xếp loại', 'ghi chú', 'thao tác', 'xóa', 'sửa', 'xuất', 'nhập',
+    'tìm kiếm', 'chọn', 'tất cả', 'tiếp theo', 'hoàn thành', 'chưa hoàn thành',
+    'cần cố gắng', 'môn toán', 'tiếng việt', 'tiếng anh', 'khoa học',
     'lịch sử', 'địa lí', 'tin học', 'đạo đức', 'mĩ thuật', 'âm nhạc', 'thể chất',
-    'mức đạt được', 'điểm ktđk', 'nội dung nhận xét', 'lời nhận xét', 'nữ'
+    'mức đạt được', 'điểm ktđk', 'nội dung nhận xét', 'lời nhận xét'
   ]);
 
   // Regex to check presence of Vietnamese diacritics
@@ -136,8 +140,9 @@
   function isHeaderOrLabel(text) {
     if (!text || typeof text !== 'string') return false;
     const lower = cleanStudentName(text).toLowerCase().trim();
+    if (!lower) return false;
     if (EXCLUDED_WORDS.has(lower)) return true;
-    return /^(họ và tên|họ tên|họ và tên đệm|họ và đệm|họ đệm|họ và chữ đệm|họ lót|họ|tên|tên học sinh|học sinh|mã học sinh|mã hs|stt|nhận xét|đánh giá|thao tác|mức đạt được|điểm ktđk|lời nhận xét)$/i.test(lower);
+    return /^(họ và tên|họ tên|họ và tên đệm|họ và đệm|họ đệm|họ và chữ đệm|họ lót|họ|tên|tên học sinh|học sinh|mã học sinh|mã hs|stt|số thứ tự|ngày sinh|năm sinh|giới tính|nhận xét|đánh giá|thao tác|mức đạt được|điểm ktđk|lời nhận xét)$/i.test(lower);
   }
 
   return {
