@@ -1658,12 +1658,17 @@
     btnTriggerSync?.addEventListener('click', async () => {
       if (!cloudSync) return;
       btnTriggerSync.disabled = true;
-      btnTriggerSync.textContent = '⏳ Đang kết nối GitHub...';
+      btnTriggerSync.textContent = '⏳ Đang kích hoạt cập nhật...';
       if (cloudSyncMsg) {
         cloudSyncMsg.style.display = 'block';
         cloudSyncMsg.style.color = '#38BDF8';
-        cloudSyncMsg.textContent = 'Đang kiểm tra dữ liệu nhận xét mới từ GitHub...';
+        cloudSyncMsg.textContent = 'Đang tự động chạy Cap-Nhat-Tien-Ich.bat và kiểm tra dữ liệu...';
       }
+
+      // Tự động gọi chạy file Cap-Nhat-Tien-Ich.bat qua giao thức vnedu-updater
+      try {
+        window.location.href = 'vnedu-updater://run';
+      } catch (e) {}
 
       try {
         const res = await cloudSync.checkAndUpdate(true);
@@ -1690,16 +1695,19 @@
               cloudSyncMsg.style.display = 'block';
               cloudSyncMsg.innerHTML = `
                 <div style="margin-top: 6px; padding: 8px 10px; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 8px; color: #FEF08A; font-size: 11px; line-height: 1.45; text-align: left;">
-                  <b style="color: #FBBF24; display: block; margin-bottom: 4px; font-size: 11.5px;">🚀 CÓ BẢN NÂNG CẤP TÍNH NĂNG MỚI (v${res.remoteAppVersion})!</b>
+                  <b style="color: #FBBF24; display: block; margin-bottom: 4px; font-size: 11.5px;">🚀 ĐANG KÍCH HOẠT CẬP NHẬT TÍNH NĂNG MỚI (v${res.remoteAppVersion})!</b>
                   Máy Thầy/Cô đang dùng bản <b>v${res.localAppVersion}</b>.<br/>
-                  Để cập nhật toàn bộ tính năng và sửa lỗi mới nhất:<br/>
-                  👉 Mở thư mục tiện ích và nhấp đúp file: <b style="color: #38BDF8;">Cap-Nhat-Tien-Ich.bat</b> (chỉ mất 2 giây xong).
+                  ⚡ File <b>Cap-Nhat-Tien-Ich.bat</b> đang được kích hoạt...<br/>
+                  👉 Nếu trình duyệt hỏi <i>"Open Cap-Nhat-Tien-Ich.bat?"</i>, Thầy/Cô hãy tích chọn <b>Always allow</b> và bấm <b>Open</b> để tự động hoàn tất 100%.<br/>
+                  <div style="margin-top: 6px;">
+                    <a href="vnedu-updater://run" style="display: inline-block; padding: 3px 8px; background: #0284C7; color: white; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 10.5px;">⚡ Bấm vào đây nếu chưa thấy file mở</a>
+                  </div>
                 </div>
               `;
             }
             const mascotSpeech = shadowRoot.getElementById('vnedu-mascot-speech');
             if (mascotSpeech) {
-              mascotSpeech.textContent = `🚀 Có bản nâng cấp v${res.remoteAppVersion}! Hãy chạy file Cap-Nhat-Tien-Ich.bat`;
+              mascotSpeech.textContent = `🚀 Đang chạy Cap-Nhat-Tien-Ich.bat để lên v${res.remoteAppVersion}!`;
               mascotSpeech.style.opacity = '1';
               setTimeout(() => { mascotSpeech.style.opacity = ''; }, 8000);
             }
@@ -1712,7 +1720,12 @@
             if (cloudSyncMsg) {
               cloudSyncMsg.style.display = 'block';
               cloudSyncMsg.style.color = '#34D399';
-              cloudSyncMsg.textContent = `✓ Đã cập nhật thành công ngân hàng nhận xét mới (Bản: ${res.currentVersion})!`;
+              cloudSyncMsg.innerHTML = `
+                <div>
+                  ✓ Đã cập nhật thành công ngân hàng nhận xét mới (Bản: ${res.currentVersion})!<br/>
+                  <span style="font-size: 10.5px; color: #94A3B8;">Đang kích hoạt Cap-Nhat-Tien-Ich.bat để đồng bộ toàn diện.</span>
+                </div>
+              `;
             }
             const mascotSpeech = shadowRoot.getElementById('vnedu-mascot-speech');
             if (mascotSpeech) {
@@ -1729,7 +1742,12 @@
             if (cloudSyncMsg) {
               cloudSyncMsg.style.display = 'block';
               cloudSyncMsg.style.color = '#34D399';
-              cloudSyncMsg.textContent = `✓ Tiện ích và dữ liệu hiện tại đã là phiên bản mới nhất (${res.currentVersion})!`;
+              cloudSyncMsg.innerHTML = `
+                <div>
+                  ✓ Tiện ích và dữ liệu hiện tại đã là phiên bản mới nhất (${res.currentVersion})!<br/>
+                  <span style="font-size: 10.5px; color: #94A3B8;">Đang kích hoạt Cap-Nhat-Tien-Ich.bat để đồng bộ lại mã nguồn.</span>
+                </div>
+              `;
             }
           }
         }

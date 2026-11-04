@@ -12,6 +12,11 @@ echo.
 set "TARGET_DIR=%~dp0"
 if "%TARGET_DIR:~-1%"=="\" set "TARGET_DIR=%TARGET_DIR:~0,-1%"
 
+:: Tu dong dang ky giao thuc vnedu-updater de web/tien ich co the kich hoat truc tiep khi bam nut tren web
+reg add "HKCU\Software\Classes\vnedu-updater" /ve /t REG_SZ /d "URL:vnedu-updater Protocol" /f >nul 2>&1
+reg add "HKCU\Software\Classes\vnedu-updater" /v "URL Protocol" /t REG_SZ /d "" /f >nul 2>&1
+reg add "HKCU\Software\Classes\vnedu-updater\shell\open\command" /ve /t REG_SZ /d "\"%~dp0Cap-Nhat-Tien-Ich.bat\"" /f >nul 2>&1
+
 set "ZIP_URL=https://github.com/mrlute88/trolibebut/archive/refs/heads/main.zip"
 set "TEMP_ZIP=%TEMP%\vnedu_update_%RANDOM%.zip"
 set "TEMP_DIR=%TEMP%\vnedu_extract_%RANDOM%"
