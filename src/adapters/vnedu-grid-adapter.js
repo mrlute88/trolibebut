@@ -452,20 +452,54 @@
 
     _isHeaderRow(r) {
       if (!r) return true;
+
+      // 1. Thẻ th hoặc thuộc tính header
+      if (r.querySelectorAll?.('th').length > 0) return true;
+      if (r.getAttribute?.('role')?.includes('header')) return true;
+
+      // 2. Nằm trong container của header (ExtJS hoặc thead chuẩn)
       if (
-        r.closest?.('.x-grid3-header, thead, .x-grid-header') ||
-        r.getAttribute?.('role')?.includes('header') ||
-        r.classList?.contains?.('header-row') ||
-        r.classList?.contains?.('ag-header-row') ||
-        r.classList?.contains?.('x-grid3-header') ||
-        r.classList?.contains?.('x-grid3-hd-row')
+        r.closest?.('.x-grid3-header, .x-grid3-header-inner, .x-grid3-header-offset, thead, .x-grid-header, [role="rowheader"]') ||
+        r.querySelector?.('.x-grid3-hd, .x-grid3-hd-inner')
       ) {
         return true;
       }
+
+      // 3. Class của thẻ hàng
+      const className = (r.className || '').toLowerCase();
+      if (/header|x-grid3-hd-row|ag-header-row|grid-header|table-header|titlerow|filter-row|search-row/.test(className)) {
+        return true;
+      }
+
+      // 4. Nội dung văn bản của hàng (Header text checks)
       const txt = (r.textContent || '').toLowerCase().replace(/\s+/g, ' ').trim();
+      
+      // A. Nhóm header chứa thông tin cột học sinh:
       if (/họ và tên|họ tên|họ đệm|tên học sinh/.test(txt) && /stt|mã|môn|nhận xét|đánh giá/.test(txt)) {
         return true;
       }
+
+      // B. Nhóm header chứa tên môn học hoặc phân vùng đánh giá (đặc trưng bảng tổng kết vnEdu):
+      if (
+        /môn\s*học\s*và\s*hoạt\s*động\s*giáo\s*dục/i.test(txt) ||
+        /năng\s*lực\s*cốt\s*lõi|năng\s*lực\s*chung|năng\s*lực\s*đặc\s*thù|phẩm\s*chất\s*chủ\s*yếu/i.test(txt) ||
+        /mức\s*đạt\s*được|điểm\s*ktđk|điểm\s*kt/i.test(txt) ||
+        /nhập\s*nl-pc|kết\s*quả\s*đánh\s*giá/i.test(txt) ||
+        (/tiếng\s*việt/i.test(txt) && /toán/i.test(txt) && /đạo\s*đức/i.test(txt)) ||
+        (/tự\s*chủ\s*và\s*tự\s*học/i.test(txt) && /giao\s*tiếp\s*và\s*hợp\s*tác/i.test(txt))
+      ) {
+        return true;
+      }
+
+      // 5. Kiểm tra từng ô trong hàng: nếu ô có nội dung tiêu đề chuẩn
+      const cells = Array.from(r.querySelectorAll ? r.querySelectorAll('td') : []);
+      for (const c of cells) {
+        const cText = (c.textContent || '').trim().toLowerCase();
+        if (/^(?:mức\s*đạt\s*được|điểm\s*ktđk|nhập\s*nl-pc|ghi\s*chú|họ\s*và\s*tên(?:\s*học\s*sinh)?|ngày,\s*tháng,\s*năm\s*sinh|nữ|stt)$/i.test(cText)) {
+          return true;
+        }
+      }
+
       return false;
     }
 
@@ -761,6 +795,10 @@
         if (studentName && studentName.normalize) studentName = studentName.normalize('NFC');
 
         if (studentName && !VietnameseNameDetector.isHeaderOrLabel(studentName)) {
+          const rowDataHang = row.getAttribute('data-hang') ||
+                              row.querySelector('[data-hang]')?.getAttribute('data-hang') ||
+                              cells[0]?.getAttribute('data-hang') ||
+                              (row.id && (row.id.startsWith('H_') || row.id.startsWith('row_')) ? row.id : '');
           // Bảng locked chỉ chứa STT và Tên, tuyệt đối không quét xếp loại/điểm số từ bảng này để tránh nhầm STT thành điểm!
           students.push({
             index: idx + 1,
@@ -768,6 +806,7 @@
             studentName,
             studentId,
             rowElement: row,
+            dataHang: rowDataHang,
             rating: null,
             score: null
           });
@@ -1310,27 +1349,55 @@
         return { success: false, reason: 'Không tìm thấy danh sách học sinh trên bảng.' };
       }
 
-      // Lấy các dòng tương ứng ở normal grid (phần scroller chứa các ô điểm và năng lực)
-      const dataRows = Array.from(
-        scope.querySelectorAll('.x-grid3-row, .x-grid-row, tbody tr')
+      // Lấy các dòng dữ liệu tương ứng ở normal grid (phần scroller chứa các ô điểm và năng lực)
+      // Ưu tiên dòng dữ liệu trong .x-grid3-body hoặc .x-grid3-scroller, tuyệt đối loại trừ các dòng tiêu đề header
+      let dataRows = Array.from(
+        scope.querySelectorAll('.x-grid3-body > .x-grid3-row, .x-grid3-scroller .x-grid3-row, .x-grid3-row, .x-grid-row')
       ).filter(r => !this._isHeaderRow(r));
+
+      if (dataRows.length === 0) {
+        dataRows = Array.from(
+          scope.querySelectorAll('tbody tr, tr')
+        ).filter(r => !this._isHeaderRow(r));
+      }
 
       const detectedGrade = this.detectClass()?.grade || '1';
       let filledCount = 0;
       let skippedCount = 0;
       const studentDataList = [];
+      const totalStudents = students.length;
 
-      for (let i = 0; i < dataRows.length; i++) {
+      for (let i = 0; i < totalStudents; i++) {
         if (typeof shouldCancel === 'function' && shouldCancel()) {
           break;
         }
 
-        const row = dataRows[i];
-        const student = students[i] || { studentName: `Học sinh ${i + 1}` };
+        const student = students[i];
+
+        // Khớp chính xác dòng dữ liệu ở normal grid tương ứng với học sinh này:
+        // Cách 1: Khớp chuẩn xác 100% theo mã hàng data-hang (vd: H_5064306607)
+        let row = null;
+        const studentDataHang = student.dataHang ||
+                                student.rowElement?.getAttribute?.('data-hang') ||
+                                student.rowElement?.querySelector?.('[data-hang]')?.getAttribute?.('data-hang');
+        if (studentDataHang) {
+          row = scope.querySelector(`.x-grid3-row[data-hang="${studentDataHang}"], [data-hang="${studentDataHang}"]`);
+        }
+        // Cách 2: Khớp theo thứ tự index trong danh sách các dòng dữ liệu đã lọc sạch header
+        if (!row && dataRows[i]) {
+          row = dataRows[i];
+        }
+
+        if (!row) {
+          skippedCount++;
+          continue;
+        }
+
         const cells = Array.from(row.querySelectorAll('td, .x-grid3-cell'));
 
         // Lấy mã hàng (data-hang) của học sinh
-        const dataHang = row.getAttribute('data-hang') ||
+        const dataHang = studentDataHang ||
+                         row.getAttribute('data-hang') ||
                          row.querySelector('[data-hang]')?.getAttribute('data-hang') ||
                          cells[0]?.getAttribute('data-hang') ||
                          (row.id && (row.id.startsWith('H_') || row.id.startsWith('row_')) ? row.id : '');
@@ -1394,7 +1461,7 @@
           if (typeof onProgress === 'function') {
             onProgress({
               currentIndex: i + 1,
-              totalStudents: dataRows.length,
+              totalStudents: totalStudents,
               studentName: student.studentName,
               skipped: true,
               reason: 'Chưa đủ điểm/xếp loại môn học: ' + missingDetails.join(', ')
@@ -1439,7 +1506,7 @@
         if (typeof onProgress === 'function') {
           onProgress({
             currentIndex: i + 1,
-            totalStudents: dataRows.length,
+            totalStudents: totalStudents,
             studentName: student.studentName
           });
         }
@@ -1472,7 +1539,7 @@
         success: true,
         count: filledCount,
         skipped: skippedCount,
-        total: dataRows.length,
+        total: totalStudents,
         storeBridge: storeBridgeResult
       };
     }

@@ -452,11 +452,21 @@
       if (/họ và tên|họ tên|họ và tên đệm|họ đệm|tên học sinh/.test(txt) && /stt|mã|môn|nhận xét|đánh giá/.test(txt)) {
         return true;
       }
+      if (
+        /môn\s*học\s*và\s*hoạt\s*động\s*giáo\s*dục/i.test(txt) ||
+        /năng\s*lực\s*cốt\s*lõi|năng\s*lực\s*chung|năng\s*lực\s*đặc\s*thù|phẩm\s*chất\s*chủ\s*yếu/i.test(txt) ||
+        /mức\s*đạt\s*được|điểm\s*ktđk|điểm\s*kt/i.test(txt) ||
+        /nhập\s*nl-pc|kết\s*quả\s*đánh\s*giá/i.test(txt) ||
+        (/tiếng\s*việt/i.test(txt) && /toán/i.test(txt) && /đạo\s*đức/i.test(txt)) ||
+        (/tự\s*chủ\s*và\s*tự\s*học/i.test(txt) && /giao\s*tiếp\s*và\s*hợp\s*tác/i.test(txt))
+      ) {
+        return true;
+      }
 
       const cells = Array.from(row.querySelectorAll('td'));
       for (const c of cells) {
         const cText = c.textContent.trim().toLowerCase();
-        if (/^(họ và tên|họ tên|họ và tên đệm|họ và đệm|họ đệm|họ và chữ đệm|họ lót|tên|tên học sinh|stt|mã hs|mã học sinh|nhận xét|đánh giá)$/i.test(cText)) {
+        if (/^(?:họ\s*và\s*tên|họ\s*tên|họ\s*và\s*tên\s*đệm|họ\s*và\s*đệm|họ\s*đệm|họ\s*và\s*chữ\s*đệm|họ\s*lót|tên|tên\s*học\s*sinh|stt|mã\s*hs|mã\s*học\s*sinh|nhận\s*xét|đánh\s*giá|mức\s*đạt\s*được|điểm\s*ktđk|nhập\s*nl-pc|ghi\s*chú)$/i.test(cText)) {
           return true;
         }
       }
