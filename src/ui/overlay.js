@@ -525,16 +525,15 @@
     const currentSchool = details?.currentSchool || detected.school;
     const allTeachers = details?.teachers || detected.teachers || (currentTeacher ? [currentTeacher] : []);
 
-    // 1. Hiển thị thông tin tài khoản vnEdu hiện tại
+    // 1. Hiển thị thông tin tài khoản vnEdu hiện tại (chỉ hiển thị tên tài khoản giáo viên)
     if (accountBadge) {
       if (currentTeacher) {
         accountBadge.style.display = 'block';
-        const coTeachers = allTeachers.filter(t => (LM?.cleanTeacherName ? LM.cleanTeacherName(t) : t) !== (LM?.cleanTeacherName ? LM.cleanTeacherName(currentTeacher) : currentTeacher));
-        const coText = coTeachers.length > 0 ? ` <span style="font-size: 11px; opacity: 0.85;">(cùng GV: ${coTeachers.join(', ')})</span>` : '';
-        accountBadge.innerHTML = `👤 Tài khoản vnEdu: <b>GV ${currentTeacher}</b>${coText}${currentSchool ? ` • <i>${currentSchool}</i>` : ''}`;
+        const displayTeacher = currentTeacher.replace(/^(?:gv\.?|thầy|cô)\s*/i, '').trim();
+        accountBadge.innerHTML = `👤 Tài khoản vnEdu: <b>GV ${displayTeacher}</b>`;
       } else {
         accountBadge.style.display = 'block';
-        accountBadge.innerHTML = `ℹ️ Đang ở vnEdu${currentSchool ? ` • <i>${currentSchool}</i>` : ''} <i>(Mở sổ điểm để xác định chính xác GV dạy)</i>`;
+        accountBadge.innerHTML = `👤 Tài khoản vnEdu: <i>(Chưa xác định)</i>`;
       }
     }
 

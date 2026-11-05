@@ -474,8 +474,9 @@
           else detectedSchool = txt;
         }
 
-        // Nhận diện giáo viên
-        if (!/trường|tiểu\s*học|th|thcs|thpt|mầm\s*non|khối|lớp|năm\s*học|học\s*kỳ|hệ\s*thống|đăng\s*xuất|thoát|cài\s*đặt|hướng\s*dẫn|báo\s*cáo|thống\s*kê|desktop|bàn\s*làm\s*việc|start|system|server|admin|quản\s*trị/i.test(txt)) {
+        // Nhận diện giáo viên (loại trừ toàn bộ từ khóa nghiệp vụ hệ thống vnEdu)
+        const isSystemTerm = /trường|tiểu\s*học|th|thcs|thpt|mầm\s*non|khối|lớp|năm\s*học|học\s*kỳ|hệ\s*thống|đăng\s*xuất|đăng\s*nhập|thoát|cài\s*đặt|hướng\s*dẫn|báo\s*cáo|thống\s*kê|desktop|bàn\s*làm\s*việc|start|system|server|admin|quản\s*trị|quản\s*lý|nhân\s*sự|hồ\s*sơ|phân\s*công|kế\s*hoạch|dạy\s*học|bài\s*dạy|giảng\s*dạy|danh\s*sách|phân\s*quyền|chương\s*trình|nề\s*nếp|bạo\s*lực|học\s*đường|xác\s*nhận|yêu\s*cầu|phê\s*duyệt|đổi\s*tên|công\s*tác|học\s*tập|tổng\s*kết|tốt\s*nghiệp|dịch\s*vụ|câu\s*lạc\s*bộ|bảng\s*tin|lịch\s*tuần|bán\s*trú|bé\s*ngoan|mẫu\s*\d|kết\s*chuyển|ngày\s*nghỉ|điểm\s*danh|kết\s*quả|rèn\s*luyện|kỷ\s*luật|miễn\s*giảm|hạnh\s*kiểm|elearning|giấy\s*khen|ưu\s*tiên|học\s*phí|đăng\s*ký|văn\s*bản|học\s*bạ|đầu\s*bài|đăng\s*bộ|tuyển\s*sinh|đầu\s*cấp|nghỉ\s*phép|tin\s*tức|album|đón\s*trẻ|bài\s*tập|góp\s*ý|connect|mục\s*tiêu|tư\s*vấn|tin\s*nhắn|sms|gói\s*cước|vi\s*phạm|ott|nhật\s*ký|otp|kết\s*nối|api|dinh\s*dưỡng|phổ\s*cập|sắp\s*xếp|bảng\s*điều\s*khiển|vemis|đổi\s*ảnh|đại\s*diện|mật\s*khẩu|xác\s*thực|lịch\s*sử|trợ\s*lý|phiên\s*bản/i;
+        if (!isSystemTerm.test(txt)) {
           const words = txt.split(/\s+/);
           if (words.length >= 2 && words.length <= 5) {
             const isCap = words.every(w => /^[A-ZÀ-Ỹa-zà-ỹ0-9]/.test(w));
@@ -493,7 +494,7 @@
 
       const Ext = window.Ext;
       if (Ext) {
-        // 1. Quét menus trong Ext.menu.MenuMgr (CHỈ ĐỌC items, KHÔNG gọi render())
+        // 1. Quét menus trong Ext.menu.MenuMgr (CHỈ ĐỌC items của menus hiện hữu)
         if (Ext.menu && Ext.menu.MenuMgr && Ext.menu.MenuMgr.menus) {
           try {
             for (const mId in Ext.menu.MenuMgr.menus) {
@@ -505,22 +506,7 @@
           } catch (e) {}
         }
 
-        // 2. Quét Ext.ComponentMgr (CHỈ ĐỌC items, KHÔNG gọi render())
-        if (Ext.ComponentMgr && Ext.ComponentMgr.all && typeof Ext.ComponentMgr.all.each === 'function') {
-          try {
-            Ext.ComponentMgr.all.each(function (comp) {
-              if (!comp) return;
-              if (comp.menu && comp.menu.items && typeof comp.menu.items.each === 'function') {
-                try {
-                  comp.menu.items.each(item => checkItem(item));
-                } catch (e) {}
-              }
-              checkItem(comp);
-            });
-          } catch (e) {}
-        }
-
-        // 3. Quét các nút taskbar trên desktop (CHỈ ĐỌC items)
+        // 2. Quét các nút taskbar trên desktop vnEdu (CHỈ ĐỌC items của nút taskbar)
         try {
           const taskbarBtns = document.querySelectorAll('.ux-taskbar .x-btn, .x-desktop-taskbar .x-btn, .x-toolbar .x-btn');
           taskbarBtns.forEach(btnEl => {

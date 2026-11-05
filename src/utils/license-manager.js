@@ -348,7 +348,21 @@
       'tiếng việt', 'toán', 'tiếng anh', 'tin học', 'khối', 'lớp', 'môn học',
       'học kỳ', 'giữa kỳ', 'cuối kỳ', 'cuối năm', 'đăng nhập', 'đăng xuất',
       'báo cáo', 'thống kê', 'tra cứu', 'danh mục', 'chọn', 'tìm kiếm', 'phần mềm',
-      'trợ lý', 'phiên bản', 'thoát', 'cấu hình', 'hướng dẫn', 'hủy', 'lưu'
+      'trợ lý', 'phiên bản', 'thoát', 'cấu hình', 'hướng dẫn', 'hủy', 'lưu',
+      'nhân sự', 'hồ sơ', 'phân công', 'kế hoạch', 'dạy học', 'bài dạy', 'giảng dạy',
+      'quản lý', 'quan ly', 'danh sách', 'danh sach', 'phân quyền', 'chương trình',
+      'nề nếp', 'bạo lực', 'học đường', 'xác nhận', 'yêu cầu', 'phê duyệt', 'đổi tên',
+      'công tác', 'học tập', 'tổng kết', 'xét tốt nghiệp', 'dịch vụ', 'câu lạc bộ',
+      'bảng tin', 'lịch tuần', 'bán trú', 'bé ngoan', 'mẫu 1', 'mẫu 2', 'mẫu 3',
+      'kết chuyển', 'ngày nghỉ', 'điểm danh', 'kết quả', 'rèn luyện', 'kỷ luật',
+      'miễn giảm', 'hạnh kiểm', 'elearning', 'giấy khen', 'ưu tiên', 'học phí',
+      'đăng ký', 'văn bản', 'học bạ', 'đầu bài', 'đăng bộ', 'tuyển sinh',
+      'đầu cấp', 'nghỉ phép', 'tin tức', 'album', 'đón trả trẻ', 'bài tập',
+      'góp ý', 'connect', 'mục tiêu', 'tư vấn', 'tin nhắn', 'sms', 'gói cước',
+      'vi phạm', 'ott', 'nội dung xóa', 'nhật ký', 'otp', 'kết nối', 'api',
+      'dinh dưỡng', 'chuyển dữ liệu', 'phổ cập', 'tự động sắp xếp', 'bảng điều khiển',
+      'vemis', 'đổi ảnh', 'đại diện', 'thông tin tài khoản', 'hồ sơ cá nhân',
+      'thay đổi mật khẩu', 'xác thực', 'lịch sử'
     ];
     for (const w of invalidWords) {
       if (lower === w || lower.includes(w)) {
@@ -991,12 +1005,7 @@
             teachers: detectedTeachers,
             currentSchool: currSchool
           });
-          const otherCoTeachers = detectedTeachers.filter(t => cleanTeacherName(t) !== cleanTeacherName(matchedTeacherName));
-          const coTeacherMsg = otherCoTeachers.length > 0
-            ? ` (cùng GV: ${otherCoTeachers.join(', ')})`
-            : '';
-
-          if (callback) callback(true, res.licenseInfo, `✓ Đã kích hoạt bản quyền cho GV: ${matchedTeacherName}${coTeacherMsg}`, {
+          if (callback) callback(true, res.licenseInfo, `✓ Đã kích hoạt bản quyền cho GV: ${matchedTeacherName}`, {
             currentTeacher: matchedTeacherName,
             teachers: detectedTeachers,
             currentSchool: currSchool,
