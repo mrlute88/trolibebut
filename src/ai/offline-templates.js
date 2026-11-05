@@ -461,15 +461,15 @@
                         "Em thực hành hỏi và trả lời được các mẫu câu đơn giản theo cặp.",
                         "Em có ý thức chú ý nghe giảng và luyện phát âm trên lớp.",
                         "Em hiểu được các chỉ dẫn cơ bản của giáo viên bằng tiếng Anh.",
-                        "Em nắm được từ vựng và mẫu câu cơ bản của chương trình Lớp 3.",
+                        "Em nắm được từ vựng và mẫu câu cơ bản của chương trình học.",
                         "Em biết hỏi và trả lời các câu hỏi đơn giản theo chủ đề đã học.",
                         "Em tham gia đầy đủ các hoạt động luyện tập ngôn ngữ trên lớp.",
                         "Em đọc hiểu được các đoạn văn ngắn có từ ngữ quen thuộc.",
-                        "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của Lớp 4.",
+                        "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của môn học.",
                         "Em biết tham gia hội thoại theo mẫu về các chủ đề quen thuộc.",
                         "Em đọc hiểu được nội dung chính của văn bản ngắn và điền thông tin đúng yêu cầu.",
                         "Em viết được các câu đơn giản theo chủ điểm bài học.",
-                        "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình Lớp 5.",
+                        "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình học.",
                         "Em giao tiếp được các chủ đề quen thuộc về học tập, lễ hội, kỳ nghỉ và sức khỏe.",
                         "Em hoàn thành đầy đủ các yêu cầu đánh giá định kỳ môn Tiếng Anh.",
                         "Em đọc hiểu được nội dung chính của các bài đọc trong sách."
@@ -822,23 +822,22 @@
                         "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
                         "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
                         "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 1.",
+                        "Hoàn thành cơ bản môn Âm nhạc.",
                         "Em biết tham gia hát, gõ đệm và vận động theo nhạc.",
                         "Em đã nhớ được nội dung bài hát.",
                         "Em có cố gắng trong giờ Âm nhạc.",
-                        "Em hoàn thành yêu cầu cơ bản môn Âm nhạc lớp 2, biết hát theo bài và gõ đệm.",
+                        "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết hát theo bài và gõ đệm.",
                         "Em đã tham gia các hoạt động nghe nhạc, hát và vận động.",
                         "Em biết thực hiện một số tiết tấu gõ đệm cơ bản, cần luyện thêm để đều nhịp hơn.",
                         "Em có cố gắng trong học tập, cần rèn thêm cách giữ hơi và phát âm rõ lời khi hát.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 3, biết hát.",
+                        "Hoàn thành cơ bản môn Âm nhạc, biết hát.",
                         "Em thuộc một số bài hát đã học, cần luyện thêm cách lấy hơi và hát rõ lời hơn.",
                         "Em đọc được nốt nhạc trong bài đọc nhạc.",
                         "Em có cố gắng khi nghe nhạc, hát và vận động.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 4, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+                        "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
                         "Em hiểu nội dung bài học âm nhạc, cần tập trung luyện hát rõ lời và đúng nhịp hơn.",
                         "Em sử dụng được nhạc cụ gõ ở mức cơ bản, cần luyện thêm để phối hợp đều với các bạn.",
                         "Em có cố gắng trong học tập, cần chú ý lắng nghe giáo viên hướng dẫn để sửa sai.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 5, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
                         "Em biết phối hợp với bạn khi hát tập thể.",
                         "Em thực hiện được vận động minh họa ở mức cơ bản.",
                         "Em có cố gắng trong học tập âm nhạc."
@@ -2942,15 +2941,15 @@
                         "Em thực hành hỏi và trả lời được các mẫu câu đơn giản theo cặp.",
                         "Em chép đúng các câu tiếng Anh trong bài học vào vở.",
                         "Em đạt yêu cầu cơ bản về kỹ năng nghe và đọc.",
-                        "Em nắm được từ vựng và mẫu câu cơ bản của chương trình Lớp 3.",
+                        "Em nắm được từ vựng và mẫu câu cơ bản của chương trình học.",
                         "Em biết hỏi và trả lời các câu hỏi đơn giản theo chủ đề đã học.",
                         "Em nghe và chọn được đáp án đúng trong các bài nghe cơ bản.",
                         "Em hoàn thành bài tập trong sách bài tập đúng thời gian quy định.",
-                        "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của Lớp 4.",
+                        "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của môn học.",
                         "Em biết tham gia hội thoại theo mẫu về các chủ đề quen thuộc.",
                         "Em viết được các câu trọn ý theo chủ đề bài học.",
                         "Em tham gia đầy đủ các tiết học tiếng Anh tại lớp.",
-                        "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình Lớp 5.",
+                        "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình học.",
                         "Em giao tiếp được các chủ đề quen thuộc về học tập, lễ hội, kỳ nghỉ và sức khỏe."
                   ],
                   "C": [
@@ -3309,7 +3308,7 @@
                         "Thực hiện được yêu cầu cơ bản của môn Âm nhạc.",
                         "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
                         "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 1.",
+                        "Hoàn thành cơ bản môn Âm nhạc.",
                         "Em biết tham gia hát, gõ đệm và vận động theo nhạc.",
                         "Em đã nhớ được nội dung bài hát.",
                         "Em có cố gắng trong giờ Âm nhạc.",
@@ -3322,19 +3321,18 @@
                         "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết cảm thụ âm nhạc.",
                         "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung cảm thụ âm nhạc ở mức phù hợp.",
                         "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết biểu diễn.",
-                        "Em hoàn thành yêu cầu cơ bản môn Âm nhạc lớp 2, biết hát theo bài và gõ đệm.",
+                        "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết hát theo bài và gõ đệm.",
                         "Em đã tham gia các hoạt động nghe nhạc, hát và vận động.",
                         "Em biết thực hiện một số tiết tấu gõ đệm cơ bản, cần luyện thêm để đều nhịp hơn.",
                         "Em có cố gắng trong học tập, cần rèn thêm cách giữ hơi và phát âm rõ lời khi hát.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 3, biết hát.",
+                        "Hoàn thành cơ bản môn Âm nhạc, biết hát.",
                         "Em thuộc một số bài hát đã học, cần luyện thêm cách lấy hơi và hát rõ lời hơn.",
                         "Em đọc được nốt nhạc trong bài đọc nhạc.",
                         "Em có cố gắng khi nghe nhạc, hát và vận động.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 4, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+                        "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
                         "Em hiểu nội dung bài học âm nhạc, cần tập trung luyện hát rõ lời và đúng nhịp hơn.",
                         "Em sử dụng được nhạc cụ gõ ở mức cơ bản, cần luyện thêm để phối hợp đều với các bạn.",
                         "Em có cố gắng trong học tập, cần chú ý lắng nghe giáo viên hướng dẫn để sửa sai.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 5, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
                         "Em biết phối hợp với bạn khi hát tập thể.",
                         "Em thực hiện được vận động minh họa ở mức cơ bản.",
                         "Em có cố gắng trong học tập âm nhạc."
@@ -6052,23 +6050,22 @@
                         "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
                         "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
                         "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 1.",
+                        "Hoàn thành cơ bản môn Âm nhạc.",
                         "Em biết tham gia hát, gõ đệm và vận động theo nhạc.",
                         "Em đã nhớ được nội dung bài hát.",
                         "Em có cố gắng trong giờ Âm nhạc.",
-                        "Em hoàn thành yêu cầu cơ bản môn Âm nhạc lớp 2, biết hát theo bài và gõ đệm.",
+                        "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết hát theo bài và gõ đệm.",
                         "Em đã tham gia các hoạt động nghe nhạc, hát và vận động.",
                         "Em biết thực hiện một số tiết tấu gõ đệm cơ bản, cần luyện thêm để đều nhịp hơn.",
                         "Em có cố gắng trong học tập, cần rèn thêm cách giữ hơi và phát âm rõ lời khi hát.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 3, biết hát.",
+                        "Hoàn thành cơ bản môn Âm nhạc, biết hát.",
                         "Em thuộc một số bài hát đã học, cần luyện thêm cách lấy hơi và hát rõ lời hơn.",
                         "Em đọc được nốt nhạc trong bài đọc nhạc.",
                         "Em có cố gắng khi nghe nhạc, hát và vận động.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 4, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+                        "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
                         "Em hiểu nội dung bài học âm nhạc, cần tập trung luyện hát rõ lời và đúng nhịp hơn.",
                         "Em sử dụng được nhạc cụ gõ ở mức cơ bản, cần luyện thêm để phối hợp đều với các bạn.",
                         "Em có cố gắng trong học tập, cần chú ý lắng nghe giáo viên hướng dẫn để sửa sai.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 5, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
                         "Em biết phối hợp với bạn khi hát tập thể.",
                         "Em thực hiện được vận động minh họa ở mức cơ bản.",
                         "Em có cố gắng trong học tập âm nhạc."
@@ -8322,19 +8319,19 @@
                         "Em hiểu được các chỉ dẫn cơ bản của giáo viên bằng tiếng Anh.",
                         "Em nhớ được nghĩa của các từ vựng quen thuộc trong sách giáo khoa.",
                         "Em biết nhắc lại câu theo giáo viên hướng dẫn.",
-                        "Em nắm được từ vựng và mẫu câu cơ bản của chương trình Lớp 3.",
+                        "Em nắm được từ vựng và mẫu câu cơ bản của chương trình học.",
                         "Em biết hỏi và trả lời các câu hỏi đơn giản theo chủ đề đã học.",
                         "Em tham gia đầy đủ các hoạt động luyện tập ngôn ngữ trên lớp.",
                         "Em đọc hiểu được các đoạn văn ngắn có từ ngữ quen thuộc.",
                         "Em chép đúng các câu tiếng Anh trong bài học vào vở.",
                         "Em đạt yêu cầu cơ bản về kỹ năng nghe và đọc.",
-                        "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của Lớp 4.",
+                        "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của môn học.",
                         "Em biết tham gia hội thoại theo mẫu về các chủ đề quen thuộc.",
                         "Em đọc hiểu được nội dung chính của văn bản ngắn và điền thông tin đúng yêu cầu.",
                         "Em viết được các câu đơn giản theo chủ điểm bài học.",
                         "Em nghe và chọn được đáp án đúng trong các bài nghe cơ bản.",
                         "Em hoàn thành bài tập trong sách bài tập đúng thời gian quy định.",
-                        "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình Lớp 5.",
+                        "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình học.",
                         "Em giao tiếp được các chủ đề quen thuộc về học tập, lễ hội, kỳ nghỉ và sức khỏe.",
                         "Em hoàn thành đầy đủ các yêu cầu đánh giá định kỳ môn Tiếng Anh.",
                         "Em đọc hiểu được nội dung chính của các bài đọc trong sách.",
@@ -8707,7 +8704,7 @@
                         "Thực hiện được yêu cầu cơ bản của môn Âm nhạc.",
                         "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
                         "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 1.",
+                        "Hoàn thành cơ bản môn Âm nhạc.",
                         "Em biết tham gia hát, gõ đệm và vận động theo nhạc.",
                         "Em đã nhớ được nội dung bài hát.",
                         "Em có cố gắng trong giờ Âm nhạc.",
@@ -8720,19 +8717,18 @@
                         "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết cảm thụ âm nhạc.",
                         "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung cảm thụ âm nhạc ở mức phù hợp.",
                         "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết biểu diễn.",
-                        "Em hoàn thành yêu cầu cơ bản môn Âm nhạc lớp 2, biết hát theo bài và gõ đệm.",
+                        "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết hát theo bài và gõ đệm.",
                         "Em đã tham gia các hoạt động nghe nhạc, hát và vận động.",
                         "Em biết thực hiện một số tiết tấu gõ đệm cơ bản, cần luyện thêm để đều nhịp hơn.",
                         "Em có cố gắng trong học tập, cần rèn thêm cách giữ hơi và phát âm rõ lời khi hát.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 3, biết hát.",
+                        "Hoàn thành cơ bản môn Âm nhạc, biết hát.",
                         "Em thuộc một số bài hát đã học, cần luyện thêm cách lấy hơi và hát rõ lời hơn.",
                         "Em đọc được nốt nhạc trong bài đọc nhạc.",
                         "Em có cố gắng khi nghe nhạc, hát và vận động.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 4, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+                        "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
                         "Em hiểu nội dung bài học âm nhạc, cần tập trung luyện hát rõ lời và đúng nhịp hơn.",
                         "Em sử dụng được nhạc cụ gõ ở mức cơ bản, cần luyện thêm để phối hợp đều với các bạn.",
                         "Em có cố gắng trong học tập, cần chú ý lắng nghe giáo viên hướng dẫn để sửa sai.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 5, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
                         "Em biết phối hợp với bạn khi hát tập thể.",
                         "Em thực hiện được vận động minh họa ở mức cơ bản.",
                         "Em có cố gắng trong học tập âm nhạc."
@@ -11024,19 +11020,19 @@
                         "Em hiểu được các chỉ dẫn cơ bản của giáo viên bằng tiếng Anh.",
                         "Em nhớ được nghĩa của các từ vựng quen thuộc trong sách giáo khoa.",
                         "Em biết nhắc lại câu theo giáo viên hướng dẫn.",
-                        "Em nắm được từ vựng và mẫu câu cơ bản của chương trình Lớp 3.",
+                        "Em nắm được từ vựng và mẫu câu cơ bản của chương trình học.",
                         "Em biết hỏi và trả lời các câu hỏi đơn giản theo chủ đề đã học.",
                         "Em tham gia đầy đủ các hoạt động luyện tập ngôn ngữ trên lớp.",
                         "Em đọc hiểu được các đoạn văn ngắn có từ ngữ quen thuộc.",
                         "Em chép đúng các câu tiếng Anh trong bài học vào vở.",
                         "Em đạt yêu cầu cơ bản về kỹ năng nghe và đọc.",
-                        "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của Lớp 4.",
+                        "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của môn học.",
                         "Em biết tham gia hội thoại theo mẫu về các chủ đề quen thuộc.",
                         "Em đọc hiểu được nội dung chính của văn bản ngắn và điền thông tin đúng yêu cầu.",
                         "Em viết được các câu đơn giản theo chủ điểm bài học.",
                         "Em nghe và chọn được đáp án đúng trong các bài nghe cơ bản.",
                         "Em hoàn thành bài tập trong sách bài tập đúng thời gian quy định.",
-                        "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình Lớp 5.",
+                        "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình học.",
                         "Em giao tiếp được các chủ đề quen thuộc về học tập, lễ hội, kỳ nghỉ và sức khỏe.",
                         "Em hoàn thành đầy đủ các yêu cầu đánh giá định kỳ môn Tiếng Anh.",
                         "Em đọc hiểu được nội dung chính của các bài đọc trong sách.",
@@ -11415,23 +11411,22 @@
                         "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
                         "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
                         "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 1.",
+                        "Hoàn thành cơ bản môn Âm nhạc.",
                         "Em biết tham gia hát, gõ đệm và vận động theo nhạc.",
                         "Em đã nhớ được nội dung bài hát.",
                         "Em có cố gắng trong giờ Âm nhạc.",
-                        "Em hoàn thành yêu cầu cơ bản môn Âm nhạc lớp 2, biết hát theo bài và gõ đệm.",
+                        "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết hát theo bài và gõ đệm.",
                         "Em đã tham gia các hoạt động nghe nhạc, hát và vận động.",
                         "Em biết thực hiện một số tiết tấu gõ đệm cơ bản, cần luyện thêm để đều nhịp hơn.",
                         "Em có cố gắng trong học tập, cần rèn thêm cách giữ hơi và phát âm rõ lời khi hát.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 3, biết hát.",
+                        "Hoàn thành cơ bản môn Âm nhạc, biết hát.",
                         "Em thuộc một số bài hát đã học, cần luyện thêm cách lấy hơi và hát rõ lời hơn.",
                         "Em đọc được nốt nhạc trong bài đọc nhạc.",
                         "Em có cố gắng khi nghe nhạc, hát và vận động.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 4, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+                        "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
                         "Em hiểu nội dung bài học âm nhạc, cần tập trung luyện hát rõ lời và đúng nhịp hơn.",
                         "Em sử dụng được nhạc cụ gõ ở mức cơ bản, cần luyện thêm để phối hợp đều với các bạn.",
                         "Em có cố gắng trong học tập, cần chú ý lắng nghe giáo viên hướng dẫn để sửa sai.",
-                        "Hoàn thành cơ bản môn Âm nhạc lớp 5, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
                         "Em biết phối hợp với bạn khi hát tập thể.",
                         "Em thực hiện được vận động minh họa ở mức cơ bản.",
                         "Em có cố gắng trong học tập âm nhạc."
@@ -20855,19 +20850,19 @@
             "Em hiểu được các chỉ dẫn cơ bản của giáo viên bằng tiếng Anh.",
             "Em nhớ được nghĩa của các từ vựng quen thuộc trong sách giáo khoa.",
             "Em biết nhắc lại câu theo giáo viên hướng dẫn.",
-            "Em nắm được từ vựng và mẫu câu cơ bản của chương trình Lớp 3.",
+            "Em nắm được từ vựng và mẫu câu cơ bản của chương trình học.",
             "Em biết hỏi và trả lời các câu hỏi đơn giản theo chủ đề đã học.",
             "Em tham gia đầy đủ các hoạt động luyện tập ngôn ngữ trên lớp.",
             "Em đọc hiểu được các đoạn văn ngắn có từ ngữ quen thuộc.",
             "Em chép đúng các câu tiếng Anh trong bài học vào vở.",
             "Em đạt yêu cầu cơ bản về kỹ năng nghe và đọc.",
-            "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của Lớp 4.",
+            "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của môn học.",
             "Em biết tham gia hội thoại theo mẫu về các chủ đề quen thuộc.",
             "Em đọc hiểu được nội dung chính của văn bản ngắn và điền thông tin đúng yêu cầu.",
             "Em viết được các câu đơn giản theo chủ điểm bài học.",
             "Em nghe và chọn được đáp án đúng trong các bài nghe cơ bản.",
             "Em hoàn thành bài tập trong sách bài tập đúng thời gian quy định.",
-            "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình Lớp 5.",
+            "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình học.",
             "Em giao tiếp được các chủ đề quen thuộc về học tập, lễ hội, kỳ nghỉ và sức khỏe.",
             "Em hoàn thành đầy đủ các yêu cầu đánh giá định kỳ môn Tiếng Anh.",
             "Em đọc hiểu được nội dung chính của các bài đọc trong sách.",
@@ -21265,23 +21260,22 @@
             "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
             "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
             "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-            "Hoàn thành cơ bản môn Âm nhạc lớp 1.",
+            "Hoàn thành cơ bản môn Âm nhạc.",
             "Em biết tham gia hát, gõ đệm và vận động theo nhạc.",
             "Em đã nhớ được nội dung bài hát.",
             "Em có cố gắng trong giờ Âm nhạc.",
-            "Em hoàn thành yêu cầu cơ bản môn Âm nhạc lớp 2, biết hát theo bài và gõ đệm.",
+            "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết hát theo bài và gõ đệm.",
             "Em đã tham gia các hoạt động nghe nhạc, hát và vận động.",
             "Em biết thực hiện một số tiết tấu gõ đệm cơ bản, cần luyện thêm để đều nhịp hơn.",
             "Em có cố gắng trong học tập, cần rèn thêm cách giữ hơi và phát âm rõ lời khi hát.",
-            "Hoàn thành cơ bản môn Âm nhạc lớp 3, biết hát.",
+            "Hoàn thành cơ bản môn Âm nhạc, biết hát.",
             "Em thuộc một số bài hát đã học, cần luyện thêm cách lấy hơi và hát rõ lời hơn.",
             "Em đọc được nốt nhạc trong bài đọc nhạc.",
             "Em có cố gắng khi nghe nhạc, hát và vận động.",
-            "Hoàn thành cơ bản môn Âm nhạc lớp 4, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+            "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
             "Em hiểu nội dung bài học âm nhạc, cần tập trung luyện hát rõ lời và đúng nhịp hơn.",
             "Em sử dụng được nhạc cụ gõ ở mức cơ bản, cần luyện thêm để phối hợp đều với các bạn.",
             "Em có cố gắng trong học tập, cần chú ý lắng nghe giáo viên hướng dẫn để sửa sai.",
-            "Hoàn thành cơ bản môn Âm nhạc lớp 5, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
             "Em biết phối hợp với bạn khi hát tập thể.",
             "Em thực hiện được vận động minh họa ở mức cơ bản.",
             "Em có cố gắng trong học tập âm nhạc."
@@ -31090,6 +31084,9 @@
   // NGÂN HÀNG LỜI NHẬN XÉT TIỂU HỌC CHI TIẾT THEO TỪNG KHỐI LỚP (LỚP 1 - 5)
   // Chuẩn hóa 100% theo Thông tư 27/2020/TT-BGDĐT (Đồng bộ từ loinhanxet_tieu_hoc_lop_1_5_da_dien_nhan_xet.xlsx)
   // 100% câu nhận xét có độ dài <= 85 ký tự, đảm bảo an toàn tuyệt đối cho học bạ vnEdu.
+  // NGÂN HÀNG LỜI NHẬN XÉT TIỂU HỌC CHI TIẾT THEO TỪNG KHỐI LỚP (LỚP 1 - 5)
+  // Chuẩn hóa 100% theo Thông tư 27/2020/TT-BGDĐT (Đồng bộ từ loinhanxet_tieu_hoc_lop_1_5_da_dien_nhan_xet.xlsx)
+  // 100% câu nhận xét có độ dài <= 85 ký tự, đảm bảo an toàn tuyệt đối cho học bạ vnEdu.
   const PRIMARY_BY_GRADE = {
   "1": {
     "GK1": {
@@ -31695,7 +31692,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 1.",
+          "Hoàn thành cơ bản môn Âm nhạc.",
           "Em biết tham gia hát, gõ đệm và vận động theo nhạc.",
           "Em đã nhớ được nội dung bài hát.",
           "Em có cố gắng trong giờ Âm nhạc."
@@ -33687,7 +33684,7 @@
           "Thực hiện được yêu cầu cơ bản của môn Âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 1.",
+          "Hoàn thành cơ bản môn Âm nhạc.",
           "Em biết tham gia hát, gõ đệm và vận động theo nhạc.",
           "Em đã nhớ được nội dung bài hát.",
           "Em có cố gắng trong giờ Âm nhạc.",
@@ -35675,7 +35672,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 1.",
+          "Hoàn thành cơ bản môn Âm nhạc.",
           "Em biết tham gia hát, gõ đệm và vận động theo nhạc.",
           "Em đã nhớ được nội dung bài hát.",
           "Em có cố gắng trong giờ Âm nhạc."
@@ -37670,7 +37667,7 @@
           "Thực hiện được yêu cầu cơ bản của môn Âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 1.",
+          "Hoàn thành cơ bản môn Âm nhạc.",
           "Em biết tham gia hát, gõ đệm và vận động theo nhạc.",
           "Em đã nhớ được nội dung bài hát.",
           "Em có cố gắng trong giờ Âm nhạc.",
@@ -39622,7 +39619,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 1.",
+          "Hoàn thành cơ bản môn Âm nhạc.",
           "Em biết tham gia hát, gõ đệm và vận động theo nhạc.",
           "Em đã nhớ được nội dung bài hát.",
           "Em có cố gắng trong giờ Âm nhạc."
@@ -40478,7 +40475,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Em hoàn thành yêu cầu cơ bản môn Âm nhạc lớp 2, biết hát theo bài và gõ đệm.",
+          "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết hát theo bài và gõ đệm.",
           "Em đã tham gia các hoạt động nghe nhạc, hát và vận động.",
           "Em biết thực hiện một số tiết tấu gõ đệm cơ bản, cần luyện thêm để đều nhịp hơn.",
           "Em có cố gắng trong học tập, cần rèn thêm cách giữ hơi và phát âm rõ lời khi hát."
@@ -42472,7 +42469,7 @@
           "Thực hiện được yêu cầu cơ bản của môn Âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Em hoàn thành yêu cầu cơ bản môn Âm nhạc lớp 2, biết hát theo bài và gõ đệm.",
+          "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết hát theo bài và gõ đệm.",
           "Em đã tham gia các hoạt động nghe nhạc, hát và vận động.",
           "Em biết thực hiện một số tiết tấu gõ đệm cơ bản, cần luyện thêm để đều nhịp hơn.",
           "Em có cố gắng trong học tập, cần rèn thêm cách giữ hơi và phát âm rõ lời khi hát.",
@@ -44467,7 +44464,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Em hoàn thành yêu cầu cơ bản môn Âm nhạc lớp 2, biết hát theo bài và gõ đệm.",
+          "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết hát theo bài và gõ đệm.",
           "Em đã tham gia các hoạt động nghe nhạc, hát và vận động.",
           "Em biết thực hiện một số tiết tấu gõ đệm cơ bản, cần luyện thêm để đều nhịp hơn.",
           "Em có cố gắng trong học tập, cần rèn thêm cách giữ hơi và phát âm rõ lời khi hát."
@@ -46467,7 +46464,7 @@
           "Thực hiện được yêu cầu cơ bản của môn Âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Em hoàn thành yêu cầu cơ bản môn Âm nhạc lớp 2, biết hát theo bài và gõ đệm.",
+          "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết hát theo bài và gõ đệm.",
           "Em đã tham gia các hoạt động nghe nhạc, hát và vận động.",
           "Em biết thực hiện một số tiết tấu gõ đệm cơ bản, cần luyện thêm để đều nhịp hơn.",
           "Em có cố gắng trong học tập, cần rèn thêm cách giữ hơi và phát âm rõ lời khi hát.",
@@ -48420,7 +48417,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Em hoàn thành yêu cầu cơ bản môn Âm nhạc lớp 2, biết hát theo bài và gõ đệm.",
+          "Em hoàn thành yêu cầu cơ bản môn Âm nhạc, biết hát theo bài và gõ đệm.",
           "Em đã tham gia các hoạt động nghe nhạc, hát và vận động.",
           "Em biết thực hiện một số tiết tấu gõ đệm cơ bản, cần luyện thêm để đều nhịp hơn.",
           "Em có cố gắng trong học tập, cần rèn thêm cách giữ hơi và phát âm rõ lời khi hát."
@@ -49011,7 +49008,7 @@
           "Em đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung ghi nhớ mẫu câu ở mức phù hợp.",
           "Em đạt yêu cầu cơ bản môn Tiếng Anh, cần luyện thêm từ vựng và mẫu câu.",
           "Em cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh.",
-          "Em nắm được từ vựng và mẫu câu cơ bản của chương trình Lớp 3.",
+          "Em nắm được từ vựng và mẫu câu cơ bản của chương trình học.",
           "Em biết hỏi và trả lời các câu hỏi đơn giản theo chủ đề đã học.",
           "Em tham gia đầy đủ các hoạt động luyện tập ngôn ngữ trên lớp.",
           "Em đọc hiểu được các đoạn văn ngắn có từ ngữ quen thuộc."
@@ -49327,7 +49324,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 3, biết hát.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát.",
           "Em thuộc một số bài hát đã học, cần luyện thêm cách lấy hơi và hát rõ lời hơn.",
           "Em đọc được nốt nhạc trong bài đọc nhạc.",
           "Em có cố gắng khi nghe nhạc, hát và vận động."
@@ -51380,7 +51377,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 3, biết hát.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát.",
           "Em thuộc một số bài hát đã học, cần luyện thêm cách lấy hơi và hát rõ lời hơn.",
           "Em đọc được nốt nhạc trong bài đọc nhạc.",
           "Em có cố gắng khi nghe nhạc, hát và vận động."
@@ -53053,7 +53050,7 @@
           "Em tiếp thu tốt môn Tiếng Anh, phát âm và ghi nhớ từ vựng tương đối tốt."
         ],
         "H": [
-          "Em nắm được từ vựng và mẫu câu cơ bản của chương trình Lớp 3.",
+          "Em nắm được từ vựng và mẫu câu cơ bản của chương trình học.",
           "Em biết hỏi và trả lời các câu hỏi đơn giản theo chủ đề đã học.",
           "Em tham gia đầy đủ các hoạt động luyện tập ngôn ngữ trên lớp.",
           "Em đọc hiểu được các đoạn văn ngắn có từ ngữ quen thuộc.",
@@ -53383,7 +53380,7 @@
           "Thực hiện được yêu cầu cơ bản của môn Âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 3, biết hát.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát.",
           "Em thuộc một số bài hát đã học, cần luyện thêm cách lấy hơi và hát rõ lời hơn.",
           "Em đọc được nốt nhạc trong bài đọc nhạc.",
           "Em có cố gắng khi nghe nhạc, hát và vận động.",
@@ -55126,7 +55123,7 @@
         "H": [
           "Em đạt yêu cầu cơ bản môn Tiếng Anh, cần luyện thêm từ vựng và mẫu câu.",
           "Em cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh.",
-          "Em nắm được từ vựng và mẫu câu cơ bản của chương trình Lớp 3.",
+          "Em nắm được từ vựng và mẫu câu cơ bản của chương trình học.",
           "Em biết hỏi và trả lời các câu hỏi đơn giản theo chủ đề đã học.",
           "Em tham gia đầy đủ các hoạt động luyện tập ngôn ngữ trên lớp.",
           "Em đọc hiểu được các đoạn văn ngắn có từ ngữ quen thuộc.",
@@ -55462,7 +55459,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 3, biết hát.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát.",
           "Em thuộc một số bài hát đã học, cần luyện thêm cách lấy hơi và hát rõ lời hơn.",
           "Em đọc được nốt nhạc trong bài đọc nhạc.",
           "Em có cố gắng khi nghe nhạc, hát và vận động."
@@ -56015,7 +56012,7 @@
           "Em đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung ghi nhớ mẫu câu ở mức phù hợp.",
           "Em đạt yêu cầu cơ bản môn Tiếng Anh, cần luyện thêm từ vựng và mẫu câu.",
           "Em cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh.",
-          "Em nắm được từ vựng và mẫu câu cơ bản của chương trình Lớp 3.",
+          "Em nắm được từ vựng và mẫu câu cơ bản của chương trình học.",
           "Em biết hỏi và trả lời các câu hỏi đơn giản theo chủ đề đã học."
         ],
         "C": [
@@ -56323,7 +56320,7 @@
           "Thực hiện được yêu cầu cơ bản của môn Âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 3, biết hát.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát.",
           "Em thuộc một số bài hát đã học, cần luyện thêm cách lấy hơi và hát rõ lời hơn.",
           "Em đọc được nốt nhạc trong bài đọc nhạc.",
           "Em có cố gắng khi nghe nhạc, hát và vận động.",
@@ -58170,7 +58167,7 @@
           "Em đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung ghi nhớ mẫu câu ở mức phù hợp.",
           "Em đạt yêu cầu cơ bản môn Tiếng Anh, cần luyện thêm từ vựng và mẫu câu.",
           "Em cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh.",
-          "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của Lớp 4.",
+          "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của môn học.",
           "Em biết tham gia hội thoại theo mẫu về các chủ đề quen thuộc.",
           "Em đọc hiểu được nội dung chính của văn bản ngắn và điền thông tin đúng yêu cầu.",
           "Em viết được các câu đơn giản theo chủ điểm bài học."
@@ -58434,7 +58431,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 4, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
           "Em hiểu nội dung bài học âm nhạc, cần tập trung luyện hát rõ lời và đúng nhịp hơn.",
           "Em sử dụng được nhạc cụ gõ ở mức cơ bản, cần luyện thêm để phối hợp đều với các bạn.",
           "Em có cố gắng trong học tập, cần chú ý lắng nghe giáo viên hướng dẫn để sửa sai."
@@ -60280,7 +60277,7 @@
           "Em đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung ghi nhớ mẫu câu ở mức phù hợp.",
           "Em đạt yêu cầu cơ bản môn Tiếng Anh, cần luyện thêm từ vựng và mẫu câu.",
           "Em cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh.",
-          "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của Lớp 4.",
+          "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của môn học.",
           "Em biết tham gia hội thoại theo mẫu về các chủ đề quen thuộc."
         ],
         "C": [
@@ -60535,7 +60532,7 @@
           "Thực hiện được yêu cầu cơ bản của môn Âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 4, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
           "Em hiểu nội dung bài học âm nhạc, cần tập trung luyện hát rõ lời và đúng nhịp hơn.",
           "Em sử dụng được nhạc cụ gõ ở mức cơ bản, cần luyện thêm để phối hợp đều với các bạn.",
           "Em có cố gắng trong học tập, cần chú ý lắng nghe giáo viên hướng dẫn để sửa sai.",
@@ -62653,7 +62650,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 4, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
           "Em hiểu nội dung bài học âm nhạc, cần tập trung luyện hát rõ lời và đúng nhịp hơn.",
           "Em sử dụng được nhạc cụ gõ ở mức cơ bản, cần luyện thêm để phối hợp đều với các bạn.",
           "Em có cố gắng trong học tập, cần chú ý lắng nghe giáo viên hướng dẫn để sửa sai."
@@ -64485,7 +64482,7 @@
           "Em tiếp thu tốt môn Tiếng Anh, phát âm và ghi nhớ từ vựng tương đối tốt."
         ],
         "H": [
-          "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của Lớp 4.",
+          "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của môn học.",
           "Em biết tham gia hội thoại theo mẫu về các chủ đề quen thuộc.",
           "Em đọc hiểu được nội dung chính của văn bản ngắn và điền thông tin đúng yêu cầu.",
           "Em viết được các câu đơn giản theo chủ điểm bài học.",
@@ -64761,7 +64758,7 @@
           "Thực hiện được yêu cầu cơ bản của môn Âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 4, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
           "Em hiểu nội dung bài học âm nhạc, cần tập trung luyện hát rõ lời và đúng nhịp hơn.",
           "Em sử dụng được nhạc cụ gõ ở mức cơ bản, cần luyện thêm để phối hợp đều với các bạn.",
           "Em có cố gắng trong học tập, cần chú ý lắng nghe giáo viên hướng dẫn để sửa sai.",
@@ -66611,7 +66608,7 @@
         "H": [
           "Em đạt yêu cầu cơ bản môn Tiếng Anh, cần luyện thêm từ vựng và mẫu câu.",
           "Em cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh.",
-          "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của Lớp 4.",
+          "Em nắm được từ vựng và cấu trúc ngữ pháp trọng tâm của môn học.",
           "Em biết tham gia hội thoại theo mẫu về các chủ đề quen thuộc.",
           "Em đọc hiểu được nội dung chính của văn bản ngắn và điền thông tin đúng yêu cầu.",
           "Em viết được các câu đơn giản theo chủ điểm bài học.",
@@ -66893,7 +66890,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 4, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
           "Em hiểu nội dung bài học âm nhạc, cần tập trung luyện hát rõ lời và đúng nhịp hơn.",
           "Em sử dụng được nhạc cụ gõ ở mức cơ bản, cần luyện thêm để phối hợp đều với các bạn.",
           "Em có cố gắng trong học tập, cần chú ý lắng nghe giáo viên hướng dẫn để sửa sai."
@@ -67589,7 +67586,7 @@
           "Em đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung ghi nhớ mẫu câu ở mức phù hợp.",
           "Em đạt yêu cầu cơ bản môn Tiếng Anh, cần luyện thêm từ vựng và mẫu câu.",
           "Em cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh.",
-          "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình Lớp 5.",
+          "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình học.",
           "Em giao tiếp được các chủ đề quen thuộc về học tập, lễ hội, kỳ nghỉ và sức khỏe.",
           "Em hoàn thành đầy đủ các yêu cầu đánh giá định kỳ môn Tiếng Anh.",
           "Em đọc hiểu được nội dung chính của các bài đọc trong sách."
@@ -67853,7 +67850,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 5, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
           "Em biết phối hợp với bạn khi hát tập thể.",
           "Em thực hiện được vận động minh họa ở mức cơ bản.",
           "Em có cố gắng trong học tập âm nhạc."
@@ -69699,7 +69696,7 @@
           "Em đạt yêu cầu môn Tiếng Anh, thực hiện được nội dung ghi nhớ mẫu câu ở mức phù hợp.",
           "Em đạt yêu cầu cơ bản môn Tiếng Anh, cần luyện thêm từ vựng và mẫu câu.",
           "Em cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh.",
-          "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình Lớp 5.",
+          "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình học.",
           "Em giao tiếp được các chủ đề quen thuộc về học tập, lễ hội, kỳ nghỉ và sức khỏe."
         ],
         "C": [
@@ -69954,7 +69951,7 @@
           "Thực hiện được yêu cầu cơ bản của môn Âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 5, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
           "Em biết phối hợp với bạn khi hát tập thể.",
           "Em thực hiện được vận động minh họa ở mức cơ bản.",
           "Em có cố gắng trong học tập âm nhạc.",
@@ -72072,7 +72069,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 5, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
           "Em biết phối hợp với bạn khi hát tập thể.",
           "Em thực hiện được vận động minh họa ở mức cơ bản.",
           "Em có cố gắng trong học tập âm nhạc."
@@ -73904,7 +73901,7 @@
           "Em tiếp thu tốt môn Tiếng Anh, phát âm và ghi nhớ từ vựng tương đối tốt."
         ],
         "H": [
-          "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình Lớp 5.",
+          "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình học.",
           "Em giao tiếp được các chủ đề quen thuộc về học tập, lễ hội, kỳ nghỉ và sức khỏe.",
           "Em hoàn thành đầy đủ các yêu cầu đánh giá định kỳ môn Tiếng Anh.",
           "Em đọc hiểu được nội dung chính của các bài đọc trong sách.",
@@ -74180,7 +74177,7 @@
           "Thực hiện được yêu cầu cơ bản của môn Âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 5, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
           "Em biết phối hợp với bạn khi hát tập thể.",
           "Em thực hiện được vận động minh họa ở mức cơ bản.",
           "Em có cố gắng trong học tập âm nhạc.",
@@ -76030,7 +76027,7 @@
         "H": [
           "Em đạt yêu cầu cơ bản môn Tiếng Anh, cần luyện thêm từ vựng và mẫu câu.",
           "Em cần tích cực hơn khi luyện nghe, nói, đọc, viết tiếng Anh.",
-          "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình Lớp 5.",
+          "Em nắm vững từ vựng và các mẫu câu trọng tâm của chương trình học.",
           "Em giao tiếp được các chủ đề quen thuộc về học tập, lễ hội, kỳ nghỉ và sức khỏe.",
           "Em hoàn thành đầy đủ các yêu cầu đánh giá định kỳ môn Tiếng Anh.",
           "Em đọc hiểu được nội dung chính của các bài đọc trong sách.",
@@ -76312,7 +76309,7 @@
           "Em đạt yêu cầu môn Âm nhạc, thực hiện được nội dung tham gia hoạt động âm nhạc.",
           "Em đạt yêu cầu cơ bản môn Âm nhạc, cần mạnh dạn hơn khi tham gia hoạt động.",
           "Em cần luyện tập thêm để thể hiện bài hát tự tin hơn.",
-          "Hoàn thành cơ bản môn Âm nhạc lớp 5, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
+          "Hoàn thành cơ bản môn Âm nhạc, biết hát, gõ đệm và đọc nhạc theo hướng dẫn.",
           "Em biết phối hợp với bạn khi hát tập thể.",
           "Em thực hiện được vận động minh họa ở mức cơ bản.",
           "Em có cố gắng trong học tập âm nhạc."
@@ -77023,8 +77020,8 @@
     }
 
 
-    // 1. Ưu tiên tra cứu theo Đợt kiểm tra cụ thể (GK1, CK1, GK2, CK2) của Cấp học đã chọn
-    if (edLevel && ALL_PERIOD_TEMPLATES[edLevel] && ALL_PERIOD_TEMPLATES[edLevel][effectivePeriod]) {
+    // 1. Ưu tiên tra cứu theo Đợt kiểm tra cụ thể (GK1, CK1, GK2, CK2) của Cấp học đã chọn (chỉ chạy khi chưa có danh sách theo khối lớp)
+    if ((!list || list.length === 0) && edLevel && ALL_PERIOD_TEMPLATES[edLevel] && ALL_PERIOD_TEMPLATES[edLevel][effectivePeriod]) {
       const periodMap = ALL_PERIOD_TEMPLATES[edLevel][effectivePeriod];
       const periodCat = periodMap[subjectKey] || (isForeignLang ? periodMap['Tiếng Anh'] : null) || (subjectKey === 'Chuyên đề học tập' ? periodMap['Toán'] : null) || periodMap['DEFAULT'];
       if (periodCat) {
@@ -77185,6 +77182,12 @@
     if (vars && vars.deterministicIndex !== undefined && vars.deterministicIndex !== null) {
       const dIdx = Math.abs(parseInt(vars.deterministicIndex, 10)) || 0;
       let rawTemplate = list[dIdx % list.length];
+      if (rawTemplate) {
+        rawTemplate = rawTemplate
+          .replace(/\s+lớp\s*[1-5]\b/gi, '')
+          .replace(/chương\s*trình\s+Lớp\s*[1-5]/gi, 'chương trình học')
+          .replace(/trọng\s*tâm\s+của\s+Lớp\s*[1-5]/gi, 'trọng tâm của môn học');
+      }
       if (isForeignLang && subjectKey !== 'Tiếng Anh') {
         rawTemplate = rawTemplate.replace(/môn tiếng anh/gi, `môn ${subjectKey}`).replace(/tiếng anh/gi, subjectKey);
       }
@@ -77197,6 +77200,12 @@
       const cycle = Math.floor(count / list.length);
 
       let rawTemplate = list[drawIndex];
+      if (rawTemplate) {
+        rawTemplate = rawTemplate
+          .replace(/\s+lớp\s*[1-5]\b/gi, '')
+          .replace(/chương\s*trình\s+Lớp\s*[1-5]/gi, 'chương trình học')
+          .replace(/trọng\s*tâm\s+của\s+Lớp\s*[1-5]/gi, 'trọng tâm của môn học');
+      }
       if (isForeignLang && subjectKey !== 'Tiếng Anh') {
         rawTemplate = rawTemplate.replace(/môn tiếng anh/gi, `môn ${subjectKey}`).replace(/tiếng anh/gi, subjectKey);
       }
