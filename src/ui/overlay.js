@@ -1566,6 +1566,138 @@
       });
     }
 
+    // =========================================================================
+    // NÚT CON MẮT: ẨN / HIỆN TOÀN BỘ GIAO DIỆN CHUẨN APPLE HIG
+    // =========================================================================
+    const eyeBtn = shadowRoot.getElementById('vnedu-eye-toggle-btn');
+    const eyeIcon = shadowRoot.getElementById('eye-toggle-icon');
+    const eyeTooltip = shadowRoot.getElementById('eye-toggle-tooltip');
+    const mascotWrapper = shadowRoot.getElementById('vnedu-mascot-widget-wrapper');
+
+    let isCollapsed = false;
+    try {
+      isCollapsed = localStorage.getItem('vnedu_ui_collapsed') === 'true';
+    } catch (e) {}
+
+    function setCollapsedState(collapsed, saveStorage = true) {
+      isCollapsed = !!collapsed;
+      if (mascotWrapper) {
+        if (isCollapsed) {
+          mascotWrapper.classList.add('is-collapsed');
+        } else {
+          mascotWrapper.classList.remove('is-collapsed');
+        }
+      }
+      if (eyeBtn) {
+        if (isCollapsed) {
+          eyeBtn.className = 'vnedu-eye-toggle-btn state-collapsed';
+          if (eyeIcon) eyeIcon.textContent = '👁️';
+          if (eyeTooltip) eyeTooltip.textContent = 'Mở Trợ lí Bé Bút (vnEdu)';
+          eyeBtn.setAttribute('title', 'Mở Trợ lí Bé Bút (vnEdu)');
+        } else {
+          eyeBtn.className = 'vnedu-eye-toggle-btn state-expanded';
+          if (eyeIcon) eyeIcon.textContent = '👁️‍🗨️';
+          if (eyeTooltip) eyeTooltip.textContent = 'Ẩn toàn bộ tiện ích (Giữ màn hình thông thoáng)';
+          eyeBtn.setAttribute('title', 'Ẩn toàn bộ tiện ích (Giữ màn hình thông thoáng)');
+        }
+      }
+      if (saveStorage) {
+        try {
+          localStorage.setItem('vnedu_ui_collapsed', isCollapsed ? 'true' : 'false');
+        } catch (e) {}
+      }
+    }
+
+    // Áp dụng trạng thái ghi nhớ ngay khi khởi tạo
+    setCollapsedState(isCollapsed, false);
+
+    // Kéo thả & Nhấp chuột cho Nút Con Mắt
+    if (eyeBtn && shellEl) {
+      let isDraggingEye = false;
+      let startXEye = 0;
+      let startYEye = 0;
+      let initialRightEye = 28;
+      let initialBottomEye = 110;
+      let hasDraggedEye = false;
+
+      eyeBtn.addEventListener('mousedown', (e) => {
+        if (e.button !== 0) return;
+        e.preventDefault();
+        e.stopPropagation();
+
+        isDraggingEye = true;
+        hasDraggedEye = false;
+        startXEye = e.clientX;
+        startYEye = e.clientY;
+
+        const rect = shellEl.getBoundingClientRect();
+        initialRightEye = window.innerWidth - rect.right;
+        initialBottomEye = window.innerHeight - rect.bottom;
+
+        document.addEventListener('mousemove', onMouseMoveEye);
+        document.addEventListener('mouseup', onMouseUpEye);
+      });
+
+      function onMouseMoveEye(e) {
+        if (!isDraggingEye) return;
+        const dx = e.clientX - startXEye;
+        const dy = e.clientY - startYEye;
+
+        if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
+          hasDraggedEye = true;
+        }
+
+        if (hasDraggedEye) {
+          let newRight = initialRightEye - dx;
+          let newBottom = initialBottomEye - dy;
+
+          const maxRight = Math.max(10, window.innerWidth - 80);
+          const maxBottom = Math.max(10, window.innerHeight - 80);
+
+          newRight = Math.min(Math.max(10, newRight), maxRight);
+          newBottom = Math.min(Math.max(10, newBottom), maxBottom);
+
+          shellEl.style.right = `${newRight}px`;
+          shellEl.style.bottom = `${newBottom}px`;
+        }
+      }
+
+      function onMouseUpEye(e) {
+        if (!isDraggingEye) return;
+        isDraggingEye = false;
+        document.removeEventListener('mousemove', onMouseMoveEye);
+        document.removeEventListener('mouseup', onMouseUpEye);
+
+        if (hasDraggedEye) {
+          const rect = shellEl.getBoundingClientRect();
+          const currentRight = Math.round(window.innerWidth - rect.right);
+          const currentBottom = Math.round(window.innerHeight - rect.bottom);
+          try {
+            localStorage.setItem('vnedu_assistant_pos_v2', JSON.stringify({
+              right: currentRight,
+              bottom: currentBottom
+            }));
+          } catch (err) {}
+        } else {
+          // Người dùng nhấp chuột đơn thuần: Chuyển đổi Ẩn / Hiện giao diện
+          setCollapsedState(!isCollapsed, true);
+        }
+      }
+
+      // Nhấp đúp vào nút con mắt để khôi phục vị trí mặc định
+      eyeBtn.addEventListener('dblclick', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        shellEl.style.right = '28px';
+        shellEl.style.bottom = '110px';
+        try {
+          localStorage.removeItem('vnedu_assistant_pos_v2');
+        } catch (err) {}
+        showToast('✓ Đã khôi phục vị trí mặc định cho Trợ lý AI!', null, false, false);
+        setTimeout(hideToast, 2000);
+      });
+    }
+
     function submitLicense() {
       const enteredKey = (inputKey?.value || '').trim();
       if (!enteredKey) {
@@ -1834,39 +1966,51 @@
       </div>
 
       <!-- Widget trợ lý AI & Nhóm nút bấm 3D cao cấp -->
-      <div class="vnedu-mascot-widget-wrapper">
-        <!-- Chibi AI Mascot floating above button (có thể kéo thả) -->
-        <div class="vnedu-mascot-container" id="vnedu-mascot-container" title="Trợ lý AI vnEdu (Giữ chuột để kéo thả di chuyển vị trí, nhấp đúp để đặt lại)">
-          <div class="vnedu-mascot-speech" id="vnedu-mascot-speech">Em sẵn sàng điền nhận xét! ✨</div>
-          <div class="vnedu-mascot-glow"></div>
-          <img class="vnedu-mascot-img" id="vnedu-mascot-img" src="${mascotUrl}" alt="Trợ lý AI" />
-        </div>
+      <div class="vnedu-mascot-widget-wrapper" id="vnedu-mascot-widget-wrapper">
+        <div class="vnedu-main-interactive-group" id="vnedu-main-interactive-group">
+          <!-- Chibi AI Mascot floating above button (có thể kéo thả) -->
+          <div class="vnedu-mascot-container" id="vnedu-mascot-container" title="Trợ lý AI vnEdu (Giữ chuột để kéo thả di chuyển vị trí, nhấp đúp để đặt lại)">
+            <div class="vnedu-mascot-speech" id="vnedu-mascot-speech">Em sẵn sàng điền nhận xét! ✨</div>
+            <div class="vnedu-mascot-glow"></div>
+            <img class="vnedu-mascot-img" id="vnedu-mascot-img" src="${mascotUrl}" alt="Trợ lý AI" />
+          </div>
 
-        <div class="vnedu-action-group">
-          <!-- 3D Pill Button with Outer Bezel and Inner Glowing Pill -->
-          <button class="vnedu-btn-pill-3d" id="vnedu-btn-main" title="Tự động điền nhận xét theo cấp học và kỳ kiểm tra">
-            <span class="btn-pill-outer-bezel">
-              <span class="btn-pill-inner-core">
-                <span class="btn-pill-highlight"></span>
-                <span class="btn-pill-content">
-                  <span class="btn-pill-icon" id="btn-main-icon">⚡</span>
-                  <span class="btn-pill-text-wrap">
-                    <span class="btn-pill-text" id="btn-main-text">Điền Nhận Xét</span>
-                    <span class="btn-pill-sparkle-line">✦ ━━━━ ✦</span>
+          <div class="vnedu-action-group">
+            <!-- 3D Pill Button with Outer Bezel and Inner Glowing Pill -->
+            <button class="vnedu-btn-pill-3d" id="vnedu-btn-main" title="Tự động điền nhận xét theo cấp học và kỳ kiểm tra">
+              <span class="btn-pill-outer-bezel">
+                <span class="btn-pill-inner-core">
+                  <span class="btn-pill-highlight"></span>
+                  <span class="btn-pill-content">
+                    <span class="btn-pill-icon" id="btn-main-icon">⚡</span>
+                    <span class="btn-pill-text-wrap">
+                      <span class="btn-pill-text" id="btn-main-text">Điền Nhận Xét</span>
+                      <span class="btn-pill-sparkle-line">✦ ━━━━ ✦</span>
+                    </span>
                   </span>
                 </span>
               </span>
-            </span>
-          </button>
-          
-          <button class="vnedu-btn-key-3d" id="vnedu-btn-key" title="Bản quyền phần mềm">
-            <span class="btn-key-outer-bezel">
-              <span class="btn-key-inner-core">
-                <span class="btn-key-emoji">🔑</span>
+            </button>
+            
+            <button class="vnedu-btn-key-3d" id="vnedu-btn-key" title="Bản quyền phần mềm">
+              <span class="btn-key-outer-bezel">
+                <span class="btn-key-inner-core">
+                  <span class="btn-key-emoji">🔑</span>
+                </span>
               </span>
-            </span>
-          </button>
+            </button>
+          </div>
         </div>
+
+        <!-- Nút Con Mắt Thu Gọn / Mở Rộng Chuẩn Apple HIG -->
+        <button class="vnedu-eye-toggle-btn state-expanded" id="vnedu-eye-toggle-btn" title="Ẩn toàn bộ tiện ích (Giữ màn hình thông thoáng)">
+          <span class="eye-btn-bezel">
+            <span class="eye-btn-core">
+              <span class="eye-icon" id="eye-toggle-icon">👁️‍🗨️</span>
+            </span>
+          </span>
+          <span class="eye-toggle-tooltip" id="eye-toggle-tooltip">Ẩn toàn bộ tiện ích</span>
+        </button>
       </div>
 
       <!-- Cửa sổ kích hoạt bản quyền -->
