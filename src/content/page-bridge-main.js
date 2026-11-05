@@ -433,5 +433,164 @@
   document.addEventListener('VNEDU_FILL_DATA_SAFELY_REQUEST', onFillRequest);
   window.addEventListener('VNEDU_FILL_DATA_SAFELY_REQUEST', onFillRequest);
 
+  /**
+   * Tự động quét và phát hiện Tên Giáo Viên & Tên Trường học từ bộ nhớ ExtJS trên vnEdu
+   * Chạy trực tiếp trong MAIN world, truy cập được toàn bộ Ext.ComponentMgr, Ext.menu.MenuMgr,
+   * và các biến toàn cục vnEdu trước cả khi người dùng bấm vào nút taskbar.
+   */
+  function scanExtJSTeacherAndSchool() {
+    let detectedTeacher = '';
+    let detectedSchool = '';
+    const detectedTeachers = [];
+
+    function checkItem(raw) {
+      if (!raw) return;
+      let txt = '';
+      if (typeof raw === 'string') txt = raw;
+      else if (typeof raw === 'object') {
+        txt = raw.text || raw.title || raw.userName || raw.user_fullname || raw.fullName || raw.teacherName || (raw.initialConfig && raw.initialConfig.text) || '';
+      }
+      if (typeof txt !== 'string') return;
+      txt = txt.replace(/<[^>]+>/g, '').trim();
+      if (txt.length < 3 || txt.length > 70) return;
+
+      // Nhận diện trường học
+      if (!detectedSchool && /trường|tiểu\s*học|th|thcs|thpt|mầm\s*non/i.test(txt)) {
+        const m = txt.match(/(?:trường\s*(?:tiểu\s*học|th|thcs|thpt|mầm\s*non)?\s*[^|\n\r\-•]{3,50})/i);
+        if (m) detectedSchool = m[0].trim();
+        else detectedSchool = txt;
+      }
+
+      // Nhận diện giáo viên
+      // Loại trừ các từ khóa hệ thống, môn học, lớp học
+      if (!/trường|tiểu\s*học|th|thcs|thpt|mầm\s*non|khối|lớp|năm\s*học|học\s*kỳ|hệ\s*thống|đăng\s*xuất|thoát|cài\s*đặt|hướng\s*dẫn|báo\s*cáo|thống\s*kê|desktop|bàn\s*làm\s*việc|start|system|server/i.test(txt)) {
+        // Tên tiếng Việt thường có 2 đến 5 từ, viết hoa các chữ cái đầu
+        const words = txt.split(/\s+/);
+        if (words.length >= 2 && words.length <= 5) {
+          const isCap = words.every(w => /^[A-ZÀ-Ỹa-zà-ỹ0-9]/.test(w));
+          if (isCap) {
+            if (!detectedTeachers.includes(txt)) {
+              detectedTeachers.push(txt);
+            }
+            if (!detectedTeacher) {
+              detectedTeacher = txt;
+            }
+          }
+        }
+      }
+    }
+
+    const Ext = window.Ext;
+    if (Ext) {
+      // 1. Quét tất cả menus đã đăng ký trong Ext.menu.MenuMgr
+      if (Ext.menu && Ext.menu.MenuMgr && Ext.menu.MenuMgr.menus) {
+        try {
+          for (const mId in Ext.menu.MenuMgr.menus) {
+            const m = Ext.menu.MenuMgr.menus[mId];
+            if (m && m.items && typeof m.items.each === 'function') {
+              m.items.each(item => checkItem(item));
+              if (!m.rendered && typeof m.render === 'function') {
+                try { m.render(document.body); } catch (e) {}
+              }
+            }
+          }
+        } catch (e) {}
+      }
+
+      // 2. Quét qua tất cả components trong Ext.ComponentMgr
+      if (Ext.ComponentMgr && Ext.ComponentMgr.all && typeof Ext.ComponentMgr.all.each === 'function') {
+        try {
+          Ext.ComponentMgr.all.each(function (comp) {
+            if (!comp) return;
+
+            // Nếu component có menu đính kèm (như nút taskbar đổi trường/tài khoản)
+            if (comp.menu) {
+              if (comp.menu.items && typeof comp.menu.items.each === 'function') {
+                try {
+                  comp.menu.items.each(item => checkItem(item));
+                } catch (e) {}
+              }
+              if (!comp.menu.rendered && typeof comp.menu.render === 'function') {
+                try { comp.menu.render(document.body); } catch (e) {}
+              }
+            }
+
+            checkItem(comp);
+          });
+        } catch (e) {}
+      }
+
+      // 3. Quét các nút taskbar trên desktop
+      try {
+        const taskbarBtns = document.querySelectorAll('.ux-taskbar .x-btn, .x-desktop-taskbar .x-btn, .x-toolbar .x-btn');
+        taskbarBtns.forEach(btnEl => {
+          if (btnEl.id && Ext.getCmp) {
+            const c = Ext.getCmp(btnEl.id);
+            if (c) {
+              checkItem(c);
+              if (c.menu && c.menu.items && typeof c.menu.items.each === 'function') {
+                c.menu.items.each(item => checkItem(item));
+                if (!c.menu.rendered && typeof c.menu.render === 'function') {
+                  try { c.menu.render(document.body); } catch (e) {}
+                }
+              }
+            }
+          }
+        });
+      } catch (e) {}
+    }
+
+    // 4. Quét các biến toàn cục vnEdu
+    try {
+      const globals = [
+        window.user_fullname,
+        window.TenGiaoVien,
+        window.currentUser,
+        window.CURRENT_USER,
+        window.g_userInfo,
+        window.user_name,
+        window.userName,
+        window.vnedu_user,
+        window.top && window.top.user_fullname,
+        window.top && window.top.TenGiaoVien
+      ];
+      for (const g of globals) {
+        if (g) checkItem(g);
+      }
+    } catch (e) {}
+
+    // Gán dữ liệu lên documentElement để Content Script đọc được tức thì
+    if (detectedTeacher) {
+      document.documentElement.setAttribute('data-vnedu-detected-teacher', detectedTeacher);
+    }
+    if (detectedSchool) {
+      document.documentElement.setAttribute('data-vnedu-detected-school', detectedSchool);
+    }
+    if (detectedTeachers.length > 0) {
+      document.documentElement.setAttribute('data-vnedu-detected-teachers', JSON.stringify(detectedTeachers));
+    }
+
+    if (detectedTeacher || detectedSchool) {
+      const evt = new CustomEvent('VNEDU_USER_DETECTED', {
+        detail: { teacher: detectedTeacher, school: detectedSchool, teachers: detectedTeachers },
+        bubbles: true
+      });
+      document.dispatchEvent(evt);
+      window.dispatchEvent(evt);
+    }
+  }
+
+  // Chạy quét ngay lập tức và lập lịch quét sau khi ExtJS khởi tạo xong
+  scanExtJSTeacherAndSchool();
+  [200, 600, 1200, 2500, 4500, 7000].forEach(delay => {
+    setTimeout(scanExtJSTeacherAndSchool, delay);
+  });
+  window.addEventListener('load', scanExtJSTeacherAndSchool);
+  document.addEventListener('DOMContentLoaded', scanExtJSTeacherAndSchool);
+
+  // Lắng nghe yêu cầu quét lại từ Content Script
+  document.addEventListener('VNEDU_REQUEST_USER_SCAN', scanExtJSTeacherAndSchool);
+  window.addEventListener('VNEDU_REQUEST_USER_SCAN', scanExtJSTeacherAndSchool);
+
   console.log('%c[Trợ lý vnEdu] Hàm chuẩn fillVnEduDataSafely đã sẵn sàng trong MAIN world!', 'color: #10B981; font-weight: bold;');
 })();

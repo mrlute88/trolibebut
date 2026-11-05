@@ -415,6 +415,65 @@
       }
     }
 
+    // Yêu cầu MAIN world (page-bridge-main.js) quét bộ nhớ ExtJS nếu chưa quét
+    try {
+      if (typeof document !== 'undefined') {
+        document.dispatchEvent(new CustomEvent('VNEDU_REQUEST_USER_SCAN'));
+      }
+    } catch (e) {}
+
+    // 0. ƯU TIÊN SỐ 0: Đọc kết quả nhận diện từ MAIN world ExtJS bridge (nếu đã tìm thấy trong bộ nhớ ExtJS)
+    if (typeof document !== 'undefined') {
+      const dt = document.documentElement.getAttribute('data-vnedu-detected-teacher');
+      if (dt && isValidTeacherName(dt)) {
+        teacher = dt;
+        if (!teachers.includes(dt)) teachers.unshift(dt);
+      }
+      const dts = document.documentElement.getAttribute('data-vnedu-detected-teachers');
+      if (dts) {
+        try {
+          const parsed = JSON.parse(dts);
+          if (Array.isArray(parsed)) {
+            for (const t of parsed) {
+              if (isValidTeacherName(t) && !teachers.includes(t)) {
+                teachers.push(t);
+                if (!teacher) teacher = t;
+              }
+            }
+          }
+        } catch (e) {}
+      }
+      const ds = document.documentElement.getAttribute('data-vnedu-detected-school');
+      if (ds && !school) {
+        school = ds;
+      }
+    }
+
+    // Quét toàn bộ localStorage & sessionStorage đối soát với bản quyền đã lưu
+    if (savedTeachers.length > 0) {
+      try {
+        const storages = [sessionStorage, localStorage];
+        for (const st of storages) {
+          if (!st) continue;
+          for (let i = 0; i < st.length; i++) {
+            const k = st.key(i);
+            if (!k) continue;
+            const v = st.getItem(k);
+            if (!v || typeof v !== 'string') continue;
+            for (const savedT of savedTeachers) {
+              if (v.includes(savedT)) {
+                if (!teachers.includes(savedT)) teachers.unshift(savedT);
+                if (!teacher) teacher = savedT;
+                break;
+              }
+            }
+            if (teacher) break;
+          }
+          if (teacher) break;
+        }
+      } catch (e) {}
+    }
+
     const docs = [document];
     try {
       if (window.top && window.top.document && window.top.document !== document) {
@@ -505,6 +564,33 @@
             if (!teachers.includes(st)) teachers.unshift(st);
             if (!teacher) teacher = st;
             break;
+          }
+        }
+      }
+
+      // Quét các thuộc tính tooltip, title, ext:qtip (thường chứa tên đầy đủ của giáo viên/trường học trên taskbar)
+      const qtipEls = doc.querySelectorAll('[ext\\:qtip], [data-qtip], [title], [aria-label], .ux-taskbar-item, .x-btn');
+      for (const el of qtipEls) {
+        const txt = (el.getAttribute('ext:qtip') || el.getAttribute('data-qtip') || el.getAttribute('title') || el.getAttribute('aria-label') || '').trim();
+        if (!txt || txt.length < 3 || txt.length > 80) continue;
+
+        if (!school && /trường|tiểu\s*học|th|thcs|thpt|mầm\s*non/i.test(txt)) {
+          const matchSchool = txt.match(/(?:trường\s*(?:tiểu\s*học|th|thcs|thpt|mầm\s*non)?\s*[^|\n\r\-•]{3,50})/i);
+          if (matchSchool) school = matchSchool[0].trim();
+        }
+
+        for (const st of savedTeachers) {
+          if (cleanTeacherName(txt).includes(cleanTeacherName(st))) {
+            if (!teachers.includes(st)) teachers.unshift(st);
+            if (!teacher) teacher = st;
+            break;
+          }
+        }
+
+        if (!teacher && isValidTeacherName(txt)) {
+          if (!/trường|tiểu\s*học|th|thcs|thpt|mầm\s*non|khối|lớp|năm\s*học|học\s*kỳ|hệ\s*thống|đăng\s*xuất|thoát|cài\s*đặt|hướng\s*dẫn|báo\s*cáo|thống\s*kê|desktop|bàn\s*làm\s*việc|start|system/i.test(txt)) {
+            teacher = txt;
+            if (!teachers.includes(txt)) teachers.push(txt);
           }
         }
       }

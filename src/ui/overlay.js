@@ -2167,9 +2167,25 @@
       }).catch(() => {});
     }
 
-    // Kiểm tra bản quyền ngay khi khởi tạo
+    // Kiểm tra bản quyền ngay khi khởi tạo và tự động kiểm tra định kỳ trong vài giây đầu để đồng bộ từ ExtJS Desktop
     checkLicenseStatus((activated) => {
       updateMainButtonUI();
+    });
+
+    const onUserDetected = () => {
+      if (!isFillingActive) {
+        checkLicenseStatus(() => updateMainButtonUI());
+      }
+    };
+    document.addEventListener('VNEDU_USER_DETECTED', onUserDetected);
+    window.addEventListener('VNEDU_USER_DETECTED', onUserDetected);
+
+    [300, 800, 1800, 3500, 6000].forEach(delay => {
+      setTimeout(() => {
+        if (!isFillingActive) {
+          checkLicenseStatus(() => updateMainButtonUI());
+        }
+      }, delay);
     });
 
     // Tự động nạp dữ liệu đám mây đã lưu và kiểm tra bản cập nhật mới từ xa (GitHub)
