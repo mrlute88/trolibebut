@@ -1246,7 +1246,8 @@
       mappedColumns.forEach(col => {
         const rawTxt = col.combinedText || '';
         const txt = (rawTxt.normalize ? rawTxt.normalize('NFC') : rawTxt).toLowerCase();
-        const isTargetSection = /năng\s*lực|phẩm\s*chất/i.test(txt);
+        const isSubjectSection = /môn\s*học/i.test(txt);
+        const isTargetSection = !isSubjectSection && /năng\s*lực|phẩm\s*chất/i.test(txt);
 
         if (isTargetSection) {
           // 1. Target columns trong khung đỏ:
@@ -1286,7 +1287,24 @@
           const isScore = /điểm|ktđk|đkt/i.test(txt);
           const isRating = /mức|đạt|xl/i.test(txt) || !isScore;
 
-          if (/tiếng\s*việt/i.test(txt)) {
+          // Phân định chính xác Tin học và Công nghệ (kể cả khi header gộp "Tin học và Công nghệ (Tin học)")
+          const isTinHoc = /\(\s*(?:tin\s*học|th)\s*\)/i.test(txt) ||
+                           /tin\s*học\s*\)?$/i.test(txt.trim()) ||
+                           (!/công\s*nghệ/i.test(txt) && /tin\s*học/i.test(txt)) ||
+                           (col.bottomText && /tin\s*học/i.test(col.bottomText) && !/công\s*nghệ/i.test(col.bottomText));
+
+          const isCongNghe = /\(\s*(?:công\s*nghệ|cn)\s*\)/i.test(txt) ||
+                             /công\s*nghệ\s*\)?$/i.test(txt.trim()) ||
+                             (!/tin\s*học/i.test(txt) && /công\s*nghệ/i.test(txt)) ||
+                             (col.bottomText && /công\s*nghệ/i.test(col.bottomText) && !/tin\s*học/i.test(col.bottomText));
+
+          if (isTinHoc) {
+            if (isScore) subjectColumns['Tin học__score'] = col;
+            else if (isRating) subjectColumns['Tin học__rating'] = col;
+          } else if (isCongNghe) {
+            if (isScore) subjectColumns['Công nghệ__score'] = col;
+            else if (isRating) subjectColumns['Công nghệ__rating'] = col;
+          } else if (/tiếng\s*việt/i.test(txt)) {
             if (isScore) subjectColumns['Tiếng Việt__score'] = col;
             else if (isRating) subjectColumns['Tiếng Việt__rating'] = col;
           } else if (/toán/i.test(txt)) {
@@ -1310,22 +1328,6 @@
             subjectColumns['Âm nhạc__rating'] = col;
           } else if (/mĩ\s*thuật|mỹ\s*thuật/i.test(txt)) {
             subjectColumns['Mĩ thuật__rating'] = col;
-          } else if (/tin\s*học/i.test(txt) && /công\s*nghệ/i.test(txt)) {
-            // Header chứa cả 2 cụm từ (ví dụ: "Tin học và Công nghệ (Công nghệ)") -> kiểm tra phân môn con
-            const isSubCN = /\(\s*công\s*nghệ\s*\)/i.test(txt) || /công\s*nghệ/i.test(col.bottomText || '');
-            if (isSubCN) {
-              if (isScore) subjectColumns['Công nghệ__score'] = col;
-              else if (isRating) subjectColumns['Công nghệ__rating'] = col;
-            } else {
-              if (isScore) subjectColumns['Tin học__score'] = col;
-              else if (isRating) subjectColumns['Tin học__rating'] = col;
-            }
-          } else if (/tin\s*học/i.test(txt)) {
-            if (isScore) subjectColumns['Tin học__score'] = col;
-            else if (isRating) subjectColumns['Tin học__rating'] = col;
-          } else if (/công\s*nghệ/i.test(txt)) {
-            if (isScore) subjectColumns['Công nghệ__score'] = col;
-            else if (isRating) subjectColumns['Công nghệ__rating'] = col;
           } else if (/thể\s*chất|gdtc/i.test(txt)) {
             subjectColumns['Giáo dục thể chất__rating'] = col;
           } else if (/tiếng\s*dân\s*tộc|tiếng\s*dt|dân\s*tộc/i.test(txt)) {
@@ -1461,6 +1463,12 @@
 
           if (isExempted) {
             // Học sinh được Miễn giảm môn này -> Được tính là đã có dữ liệu hợp lệ
+            continue;
+          }
+
+          // Ở Khối 1, 2, 3 giữa kì (không thi định kỳ) thì không bắt buộc có cột điểm nếu đã có mức đạt được
+          const isMidTermLowerGradeScore = parseInt(detectedGrade, 10) <= 3 && subProp === 'score' && !!studentSubjects[subName]?.rating;
+          if (isMidTermLowerGradeScore) {
             continue;
           }
 

@@ -89,11 +89,15 @@
     const numGrade = parseInt(g, 10);
     const subMap = studentRowData?.subjects || {};
 
-    // Helper trích xuất thông tin môn học
-    function getSub(nameKeywords) {
+    // Helper trích xuất thông tin môn học với loại trừ chéo an toàn
+    function getSub(nameKeywords, excludeKeywords = []) {
       if (!Array.isArray(nameKeywords)) nameKeywords = [nameKeywords];
+      if (!Array.isArray(excludeKeywords)) excludeKeywords = [excludeKeywords];
       for (const [key, val] of Object.entries(subMap)) {
         const cleanKey = key.toLowerCase().trim();
+        const hasExcluded = excludeKeywords.some(ex => cleanKey.includes(ex.toLowerCase()));
+        if (hasExcluded) continue;
+
         for (const kw of nameKeywords) {
           if (cleanKey.includes(kw.toLowerCase())) {
             const rawScore = val?.score;
@@ -110,7 +114,7 @@
       return { rating: null, score: null, raw: null };
     }
 
-    // Bóc tách từng môn học
+    // Bóc tách từng môn học với cơ chế phân định an toàn giữa Tin học và Công nghệ
     const tv = getSub(['tiếng việt', 't.việt', 'tv']);
     const toan = getSub(['toán']);
     const tnxh = getSub(['tự nhiên và xã hội', 'tn-xh', 'tnxh', 'tự nhiên']);
@@ -118,8 +122,8 @@
     const lsdl = getSub(['lịch sử và địa lí', 'ls-đl', 'lsdl', 'lịch sử', 'địa lí']);
     const nn1 = getSub(['tiếng anh', 'ngoại ngữ', 'ngoại ngữ 1', 'nn1', 'ta']);
     const tdt = getSub(['tiếng dân tộc', 'tiếng dt', 'dân tộc', 'tdt']);
-    const tin = getSub(['tin học', 'cntt']);
-    const cn = getSub(['công nghệ']);
+    const tin = getSub(['tin học', 'cntt'], ['(công nghệ)', '(cn)']);
+    const cn = getSub(['công nghệ'], ['(tin học)', '(th)']);
     const dd = getSub(['đạo đức', 'đđ']);
     const an = getSub(['âm nhạc']);
     const mt = getSub(['mĩ thuật', 'mỹ thuật']);
@@ -171,7 +175,7 @@
     let nlNgonNgu = 'Đ';
     if (tv.rating === 'C' || (tv.score !== null && tv.score < 5.0)) {
       nlNgonNgu = 'C';
-    } else if (tv.rating === 'T' && (tv.score === null || tv.score >= 9.0)) {
+    } else if (tv.rating === 'T' || (tv.score !== null && tv.score >= 9.0)) {
       nlNgonNgu = 'T';
     } else {
       nlNgonNgu = 'Đ';
@@ -181,7 +185,7 @@
     let nlTinhToan = 'Đ';
     if (toan.rating === 'C' || (toan.score !== null && toan.score < 5.0)) {
       nlTinhToan = 'C';
-    } else if (toan.rating === 'T' && (toan.score === null || toan.score >= 9.0)) {
+    } else if (toan.rating === 'T' || (toan.score !== null && toan.score >= 9.0)) {
       nlTinhToan = 'T';
     } else {
       nlTinhToan = 'Đ';
@@ -220,7 +224,7 @@
     if (numGrade >= 3) {
       if (cn.rating === 'C' || (cn.score !== null && cn.score < 5.0)) {
         nlCongNghe = 'C';
-      } else if (cn.rating === 'T' && (cn.score === null || cn.score >= 9.0)) {
+      } else if (cn.rating === 'T' || (cn.score !== null && cn.score >= 9.0)) {
         nlCongNghe = 'T';
       } else {
         nlCongNghe = 'Đ';
@@ -236,7 +240,7 @@
     if (numGrade >= 3) {
       if (tin.rating === 'C' || (tin.score !== null && tin.score < 5.0)) {
         nlTinHoc = 'C';
-      } else if (tin.rating === 'T' && (tin.score === null || tin.score >= 9.0)) {
+      } else if (tin.rating === 'T' || (tin.score !== null && tin.score >= 9.0)) {
         nlTinHoc = 'T';
       } else {
         nlTinHoc = 'Đ';
@@ -277,14 +281,14 @@
     // Nguyên tắc: Xét C trước -> Xét T -> Mặc định Đ
     // =========================================================================
 
-    // 1. Tự chủ và tự học
+    // 1. Tự chủ và tự học (Chuẩn theo Bo_Quy_Tac_Suy_Luan_TT27_Chuan_Hoa.docx)
     let nlTuChu = 'Đ';
     // Xét C: Cả Toán và TV = C HOẶC có từ 2 môn trở lên xếp mức C
     if ((toan.rating === 'C' && tv.rating === 'C') || countC >= 2) {
       nlTuChu = 'C';
     }
-    // Xét T: Không có môn C VÀ HĐTN = T VÀ >= 60% tổng số môn đạt T (bắt buộc Toán hoặc TV phải đạt T)
-    else if (countC === 0 && hdtn.rating === 'T' && percentT >= 60.0 && (toan.rating === 'T' || tv.rating === 'T')) {
+    // Xét T: Không có môn C VÀ (Cả Toán & TV đều là T HOẶC có 1 môn H nhưng >= 80% tổng số môn đạt T)
+    else if (countC === 0 && ((toan.rating === 'T' && tv.rating === 'T') || (countH <= 1 && percentT >= 80.0))) {
       nlTuChu = 'T';
     }
     // Mặc định: Đ
@@ -292,14 +296,14 @@
       nlTuChu = 'Đ';
     }
 
-    // 2. Giao tiếp và hợp tác
+    // 2. Giao tiếp và hợp tác (Chuẩn theo Bo_Quy_Tac_Suy_Luan_TT27_Chuan_Hoa.docx)
     let nlGiaoTiep = 'Đ';
     // Xét C: HĐTN = C VÀ TV = C HOẶC có từ 3 môn trở lên xếp mức C
     if ((hdtn.rating === 'C' && tv.rating === 'C') || countC >= 3) {
       nlGiaoTiep = 'C';
     }
-    // Xét T: Không có môn C VÀ cả HĐTN và Đạo đức đều đạt T VÀ >= 50% tổng số môn đạt T
-    else if (countC === 0 && hdtn.rating === 'T' && dd.rating === 'T' && percentT >= 50.0) {
+    // Xét T: Không có môn C VÀ (Toán hoặc TV đạt T) VÀ đa số các môn đạt T (>= 50%)
+    else if (countC === 0 && (toan.rating === 'T' || tv.rating === 'T') && percentT >= 50.0) {
       nlGiaoTiep = 'T';
     }
     // Mặc định: Đ
@@ -307,14 +311,15 @@
       nlGiaoTiep = 'Đ';
     }
 
-    // 3. Giải quyết vấn đề và sáng tạo
+    // 3. Giải quyết vấn đề và sáng tạo (Chỉ tiêu chặt chẽ nhất theo Bo_Quy_Tac_Suy_Luan_TT27_Chuan_Hoa.docx)
     let nlGQVD = 'Đ';
     // Xét C: Cả Toán và TV = C HOẶC có từ 2 môn trở lên xếp mức C
     if ((toan.rating === 'C' && tv.rating === 'C') || countC >= 2) {
       nlGQVD = 'C';
     }
-    // Xét T: Không có môn C VÀ (cả Toán và TV đạt T HOẶC (1 môn T, 1 môn H có điểm = 8 và >= 80% tổng số môn đạt T))
-    else if (countC === 0) {
+    // Xét T (Điều kiện xuất sắc): Không có môn C, không có quá 1 môn phụ bị mức H (countH <= 1)
+    // VÀ cả Toán & TV đều đạt T (hoặc 1 môn T, 1 môn H có điểm >= 8 và >= 80% tổng số môn đạt T)
+    else if (countC === 0 && countH <= 1) {
       const bothMathTvT = (toan.rating === 'T' && tv.rating === 'T');
       const mathScore = toan.score !== null ? toan.score : (toan.rating === 'T' ? 9 : 7);
       const tvScore = tv.score !== null ? tv.score : (tv.rating === 'T' ? 9 : 7);
