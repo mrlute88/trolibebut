@@ -109,7 +109,9 @@
         "icons/icon-16.png",
         "icons/icon-48.png",
         "icons/icon-128.png",
-        "icons/ai-mascot.png"
+        "icons/ai-mascot.png",
+        "icons/tro-li-but.png",
+        "icons/tro li but.png"
       ],
       "matches": [
         "*://*.vnedu.vn/*",

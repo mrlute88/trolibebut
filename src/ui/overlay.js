@@ -1965,6 +1965,7 @@
     shadowRoot.appendChild(styleEl);
 
     const mascotUrl = deps.mascotUrl || ((typeof chrome !== 'undefined' && chrome.runtime?.getURL) ? chrome.runtime.getURL('icons/ai-mascot.png') : '');
+    const peekingMascotUrl = deps.peekingMascotUrl || ((typeof chrome !== 'undefined' && chrome.runtime?.getURL) ? chrome.runtime.getURL('icons/tro-li-but.png') : mascotUrl);
 
     // Tiêm cấu trúc HTML 3D & Mascot
     const shellEl = document.createElement('div');
@@ -2042,7 +2043,7 @@
         <!-- Quả Cầu Bé Bút Thò Mặt Tự Động Ẩn Sau 15s (Peeking Dock Chuẩn Ảnh 2) -->
         <div class="vnedu-peeking-dock" id="vnedu-peeking-dock" title="Bé Bút đang chờ Thầy/Cô! Bấm hoặc rê chuột vào để mở lại" style="display: none;">
           <div class="peeking-dock-bubble">
-            <img class="peeking-dock-img" src="${mascotUrl}" alt="Bé Bút AI" />
+            <img class="peeking-dock-img" id="peeking-dock-img" src="${peekingMascotUrl}" alt="Bé Bút AI" />
           </div>
         </div>
       </div>
