@@ -83,10 +83,22 @@
     return (typeof window !== 'undefined' && window.VnEduLicenseManager) || (activeDeps && activeDeps.LicenseManager);
   }
 
+  let lastCheckLicenseTime = 0;
+  let isCheckingLicense = false;
+
   function checkLicenseStatus(callback) {
     const LM = getLicenseManager();
     if (LM) {
+      const now = Date.now();
+      if (isCheckingLicense && now - lastCheckLicenseTime < 400) {
+        if (callback) callback(isLicensed, currentLicenseRecord, '', currentLicenseDetails);
+        return;
+      }
+      isCheckingLicense = true;
+      lastCheckLicenseTime = now;
+
       LM.checkCurrentLicense({}, (licensed, record, reason, details) => {
+        isCheckingLicense = false;
         isLicensed = licensed;
         currentLicenseRecord = record;
         currentLicenseDetails = details || null;
@@ -2172,15 +2184,13 @@
       updateMainButtonUI();
     });
 
-    const onUserDetected = () => {
+    window.addEventListener('VNEDU_USER_DETECTED', () => {
       if (!isFillingActive) {
         checkLicenseStatus(() => updateMainButtonUI());
       }
-    };
-    document.addEventListener('VNEDU_USER_DETECTED', onUserDetected);
-    window.addEventListener('VNEDU_USER_DETECTED', onUserDetected);
+    });
 
-    [300, 800, 1800, 3500, 6000].forEach(delay => {
+    [600, 2000].forEach(delay => {
       setTimeout(() => {
         if (!isFillingActive) {
           checkLicenseStatus(() => updateMainButtonUI());

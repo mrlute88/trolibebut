@@ -415,13 +415,6 @@
       }
     }
 
-    // Yêu cầu MAIN world (page-bridge-main.js) quét bộ nhớ ExtJS nếu chưa quét
-    try {
-      if (typeof document !== 'undefined') {
-        document.dispatchEvent(new CustomEvent('VNEDU_REQUEST_USER_SCAN'));
-      }
-    } catch (e) {}
-
     // 0. ƯU TIÊN SỐ 0: Đọc kết quả nhận diện từ MAIN world ExtJS bridge (nếu đã tìm thấy trong bộ nhớ ExtJS)
     if (typeof document !== 'undefined') {
       const dt = document.documentElement.getAttribute('data-vnedu-detected-teacher');
