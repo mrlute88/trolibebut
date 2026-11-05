@@ -99,20 +99,21 @@
   }
 }
 
-/* Mascot Speech Bubble */
+/* Mascot Speech Bubble - Siêu sắc nét, nổi bật trên nền kính mờ */
 .vnedu-mascot-speech {
   position: absolute;
   bottom: calc(100% + 2px);
   white-space: nowrap;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  color: #2563EB;
-  font-size: 10.5px;
-  font-weight: 700;
-  padding: 3px 9px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px -2px rgba(99, 102, 241, 0.28), 0 0 0 1px rgba(224, 231, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: #0F172A !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  padding: 5px 12px !important;
+  border-radius: 14px !important;
+  border: 1.5px solid #93C5FD !important;
+  box-shadow: 0 8px 24px -2px rgba(15, 23, 42, 0.22), 0 0 0 1px rgba(255, 255, 255, 0.9) !important;
   pointer-events: none;
   opacity: 0;
   transform: translateY(4px) scale(0.9);
@@ -127,25 +128,25 @@
   transform: translateX(-50%);
   border-width: 5px;
   border-style: solid;
-  border-color: rgba(255, 255, 255, 0.96) transparent transparent transparent;
+  border-color: #93C5FD transparent transparent transparent !important;
 }
 
-.vnedu-mascot-widget-wrapper:not(.is-collapsed):hover .vnedu-mascot-speech {
+.vnedu-mascot-widget-wrapper:not(.is-peeking-docked):hover .vnedu-mascot-speech {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
 
-/* Tự động ẩn bong bóng nói khi khung thông báo tiến trình đang bật */
+/* Tự động ẩn bong bóng nói khi khung thông báo tiến trình đang bật hoặc khi đang peeking */
 .vnedu-minimal-container.has-active-toast .vnedu-mascot-speech,
 .vnedu-minimal-container:has(#vnedu-status-toast:not([style*="display: none"])) .vnedu-mascot-speech,
-.vnedu-mascot-widget-wrapper.is-collapsed .vnedu-mascot-speech {
+.vnedu-mascot-widget-wrapper.is-peeking-docked .vnedu-mascot-speech {
   display: none !important;
   opacity: 0 !important;
   visibility: hidden !important;
   pointer-events: none !important;
 }
 
-.vnedu-mascot-widget-wrapper:not(.is-collapsed):hover .vnedu-mascot-container {
+.vnedu-mascot-widget-wrapper:not(.is-peeking-docked):hover .vnedu-mascot-container {
   transform: translateX(-50%) translateY(-6px) scale(1.06);
 }
 
@@ -159,10 +160,10 @@
   transform-origin: bottom right;
 }
 
-/* Khi Widget bị thu gọn (Collapsed State): Ẩn sạch toàn bộ giao diện */
-.vnedu-mascot-widget-wrapper.is-collapsed .vnedu-main-interactive-group {
+/* Khi Widget bị thu gọn vào mép phải (Peeking Docked): Ẩn nhóm tương tác chính */
+.vnedu-mascot-widget-wrapper.is-peeking-docked .vnedu-main-interactive-group {
   opacity: 0;
-  transform: scale(0.35) translateY(24px);
+  transform: translateX(120%) scale(0.7);
   pointer-events: none;
   visibility: hidden;
   max-height: 0;
@@ -172,149 +173,71 @@
   overflow: hidden;
 }
 
-/* Nút Con Mắt Apple HIG Toggle Button */
-.vnedu-eye-toggle-btn {
-  padding: 0;
-  margin: 0;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  z-index: 50;
-  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* Vỏ ngoài và Lõi kính mờ Apple */
-.eye-btn-bezel {
-  display: inline-flex;
-  padding: 2px;
-  background: rgba(255, 255, 255, 0.88);
-  border: 1px solid rgba(255, 255, 255, 0.95);
-  border-radius: 9999px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12), inset 0 1px 1px #ffffff;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.eye-btn-core {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  background: linear-gradient(135deg, #FFFFFF 0%, #EFF6FF 100%);
-  color: #0A84FF;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Khi đang MỞ (Expanded): Nút con mắt nhỏ xinh (24px) tại đúng vị trí đốm đỏ (lệch phải 48px, cách đỉnh nút 8px) */
-.vnedu-eye-toggle-btn.state-expanded {
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: calc(50% + 48px);
-  width: 24px;
-  height: 24px;
-}
-
-.vnedu-eye-toggle-btn.state-expanded .eye-btn-bezel {
-  width: 24px;
-  height: 24px;
-  padding: 1.5px;
-}
-
-.vnedu-eye-toggle-btn.state-expanded .eye-btn-core {
-  width: 100%;
-  height: 100%;
-  font-size: 11.5px;
-}
-
-.vnedu-eye-toggle-btn.state-expanded:hover {
-  transform: scale(1.18);
-}
-
-.vnedu-eye-toggle-btn.state-expanded:hover .eye-btn-core {
-  background: #FFFFFF;
-  color: #5E5CE6;
-  box-shadow: 0 0 10px rgba(94, 92, 230, 0.4);
-}
-
-/* Khi đang ẨN (Collapsed): Chỉ còn duy nhất quả cầu con mắt Apple 3D (44px) */
-.vnedu-eye-toggle-btn.state-collapsed {
-  position: relative;
-  top: 0;
-  left: 0;
-  bottom: 0;
+/* ============================================================ */
+/* 🐣 CHẾ ĐỘ THÒ MẶT TỪ MÉP PHẢI (PEEKING DOCK - CHUẨN ẢNH 2)    */
+/* ============================================================ */
+.vnedu-peeking-dock {
+  position: fixed;
   right: 0;
-  width: 44px;
-  height: 44px;
-  animation: appleBreathingGlow 4s ease-in-out infinite;
+  z-index: 2147483647;
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
+  animation: peekingDockSlideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.vnedu-eye-toggle-btn.state-collapsed .eye-btn-bezel {
-  width: 44px;
-  height: 44px;
-  padding: 2.5px;
-  background: rgba(255, 255, 255, 0.55);
-  border: 1.5px solid rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  box-shadow: 0 8px 24px -4px rgba(0, 113, 227, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+@keyframes peekingDockSlideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.vnedu-eye-toggle-btn.state-collapsed .eye-btn-core {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #0A84FF 0%, #5E5CE6 100%);
-  color: #FFFFFF;
-  font-size: 18px;
+.peeking-dock-bubble {
+  width: 58px;
+  height: 58px;
+  border-radius: 50% 0 0 50%;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  border-right: none;
+  box-shadow: -6px 8px 24px -2px rgba(99, 102, 241, 0.35), inset 2px 2px 4px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 6px;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: peekPulse 4s ease-in-out infinite;
 }
 
-.vnedu-eye-toggle-btn.state-collapsed:hover {
-  transform: scale(1.12);
+@keyframes peekPulse {
+  0%, 100% {
+    box-shadow: -6px 8px 24px -2px rgba(99, 102, 241, 0.35), inset 2px 2px 4px #ffffff;
+  }
+  50% {
+    box-shadow: -8px 10px 30px 0px rgba(14, 165, 233, 0.5), inset 2px 2px 5px #ffffff;
+  }
 }
 
-.vnedu-eye-toggle-btn.state-collapsed:hover .eye-btn-bezel {
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 12px 32px -4px rgba(94, 92, 230, 0.5), inset 0 1.5px 2px rgba(255, 255, 255, 0.95);
+.peeking-dock-bubble:hover {
+  width: 68px;
+  transform: translateX(-4px) scale(1.06);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: -8px 12px 28px -2px rgba(99, 102, 241, 0.45);
 }
 
-.vnedu-eye-toggle-btn.state-collapsed:hover .eye-btn-core {
-  background: linear-gradient(135deg, 
-    rgba(10, 132, 255, 0.8) 0%, 
-    rgba(94, 92, 230, 0.8) 50%, 
-    rgba(100, 210, 255, 0.8) 100%);
-  background-size: 240% 240%;
-  animation: appleAuroraShift 5s ease-in-out infinite;
-}
-
-/* Tooltip Apple Style */
-.eye-toggle-tooltip {
-  position: absolute;
-  right: calc(100% + 8px);
-  top: 50%;
-  transform: translateY(-50%) scale(0.9);
-  white-space: nowrap;
-  background: rgba(28, 28, 30, 0.92);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  color: #FFFFFF;
-  font-size: 11px;
-  font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1);
+.peeking-dock-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
   pointer-events: none;
-  opacity: 0;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  z-index: 100;
-}
-
-.vnedu-eye-toggle-btn:hover .eye-toggle-tooltip {
-  opacity: 1;
-  transform: translateY(-50%) scale(1);
+  user-select: none;
 }
 
 /* Action Group */
@@ -406,29 +329,30 @@
 }
 
 .btn-pill-text {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   font-size: 13.5px;
-  font-weight: 800;
-  letter-spacing: 0.2px;
+  font-weight: 900 !important;
+  letter-spacing: 0.3px;
   white-space: nowrap;
-  text-shadow: 0 1px 3px rgba(30, 27, 75, 0.45);
+  text-shadow: 0 1.5px 3px rgba(15, 23, 42, 0.95), 0 2px 8px rgba(15, 23, 42, 0.6) !important;
   font-family: inherit;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
   transition: text-shadow 0.25s ease;
 }
 
 .btn-pill-sparkle-line {
   font-size: 7.5px;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.95);
   letter-spacing: 1px;
   margin-top: -2px;
   line-height: 1;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 2px rgba(15, 23, 42, 0.8);
 }
 
 /* ================================================================= */
 /* 🍎 HIỆU ỨNG KÍNH MỜ (FROSTED GLASS) & CHUYỂN MÀU DỊU MẮT CHUẨN APPLE */
 /* ================================================================= */
-.vnedu-mascot-widget-wrapper:not(.is-collapsed):hover .btn-pill-outer-bezel,
+.vnedu-mascot-widget-wrapper:not(.is-peeking-docked):hover .btn-pill-outer-bezel,
 .vnedu-btn-pill-3d:hover .btn-pill-outer-bezel {
   background: rgba(255, 255, 255, 0.45) !important;
   backdrop-filter: blur(24px) saturate(180%);
@@ -440,7 +364,7 @@
   transform: translateY(-2px) scale(1.02);
 }
 
-.vnedu-mascot-widget-wrapper:not(.is-collapsed):hover .btn-pill-inner-core,
+.vnedu-mascot-widget-wrapper:not(.is-peeking-docked):hover .btn-pill-inner-core,
 .vnedu-btn-pill-3d:hover .btn-pill-inner-core {
   background: linear-gradient(135deg, 
     rgba(10, 132, 255, 0.68) 0%, 
@@ -456,12 +380,12 @@
     inset 0 -1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.vnedu-mascot-widget-wrapper:not(.is-collapsed):hover .btn-pill-text,
+.vnedu-mascot-widget-wrapper:not(.is-peeking-docked):hover .btn-pill-text,
 .vnedu-btn-pill-3d:hover .btn-pill-text {
-  text-shadow: 0 0 14px rgba(255, 255, 255, 0.95), 0 2px 8px rgba(0, 80, 180, 0.5);
+  text-shadow: 0 1.5px 4px rgba(15, 23, 42, 1), 0 3px 10px rgba(15, 23, 42, 0.8) !important;
 }
 
-.vnedu-mascot-widget-wrapper:not(.is-collapsed):hover .btn-pill-icon,
+.vnedu-mascot-widget-wrapper:not(.is-peeking-docked):hover .btn-pill-icon,
 .vnedu-btn-pill-3d:hover .btn-pill-icon {
   transform: scale(1.12);
 }
@@ -477,7 +401,7 @@
 }
 
 .vnedu-btn-pill-3d.vnedu-btn-unlicensed:hover .btn-pill-inner-core,
-.vnedu-mascot-widget-wrapper:not(.is-collapsed):hover .vnedu-btn-pill-3d.vnedu-btn-unlicensed .btn-pill-inner-core {
+.vnedu-mascot-widget-wrapper:not(.is-peeking-docked):hover .vnedu-btn-pill-3d.vnedu-btn-unlicensed .btn-pill-inner-core {
   background: linear-gradient(135deg, 
     rgba(10, 132, 255, 0.68) 0%, 
     rgba(94, 92, 230, 0.68) 50%, 
@@ -537,7 +461,7 @@
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
 }
 
-.vnedu-mascot-widget-wrapper:not(.is-collapsed):hover .btn-key-outer-bezel,
+.vnedu-mascot-widget-wrapper:not(.is-peeking-docked):hover .btn-key-outer-bezel,
 .vnedu-btn-key-3d:hover .btn-key-outer-bezel {
   background: rgba(255, 255, 255, 0.45) !important;
   backdrop-filter: blur(24px) saturate(180%);
@@ -547,14 +471,17 @@
   transform: translateY(-2px) scale(1.05);
 }
 
-.vnedu-mascot-widget-wrapper:not(.is-collapsed):hover .btn-key-inner-core,
+.vnedu-mascot-widget-wrapper:not(.is-peeking-docked):hover .btn-key-inner-core,
 .vnedu-btn-key-3d:hover .btn-key-inner-core {
   background: linear-gradient(135deg, rgba(94, 92, 230, 0.72) 0%, rgba(100, 210, 255, 0.72) 100%) !important;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
 
-.vnedu-mascot-widget-wrapper:not(.is-collapsed):hover .vnedu-mascot-container {
+.vnedu-mascot-widget-wrapper:not(.is-peeking-docked):hover .vnedu-mascot-container {
+  opacity: 0.82;
+  filter: drop-shadow(0 8px 20px rgba(94, 92, 230, 0.35));
+}
   opacity: 0.82;
   filter: drop-shadow(0 8px 20px rgba(94, 92, 230, 0.35));
 }

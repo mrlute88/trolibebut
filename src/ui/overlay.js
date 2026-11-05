@@ -22,6 +22,7 @@
   let currentLicenseDetails = null;
   let isFillingActive = false;
   let currentAskResolve = null;
+  let resetIdleTimer = () => {};
 
   function sleepInterruptible(ms) {
     return new Promise((resolve) => {
@@ -348,6 +349,7 @@
     }
 
     toast.style.display = 'flex';
+    if (typeof resetIdleTimer === 'function') resetIdleTimer();
   }
 
   function hideToast() {
@@ -356,6 +358,7 @@
     const shellEl = shadowRoot.getElementById('vnedu-minimal-container');
     if (shellEl) shellEl.classList.remove('has-active-toast');
     if (toast) toast.style.display = 'none';
+    if (typeof resetIdleTimer === 'function') resetIdleTimer();
   }
 
   /**
@@ -603,6 +606,7 @@
     if (modal) {
       modal.style.display = 'flex';
       setTimeout(() => inputEl?.focus(), 100);
+      if (typeof resetIdleTimer === 'function') resetIdleTimer();
     }
   }
 
@@ -610,6 +614,7 @@
     if (!shadowRoot) return;
     const modal = shadowRoot.getElementById('vnedu-license-modal');
     if (modal) modal.style.display = 'none';
+    if (typeof resetIdleTimer === 'function') resetIdleTimer();
   }
 
   /**
@@ -1569,6 +1574,7 @@
 
       function onMouseMove(e) {
         if (!isDragging) return;
+        if (typeof resetIdleTimer === 'function') resetIdleTimer();
         const dx = e.clientX - startX;
         const dy = e.clientY - startY;
 
@@ -1597,6 +1603,7 @@
         mascotContainer.style.cursor = 'grab';
         document.removeEventListener('mousemove', onMouseMove);
         document.removeEventListener('mouseup', onMouseUp);
+        if (typeof resetIdleTimer === 'function') resetIdleTimer();
 
         if (hasDragged) {
           const rect = shellEl.getBoundingClientRect();
@@ -1626,136 +1633,93 @@
     }
 
     // =========================================================================
-    // NÚT CON MẮT: ẨN / HIỆN TOÀN BỘ GIAO DIỆN CHUẨN APPLE HIG
+    // ⏱️ CƠ CHẾ TỰ ĐỘNG THU GỌN VÀO MÉP PHẢI SAU 15 GIÂY (PEEKING DOCK)
     // =========================================================================
-    const eyeBtn = shadowRoot.getElementById('vnedu-eye-toggle-btn');
-    const eyeIcon = shadowRoot.getElementById('eye-toggle-icon');
-    const eyeTooltip = shadowRoot.getElementById('eye-toggle-tooltip');
+    const peekingDockEl = shadowRoot.getElementById('vnedu-peeking-dock');
     const mascotWrapper = shadowRoot.getElementById('vnedu-mascot-widget-wrapper');
+    const licenseModal = shadowRoot.getElementById('vnedu-license-modal');
+    
+    let isPeeking = false;
+    let idleTimer = null;
+    const IDLE_TIMEOUT_MS = 15000; // 15 giây tự động thu gọn nếu không tương tác
 
-    let isCollapsed = false;
+    function setPeekingState(peeking) {
+      isPeeking = !!peeking;
+      if (isPeeking) {
+        if (mascotWrapper) mascotWrapper.classList.add('is-peeking-docked');
+        if (peekingDockEl) {
+          if (shellEl && shellEl.style.bottom) {
+            peekingDockEl.style.bottom = shellEl.style.bottom;
+          } else {
+            peekingDockEl.style.bottom = '110px';
+          }
+          peekingDockEl.style.display = 'block';
+        }
+      } else {
+        if (mascotWrapper) mascotWrapper.classList.remove('is-peeking-docked');
+        if (peekingDockEl) {
+          peekingDockEl.style.display = 'none';
+        }
+      }
+    }
+
+    function isModalOrProgressActive() {
+      if (isFillingActive) return true;
+      if (licenseModal && licenseModal.style.display !== 'none') return true;
+      const confirmSaveModal = shadowRoot.getElementById('vnedu-confirm-save-modal');
+      if (confirmSaveModal && confirmSaveModal.style.display !== 'none') return true;
+      const toast = shadowRoot.getElementById('vnedu-status-toast');
+      if (toast && toast.style.display !== 'none') return true;
+      return false;
+    }
+
+    resetIdleTimer = function() {
+      if (idleTimer) {
+        clearTimeout(idleTimer);
+        idleTimer = null;
+      }
+
+      // Nếu đang ở trạng thái peeking, khi có hoạt động người dùng thì mở lại toàn bộ UI
+      if (isPeeking) {
+        setPeekingState(false);
+      }
+
+      // Không tự ẩn nếu đang điền điểm, mở modal hoặc toast đang hiển thị
+      if (isModalOrProgressActive()) return;
+
+      idleTimer = setTimeout(() => {
+        if (!isModalOrProgressActive()) {
+          setPeekingState(true);
+        }
+      }, IDLE_TIMEOUT_MS);
+    };
+
+    // Sự kiện đánh thức khi chạm hoặc rê chuột vào quả cầu Bé Bút ở mép phải
+    if (peekingDockEl) {
+      peekingDockEl.addEventListener('mouseenter', () => {
+        resetIdleTimer();
+      });
+      peekingDockEl.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        resetIdleTimer();
+      });
+    }
+
+    // Lắng nghe tương tác chuột trên widget để reset đồng hồ 15s
+    if (mascotWrapper) {
+      mascotWrapper.addEventListener('mouseenter', resetIdleTimer);
+      mascotWrapper.addEventListener('mousemove', resetIdleTimer);
+      mascotWrapper.addEventListener('mousedown', resetIdleTimer);
+    }
+
+    // Dọn dẹp trạng thái lưu thu gọn cũ (nếu có từ phiên bản trước)
     try {
-      isCollapsed = localStorage.getItem('vnedu_ui_collapsed') === 'true';
+      localStorage.removeItem('vnedu_ui_collapsed');
     } catch (e) {}
 
-    function setCollapsedState(collapsed, saveStorage = true) {
-      isCollapsed = !!collapsed;
-      if (mascotWrapper) {
-        if (isCollapsed) {
-          mascotWrapper.classList.add('is-collapsed');
-        } else {
-          mascotWrapper.classList.remove('is-collapsed');
-        }
-      }
-      if (eyeBtn) {
-        if (isCollapsed) {
-          eyeBtn.className = 'vnedu-eye-toggle-btn state-collapsed';
-          if (eyeIcon) eyeIcon.textContent = '👁️';
-          if (eyeTooltip) eyeTooltip.textContent = 'Mở Trợ lí Bé Bút (vnEdu)';
-          eyeBtn.setAttribute('title', 'Mở Trợ lí Bé Bút (vnEdu)');
-        } else {
-          eyeBtn.className = 'vnedu-eye-toggle-btn state-expanded';
-          if (eyeIcon) eyeIcon.textContent = '👁️‍🗨️';
-          if (eyeTooltip) eyeTooltip.textContent = 'Ẩn toàn bộ tiện ích (Giữ màn hình thông thoáng)';
-          eyeBtn.setAttribute('title', 'Ẩn toàn bộ tiện ích (Giữ màn hình thông thoáng)');
-        }
-      }
-      if (saveStorage) {
-        try {
-          localStorage.setItem('vnedu_ui_collapsed', isCollapsed ? 'true' : 'false');
-        } catch (e) {}
-      }
-    }
-
-    // Áp dụng trạng thái ghi nhớ ngay khi khởi tạo
-    setCollapsedState(isCollapsed, false);
-
-    // Kéo thả & Nhấp chuột cho Nút Con Mắt
-    if (eyeBtn && shellEl) {
-      let isDraggingEye = false;
-      let startXEye = 0;
-      let startYEye = 0;
-      let initialRightEye = 28;
-      let initialBottomEye = 110;
-      let hasDraggedEye = false;
-
-      eyeBtn.addEventListener('mousedown', (e) => {
-        if (e.button !== 0) return;
-        e.preventDefault();
-        e.stopPropagation();
-
-        isDraggingEye = true;
-        hasDraggedEye = false;
-        startXEye = e.clientX;
-        startYEye = e.clientY;
-
-        const rect = shellEl.getBoundingClientRect();
-        initialRightEye = window.innerWidth - rect.right;
-        initialBottomEye = window.innerHeight - rect.bottom;
-
-        document.addEventListener('mousemove', onMouseMoveEye);
-        document.addEventListener('mouseup', onMouseUpEye);
-      });
-
-      function onMouseMoveEye(e) {
-        if (!isDraggingEye) return;
-        const dx = e.clientX - startXEye;
-        const dy = e.clientY - startYEye;
-
-        if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
-          hasDraggedEye = true;
-        }
-
-        if (hasDraggedEye) {
-          let newRight = initialRightEye - dx;
-          let newBottom = initialBottomEye - dy;
-
-          const maxRight = Math.max(10, window.innerWidth - 80);
-          const maxBottom = Math.max(10, window.innerHeight - 80);
-
-          newRight = Math.min(Math.max(10, newRight), maxRight);
-          newBottom = Math.min(Math.max(10, newBottom), maxBottom);
-
-          shellEl.style.right = `${newRight}px`;
-          shellEl.style.bottom = `${newBottom}px`;
-        }
-      }
-
-      function onMouseUpEye(e) {
-        if (!isDraggingEye) return;
-        isDraggingEye = false;
-        document.removeEventListener('mousemove', onMouseMoveEye);
-        document.removeEventListener('mouseup', onMouseUpEye);
-
-        if (hasDraggedEye) {
-          const rect = shellEl.getBoundingClientRect();
-          const currentRight = Math.round(window.innerWidth - rect.right);
-          const currentBottom = Math.round(window.innerHeight - rect.bottom);
-          try {
-            localStorage.setItem('vnedu_assistant_pos_v2', JSON.stringify({
-              right: currentRight,
-              bottom: currentBottom
-            }));
-          } catch (err) {}
-        } else {
-          // Người dùng nhấp chuột đơn thuần: Chuyển đổi Ẩn / Hiện giao diện
-          setCollapsedState(!isCollapsed, true);
-        }
-      }
-
-      // Nhấp đúp vào nút con mắt để khôi phục vị trí mặc định
-      eyeBtn.addEventListener('dblclick', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        shellEl.style.right = '28px';
-        shellEl.style.bottom = '110px';
-        try {
-          localStorage.removeItem('vnedu_assistant_pos_v2');
-        } catch (err) {}
-        showToast('✓ Đã khôi phục vị trí mặc định cho Trợ lý AI!', null, false, false);
-        setTimeout(hideToast, 2000);
-      });
-    }
+    // Bắt đầu đếm ngược 15 giây ngay khi nạp giao diện
+    resetIdleTimer();
 
     function submitLicense() {
       const enteredKey = (inputKey?.value || '').trim();
@@ -2075,15 +2039,12 @@
           </div>
         </div>
 
-        <!-- Nút Con Mắt Thu Gọn / Mở Rộng Chuẩn Apple HIG -->
-        <button class="vnedu-eye-toggle-btn state-expanded" id="vnedu-eye-toggle-btn" title="Ẩn toàn bộ tiện ích (Giữ màn hình thông thoáng)">
-          <span class="eye-btn-bezel">
-            <span class="eye-btn-core">
-              <span class="eye-icon" id="eye-toggle-icon">👁️‍🗨️</span>
-            </span>
-          </span>
-          <span class="eye-toggle-tooltip" id="eye-toggle-tooltip">Ẩn toàn bộ tiện ích</span>
-        </button>
+        <!-- Quả Cầu Bé Bút Thò Mặt Tự Động Ẩn Sau 15s (Peeking Dock Chuẩn Ảnh 2) -->
+        <div class="vnedu-peeking-dock" id="vnedu-peeking-dock" title="Bé Bút đang chờ Thầy/Cô! Bấm hoặc rê chuột vào để mở lại" style="display: none;">
+          <div class="peeking-dock-bubble">
+            <img class="peeking-dock-img" src="${mascotUrl}" alt="Bé Bút AI" />
+          </div>
+        </div>
       </div>
 
       <!-- Cửa sổ kích hoạt bản quyền -->
