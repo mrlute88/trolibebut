@@ -389,15 +389,30 @@
 
   /**
    * Tự động phát hiện Tên Giáo Viên & Tên Trường học từ giao diện trang web vnEdu
-   * Quét header, user profile, banner, document.title, top window...
+   * Quét header, user profile, banner, document.title, top window, ExtJS menu & taskbar...
    */
-  function detectVnEduTeacherAndSchool() {
+  function detectVnEduTeacherAndSchool(options = {}) {
     let teacher = '';
     let teachers = [];
     let school = '';
 
     if (typeof document === 'undefined') {
       return { teacher: '', teachers: [], school: '' };
+    }
+
+    // Danh sách giáo viên đã lưu bản quyền trên máy để đối soát chéo (nếu có)
+    const savedTeachers = [];
+    if (options && options.licensesMap) {
+      Object.values(options.licensesMap).forEach(r => {
+        if (r && r.teacher && !r.isMaster && !savedTeachers.includes(r.teacher)) {
+          savedTeachers.push(r.teacher);
+        }
+      });
+    }
+    if (options && options.currentRecord && options.currentRecord.teacher && !options.currentRecord.isMaster) {
+      if (!savedTeachers.includes(options.currentRecord.teacher)) {
+        savedTeachers.push(options.currentRecord.teacher);
+      }
     }
 
     const docs = [document];
@@ -447,7 +462,54 @@
         }
       }
 
-      // 2. ƯU TIÊN SỐ 2: Quét thông tin tài khoản / Header / User Profile vnEdu
+      // 2. ƯU TIÊN SỐ 2: Quét ExtJS Popup Menu & Dropdown (.x-menu, .x-menu-item-text, .x-menu-list-item)
+      // Thường chứa danh sách tài khoản, trường học, giáo viên phụ trách (như trong ảnh chụp thực tế trên Desktop vnEdu)
+      const menuEls = doc.querySelectorAll('.x-menu-item-text, .x-menu-item, .x-menu-list-item, .x-menu a, .x-menu-check-item, .x-menu span, .ux-taskbar .x-btn-text, .ux-taskbar-item, .x-btn-text');
+      for (const el of menuEls) {
+        const txt = (el.innerText || el.textContent || '').trim();
+        if (!txt || txt.length < 3 || txt.length > 80) continue;
+
+        // Nhận diện trường học
+        if (!school && /trường|tiểu\s*học|th|thcs|thpt|mầm\s*non/i.test(txt)) {
+          const matchSchool = txt.match(/(?:trường\s*(?:tiểu\s*học|th|thcs|thpt|mầm\s*non)?\s*[^|\n\r\-•]{3,50})/i);
+          if (matchSchool) {
+            school = matchSchool[0].trim();
+          } else {
+            school = txt;
+          }
+        }
+
+        // Đối soát nếu khớp với tên giáo viên đã kích hoạt bản quyền trên máy
+        for (const st of savedTeachers) {
+          if (cleanTeacherName(txt) === cleanTeacherName(st)) {
+            if (!teachers.includes(st)) teachers.unshift(st);
+            if (!teacher) teacher = st;
+            break;
+          }
+        }
+
+        // Nhận diện giáo viên từ tên hợp lệ
+        if (!teacher && isValidTeacherName(txt)) {
+          if (!/trường|tiểu\s*học|th|thcs|thpt|mầm\s*non|khối|lớp|năm\s*học|học\s*kỳ|hệ\s*thống|đăng\s*xuất|thoát|cài\s*đặt|hướng\s*dẫn|báo\s*cáo|thống\s*kê|desktop|bàn\s*làm\s*việc|start/i.test(txt)) {
+            teacher = txt;
+            if (!teachers.includes(txt)) teachers.push(txt);
+          }
+        }
+      }
+
+      // Quét đối soát tên giáo viên đã lưu bản quyền trên toàn bộ body
+      if (savedTeachers.length > 0 && doc.body) {
+        const bodyTxt = doc.body.innerText || doc.body.textContent || '';
+        for (const st of savedTeachers) {
+          if (bodyTxt.includes(st)) {
+            if (!teachers.includes(st)) teachers.unshift(st);
+            if (!teacher) teacher = st;
+            break;
+          }
+        }
+      }
+
+      // 3. ƯU TIÊN SỐ 3: Quét thông tin tài khoản / Header / User Profile vnEdu
       if (!teacher) {
         const teacherSelectors = [
           '#lblFullName',
@@ -482,7 +544,7 @@
         }
       }
 
-      // 3. ƯU TIÊN SỐ 3: Quét theo lời chào "Xin chào: [Tên]"
+      // 4. ƯU TIÊN SỐ 4: Quét theo lời chào "Xin chào: [Tên]"
       if (!teacher) {
         const textElements = Array.from(doc.querySelectorAll('.x-btn-text, .x-toolbar-cell, header, .header, #header, span, div, a'));
         for (const el of textElements) {
@@ -500,7 +562,7 @@
         }
       }
 
-      // 4. ƯU TIÊN SỐ 4: Quét ExtJS Desktop Start Menu & Taskbar vnEdu
+      // 5. ƯU TIÊN SỐ 5: Quét ExtJS Desktop Start Menu & Taskbar vnEdu
       if (!teacher) {
         const startMenuHeader = doc.querySelector('.ux-start-menu-tl .x-window-header-text, .ux-start-menu-header, #ux-start-menu, .x-desktop-taskbar');
         if (startMenuHeader) {
@@ -511,7 +573,7 @@
         }
       }
 
-      // 5. Quét Tên Trường
+      // 6. Quét Tên Trường
       if (!school) {
         // Quét góc dưới thanh taskbar (ví dụ: "Trường Tiểu học...")
         const taskbarStatus = doc.querySelector('.ux-taskbar, .x-statusbar, #statusbar, .ux-taskbar-status, .taskbar');
@@ -775,7 +837,7 @@
       let currSchool = options.currentSchool;
       let detectedTeachers = options.teachers || [];
 
-      const detected = detectVnEduTeacherAndSchool();
+      const detected = detectVnEduTeacherAndSchool({ ...options, licensesMap, currentRecord });
       if (!currTeacher && detected.teacher) currTeacher = detected.teacher;
       if (!currSchool && detected.school) currSchool = detected.school;
       if (detectedTeachers.length === 0 && detected.teachers && detected.teachers.length > 0) {

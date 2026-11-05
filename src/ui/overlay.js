@@ -249,12 +249,27 @@
       btnMain.className = 'vnedu-btn-pill-3d';
       const teacher = currentLicenseRecord?.teacher || currentLicenseDetails?.currentTeacher || '';
 
-      // Kiểm tra xem có đang mở Bảng tổng hợp Năng lực - Phẩm chất hay không
+      // 1. Kiểm tra xem có đang mở Bảng tổng hợp Năng lực - Phẩm chất hay không
       let isSummaryGrid = false;
       try {
         const gridAdapter = window.VnEduGridAdapter ? new window.VnEduGridAdapter() : null;
         if (gridAdapter && typeof gridAdapter.isCompetencySummaryGrid === 'function') {
           isSummaryGrid = gridAdapter.isCompetencySummaryGrid();
+        }
+      } catch (e) {}
+
+      // 2. Kiểm tra xem có đang ở trong màn hình Sổ điểm / Sổ nhận xét hay không
+      let isAssessmentPage = false;
+      try {
+        const pageDetector = (activeDeps && activeDeps.PageDetector) || (typeof window !== 'undefined' && window.VnEduPageDetector);
+        if (pageDetector && typeof pageDetector.detectCurrentPage === 'function') {
+          const pStatus = pageDetector.detectCurrentPage();
+          if (pStatus && pStatus.isAssessmentPage) {
+            isAssessmentPage = true;
+          }
+        }
+        if (!isAssessmentPage) {
+          isAssessmentPage = Boolean(document.querySelector('.x-grid3-row, tbody tr.x-grid-row, .x-grid3-body'));
         }
       } catch (e) {}
 
@@ -265,7 +280,7 @@
         if (mascotSpeech) {
           mascotSpeech.textContent = 'Em đã nhận diện Bảng tổng hợp NL-PC! Bấm để điền nhé ✨';
         }
-      } else {
+      } else if (isAssessmentPage) {
         btnMain.title = teacher
           ? `Trợ lý nhận xét (Đã kích hoạt cho GV: ${teacher})`
           : 'Tự động nhận diện Khối lớp, Môn học và Kỳ kiểm tra trên vnEdu để điền nhận xét';
@@ -274,6 +289,19 @@
         if (mascotSpeech) {
           const shortName = teacher ? teacher.split(' ').slice(-1)[0] : '';
           mascotSpeech.textContent = shortName ? `Chào Thầy/Cô ${shortName}! Sẵn sàng ✨` : 'Em sẵn sàng điền nhận xét! ✨';
+        }
+      } else {
+        // 3. MÀN HÌNH BÀN LÀM VIỆC (DESKTOP) HOẶC NGOÀI SỔ ĐIỂM
+        const shortName = teacher ? teacher.split(' ').slice(-1)[0] : '';
+        btnMain.title = teacher
+          ? `Tài khoản GV: ${teacher} (Bản quyền đã kích hoạt). Vui lòng mở sổ điểm để điền nhận xét.`
+          : 'Bản quyền đã kích hoạt. Vui lòng mở sổ điểm để điền nhận xét.';
+        iconSpan.textContent = '👋';
+        textSpan.textContent = teacher ? `Xin chào ${teacher}` : 'Xin chào Thầy/Cô';
+        if (mascotSpeech) {
+          mascotSpeech.textContent = shortName
+            ? `Em chào Thầy/Cô ${shortName}! Mở sổ điểm để em điền nhé! ✨`
+            : 'Em chào Thầy/Cô! Mở sổ điểm để em điền nhé! ✨';
         }
       }
       if (btnKey) btnKey.style.display = 'inline-flex';
@@ -1448,6 +1476,25 @@
         if (!licensed) {
           openLicenseModal(details);
         } else {
+          // Kiểm tra xem có đang ở trong màn hình Sổ điểm / Sổ nhận xét hay không
+          const pageDetector = (deps && deps.PageDetector) || (typeof window !== 'undefined' && window.VnEduPageDetector);
+          let isAssess = false;
+          if (pageDetector && typeof pageDetector.detectCurrentPage === 'function') {
+            const p = pageDetector.detectCurrentPage();
+            isAssess = p && p.isAssessmentPage;
+          }
+          if (!isAssess) {
+            isAssess = Boolean(document.querySelector('.x-grid3-row, tbody tr.x-grid-row, .x-grid3-body'));
+          }
+
+          if (!isAssess) {
+            const teacherName = record?.teacher || details?.currentTeacher || '';
+            const helloMsg = teacherName ? `👋 Xin chào Thầy/Cô ${teacherName}!` : '👋 Xin chào Thầy/Cô!';
+            showToast(`${helloMsg}\n✓ Bản quyền tiện ích đã được kích hoạt thành công trên máy này.\nThầy/Cô vui lòng mở "Sổ theo dõi và đánh giá học sinh" hoặc "Đánh giá Phẩm chất - Năng lực" để bắt đầu điền nhận xét nhé!`, null, false, false);
+            setTimeout(hideToast, 5500);
+            return;
+          }
+
           handleQuickFill(deps);
         }
       });
@@ -1766,6 +1813,20 @@
         });
       }
     });
+
+    // Tự động quét lại trạng thái khi người dùng thao tác bấm vào menu/taskbar trên vnEdu
+    let docClickRecheckTimer = null;
+    document.addEventListener('click', (e) => {
+      if (e.target && (e.target.closest?.('#vnedu-assistant-host') || e.target.id === 'vnedu-assistant-host')) {
+        return;
+      }
+      if (docClickRecheckTimer) clearTimeout(docClickRecheckTimer);
+      docClickRecheckTimer = setTimeout(() => {
+        if (!isFillingActive) {
+          checkLicenseStatus();
+        }
+      }, 350);
+    }, { passive: true });
 
     // Xử lý nút Kiểm tra & Đồng bộ đám mây GitHub
     const btnTriggerSync = shadowRoot.getElementById('btn-trigger-cloud-sync');
