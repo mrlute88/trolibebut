@@ -403,82 +403,16 @@
 
   /**
    * Tự động phát hiện Tên Giáo Viên & Tên Trường học từ giao diện trang web vnEdu
-   * Quét header, user profile, banner, document.title, top window, ExtJS menu & taskbar...
+   * ƯU TIÊN SỐ 1 TUYỆT ĐỐI: Giáo viên dạy / GVCN bóc tách từ thanh công cụ / tiêu đề sổ điểm
+   * ƯU TIÊN SỐ 2: Tài khoản đăng nhập hệ thống vnEdu (ExtJS Desktop / Taskbar / Profile)
    */
   function detectVnEduTeacherAndSchool(options = {}) {
-    let teacher = '';
-    let teachers = [];
+    let gradebookTeachers = [];
+    let accountTeacher = '';
     let school = '';
 
     if (typeof document === 'undefined') {
-      return { teacher: '', teachers: [], school: '' };
-    }
-
-    // Danh sách giáo viên đã lưu bản quyền trên máy để đối soát chéo (nếu có)
-    const savedTeachers = [];
-    if (options && options.licensesMap) {
-      Object.values(options.licensesMap).forEach(r => {
-        if (r && r.teacher && !r.isMaster && !savedTeachers.includes(r.teacher)) {
-          savedTeachers.push(r.teacher);
-        }
-      });
-    }
-    if (options && options.currentRecord && options.currentRecord.teacher && !options.currentRecord.isMaster) {
-      if (!savedTeachers.includes(options.currentRecord.teacher)) {
-        savedTeachers.push(options.currentRecord.teacher);
-      }
-    }
-
-    // 0. ƯU TIÊN SỐ 0: Đọc kết quả nhận diện từ MAIN world ExtJS bridge (nếu đã tìm thấy trong bộ nhớ ExtJS)
-    if (typeof document !== 'undefined') {
-      const dt = document.documentElement.getAttribute('data-vnedu-detected-teacher');
-      if (dt && isValidTeacherName(dt)) {
-        teacher = dt;
-        if (!teachers.includes(dt)) teachers.unshift(dt);
-      }
-      const dts = document.documentElement.getAttribute('data-vnedu-detected-teachers');
-      if (dts) {
-        try {
-          const parsed = JSON.parse(dts);
-          if (Array.isArray(parsed)) {
-            for (const t of parsed) {
-              if (isValidTeacherName(t) && !teachers.includes(t)) {
-                teachers.push(t);
-                if (!teacher) teacher = t;
-              }
-            }
-          }
-        } catch (e) {}
-      }
-      const ds = document.documentElement.getAttribute('data-vnedu-detected-school');
-      if (ds && !school) {
-        school = ds;
-      }
-    }
-
-    // Quét toàn bộ localStorage & sessionStorage đối soát với bản quyền đã lưu
-    if (savedTeachers.length > 0) {
-      try {
-        const storages = [sessionStorage, localStorage];
-        for (const st of storages) {
-          if (!st) continue;
-          for (let i = 0; i < st.length; i++) {
-            const k = st.key(i);
-            if (!k) continue;
-            const v = st.getItem(k);
-            if (!v || typeof v !== 'string') continue;
-            for (const savedT of savedTeachers) {
-              if (v.includes(savedT)) {
-                if (!teachers.includes(savedT)) teachers.unshift(savedT);
-                if (!teacher) teacher = savedT;
-                break;
-              }
-            }
-            if (teacher) break;
-          }
-          if (teacher) break;
-        }
-      } catch (e) {}
+      return { teacher: '', teachers: [], accountTeacher: '', gradebookTeachers: [], isGradebook: false, school: '' };
     }
 
     const docs = [document];
@@ -499,199 +433,124 @@
       }
     } catch (e) {}
 
+    // =========================================================================
+    // BƯỚC 1: ƯU TIÊN TUYỆT ĐỐI CAO NHẤT: Quét Giáo viên dạy / GVCN trên SỔ ĐIỂM
+    // =========================================================================
     for (const doc of docs) {
       if (!doc) continue;
 
-      // 1. ƯU TIÊN SỐ 1: Quét trường "Giáo viên dạy: ..." trên thanh công cụ sổ điểm vnEdu
-      if (teachers.length === 0) {
-        const potentialEls = doc.querySelectorAll('.x-toolbar, .x-panel-header, .x-grid3-header, .x-grid3-topbar, div, td, span, b, strong, label, p');
-        for (const el of potentialEls) {
-          const txt = (el.innerText || el.textContent || '').trim();
-          if (txt.length >= 10 && txt.length <= 250 && /giáo\s*viên\s*dạy|gv\s*dạy|giáo\s*viên\s*chủ\s*nhiệm|gvcn/i.test(txt)) {
-            const found = extractTeachersFromText(txt);
-            if (found.length > 0) {
-              teachers = found;
-              teacher = found[0];
-              break;
-            }
-          }
-        }
-      }
-
-      // Quét text trên body nếu cấu trúc DOM bị phân tách
-      if (teachers.length === 0 && doc.body) {
-        const bodyTxt = doc.body.innerText || '';
-        const found = extractTeachersFromText(bodyTxt);
-        if (found.length > 0) {
-          teachers = found;
-          teacher = found[0];
-        }
-      }
-
-      // 2. ƯU TIÊN SỐ 2: Quét ExtJS Popup Menu & Dropdown (.x-menu, .x-menu-item-text, .x-menu-list-item)
-      // Thường chứa danh sách tài khoản, trường học, giáo viên phụ trách (như trong ảnh chụp thực tế trên Desktop vnEdu)
-      const menuEls = doc.querySelectorAll('.x-menu-item-text, .x-menu-item, .x-menu-list-item, .x-menu a, .x-menu-check-item, .x-menu span, .ux-taskbar .x-btn-text, .ux-taskbar-item, .x-btn-text');
-      for (const el of menuEls) {
+      // 1.1 Quét qua các phần tử toolbar, panel header, grid header, span, div, td, label...
+      const potentialEls = doc.querySelectorAll('.x-toolbar, .x-panel-header, .x-grid3-header, .x-grid3-topbar, .x-panel-tbar, .x-panel-bwrap, .x-panel-body, div, td, span, b, strong, label, p');
+      for (const el of potentialEls) {
         const txt = (el.innerText || el.textContent || '').trim();
-        if (!txt || txt.length < 3 || txt.length > 80) continue;
-
-        // Nhận diện trường học
-        if (!school && /trường|tiểu\s*học|th|thcs|thpt|mầm\s*non/i.test(txt)) {
-          const matchSchool = txt.match(/(?:trường\s*(?:tiểu\s*học|th|thcs|thpt|mầm\s*non)?\s*[^|\n\r\-•]{3,50})/i);
-          if (matchSchool) {
-            school = matchSchool[0].trim();
-          } else {
-            school = txt;
-          }
-        }
-
-        // Đối soát nếu khớp với tên giáo viên đã kích hoạt bản quyền trên máy
-        for (const st of savedTeachers) {
-          if (cleanTeacherName(txt) === cleanTeacherName(st)) {
-            if (!teachers.includes(st)) teachers.unshift(st);
-            if (!teacher) teacher = st;
-            break;
-          }
-        }
-
-        // Nhận diện giáo viên từ tên hợp lệ
-        if (!teacher && isValidTeacherName(txt)) {
-          if (!/trường|tiểu\s*học|th|thcs|thpt|mầm\s*non|khối|lớp|năm\s*học|học\s*kỳ|hệ\s*thống|đăng\s*xuất|thoát|cài\s*đặt|hướng\s*dẫn|báo\s*cáo|thống\s*kê|desktop|bàn\s*làm\s*việc|start/i.test(txt)) {
-            teacher = txt;
-            if (!teachers.includes(txt)) teachers.push(txt);
-          }
-        }
-      }
-
-      // Quét đối soát tên giáo viên đã lưu bản quyền trên toàn bộ body
-      if (savedTeachers.length > 0 && doc.body) {
-        const bodyTxt = doc.body.innerText || doc.body.textContent || '';
-        for (const st of savedTeachers) {
-          if (bodyTxt.includes(st)) {
-            if (!teachers.includes(st)) teachers.unshift(st);
-            if (!teacher) teacher = st;
+        if (txt.length >= 6 && txt.length <= 300 && /(?:giáo\s*viên\s*(?:dạy|chủ\s*nhiệm|bộ\s*môn)?|gv\s*(?:dạy|cn|bm)?)\s*[:\-]/i.test(txt)) {
+          const found = extractTeachersFromText(txt);
+          if (found.length > 0) {
+            gradebookTeachers = found;
             break;
           }
         }
       }
+      if (gradebookTeachers.length > 0) break;
 
-      // Quét các thuộc tính tooltip, title, ext:qtip (thường chứa tên đầy đủ của giáo viên/trường học trên taskbar)
-      const qtipEls = doc.querySelectorAll('[ext\\:qtip], [data-qtip], [title], [aria-label], .ux-taskbar-item, .x-btn');
-      for (const el of qtipEls) {
-        const txt = (el.getAttribute('ext:qtip') || el.getAttribute('data-qtip') || el.getAttribute('title') || el.getAttribute('aria-label') || '').trim();
-        if (!txt || txt.length < 3 || txt.length > 80) continue;
-
-        if (!school && /trường|tiểu\s*học|th|thcs|thpt|mầm\s*non/i.test(txt)) {
-          const matchSchool = txt.match(/(?:trường\s*(?:tiểu\s*học|th|thcs|thpt|mầm\s*non)?\s*[^|\n\r\-•]{3,50})/i);
-          if (matchSchool) school = matchSchool[0].trim();
-        }
-
-        for (const st of savedTeachers) {
-          if (cleanTeacherName(txt).includes(cleanTeacherName(st))) {
-            if (!teachers.includes(st)) teachers.unshift(st);
-            if (!teacher) teacher = st;
+      // 1.2 Fallback: Quét trên text toàn bộ body của doc
+      if (doc.body) {
+        const bodyTxt = doc.body.innerText || '';
+        if (/(?:giáo\s*viên\s*(?:dạy|chủ\s*nhiệm|bộ\s*môn)?|gv\s*(?:dạy|cn|bm)?)\s*[:\-]/i.test(bodyTxt)) {
+          const found = extractTeachersFromText(bodyTxt);
+          if (found.length > 0) {
+            gradebookTeachers = found;
             break;
           }
         }
-
-        if (!teacher && isValidTeacherName(txt)) {
-          if (!/trường|tiểu\s*học|th|thcs|thpt|mầm\s*non|khối|lớp|năm\s*học|học\s*kỳ|hệ\s*thống|đăng\s*xuất|thoát|cài\s*đặt|hướng\s*dẫn|báo\s*cáo|thống\s*kê|desktop|bàn\s*làm\s*việc|start|system/i.test(txt)) {
-            teacher = txt;
-            if (!teachers.includes(txt)) teachers.push(txt);
-          }
-        }
       }
+      if (gradebookTeachers.length > 0) break;
+    }
 
-      // 3. ƯU TIÊN SỐ 3: Quét thông tin tài khoản / Header / User Profile vnEdu
-      if (!teacher) {
+    // =========================================================================
+    // BƯỚC 2: Quét TÀI KHOẢN ĐĂNG NHẬP vnEdu (Account Teacher)
+    // =========================================================================
+    // 2.1 Từ MAIN world ExtJS bridge
+    const dt = document.documentElement.getAttribute('data-vnedu-detected-teacher');
+    if (dt && isValidTeacherName(dt)) {
+      accountTeacher = dt.replace(/^(?:gv\.?|thầy|cô)\s*/i, '').trim();
+    }
+
+    // 2.2 Từ các selector thông tin tài khoản / Header / User Profile
+    if (!accountTeacher) {
+      for (const doc of docs) {
+        if (!doc) continue;
         const teacherSelectors = [
-          '#lblFullName',
-          '#user_fullname',
-          '#header_user_name',
-          '.user-name',
-          '.user-fullname',
-          '.profile-name',
-          '.username',
-          '#tb-user-name',
-          '[id*="lblFullName"]',
-          '[id*="userName"]',
-          '[id*="user_name"]',
-          '[id*="TenGiaoVien"]',
-          '[id*="HoTen"]',
-          '.vnedu-user',
-          '#vnedu-user',
-          '.account-name',
-          '.nav-user',
-          '.header-user'
+          '#lblFullName', '#user_fullname', '#header_user_name', '.user-name',
+          '.user-fullname', '.profile-name', '.username', '#tb-user-name',
+          '[id*="lblFullName"]', '[id*="userName"]', '[id*="user_name"]',
+          '[id*="TenGiaoVien"]', '[id*="HoTen"]', '.vnedu-user', '#vnedu-user',
+          '.account-name', '.nav-user', '.header-user'
         ];
-
         for (const sel of teacherSelectors) {
           const el = doc.querySelector(sel);
           if (el) {
             const txt = (el.innerText || el.textContent || '').trim();
             if (txt && isValidTeacherName(txt)) {
-              teacher = txt;
+              accountTeacher = txt.replace(/^(?:gv\.?|thầy|cô)\s*/i, '').trim();
               break;
             }
           }
         }
-      }
+        if (accountTeacher) break;
 
-      // 4. ƯU TIÊN SỐ 4: Quét theo lời chào "Xin chào: [Tên]"
-      if (!teacher) {
+        // 2.3 Từ lời chào "Xin chào: [Tên]"
         const textElements = Array.from(doc.querySelectorAll('.x-btn-text, .x-toolbar-cell, header, .header, #header, span, div, a'));
         for (const el of textElements) {
           const txt = (el.innerText || el.textContent || '').trim();
           if (txt && /xin\s*chào/i.test(txt)) {
             const match = txt.match(/xin\s*chào\s*[:,\-]?\s*(?:thầy|cô|gv\.?|thầy\/cô)?\s*([A-ZÀ-Ỹ][a-zà-ỹA-ZÀ-Ỹ\s]{2,35})/i);
             if (match && match[1]) {
-              const candidate = match[1].replace(/^(?:gv\.?|thầy|cô)\s+/i, '').trim();
+              const candidate = match[1].replace(/^(?:gv\.?|thầy|cô)\s*/i, '').trim();
               if (isValidTeacherName(candidate)) {
-                teacher = candidate;
+                accountTeacher = candidate;
                 break;
               }
             }
           }
         }
-      }
+        if (accountTeacher) break;
 
-      // 5. ƯU TIÊN SỐ 5: Quét ExtJS Desktop Start Menu & Taskbar vnEdu
-      if (!teacher) {
-        const startMenuHeader = doc.querySelector('.ux-start-menu-tl .x-window-header-text, .ux-start-menu-header, #ux-start-menu, .x-desktop-taskbar');
+        // 2.4 Từ taskbar / ExtJS Start menu
+        const startMenuHeader = doc.querySelector('.ux-start-menu-tl .x-window-header-text, .ux-start-menu-header, #ux-start-menu');
         if (startMenuHeader) {
           const txt = (startMenuHeader.innerText || startMenuHeader.textContent || '').trim();
           if (txt && isValidTeacherName(txt)) {
-            teacher = txt;
+            accountTeacher = txt.replace(/^(?:gv\.?|thầy|cô)\s*/i, '').trim();
+            break;
           }
         }
       }
+    }
 
-      // 6. Quét Tên Trường
-      if (!school) {
-        // Quét góc dưới thanh taskbar (ví dụ: "Trường Tiểu học...")
+    // =========================================================================
+    // BƯỚC 3: Quét TRƯỜNG HỌC (School)
+    // =========================================================================
+    const ds = document.documentElement.getAttribute('data-vnedu-detected-school');
+    if (ds) school = ds;
+
+    if (!school) {
+      for (const doc of docs) {
+        if (!doc) continue;
         const taskbarStatus = doc.querySelector('.ux-taskbar, .x-statusbar, #statusbar, .ux-taskbar-status, .taskbar');
         if (taskbarStatus) {
           const txt = (taskbarStatus.innerText || taskbarStatus.textContent || '').trim();
           const matchSchool = txt.match(/(?:trường\s*(?:tiểu\s*học|th|thcs|thpt|mầm\s*non)?\s*[^|\n\r\-•]{3,50})/i);
           if (matchSchool) {
             school = matchSchool[0].trim();
+            break;
           }
         }
-      }
-
-      if (!school) {
         const schoolSelectors = [
-          '#lblSchoolName',
-          '#school_name',
-          '.school-name',
-          '.school_name',
-          '.app-school-name',
-          '[id*="SchoolName"]',
-          '[id*="school"]',
-          '.banner-title',
-          '.header-title'
+          '#lblSchoolName', '#school_name', '.school-name', '.school_name',
+          '.app-school-name', '[id*="SchoolName"]', '[id*="school"]',
+          '.banner-title', '.header-title'
         ];
-
         for (const sel of schoolSelectors) {
           const el = doc.querySelector(sel);
           if (el) {
@@ -702,67 +561,33 @@
             }
           }
         }
-      }
-
-      if (!school && doc.title) {
-        const titleMatch = doc.title.match(/(?:trường\s*(?:tiểu\s*học|th|thcs|thpt|mầm\s*non)?\s*[^|\n\r\-•]{3,50})/i);
-        if (titleMatch) {
-          school = titleMatch[0].trim();
-        }
+        if (school) break;
       }
     }
 
-    // 6. Fallback quét sessionStorage & localStorage của vnEdu
-    if (!teacher) {
-      try {
-        const storages = [sessionStorage, localStorage];
-        for (const st of storages) {
-          if (!st) continue;
-          for (let i = 0; i < st.length; i++) {
-            const key = st.key(i);
-            if (!key) continue;
-            const lk = key.toLowerCase();
-            if (lk.includes('user') || lk.includes('auth') || lk.includes('profile') || lk.includes('login')) {
-              try {
-                const val = st.getItem(key);
-                if (val && typeof val === 'string') {
-                  if (val.startsWith('{') && val.endsWith('}')) {
-                    const parsed = JSON.parse(val);
-                    const candidate = parsed.fullname || parsed.fullName || parsed.teacher_name || parsed.user_fullname || parsed.displayName || parsed.name;
-                    if (candidate && isValidTeacherName(candidate)) {
-                      teacher = candidate;
-                      break;
-                    }
-                  } else if (isValidTeacherName(val)) {
-                    teacher = val;
-                    break;
-                  }
-                }
-              } catch (e) {}
-            }
-          }
-          if (teacher) break;
-        }
-      } catch (e) {}
-    }
+    // =========================================================================
+    // BƯỚC 4: Kết luận teacher & teachers theo đúng ngữ cảnh thực tế
+    // =========================================================================
+    const isGradebook = gradebookTeachers.length > 0;
+    let finalTeacher = '';
+    let finalTeachers = [];
 
-    // Làm sạch tên giáo viên
-    if (teacher) {
-      teacher = teacher
-        .replace(/^(?:giáo\s*viên\s*(?:dạy|chủ\s*nhiệm|bộ\s*môn)?|gv\s*(?:dạy|cn|bm)?|thầy|cô|gv\.?|thầy\/cô)\s*[:\-]?\s*/i, '')
-        .replace(/\s*\+\s*\d+.*$/i, '')
-        .replace(/\s*\(.*?\)$/i, '')
-        .replace(/[\-|,|;].*$/i, '')
-        .trim();
-    }
-
-    if (teachers.length === 0 && teacher) {
-      teachers = [teacher];
+    if (isGradebook) {
+      // Đang ở trong sổ điểm -> GIÁO VIÊN DUY NHẤT LÀ GIÁO VIÊN PHỤ TRÁCH SỔ ĐIỂM
+      finalTeacher = gradebookTeachers[0];
+      finalTeachers = gradebookTeachers;
+    } else {
+      // Ngoài sổ điểm (Desktop vnEdu) -> Giáo viên là tài khoản đăng nhập
+      finalTeacher = accountTeacher || '';
+      finalTeachers = accountTeacher ? [accountTeacher] : [];
     }
 
     return {
-      teacher: teacher || (teachers[0] || ''),
-      teachers: teachers,
+      teacher: finalTeacher,
+      teachers: finalTeachers,
+      accountTeacher: accountTeacher || '',
+      gradebookTeachers: gradebookTeachers,
+      isGradebook: isGradebook,
       school: school || ''
     };
   }
@@ -925,20 +750,12 @@
    */
   function checkCurrentLicense(options = {}, callback) {
     getAllStoredRecords((currentRecord, licensesMap) => {
-      // 1. Tự động phát hiện tài khoản vnEdu trên trang nếu không truyền vào
-      let currTeacher = options.currentTeacher;
-      let currSchool = options.currentSchool;
-      let detectedTeachers = options.teachers || [];
-
+      // 1. Tự động phát hiện thông tin trên trang vnEdu
       const detected = detectVnEduTeacherAndSchool({ ...options, licensesMap, currentRecord });
-      if (!currTeacher && detected.teacher) currTeacher = detected.teacher;
-      if (!currSchool && detected.school) currSchool = detected.school;
-      if (detectedTeachers.length === 0 && detected.teachers && detected.teachers.length > 0) {
-        detectedTeachers = detected.teachers;
-      }
-      if (detectedTeachers.length === 0 && currTeacher) {
-        detectedTeachers = [currTeacher];
-      }
+      let currSchool = options.currentSchool || detected.school;
+      const isGradebook = detected.isGradebook;
+      const gradebookTeachers = (options.teachers && options.teachers.length > 0) ? options.teachers : (detected.gradebookTeachers || []);
+      const accountTeacher = detected.accountTeacher || '';
 
       // 2. Kiểm tra nếu có Master Key (khóa tổng quản trị)
       const masterRecord = (licensesMap && licensesMap['_master_']) || (currentRecord && currentRecord.isMaster ? currentRecord : null);
@@ -946,40 +763,51 @@
         const masterRes = verifyLicense(masterRecord.key, { ignoreMatch: true });
         if (masterRes.isValid) {
           if (callback) callback(true, masterRes.licenseInfo, '✓ Mã Quản trị viên (Master Key) hợp lệ.', {
-            currentTeacher: currTeacher || 'Quản trị viên',
-            teachers: detectedTeachers,
+            currentTeacher: (isGradebook ? gradebookTeachers[0] : accountTeacher) || 'Quản trị viên',
+            teachers: isGradebook ? gradebookTeachers : (accountTeacher ? [accountTeacher] : []),
+            accountTeacher: accountTeacher,
+            gradebookTeachers: gradebookTeachers,
             currentSchool: currSchool || 'Toàn hệ thống',
             isMaster: true,
             status: 'VALID',
-            matchedRecord: masterRecord
+            matchedRecord: masterRecord,
+            isGradebook: isGradebook
           });
           return;
         }
       }
 
-      // 3. Nếu chưa có bất kỳ bản quyền nào được lưu
+      // 3. Danh sách giáo viên đã kích hoạt bản quyền trên máy
+      const savedTeachers = Object.values(licensesMap || {})
+        .filter(r => r && r.teacher && !r.isMaster)
+        .map(r => r.teacher);
+      if (currentRecord && currentRecord.teacher && !currentRecord.isMaster && !savedTeachers.includes(currentRecord.teacher)) {
+        savedTeachers.push(currentRecord.teacher);
+      }
+
       const hasAnyRecord = (currentRecord && currentRecord.key) || (licensesMap && Object.keys(licensesMap).length > 0);
       if (!hasAnyRecord) {
         if (callback) callback(false, null, 'Chưa kích hoạt bản quyền.', {
-          currentTeacher: currTeacher || '',
-          teachers: detectedTeachers,
+          currentTeacher: (isGradebook ? gradebookTeachers[0] : accountTeacher) || '',
+          teachers: isGradebook ? gradebookTeachers : (accountTeacher ? [accountTeacher] : []),
+          accountTeacher: accountTeacher,
+          gradebookTeachers: gradebookTeachers,
           currentSchool: currSchool || '',
-          status: 'UNLICENSED'
+          status: 'UNLICENSED',
+          isGradebook: isGradebook
         });
         return;
       }
 
-      // 4. NẾU ĐÃ PHÁT HIỆN ĐƯỢC TÀI KHOẢN GIÁO VIÊN HIỆN TẠI TRÊN VNEDU
-      if (detectedTeachers.length > 0) {
-        const savedTeachers = Object.values(licensesMap || {})
-          .filter(r => r && r.teacher && !r.isMaster)
-          .map(r => r.teacher);
-
-        // Duyệt danh sách các giáo viên dạy lớp này để xem ai đã có bản quyền hợp lệ đã kích hoạt trên máy
+      // =======================================================================
+      // 4. TRƯỜNG HỢP A: ĐANG Ở TRONG SỔ ĐIỂM (isGradebook === true)
+      // Chỉ bản quyền của Giáo viên phụ trách sổ điểm mới được phép điền!
+      // =======================================================================
+      if (isGradebook && gradebookTeachers.length > 0) {
         let matchedRecord = null;
         let matchedTeacherName = '';
 
-        for (const tName of detectedTeachers) {
+        for (const tName of gradebookTeachers) {
           const cleanT = cleanTeacherName(tName);
           let teacherRec = licensesMap && licensesMap[cleanT];
           if (!teacherRec && currentRecord && cleanTeacherName(currentRecord.teacher) === cleanT) {
@@ -988,7 +816,7 @@
           if (teacherRec && teacherRec.key) {
             const res = verifyLicense(teacherRec.key, {
               currentTeacher: tName,
-              teachers: detectedTeachers,
+              teachers: gradebookTeachers,
               currentSchool: currSchool
             });
             if (res.isValid) {
@@ -1002,80 +830,100 @@
         if (matchedRecord) {
           const res = verifyLicense(matchedRecord.key, {
             currentTeacher: matchedTeacherName,
-            teachers: detectedTeachers,
+            teachers: gradebookTeachers,
             currentSchool: currSchool
           });
           if (callback) callback(true, res.licenseInfo, `✓ Đã kích hoạt bản quyền cho GV: ${matchedTeacherName}`, {
             currentTeacher: matchedTeacherName,
-            teachers: detectedTeachers,
+            teachers: gradebookTeachers,
+            accountTeacher: accountTeacher,
+            gradebookTeachers: gradebookTeachers,
             currentSchool: currSchool,
             status: 'VALID',
             savedTeachers: savedTeachers,
-            matchedRecord: matchedRecord
+            matchedRecord: matchedRecord,
+            isGradebook: true
           });
           return;
         }
 
-        // Nếu có bản quyền nhưng hết hạn
-        for (const tName of detectedTeachers) {
-          const cleanT = cleanTeacherName(tName);
-          let teacherRec = (licensesMap && licensesMap[cleanT]) || (currentRecord && cleanTeacherName(currentRecord.teacher) === cleanT ? currentRecord : null);
-          if (teacherRec && teacherRec.key) {
-            const res = verifyLicense(teacherRec.key, {
-              currentTeacher: tName,
-              teachers: detectedTeachers,
-              currentSchool: currSchool
-            });
-            if (!res.isValid) {
-              if (callback) callback(false, res.licenseInfo, res.reason, {
-                currentTeacher: tName,
-                teachers: detectedTeachers,
-                currentSchool: currSchool,
-                status: 'EXPIRED_OR_INVALID',
-                savedTeachers: savedTeachers,
-                matchedRecord: teacherRec
-              });
-              return;
-            }
-          }
-        }
-
-        // Chưa kích hoạt cho bất kỳ giáo viên nào trong danh sách
-        const otherRecord = currentRecord || Object.values(licensesMap)[0];
-        const otherTeacherName = otherRecord ? (otherRecord.teacher || 'tài khoản khác') : '';
-        const displayTeachers = savedTeachers.length > 0 ? savedTeachers.join(', ') : otherTeacherName;
-        const displayCurrent = detectedTeachers.join(' & ');
+        // Nếu giáo viên dạy sổ điểm này chưa kích hoạt bản quyền
+        const displayGradebook = gradebookTeachers.join(' & ');
         const mismatchReason = savedTeachers.length > 0
-          ? `⚠️ Bản quyền đã lưu cấp cho GV: "${displayTeachers}". Sổ điểm này do GV: "${displayCurrent}" phụ trách. Vui lòng kích hoạt bản quyền cho giáo viên phụ trách!`
-          : `⚠️ Sổ điểm do GV: "${displayCurrent}" phụ trách chưa được kích hoạt bản quyền.`;
+          ? `⚠️ Bản quyền đã lưu trên máy thuộc về: "${savedTeachers.join(', ')}". Sổ điểm này do GV: "${displayGradebook}" phụ trách. Vui lòng kích hoạt bản quyền cho GV: "${displayGradebook}"!`
+          : `⚠️ Sổ điểm do GV: "${displayGradebook}" phụ trách chưa được kích hoạt bản quyền.`;
 
         if (callback) callback(false, null, mismatchReason, {
-          currentTeacher: detectedTeachers[0] || currTeacher,
-          teachers: detectedTeachers,
+          currentTeacher: gradebookTeachers[0],
+          teachers: gradebookTeachers,
+          accountTeacher: accountTeacher,
+          gradebookTeachers: gradebookTeachers,
           currentSchool: currSchool,
-          status: savedTeachers.length > 0 ? 'TEACHER_MISMATCH' : 'UNLICENSED',
-          licensedTeacher: otherTeacherName,
+          status: 'TEACHER_MISMATCH',
           savedTeachers: savedTeachers,
-          mismatchRecord: otherRecord
+          isGradebook: true
         });
         return;
       }
 
-      // 5. NẾU CHƯA PHÁT HIỆN ĐƯỢC TÊN GIÁO VIÊN (Ví dụ: đang ở trang chủ/dashboard vnEdu, chưa mở sổ điểm)
-      // TUYỆT ĐỐI KHÔNG BÁO "ĐÃ KÍCH HOẠT" BỪA BÃI để tránh tài khoản khác hưởng sái!
+      // =======================================================================
+      // 5. TRƯỜNG HỢP B: ĐANG Ở MÀN HÌNH BÀN LÀM VIỆC (DESKTOP) / NGOÀI SỔ ĐIỂM
+      // Lúc này kiểm tra tài khoản vnEdu đang đăng nhập (accountTeacher)
+      // =======================================================================
+      if (accountTeacher) {
+        const cleanAcc = cleanTeacherName(accountTeacher);
+        let accRec = licensesMap && licensesMap[cleanAcc];
+        if (!accRec && currentRecord && cleanTeacherName(currentRecord.teacher) === cleanAcc) {
+          accRec = currentRecord;
+        }
+        if (accRec && accRec.key) {
+          const res = verifyLicense(accRec.key, {
+            currentTeacher: accountTeacher,
+            teachers: [accountTeacher],
+            currentSchool: currSchool
+          });
+          if (res.isValid) {
+            if (callback) callback(true, res.licenseInfo, `✓ Đã kích hoạt bản quyền cho GV: ${accountTeacher}`, {
+              currentTeacher: accountTeacher,
+              teachers: [accountTeacher],
+              accountTeacher: accountTeacher,
+              gradebookTeachers: [],
+              currentSchool: currSchool,
+              status: 'VALID',
+              savedTeachers: savedTeachers,
+              matchedRecord: accRec,
+              isGradebook: false
+            });
+            return;
+          }
+        }
+
+        if (callback) callback(false, null, `Tài khoản GV: "${accountTeacher}" chưa kích hoạt bản quyền.`, {
+          currentTeacher: accountTeacher,
+          teachers: [accountTeacher],
+          accountTeacher: accountTeacher,
+          gradebookTeachers: [],
+          currentSchool: currSchool,
+          status: 'UNLICENSED',
+          savedTeachers: savedTeachers,
+          isGradebook: false
+        });
+        return;
+      }
+
+      // 6. Chưa nhận diện được thông tin
       const candidateRecord = currentRecord || Object.values(licensesMap)[0];
       const candidateTeacher = candidateRecord ? (candidateRecord.teacher || '') : '';
-
-      const pendingReason = candidateTeacher
-        ? `ℹ️ Bản quyền lưu trên máy thuộc về GV: "${candidateTeacher}". Vui lòng mở sổ điểm hoặc xác nhận tài khoản vnEdu để tiếp tục.`
-        : 'Chưa xác nhận tài khoản giáo viên sử dụng.';
-
-      if (callback) callback(false, null, pendingReason, {
+      if (callback) callback(false, null, 'Chưa xác nhận tài khoản giáo viên sử dụng.', {
         currentTeacher: '',
+        teachers: [],
+        accountTeacher: '',
+        gradebookTeachers: [],
         currentSchool: currSchool || '',
         status: 'PENDING_TEACHER_DETECTION',
         candidateTeacher: candidateTeacher,
-        candidateRecord: candidateRecord
+        candidateRecord: candidateRecord,
+        isGradebook: false
       });
     });
   }

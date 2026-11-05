@@ -249,7 +249,10 @@
       btnMain.className = 'vnedu-btn-pill-3d vnedu-btn-unlicensed';
       const teacher = currentLicenseDetails?.currentTeacher;
       if (teacher) {
-        btnMain.title = `Tài khoản GV: ${teacher} chưa kích hoạt bản quyền. Bấm để kích hoạt.`;
+        const isGrade = currentLicenseDetails?.isGradebook;
+        btnMain.title = isGrade
+          ? `Sổ điểm do GV: ${teacher} phụ trách chưa kích hoạt bản quyền. Bấm để kích hoạt.`
+          : `Tài khoản GV: ${teacher} chưa kích hoạt bản quyền. Bấm để kích hoạt.`;
         if (mascotSpeech) mascotSpeech.textContent = `Thầy/Cô ${teacher.split(' ').slice(-1)[0]} bấm kích hoạt nhé! 🔑`;
       } else {
         btnMain.title = 'Bấm để nhập mã kích hoạt bản quyền sử dụng';
@@ -519,17 +522,18 @@
     if (inputEl) inputEl.value = '';
 
     const LM = getLicenseManager();
-    const detected = LM && LM.detectVnEduTeacherAndSchool ? LM.detectVnEduTeacherAndSchool() : { teacher: '', teachers: [], school: '' };
+    const detected = LM && LM.detectVnEduTeacherAndSchool ? LM.detectVnEduTeacherAndSchool() : { teacher: '', teachers: [], accountTeacher: '', school: '' };
     const details = passedDetails || currentLicenseDetails;
     const currentTeacher = details?.currentTeacher || detected.teacher;
+    const accountTeacher = details?.accountTeacher || detected.accountTeacher || currentTeacher;
     const currentSchool = details?.currentSchool || detected.school;
     const allTeachers = details?.teachers || detected.teachers || (currentTeacher ? [currentTeacher] : []);
 
-    // 1. Hiển thị thông tin tài khoản vnEdu hiện tại (chỉ hiển thị tên tài khoản giáo viên)
+    // 1. Hiển thị thông tin tài khoản vnEdu hiện tại (tài khoản đăng nhập hệ thống)
     if (accountBadge) {
-      if (currentTeacher) {
+      if (accountTeacher) {
         accountBadge.style.display = 'block';
-        const displayTeacher = currentTeacher.replace(/^(?:gv\.?|thầy|cô)\s*/i, '').trim();
+        const displayTeacher = accountTeacher.replace(/^(?:gv\.?|thầy|cô)\s*/i, '').trim();
         accountBadge.innerHTML = `👤 Tài khoản vnEdu: <b>GV ${displayTeacher}</b>`;
       } else {
         accountBadge.style.display = 'block';
@@ -573,12 +577,14 @@
           ? details.savedTeachers.map(t => 'GV ' + t.replace(/^(?:gv\.?|thầy|cô)\s*/i, '')).join(', ')
           : (details.licensedTeacher ? ('GV ' + details.licensedTeacher.replace(/^(?:gv\.?|thầy|cô)\s*/i, '')) : 'giáo viên khác');
 
+        const roleLabel = details.isGradebook ? 'Giáo viên phụ trách sổ điểm:' : 'Tài khoản giáo viên:';
+
         activeInfo.innerHTML = `
-          ⛔ <b>TÀI KHOẢN GIÁO VIÊN MỚI TRÊN MÁY NÀY</b><br>
-          • Đang đăng nhập vnEdu: <b>GV ${currentTeacher}</b><br>
-          • Đã lưu bản quyền trước đó của: <b>${savedList}</b><br>
+          ⛔ <b>SỔ ĐIỂM CHƯA KÍCH HOẠT BẢN QUYỀN</b><br>
+          • ${roleLabel} <b>GV ${currentTeacher}</b><br>
+          • Máy tính đã lưu bản quyền của: <b>${savedList}</b><br>
           <div style="margin-top: 6px; padding: 6px 8px; background: rgba(59, 130, 246, 0.08); border-radius: 6px; font-size: 11.5px; line-height: 1.45; color: #1e3a8a;">
-            💡 <i>Máy tính này hỗ trợ nhiều giáo viên dùng chung. Thầy/Cô chỉ cần dán mã bản quyền của <b>GV ${currentTeacher}</b> vào ô bên dưới và bấm <b>Kích hoạt</b>. Tiện ích sẽ ghi nhớ cả 2 Thầy/Cô mà không làm mất key cũ!</i>
+            💡 <i>Máy tính này hỗ trợ nhiều giáo viên dùng chung. Thầy/Cô chỉ cần dán mã bản quyền của <b>GV ${currentTeacher}</b> vào ô bên dưới và bấm <b>Kích hoạt</b>. Tiện ích sẽ ghi nhớ mà không làm mất key của các giáo viên khác!</i>
           </div>
         `;
         if (clearRow) clearRow.style.display = 'none';
@@ -2158,6 +2164,13 @@
         }
       }, delay);
     });
+
+    // Tự động kiểm tra bản quyền định kỳ mỗi 1.5s để cập nhật ngay khi Thầy/Cô mở hoặc chuyển sổ điểm
+    setInterval(() => {
+      if (!isFillingActive) {
+        checkLicenseStatus(() => updateMainButtonUI());
+      }
+    }, 1500);
 
     // Tự động nạp dữ liệu đám mây đã lưu và kiểm tra bản cập nhật mới từ xa (GitHub)
     const cloudSync = (deps && deps.CloudSync) || (typeof self !== 'undefined' && self.VnEduCloudSync) || (typeof window !== 'undefined' && window.VnEduCloudSync);
