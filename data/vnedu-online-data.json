@@ -1,8 +1,8 @@
 {
-  "version": "1.3.1",
-  "appVersion": "1.3.1",
-  "dataVersion": "2026.11.05.1",
-  "updatedAt": "2026-11-04",
+  "version": "1.3.2",
+  "appVersion": "1.3.2",
+  "dataVersion": "2026.11.05.2",
+  "updatedAt": "2026-11-05",
   "author": "Team Tin Học",
   "announcement": {
     "id": "notice_2026_11_02",
@@ -67,8 +67,8 @@
     }
   },
   "latestRelease": {
-    "version": "1.2.1",
-    "releaseDate": "2026-11-02",
+    "version": "1.3.2",
+    "releaseDate": "2026-11-05",
     "description": "Bản cập nhật v1.2.1: Nhận diện viết tắt TCTV, TCT, TN-XH; đếm ngược tự động lưu phẩm chất - năng lực; đồng bộ dữ liệu đám mây.",
     "downloadUrl": "https://github.com/mrlute88/trolibebut"
   }
