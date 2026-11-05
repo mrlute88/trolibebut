@@ -1,14 +1,14 @@
 {
   "version": "1.2.7",
   "appVersion": "1.2.7",
-  "dataVersion": "2026.11.04.5",
-  "updatedAt": "2026-11-04",
+  "dataVersion": "2026.11.05.1",
+  "updatedAt": "2026-11-05",
   "author": "Team Tin Học",
   "announcement": {
-    "id": "notice_2026_11_02",
+    "id": "notice_2026_11_05",
     "enabled": true,
-    "title": "Cập nhật dữ liệu từ xa",
-    "message": "✓ Tiện ích đã tự động cập nhật ngân hàng mẫu nhận xét mới nhất từ Team Tin Học!",
+    "title": "Cập nhật ngân hàng nhận xét Tiểu học chuẩn TT27",
+    "message": "✓ Tiện ích đã cập nhật đầy đủ 52.227 câu nhận xét Tiểu học Lớp 1 - 5 chuẩn hóa theo từng khối lớp và đợt học!",
     "showOnce": true
   },
   "subjectAliases": [
@@ -73,4 +73,3 @@
     "downloadUrl": "https://github.com/mrlute88/trolibebut"
   }
 }
-
