@@ -175,7 +175,7 @@
   function cleanSchoolName(school) {
     let s = (school || '').toLowerCase().trim();
     s = s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
-    s = s.replace(/^(?:truong\s+tieu\s+hoc|truong\s+th|tieu\s+hoc|th|truong\s+thcs|thcs|truong)\s+/i, '');
+    s = s.replace(/^(?:truong\s+(?:tieu\s*hoc|th|thcs|thpt|mam\s*non)?(?:\s*(?:va|&|\/|-)\s*(?:thcs|thpt|tieu\s*hoc))?|tieu\s*hoc|th|thcs|thpt|truong)\s+/i, '');
     s = s.replace(/[^a-z0-9]/g, '');
     return s;
   }
@@ -302,7 +302,14 @@
       const cleanExpected = cleanSchoolName(parsed.school);
       const cleanCurrent = cleanSchoolName(options.currentSchool);
 
-      if (cleanExpected && cleanCurrent && cleanExpected !== cleanCurrent) {
+      // Danh sách tất cả các trường được phát hiện của giáo viên (trường hiện tại + các trường liên trường)
+      const schoolsList = (options.schools && Array.isArray(options.schools) && options.schools.length > 0)
+        ? options.schools
+        : [options.currentSchool];
+
+      const matchesAnySchool = schoolsList.some(sch => cleanSchoolName(sch) === cleanExpected);
+
+      if (cleanExpected && !matchesAnySchool) {
         return {
           isValid: false,
           reason: `⚠️ Mã bản quyền này được cấp cho đơn vị: "${parsed.school}". Đơn vị hiện tại trên vnEdu là: "${options.currentSchool}". Vui lòng sử dụng đúng trường được cấp phép!`,
@@ -534,15 +541,41 @@
     const ds = document.documentElement.getAttribute('data-vnedu-detected-school');
     if (ds) school = ds;
 
+    let schools = [];
+    const dss = document.documentElement.getAttribute('data-vnedu-detected-schools');
+    if (dss) {
+      try {
+        schools = JSON.parse(dss);
+      } catch (e) {}
+    }
+    if (school && !schools.includes(school)) {
+      schools.unshift(school);
+    }
+
     if (!school) {
       for (const doc of docs) {
         if (!doc) continue;
+        // 1. Quét các item đang được checked trong menu (ưu tiên cao nhất)
+        const checkedItems = doc.querySelectorAll('.x-menu-item-checked, .x-menu-check-item-checked, [class*="checked"]');
+        for (const ci of checkedItems) {
+          const txt = (ci.innerText || ci.textContent || '').trim();
+          const matchSchool = txt.match(/(?:trường\s*(?:tiểu\s*học|th|thcs|thpt|mầm\s*non)?\s*[^|\n\r\-•]{3,50})/i);
+          if (matchSchool) {
+            school = matchSchool[0].trim();
+            if (!schools.includes(school)) schools.unshift(school);
+            break;
+          }
+        }
+        if (school) break;
+
+        // 2. Quét taskbar / statusbar
         const taskbarStatus = doc.querySelector('.ux-taskbar, .x-statusbar, #statusbar, .ux-taskbar-status, .taskbar');
         if (taskbarStatus) {
           const txt = (taskbarStatus.innerText || taskbarStatus.textContent || '').trim();
           const matchSchool = txt.match(/(?:trường\s*(?:tiểu\s*học|th|thcs|thpt|mầm\s*non)?\s*[^|\n\r\-•]{3,50})/i);
           if (matchSchool) {
             school = matchSchool[0].trim();
+            if (!schools.includes(school)) schools.unshift(school);
             break;
           }
         }
@@ -557,6 +590,7 @@
             const txt = (el.innerText || el.textContent || '').trim();
             if (txt && /trường|tiểu\s*học|th|thcs|thpt/i.test(txt)) {
               school = txt;
+              if (!schools.includes(school)) schools.unshift(school);
               break;
             }
           }
@@ -588,7 +622,8 @@
       accountTeacher: accountTeacher || '',
       gradebookTeachers: gradebookTeachers,
       isGradebook: isGradebook,
-      school: school || ''
+      school: school || '',
+      schools: schools
     };
   }
 
@@ -817,7 +852,8 @@
             const res = verifyLicense(teacherRec.key, {
               currentTeacher: tName,
               teachers: gradebookTeachers,
-              currentSchool: currSchool
+              currentSchool: currSchool,
+              schools: (detected.schools && detected.schools.length > 0) ? detected.schools : (currSchool ? [currSchool] : [])
             });
             if (res.isValid) {
               matchedRecord = teacherRec;
@@ -831,7 +867,8 @@
           const res = verifyLicense(matchedRecord.key, {
             currentTeacher: matchedTeacherName,
             teachers: gradebookTeachers,
-            currentSchool: currSchool
+            currentSchool: currSchool,
+            schools: (detected.schools && detected.schools.length > 0) ? detected.schools : (currSchool ? [currSchool] : [])
           });
           if (callback) callback(true, res.licenseInfo, `✓ Đã kích hoạt bản quyền cho GV: ${matchedTeacherName}`, {
             currentTeacher: matchedTeacherName,
@@ -839,6 +876,7 @@
             accountTeacher: accountTeacher,
             gradebookTeachers: gradebookTeachers,
             currentSchool: currSchool,
+            schools: (detected.schools && detected.schools.length > 0) ? detected.schools : (currSchool ? [currSchool] : []),
             status: 'VALID',
             savedTeachers: savedTeachers,
             matchedRecord: matchedRecord,
@@ -859,6 +897,7 @@
           accountTeacher: accountTeacher,
           gradebookTeachers: gradebookTeachers,
           currentSchool: currSchool,
+          schools: (detected.schools && detected.schools.length > 0) ? detected.schools : (currSchool ? [currSchool] : []),
           status: 'TEACHER_MISMATCH',
           savedTeachers: savedTeachers,
           isGradebook: true
@@ -880,7 +919,8 @@
           const res = verifyLicense(accRec.key, {
             currentTeacher: accountTeacher,
             teachers: [accountTeacher],
-            currentSchool: currSchool
+            currentSchool: currSchool,
+            schools: (detected.schools && detected.schools.length > 0) ? detected.schools : (currSchool ? [currSchool] : [])
           });
           if (res.isValid) {
             if (callback) callback(true, res.licenseInfo, `✓ Đã kích hoạt bản quyền cho GV: ${accountTeacher}`, {
@@ -889,6 +929,7 @@
               accountTeacher: accountTeacher,
               gradebookTeachers: [],
               currentSchool: currSchool,
+              schools: (detected.schools && detected.schools.length > 0) ? detected.schools : (currSchool ? [currSchool] : []),
               status: 'VALID',
               savedTeachers: savedTeachers,
               matchedRecord: accRec,
@@ -904,6 +945,7 @@
           accountTeacher: accountTeacher,
           gradebookTeachers: [],
           currentSchool: currSchool,
+          schools: (detected.schools && detected.schools.length > 0) ? detected.schools : (currSchool ? [currSchool] : []),
           status: 'UNLICENSED',
           savedTeachers: savedTeachers,
           isGradebook: false

@@ -454,9 +454,59 @@
     try {
       let detectedTeacher = '';
       let detectedSchool = '';
+      let checkedSchool = '';
+      let taskbarSchool = '';
+      let fallbackSchool = '';
+      const allDetectedSchools = [];
       const detectedTeachers = [];
 
-      function checkItem(raw) {
+      function extractSchoolText(raw) {
+        if (!raw) return '';
+        let txt = '';
+        if (typeof raw === 'string') txt = raw;
+        else if (typeof raw === 'object') {
+          txt = raw.text || raw.title || (raw.initialConfig && raw.initialConfig.text) || '';
+        }
+        if (typeof txt !== 'string') return '';
+        txt = txt.replace(/<[^>]+>/g, '').trim();
+        if (txt.length < 3 || txt.length > 70) return '';
+        if (/trường|tiểu\s*học|th|thcs|thpt|mầm\s*non/i.test(txt)) {
+          const m = txt.match(/(?:trường\s*(?:tiểu\s*học|th|thcs|thpt|mầm\s*non)?\s*[^|\n\r\-•]{3,50})/i);
+          return m ? m[0].trim() : txt;
+        }
+        return '';
+      }
+
+      function isItemChecked(item) {
+        if (!item || typeof item !== 'object') return false;
+        if (item.checked === true) return true;
+        if (typeof item.isChecked === 'function' && item.isChecked() === true) return true;
+        if (item.el) {
+          try {
+            if (typeof item.el.hasClass === 'function') {
+              if (item.el.hasClass('x-menu-item-checked') || item.el.hasClass('x-menu-check-item-checked') || item.el.hasClass('x-form-cb-checked')) return true;
+            }
+            if (item.el.dom && item.el.dom.classList) {
+              if (item.el.dom.classList.contains('x-menu-item-checked') || item.el.dom.classList.contains('x-menu-check-item-checked')) return true;
+            }
+          } catch (e) {}
+        }
+        return false;
+      }
+
+      function processSchoolCandidate(schName, isChecked, isExplicitlyUnchecked) {
+        if (!schName) return;
+        if (!allDetectedSchools.includes(schName)) {
+          allDetectedSchools.push(schName);
+        }
+        if (isChecked && !checkedSchool) {
+          checkedSchool = schName;
+        } else if (!fallbackSchool && !isExplicitlyUnchecked) {
+          fallbackSchool = schName;
+        }
+      }
+
+      function checkTeacherItem(raw) {
         if (!raw) return;
         let txt = '';
         if (typeof raw === 'string') txt = raw;
@@ -466,13 +516,6 @@
         if (typeof txt !== 'string') return;
         txt = txt.replace(/<[^>]+>/g, '').trim();
         if (txt.length < 3 || txt.length > 70) return;
-
-        // Nhận diện trường học
-        if (!detectedSchool && /trường|tiểu\s*học|th|thcs|thpt|mầm\s*non/i.test(txt)) {
-          const m = txt.match(/(?:trường\s*(?:tiểu\s*học|th|thcs|thpt|mầm\s*non)?\s*[^|\n\r\-•]{3,50})/i);
-          if (m) detectedSchool = m[0].trim();
-          else detectedSchool = txt;
-        }
 
         // Nhận diện giáo viên (loại trừ toàn bộ từ khóa nghiệp vụ hệ thống vnEdu)
         const isSystemTerm = /trường|tiểu\s*học|th|thcs|thpt|mầm\s*non|khối|lớp|năm\s*học|học\s*kỳ|hệ\s*thống|đăng\s*xuất|đăng\s*nhập|thoát|cài\s*đặt|hướng\s*dẫn|báo\s*cáo|thống\s*kê|desktop|bàn\s*làm\s*việc|start|system|server|admin|quản\s*trị|quản\s*lý|nhân\s*sự|hồ\s*sơ|phân\s*công|kế\s*hoạch|dạy\s*học|bài\s*dạy|giảng\s*dạy|danh\s*sách|phân\s*quyền|chương\s*trình|nề\s*nếp|bạo\s*lực|học\s*đường|xác\s*nhận|yêu\s*cầu|phê\s*duyệt|đổi\s*tên|công\s*tác|học\s*tập|tổng\s*kết|tốt\s*nghiệp|dịch\s*vụ|câu\s*lạc\s*bộ|bảng\s*tin|lịch\s*tuần|bán\s*trú|bé\s*ngoan|mẫu\s*\d|kết\s*chuyển|ngày\s*nghỉ|điểm\s*danh|kết\s*quả|rèn\s*luyện|kỷ\s*luật|miễn\s*giảm|hạnh\s*kiểm|elearning|giấy\s*khen|ưu\s*tiên|học\s*phí|đăng\s*ký|văn\s*bản|học\s*bạ|đầu\s*bài|đăng\s*bộ|tuyển\s*sinh|đầu\s*cấp|nghỉ\s*phép|tin\s*tức|album|đón\s*trẻ|bài\s*tập|góp\s*ý|connect|mục\s*tiêu|tư\s*vấn|tin\s*nhắn|sms|gói\s*cước|vi\s*phạm|ott|nhật\s*ký|otp|kết\s*nối|api|dinh\s*dưỡng|phổ\s*cập|sắp\s*xếp|bảng\s*điều\s*khiển|vemis|đổi\s*ảnh|đại\s*diện|mật\s*khẩu|xác\s*thực|lịch\s*sử|trợ\s*lý|phiên\s*bản/i;
@@ -492,36 +535,67 @@
         }
       }
 
+      function inspectItem(item) {
+        if (!item) return;
+        const sch = extractSchoolText(item);
+        if (sch) {
+          const checked = isItemChecked(item);
+          const unchecked = (item.checked === false) || (typeof item.isChecked === 'function' && item.isChecked() === false);
+          processSchoolCandidate(sch, checked, unchecked);
+        } else {
+          checkTeacherItem(item);
+        }
+      }
+
       const Ext = window.Ext;
       if (Ext) {
-        // 1. Quét menus trong Ext.menu.MenuMgr (CHỈ ĐỌC items của menus hiện hữu)
-        if (Ext.menu && Ext.menu.MenuMgr && Ext.menu.MenuMgr.menus) {
-          try {
-            for (const mId in Ext.menu.MenuMgr.menus) {
-              const m = Ext.menu.MenuMgr.menus[mId];
-              if (m && m.items && typeof m.items.each === 'function') {
-                m.items.each(item => checkItem(item));
-              }
-            }
-          } catch (e) {}
-        }
-
-        // 2. Quét các nút taskbar trên desktop vnEdu (CHỈ ĐỌC items của nút taskbar)
+        // 1. Quét các nút taskbar trên desktop vnEdu trước (Thường hiển thị trực tiếp trường đang chọn)
         try {
-          const taskbarBtns = document.querySelectorAll('.ux-taskbar .x-btn, .x-desktop-taskbar .x-btn, .x-toolbar .x-btn');
+          const taskbarBtns = document.querySelectorAll('.ux-taskbar .x-btn, .x-desktop-taskbar .x-btn, .x-toolbar .x-btn, #statusbar .x-btn, .x-statusbar .x-btn');
           taskbarBtns.forEach(btnEl => {
             if (btnEl.id && Ext.getCmp) {
               const c = Ext.getCmp(btnEl.id);
               if (c) {
-                checkItem(c);
+                // Kiểm tra menu gắn với nút taskbar (nếu có)
                 if (c.menu && c.menu.items && typeof c.menu.items.each === 'function') {
-                  c.menu.items.each(item => checkItem(item));
+                  c.menu.items.each(item => inspectItem(item));
+                }
+                // Kiểm tra trực tiếp nút taskbar
+                const btnSch = extractSchoolText(c);
+                if (btnSch) {
+                  if (!taskbarSchool) taskbarSchool = btnSch;
+                  if (!allDetectedSchools.includes(btnSch)) allDetectedSchools.push(btnSch);
+                } else {
+                  checkTeacherItem(c);
                 }
               }
             }
           });
         } catch (e) {}
+
+        // 2. Quét menus trong Ext.menu.MenuMgr (CHỈ ĐỌC items của menus hiện hữu)
+        if (Ext.menu && Ext.menu.MenuMgr && Ext.menu.MenuMgr.menus) {
+          try {
+            for (const mId in Ext.menu.MenuMgr.menus) {
+              const m = Ext.menu.MenuMgr.menus[mId];
+              if (m && m.items && typeof m.items.each === 'function') {
+                m.items.each(item => inspectItem(item));
+              }
+            }
+          } catch (e) {}
+        }
       }
+
+      // 3. Quét DOM HTML tìm các check items đang được tích chọn (đang mở hoặc đã render trên màn hình)
+      try {
+        const domCheckedItems = document.querySelectorAll('.x-menu-item-checked, .x-menu-check-item-checked, [class*="checked"]');
+        domCheckedItems.forEach(el => {
+          const sch = extractSchoolText(el.innerText || el.textContent);
+          if (sch) {
+            processSchoolCandidate(sch, true, false);
+          }
+        });
+      } catch (e) {}
 
       // 4. Quét các biến toàn cục vnEdu
       try {
@@ -538,9 +612,12 @@
           window.top && window.top.TenGiaoVien
         ];
         for (const g of globals) {
-          if (g) checkItem(g);
+          if (g) inspectItem(g);
         }
       } catch (e) {}
+
+      // Kết luận trường học ưu tiên: checkedSchool > taskbarSchool > fallbackSchool > allDetectedSchools[0]
+      detectedSchool = checkedSchool || taskbarSchool || fallbackSchool || (allDetectedSchools.length > 0 ? allDetectedSchools[0] : '');
 
       // Gán dữ liệu lên documentElement
       if (detectedTeacher) {
@@ -548,6 +625,9 @@
       }
       if (detectedSchool) {
         document.documentElement.setAttribute('data-vnedu-detected-school', detectedSchool);
+      }
+      if (allDetectedSchools.length > 0) {
+        document.documentElement.setAttribute('data-vnedu-detected-schools', JSON.stringify(allDetectedSchools));
       }
       if (detectedTeachers.length > 0) {
         document.documentElement.setAttribute('data-vnedu-detected-teachers', JSON.stringify(detectedTeachers));
@@ -558,7 +638,7 @@
         lastReportedTeacher = detectedTeacher;
         lastReportedSchool = detectedSchool;
         window.dispatchEvent(new CustomEvent('VNEDU_USER_DETECTED', {
-          detail: { teacher: detectedTeacher, school: detectedSchool, teachers: detectedTeachers }
+          detail: { teacher: detectedTeacher, school: detectedSchool, schools: allDetectedSchools, teachers: detectedTeachers }
         }));
       }
     } finally {

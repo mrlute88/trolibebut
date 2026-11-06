@@ -522,7 +522,7 @@
     if (inputEl) inputEl.value = '';
 
     const LM = getLicenseManager();
-    const detected = LM && LM.detectVnEduTeacherAndSchool ? LM.detectVnEduTeacherAndSchool() : { teacher: '', teachers: [], accountTeacher: '', school: '' };
+    const detected = LM && LM.detectVnEduTeacherAndSchool ? LM.detectVnEduTeacherAndSchool() : { teacher: '', teachers: [], accountTeacher: '', school: '', schools: [] };
     const details = passedDetails || currentLicenseDetails;
     const currentTeacher = details?.currentTeacher || detected.teacher;
     const accountTeacher = details?.accountTeacher || detected.accountTeacher || currentTeacher;
@@ -1736,11 +1736,12 @@
 
       const LM = getLicenseManager();
       if (LM) {
-        const detected = LM.detectVnEduTeacherAndSchool ? LM.detectVnEduTeacherAndSchool() : { teacher: '', teachers: [], school: '' };
+        const detected = LM.detectVnEduTeacherAndSchool ? LM.detectVnEduTeacherAndSchool() : { teacher: '', teachers: [], school: '', schools: [] };
         const verifyRes = LM.verifyLicense(enteredKey, {
           currentTeacher: detected.teacher,
           teachers: detected.teachers,
-          currentSchool: detected.school
+          currentSchool: detected.school,
+          schools: (detected.schools && detected.schools.length > 0) ? detected.schools : (detected.school ? [detected.school] : [])
         });
 
         if (verifyRes.isValid) {
