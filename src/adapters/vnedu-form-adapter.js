@@ -54,7 +54,7 @@
         }
 
         const titleText = (win.querySelector('.x-window-header-text, .x-panel-header-text, .x-window-header, .modal-title, h1, h2, h3')?.textContent || win.textContent || '').toLowerCase();
-        
+
         // NẾU LÀ CỬA SỔ SỔ NHẬN XÉT, SỔ ĐIỂM, SỔ THEO DÕI... (BẢNG ĐIỂM CỦA CẢ LỚP):
         // Bắt buộc BỎ QUA để VnEduGridAdapter hoặc VnEduTableAdapter xử lý từng học sinh trong bảng!
         if (/sổ\s*nhận\s*xét|sổ\s*điểm|sổ\s*theo\s*dõi|bảng\s*điểm|sổ\s*chi\s*tiết|đánh\s*giá\s*môn\s*học/i.test(titleText)) {
@@ -63,7 +63,7 @@
 
         // Nếu trong cửa sổ là một bảng danh sách nhiều học sinh (có cột STT, Họ và tên và nhiều hàng dữ liệu)
         const hasStudentTableGrid = win.querySelectorAll('.x-grid3-row, tbody tr, tr.x-grid-row').length >= 3 &&
-                                    win.querySelector('.x-grid3-header, thead, th');
+          win.querySelector('.x-grid3-header, thead, th');
         if (hasStudentTableGrid && !/phẩm\s*chất|năng\s*lực|ghi\s*học\s*bạ/i.test(titleText)) {
           continue;
         }
@@ -205,14 +205,14 @@
       if (!row) return false;
       const cls = (row.className || '').toLowerCase();
       if (cls.includes('x-grid3-row-selected') ||
-          cls.includes('x-grid-row-selected') ||
-          cls.includes('row-selected') ||
-          cls.includes('selected') ||
-          cls.includes('x-grid3-row-focus') ||
-          cls.includes('focused') ||
-          cls.includes('active') ||
-          row.getAttribute('aria-selected') === 'true' ||
-          row.getAttribute('aria-current') === 'true') {
+        cls.includes('x-grid-row-selected') ||
+        cls.includes('row-selected') ||
+        cls.includes('selected') ||
+        cls.includes('x-grid3-row-focus') ||
+        cls.includes('focused') ||
+        cls.includes('active') ||
+        row.getAttribute('aria-selected') === 'true' ||
+        row.getAttribute('aria-current') === 'true') {
         return true;
       }
       try {
@@ -220,7 +220,7 @@
         if (bg && bg !== 'rgba(0, 0, 0, 0)' && bg !== 'transparent' && bg !== 'rgb(255, 255, 255)') {
           return true;
         }
-      } catch (e) {}
+      } catch (e) { }
       return false;
     }
 
@@ -349,7 +349,7 @@
         }
         targetRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       } catch (e) {
-        try { targetRow.scrollIntoView(false); } catch (err) {}
+        try { targetRow.scrollIntoView(false); } catch (err) { }
       }
 
       await DOMUtils.sleep(150);
@@ -364,11 +364,11 @@
             cancelable: true,
             view: window
           }));
-        } catch (e) {}
+        } catch (e) { }
       }
 
       if (typeof clickTarget.click === 'function') {
-        try { clickTarget.click(); } catch (e) {}
+        try { clickTarget.click(); } catch (e) { }
       }
 
       // 3. Kích hoạt trực tiếp SelectionModel của ExtJS nếu có
@@ -386,7 +386,7 @@
             }
           }
         }
-      } catch (e) {}
+      } catch (e) { }
 
       // Chờ vnEdu tải dữ liệu học sinh mới lên các ô textarea bên phải
       await DOMUtils.sleep(600);
@@ -455,7 +455,7 @@
 
       try {
         btn.scrollIntoView?.({ block: 'nearest', inline: 'nearest' });
-      } catch (e) {}
+      } catch (e) { }
 
       // Chuỗi sự kiện chuột hoàn chỉnh cho ExtJS
       const mouseEvents = ['mouseover', 'mousedown', 'mouseup', 'click'];
@@ -466,11 +466,11 @@
             cancelable: true,
             view: window
           }));
-        } catch (e) {}
+        } catch (e) { }
       }
 
       if (typeof btn.click === 'function') {
-        try { btn.click(); } catch (e) {}
+        try { btn.click(); } catch (e) { }
       }
 
       // Kích hoạt qua ExtJS handler nếu có
@@ -486,7 +486,7 @@
             }
           }
         }
-      } catch (e) {}
+      } catch (e) { }
 
       // Chờ vnEdu xử lý lưu và gửi request
       await DOMUtils.sleep(700);
@@ -504,7 +504,7 @@
             }
           }
         }
-      } catch (e) {}
+      } catch (e) { }
 
       return true;
     }
@@ -548,7 +548,7 @@
             return true;
           }
         }
-      } catch (e) {}
+      } catch (e) { }
 
       return false;
     }
@@ -662,16 +662,25 @@
         }
       });
 
-      // 2. Xác định chủ đề tra cứu
-      let subjectKey = 'Phẩm chất';
-      if (role === 'NL_CHUNG') subjectKey = 'Năng lực';
-      else if (role === 'NL_DACTHU') subjectKey = 'Năng lực đặc thù';
+      // 2. Xác định chủ đề tra cứu (ưu tiên 3 bộ danh mục câu nhận xét chung độc lập theo TT27)
+      let subjectKey = 'Nhận xét chung Phẩm chất';
+      let fallbackKey = 'Phẩm chất';
+      if (role === 'NL_CHUNG') {
+        subjectKey = 'Nhận xét chung Năng lực';
+        fallbackKey = 'Năng lực';
+      } else if (role === 'NL_DACTHU') {
+        subjectKey = 'Nhận xét năng lực đặc thù';
+        fallbackKey = 'Năng lực đặc thù';
+      }
 
       // 3. Lấy câu nhận xét và kiểm tra qua bộ lọc
       // Thử tối đa 12 offset khác nhau để tìm câu trong ngân hàng Excel không dính từ khóa cấm
       for (let offset = 0; offset < 12; offset++) {
-        const candidateVars = { ...commentVars, studentIndex: studentIdx + offset, maxLength: 155 };
-        const candidate = OfflineTemplates.getCommentForStudent(subjectKey, fieldLevel, studentIdx + offset, edLevel, candidateVars);
+        const candidateVars = { ...commentVars, studentIndex: studentIdx + offset, deterministicIndex: studentIdx + offset, maxLength: 155, maxChars: 155 };
+        let candidate = OfflineTemplates.getCommentForStudent(subjectKey, fieldLevel, studentIdx + offset, edLevel, candidateVars);
+        if (!candidate && fallbackKey) {
+          candidate = OfflineTemplates.getCommentForStudent(fallbackKey, fieldLevel, studentIdx + offset, edLevel, candidateVars);
+        }
         if (!candidate) continue;
 
         const candidateLower = candidate.toLowerCase();
@@ -681,30 +690,30 @@
         }
       }
 
-      // 4. Nếu mọi câu đều dính từ khóa (dự phòng an toàn 100%), trả về mẫu câu trung lập chuẩn mực sư phạm
+      // 4. Nếu mọi câu đều dính từ khóa (dự phòng an toàn 100%), trả về mẫu câu trung lập chuẩn mực sư phạm dài trên 100 ký tự
       if (role === 'PC_CHUNG') {
         if (fieldLevel === 'T') {
-          return 'Có phẩm chất đạo đức tốt, ngoan ngoãn, kính thầy yêu bạn và luôn hoàn thành tốt các nhiệm vụ tập thể.';
+          return 'Có phẩm chất đạo đức tốt, ngoan ngoãn, kính thầy yêu bạn, tích cực tham gia các hoạt động và luôn hoàn thành tốt các nhiệm vụ tập thể.';
         } else if (fieldLevel === 'C') {
-          return 'Biết nghe lời thầy cô và hòa đồng với bạn bè, cần kiên trì rèn luyện nề nếp để khắc phục các mặt còn hạn chế.';
+          return 'Biết nghe lời thầy cô và hòa đồng với bạn bè, cần kiên trì rèn luyện nề nếp kỷ luật để từng bước khắc phục các mặt còn hạn chế trong học tập.';
         } else {
-          return 'Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.';
+          return 'Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô, hòa nhã với bạn bè và có ý thức rèn luyện.';
         }
       } else if (role === 'NL_CHUNG') {
         if (fieldLevel === 'T') {
-          return 'Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả cùng bạn bè.';
+          return 'Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè trong lớp.';
         } else if (fieldLevel === 'C') {
-          return 'Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập.';
+          return 'Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động tự giác hoàn thành các bài tập và tích cực tham gia các hoạt động học tập cùng bạn.';
         } else {
-          return 'Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn phát biểu xây dựng bài hơn.';
+          return 'Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và tự tin phát biểu xây dựng bài trong giờ học.';
         }
       } else { // NL_DACTHU
         if (fieldLevel === 'T') {
-          return 'Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và hoàn thành xuất sắc các bài tập.';
+          return 'Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm học tập.';
         } else if (fieldLevel === 'C') {
-          return 'Cần chăm chỉ rèn luyện thêm các kỹ năng cơ bản ở môn học đặc thù còn hạn chế, chú ý lắng nghe giáo viên hướng dẫn thực hành.';
+          return 'Cần chăm chỉ rèn luyện thêm các kỹ năng cơ bản ở môn học đặc thù còn hạn chế, chú ý lắng nghe giáo viên hướng dẫn thực hành trong giờ học.';
         } else {
-          return 'Nắm được kiến thức cơ bản các môn đặc thù, hoàn thành các bài tập thực hành theo yêu cầu, cần tích cực rèn luyện thêm các kỹ năng.';
+          return 'Nắm được kiến thức cơ bản các môn đặc thù, hoàn thành các bài tập thực hành theo yêu cầu, cần tích cực và tự tin rèn luyện thêm các kỹ năng.';
         }
       }
     }
@@ -1070,10 +1079,20 @@
         }
 
         // GIỚI HẠN ĐỘ DÀI:
-        // - 3 ô nhận xét chung xuất học bạ số (NL_CHUNG, PC_CHUNG, NL_DACTHU): cho phép dài đầy đặn từ 90 đến 145 ký tự (<= 150 ký tự)
+        // - 3 ô nhận xét chung xuất học bạ số (NL_CHUNG, PC_CHUNG, NL_DACTHU): cho phép dài đầy đặn từ 100 đến 145 ký tự (<= 150 ký tự)
         // - Các ô tiêu chí thành phần còn lại: giữ gọn gàng <= 85 ký tự (<= 90 ký tự)
         const isGeneralField = ['NL_CHUNG', 'PC_CHUNG', 'NL_DACTHU'].includes(f.role);
         const limitLength = isGeneralField ? 150 : 80;
+
+        // BẢO VỆ ĐỘ DÀI TỐI THIỂU CHO 3 Ô NHẬN XÉT CHUNG (NGÂN HÀNG EXCEL ĐỀU TRÊN 100 KÝ TỰ):
+        if (isGeneralField && textToFill.length < 100) {
+          const fullKey = f.role === 'NL_CHUNG' ? 'Nhận xét chung Năng lực' : (f.role === 'PC_CHUNG' ? 'Nhận xét chung Phẩm chất' : 'Nhận xét năng lực đặc thù');
+          const recoveryVars = { ...commentVars, deterministicIndex: studentIdx, maxLength: 155, maxChars: 155 };
+          const fullCandidate = OfflineTemplates.getCommentForStudent(fullKey, fieldLevel, studentIdx, edLevel, recoveryVars);
+          if (fullCandidate && fullCandidate.length >= 100) {
+            textToFill = fullCandidate;
+          }
+        }
 
         if (textToFill.length > limitLength) {
           if (OfflineTemplates && typeof OfflineTemplates.clampToMaxLength === 'function') {

@@ -61827,13 +61827,13 @@
     }
   };
 
-  function applyNaturalVariation(baseText, cycle, tierCount, normLevel) {
+  function applyNaturalVariation(baseText, cycle, tierCount, normLevel, maxLen = 85) {
     if (!baseText || typeof baseText !== 'string') return baseText;
     const trimText = baseText.trim();
 
-    // Theo yêu cầu: Cho phép nhập trùng nguyên văn một lời nhận xét cho nhiều học sinh cùng xếp loại "C"
-    // Giữ nguyên câu gốc chuẩn mực, không thêm từ ghép làm lặp từ hay làm câu bị dài quá ký tự
-    if (normLevel === 'C' || normLevel === 'CĐ') {
+    // Đối với xếp loại C hoặc câu nhận xét chung xuất học bạ (dài >= 95 ký tự hoặc maxLen > 100):
+    // Giữ nguyên câu gốc chuẩn mực từ ngân hàng, tuyệt đối KHÔNG cắt ngắn hay ghép từ làm biến dạng câu
+    if (normLevel === 'C' || normLevel === 'CĐ' || maxLen > 100 || trimText.length >= 95) {
       return trimText;
     }
 
@@ -61869,7 +61869,7 @@
       return trimText;
     }
 
-    return clampToMaxLength(res, 85);
+    return clampToMaxLength(res, maxLen);
   }
 
   
@@ -64514,8 +64514,14 @@
       if (isForeignLang && subjectKey !== 'Tiếng Anh') {
         rawTemplate = rawTemplate.replace(/môn tiếng anh/gi, `môn ${subjectKey}`).replace(/tiếng anh/gi, subjectKey);
       }
+      // Nhận diện câu nhận xét chung học bạ số
+      const isGeneralComment = /nhận\s*xét\s*chung|đặc\s*thù|^phẩm\s*chất$|^năng\s*lực$/i.test(subject) ||
+                               /nhận\s*xét\s*chung|đặc\s*thù|^phẩm\s*chất$|^năng\s*lực$/i.test(subjectKey);
+
       if (cycle > 0) {
-        rawTemplate = applyNaturalVariation(rawTemplate, cycle, count, normLevel);
+        if (!isGeneralComment) {
+          rawTemplate = applyNaturalVariation(rawTemplate, cycle, count, normLevel, 85);
+        }
       }
       selectedTemplate = rawTemplate;
     }
@@ -64525,14 +64531,18 @@
       finalResult = renderTemplate(selectedTemplate, vars);
     }
     // Nhận biết 3 ô nhận xét chung xuất học bạ số (được phép dài > 90 ký tự, tối đa 150 ký tự)
-    const isGeneralComment = (vars && (vars.maxLength > 90 || vars.maxChars > 90)) &&
-      (/nhận\s*xét\s*chung|đặc\s*thù|^phẩm\s*chất$|^năng\s*lực$/i.test(subject) || /nhận\s*xét\s*chung|đặc\s*thù|^phẩm\s*chất$|^năng\s*lực$/i.test(subjectKey));
+    const isGeneralComment = /nhận\s*xét\s*chung|đặc\s*thù|^phẩm\s*chất$|^năng\s*lực$/i.test(subject) ||
+                             /nhận\s*xét\s*chung|đặc\s*thù|^phẩm\s*chất$|^năng\s*lực$/i.test(subjectKey);
     const ceilingLimit = isGeneralComment ? 150 : 90;
 
-    // Giới hạn độ dài tuyệt đối dưới 100 ký tự (chuẩn vnEdu tối đa 80-85 ký tự để tránh tràn học bạ; riêng nhận xét chung học bạ số cho phép đến 150 ký tự)
-    const targetMax = (vars && (vars.maxLength || vars.maxChars))
-      ? Math.min(vars.maxLength || vars.maxChars, ceilingLimit)
-      : (/năng lực|phẩm chất|tự chủ|giao tiếp|sáng tạo|yêu nước|nhân ái|chăm chỉ|trung thực|trách nhiệm|rèn luyện|ngôn ngữ|tính toán|khoa học|thẩm mĩ|thể chất/i.test(subject) ? 80 : 85);
+    // Giới hạn độ dài:
+    // - Nhận xét chung: cho phép đủ độ dài từ ngân hàng (100-145 ký tự), trần tối đa 150 ký tự
+    // - Môn học / tiêu chí thành phần: giữ gọn gàng 80-85 ký tự (dưới 100 ký tự vnEdu quy định)
+    const targetMax = isGeneralComment
+      ? Math.min((vars && (vars.maxLength || vars.maxChars)) || 150, 150)
+      : ((vars && (vars.maxLength || vars.maxChars))
+          ? Math.min(vars.maxLength || vars.maxChars, ceilingLimit)
+          : (/năng lực|phẩm chất|tự chủ|giao tiếp|sáng tạo|yêu nước|nhân ái|chăm chỉ|trung thực|trách nhiệm|rèn luyện|ngôn ngữ|tính toán|khoa học|thẩm mĩ|thể chất/i.test(subject) ? 80 : 85));
 
     finalResult = clampToMaxLength(finalResult, targetMax);
 
