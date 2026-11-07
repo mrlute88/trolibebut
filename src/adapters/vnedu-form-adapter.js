@@ -314,8 +314,9 @@
 
     /**
      * Chuyển chọn sang học sinh theo chỉ số hoặc phần tử dòng
+     * Tích hợp Smart Polling chờ nạp chữ màu đỏ (T, Đ, C) và Auto-Retry
      */
-    async selectStudent(targetIndexOrRow) {
+    async selectStudent(targetIndexOrRow, options = {}) {
       if (!this.activeWindow || !this.activeWindow.isConnected) this.canHandle();
       const container = this.activeWindow || document.body;
 
@@ -336,61 +337,92 @@
 
       if (!targetRow) return false;
 
-      // 1. Cuộn danh sách đến học sinh cần chọn (kể cả trong ExtJS .x-grid3-scroller)
-      try {
-        const scroller = targetRow.closest('.x-grid3-scroller, .x-grid-scroller, .x-grid3-body');
-        if (scroller) {
-          const rowTop = targetRow.offsetTop;
-          const scrollerTop = scroller.scrollTop;
-          const scrollerHeight = scroller.clientHeight;
-          if (rowTop < scrollerTop || rowTop > scrollerTop + scrollerHeight - 40) {
-            scroller.scrollTop = Math.max(0, rowTop - 60);
-          }
-        }
-        targetRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      } catch (e) {
-        try { targetRow.scrollIntoView(false); } catch (err) { }
-      }
-
-      await DOMUtils.sleep(150);
-
-      // 2. Dispatch sự kiện click trên cell và row
-      const clickTarget = targetRow.querySelector('.x-grid3-cell-inner, .x-grid3-cell, td, div') || targetRow;
-      const evTypes = ['mousedown', 'mouseup', 'click'];
-      for (const evName of evTypes) {
+      // Hàm kích hoạt chọn dòng học sinh trên ExtJS
+      const triggerRowSelection = () => {
         try {
-          clickTarget.dispatchEvent(new MouseEvent(evName, {
-            bubbles: true,
-            cancelable: true,
-            view: window
-          }));
-        } catch (e) { }
-      }
-
-      if (typeof clickTarget.click === 'function') {
-        try { clickTarget.click(); } catch (e) { }
-      }
-
-      // 3. Kích hoạt trực tiếp SelectionModel của ExtJS nếu có
-      try {
-        const gridEl = targetRow.closest('.x-grid3, .x-grid, .x-panel');
-        const globalWin = (targetRow.ownerDocument && targetRow.ownerDocument.defaultView) || window;
-        if (gridEl && globalWin.Ext && globalWin.Ext.getCmp) {
-          const grid = globalWin.Ext.getCmp(gridEl.id);
-          if (grid && grid.getSelectionModel) {
-            const sm = grid.getSelectionModel();
-            const rIdx = targetIndex >= 0 ? targetIndex : Array.from(targetRow.parentElement?.children || []).indexOf(targetRow);
-            if (rIdx >= 0) {
-              if (typeof sm.selectRow === 'function') sm.selectRow(rIdx);
-              if (typeof grid.fireEvent === 'function') grid.fireEvent('rowclick', grid, rIdx);
+          const scroller = targetRow.closest('.x-grid3-scroller, .x-grid-scroller, .x-grid3-body');
+          if (scroller) {
+            const rowTop = targetRow.offsetTop;
+            const scrollerTop = scroller.scrollTop;
+            const scrollerHeight = scroller.clientHeight;
+            if (rowTop < scrollerTop || rowTop > scrollerTop + scrollerHeight - 40) {
+              scroller.scrollTop = Math.max(0, rowTop - 60);
             }
           }
+          targetRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } catch (e) {
+          try { targetRow.scrollIntoView(false); } catch (err) { }
         }
-      } catch (e) { }
 
-      // Chờ vnEdu tải dữ liệu học sinh mới lên các ô textarea bên phải
-      await DOMUtils.sleep(600);
-      return true;
+        const clickTarget = targetRow.querySelector('.x-grid3-cell-inner, .x-grid3-cell, td, div') || targetRow;
+        const evTypes = ['mousedown', 'mouseup', 'click'];
+        for (const evName of evTypes) {
+          try {
+            clickTarget.dispatchEvent(new MouseEvent(evName, {
+              bubbles: true,
+              cancelable: true,
+              view: window
+            }));
+          } catch (e) { }
+        }
+
+        if (typeof clickTarget.click === 'function') {
+          try { clickTarget.click(); } catch (e) { }
+        }
+
+        try {
+          const gridEl = targetRow.closest('.x-grid3, .x-grid, .x-panel');
+          const globalWin = (targetRow.ownerDocument && targetRow.ownerDocument.defaultView) || window;
+          if (gridEl && globalWin.Ext && globalWin.Ext.getCmp) {
+            const grid = globalWin.Ext.getCmp(gridEl.id);
+            if (grid && grid.getSelectionModel) {
+              const sm = grid.getSelectionModel();
+              const rIdx = targetIndex >= 0 ? targetIndex : Array.from(targetRow.parentElement?.children || []).indexOf(targetRow);
+              if (rIdx >= 0) {
+                if (typeof sm.selectRow === 'function') sm.selectRow(rIdx);
+                if (typeof grid.fireEvent === 'function') grid.fireEvent('rowclick', grid, rIdx);
+              }
+            }
+          }
+        } catch (e) { }
+      };
+
+      // 1. Thực hiện chọn dòng lần 1
+      triggerRowSelection();
+
+      const waitForData = options.waitForData !== false;
+      if (!waitForData) {
+        await DOMUtils.sleep(400);
+        return true;
+      }
+
+      // 2. SMART POLLING: Chờ vnEdu tải dữ liệu xếp loại (chữ màu đỏ T, Đ, C) lên các nhãn bên phải
+      const maxWait = options.maxWaitMs || 3500;
+      const startTime = Date.now();
+      let retried = false;
+
+      // Đợi tối thiểu 250ms để ExtJS bắt đầu xử lý sự kiện
+      await DOMUtils.sleep(250);
+
+      while (Date.now() - startTime < maxWait) {
+        // Kiểm tra xem đã xuất hiện xếp loại (chữ màu đỏ) chưa
+        if (this.hasAnyRating()) {
+          // Thêm 150ms để DOM ổn định hoàn toàn
+          await DOMUtils.sleep(150);
+          return true;
+        }
+
+        // AUTO-RETRY: Nếu sau 1.2 giây vẫn chưa thấy chữ đỏ, kích hoạt lại click lần 2 phòng trường hợp bị mask/mạng chậm
+        if (!retried && Date.now() - startTime >= 1200) {
+          retried = true;
+          triggerRowSelection();
+        }
+
+        await DOMUtils.sleep(200);
+      }
+
+      // Hết thời gian chờ (có thể học sinh thực sự chưa có xếp loại)
+      return this.hasAnyRating();
     }
 
     /**
@@ -444,9 +476,9 @@
     }
 
     /**
-     * Tự động bấm nút "Lưu" trên vnEdu sau khi giáo viên đồng ý lưu
+     * Tự động bấm nút "Lưu" trên vnEdu và chờ đóng hộp thoại "Lưu thành công" (Smart Polling)
      */
-    async clickSaveButton() {
+    async clickSaveButton(maxWaitMs = 5000) {
       const btn = this.findSaveButton();
       if (!btn) {
         if (Logger) Logger.warn('Không tìm thấy nút "Lưu" trong cửa sổ Phẩm chất - Năng lực');
@@ -488,24 +520,58 @@
         }
       } catch (e) { }
 
-      // Chờ vnEdu xử lý lưu và gửi request
-      await DOMUtils.sleep(700);
+      // SMART POLLING: Chờ hộp thoại MessageBox "Lưu thành công" xuất hiện và tự động đóng ngay lập tức
+      const startTime = Date.now();
+      let dismissed = false;
 
-      // Đóng tự động hộp thoại MessageBox "Lưu thành công" của vnEdu nếu có
-      try {
-        const msgBoxes = Array.from(document.querySelectorAll('.x-window-dlg, .x-msg-box'));
-        for (const dlg of msgBoxes) {
-          const style = window.getComputedStyle(dlg);
-          if (style.display !== 'none' && style.visibility !== 'hidden') {
-            const okBtn = dlg.querySelector('button, .x-btn');
-            if (okBtn) {
-              okBtn.click();
-              await DOMUtils.sleep(200);
+      while (Date.now() - startTime < maxWaitMs) {
+        // 1. Kiểm tra qua Ext.Msg nếu có
+        try {
+          const globalWin = (btn.ownerDocument && btn.ownerDocument.defaultView) || window;
+          if (globalWin.Ext?.Msg?.isVisible?.()) {
+            globalWin.Ext.Msg.hide();
+            dismissed = true;
+          }
+        } catch (e) { }
+
+        // 2. Quét các hộp thoại MessageBox / Dialog trên DOM
+        try {
+          const msgBoxes = Array.from(document.querySelectorAll('.x-window-dlg, .x-msg-box, .x-window[class*="msg"]'));
+          for (const dlg of msgBoxes) {
+            const style = window.getComputedStyle(dlg);
+            if (style.display !== 'none' && style.visibility !== 'hidden' && style.opacity !== '0') {
+              // Tìm nút OK hoặc nút bấm xác nhận trong hộp thoại
+              const btns = Array.from(dlg.querySelectorAll('button, .x-btn, input[type="button"], a.x-btn'));
+              const okBtn = btns.find(b => /^(ok|đồng\s*ý|đóng|xác\s*nhận)$/i.test((b.textContent || b.value || '').trim())) || btns[0];
+              if (okBtn) {
+                okBtn.click();
+                dismissed = true;
+              }
             }
           }
-        }
-      } catch (e) { }
+        } catch (e) { }
 
+        if (dismissed) {
+          // Chờ 250ms cho lớp phủ modal mask (.ext-el-mask) giải phóng hoàn toàn
+          await DOMUtils.sleep(250);
+          try {
+            // Kiểm tra và dọn dẹp lớp mask còn sót lại nếu có
+            const masks = Array.from(document.querySelectorAll('.ext-el-mask, .x-mask'));
+            for (const m of masks) {
+              const mStyle = window.getComputedStyle(m);
+              if (mStyle.display !== 'none') {
+                m.style.display = 'none';
+              }
+            }
+          } catch (e) { }
+          return true;
+        }
+
+        await DOMUtils.sleep(150);
+      }
+
+      // Nếu sau maxWaitMs không thấy popup (có thể server lưu âm thầm hoặc không hiện popup)
+      await DOMUtils.sleep(300);
       return true;
     }
 

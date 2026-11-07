@@ -861,14 +861,14 @@
           // 1. Chuyển chọn dòng học sinh i trên giao diện vnEdu
           if (textSpan) textSpan.textContent = `Chọn: ${studentName}...`;
           showToast(
-            `Đang chọn học sinh: ${studentName} (${sttNumber}/${totalClassStudents})...`,
+            `Đang chọn học sinh: ${studentName} (${sttNumber}/${totalClassStudents})...\n⏳ Đang tải dữ liệu xếp loại...`,
             Math.round((sttNumber / totalClassStudents) * 100),
             false,
             true
           );
 
           if (typeof adapter.selectStudent === 'function') {
-            await adapter.selectStudent(i);
+            await adapter.selectStudent(i, { waitForData: true, maxWaitMs: 3500 });
           }
 
           if (!isFillingActive) {
@@ -986,7 +986,7 @@
             true
           );
 
-          const wasCancelledNext = await sleepInterruptible(400);
+          const wasCancelledNext = await sleepInterruptible(500);
           if (!isFillingActive || wasCancelledNext) {
             stoppedByUser = true;
             break;
