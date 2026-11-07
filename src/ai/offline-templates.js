@@ -61949,9 +61949,13 @@
     if (/tự\s*chủ|tự\s*học/i.test(clean)) return 'Tự chủ và tự học';
     if (/giao\s*tiếp|hợp\s*tác/i.test(clean)) return 'Giao tiếp và hợp tác';
     if (/sáng\s*tạo|gqvđ|gqvd|giải\s*quyết\s*vấn\s*đề/i.test(clean)) return 'GQVĐ và sáng tạo';
-    if (/năng\s*lực\s*đặc\s*thù|nl\s*đặc\s*thù/i.test(clean)) return 'Năng lực đặc thù';
-    if (/năng\s*lực|nl_chung|nl\s*chung/i.test(clean)) return 'Năng lực';
-    if (/phẩm\s*chất|pc_chung|pc\s*chung/i.test(clean)) return 'Phẩm chất';
+    // 3 bộ danh mục câu nhận xét chung xuất học bạ số theo Thông tư 27 (Ưu tiên độc lập tuyệt đối)
+    if (/nhận\s*xét\s*(?:chung\s*)?năng\s*lực\s*đặc\s*thù|nl\s*đặc\s*thù/i.test(clean)) return 'Nhận xét năng lực đặc thù';
+    if (/nhận\s*xét\s*chung\s*năng\s*lực|nl_chung|nl\s*chung/i.test(clean)) return 'Nhận xét chung Năng lực';
+    if (/nhận\s*xét\s*chung\s*phẩm\s*chất|pc_chung|pc\s*chung/i.test(clean)) return 'Nhận xét chung Phẩm chất';
+    if (/năng\s*lực\s*đặc\s*thù/i.test(clean)) return 'Nhận xét năng lực đặc thù';
+    if (/^năng\s*lực$/i.test(clean)) return 'Nhận xét chung Năng lực';
+    if (/^phẩm\s*chất$/i.test(clean)) return 'Nhận xét chung Phẩm chất';
 
     // 2. Năng lực đặc thù môn học ánh xạ về môn học tương ứng
     if (/ngôn\s*ngữ/i.test(clean)) return 'Tiếng Việt';
@@ -64227,6 +64231,7 @@
         if (!periodObj) continue;
         for (const [sub, levels] of Object.entries(TYNIX_ENRICHED_TEMPLATES)) {
           const targetSub = sub === 'Chung' ? 'DEFAULT' : sub;
+          if (['Nhận xét chung Phẩm chất', 'Nhận xét chung Năng lực', 'Nhận xét năng lực đặc thù', 'Năng lực đặc thù', 'Phẩm chất', 'Năng lực'].includes(targetSub)) continue;
           if (periodObj[targetSub]) {
             for (const lvl of ['T', 'H', 'C']) {
               if (Array.isArray(levels[lvl]) && Array.isArray(periodObj[targetSub][lvl])) {
@@ -64248,6 +64253,7 @@
     if (typeof LEVEL_PRIMARY_TEMPLATES !== 'undefined') {
       for (const [sub, levels] of Object.entries(TYNIX_ENRICHED_TEMPLATES)) {
         const targetSub = sub === 'Chung' ? 'DEFAULT' : sub;
+        if (['Nhận xét chung Phẩm chất', 'Nhận xét chung Năng lực', 'Nhận xét năng lực đặc thù', 'Năng lực đặc thù', 'Phẩm chất', 'Năng lực'].includes(targetSub)) continue;
         if (LEVEL_PRIMARY_TEMPLATES[targetSub]) {
           for (const lvl of ['T', 'H', 'C']) {
             if (Array.isArray(levels[lvl]) && Array.isArray(LEVEL_PRIMARY_TEMPLATES[targetSub][lvl])) {
@@ -64268,6 +64274,7 @@
     if (typeof SUBJECT_TEMPLATES !== 'undefined') {
       for (const [sub, levels] of Object.entries(TYNIX_ENRICHED_TEMPLATES)) {
         const targetSub = sub === 'Chung' ? 'DEFAULT' : sub;
+        if (['Nhận xét chung Phẩm chất', 'Nhận xét chung Năng lực', 'Nhận xét năng lực đặc thù', 'Năng lực đặc thù', 'Phẩm chất', 'Năng lực'].includes(targetSub)) continue;
         if (SUBJECT_TEMPLATES[targetSub]) {
           for (const lvl of ['T', 'H', 'C']) {
             if (Array.isArray(levels[lvl]) && Array.isArray(SUBJECT_TEMPLATES[targetSub][lvl])) {
@@ -64313,8 +64320,28 @@
     let list = null;
     let effectiveListKey = normLevel;
 
+    let targetGrade = null;
+    if (vars && vars.grade) targetGrade = String(vars.grade).trim();
+    else if (vars && vars.className) {
+      const gMatch = String(vars.className).match(/^(1[0-2]|[1-9])/);
+      if (gMatch) targetGrade = gMatch[1];
+    }
+
+    // 0. ƯU TIÊN TUYỆT ĐỐI CHO 3 BỘ CÂU NHẬN XÉT CHUNG THEO KHỐI LỚP (LỚP 1 - 5) TỪ PRIMARY_BY_GRADE
+    const isGeneralCommentSubj = /nhận\s*xét\s*chung|đặc\s*thù/i.test(subject) || /nhận\s*xét\s*chung|đặc\s*thù/i.test(subjectKey);
+    if (isGeneralCommentSubj && (edLevel === 'PRIMARY' || !edLevel) && targetGrade && typeof PRIMARY_BY_GRADE !== 'undefined' && PRIMARY_BY_GRADE[targetGrade]) {
+      const gMap = PRIMARY_BY_GRADE[targetGrade][effectivePeriod] || PRIMARY_BY_GRADE[targetGrade]['ALL'];
+      if (gMap) {
+        const gCat = gMap[subjectKey] || (subjectKey === 'Nhận xét chung Năng lực' ? gMap['Năng lực'] : null) || (subjectKey === 'Nhận xét chung Phẩm chất' ? gMap['Phẩm chất'] : null) || (subjectKey === 'Nhận xét năng lực đặc thù' ? gMap['Năng lực đặc thù'] : null);
+        if (gCat && gCat[normLevel] && gCat[normLevel].length > 0) {
+          list = gCat[normLevel];
+          effectiveListKey = normLevel;
+        }
+      }
+    }
+
     // 1. Ưu tiên tra cứu theo Đợt kiểm tra cụ thể (GK1, CK1, GK2, CK2) của Cấp học đã chọn
-    if (edLevel && ALL_PERIOD_TEMPLATES[edLevel] && ALL_PERIOD_TEMPLATES[edLevel][effectivePeriod]) {
+    if (!list && edLevel && ALL_PERIOD_TEMPLATES[edLevel] && ALL_PERIOD_TEMPLATES[edLevel][effectivePeriod]) {
       const periodMap = ALL_PERIOD_TEMPLATES[edLevel][effectivePeriod];
       const periodCat = periodMap[subjectKey] || (isForeignLang ? periodMap['Tiếng Anh'] : null) || (subjectKey === 'Chuyên đề học tập' ? periodMap['Toán'] : null) || periodMap['DEFAULT'];
       if (periodCat) {
@@ -64375,9 +64402,8 @@
       }
     }
 
-    let targetGrade = null;
-    if (vars && vars.grade) targetGrade = String(vars.grade).trim();
-    else if (vars && vars.className) {
+    if (!targetGrade && vars && vars.grade) targetGrade = String(vars.grade).trim();
+    else if (!targetGrade && vars && vars.className) {
       const gMatch = String(vars.className).match(/^(1[0-2]|[1-9])/);
       if (gMatch) targetGrade = gMatch[1];
     }
@@ -64553,6 +64579,10 @@
             if (!ALL_PERIOD_TEMPLATES[level][period][subj]) ALL_PERIOD_TEMPLATES[level][period][subj] = {};
             for (const [r, comments] of Object.entries(ratings)) {
               if (Array.isArray(comments)) {
+                // Tuyệt đối không cho dữ liệu cũ từ xa chèn lên trước các câu nhận xét chung chuẩn từ Excel
+                if (['Nhận xét chung Phẩm chất', 'Nhận xét chung Năng lực', 'Nhận xét năng lực đặc thù', 'Năng lực đặc thù', 'Phẩm chất', 'Năng lực'].includes(subj)) {
+                  continue;
+                }
                 const currentList = ALL_PERIOD_TEMPLATES[level][period][subj][r] || [];
                 const set = new Set(currentList);
                 const newItems = comments.filter(c => c && typeof c === 'string' && !set.has(c));
