@@ -616,6 +616,100 @@
     }
 
     /**
+     * Thuật toán lọc câu nhận xét chung chống mâu thuẫn ngữ nghĩa với các tiêu chí con
+     * Đảm bảo: nếu tiêu chí con nào bị Đ hoặc C (chưa đạt T), nhận xét chung tuyệt đối không khen ngợi tiêu chí đó!
+     */
+    getConsistentGeneralComment(role, fieldLevel, studentIdx, edLevel, commentVars, currentFields, OfflineTemplates) {
+      if (!OfflineTemplates) return '';
+
+      // 1. Xác định danh sách từ khóa cấm dựa trên các tiêu chí con bị Đạt hoặc Cần cố gắng
+      const forbiddenWords = [];
+
+      currentFields.forEach(cf => {
+        const r = cf.rating;
+        // Nếu tiêu chí con KHÔNG ĐẠT mức Tốt (T), tức là ở mức 'Đ', 'H' hoặc 'C'
+        if (r && r !== 'T') {
+          switch (cf.role) {
+            case 'CHAM_CHI':
+              forbiddenWords.push('chăm chỉ', 'siêng năng', 'cần cù', 'chuyên cần');
+              break;
+            case 'TU_CHU':
+              forbiddenWords.push('tự chủ', 'tự học', 'tự giác');
+              break;
+            case 'GIAO_TIEP':
+              forbiddenWords.push('giao tiếp tốt', 'hợp tác tốt', 'phối hợp nhịp nhàng');
+              break;
+            case 'GQVD':
+              forbiddenWords.push('sáng tạo', 'giải quyết vấn đề', 'tư duy linh hoạt');
+              break;
+            case 'TRUNG_THUC':
+              forbiddenWords.push('trung thực', 'thật thà', 'ngay thẳng', 'đáng tin cậy');
+              break;
+            case 'NHAN_AI':
+              forbiddenWords.push('nhân ái', 'yêu thương bạn bè', 'sẻ chia');
+              break;
+            case 'TRACH_NHIEM':
+              forbiddenWords.push('trách nhiệm cao', 'gương mẫu hoàn thành');
+              break;
+            case 'YEU_NUOC':
+              forbiddenWords.push('yêu nước', 'yêu quê hương', 'tự hào');
+              break;
+            case 'TINH_TOAN':
+            case 'NGON_NGU':
+              forbiddenWords.push('toàn diện các môn', 'nổi trội mọi môn', 'tính toán nhanh', 'giỏi ngôn ngữ');
+              break;
+          }
+        }
+      });
+
+      // 2. Xác định chủ đề tra cứu
+      let subjectKey = 'Phẩm chất';
+      if (role === 'NL_CHUNG') subjectKey = 'Năng lực';
+      else if (role === 'NL_DACTHU') subjectKey = 'Năng lực đặc thù';
+
+      // 3. Lấy câu nhận xét và kiểm tra qua bộ lọc
+      // Thử tối đa 12 offset khác nhau để tìm câu trong ngân hàng Excel không dính từ khóa cấm
+      for (let offset = 0; offset < 12; offset++) {
+        const candidateVars = { ...commentVars, studentIndex: studentIdx + offset, maxLength: 155 };
+        const candidate = OfflineTemplates.getCommentForStudent(subjectKey, fieldLevel, studentIdx + offset, edLevel, candidateVars);
+        if (!candidate) continue;
+
+        const candidateLower = candidate.toLowerCase();
+        const hasConflict = forbiddenWords.some(fw => candidateLower.includes(fw.toLowerCase()));
+        if (!hasConflict) {
+          return candidate;
+        }
+      }
+
+      // 4. Nếu mọi câu đều dính từ khóa (dự phòng an toàn 100%), trả về mẫu câu trung lập chuẩn mực sư phạm
+      if (role === 'PC_CHUNG') {
+        if (fieldLevel === 'T') {
+          return 'Có phẩm chất đạo đức tốt, ngoan ngoãn, kính thầy yêu bạn và luôn hoàn thành tốt các nhiệm vụ tập thể.';
+        } else if (fieldLevel === 'C') {
+          return 'Biết nghe lời thầy cô và hòa đồng với bạn bè, cần kiên trì rèn luyện nề nếp để khắc phục các mặt còn hạn chế.';
+        } else {
+          return 'Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.';
+        }
+      } else if (role === 'NL_CHUNG') {
+        if (fieldLevel === 'T') {
+          return 'Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả cùng bạn bè.';
+        } else if (fieldLevel === 'C') {
+          return 'Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập.';
+        } else {
+          return 'Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn phát biểu xây dựng bài hơn.';
+        }
+      } else { // NL_DACTHU
+        if (fieldLevel === 'T') {
+          return 'Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và hoàn thành xuất sắc các bài tập.';
+        } else if (fieldLevel === 'C') {
+          return 'Cần chăm chỉ rèn luyện thêm các kỹ năng cơ bản ở môn học đặc thù còn hạn chế, chú ý lắng nghe giáo viên hướng dẫn thực hành.';
+        } else {
+          return 'Nắm được kiến thức cơ bản các môn đặc thù, hoàn thành các bài tập thực hành theo yêu cầu, cần tích cực rèn luyện thêm các kỹ năng.';
+        }
+      }
+    }
+
+    /**
      * Kiểm tra nhanh xem form học sinh đang mở có ít nhất 1 xếp loại (chữ màu đỏ của GVCN) hay không
      */
     hasAnyRating() {
@@ -906,10 +1000,13 @@
         if (OfflineTemplates) {
           switch (f.role) {
             case 'NL_CHUNG':
-              textToFill = OfflineTemplates.getCommentForStudent('Năng lực', fieldLevel, studentIdx, edLevel, commentVars);
+              textToFill = this.getConsistentGeneralComment('NL_CHUNG', fieldLevel, studentIdx, edLevel, commentVars, currentFields, OfflineTemplates);
               break;
             case 'PC_CHUNG':
-              textToFill = OfflineTemplates.getCommentForStudent('Phẩm chất', fieldLevel, studentIdx, edLevel, commentVars);
+              textToFill = this.getConsistentGeneralComment('PC_CHUNG', fieldLevel, studentIdx, edLevel, commentVars, currentFields, OfflineTemplates);
+              break;
+            case 'NL_DACTHU':
+              textToFill = this.getConsistentGeneralComment('NL_DACTHU', fieldLevel, studentIdx, edLevel, commentVars, currentFields, OfflineTemplates);
               break;
             case 'TU_CHU':
               textToFill = OfflineTemplates.getCommentForStudent('Tự chủ và tự học', fieldLevel, studentIdx, edLevel, commentVars);
@@ -935,12 +1032,6 @@
             case 'TRACH_NHIEM':
               textToFill = OfflineTemplates.getCommentForStudent('Trách nhiệm', fieldLevel, studentIdx, edLevel, commentVars);
               break;
-            case 'NL_DACTHU': {
-              const dtLvl = (fieldLevel === 'Đ' || fieldLevel === 'H') ? 'H' : (fieldLevel === 'C' ? 'C' : 'T');
-              const pool = dacthuBanks[dtLvl] || dacthuBanks['T'];
-              textToFill = pool[Math.abs(studentIdx) % pool.length];
-              break;
-            }
             case 'NGON_NGU':
               textToFill = OfflineTemplates.getCommentForStudent('Tiếng Việt', fieldLevel, studentIdx, edLevel, commentVars);
               break;
@@ -964,9 +1055,9 @@
               break;
             default:
               if (f.section === 'PHAM_CHAT') {
-                textToFill = OfflineTemplates.getCommentForStudent('Phẩm chất', fieldLevel, studentIdx, edLevel, commentVars);
+                textToFill = this.getConsistentGeneralComment('PC_CHUNG', fieldLevel, studentIdx, edLevel, commentVars, currentFields, OfflineTemplates);
               } else {
-                textToFill = OfflineTemplates.getCommentForStudent('Năng lực', fieldLevel, studentIdx, edLevel, commentVars);
+                textToFill = this.getConsistentGeneralComment('NL_CHUNG', fieldLevel, studentIdx, edLevel, commentVars, currentFields, OfflineTemplates);
               }
               break;
           }
@@ -974,24 +1065,29 @@
 
         if (!textToFill) {
           textToFill = f.section === 'PHAM_CHAT'
-            ? 'Chăm ngoan, lễ phép, hòa đồng và luôn nhiệt tình giúp đỡ bạn bè.'
-            : 'Tự giác học tập, biết chuẩn bị đầy đủ bài và đồ dùng trước khi đến lớp.';
+            ? 'Có phẩm chất đạo đức tốt, ngoan ngoãn lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và hòa đồng với bạn bè.'
+            : 'Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả cùng bạn bè.';
         }
 
-        // GIỚI HẠN NGHIÊM NGẶT DƯỚI 100 KÝ TỰ (<= 80 KÝ TỰ) THEO QUY ĐỊNH VNEDU TRÁNH TRÀN HỌC BẠ
-        if (textToFill.length > 80) {
+        // GIỚI HẠN ĐỘ DÀI:
+        // - 3 ô nhận xét chung xuất học bạ số (NL_CHUNG, PC_CHUNG, NL_DACTHU): cho phép dài đầy đặn từ 90 đến 145 ký tự (<= 150 ký tự)
+        // - Các ô tiêu chí thành phần còn lại: giữ gọn gàng <= 85 ký tự (<= 90 ký tự)
+        const isGeneralField = ['NL_CHUNG', 'PC_CHUNG', 'NL_DACTHU'].includes(f.role);
+        const limitLength = isGeneralField ? 150 : 80;
+
+        if (textToFill.length > limitLength) {
           if (OfflineTemplates && typeof OfflineTemplates.clampToMaxLength === 'function') {
-            textToFill = OfflineTemplates.clampToMaxLength(textToFill, 80);
+            textToFill = OfflineTemplates.clampToMaxLength(textToFill, limitLength);
           } else {
-            let sub = textToFill.trim().slice(0, 80);
+            let sub = textToFill.trim().slice(0, limitLength);
             const lastSpace = sub.lastIndexOf(' ');
-            if (lastSpace > 45) sub = sub.slice(0, lastSpace);
+            if (lastSpace > (limitLength * 0.6)) sub = sub.slice(0, lastSpace);
             sub = sub.replace(/[,;:\-\s]+$/, '');
             if (!/[.!?]$/.test(sub)) sub += '.';
             textToFill = sub;
           }
         }
-        if (textToFill.length >= 95) {
+        if (!isGeneralField && textToFill.length >= 95) {
           textToFill = textToFill.slice(0, 80).replace(/[,;:\-\s]+$/, '') + '.';
         }
 
