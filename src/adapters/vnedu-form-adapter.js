@@ -676,7 +676,7 @@
       // 3. Lấy câu nhận xét và kiểm tra qua bộ lọc
       // Thử tối đa 12 offset khác nhau để tìm câu trong ngân hàng Excel không dính từ khóa cấm
       for (let offset = 0; offset < 12; offset++) {
-        const candidateVars = { ...commentVars, studentIndex: studentIdx + offset, deterministicIndex: studentIdx + offset, maxLength: 155, maxChars: 155 };
+        const candidateVars = { ...commentVars, studentIndex: studentIdx + offset, deterministicIndex: studentIdx + offset, maxLength: 155 };
         let candidate = OfflineTemplates.getCommentForStudent(subjectKey, fieldLevel, studentIdx + offset, edLevel, candidateVars);
         if (!candidate && fallbackKey) {
           candidate = OfflineTemplates.getCommentForStudent(fallbackKey, fieldLevel, studentIdx + offset, edLevel, candidateVars);
@@ -690,30 +690,30 @@
         }
       }
 
-      // 4. Nếu mọi câu đều dính từ khóa (dự phòng an toàn 100%), trả về mẫu câu trung lập chuẩn mực sư phạm dài trên 100 ký tự
+      // 4. Nếu mọi câu đều dính từ khóa (dự phòng an toàn 100%), trả về mẫu câu trung lập chuẩn mực sư phạm
       if (role === 'PC_CHUNG') {
         if (fieldLevel === 'T') {
-          return 'Có phẩm chất đạo đức tốt, ngoan ngoãn, kính thầy yêu bạn, tích cực tham gia các hoạt động và luôn hoàn thành tốt các nhiệm vụ tập thể.';
+          return 'Có phẩm chất đạo đức tốt, ngoan ngoãn, kính thầy yêu bạn và luôn hoàn thành tốt các nhiệm vụ tập thể.';
         } else if (fieldLevel === 'C') {
-          return 'Biết nghe lời thầy cô và hòa đồng với bạn bè, cần kiên trì rèn luyện nề nếp kỷ luật để từng bước khắc phục các mặt còn hạn chế trong học tập.';
+          return 'Biết nghe lời thầy cô và hòa đồng với bạn bè, cần kiên trì rèn luyện nề nếp để khắc phục các mặt còn hạn chế.';
         } else {
-          return 'Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô, hòa nhã với bạn bè và có ý thức rèn luyện.';
+          return 'Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.';
         }
       } else if (role === 'NL_CHUNG') {
         if (fieldLevel === 'T') {
-          return 'Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè trong lớp.';
+          return 'Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả cùng bạn bè.';
         } else if (fieldLevel === 'C') {
-          return 'Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động tự giác hoàn thành các bài tập và tích cực tham gia các hoạt động học tập cùng bạn.';
+          return 'Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập.';
         } else {
-          return 'Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và tự tin phát biểu xây dựng bài trong giờ học.';
+          return 'Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn phát biểu xây dựng bài hơn.';
         }
       } else { // NL_DACTHU
         if (fieldLevel === 'T') {
-          return 'Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm học tập.';
+          return 'Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và hoàn thành xuất sắc các bài tập.';
         } else if (fieldLevel === 'C') {
-          return 'Cần chăm chỉ rèn luyện thêm các kỹ năng cơ bản ở môn học đặc thù còn hạn chế, chú ý lắng nghe giáo viên hướng dẫn thực hành trong giờ học.';
+          return 'Cần chăm chỉ rèn luyện thêm các kỹ năng cơ bản ở môn học đặc thù còn hạn chế, chú ý lắng nghe giáo viên hướng dẫn thực hành.';
         } else {
-          return 'Nắm được kiến thức cơ bản các môn đặc thù, hoàn thành các bài tập thực hành theo yêu cầu, cần tích cực và tự tin rèn luyện thêm các kỹ năng.';
+          return 'Nắm được kiến thức cơ bản các môn đặc thù, hoàn thành các bài tập thực hành theo yêu cầu, cần tích cực rèn luyện thêm các kỹ năng.';
         }
       }
     }
@@ -959,7 +959,7 @@
         grade: detectedGrade,
         className: classInfo?.className || '',
         studentIndex: studentIdx,
-        maxLength: 80
+        maxLength: 90
       };
 
       // Ngân hàng nhận xét riêng biệt cho "Nhận xét năng lực đặc thù"
@@ -1079,20 +1079,10 @@
         }
 
         // GIỚI HẠN ĐỘ DÀI:
-        // - 3 ô nhận xét chung xuất học bạ số (NL_CHUNG, PC_CHUNG, NL_DACTHU): cho phép dài đầy đặn từ 100 đến 145 ký tự (<= 150 ký tự)
-        // - Các ô tiêu chí thành phần còn lại: giữ gọn gàng <= 85 ký tự (<= 90 ký tự)
+        // - 3 ô nhận xét chung xuất học bạ số (NL_CHUNG, PC_CHUNG, NL_DACTHU): cho phép dài đầy đặn từ 90 đến 145 ký tự (<= 150 ký tự)
+        // - Các ô tiêu chí thành phần còn lại: giữ gọn gàng chuẩn mực <= 90 ký tự (chuẩn an toàn Thông tư 27)
         const isGeneralField = ['NL_CHUNG', 'PC_CHUNG', 'NL_DACTHU'].includes(f.role);
-        const limitLength = isGeneralField ? 150 : 80;
-
-        // BẢO VỆ ĐỘ DÀI TỐI THIỂU CHO 3 Ô NHẬN XÉT CHUNG (NGÂN HÀNG EXCEL ĐỀU TRÊN 100 KÝ TỰ):
-        if (isGeneralField && textToFill.length < 100) {
-          const fullKey = f.role === 'NL_CHUNG' ? 'Nhận xét chung Năng lực' : (f.role === 'PC_CHUNG' ? 'Nhận xét chung Phẩm chất' : 'Nhận xét năng lực đặc thù');
-          const recoveryVars = { ...commentVars, deterministicIndex: studentIdx, maxLength: 155, maxChars: 155 };
-          const fullCandidate = OfflineTemplates.getCommentForStudent(fullKey, fieldLevel, studentIdx, edLevel, recoveryVars);
-          if (fullCandidate && fullCandidate.length >= 100) {
-            textToFill = fullCandidate;
-          }
-        }
+        const limitLength = isGeneralField ? 150 : 90;
 
         if (textToFill.length > limitLength) {
           if (OfflineTemplates && typeof OfflineTemplates.clampToMaxLength === 'function') {
@@ -1105,9 +1095,6 @@
             if (!/[.!?]$/.test(sub)) sub += '.';
             textToFill = sub;
           }
-        }
-        if (!isGeneralField && textToFill.length >= 95) {
-          textToFill = textToFill.slice(0, 80).replace(/[,;:\-\s]+$/, '') + '.';
         }
 
         // Gán giá trị vào textarea bằng DOMUtils an toàn

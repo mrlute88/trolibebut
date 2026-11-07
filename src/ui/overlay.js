@@ -1217,7 +1217,7 @@
             period: currentPeriod,
             educationLevel: currentEducationLevel,
             grade: grade,
-            maxLength: 80
+            maxLength: 90
           };
 
           if (currentEducationLevel !== 'PRIMARY' && rule.isScored && score !== null) {
@@ -1254,21 +1254,18 @@
           }
         }
 
-        // Đảm bảo giới hạn nghiêm ngặt <= 80-85 ký tự theo quy định hệ thống vnEdu (dưới 100 ký tự tránh tràn học bạ)
-        if (commentText.length > 80) {
+        // Đảm bảo giới hạn chuẩn mực <= 90 ký tự theo quy định hệ thống vnEdu (dưới 100 ký tự tránh tràn học bạ)
+        if (commentText.length > 90) {
           if (deps.OfflineTemplates && typeof deps.OfflineTemplates.clampToMaxLength === 'function') {
-            commentText = deps.OfflineTemplates.clampToMaxLength(commentText, 80);
+            commentText = deps.OfflineTemplates.clampToMaxLength(commentText, 90);
           } else {
-            let sub = commentText.trim().slice(0, 80);
+            let sub = commentText.trim().slice(0, 90);
             const lastSpace = sub.lastIndexOf(' ');
-            if (lastSpace > 45) sub = sub.slice(0, lastSpace);
+            if (lastSpace > 50) sub = sub.slice(0, lastSpace);
             sub = sub.replace(/[,;:\-\s]+$/, '');
             if (!/[.!?]$/.test(sub)) sub += '.';
             commentText = sub;
           }
-        }
-        if (commentText.length >= 95) {
-          commentText = commentText.slice(0, 80).replace(/[,;:\-\s]+$/, '') + '.';
         }
 
         itemsToFill.push({

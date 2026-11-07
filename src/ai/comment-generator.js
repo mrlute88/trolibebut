@@ -76,8 +76,8 @@
       source = 'offline';
     }
 
-    if (comment && comment.length > 85 && OfflineTemplates && typeof OfflineTemplates.clampToMaxLength === 'function') {
-      comment = OfflineTemplates.clampToMaxLength(comment, 85);
+    if (comment && comment.length > 90 && OfflineTemplates && typeof OfflineTemplates.clampToMaxLength === 'function') {
+      comment = OfflineTemplates.clampToMaxLength(comment, 90);
     }
 
     // Quality check

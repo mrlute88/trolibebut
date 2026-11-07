@@ -863,7 +863,7 @@
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -887,7 +887,7 @@
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
                         "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
                         "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
                         "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -1322,8 +1322,8 @@
                         "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
                         "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
                         "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-                        "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-                        "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+                        "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+                        "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
                         "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn."
                   ],
                   "C": [
@@ -1404,11 +1404,11 @@
                         "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
                         "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
                         "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-                        "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-                        "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-                        "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-                        "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-                        "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+                        "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+                        "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+                        "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+                        "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+                        "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
                         "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
                         "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
                         "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -1600,9 +1600,9 @@
                         "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
                         "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
                         "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-                        "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+                        "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
                         "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-                        "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập."
+                        "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập."
                   ],
                   "C": [
                         "Em cần rèn thêm ý thức giữ gìn trường lớp và tham gia hoạt động chung tích cực hơn.",
@@ -1935,7 +1935,7 @@
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -2003,7 +2003,7 @@
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
                         "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
                         "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
                         "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -2837,7 +2837,7 @@
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -2858,7 +2858,7 @@
                         "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
                         "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
                         "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp."
@@ -3465,7 +3465,7 @@
                         "Em đạt yêu cầu ở trung thực, biết trung thực trong học tập theo hướng dẫn.",
                         "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
                         "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-                        "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
+                        "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
                         "Em thực hiện được yêu cầu về trung thực trong học tập, cần cố gắng rèn luyện thêm.",
                         "Em biết nhận lỗi khi được góp ý, cần chủ động hơn, có ý thức rèn luyện khá tốt.",
                         "Em có ý thức làm bài và sinh hoạt đúng quy định, cần tiếp tục rèn luyện thêm.",
@@ -4018,7 +4018,7 @@
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -4083,7 +4083,7 @@
                         "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
                         "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
                         "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp."
@@ -4902,7 +4902,7 @@
             },
             "Đạo đức": {
                   "T": [
-                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -4928,7 +4928,7 @@
                   "H": [
                         "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
                         "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
                         "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -5418,8 +5418,8 @@
                         "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
                         "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
                         "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-                        "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-                        "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+                        "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+                        "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
                         "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn.",
                         "Em biết yêu quý bạn bè và cư xử phù hợp và luôn chấp hành tốt nội quy của lớp.",
                         "Em biết quan tâm, chia sẻ với bạn trong sinh hoạt, cần cố gắng rèn luyện thêm.",
@@ -5512,10 +5512,10 @@
                         "Em sống ngay thẳng, liêm khiết, luôn tự giác chấp hành tốt nội quy phòng thi và là."
                   ],
                   "H": [
-                        "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-                        "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-                        "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-                        "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+                        "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+                        "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+                        "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+                        "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
                         "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
                         "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
                         "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -5712,9 +5712,9 @@
                         "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
                         "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
                         "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-                        "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+                        "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
                         "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-                        "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+                        "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
                         "Em có ý thức rèn luyện yêu nước, cần tiếp tục phát huy để hoàn thiện bản thân hơn."
                   ],
                   "C": [
@@ -6030,7 +6030,7 @@
                         "Em có nhiều điểm nổi bật ở môn Tiếng Việt, chủ động khi luyện đọc.",
                         "Em hoàn thành tốt yêu cầu môn Tiếng Việt, biết viết câu và tích cực tham gia học tập.",
                         "Em học tốt môn Tiếng Việt, thực hiện tốt nội dung viết câu và có ý thức phát huy.",
-                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -6100,7 +6100,7 @@
                         "Em đạt yêu cầu môn Tiếng Việt, thực hiện được nội dung viết câu ở mức phù hợp.",
                         "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
                         "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
                         "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -6948,7 +6948,7 @@
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -6971,7 +6971,7 @@
                         "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
                         "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
                         "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -7564,11 +7564,11 @@
                         "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
                         "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
                         "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-                        "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-                        "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-                        "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-                        "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-                        "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+                        "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+                        "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+                        "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+                        "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+                        "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
                         "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
                         "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
                         "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -8120,7 +8120,7 @@
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -8187,7 +8187,7 @@
                         "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
                         "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
                         "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -8984,13 +8984,13 @@
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp."
                   ],
                   "H": [
-                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
                         "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
                         "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
@@ -9291,7 +9291,7 @@
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
                         "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
                         "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
                         "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp."
@@ -9341,7 +9341,7 @@
                         "Em đã hoàn thành nội dung môn Tiếng Việt và luôn có tinh thần cố gắng học tập.",
                         "Em đạt yêu cầu môn Tiếng Việt, cần tiếp tục rèn đọc hiểu và diễn đạt để tiến bộ hơn.",
                         "Em hoàn thành yêu cầu cơ bản môn Tiếng Việt, biết đọc hiểu, cần tiếp tục cố gắng hơn.",
-                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+                        "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
                         "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
                         "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
                         "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
@@ -18821,7 +18821,7 @@
             "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
             "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
             "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-            "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+            "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
             "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
             "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
             "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -18845,7 +18845,7 @@
             "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
             "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
             "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-            "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+            "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
             "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
             "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
             "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -19505,8 +19505,8 @@
             "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
             "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
             "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-            "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-            "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+            "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+            "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
             "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn.",
             "Em biết yêu quý bạn bè và cư xử phù hợp và luôn chấp hành tốt nội quy của lớp.",
             "Em biết quan tâm, chia sẻ với bạn trong sinh hoạt, cần cố gắng rèn luyện thêm.",
@@ -19652,11 +19652,11 @@
             "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
             "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
             "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-            "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-            "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-            "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-            "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-            "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+            "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+            "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+            "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+            "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+            "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
             "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
             "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
             "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -19940,9 +19940,9 @@
             "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
             "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
             "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-            "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+            "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
             "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-            "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+            "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
             "Em có ý thức rèn luyện yêu nước, cần tiếp tục phát huy để hoàn thiện bản thân hơn.",
             "Em đạt yêu cầu ở yêu nước, biết có ý thức với cộng đồng và tham gia hoạt động chung.",
             "Em biết thực hiện yêu nước, biết có ý thức với cộng đồng và tham gia hoạt động chung.",
@@ -20487,7 +20487,7 @@
             "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
             "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
             "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-            "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+            "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
             "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
             "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
             "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -20555,7 +20555,7 @@
             "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
             "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
             "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-            "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+            "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
             "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
             "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
             "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -25713,7 +25713,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -25737,7 +25737,7 @@
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -26108,8 +26108,8 @@
           "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-          "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+          "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+          "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
           "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn."
         ],
         "C": [
@@ -26174,11 +26174,11 @@
           "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -26339,9 +26339,9 @@
           "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-          "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập."
+          "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập."
         ],
         "C": [
           "Em cần rèn thêm ý thức giữ gìn trường lớp và tham gia hoạt động chung tích cực hơn.",
@@ -26522,7 +26522,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -26590,7 +26590,7 @@
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -27292,7 +27292,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -27313,7 +27313,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp."
@@ -27764,7 +27764,7 @@
           "Em đạt yêu cầu ở trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu."
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu."
         ],
         "C": [
           "Em cần rèn thêm trung thực, cần chú ý biết nhận lỗi để tự tin hơn trong học tập.",
@@ -28092,7 +28092,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -28157,7 +28157,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp."
@@ -28832,7 +28832,7 @@
       },
       "Đạo đức": {
         "T": [
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -28858,7 +28858,7 @@
         "H": [
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -29230,8 +29230,8 @@
           "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-          "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+          "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+          "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
           "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn.",
           "Em biết yêu quý bạn bè và cư xử phù hợp và luôn chấp hành tốt nội quy của lớp.",
           "Em biết quan tâm, chia sẻ với bạn trong sinh hoạt, cần cố gắng rèn luyện thêm.",
@@ -29294,10 +29294,10 @@
           "Em có biểu hiện tốt về trung thực, có tinh thần tích cực biết nhận lỗi."
         ],
         "H": [
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -29463,9 +29463,9 @@
           "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-          "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em có ý thức rèn luyện yêu nước, cần tiếp tục phát huy để hoàn thiện bản thân hơn."
         ],
         "C": [
@@ -29629,7 +29629,7 @@
           "Em có nhiều điểm nổi bật ở môn Tiếng Việt, chủ động khi luyện đọc.",
           "Em hoàn thành tốt yêu cầu môn Tiếng Việt, biết viết câu và tích cực tham gia học tập.",
           "Em học tốt môn Tiếng Việt, thực hiện tốt nội dung viết câu và có ý thức phát huy.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -29699,7 +29699,7 @@
           "Em đạt yêu cầu môn Tiếng Việt, thực hiện được nội dung viết câu ở mức phù hợp.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -30397,7 +30397,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -30420,7 +30420,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -30869,11 +30869,11 @@
           "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp."
@@ -31186,7 +31186,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -31253,7 +31253,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -31909,13 +31909,13 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp."
         ],
         "H": [
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
@@ -32011,7 +32011,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp."
@@ -32061,7 +32061,7 @@
           "Em đã hoàn thành nội dung môn Tiếng Việt và luôn có tinh thần cố gắng học tập.",
           "Em đạt yêu cầu môn Tiếng Việt, cần tiếp tục rèn đọc hiểu và diễn đạt để tiến bộ hơn.",
           "Em hoàn thành yêu cầu cơ bản môn Tiếng Việt, biết đọc hiểu, cần tiếp tục cố gắng hơn.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
@@ -32750,7 +32750,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -32774,7 +32774,7 @@
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -33145,8 +33145,8 @@
           "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-          "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+          "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+          "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
           "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn."
         ],
         "C": [
@@ -33211,11 +33211,11 @@
           "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -33376,9 +33376,9 @@
           "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-          "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập."
+          "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập."
         ],
         "C": [
           "Em cần rèn thêm ý thức giữ gìn trường lớp và tham gia hoạt động chung tích cực hơn.",
@@ -33559,7 +33559,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -33627,7 +33627,7 @@
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -34331,7 +34331,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -34352,7 +34352,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp."
@@ -34803,7 +34803,7 @@
           "Em đạt yêu cầu ở trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu."
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu."
         ],
         "C": [
           "Em cần rèn thêm trung thực, cần chú ý biết nhận lỗi để tự tin hơn trong học tập.",
@@ -35131,7 +35131,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -35196,7 +35196,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp."
@@ -35878,7 +35878,7 @@
       },
       "Đạo đức": {
         "T": [
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -35904,7 +35904,7 @@
         "H": [
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -36276,8 +36276,8 @@
           "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-          "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+          "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+          "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
           "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn.",
           "Em biết yêu quý bạn bè và cư xử phù hợp và luôn chấp hành tốt nội quy của lớp.",
           "Em biết quan tâm, chia sẻ với bạn trong sinh hoạt, cần cố gắng rèn luyện thêm.",
@@ -36340,10 +36340,10 @@
           "Em có biểu hiện tốt về trung thực, có tinh thần tích cực biết nhận lỗi."
         ],
         "H": [
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -36509,9 +36509,9 @@
           "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-          "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em có ý thức rèn luyện yêu nước, cần tiếp tục phát huy để hoàn thiện bản thân hơn."
         ],
         "C": [
@@ -36675,7 +36675,7 @@
           "Em tiếp thu tốt môn Tiếng Việt, biết vận dụng nội dung đọc hiểu vào nhiệm vụ học tập.",
           "Em có nhiều điểm nổi bật ở môn Tiếng Việt, chủ động khi đọc hiểu.",
           "Em hoàn thành tốt yêu cầu môn Tiếng Việt, biết luyện đọc, rất đáng khen ngợi.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -36745,7 +36745,7 @@
           "Em biết tham gia học tập môn Tiếng Việt, hoàn thành nhiệm vụ diễn đạt ý theo yêu cầu.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -37448,7 +37448,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -37471,7 +37471,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -37920,11 +37920,11 @@
           "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp."
@@ -38237,7 +38237,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -38304,7 +38304,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -38961,13 +38961,13 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp."
         ],
         "H": [
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
@@ -39063,7 +39063,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp."
@@ -39113,7 +39113,7 @@
           "Em biết tham gia học tập môn Tiếng Việt, hoàn thành nhiệm vụ đọc hiểu theo yêu cầu.",
           "Thực hiện được yêu cầu cơ bản của môn Tiếng Việt, biết đọc hiểu trong quá trình học.",
           "Em hoàn thành yêu cầu cơ bản môn Tiếng Việt, biết luyện đọc.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
@@ -39853,7 +39853,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -39877,7 +39877,7 @@
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -40249,8 +40249,8 @@
           "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-          "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+          "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+          "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
           "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn."
         ],
         "C": [
@@ -40315,11 +40315,11 @@
           "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -40480,9 +40480,9 @@
           "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-          "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập."
+          "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập."
         ],
         "C": [
           "Em cần rèn thêm ý thức giữ gìn trường lớp và tham gia hoạt động chung tích cực hơn.",
@@ -40663,7 +40663,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -40731,7 +40731,7 @@
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -41471,7 +41471,7 @@
       },
       "Đạo đức": {
         "T": [
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -41497,7 +41497,7 @@
         "H": [
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -41870,8 +41870,8 @@
           "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-          "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+          "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+          "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
           "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn.",
           "Em biết yêu quý bạn bè và cư xử phù hợp và luôn chấp hành tốt nội quy của lớp.",
           "Em biết quan tâm, chia sẻ với bạn trong sinh hoạt, cần cố gắng rèn luyện thêm.",
@@ -41935,10 +41935,10 @@
           "Em có biểu hiện tốt về trung thực, có tinh thần tích cực biết nhận lỗi."
         ],
         "H": [
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -42104,9 +42104,9 @@
           "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-          "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em có ý thức rèn luyện yêu nước, cần tiếp tục phát huy để hoàn thiện bản thân hơn."
         ],
         "C": [
@@ -42270,7 +42270,7 @@
           "Em tiếp thu tốt môn Tiếng Việt, biết vận dụng nội dung đọc hiểu vào nhiệm vụ học tập.",
           "Em có nhiều điểm nổi bật ở môn Tiếng Việt, chủ động khi đọc hiểu.",
           "Em hoàn thành tốt yêu cầu môn Tiếng Việt, biết luyện đọc, rất đáng khen ngợi.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -42340,7 +42340,7 @@
           "Em biết tham gia học tập môn Tiếng Việt, hoàn thành nhiệm vụ diễn đạt ý theo yêu cầu.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -43042,7 +43042,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -43065,7 +43065,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -43517,11 +43517,11 @@
           "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp."
@@ -43844,7 +43844,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -43911,7 +43911,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -44668,13 +44668,13 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp."
         ],
         "H": [
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
@@ -44770,7 +44770,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp."
@@ -44820,7 +44820,7 @@
           "Em biết tham gia học tập môn Tiếng Việt, hoàn thành nhiệm vụ đọc hiểu theo yêu cầu.",
           "Thực hiện được yêu cầu cơ bản của môn Tiếng Việt, biết đọc hiểu trong quá trình học.",
           "Em hoàn thành yêu cầu cơ bản môn Tiếng Việt, biết luyện đọc.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
@@ -45533,7 +45533,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -45554,7 +45554,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp."
@@ -46009,7 +46009,7 @@
           "Em đạt yêu cầu ở trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu."
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu."
         ],
         "C": [
           "Em cần rèn thêm trung thực, cần chú ý biết nhận lỗi để tự tin hơn trong học tập.",
@@ -46342,7 +46342,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -46407,7 +46407,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp."
@@ -47189,7 +47189,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -47213,7 +47213,7 @@
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -47585,8 +47585,8 @@
           "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-          "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+          "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+          "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
           "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn."
         ],
         "C": [
@@ -47651,11 +47651,11 @@
           "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -47817,9 +47817,9 @@
           "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-          "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập."
+          "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập."
         ],
         "C": [
           "Em cần rèn thêm ý thức giữ gìn trường lớp và tham gia hoạt động chung tích cực hơn.",
@@ -48000,7 +48000,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -48068,7 +48068,7 @@
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -48875,7 +48875,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -48896,7 +48896,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp."
@@ -49351,7 +49351,7 @@
           "Em đạt yêu cầu ở trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu."
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu."
         ],
         "C": [
           "Em cần rèn thêm trung thực, cần chú ý biết nhận lỗi để tự tin hơn trong học tập.",
@@ -49685,7 +49685,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -49750,7 +49750,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp."
@@ -50535,7 +50535,7 @@
       },
       "Đạo đức": {
         "T": [
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -50561,7 +50561,7 @@
         "H": [
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -50934,8 +50934,8 @@
           "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-          "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+          "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+          "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
           "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn.",
           "Em biết yêu quý bạn bè và cư xử phù hợp và luôn chấp hành tốt nội quy của lớp.",
           "Em biết quan tâm, chia sẻ với bạn trong sinh hoạt, cần cố gắng rèn luyện thêm.",
@@ -50999,10 +50999,10 @@
           "Em có biểu hiện tốt về trung thực, có tinh thần tích cực biết nhận lỗi."
         ],
         "H": [
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -51169,9 +51169,9 @@
           "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-          "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em có ý thức rèn luyện yêu nước, cần tiếp tục phát huy để hoàn thiện bản thân hơn."
         ],
         "C": [
@@ -51335,7 +51335,7 @@
           "Em tiếp thu tốt môn Tiếng Việt, biết vận dụng nội dung đọc hiểu vào nhiệm vụ học tập.",
           "Em có nhiều điểm nổi bật ở môn Tiếng Việt, chủ động khi đọc hiểu.",
           "Em hoàn thành tốt yêu cầu môn Tiếng Việt, biết luyện đọc, rất đáng khen ngợi.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -51405,7 +51405,7 @@
           "Em biết tham gia học tập môn Tiếng Việt, hoàn thành nhiệm vụ diễn đạt ý theo yêu cầu.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -52211,7 +52211,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -52234,7 +52234,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -52686,11 +52686,11 @@
           "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp."
@@ -53014,7 +53014,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -53081,7 +53081,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -53889,13 +53889,13 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp."
         ],
         "H": [
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
@@ -53991,7 +53991,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp."
@@ -54041,7 +54041,7 @@
           "Em biết tham gia học tập môn Tiếng Việt, hoàn thành nhiệm vụ đọc hiểu theo yêu cầu.",
           "Thực hiện được yêu cầu cơ bản của môn Tiếng Việt, biết đọc hiểu trong quá trình học.",
           "Em hoàn thành yêu cầu cơ bản môn Tiếng Việt, biết luyện đọc.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
@@ -54834,7 +54834,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -54858,7 +54858,7 @@
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -55230,8 +55230,8 @@
           "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-          "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+          "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+          "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
           "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn."
         ],
         "C": [
@@ -55296,11 +55296,11 @@
           "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -55462,9 +55462,9 @@
           "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-          "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập."
+          "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập."
         ],
         "C": [
           "Em cần rèn thêm ý thức giữ gìn trường lớp và tham gia hoạt động chung tích cực hơn.",
@@ -55645,7 +55645,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -55713,7 +55713,7 @@
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -56520,7 +56520,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -56541,7 +56541,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp."
@@ -56996,7 +56996,7 @@
           "Em đạt yêu cầu ở trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu."
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu."
         ],
         "C": [
           "Em cần rèn thêm trung thực, cần chú ý biết nhận lỗi để tự tin hơn trong học tập.",
@@ -57330,7 +57330,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -57395,7 +57395,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp."
@@ -58180,7 +58180,7 @@
       },
       "Đạo đức": {
         "T": [
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -58206,7 +58206,7 @@
         "H": [
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -58579,8 +58579,8 @@
           "Em biết thực hiện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em có ý thức rèn luyện nhân ái, biết cư xử hòa nhã trong các hoạt động học tập.",
           "Em hoàn thành yêu cầu về nhân ái, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
-          "Em biết thực hiện nhân ái, biết biết yêu thương người thân và tham gia hoạt động.",
+          "Em đạt yêu cầu ở nhân ái, biết yêu thương người thân và tham gia hoạt động.",
+          "Em biết thực hiện nhân ái, biết yêu thương người thân và tham gia hoạt động.",
           "Em có ý thức rèn luyện nhân ái, cần tiếp tục phát huy để hoàn thiện bản thân hơn.",
           "Em biết yêu quý bạn bè và cư xử phù hợp và luôn chấp hành tốt nội quy của lớp.",
           "Em biết quan tâm, chia sẻ với bạn trong sinh hoạt, cần cố gắng rèn luyện thêm.",
@@ -58644,10 +58644,10 @@
           "Em có biểu hiện tốt về trung thực, có tinh thần tích cực biết nhận lỗi."
         ],
         "H": [
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp.",
@@ -58814,9 +58814,9 @@
           "Em biết thực hiện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em có ý thức rèn luyện yêu nước, biết tham gia hoạt động tập thể ở mức phù hợp.",
           "Em hoàn thành yêu cầu về yêu nước, cần rèn luyện thêm tính tự giác mỗi ngày.",
-          "Em đạt yêu cầu ở yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em đạt yêu cầu ở yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em thực hiện được yêu cầu cơ bản về yêu nước, cần tiếp tục rèn luyện thêm.",
-          "Em biết thực hiện yêu nước, biết biết quan tâm quê hương trong các hoạt động học tập.",
+          "Em biết thực hiện yêu nước, biết quan tâm quê hương trong các hoạt động học tập.",
           "Em có ý thức rèn luyện yêu nước, cần tiếp tục phát huy để hoàn thiện bản thân hơn."
         ],
         "C": [
@@ -58980,7 +58980,7 @@
           "Em tiếp thu tốt môn Tiếng Việt, biết vận dụng nội dung đọc hiểu vào nhiệm vụ học tập.",
           "Em có nhiều điểm nổi bật ở môn Tiếng Việt, chủ động khi đọc hiểu.",
           "Em hoàn thành tốt yêu cầu môn Tiếng Việt, biết luyện đọc, rất đáng khen ngợi.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -59050,7 +59050,7 @@
           "Em biết tham gia học tập môn Tiếng Việt, hoàn thành nhiệm vụ diễn đạt ý theo yêu cầu.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -59856,7 +59856,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -59879,7 +59879,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -60331,11 +60331,11 @@
           "Em thực hiện được yêu cầu cơ bản về trung thực, cần tiếp tục rèn luyện thêm.",
           "Em biết thực hiện trung thực, biết trung thực trong học tập theo hướng dẫn.",
           "Em có ý thức rèn luyện trung thực, biết trung thực trong học tập theo hướng dẫn.",
-          "Em hoàn thành yêu cầu về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em đạt yêu cầu ở trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em thực hiện được yêu cầu cơ bản về trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em biết thực hiện trung thực, biết biết nhận lỗi theo yêu cầu.",
-          "Em có ý thức rèn luyện trung thực, biết biết nhận lỗi theo yêu cầu.",
+          "Em hoàn thành yêu cầu về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em đạt yêu cầu ở trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em thực hiện được yêu cầu cơ bản về trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em biết thực hiện trung thực, biết nhận lỗi theo yêu cầu.",
+          "Em có ý thức rèn luyện trung thực, biết nhận lỗi theo yêu cầu.",
           "Em hoàn thành yêu cầu về trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em đạt yêu cầu ở trung thực, biết chấp hành nội quy ở mức phù hợp.",
           "Em thực hiện được yêu cầu cơ bản về trung thực, biết chấp hành nội quy ở mức phù hợp."
@@ -60659,7 +60659,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp.",
@@ -60726,7 +60726,7 @@
           "Em biết chấp hành nội quy, cần rèn thêm sự tự giác và trách nhiệm.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết thực hiện hành vi đúng.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung thực hiện hành vi đúng.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết chấp hành nội quy.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung chấp hành nội quy ở mức phù hợp.",
@@ -61534,13 +61534,13 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp."
         ],
         "H": [
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
@@ -61636,7 +61636,7 @@
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung thực hiện hành vi đúng.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung thực hiện hành vi đúng.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi thực hiện hành vi đúng.",
-          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành tốt yêu cầu môn Đạo đức, biết cư xử phù hợp.",
           "Em học tốt môn Đạo đức, thực hiện tốt nội dung biết cư xử phù hợp.",
           "Em tiếp thu tốt môn Đạo đức, biết vận dụng nội dung biết cư xử phù hợp.",
           "Em có nhiều điểm nổi bật ở môn Đạo đức, chủ động khi biết cư xử phù hợp."
@@ -61686,7 +61686,7 @@
           "Em biết tham gia học tập môn Tiếng Việt, hoàn thành nhiệm vụ đọc hiểu theo yêu cầu.",
           "Thực hiện được yêu cầu cơ bản của môn Tiếng Việt, biết đọc hiểu trong quá trình học.",
           "Em hoàn thành yêu cầu cơ bản môn Tiếng Việt, biết luyện đọc.",
-          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết biết cư xử phù hợp.",
+          "Em hoàn thành yêu cầu cơ bản môn Đạo đức, biết cư xử phù hợp.",
           "Em đạt yêu cầu môn Đạo đức, thực hiện được nội dung biết cư xử phù hợp ở mức phù hợp.",
           "Em biết tham gia học tập môn Đạo đức và biết lắng nghe lời giảng của thầy cô.",
           "Thực hiện được yêu cầu cơ bản của môn Đạo đức, có nhiều cố gắng trong học tập.",
@@ -61827,17 +61827,19 @@
     }
   };
 
-  function applyNaturalVariation(baseText, cycle, tierCount, normLevel, maxLen = 85) {
+  function applyNaturalVariation(baseText, cycle, tierCount, normLevel, maxLen = 90) {
     if (!baseText || typeof baseText !== 'string') return baseText;
     const trimText = baseText.trim();
 
-    // Đối với xếp loại C hoặc câu nhận xét chung xuất học bạ (dài >= 95 ký tự hoặc maxLen > 100):
-    // Giữ nguyên câu gốc chuẩn mực từ ngân hàng, tuyệt đối KHÔNG cắt ngắn hay ghép từ làm biến dạng câu
-    if (normLevel === 'C' || normLevel === 'CĐ' || maxLen > 100 || trimText.length >= 95) {
+    // Đối với câu đã tương đối dài (>= 75 ký tự), câu xếp loại C/CĐ hoặc câu nhận xét chung xuất học bạ (maxLen > 100):
+    // Giữ nguyên 100% câu gốc chuẩn mực từ ngân hàng, tuyệt đối KHÔNG ghép từ/cắt ngắn làm biến dạng câu
+    if (normLevel === 'C' || normLevel === 'CĐ' || maxLen > 100 || trimText.length >= 75) {
       return trimText;
     }
 
-    const firstCharLower = trimText.charAt(0).toLowerCase() + trimText.slice(1);
+    // Chuẩn hóa loại bỏ từ 'Em ' hoặc 'Học sinh ' ở đầu câu gốc trước khi thêm tiền tố để tránh lặp từ (ví dụ: 'em em')
+    const cleanWithoutSubject = trimText.replace(/^(?:em\s+|học\s*sinh\s+)/i, '');
+    const firstCharLower = cleanWithoutSubject.charAt(0).toLowerCase() + cleanWithoutSubject.slice(1);
     const varIdx = (tierCount + cycle) % 8;
     let res = trimText;
 
@@ -61851,7 +61853,7 @@
         case 5: res = trimText.replace(/\.?$/, '. Đáng biểu dương.'); break;
         case 6: res = 'Chăm ngoan, ' + firstCharLower; break;
         case 7: res = trimText.replace(/\.?$/, '. Tinh thần rất tốt.'); break;
-        default: res = 'Em luôn ' + firstCharLower; break;
+        default: res = 'Em ' + firstCharLower; break;
       }
     } else if (normLevel === 'H' || normLevel === 'Đ' || normLevel === 'K') {
       switch (varIdx) {
@@ -61869,11 +61871,16 @@
       return trimText;
     }
 
-    return clampToMaxLength(res, maxLen);
+    // NGUYÊN TẮC BẢO TOÀN TỪ NGỮ: Nếu biến thể làm câu vượt quá maxLen, trả về câu gốc nguyên vẹn 100%
+    // Tuyệt đối không gọi clampToMaxLength cắt bừa bãi làm mất từ cuối của giáo viên
+    if (res.length > maxLen) {
+      return trimText;
+    }
+
+    return res;
   }
 
-  
-    function clampToMaxLength(text, maxLen = 85) {
+  function clampToMaxLength(text, maxLen = 90) {
     if (!text || typeof text !== 'string') return '';
     const trimmed = text.trim();
     if (trimmed.length <= maxLen) return trimmed;
@@ -64519,8 +64526,9 @@
                                /nhận\s*xét\s*chung|đặc\s*thù|^phẩm\s*chất$|^năng\s*lực$/i.test(subjectKey);
 
       if (cycle > 0) {
-        if (!isGeneralComment) {
-          rawTemplate = applyNaturalVariation(rawTemplate, cycle, count, normLevel, 85);
+        // Đối với Tiểu học (PRIMARY), ngân hàng câu theo khối lớp đã rất phong phú và chuẩn mực, tuyệt đối không biến thể làm méo mó câu
+        if (!isGeneralComment && edLevel !== 'PRIMARY') {
+          rawTemplate = applyNaturalVariation(rawTemplate, cycle, count, normLevel, 90);
         }
       }
       selectedTemplate = rawTemplate;
@@ -64537,18 +64545,18 @@
 
     // Giới hạn độ dài:
     // - Nhận xét chung: cho phép đủ độ dài từ ngân hàng (100-145 ký tự), trần tối đa 150 ký tự
-    // - Môn học / tiêu chí thành phần: giữ gọn gàng 80-85 ký tự (dưới 100 ký tự vnEdu quy định)
+    // - Môn học / tiêu chí thành phần: giữ trọn vẹn câu hoàn chỉnh <= 90 ký tự (chuẩn an toàn Thông tư 27)
     const targetMax = isGeneralComment
       ? Math.min((vars && (vars.maxLength || vars.maxChars)) || 150, 150)
       : ((vars && (vars.maxLength || vars.maxChars))
           ? Math.min(vars.maxLength || vars.maxChars, ceilingLimit)
-          : (/năng lực|phẩm chất|tự chủ|giao tiếp|sáng tạo|yêu nước|nhân ái|chăm chỉ|trung thực|trách nhiệm|rèn luyện|ngôn ngữ|tính toán|khoa học|thẩm mĩ|thể chất/i.test(subject) ? 80 : 85));
+          : ceilingLimit);
 
     finalResult = clampToMaxLength(finalResult, targetMax);
 
     // Hard ceiling guarantee: tuyệt đối không vượt quá 90 ký tự cho các môn/tiêu chí con (dưới 100 ký tự vnEdu quy định)
     if (!isGeneralComment && finalResult.length > 90) {
-      finalResult = clampToMaxLength(finalResult, 85);
+      finalResult = clampToMaxLength(finalResult, 90);
     }
     return finalResult;
   }
