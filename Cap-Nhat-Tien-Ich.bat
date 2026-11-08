@@ -76,48 +76,7 @@ if not exist "%TARGET_DIR%\manifest.json" (
 )
 
 echo.
-echo [3/3] Dang nhan dien trinh duyet va mo trang Quan ly Tien ich...
-
-set "OPENED=0"
-
-tasklist /fi "imagename eq msedge.exe" 2>nul | findstr /i "msedge.exe" >nul
-if not errorlevel 1 (
-    echo   * Phat hien Microsoft Edge dang mo -^> Mo trang edge://extensions
-    start msedge.exe "edge://extensions"
-    set "OPENED=1"
-)
-
-tasklist /fi "imagename eq chrome.exe" 2>nul | findstr /i "chrome.exe" >nul
-if not errorlevel 1 (
-    echo   * Phat hien Google Chrome dang mo -^> Mo trang chrome://extensions
-    start chrome.exe "chrome://extensions"
-    set "OPENED=1"
-)
-
-tasklist /fi "imagename eq browser.exe" 2>nul | findstr /i "browser.exe" >nul
-if not errorlevel 1 (
-    echo   * Phat hien Coc Coc dang mo -^> Mo trang coccoc://extensions
-    start browser.exe "coccoc://extensions"
-    set "OPENED=1"
-)
-
-tasklist /fi "imagename eq coccoc.exe" 2>nul | findstr /i "coccoc.exe" >nul
-if not errorlevel 1 (
-    if "%OPENED%"=="0" (
-        echo   * Phat hien Coc Coc dang mo -^> Mo trang coccoc://extensions
-        start coccoc.exe "coccoc://extensions"
-        set "OPENED=1"
-    )
-)
-
-if "%OPENED%"=="0" (
-    echo   * Mo trang Quan ly Tien ich mac dinh...
-    start msedge.exe "edge://extensions" 2>nul || start chrome.exe "chrome://extensions" 2>nul
-)
-
-:: Hien thi thong bao hop thoai Windows truc tiep den giao vien
-powershell -NoProfile -ExecutionPolicy Bypass -Command "[System.Reflection.Assembly]::LoadWithPartialName('System.Windows.Forms') | Out-Null; [System.Windows.Forms.MessageBox]::Show('Ban moi cua Tien ich Tro ly vnEdu da duoc cap nhat vao may tinh thanh cong!' + [Environment]::NewLine + [Environment]::NewLine + '👉 Thay/Co hay quay lai the web vnEdu va bam nut [Nap lai tien ich ngay] o phia ben duoi de hoan tat nhe!', 'Cap Nhat Thanh Cong - Tro Ly Nhan Xet vnEdu', 0, 64)" >nul 2>&1
-
+echo [3/3] Hoan tat cap nhat ma nguon va du lieu moi nhat!
 color 0a
 echo.
 echo ======================================================================
@@ -125,11 +84,10 @@ echo   DA CAP NHAT TIEN ICH THANH CONG!
 echo ======================================================================
 echo.
 echo   * BUOC HOAN TAT CHO THAY/CO:
-echo   1. Thay/Co hay quay lai the web vnEdu dang mo tren trinh duyet.
-echo   2. Bam vao nut [⚡ Nap lai tien ich ngay] o phia duoi nut Dong bo
-echo      de he thong nap ma nguon moi nhat va su dung duoc ngay!
+echo   Thay/Co hay quay lai the web vnEdu dang mo va bam nut:
+echo   [⚡ Nap lai tien ich ngay] o phia duoi de su dung ngay!
 echo.
 echo ======================================================================
-echo Nhan phim bat ky de dong cua so nay.
-pause >nul
+echo Cua so se tu dong dong sau 2 giay...
+timeout /t 2 >nul 2>&1 || ping -n 3 127.0.0.1 >nul
 exit /b 0
