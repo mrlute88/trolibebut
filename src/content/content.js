@@ -33,6 +33,7 @@
   const CommentGenerator = window.VnEduCommentGenerator;
   const ExcelHandler = window.VnEduExcelHandler;
   const SampleTemplate = window.VnEduSampleTemplate;
+  const ExcelBankImporter = window.VnEduExcelBankImporter;
   const LicenseManager = window.VnEduLicenseManager;
   const CloudSync = window.VnEduCloudSync;
   const Overlay = window.VnEduOverlay;
@@ -85,9 +86,11 @@
     CommentGenerator,
     ExcelHandler,
     SampleTemplate,
+    ExcelBankImporter,
     LicenseManager,
     CloudSync,
-    mascotUrl: (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.getURL) ? chrome.runtime.getURL('icons/ai-mascot.png') : ''
+    mascotUrl: (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.getURL) ? chrome.runtime.getURL('icons/ai-mascot.png') : '',
+    peekingMascotUrl: (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.getURL) ? chrome.runtime.getURL('icons/tro-li-but.png') : ''
   };
 
   // Check page type: If strict login page, do NOT inject
@@ -104,6 +107,16 @@
       if (Array.isArray(customReps) && customReps.length > 0) {
         OfflineTemplates.applyCustomReplacements(customReps);
         if (Logger) Logger.info('Đã nạp ' + customReps.length + ' câu nhận xét tùy chỉnh của Thầy/Cô vào ngân hàng.');
+      }
+    }
+  } catch (e) {}
+
+  // Nạp ngân hàng lời nhận xét từ file Excel (nếu Thầy/Cô đã nhập trước đó)
+  try {
+    if (ExcelBankImporter && OfflineTemplates) {
+      const appliedCount = await ExcelBankImporter.applyStoredBank(OfflineTemplates);
+      if (appliedCount > 0 && Logger) {
+        Logger.info(`Đã nạp ${appliedCount} câu nhận xét từ ngân hàng Excel vào OfflineTemplates.`);
       }
     }
   } catch (e) {}
@@ -145,6 +158,13 @@
           });
         } else if (request.action === 'OPEN_LICENSE') {
           Overlay.openLicenseModal?.();
+          sendResponse({ success: true });
+        } else if (request.action === 'OPEN_UPDATE_PANEL' || request.action === 'CHECK_VERSION') {
+          if (typeof Overlay.openUpdateModal === 'function') {
+            Overlay.openUpdateModal();
+          } else {
+            Overlay.openLicenseModal?.();
+          }
           sendResponse({ success: true });
         } else if (request.action === 'OPEN_PANEL') {
           Overlay.triggerFill(deps);

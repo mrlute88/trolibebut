@@ -1643,7 +1643,7 @@
     
     let isPeeking = false;
     let idleTimer = null;
-    const IDLE_TIMEOUT_MS = 15000; // 15 giây tự động thu gọn nếu không tương tác
+    const IDLE_TIMEOUT_MS = 10000; // 10 giây tự động thu gọn nếu không tương tác
 
     function setPeekingState(peeking) {
       isPeeking = !!peeking;
@@ -2313,9 +2313,11 @@
           </div>
         </div>
 
-        <!-- Quả Cầu Bé Bút Thò Mặt Tự Động Ẩn Sau 15s (Peeking Dock Chuẩn Ảnh 2) -->
+        <!-- Quả Cầu Bé Bút Thò Mặt Tự Động Ẩn Sau 10s (Peeking Dock Bé Bút Động Dễ Thương) -->
         <div class="vnedu-peeking-dock" id="vnedu-peeking-dock" title="Bé Bút đang chờ Thầy/Cô! Bấm hoặc rê chuột vào để mở lại" style="display: none;">
           <div class="peeking-dock-bubble">
+            <div class="peeking-dock-active-dot"></div>
+            <div class="peeking-dock-label">Bé Bút</div>
             <img class="peeking-dock-img" id="peeking-dock-img" src="${peekingMascotUrl}" alt="Bé Bút AI" />
           </div>
         </div>
@@ -2360,37 +2362,37 @@
             </div>
 
             <!-- Quản lý câu nhận xét đã thay thế của Giáo Viên -->
-            <div class="modal-custom-bank-card" id="modal-custom-bank-card" style="margin-top: 12px; padding: 10px 12px; background: rgba(30, 41, 59, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; text-align: left;">
+            <div class="modal-custom-bank-card" id="modal-custom-bank-card" style="margin-top: 8px; padding: 7px 10px; background: rgba(30, 41, 59, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 10px; text-align: left;">
               <div style="display: flex; justify-content: space-between; align-items: center;">
-                <span style="font-size: 11.5px; font-weight: 700; color: #F59E0B;">⭐ CÂU NHẬN XÉT ĐÃ THAY THẾ (<span id="custom-bank-count">0</span>)</span>
-                <button type="button" id="btn-toggle-custom-bank-list" style="font-size: 10.5px; color: #38BDF8; background: none; border: none; cursor: pointer; text-decoration: underline;">Xem chi tiết</button>
+                <span style="font-size: 11px; font-weight: 700; color: #F59E0B;">⭐ CÂU NHẬN XÉT ĐÃ THAY THẾ (<span id="custom-bank-count">0</span>)</span>
+                <button type="button" id="btn-toggle-custom-bank-list" style="font-size: 10px; color: #38BDF8; background: none; border: none; cursor: pointer; text-decoration: underline;">Xem chi tiết</button>
               </div>
-              <div id="custom-bank-list-wrapper" style="display: none; max-height: 160px; overflow-y: auto; margin-top: 8px; font-size: 11px;">
-                <div id="custom-bank-list-empty" style="color: #94A3B8; font-style: italic; text-align: center; padding: 8px 0;">Chưa có câu nào được thay thế. Khi sửa nhận xét trên vnEdu, Thầy/Cô bấm "Lưu thay thế" để cập nhật.</div>
+              <div id="custom-bank-list-wrapper" style="display: none; max-height: 120px; overflow-y: auto; margin-top: 6px; font-size: 10.5px;">
+                <div id="custom-bank-list-empty" style="color: #94A3B8; font-style: italic; text-align: center; padding: 6px 0;">Chưa có câu nào được thay thế. Khi sửa nhận xét trên vnEdu, Thầy/Cô bấm "Lưu thay thế" để cập nhật.</div>
                 <div id="custom-bank-items-container"></div>
               </div>
-              <div id="custom-bank-actions-row" style="margin-top: 6px; display: flex; justify-content: flex-end; gap: 8px;">
-                <button type="button" id="btn-clear-custom-bank" style="font-size: 10.5px; color: #EF4444; background: none; border: none; cursor: pointer; display: none;">Khôi phục tất cả câu gốc</button>
+              <div id="custom-bank-actions-row" style="margin-top: 4px; display: flex; justify-content: flex-end; gap: 6px;">
+                <button type="button" id="btn-clear-custom-bank" style="font-size: 10px; color: #EF4444; background: none; border: none; cursor: pointer; display: none;">Khôi phục tất cả câu gốc</button>
               </div>
             </div>
 
             <!-- Đồng bộ dữ liệu nhận xét trực tuyến qua GitHub -->
-            <div class="modal-cloud-sync-card" id="modal-cloud-sync-card" style="margin-top: 14px; padding: 10px 12px; background: rgba(30, 41, 59, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; text-align: left;">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                <span style="font-size: 11.5px; font-weight: 700; color: #38BDF8;">🌐 ĐỒNG BỘ DỮ LIỆU ĐÁM MÂY (GITHUB)</span>
-                <span id="cloud-sync-status-badge" style="font-size: 10.5px; padding: 2px 7px; border-radius: 6px; background: rgba(16, 185, 129, 0.2); color: #34D399; font-weight: 600;">Sẵn sàng</span>
+            <div class="modal-cloud-sync-card" id="modal-cloud-sync-card" style="margin-top: 8px; padding: 7px 10px; background: rgba(30, 41, 59, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 10px; text-align: left;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                <span style="font-size: 11px; font-weight: 700; color: #38BDF8;">🌐 ĐỒNG BỘ DỮ LIỆU ĐÁM MÂY (GITHUB)</span>
+                <span id="cloud-sync-status-badge" style="font-size: 10px; padding: 1.5px 6px; border-radius: 5px; background: rgba(16, 185, 129, 0.2); color: #34D399; font-weight: 600;">Sẵn sàng</span>
               </div>
-              <div id="cloud-sync-version-info" style="font-size: 11px; color: #94A3B8; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
-                <span>Dữ liệu: <b style="color: #F8FAFC;" id="cloud-sync-ver-num">2026.11.04.3</b></span>
-                <span>Tiện ích: <b style="color: #38BDF8;" id="cloud-sync-app-ver">v1.4.1</b></span>
+              <div id="cloud-sync-version-info" style="font-size: 10.5px; color: #94A3B8; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center;">
+                <span>Dữ liệu: <b style="color: #F8FAFC;" id="cloud-sync-ver-num">2026.11.08.1</b></span>
+                <span>Tiện ích: <b style="color: #38BDF8;" id="cloud-sync-app-ver">v1.4.2</b></span>
               </div>
-              <button type="button" id="btn-trigger-cloud-sync" style="width: 100%; padding: 7px 10px; font-size: 12px; font-weight: 700; color: #F8FAFC; background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 8px; cursor: pointer; transition: all 0.2s ease;">
+              <button type="button" id="btn-trigger-cloud-sync" style="width: 100%; padding: 6px 10px; font-size: 11.5px; font-weight: 700; color: #F8FAFC; background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 7px; cursor: pointer; transition: all 0.2s ease;">
                 🔄 Kiểm tra &amp; Đồng bộ dữ liệu mới
               </button>
-              <button type="button" id="btn-reload-extension" style="width: 100%; margin-top: 6px; padding: 5px 8px; font-size: 11px; font-weight: 600; color: #94A3B8; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 6px; cursor: pointer; transition: all 0.2s ease;">
+              <button type="button" id="btn-reload-extension" style="width: 100%; margin-top: 4px; padding: 4.5px 7px; font-size: 10.5px; font-weight: 600; color: #94A3B8; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 6px; cursor: pointer; transition: all 0.2s ease;">
                 ⚡ Nạp lại tiện ích ngay (Sau khi chạy cập nhật)
               </button>
-              <div id="cloud-sync-msg" style="font-size: 11px; color: #FCD34D; margin-top: 6px; display: none; line-height: 1.4;"></div>
+              <div id="cloud-sync-msg" style="font-size: 10.5px; color: #FCD34D; margin-top: 5px; display: none; line-height: 1.35;"></div>
             </div>
           </div>
         </div>
@@ -2509,6 +2511,26 @@
     setPeriod,
     getPeriod: () => currentPeriod,
     openLicenseModal,
+    openUpdateModal: () => {
+      openLicenseModal();
+      setTimeout(() => {
+        if (!shadowRoot) return;
+        const syncCard = shadowRoot.getElementById('modal-cloud-sync-card');
+        if (syncCard) {
+          syncCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          const btnTrigger = shadowRoot.getElementById('btn-trigger-cloud-sync');
+          if (btnTrigger) {
+            btnTrigger.style.outline = '2px solid #38BDF8';
+            btnTrigger.style.boxShadow = '0 0 16px rgba(56, 189, 248, 0.8)';
+            setTimeout(() => {
+              btnTrigger.style.outline = '';
+              btnTrigger.style.boxShadow = '';
+            }, 2000);
+            btnTrigger.click();
+          }
+        }
+      }, 200);
+    },
     ensureLockScreenIfUnlicensed: () => {
       checkLicenseStatus((activated, record, reason, details) => {
         if (!activated) openLicenseModal(details);

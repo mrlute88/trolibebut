@@ -1766,28 +1766,6 @@
                         "Em cần chú ý hơn trong giờ học và hoàn thành đầy đủ nhiệm vụ môn học."
                   ]
             },
-            "Phẩm chất": {
-                  "T": [
-                        "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
-                        "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
-                        "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
-                        "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
-                        "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
-                        "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
-                  ],
-                  "H": [
-                        "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
-                        "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
-                        "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
-                        "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
-                        "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
-                  ],
-                  "C": [
-                        "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
-                        "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
-                        "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
-                  ]
-            },
             "Nhận xét chung Phẩm chất": {
                   "T": [
                         "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
@@ -1810,23 +1788,26 @@
                         "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
                   ]
             },
-            "Nhận xét chung Năng lực": {
+            "Phẩm chất": {
                   "T": [
-                        "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
-                        "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
-                        "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
-                        "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
+                        "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
+                        "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
+                        "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
+                        "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
+                        "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
+                        "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
                   ],
                   "H": [
-                        "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
-                        "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
-                        "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
-                        "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
+                        "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
+                        "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
+                        "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
+                        "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
+                        "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
                   ],
                   "C": [
-                        "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
-                        "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
-                        "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
+                        "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
+                        "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
+                        "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
                   ]
             },
             "Năng lực": {
@@ -1848,7 +1829,26 @@
                         "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
                   ]
             },
-            "Năng lực đặc thù": {
+            "Nhận xét chung Năng lực": {
+                  "T": [
+                        "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
+                        "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
+                        "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
+                        "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
+                  ],
+                  "H": [
+                        "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
+                        "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
+                        "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
+                        "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
+                  ],
+                  "C": [
+                        "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
+                        "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
+                        "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
+                  ]
+            },
+            "Nhận xét năng lực đặc thù": {
                   "T": [
                         "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
                         "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -1864,7 +1864,7 @@
                         "Kỹ năng thực hành ở các môn đặc thù còn chậm, cần tích cực tham gia giờ học thực hành và nhờ sự giúp đỡ của thầy cô để tiến bộ hơn."
                   ]
             },
-            "Nhận xét năng lực đặc thù": {
+            "Năng lực đặc thù": {
                   "T": [
                         "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
                         "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -3842,28 +3842,6 @@
                         "Em cần chú ý hơn trong giờ học và hoàn thành đầy đủ nhiệm vụ môn học."
                   ]
             },
-            "Phẩm chất": {
-                  "T": [
-                        "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
-                        "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
-                        "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
-                        "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
-                        "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
-                        "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
-                  ],
-                  "H": [
-                        "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
-                        "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
-                        "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
-                        "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
-                        "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
-                  ],
-                  "C": [
-                        "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
-                        "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
-                        "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
-                  ]
-            },
             "Nhận xét chung Phẩm chất": {
                   "T": [
                         "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
@@ -3886,22 +3864,26 @@
                         "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
                   ]
             },
-            "Nhận xét chung Năng lực": {
+            "Phẩm chất": {
                   "T": [
-                        "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
-                        "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
-                        "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
-                        "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
+                        "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
+                        "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
+                        "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
+                        "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
+                        "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
+                        "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
                   ],
                   "H": [
-                        "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
-                        "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
-                        "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
-                        "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
+                        "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
+                        "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
+                        "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
+                        "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
+                        "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
                   ],
                   "C": [
-                        "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
-                        "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
+                        "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
+                        "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
+                        "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
                   ]
             },
             "Năng lực": {
@@ -3922,7 +3904,25 @@
                         "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
                   ]
             },
-            "Năng lực đặc thù": {
+            "Nhận xét chung Năng lực": {
+                  "T": [
+                        "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
+                        "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
+                        "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
+                        "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
+                  ],
+                  "H": [
+                        "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
+                        "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
+                        "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
+                        "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
+                  ],
+                  "C": [
+                        "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
+                        "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
+                  ]
+            },
+            "Nhận xét năng lực đặc thù": {
                   "T": [
                         "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
                         "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -3938,7 +3938,7 @@
                         "Cần chú ý quan sát thầy cô hướng dẫn mẫu, dành thêm thời gian luyện tập thực hành để cải thiện kết quả các môn học đặc thù."
                   ]
             },
-            "Nhận xét năng lực đặc thù": {
+            "Năng lực đặc thù": {
                   "T": [
                         "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
                         "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -5879,25 +5879,6 @@
                         "Em cần chú ý hơn trong giờ học và hoàn thành đầy đủ nhiệm vụ môn học."
                   ]
             },
-            "Phẩm chất": {
-                  "T": [
-                        "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
-                        "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
-                        "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
-                        "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
-                        "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
-                  ],
-                  "H": [
-                        "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
-                        "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
-                        "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
-                        "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
-                  ],
-                  "C": [
-                        "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
-                        "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
-                  ]
-            },
             "Nhận xét chung Phẩm chất": {
                   "T": [
                         "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
@@ -5917,21 +5898,23 @@
                         "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
                   ]
             },
-            "Nhận xét chung Năng lực": {
+            "Phẩm chất": {
                   "T": [
-                        "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
-                        "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
-                        "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
-                        "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
+                        "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
+                        "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
+                        "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
+                        "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
+                        "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
                   ],
                   "H": [
-                        "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
-                        "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
-                        "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
+                        "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
+                        "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
+                        "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
+                        "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
                   ],
                   "C": [
-                        "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
-                        "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
+                        "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
+                        "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
                   ]
             },
             "Năng lực": {
@@ -5951,7 +5934,24 @@
                         "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
                   ]
             },
-            "Năng lực đặc thù": {
+            "Nhận xét chung Năng lực": {
+                  "T": [
+                        "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
+                        "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
+                        "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
+                        "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
+                  ],
+                  "H": [
+                        "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
+                        "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
+                        "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
+                  ],
+                  "C": [
+                        "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
+                        "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
+                  ]
+            },
+            "Nhận xét năng lực đặc thù": {
                   "T": [
                         "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
                         "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -5965,7 +5965,7 @@
                         "Đã có tiến bộ nhưng thao tác thực hành còn lúng túng, cần chăm chỉ luyện tập hơn ở các môn đặc thù để theo kịp yêu cầu của bài học."
                   ]
             },
-            "Nhận xét năng lực đặc thù": {
+            "Năng lực đặc thù": {
                   "T": [
                         "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
                         "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -7960,25 +7960,6 @@
                         "Em cần chú ý hơn trong giờ học và hoàn thành đầy đủ nhiệm vụ môn học."
                   ]
             },
-            "Phẩm chất": {
-                  "T": [
-                        "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
-                        "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
-                        "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
-                        "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
-                        "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
-                  ],
-                  "H": [
-                        "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
-                        "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
-                        "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
-                        "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
-                  ],
-                  "C": [
-                        "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
-                        "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
-                  ]
-            },
             "Nhận xét chung Phẩm chất": {
                   "T": [
                         "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
@@ -7998,21 +7979,23 @@
                         "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
                   ]
             },
-            "Nhận xét chung Năng lực": {
+            "Phẩm chất": {
                   "T": [
-                        "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
-                        "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
-                        "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
-                        "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+                        "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
+                        "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
+                        "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
+                        "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
+                        "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
                   ],
                   "H": [
-                        "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
-                        "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
-                        "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+                        "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
+                        "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
+                        "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
+                        "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
                   ],
                   "C": [
-                        "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
-                        "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+                        "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
+                        "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
                   ]
             },
             "Năng lực": {
@@ -8032,7 +8015,24 @@
                         "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
                   ]
             },
-            "Năng lực đặc thù": {
+            "Nhận xét chung Năng lực": {
+                  "T": [
+                        "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
+                        "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
+                        "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
+                        "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+                  ],
+                  "H": [
+                        "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
+                        "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
+                        "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+                  ],
+                  "C": [
+                        "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
+                        "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+                  ]
+            },
+            "Nhận xét năng lực đặc thù": {
                   "T": [
                         "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
                         "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
@@ -8046,7 +8046,7 @@
                         "Cần dành thời gian ôn luyện thêm các kỹ năng thực hành môn học đặc thù còn yếu trong dịp hè để chuẩn bị tốt cho năm học tiếp theo."
                   ]
             },
-            "Nhận xét năng lực đặc thù": {
+            "Năng lực đặc thù": {
                   "T": [
                         "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
                         "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
@@ -20150,64 +20150,6 @@
             "Em cần chú ý hơn trong giờ học và hoàn thành đầy đủ nhiệm vụ môn học."
         ]
     },
-    "Phẩm chất": {
-        "T": [
-            "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
-            "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
-            "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
-            "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
-            "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
-            "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp.",
-            "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
-            "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
-            "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
-            "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
-            "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
-            "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến.",
-            "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
-            "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
-            "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
-            "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
-            "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt.",
-            "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
-            "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
-            "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
-            "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
-            "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
-        ],
-        "H": [
-            "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
-            "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
-            "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
-            "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
-            "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày.",
-            "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
-            "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
-            "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
-            "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
-            "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua.",
-            "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
-            "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
-            "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
-            "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học.",
-            "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
-            "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
-            "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
-            "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
-        ],
-        "C": [
-            "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
-            "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
-            "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất.",
-            "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
-            "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
-            "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh.",
-            "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
-            "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ.",
-            "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
-            "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
-        ]
-    },
     "Nhận xét chung Phẩm chất": {
         "T": [
             "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
@@ -20266,51 +20208,62 @@
             "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
         ]
     },
-    "Nhận xét chung Năng lực": {
+    "Phẩm chất": {
         "T": [
-            "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
-            "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
-            "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
-            "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao.",
-            "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
-            "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
-            "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
-            "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân.",
-            "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
-            "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
-            "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
-            "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học.",
-            "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
-            "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
-            "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
-            "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+            "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
+            "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
+            "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
+            "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
+            "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
+            "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp.",
+            "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
+            "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
+            "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
+            "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
+            "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
+            "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến.",
+            "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
+            "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
+            "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
+            "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
+            "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt.",
+            "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
+            "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
+            "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
+            "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
+            "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
         ],
         "H": [
-            "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
-            "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
-            "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
-            "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn.",
-            "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
-            "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
-            "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
-            "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong.",
-            "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
-            "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
-            "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn.",
-            "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
-            "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
-            "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+            "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
+            "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
+            "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
+            "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
+            "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày.",
+            "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
+            "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
+            "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
+            "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
+            "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua.",
+            "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
+            "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
+            "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
+            "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học.",
+            "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
+            "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
+            "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
+            "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
         ],
         "C": [
-            "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
-            "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
-            "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp.",
-            "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
-            "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân.",
-            "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
-            "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học.",
-            "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
-            "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+            "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
+            "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
+            "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất.",
+            "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
+            "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
+            "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh.",
+            "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
+            "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ.",
+            "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
+            "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
         ]
     },
     "Năng lực": {
@@ -20360,7 +20313,54 @@
             "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
         ]
     },
-    "Năng lực đặc thù": {
+    "Nhận xét chung Năng lực": {
+        "T": [
+            "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
+            "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
+            "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
+            "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao.",
+            "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
+            "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
+            "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
+            "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân.",
+            "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
+            "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
+            "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
+            "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học.",
+            "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
+            "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
+            "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
+            "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+        ],
+        "H": [
+            "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
+            "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
+            "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
+            "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn.",
+            "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
+            "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
+            "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
+            "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong.",
+            "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
+            "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
+            "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn.",
+            "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
+            "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
+            "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+        ],
+        "C": [
+            "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
+            "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
+            "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp.",
+            "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
+            "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân.",
+            "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
+            "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học.",
+            "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
+            "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+        ]
+    },
+    "Nhận xét năng lực đặc thù": {
         "T": [
             "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
             "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -20396,7 +20396,7 @@
             "Cần dành thời gian ôn luyện thêm các kỹ năng thực hành môn học đặc thù còn yếu trong dịp hè để chuẩn bị tốt cho năm học tiếp theo."
         ]
     },
-    "Nhận xét năng lực đặc thù": {
+    "Năng lực đặc thù": {
         "T": [
             "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
             "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -22785,25 +22785,6 @@
                 "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
             ]
         },
-        "Nhận xét chung Năng lực": {
-            "T": [
-                "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
-                "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
-                "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
-                "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
-            ],
-            "H": [
-                "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
-                "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
-                "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
-                "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
-            ],
-            "C": [
-                "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
-                "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
-                "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
-            ]
-        },
         "Phẩm chất": {
             "T": [
                 "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
@@ -22826,45 +22807,7 @@
                 "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
             ]
         },
-        "Nhận xét chung Phẩm chất": {
-            "T": [
-                "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
-                "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
-                "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
-                "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
-                "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
-                "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
-            ],
-            "H": [
-                "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
-                "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
-                "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
-                "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
-                "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
-            ],
-            "C": [
-                "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
-                "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
-                "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
-            ]
-        },
         "Năng lực đặc thù": {
-            "T": [
-                "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
-                "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
-                "Thực hiện tốt các yêu cầu bài học, tích cực và hào hứng trong các giờ học thực hành năng khiếu, có nhiều sản phẩm học tập ấn tượng."
-            ],
-            "H": [
-                "Nắm được kiến thức cơ bản các môn đặc thù, hoàn thành các bài tập thực hành theo yêu cầu, cần tích cực rèn luyện thêm các kỹ năng.",
-                "Có nhiều cố gắng trong các môn học đặc thù, thực hiện được các nội dung bài học, cần chăm chỉ thực hành hơn để nâng cao kết quả.",
-                "Hoàn thành yêu cầu các môn năng khiếu và thể chất, cần tự tin hơn khi tham gia các hoạt động thực hành trước tập thể lớp học."
-            ],
-            "C": [
-                "Cần chăm chỉ rèn luyện thêm các kỹ năng cơ bản ở một số môn học đặc thù còn hạn chế, chú ý lắng nghe giáo viên hướng dẫn thực hành.",
-                "Kỹ năng thực hành ở các môn đặc thù còn chậm, cần tích cực tham gia giờ học thực hành và nhờ sự giúp đỡ của thầy cô để tiến bộ hơn."
-            ]
-        },
-        "Nhận xét năng lực đặc thù": {
             "T": [
                 "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
                 "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -22900,24 +22843,6 @@
                 "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
             ]
         },
-        "Nhận xét chung Năng lực": {
-            "T": [
-                "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
-                "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
-                "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
-                "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
-            ],
-            "H": [
-                "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
-                "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
-                "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
-                "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
-            ],
-            "C": [
-                "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
-                "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
-            ]
-        },
         "Phẩm chất": {
             "T": [
                 "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
@@ -22940,45 +22865,7 @@
                 "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
             ]
         },
-        "Nhận xét chung Phẩm chất": {
-            "T": [
-                "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
-                "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
-                "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
-                "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
-                "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
-                "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
-            ],
-            "H": [
-                "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
-                "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
-                "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
-                "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
-                "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
-            ],
-            "C": [
-                "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
-                "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
-                "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
-            ]
-        },
         "Năng lực đặc thù": {
-            "T": [
-                "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
-                "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
-                "Có tư duy nhạy bén và năng khiếu thực hành tốt, tích cực tham gia các hoạt động trải nghiệm thực tế và môn học đặc thù của lớp."
-            ],
-            "H": [
-                "Tiếp thu được kỹ năng cơ bản của các môn học đặc thù, cần dành thời gian luyện tập thêm để các thao tác thực hành được thuần thục hơn.",
-                "Thực hiện được các bài thực hành theo hướng dẫn của giáo viên, cần chủ động và tự tin phát huy khả năng ở các môn học năng khiếu.",
-                "Nắm được nội dung cơ bản các môn học đặc thù, có ý thức hoàn thành bài tập, cần rèn luyện thêm tính tỉ mỉ và kiên trì khi thực hành."
-            ],
-            "C": [
-                "Cần cố gắng rèn luyện thêm kỹ năng thao tác trong giờ học năng khiếu và thực hành, tập trung chú ý hơn để hoàn thành nhiệm vụ.",
-                "Cần chú ý quan sát thầy cô hướng dẫn mẫu, dành thêm thời gian luyện tập thực hành để cải thiện kết quả các môn học đặc thù."
-            ]
-        },
-        "Nhận xét năng lực đặc thù": {
             "T": [
                 "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
                 "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -23013,23 +22900,6 @@
                 "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
             ]
         },
-        "Nhận xét chung Năng lực": {
-            "T": [
-                "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
-                "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
-                "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
-                "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
-            ],
-            "H": [
-                "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
-                "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
-                "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
-            ],
-            "C": [
-                "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
-                "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
-            ]
-        },
         "Phẩm chất": {
             "T": [
                 "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
@@ -23049,40 +22919,7 @@
                 "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
             ]
         },
-        "Nhận xét chung Phẩm chất": {
-            "T": [
-                "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
-                "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
-                "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
-                "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
-                "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
-            ],
-            "H": [
-                "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
-                "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
-                "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
-                "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
-            ],
-            "C": [
-                "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
-                "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
-            ]
-        },
         "Năng lực đặc thù": {
-            "T": [
-                "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
-                "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
-                "Tích cực, chủ động trong các giờ học thực hành và năng khiếu, thể hiện tốt khả năng tư duy và hoàn thành sản phẩm chất lượng cao."
-            ],
-            "H": [
-                "Có tiến bộ trong thực hành các môn học đặc thù, thực hiện đạt yêu cầu bài học, cần tự tin và tích cực hơn trong các giờ thực hành.",
-                "Hoàn thành các bài tập và sản phẩm môn năng khiếu, cần rèn luyện thêm sự khéo léo và kiên nhẫn để nâng cao chất lượng sản phẩm."
-            ],
-            "C": [
-                "Đã có tiến bộ nhưng thao tác thực hành còn lúng túng, cần chăm chỉ luyện tập hơn ở các môn đặc thù để theo kịp yêu cầu của bài học."
-            ]
-        },
-        "Nhận xét năng lực đặc thù": {
             "T": [
                 "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
                 "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -23115,23 +22952,6 @@
                 "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
             ]
         },
-        "Nhận xét chung Năng lực": {
-            "T": [
-                "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
-                "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
-                "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
-                "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
-            ],
-            "H": [
-                "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
-                "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
-                "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
-            ],
-            "C": [
-                "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
-                "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
-            ]
-        },
         "Phẩm chất": {
             "T": [
                 "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
@@ -23151,40 +22971,7 @@
                 "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
             ]
         },
-        "Nhận xét chung Phẩm chất": {
-            "T": [
-                "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
-                "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
-                "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
-                "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
-                "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
-            ],
-            "H": [
-                "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
-                "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
-                "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
-                "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
-            ],
-            "C": [
-                "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
-                "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
-            ]
-        },
         "Năng lực đặc thù": {
-            "T": [
-                "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
-                "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
-                "Có năng khiếu xuất sắc ở các môn thực hành và năng khiếu, luôn hoàn thành tốt các sản phẩm học tập và đạt kết quả cao cả năm học."
-            ],
-            "H": [
-                "Hoàn thành các yêu cầu môn học đặc thù trong năm học theo quy định, cần tiếp tục rèn luyện kỹ năng thực hành trong năm học tiếp theo.",
-                "Đạt chuẩn kiến thức kỹ năng các môn đặc thù cả năm học, thao tác thực hành đạt yêu cầu, cần tích cực rèn luyện để phát triển năng khiếu."
-            ],
-            "C": [
-                "Cần dành thời gian ôn luyện thêm các kỹ năng thực hành môn học đặc thù còn yếu trong dịp hè để chuẩn bị tốt cho năm học tiếp theo."
-            ]
-        },
-        "Nhận xét năng lực đặc thù": {
             "T": [
                 "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
                 "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
@@ -25295,22 +25082,6 @@
   // NGÂN HÀNG LỜI NHẬN XÉT TIỂU HỌC CHI TIẾT THEO TỪNG KHỐI LỚP (LỚP 1 - 5)
   // Chuẩn hóa 100% theo Thông tư 27/2020/TT-BGDĐT (Đồng bộ từ loinhanxet_tieu_hoc_lop_1_5_da_dien_nhan_xet.xlsx)
   // 100% câu nhận xét có độ dài <= 90 ký tự, đảm bảo an toàn tuyệt đối cho học bạ vnEdu.
-  // NGÂN HÀNG LỜI NHẬN XÉT TIỂU HỌC CHI TIẾT THEO TỪNG KHỐI LỚP (LỚP 1 - 5)
-  // Chuẩn hóa 100% theo Thông tư 27/2020/TT-BGDĐT (Đồng bộ từ loinhanxet_tieu_hoc_lop_1_5_da_dien_nhan_xet.xlsx)
-  // - 3 Khung nhận xét chung xuất học bạ số: Cho phép độ dài từ 90 đến 150 ký tự.
-  // - Môn học và tiêu chí con thành phần: Đảm bảo độ dài <= 90 ký tự an toàn tuyệt đối.
-  // NGÂN HÀNG LỜI NHẬN XÉT TIỂU HỌC CHI TIẾT THEO TỪNG KHỐI LỚP (LỚP 1 - 5)
-  // Chuẩn hóa 100% theo Thông tư 27/2020/TT-BGDĐT (Đồng bộ từ loinhanxet_tieu_hoc_lop_1_5_da_dien_nhan_xet.xlsx)
-  // - 3 Khung nhận xét chung xuất học bạ số: Cho phép độ dài từ 90 đến 150 ký tự.
-  // - Môn học và tiêu chí con thành phần: Đảm bảo độ dài <= 90 ký tự an toàn tuyệt đối.
-  // NGÂN HÀNG LỜI NHẬN XÉT TIỂU HỌC CHI TIẾT THEO TỪNG KHỐI LỚP (LỚP 1 - 5)
-  // Chuẩn hóa 100% theo Thông tư 27/2020/TT-BGDĐT (Đồng bộ từ loinhanxet_tieu_hoc_lop_1_5_da_dien_nhan_xet.xlsx)
-  // - 3 Khung nhận xét chung xuất học bạ số: Cho phép độ dài từ 90 đến 150 ký tự.
-  // - Môn học và tiêu chí con thành phần: Đảm bảo độ dài <= 90 ký tự an toàn tuyệt đối.
-  // NGÂN HÀNG LỜI NHẬN XÉT TIỂU HỌC CHI TIẾT THEO TỪNG KHỐI LỚP (LỚP 1 - 5)
-  // Chuẩn hóa 100% theo Thông tư 27/2020/TT-BGDĐT (Đồng bộ từ loinhanxet_tieu_hoc_lop_1_5_da_dien_nhan_xet.xlsx)
-  // - 3 Khung nhận xét chung xuất học bạ số: Cho phép độ dài từ 90 đến 150 ký tự.
-  // - Môn học và tiêu chí con thành phần: Đảm bảo độ dài <= 90 ký tự an toàn tuyệt đối.
   const PRIMARY_BY_GRADE = {
   "1": {
     "GK1": {
@@ -26582,28 +26353,6 @@
           "Cần hỗ trợ thêm về yêu nước, cần chú ý giữ gìn trường lớp để cùng các bạn tiến bộ hơn."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
-          "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
-          "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
-          "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
-          "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
-          "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
-        ],
-        "H": [
-          "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
-          "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
-          "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
-          "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
-          "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
-        ],
-        "C": [
-          "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
-          "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
-          "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
@@ -26626,23 +26375,26 @@
           "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
-          "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
-          "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
-          "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
+          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
+          "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
+          "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
+          "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
+          "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
+          "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
         ],
         "H": [
-          "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
-          "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
-          "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
-          "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
+          "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
+          "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
+          "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
+          "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
+          "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
         ],
         "C": [
-          "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
-          "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
-          "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
+          "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
+          "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
+          "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
         ]
       },
       "Năng lực": {
@@ -26664,7 +26416,26 @@
           "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
+          "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
+          "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
+          "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
+        ],
+        "H": [
+          "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
+          "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
+          "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
+          "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
+        ],
+        "C": [
+          "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
+          "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
+          "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
           "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -26680,7 +26451,7 @@
           "Kỹ năng thực hành ở các môn đặc thù còn chậm, cần tích cực tham gia giờ học thực hành và nhờ sự giúp đỡ của thầy cô để tiến bộ hơn."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
           "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -28145,28 +27916,6 @@
           "Em cần rèn thêm yêu nước, cần chú ý tham gia hoạt động tập thể để tham gia hoạt."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
-          "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
-          "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
-          "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
-          "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
-          "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
-        ],
-        "H": [
-          "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
-          "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
-          "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
-          "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
-          "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
-        ],
-        "C": [
-          "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
-          "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
-          "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
@@ -28189,22 +27938,26 @@
           "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
-          "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
-          "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
-          "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
+          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
+          "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
+          "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
+          "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
+          "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
+          "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
         ],
         "H": [
-          "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
-          "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
-          "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
-          "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
+          "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
+          "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
+          "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
+          "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
+          "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
         ],
         "C": [
-          "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
-          "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
+          "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
+          "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
+          "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
         ]
       },
       "Năng lực": {
@@ -28225,7 +27978,25 @@
           "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
+          "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
+          "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
+          "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
+        ],
+        "H": [
+          "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
+          "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
+          "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
+          "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
+        ],
+        "C": [
+          "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
+          "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
           "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -28241,7 +28012,7 @@
           "Cần chú ý quan sát thầy cô hướng dẫn mẫu, dành thêm thời gian luyện tập thực hành để cải thiện kết quả các môn học đặc thù."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
           "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -29707,25 +29478,6 @@
           "Em cần luyện tập thêm yêu nước, cần chú ý biết quan tâm quê hương để tiến bộ."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
-          "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
-          "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
-          "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
-          "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
-        ],
-        "H": [
-          "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
-          "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
-          "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
-          "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
-        ],
-        "C": [
-          "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
-          "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
@@ -29745,21 +29497,23 @@
           "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
-          "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
-          "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
-          "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
+          "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
+          "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
+          "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
+          "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
+          "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
         ],
         "H": [
-          "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
-          "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
-          "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
+          "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
+          "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
+          "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
+          "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
         ],
         "C": [
-          "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
-          "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
+          "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
+          "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
         ]
       },
       "Năng lực": {
@@ -29779,7 +29533,24 @@
           "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
+          "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
+          "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
+          "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
+        ],
+        "H": [
+          "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
+          "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
+          "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
+        ],
+        "C": [
+          "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
+          "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
           "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -29793,7 +29564,7 @@
           "Đã có tiến bộ nhưng thao tác thực hành còn lúng túng, cần chăm chỉ luyện tập hơn ở các môn đặc thù để theo kịp yêu cầu của bài học."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
           "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -31255,25 +31026,6 @@
           "Em cần rèn thêm ý thức tham gia hoạt động tập thể để cùng các bạn tiến bộ hơn."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
-          "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
-          "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
-          "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
-          "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
-        ],
-        "H": [
-          "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
-          "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
-          "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
-          "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
-        ],
-        "C": [
-          "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
-          "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
@@ -31293,21 +31045,23 @@
           "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
-          "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
-          "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
-          "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+          "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
+          "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
+          "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
+          "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
+          "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
         ],
         "H": [
-          "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
-          "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
-          "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+          "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
+          "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
+          "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
+          "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
         ],
         "C": [
-          "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
-          "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+          "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
+          "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
         ]
       },
       "Năng lực": {
@@ -31327,7 +31081,24 @@
           "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
+          "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
+          "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
+          "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+        ],
+        "H": [
+          "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
+          "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
+          "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+        ],
+        "C": [
+          "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
+          "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
           "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
@@ -31341,7 +31112,7 @@
           "Cần dành thời gian ôn luyện thêm các kỹ năng thực hành môn học đặc thù còn yếu trong dịp hè để chuẩn bị tốt cho năm học tiếp theo."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
           "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
@@ -33619,28 +33390,6 @@
           "Cần hỗ trợ thêm về yêu nước, cần chú ý giữ gìn trường lớp để cùng các bạn tiến bộ hơn."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
-          "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
-          "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
-          "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
-          "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
-          "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
-        ],
-        "H": [
-          "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
-          "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
-          "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
-          "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
-          "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
-        ],
-        "C": [
-          "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
-          "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
-          "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
@@ -33663,23 +33412,26 @@
           "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
-          "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
-          "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
-          "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
+          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
+          "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
+          "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
+          "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
+          "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
+          "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
         ],
         "H": [
-          "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
-          "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
-          "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
-          "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
+          "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
+          "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
+          "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
+          "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
+          "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
         ],
         "C": [
-          "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
-          "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
-          "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
+          "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
+          "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
+          "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
         ]
       },
       "Năng lực": {
@@ -33701,7 +33453,26 @@
           "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
+          "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
+          "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
+          "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
+        ],
+        "H": [
+          "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
+          "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
+          "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
+          "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
+        ],
+        "C": [
+          "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
+          "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
+          "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
           "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -33717,7 +33488,7 @@
           "Kỹ năng thực hành ở các môn đặc thù còn chậm, cần tích cực tham gia giờ học thực hành và nhờ sự giúp đỡ của thầy cô để tiến bộ hơn."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
           "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -35184,28 +34955,6 @@
           "Em cần rèn thêm yêu nước, cần chú ý tham gia hoạt động tập thể để tham gia hoạt."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
-          "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
-          "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
-          "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
-          "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
-          "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
-        ],
-        "H": [
-          "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
-          "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
-          "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
-          "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
-          "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
-        ],
-        "C": [
-          "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
-          "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
-          "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
@@ -35228,22 +34977,26 @@
           "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
-          "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
-          "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
-          "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
+          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
+          "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
+          "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
+          "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
+          "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
+          "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
         ],
         "H": [
-          "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
-          "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
-          "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
-          "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
+          "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
+          "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
+          "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
+          "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
+          "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
         ],
         "C": [
-          "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
-          "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
+          "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
+          "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
+          "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
         ]
       },
       "Năng lực": {
@@ -35264,7 +35017,25 @@
           "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
+          "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
+          "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
+          "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
+        ],
+        "H": [
+          "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
+          "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
+          "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
+          "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
+        ],
+        "C": [
+          "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
+          "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
           "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -35280,7 +35051,7 @@
           "Cần chú ý quan sát thầy cô hướng dẫn mẫu, dành thêm thời gian luyện tập thực hành để cải thiện kết quả các môn học đặc thù."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
           "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -36753,25 +36524,6 @@
           "Em cần luyện tập thêm yêu nước, cần chú ý biết quan tâm quê hương để tiến bộ."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
-          "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
-          "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
-          "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
-          "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
-        ],
-        "H": [
-          "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
-          "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
-          "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
-          "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
-        ],
-        "C": [
-          "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
-          "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
@@ -36791,21 +36543,23 @@
           "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
-          "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
-          "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
-          "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
+          "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
+          "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
+          "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
+          "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
+          "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
         ],
         "H": [
-          "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
-          "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
-          "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
+          "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
+          "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
+          "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
+          "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
         ],
         "C": [
-          "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
-          "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
+          "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
+          "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
         ]
       },
       "Năng lực": {
@@ -36825,7 +36579,24 @@
           "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
+          "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
+          "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
+          "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
+        ],
+        "H": [
+          "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
+          "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
+          "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
+        ],
+        "C": [
+          "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
+          "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
           "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -36839,7 +36610,7 @@
           "Đã có tiến bộ nhưng thao tác thực hành còn lúng túng, cần chăm chỉ luyện tập hơn ở các môn đặc thù để theo kịp yêu cầu của bài học."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
           "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -38306,25 +38077,6 @@
           "Em cần rèn thêm ý thức tham gia hoạt động tập thể để cùng các bạn tiến bộ hơn."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
-          "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
-          "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
-          "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
-          "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
-        ],
-        "H": [
-          "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
-          "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
-          "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
-          "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
-        ],
-        "C": [
-          "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
-          "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
@@ -38344,21 +38096,23 @@
           "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
-          "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
-          "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
-          "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+          "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
+          "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
+          "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
+          "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
+          "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
         ],
         "H": [
-          "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
-          "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
-          "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+          "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
+          "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
+          "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
+          "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
         ],
         "C": [
-          "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
-          "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+          "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
+          "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
         ]
       },
       "Năng lực": {
@@ -38378,7 +38132,24 @@
           "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
+          "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
+          "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
+          "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+        ],
+        "H": [
+          "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
+          "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
+          "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+        ],
+        "C": [
+          "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
+          "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
           "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
@@ -38392,7 +38163,7 @@
           "Cần dành thời gian ôn luyện thêm các kỹ năng thực hành môn học đặc thù còn yếu trong dịp hè để chuẩn bị tốt cho năm học tiếp theo."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
           "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
@@ -40723,28 +40494,6 @@
           "Cần hỗ trợ thêm về yêu nước, cần chú ý giữ gìn trường lớp để cùng các bạn tiến bộ hơn."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
-          "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
-          "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
-          "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
-          "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
-          "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
-        ],
-        "H": [
-          "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
-          "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
-          "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
-          "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
-          "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
-        ],
-        "C": [
-          "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
-          "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
-          "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
@@ -40767,23 +40516,26 @@
           "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
-          "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
-          "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
-          "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
+          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
+          "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
+          "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
+          "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
+          "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
+          "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
         ],
         "H": [
-          "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
-          "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
-          "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
-          "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
+          "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
+          "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
+          "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
+          "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
+          "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
         ],
         "C": [
-          "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
-          "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
-          "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
+          "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
+          "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
+          "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
         ]
       },
       "Năng lực": {
@@ -40805,7 +40557,26 @@
           "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
+          "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
+          "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
+          "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
+        ],
+        "H": [
+          "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
+          "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
+          "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
+          "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
+        ],
+        "C": [
+          "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
+          "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
+          "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
           "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -40821,7 +40592,7 @@
           "Kỹ năng thực hành ở các môn đặc thù còn chậm, cần tích cực tham gia giờ học thực hành và nhờ sự giúp đỡ của thầy cô để tiến bộ hơn."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
           "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -42348,25 +42119,6 @@
           "Em cần luyện tập thêm yêu nước, cần chú ý biết quan tâm quê hương để tiến bộ."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
-          "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
-          "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
-          "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
-          "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
-        ],
-        "H": [
-          "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
-          "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
-          "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
-          "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
-        ],
-        "C": [
-          "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
-          "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
@@ -42386,21 +42138,23 @@
           "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
-          "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
-          "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
-          "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
+          "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
+          "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
+          "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
+          "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
+          "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
         ],
         "H": [
-          "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
-          "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
-          "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
+          "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
+          "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
+          "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
+          "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
         ],
         "C": [
-          "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
-          "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
+          "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
+          "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
         ]
       },
       "Năng lực": {
@@ -42420,7 +42174,24 @@
           "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
+          "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
+          "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
+          "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
+        ],
+        "H": [
+          "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
+          "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
+          "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
+        ],
+        "C": [
+          "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
+          "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
           "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -42434,7 +42205,7 @@
           "Đã có tiến bộ nhưng thao tác thực hành còn lúng túng, cần chăm chỉ luyện tập hơn ở các môn đặc thù để theo kịp yêu cầu của bài học."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
           "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -43913,25 +43684,6 @@
           "Em cần rèn thêm ý thức tham gia hoạt động tập thể để cùng các bạn tiến bộ hơn."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
-          "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
-          "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
-          "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
-          "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
-        ],
-        "H": [
-          "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
-          "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
-          "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
-          "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
-        ],
-        "C": [
-          "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
-          "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
@@ -43951,21 +43703,23 @@
           "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
-          "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
-          "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
-          "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+          "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
+          "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
+          "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
+          "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
+          "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
         ],
         "H": [
-          "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
-          "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
-          "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+          "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
+          "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
+          "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
+          "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
         ],
         "C": [
-          "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
-          "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+          "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
+          "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
         ]
       },
       "Năng lực": {
@@ -43985,7 +43739,24 @@
           "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
+          "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
+          "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
+          "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+        ],
+        "H": [
+          "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
+          "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
+          "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+        ],
+        "C": [
+          "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
+          "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
           "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
@@ -43999,7 +43770,7 @@
           "Cần dành thời gian ôn luyện thêm các kỹ năng thực hành môn học đặc thù còn yếu trong dịp hè để chuẩn bị tốt cho năm học tiếp theo."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
           "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
@@ -46395,28 +46166,6 @@
           "Em cần rèn thêm yêu nước, cần chú ý tham gia hoạt động tập thể để tham gia hoạt."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
-          "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
-          "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
-          "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
-          "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
-          "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
-        ],
-        "H": [
-          "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
-          "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
-          "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
-          "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
-          "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
-        ],
-        "C": [
-          "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
-          "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
-          "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
@@ -46439,22 +46188,26 @@
           "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
-          "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
-          "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
-          "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
+          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
+          "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
+          "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
+          "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
+          "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
+          "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
         ],
         "H": [
-          "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
-          "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
-          "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
-          "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
+          "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
+          "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
+          "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
+          "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
+          "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
         ],
         "C": [
-          "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
-          "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
+          "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
+          "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
+          "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
         ]
       },
       "Năng lực": {
@@ -46475,7 +46228,25 @@
           "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
+          "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
+          "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
+          "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
+        ],
+        "H": [
+          "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
+          "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
+          "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
+          "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
+        ],
+        "C": [
+          "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
+          "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
           "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -46491,7 +46262,7 @@
           "Cần chú ý quan sát thầy cô hướng dẫn mẫu, dành thêm thời gian luyện tập thực hành để cải thiện kết quả các môn học đặc thù."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
           "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -48060,28 +47831,6 @@
           "Cần hỗ trợ thêm về yêu nước, cần chú ý giữ gìn trường lớp để cùng các bạn tiến bộ hơn."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
-          "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
-          "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
-          "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
-          "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
-          "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
-        ],
-        "H": [
-          "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
-          "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
-          "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
-          "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
-          "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
-        ],
-        "C": [
-          "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
-          "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
-          "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
@@ -48104,23 +47853,26 @@
           "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
-          "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
-          "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
-          "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
+          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
+          "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
+          "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
+          "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
+          "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
+          "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
         ],
         "H": [
-          "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
-          "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
-          "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
-          "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
+          "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
+          "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
+          "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
+          "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
+          "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
         ],
         "C": [
-          "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
-          "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
-          "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
+          "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
+          "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
+          "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
         ]
       },
       "Năng lực": {
@@ -48142,7 +47894,26 @@
           "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
+          "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
+          "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
+          "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
+        ],
+        "H": [
+          "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
+          "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
+          "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
+          "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
+        ],
+        "C": [
+          "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
+          "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
+          "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
           "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -48158,7 +47929,7 @@
           "Kỹ năng thực hành ở các môn đặc thù còn chậm, cần tích cực tham gia giờ học thực hành và nhờ sự giúp đỡ của thầy cô để tiến bộ hơn."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
           "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -49738,28 +49509,6 @@
           "Em cần rèn thêm yêu nước, cần chú ý tham gia hoạt động tập thể để tham gia hoạt."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
-          "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
-          "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
-          "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
-          "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
-          "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
-        ],
-        "H": [
-          "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
-          "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
-          "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
-          "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
-          "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
-        ],
-        "C": [
-          "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
-          "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
-          "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
@@ -49782,22 +49531,26 @@
           "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
-          "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
-          "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
-          "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
+          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
+          "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
+          "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
+          "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
+          "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
+          "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
         ],
         "H": [
-          "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
-          "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
-          "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
-          "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
+          "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
+          "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
+          "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
+          "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
+          "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
         ],
         "C": [
-          "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
-          "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
+          "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
+          "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
+          "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
         ]
       },
       "Năng lực": {
@@ -49818,7 +49571,25 @@
           "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
+          "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
+          "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
+          "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
+        ],
+        "H": [
+          "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
+          "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
+          "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
+          "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
+        ],
+        "C": [
+          "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
+          "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
           "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -49834,7 +49605,7 @@
           "Cần chú ý quan sát thầy cô hướng dẫn mẫu, dành thêm thời gian luyện tập thực hành để cải thiện kết quả các môn học đặc thù."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
           "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -51413,25 +51184,6 @@
           "Em cần luyện tập thêm yêu nước, cần chú ý biết quan tâm quê hương để tiến bộ."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
-          "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
-          "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
-          "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
-          "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
-        ],
-        "H": [
-          "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
-          "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
-          "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
-          "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
-        ],
-        "C": [
-          "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
-          "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
@@ -51451,21 +51203,23 @@
           "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
-          "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
-          "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
-          "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
+          "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
+          "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
+          "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
+          "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
+          "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
         ],
         "H": [
-          "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
-          "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
-          "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
+          "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
+          "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
+          "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
+          "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
         ],
         "C": [
-          "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
-          "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
+          "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
+          "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
         ]
       },
       "Năng lực": {
@@ -51485,7 +51239,24 @@
           "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
+          "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
+          "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
+          "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
+        ],
+        "H": [
+          "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
+          "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
+          "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
+        ],
+        "C": [
+          "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
+          "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
           "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -51499,7 +51270,7 @@
           "Đã có tiến bộ nhưng thao tác thực hành còn lúng túng, cần chăm chỉ luyện tập hơn ở các môn đặc thù để theo kịp yêu cầu của bài học."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
           "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -53083,25 +52854,6 @@
           "Em cần rèn thêm ý thức tham gia hoạt động tập thể để cùng các bạn tiến bộ hơn."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
-          "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
-          "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
-          "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
-          "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
-        ],
-        "H": [
-          "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
-          "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
-          "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
-          "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
-        ],
-        "C": [
-          "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
-          "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
@@ -53121,21 +52873,23 @@
           "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
-          "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
-          "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
-          "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+          "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
+          "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
+          "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
+          "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
+          "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
         ],
         "H": [
-          "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
-          "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
-          "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+          "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
+          "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
+          "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
+          "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
         ],
         "C": [
-          "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
-          "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+          "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
+          "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
         ]
       },
       "Năng lực": {
@@ -53155,7 +52909,24 @@
           "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
+          "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
+          "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
+          "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+        ],
+        "H": [
+          "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
+          "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
+          "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+        ],
+        "C": [
+          "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
+          "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
           "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
@@ -53169,7 +52940,7 @@
           "Cần dành thời gian ôn luyện thêm các kỹ năng thực hành môn học đặc thù còn yếu trong dịp hè để chuẩn bị tốt cho năm học tiếp theo."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
           "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
@@ -55705,28 +55476,6 @@
           "Cần hỗ trợ thêm về yêu nước, cần chú ý giữ gìn trường lớp để cùng các bạn tiến bộ hơn."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
-          "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
-          "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
-          "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
-          "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
-          "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
-        ],
-        "H": [
-          "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
-          "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
-          "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
-          "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
-          "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
-        ],
-        "C": [
-          "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
-          "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
-          "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
@@ -55749,23 +55498,26 @@
           "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
-          "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
-          "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
-          "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
+          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, nhanh chóng thích nghi với nề nếp trường lớp và tích cực tham gia hoạt động tập thể.",
+          "Ngoan ngoãn, kính thầy yêu bạn, có lối sống chan hòa, thân thiện và luôn sẵn sàng giúp đỡ các bạn trong lớp cùng tiến bộ.",
+          "Biết giữ gìn nền nếp kỷ luật, có ý thức rèn luyện đạo đức tốt, luôn gương mẫu và được bạn bè trong lớp yêu mến, tin tưởng.",
+          "Luôn lễ phép với thầy cô giáo, hòa nhã với bạn bè, có ý thức tập thể cao và gương mẫu trong mọi hoạt động rèn luyện.",
+          "Có ý thức rèn luyện đạo đức rất tốt, trung thực, lễ phép, sống nhân ái và luôn nhiệt tình giúp đỡ bạn bè trong học tập.",
+          "Thể hiện tình cảm gắn bó với trường lớp, có thái độ tôn trọng mọi người, sống hòa đồng và phát huy tốt các phẩm chất tốt đẹp."
         ],
         "H": [
-          "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
-          "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
-          "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
-          "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
+          "Thực hiện đầy đủ các quy định về phẩm chất của học sinh, ngoan ngoãn lễ phép, biết vâng lời thầy cô và hòa nhã với bạn bè.",
+          "Có ý thức rèn luyện đạo đức, hòa đồng trong tập thể, biết lắng nghe thầy cô nhắc nhở, cần tự tin phát huy hơn nữa trong rèn luyện.",
+          "Ngoan ngoãn, chấp hành tốt nội quy lớp học, có lối sống lành mạnh, cần mạnh dạn hơn khi tham gia các hoạt động tập thể của trường.",
+          "Biết kính trọng thầy cô, thân thiện với bạn bè xung quanh, cần tích cực và chủ động hơn trong các phong trào thi đua của lớp.",
+          "Đạt chuẩn mực đạo đức của học sinh, nếp sống chan hòa, cần duy trì nền nếp tự giác thường xuyên hơn trong sinh hoạt hằng ngày."
         ],
         "C": [
-          "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
-          "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
-          "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
+          "Biết nghe lời thầy cô và hòa đồng với bạn bè, tuy nhiên cần chú ý rèn luyện thêm về nền nếp kỷ luật và kiên trì khắc phục hạn chế.",
+          "Có thái độ lễ phép, biết nhận lỗi khi vi phạm, cần nghiêm túc sửa đổi và nỗ lực rèn luyện nhiều hơn để tập thể tin cậy.",
+          "Cần chú ý lắng nghe lời nhắc nhở của thầy cô giáo, tự giác chấp hành tốt nội quy trường lớp để hoàn thiện các mặt phẩm chất."
         ]
       },
       "Năng lực": {
@@ -55787,7 +55539,26 @@
           "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Chủ động và tích cực trong học tập, nắm bắt kiến thức nhanh, biết vận dụng phương pháp học tập hiệu quả và hợp tác tốt cùng bạn bè.",
+          "Nhanh nhẹn, có tư duy linh hoạt trong xử lí tình huống học tập, luôn hoàn thành tốt các bài tập và tích cực hỗ trợ bạn bè cùng học.",
+          "Tiếp thu bài nhanh, tự tin trong học tập và rèn luyện, biết phát huy tốt năng lực bản thân trong các hoạt động học tập hằng ngày.",
+          "Có năng lực tiếp thu bài rất tốt, tích cực phát biểu xây dựng bài, biết tự giác hoàn thành tốt mọi nhiệm vụ học tập được giao."
+        ],
+        "H": [
+          "Hoàn thành các nhiệm vụ học tập theo yêu cầu của giáo viên, có tinh thần học hỏi, cần mạnh dạn và chủ động phát biểu xây dựng bài hơn.",
+          "Biết lắng nghe và tiếp thu kiến thức bài học, phối hợp được cùng các bạn trong nhóm, cần rèn luyện thêm để nâng cao hiệu quả học tập.",
+          "Có ý thức học tập, thực hiện được các bài tập giáo viên giao, cần tập trung hơn trong giờ học để nắm vững các nội dung kiến thức.",
+          "Nắm được nội dung kiến thức cơ bản, cần tích cực rèn luyện thêm kỹ năng xử lí tình huống học tập để đạt kết quả tốt hơn."
+        ],
+        "C": [
+          "Cần tập trung chú ý lắng nghe thầy cô giảng bài, chủ động hoàn thành bài tập và tích cực tham gia các hoạt động học tập cùng bạn bè.",
+          "Tiếp thu bài còn chậm, cần rèn luyện tính kiên trì, tập trung hơn trong giờ học và mạnh dạn nhờ thầy cô hướng dẫn khi chưa hiểu.",
+          "Cần cố gắng nhiều hơn trong việc tiếp thu kiến thức, chủ động hoàn thành các nhiệm vụ được giao và phối hợp tốt hơn cùng bạn trong lớp."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
           "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -55803,7 +55574,7 @@
           "Kỹ năng thực hành ở các môn đặc thù còn chậm, cần tích cực tham gia giờ học thực hành và nhờ sự giúp đỡ của thầy cô để tiến bộ hơn."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Có năng khiếu nổi bật ở các môn học đặc thù, tiếp thu bài nhanh, kỹ năng thực hành thành thạo và luôn hoàn thành xuất sắc các sản phẩm.",
           "Nắm vững kiến thức và kỹ năng thực hành các môn đặc thù, phát huy tốt khả năng tư duy sáng tạo và vận động thể chất trong học tập.",
@@ -57383,28 +57154,6 @@
           "Em cần rèn thêm yêu nước, cần chú ý tham gia hoạt động tập thể để tham gia hoạt."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
-          "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
-          "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
-          "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
-          "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
-          "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
-        ],
-        "H": [
-          "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
-          "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
-          "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
-          "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
-          "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
-        ],
-        "C": [
-          "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
-          "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
-          "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
@@ -57427,22 +57176,26 @@
           "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
-          "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
-          "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
-          "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
+          "Có phẩm chất đạo đức tốt, chăm ngoan lễ phép, luôn gương mẫu chấp hành nội quy trường lớp và tích cực tham gia các hoạt động tập thể.",
+          "Thực hiện xuất sắc các chuẩn mực phẩm chất của người học sinh, có tinh thần đoàn kết và trách nhiệm cao trong các phong trào lớp.",
+          "Gương mẫu trong mọi nề nếp sinh hoạt của lớp, kính trọng thầy cô, đoàn kết với bạn bè và luôn hoàn thành tốt nhiệm vụ được giao.",
+          "Ngoan ngoãn, có lối sống chan hòa, luôn tôn trọng thầy cô và bạn bè, rèn luyện phẩm chất đạt kết quả xuất sắc trong học kì.",
+          "Phát huy tốt các đức tính tốt đẹp của người học sinh, có tinh thần trách nhiệm cao và luôn chan hòa, thân ái với tập thể.",
+          "Có ý thức đạo đức tốt, kính trọng thầy cô, nhiệt tình tham gia công việc chung và luôn được thầy yêu bạn mến."
         ],
         "H": [
-          "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
-          "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
-          "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
-          "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
+          "Có tiến bộ trong rèn luyện phẩm chất học kỳ 1, ngoan ngoãn, lễ phép với thầy cô, cần tích cực hơn nữa trong các hoạt động của lớp.",
+          "Thực hiện tốt các nội quy cơ bản của nhà trường, có thái độ lễ phép, cần chủ động hơn trong việc giúp đỡ bạn bè cùng lớp.",
+          "Biết tôn trọng thầy cô giáo và đoàn kết với bạn bè, có tiến bộ trong rèn luyện nề nếp, cần tự tin tham gia phát biểu hơn.",
+          "Chấp hành đầy đủ nội quy của trường lớp, hòa nhã với bạn bè, cần phát huy tính chủ động hơn trong sinh hoạt tập thể.",
+          "Có ý thức đạo đức tốt, ngoan ngoãn vâng lời, cần rèn luyện thêm tính kiên trì và tự tin hơn trong các phong trào thi đua."
         ],
         "C": [
-          "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
-          "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
+          "Có chuyển biến trong học kỳ 1 nhưng chưa đều, cần cố gắng rèn luyện thêm về tính kỷ luật trong giờ học và sinh hoạt tập thể.",
+          "Cần nghiêm túc thực hiện nội quy trường lớp, chú ý lắng nghe thầy cô hướng dẫn để khắc phục các thiếu sót trong rèn luyện.",
+          "Biết nhận khuyết điểm khi được nhắc nhở, cần quyết tâm sửa đổi và cố gắng hơn trong các mặt rèn luyện phẩm chất của học sinh."
         ]
       },
       "Năng lực": {
@@ -57463,7 +57216,25 @@
           "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Có phương pháp học tập khoa học, tự tin trình bày ý kiến, biết phối hợp nhịp nhàng với các bạn và hoàn thành xuất sắc các nhiệm vụ.",
+          "Có nhiều tiến bộ vượt bậc trong học kỳ 1, chủ động tìm tòi học hỏi, có tinh thần tương tác nhóm tốt và luôn hoàn thành nhiệm vụ.",
+          "Nắm vững kiến thức các bài học, có khả năng giải quyết tốt các bài tập và luôn nhiệt tình hỗ trợ bạn bè trong các giờ học tập.",
+          "Tự tin, sáng tạo trong học tập, hoàn thành xuất sắc các mục tiêu học kỳ và phát huy tối đa các năng lực cốt lõi của bản thân."
+        ],
+        "H": [
+          "Đạt chuẩn kiến thức kỹ năng học kỳ 1, biết hợp tác cùng bạn trong học tập, cần mạnh dạn và tự tin hơn khi trình bày ý kiến trước lớp.",
+          "Tiếp thu được bài học trên lớp, biết phối hợp cùng bạn bè khi làm việc nhóm, cần chủ động chuẩn bị bài kỹ hơn trước khi đến lớp.",
+          "Thực hiện đầy đủ các nhiệm vụ học tập theo hướng dẫn của thầy cô, cần tự tin và mạnh dạn hơn khi chia sẻ ý kiến trước lớp.",
+          "Có tiến bộ trong học tập ở học kỳ 1, tiếp thu bài đạt yêu cầu, cần rèn luyện thêm thói quen tự kiểm tra bài sau khi làm xong."
+        ],
+        "C": [
+          "Còn lúng túng khi xử lí nhiệm vụ học tập, cần tập trung chú ý trong giờ học và kiên trì rèn luyện để cải thiện kết quả học kì 2.",
+          "Cần chú ý lắng nghe thầy cô hướng dẫn bài tập, rèn luyện tính tự giác và kiên nhẫn hơn để nâng cao kết quả học tập của bản thân."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
           "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -57479,7 +57250,7 @@
           "Cần chú ý quan sát thầy cô hướng dẫn mẫu, dành thêm thời gian luyện tập thực hành để cải thiện kết quả các môn học đặc thù."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Có năng lực tiếp thu tốt ở các môn năng khiếu và khoa học thực nghiệm, luôn chủ động thể hiện năng lực bản thân một cách xuất sắc.",
           "Thể hiện năng khiếu rõ nét ở các môn nghệ thuật và thể chất, thao tác thực hành khéo léo, hoàn thành sản phẩm học tập rất tốt.",
@@ -59058,25 +58829,6 @@
           "Em cần luyện tập thêm yêu nước, cần chú ý biết quan tâm quê hương để tiến bộ."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
-          "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
-          "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
-          "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
-          "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
-        ],
-        "H": [
-          "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
-          "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
-          "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
-          "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
-        ],
-        "C": [
-          "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
-          "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
@@ -59096,21 +58848,23 @@
           "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
-          "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
-          "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
-          "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
+          "Duy trì tốt nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, luôn gương mẫu chấp hành nội quy và tích cực trong mọi hoạt động.",
+          "Có phẩm chất tốt, lối sống lành mạnh chan hòa, luôn biết sẻ chia giúp đỡ bạn bè và có nhiều tiến bộ rõ nét trong rèn luyện.",
+          "Kính trọng thầy cô, thân thiện với bạn bè xung quanh, luôn có ý thức trách nhiệm và hoàn thành xuất sắc các nhiệm vụ tập thể.",
+          "Gương mẫu trong học tập và sinh hoạt, chấp hành tốt kỷ luật của trường lớp, được thầy cô khen ngợi và bạn bè tin yêu.",
+          "Luôn giữ thái độ lễ phép, có tinh thần đoàn kết cao, nhiệt tình tham gia các phong trào thi đua của lớp và đạt nhiều kết quả tốt."
         ],
         "H": [
-          "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
-          "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
-          "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
+          "Tiếp tục duy trì nề nếp rèn luyện đạo đức, ngoan ngoãn, lễ phép, cần mạnh dạn và chủ động hơn trong các hoạt động phong trào.",
+          "Có thái độ tôn trọng thầy cô, hòa nhã với bạn bè, chấp hành tốt nội quy, cần phát huy hơn nữa tinh thần trách nhiệm tập thể.",
+          "Biết lắng nghe lời nhắc nhở và có ý thức sửa đổi, rèn luyện đạt yêu cầu, cần tự giác duy trì nề nếp sinh hoạt thường xuyên.",
+          "Có lối sống chan hòa, thân thiện với mọi người xung quanh, cần chủ động tham gia đóng góp cho các hoạt động của lớp học."
         ],
         "C": [
-          "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
-          "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
+          "Đã có tiến bộ so với trước nhưng cần nỗ lực nhiều hơn, chú ý chấp hành tốt nề nếp kỷ luật và tự giác hoàn thành nhiệm vụ được giao.",
+          "Cần tập trung rèn luyện tính kỷ luật, hòa đồng hơn với bạn bè và lắng nghe sự chỉ bảo của thầy cô để ngày càng tiến bộ."
         ]
       },
       "Năng lực": {
@@ -59130,7 +58884,24 @@
           "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Tiếp tục phát huy tốt năng lực học tập, tiếp thu bài nhanh, biết liên hệ thực tế và phối hợp rất hiệu quả cùng các bạn trong nhóm.",
+          "Chủ động nắm bắt kiến thức bài học mới, có khả năng tư duy độc lập tốt và luôn hoàn thành nhiệm vụ với chất lượng cao.",
+          "Tự tin trong các giờ học, biết diễn đạt ý kiến mạch lạc, tích cực tham gia thảo luận và có nhiều giải pháp học tập sáng tạo.",
+          "Có phương pháp học tập tốt, năng động, sáng tạo và luôn hoàn thành tốt các yêu cầu đổi mới trong hoạt động dạy học."
+        ],
+        "H": [
+          "Tiếp thu bài học đạt yêu cầu, có ý thức hoàn thành nhiệm vụ giáo viên giao, cần tích cực phát biểu xây dựng bài trong các giờ học.",
+          "Biết hợp tác với bạn trong các hoạt động chung của lớp, cần tự tin hơn khi trao đổi ý kiến và rèn luyện thói quen tự giác học bài.",
+          "Nắm được kiến thức cơ bản các môn học, cần tập trung chú ý nghe giảng để hiểu sâu bài học và làm bài tập nhanh hơn."
+        ],
+        "C": [
+          "Đã có tiến bộ nhưng tiếp thu bài còn chậm, cần chú ý lắng nghe giảng và chăm chỉ làm bài tập để theo kịp tiến độ học tập của lớp.",
+          "Cần tích cực trao đổi với thầy cô và bạn bè khi gặp bài khó, rèn luyện thêm tính kiên trì để hoàn thành tốt các bài học."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
           "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -59144,7 +58915,7 @@
           "Đã có tiến bộ nhưng thao tác thực hành còn lúng túng, cần chăm chỉ luyện tập hơn ở các môn đặc thù để theo kịp yêu cầu của bài học."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Phát huy xuất sắc năng khiếu ở các môn học đặc thù, kỹ năng vận động và thao tác thực hành thành thạo, đạt kết quả học tập nổi bật.",
           "Tiếp thu nhanh và thực hành tốt các bài tập môn năng khiếu, có nhiều sáng tạo trong giờ học và hoàn thành xuất sắc nhiệm vụ.",
@@ -60728,25 +60499,6 @@
           "Em cần rèn thêm ý thức tham gia hoạt động tập thể để cùng các bạn tiến bộ hơn."
         ]
       },
-      "Phẩm chất": {
-        "T": [
-          "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
-          "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
-          "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
-          "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
-          "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
-        ],
-        "H": [
-          "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
-          "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
-          "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
-          "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
-        ],
-        "C": [
-          "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
-          "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
-        ]
-      },
       "Nhận xét chung Phẩm chất": {
         "T": [
           "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
@@ -60766,21 +60518,23 @@
           "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
         ]
       },
-      "Nhận xét chung Năng lực": {
+      "Phẩm chất": {
         "T": [
-          "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
-          "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
-          "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
-          "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+          "Hoàn thành xuất sắc các chuẩn mực phẩm chất học sinh cả năm học, chăm ngoan, gương mẫu và luôn là tấm gương tốt trong tập thể.",
+          "Có phẩm chất đạo đức vững vàng, nếp sống văn minh lành mạnh, kính thầy yêu bạn và đạt nhiều thành tích xuất sắc trong rèn luyện.",
+          "Luôn gương mẫu trong mọi nề nếp kỷ luật, có tinh thần trách nhiệm cao, được bạn bè quý trọng và thầy cô tin yêu suốt năm học.",
+          "Thể hiện xuất sắc tinh thần tương thân tương ái, có lối sống chan hòa, lễ phép và hoàn thành trọn vẹn các yêu cầu rèn luyện.",
+          "Ý thức rèn luyện đạo đức rất tốt, luôn tự giác chấp hành tốt nội quy trường lớp và có nhiều đóng góp tích cực cho tập thể."
         ],
         "H": [
-          "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
-          "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
-          "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+          "Hoàn thành các yêu cầu rèn luyện phẩm chất trong năm học, ngoan ngoãn, lễ phép, cần tiếp tục phát huy những điểm mạnh đã đạt được.",
+          "Có ý thức chấp hành tốt nội quy trường lớp suốt năm học, cư xử hòa nhã với bạn bè, cần tự tin hơn trong các hoạt động tập thể.",
+          "Đạt chuẩn rèn luyện phẩm chất theo quy định, biết kính thầy yêu bạn, cần rèn luyện tính kiên nhẫn và chủ động hơn trong cuộc sống.",
+          "Chăm ngoan, biết vâng lời thầy cô và bố mẹ, đạt kết quả rèn luyện tốt, cần tích cực phát huy trong các năm học tiếp theo."
         ],
         "C": [
-          "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
-          "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+          "Cần nỗ lực nhiều hơn trong việc rèn luyện phẩm chất và nền nếp sinh hoạt, chú ý lắng nghe lời khuyên bảo để tiến bộ trong năm tới.",
+          "Cần quyết tâm khắc phục các hạn chế về nề nếp kỷ luật, tự giác rèn luyện phẩm chất đạo đức để đạt kết quả tốt hơn ở lớp trên."
         ]
       },
       "Năng lực": {
@@ -60800,7 +60554,24 @@
           "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
         ]
       },
-      "Năng lực đặc thù": {
+      "Nhận xét chung Năng lực": {
+        "T": [
+          "Hoàn thành xuất sắc các mục tiêu năng lực của năm học, có tư duy nhạy bén, phương pháp học tập tốt và phát triển năng lực toàn diện.",
+          "Nắm vững toàn bộ kiến thức chương trình, có năng lực tự học và giải quyết vấn đề xuất sắc, đạt thành tích nổi bật cả năm học.",
+          "Phát triển toàn diện các năng lực cốt lõi, biết vận dụng linh hoạt kiến thức vào thực tiễn và luôn chủ động trong mọi hoạt động.",
+          "Tự tin, sáng tạo và có nhiều thành tích nổi bật trong học tập, hoàn thành xuất sắc chương trình năm học với kết quả cao."
+        ],
+        "H": [
+          "Hoàn thành tốt các mục tiêu năng lực năm học theo chuẩn kiến thức kỹ năng, cần tiếp tục rèn luyện tính chủ động ở các lớp trên.",
+          "Có nhiều tiến bộ trong học tập suốt cả năm học, tiếp thu bài đạt yêu cầu, cần tự tin phát huy khả năng của mình trong năm học mới.",
+          "Đạt chuẩn năng lực theo quy định của chương trình, biết phối hợp cùng bạn bè, cần rèn luyện thêm kỹ năng tự học tại nhà."
+        ],
+        "C": [
+          "Cần nỗ lực nhiều hơn trong học tập, rèn luyện phương pháp tự học và tập trung chú ý để đạt kết quả tốt hơn trong năm học tới.",
+          "Cần ôn tập kỹ kiến thức cơ bản trong dịp hè, rèn luyện tính kiên nhẫn và tự giác học tập để sẵn sàng bước vào năm học mới."
+        ]
+      },
+      "Nhận xét năng lực đặc thù": {
         "T": [
           "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
           "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",
@@ -60814,7 +60585,7 @@
           "Cần dành thời gian ôn luyện thêm các kỹ năng thực hành môn học đặc thù còn yếu trong dịp hè để chuẩn bị tốt cho năm học tiếp theo."
         ]
       },
-      "Nhận xét năng lực đặc thù": {
+      "Năng lực đặc thù": {
         "T": [
           "Hoàn thành xuất sắc các mục tiêu môn học đặc thù cả năm học, phát huy tối đa năng khiếu bản thân và đạt nhiều thành tích đáng khen.",
           "Nắm vững toàn diện kiến thức và kỹ năng thực hành các môn đặc thù, thể hiện năng khiếu vượt trội và tinh thần học tập gương mẫu.",

@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Trợ lý nhận xét vnEdu</title>
+  <title>Trợ Lý Nhận Xét VnEdu</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
@@ -14,8 +14,8 @@
         <img src="../icons/ai-mascot.png" class="mascot-avatar" alt="Trợ lý AI" />
       </div>
       <div class="hero-text-wrap">
-        <div class="title">Trợ lý nhận xét vnEdu</div>
-        <div class="subtitle">Lớp 1 - 12 • Thông tư 27 & 22</div>
+        <div class="title">Trợ Lý Nhận Xét VnEdu</div>
+        <div class="subtitle">Lớp 1 - 5 • Thông tư 27</div>
       </div>
     </div>
 
@@ -30,13 +30,13 @@
 
     <!-- Actions (3D Pill Buttons matching main UI) -->
     <div class="action-list">
-      <button class="btn-pill-3d btn-primary-3d" id="btn-quick-fill">
+      <button class="btn-pill-3d btn-primary-3d" id="btn-check-version">
         <span class="btn-bezel">
           <span class="btn-core">
             <span class="btn-gloss"></span>
             <span class="btn-label">
-              <span class="btn-icon">⚡</span>
-              <span class="btn-text">Điền Nhận Xét Ngay</span>
+              <span class="btn-icon" id="btn-check-icon">🔄</span>
+              <span class="btn-text" id="btn-check-text">Kiểm Tra Phiên Bản</span>
               <span class="btn-sparkle">✦ ━━━━ ✦</span>
             </span>
           </span>
@@ -57,10 +57,38 @@
       </button>
     </div>
 
+    <!-- Bảng Kiểm Tra Phiên Bản Cập Nhật -->
+    <div class="version-panel" id="version-panel" style="display: none;">
+      <div class="version-panel-header">
+        <span class="version-panel-title">🌐 BẢNG KIỂM TRA CẬP NHẬT</span>
+        <span class="version-badge" id="vp-badge">Đang kiểm tra...</span>
+      </div>
+      <div class="version-panel-body">
+        <div class="vp-row">
+          <span>Phiên bản hiện tại:</span>
+          <b id="vp-current-ver">v1.4.1</b>
+        </div>
+        <div class="vp-row">
+          <span>Phiên bản máy chủ:</span>
+          <b id="vp-remote-ver" style="color: #38BDF8;">Đang kết nối...</b>
+        </div>
+        <div class="vp-row">
+          <span>Dữ liệu nhận xét:</span>
+          <b id="vp-data-ver">2026.11.08.1</b>
+        </div>
+        <div class="vp-msg" id="vp-msg" style="display: none;"></div>
+        <button type="button" class="btn-run-update" id="btn-run-updater" style="display: none;">
+          ⚡ Kích hoạt Cập nhật (Cap-Nhat-Tien-Ich.bat)
+        </button>
+      </div>
+    </div>
+
     <div class="footer">
       <span>✨ Trợ lý AI • Tiết kiệm 95% thời gian nhập điểm</span>
+      <div class="footer-version" id="footer-version">v1.4.1</div>
     </div>
   </div>
+  <script src="../src/services/cloud-sync.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>
