@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Overlay UI Component for vnEdu (Minimalist Edition with Level Selector)
  * - Nút "Điền Nhận Xét" tối giản, tự động quét và điền 1-Click
  * - Tích hợp bộ chọn Cấp học đang dạy: TH (Tiểu học: Lớp 1-5), THCS (Lớp 6-9), THPT (Lớp 10-12)
@@ -1934,6 +1934,276 @@
       }
     });
 
+    // =========================================================================
+    // ⭐ LOGIC SỬA TẠI CHỖ & 1-CLICK THAY THẾ VÀO NGÂN HÀNG (IN-PLACE SMART REPLACE)
+    // =========================================================================
+    const quickReplaceBadge = shadowRoot.getElementById('vnedu-quick-replace-badge');
+    const btnReplaceSave = shadowRoot.getElementById('btn-replace-save');
+    const btnReplaceDismiss = shadowRoot.getElementById('btn-replace-dismiss');
+    const replaceBadgeMainText = shadowRoot.getElementById('replace-badge-main-text');
+    const replaceBadgeSubText = shadowRoot.getElementById('replace-badge-sub-text');
+
+    let activeEditingTarget = null;
+    let badgeHideTimer = null;
+    let currentOrigText = '';
+    let currentNewText = '';
+
+    function showReplaceBadge(targetEl, origText, newText) {
+      if (!quickReplaceBadge || !targetEl) return;
+      activeEditingTarget = targetEl;
+      currentOrigText = origText;
+      currentNewText = newText;
+
+      quickReplaceBadge.classList.remove('is-success');
+      if (btnReplaceSave) {
+        btnReplaceSave.style.display = 'flex';
+        btnReplaceSave.disabled = false;
+        btnReplaceSave.innerHTML = '<span>Lưu thay thế</span><span class="btn-sparkle">✨</span>';
+      }
+      if (replaceBadgeMainText) replaceBadgeMainText.textContent = 'Lưu thay thế câu mẫu?';
+      if (replaceBadgeSubText) {
+        const shortNew = newText.length > 36 ? (newText.slice(0, 33) + '...') : newText;
+        replaceBadgeSubText.textContent = 'Thành: "' + shortNew + '"';
+      }
+
+      const rect = targetEl.getBoundingClientRect();
+      if (rect.width === 0 && rect.height === 0) return;
+
+      let top = rect.top - 46;
+      let left = Math.max(12, rect.right - 290);
+      if (top < 10) {
+        top = rect.bottom + 8;
+      }
+      if (left + 300 > window.innerWidth) {
+        left = Math.max(10, window.innerWidth - 310);
+      }
+
+      quickReplaceBadge.style.top = top + 'px';
+      quickReplaceBadge.style.left = left + 'px';
+      quickReplaceBadge.style.display = 'flex';
+
+      if (badgeHideTimer) clearTimeout(badgeHideTimer);
+      badgeHideTimer = setTimeout(() => {
+        hideReplaceBadge();
+      }, 9000);
+    }
+
+    function hideReplaceBadge() {
+      if (badgeHideTimer) clearTimeout(badgeHideTimer);
+      if (quickReplaceBadge) quickReplaceBadge.style.display = 'none';
+      activeEditingTarget = null;
+    }
+
+    btnReplaceDismiss?.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      hideReplaceBadge();
+    });
+
+    btnReplaceSave?.addEventListener('click', async (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (!currentOrigText || !currentNewText || currentOrigText === currentNewText) {
+        hideReplaceBadge();
+        return;
+      }
+
+      const targetEl = activeEditingTarget;
+      const meta = {
+        subject: (targetEl && targetEl.dataset.vneduSubject) || '',
+        grade: (targetEl && targetEl.dataset.vneduGrade) || '',
+        period: (targetEl && targetEl.dataset.vneduPeriod) || currentPeriod || 'GK1',
+        level: (targetEl && targetEl.dataset.vneduLevel) || '',
+        educationLevel: (targetEl && targetEl.dataset.vneduEducationLevel) || currentEducationLevel || 'PRIMARY',
+        role: (targetEl && targetEl.dataset.vneduRole) || ''
+      };
+
+      btnReplaceSave.disabled = true;
+      btnReplaceSave.innerHTML = '<span>⏳ Đang lưu...</span>';
+
+      // 1. Lưu vào Storage vĩnh viễn
+      if (deps.Storage && typeof deps.Storage.saveCustomReplacement === 'function') {
+        await deps.Storage.saveCustomReplacement({
+          originalComment: currentOrigText,
+          newComment: currentNewText,
+          ...meta
+        });
+      }
+
+      // 2. Cập nhật ngay vào runtime của OfflineTemplates
+      if (deps.OfflineTemplates && typeof deps.OfflineTemplates.replaceCustomComment === 'function') {
+        deps.OfflineTemplates.replaceCustomComment(currentOrigText, currentNewText, meta);
+      }
+
+      // 3. Cập nhật lại dataset trên ô
+      if (targetEl) {
+        targetEl.dataset.vneduOriginalComment = currentNewText;
+        targetEl.dataset.vneduInitialValue = currentNewText;
+        targetEl.dataset.vneduCurrentComment = currentNewText;
+      }
+
+      // 4. Phản hồi trực quan thành công
+      quickReplaceBadge.classList.add('is-success');
+      if (replaceBadgeMainText) replaceBadgeMainText.textContent = '✓ Đã cập nhật vào ngân hàng!';
+      if (replaceBadgeSubText) replaceBadgeSubText.textContent = 'Trợ lý sẽ tự động dùng câu mới từ lần sau';
+      if (btnReplaceSave) btnReplaceSave.style.display = 'none';
+
+      // 5. Bé Bút thông báo vui mừng
+      const mascotSpeech = shadowRoot.getElementById('vnedu-mascot-speech');
+      if (mascotSpeech) {
+        mascotSpeech.textContent = 'Em đã ghi nhớ câu nhận xét mới của Thầy/Cô rồi ạ! ✨';
+        mascotSpeech.style.opacity = '1';
+        setTimeout(() => { mascotSpeech.style.opacity = ''; }, 6000);
+      }
+
+      refreshCustomBankUI();
+
+      if (badgeHideTimer) clearTimeout(badgeHideTimer);
+      badgeHideTimer = setTimeout(() => {
+        hideReplaceBadge();
+      }, 2200);
+    });
+
+    document.addEventListener('focusin', (e) => {
+      const t = e.target;
+      if (!t) return;
+      const tagName = (t.tagName || '').toUpperCase();
+      const isCandidate = tagName === 'TEXTAREA' || (tagName === 'INPUT' && !/button|submit|checkbox|radio|password|hidden/i.test(t.type || '')) || t.isContentEditable;
+      if (!isCandidate) return;
+
+      const val = (t.value || t.innerText || '').trim();
+      if (!t.dataset.vneduInitialValue) {
+        t.dataset.vneduInitialValue = val;
+      }
+      if (!t.dataset.vneduOriginalComment && val.length >= 8) {
+        t.dataset.vneduOriginalComment = val;
+      }
+    }, { passive: true });
+
+    let inputChangeTimer = null;
+    function inspectInputForReplacement(t) {
+      if (!t) return;
+      const tagName = (t.tagName || '').toUpperCase();
+      const isCandidate = tagName === 'TEXTAREA' || (tagName === 'INPUT' && !/button|submit|checkbox|radio|password|hidden/i.test(t.type || '')) || t.isContentEditable;
+      if (!isCandidate) return;
+      if (t.id === 'vnedu-key-input' || t.closest?.('#vnedu-assistant-root')) return;
+
+      const currentVal = (t.value || t.innerText || '').trim();
+      const origVal = (t.dataset.vneduOriginalComment || t.dataset.vneduInitialValue || '').trim();
+
+      const isCommentField = Boolean(
+        t.dataset.vneduOriginalComment ||
+        tagName === 'TEXTAREA' ||
+        /nhan_?xet|comment|danh_?gia|noi_?dung/i.test((t.name || '') + ' ' + (t.className || '') + ' ' + (t.id || '')) ||
+        (origVal.length >= 10 && currentVal.length >= 8)
+      );
+
+      if (!isCommentField) return;
+
+      if (origVal && currentVal && origVal !== currentVal && currentVal.length >= 6) {
+        showReplaceBadge(t, origVal, currentVal);
+      } else if (origVal === currentVal) {
+        if (activeEditingTarget === t) {
+          hideReplaceBadge();
+        }
+      }
+    }
+
+    document.addEventListener('input', (e) => {
+      if (inputChangeTimer) clearTimeout(inputChangeTimer);
+      inputChangeTimer = setTimeout(() => {
+        inspectInputForReplacement(e.target);
+      }, 500);
+    }, { passive: true });
+
+    document.addEventListener('change', (e) => {
+      inspectInputForReplacement(e.target);
+    }, { passive: true });
+
+    // Quản lý danh sách câu đã thay thế trong Modal
+    const customBankCountEl = shadowRoot.getElementById('custom-bank-count');
+    const btnToggleBankList = shadowRoot.getElementById('btn-toggle-custom-bank-list');
+    const bankListWrapper = shadowRoot.getElementById('custom-bank-list-wrapper');
+    const bankEmptyEl = shadowRoot.getElementById('custom-bank-list-empty');
+    const bankItemsContainer = shadowRoot.getElementById('custom-bank-items-container');
+    const btnClearAllBank = shadowRoot.getElementById('btn-clear-custom-bank');
+
+    function escapeHtmlSafe(str) {
+      if (!str) return '';
+      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    async function refreshCustomBankUI() {
+      if (!deps.Storage || typeof deps.Storage.getCustomReplacements !== 'function') return;
+      try {
+        const list = await deps.Storage.getCustomReplacements();
+        const count = Array.isArray(list) ? list.length : 0;
+        if (customBankCountEl) customBankCountEl.textContent = count;
+
+        if (count === 0) {
+          if (bankEmptyEl) bankEmptyEl.style.display = 'block';
+          if (bankItemsContainer) bankItemsContainer.innerHTML = '';
+          if (btnClearAllBank) btnClearAllBank.style.display = 'none';
+        } else {
+          if (bankEmptyEl) bankEmptyEl.style.display = 'none';
+          if (btnClearAllBank) btnClearAllBank.style.display = 'inline-block';
+          if (bankItemsContainer) {
+            bankItemsContainer.innerHTML = list.map(function(item) {
+              var subj = item.subject ? (escapeHtmlSafe(item.subject) + ' • ') : '';
+              var period = item.period ? escapeHtmlSafe(item.period) : '';
+              return '<div class="custom-bank-item" data-id="' + item.id + '">' +
+                '<div class="custom-bank-old">✕ ' + escapeHtmlSafe(item.originalComment) + '</div>' +
+                '<div class="custom-bank-new">✓ ' + escapeHtmlSafe(item.newComment) + '</div>' +
+                '<div class="custom-bank-meta">' +
+                  '<span>' + subj + period + '</span>' +
+                  '<button type="button" class="btn-restore-single" data-key="' + escapeHtmlSafe(item.originalComment) + '" title="Khôi phục câu gốc mặc định">🗑️ Khôi phục gốc</button>' +
+                '</div>' +
+              '</div>';
+            }).join('');
+
+            bankItemsContainer.querySelectorAll('.btn-restore-single').forEach(btn => {
+              btn.addEventListener('click', async (e) => {
+                e.preventDefault();
+                const key = btn.getAttribute('data-key');
+                if (confirm('Thầy/Cô có muốn hủy thay thế câu này và quay về câu gốc mặc định không?')) {
+                  await deps.Storage.deleteCustomReplacement(key);
+                  const updatedList = await deps.Storage.getCustomReplacements();
+                  if (deps.OfflineTemplates && typeof deps.OfflineTemplates.applyCustomReplacements === 'function') {
+                    deps.OfflineTemplates.applyCustomReplacements(updatedList);
+                  }
+                  refreshCustomBankUI();
+                }
+              });
+            });
+          }
+        }
+      } catch (e) {}
+    }
+
+    btnToggleBankList?.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (!bankListWrapper) return;
+      const isHidden = bankListWrapper.style.display === 'none';
+      bankListWrapper.style.display = isHidden ? 'block' : 'none';
+      btnToggleBankList.textContent = isHidden ? 'Thu gọn' : 'Xem chi tiết';
+      if (isHidden) refreshCustomBankUI();
+    });
+
+    btnClearAllBank?.addEventListener('click', async (e) => {
+      e.preventDefault();
+      if (confirm('Thầy/Cô có chắc chắn muốn khôi phục TẤT CẢ các câu nhận xét về mẫu gốc ban đầu của trợ lý không?')) {
+        await deps.Storage.clearCustomReplacements();
+        if (deps.OfflineTemplates && typeof deps.OfflineTemplates.applyCustomReplacements === 'function') {
+          deps.OfflineTemplates.applyCustomReplacements([]);
+        }
+        refreshCustomBankUI();
+        showToast('✓ Đã khôi phục toàn bộ câu nhận xét về mẫu gốc ban đầu!', null, false, false);
+        setTimeout(hideToast, 3000);
+      }
+    });
+
+    refreshCustomBankUI();
+
     const btnReloadExtension = shadowRoot.getElementById('btn-reload-extension');
     btnReloadExtension?.addEventListener('click', () => {
       btnReloadExtension.disabled = true;
@@ -2051,6 +2321,20 @@
         </div>
       </div>
 
+      <!-- Floating Quick Replace Badge (In-place Smart Replace) -->
+      <div class="vnedu-quick-replace-badge" id="vnedu-quick-replace-badge" style="display: none;">
+        <span class="replace-badge-sparkle">⭐</span>
+        <div class="replace-badge-text-wrap">
+          <span class="replace-badge-main-text" id="replace-badge-main-text">Lưu thay thế câu mẫu?</span>
+          <span class="replace-badge-sub-text" id="replace-badge-sub-text">Cập nhật vào ngân hàng trợ lý</span>
+        </div>
+        <button type="button" class="btn-replace-save" id="btn-replace-save" title="Cập nhật thay thế câu này trong ngân hàng nhận xét của trợ lý">
+          <span>Lưu thay thế</span>
+          <span class="btn-sparkle">✨</span>
+        </button>
+        <button type="button" class="btn-replace-dismiss" id="btn-replace-dismiss" title="Bỏ qua [Esc]">✕</button>
+      </div>
+
       <!-- Cửa sổ kích hoạt bản quyền -->
       <div class="vnedu-modal-backdrop" id="vnedu-license-modal" style="display: none;">
         <div class="vnedu-modal-box">
@@ -2075,6 +2359,21 @@
               <button type="button" id="btn-clear-license" class="modal-secondary-link">Đổi mã bản quyền / Hủy kích hoạt</button>
             </div>
 
+            <!-- Quản lý câu nhận xét đã thay thế của Giáo Viên -->
+            <div class="modal-custom-bank-card" id="modal-custom-bank-card" style="margin-top: 12px; padding: 10px 12px; background: rgba(30, 41, 59, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; text-align: left;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 11.5px; font-weight: 700; color: #F59E0B;">⭐ CÂU NHẬN XÉT ĐÃ THAY THẾ (<span id="custom-bank-count">0</span>)</span>
+                <button type="button" id="btn-toggle-custom-bank-list" style="font-size: 10.5px; color: #38BDF8; background: none; border: none; cursor: pointer; text-decoration: underline;">Xem chi tiết</button>
+              </div>
+              <div id="custom-bank-list-wrapper" style="display: none; max-height: 160px; overflow-y: auto; margin-top: 8px; font-size: 11px;">
+                <div id="custom-bank-list-empty" style="color: #94A3B8; font-style: italic; text-align: center; padding: 8px 0;">Chưa có câu nào được thay thế. Khi sửa nhận xét trên vnEdu, Thầy/Cô bấm "Lưu thay thế" để cập nhật.</div>
+                <div id="custom-bank-items-container"></div>
+              </div>
+              <div id="custom-bank-actions-row" style="margin-top: 6px; display: flex; justify-content: flex-end; gap: 8px;">
+                <button type="button" id="btn-clear-custom-bank" style="font-size: 10.5px; color: #EF4444; background: none; border: none; cursor: pointer; display: none;">Khôi phục tất cả câu gốc</button>
+              </div>
+            </div>
+
             <!-- Đồng bộ dữ liệu nhận xét trực tuyến qua GitHub -->
             <div class="modal-cloud-sync-card" id="modal-cloud-sync-card" style="margin-top: 14px; padding: 10px 12px; background: rgba(30, 41, 59, 0.75); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; text-align: left;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
@@ -2083,7 +2382,7 @@
               </div>
               <div id="cloud-sync-version-info" style="font-size: 11px; color: #94A3B8; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
                 <span>Dữ liệu: <b style="color: #F8FAFC;" id="cloud-sync-ver-num">2026.11.04.3</b></span>
-                <span>Tiện ích: <b style="color: #38BDF8;" id="cloud-sync-app-ver">v1.3.8</b></span>
+                <span>Tiện ích: <b style="color: #38BDF8;" id="cloud-sync-app-ver">v1.3.9</b></span>
               </div>
               <button type="button" id="btn-trigger-cloud-sync" style="width: 100%; padding: 7px 10px; font-size: 12px; font-weight: 700; color: #F8FAFC; background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 8px; cursor: pointer; transition: all 0.2s ease;">
                 🔄 Kiểm tra &amp; Đồng bộ dữ liệu mới

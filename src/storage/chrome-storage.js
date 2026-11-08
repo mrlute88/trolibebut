@@ -157,6 +157,94 @@
     }
   }
 
+  const STORAGE_KEY_REPLACEMENTS = 'vnedu_custom_replacements';
+
+  async function getCustomReplacements() {
+    try {
+      let stored;
+      if (isExtensionContext) {
+        stored = await chrome.storage.local.get(STORAGE_KEY_REPLACEMENTS);
+      } else {
+        stored = await memoryFallback.get(STORAGE_KEY_REPLACEMENTS);
+      }
+      return stored[STORAGE_KEY_REPLACEMENTS] || [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  async function saveCustomReplacement(item) {
+    if (!item || !item.originalComment || !item.newComment) return false;
+    try {
+      const list = await getCustomReplacements();
+      const origClean = String(item.originalComment).trim();
+      const newClean = String(item.newComment).trim();
+
+      // Nếu câu mới giống hệt câu cũ thì không cần thay thế
+      if (origClean === newClean) return false;
+
+      const existingIdx = list.findIndex(r => r && r.originalComment && r.originalComment.trim() === origClean);
+
+      const record = {
+        id: item.id || ('rep_' + Date.now()),
+        originalComment: origClean,
+        newComment: newClean,
+        subject: item.subject || '',
+        grade: item.grade || '',
+        period: item.period || '',
+        level: item.level || '',
+        educationLevel: item.educationLevel || '',
+        role: item.role || '',
+        updatedAt: new Date().toISOString()
+      };
+
+      if (existingIdx >= 0) {
+        list[existingIdx] = { ...list[existingIdx], ...record };
+      } else {
+        list.unshift(record);
+      }
+
+      if (isExtensionContext) {
+        await chrome.storage.local.set({ [STORAGE_KEY_REPLACEMENTS]: list });
+      } else {
+        await memoryFallback.set({ [STORAGE_KEY_REPLACEMENTS]: list });
+      }
+      return record;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  async function deleteCustomReplacement(idOrOriginal) {
+    if (!idOrOriginal) return false;
+    try {
+      const list = await getCustomReplacements();
+      const key = String(idOrOriginal).trim();
+      const filtered = list.filter(r => r.id !== key && r.originalComment.trim() !== key);
+      if (isExtensionContext) {
+        await chrome.storage.local.set({ [STORAGE_KEY_REPLACEMENTS]: filtered });
+      } else {
+        await memoryFallback.set({ [STORAGE_KEY_REPLACEMENTS]: filtered });
+      }
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  async function clearCustomReplacements() {
+    try {
+      if (isExtensionContext) {
+        await chrome.storage.local.set({ [STORAGE_KEY_REPLACEMENTS]: [] });
+      } else {
+        await memoryFallback.set({ [STORAGE_KEY_REPLACEMENTS]: [] });
+      }
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
   return {
     DEFAULT_SETTINGS,
     getSettings,
@@ -164,6 +252,10 @@
     getSavedSelectors,
     saveSelectors,
     addHistorySession,
-    getHistory
+    getHistory,
+    getCustomReplacements,
+    saveCustomReplacement,
+    deleteCustomReplacement,
+    clearCustomReplacements
   };
 });

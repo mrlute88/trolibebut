@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Form / Modal vnEdu Adapter (VNEDU_ADAPTER_FORM)
  * Chuyên trách xử lý:
  * 1. Cửa sổ pop-up "Phẩm chất - Năng lực ghi học bạ" (ExtJS Window trên vnEdu)
@@ -1164,7 +1164,17 @@
         }
 
         // Gán giá trị vào textarea bằng DOMUtils an toàn
-        DOMUtils.setFieldValue(f.element, textToFill);
+        // Gán giá trị vào textarea bằng DOMUtils an toàn kèm metadata ngữ cảnh
+        DOMUtils.setFieldValue(f.element, textToFill, {
+          subject: isGeneralField
+            ? (f.role === 'PC_CHUNG' ? 'Nhận xét chung Phẩm chất' : (f.role === 'NL_DACTHU' ? 'Nhận xét năng lực đặc thù' : 'Nhận xét chung Năng lực'))
+            : (f.roleTitle || f.role),
+          grade: detectedGrade,
+          period: period,
+          level: fieldLevel,
+          educationLevel: edLevel,
+          role: f.role
+        });
         filledCount++;
       }
 

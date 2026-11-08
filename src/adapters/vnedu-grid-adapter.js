@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Grid-based vnEdu Adapter (VNEDU_ADAPTER_GRID)
  * Handles ExtJS desktop grids (.x-grid3, .x-grid), AG Grid, SlickGrid, role="row", or flex rows.
  */
@@ -1574,7 +1574,7 @@
       if (!mappingItem || !mappingItem.commentField || !mappingItem.commentField.element) {
         return false;
       }
-      const commentOk = DOMUtils.setFieldValue(mappingItem.commentField.element, text);
+      const commentOk = DOMUtils.setFieldValue(mappingItem.commentField.element, text, { subject: options.subject || mappingItem.subject || this.detectedSubject, grade: options.grade || mappingItem.grade, period: options.period || this.detectedPeriod, level: options.level || mappingItem.level, educationLevel: options.educationLevel });
 
       // Tuyệt đối không tự động điền ô xếp loại trừ khi có cờ tường minh options.fillRating === true
       if (options && options.fillRating === true && options.level) {

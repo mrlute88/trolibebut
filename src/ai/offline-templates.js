@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Offline Templates Engine for K-12 Student Assessment (Lớp 1 - 12)
  * - Cấp 1 (Lớp 1 - 5): Tuân thủ Thông tư 27/2020/TT-BGDĐT
  * - Cấp 2 (Lớp 6 - 9) & Cấp 3 (Lớp 10 - 12): Tuân thủ Thông tư 22/2021/TT-BGDĐT
@@ -64558,6 +64558,18 @@
     if (!isGeneralComment && finalResult.length > 90) {
       finalResult = clampToMaxLength(finalResult, 90);
     }
+
+    // Áp dụng câu thay thế tùy chỉnh của Giáo Viên (nếu có)
+    if (customReplacementMap && typeof customReplacementMap === 'object') {
+      const trimmedFinal = finalResult.trim();
+      const trimmedSelected = selectedTemplate ? selectedTemplate.trim() : '';
+      if (customReplacementMap[trimmedFinal]) {
+        finalResult = customReplacementMap[trimmedFinal];
+      } else if (trimmedSelected && customReplacementMap[trimmedSelected]) {
+        finalResult = customReplacementMap[trimmedSelected];
+      }
+    }
+
     return finalResult;
   }
 
@@ -64615,6 +64627,121 @@
     return true;
   }
 
+  let customReplacementMap = {};
+  let customReplacementsList = [];
+
+  function replaceInBankList(list, oldText, newText) {
+    if (!Array.isArray(list)) return false;
+    let replaced = false;
+    for (let i = 0; i < list.length; i++) {
+      if (typeof list[i] === 'string' && list[i].trim() === oldText) {
+        list[i] = newText;
+        replaced = true;
+      }
+    }
+    return replaced;
+  }
+
+  function replaceInBankDeep(obj, oldText, newText) {
+    if (!obj || typeof obj !== 'object') return 0;
+    let count = 0;
+    for (const k in obj) {
+      if (Array.isArray(obj[k])) {
+        if (replaceInBankList(obj[k], oldText, newText)) {
+          count++;
+        }
+      } else if (typeof obj[k] === 'object' && obj[k] !== null) {
+        count += replaceInBankDeep(obj[k], oldText, newText);
+      }
+    }
+    return count;
+  }
+
+  function applyCustomReplacements(replacements) {
+    if (!Array.isArray(replacements)) return false;
+    customReplacementsList = replacements;
+    customReplacementMap = {};
+    for (const item of replacements) {
+      if (item && item.originalComment && item.newComment) {
+        const orig = String(item.originalComment).trim();
+        const rep = String(item.newComment).trim();
+        customReplacementMap[orig] = rep;
+        replaceCustomComment(orig, rep, item, false);
+      }
+    }
+    return true;
+  }
+
+  function replaceCustomComment(oldText, newText, meta = {}, saveToList = true) {
+    if (!oldText || !newText) return false;
+    const orig = String(oldText).trim();
+    const rep = String(newText).trim();
+    if (orig === rep) return false;
+
+    customReplacementMap[orig] = rep;
+
+    if (saveToList) {
+      const idx = customReplacementsList.findIndex(r => r && r.originalComment && r.originalComment.trim() === orig);
+      const rec = {
+        id: meta.id || ('rep_' + Date.now()),
+        originalComment: orig,
+        newComment: rep,
+        subject: meta.subject || '',
+        grade: meta.grade || '',
+        period: meta.period || '',
+        level: meta.level || '',
+        educationLevel: meta.educationLevel || '',
+        role: meta.role || '',
+        updatedAt: new Date().toISOString()
+      };
+      if (idx >= 0) {
+        customReplacementsList[idx] = { ...customReplacementsList[idx], ...rec };
+      } else {
+        customReplacementsList.unshift(rec);
+      }
+    }
+
+    // 1. Quét thay thế sâu trong mọi ngân hàng mẫu câu runtime
+    let replacedCount = 0;
+    if (typeof ALL_PERIOD_TEMPLATES !== 'undefined') {
+      replacedCount += replaceInBankDeep(ALL_PERIOD_TEMPLATES, orig, rep);
+    }
+    if (typeof PRIMARY_BY_GRADE !== 'undefined') {
+      replacedCount += replaceInBankDeep(PRIMARY_BY_GRADE, orig, rep);
+    }
+    if (typeof LEVEL_TEMPLATES !== 'undefined') {
+      replacedCount += replaceInBankDeep(LEVEL_TEMPLATES, orig, rep);
+    }
+    if (typeof SUBJECT_TEMPLATES !== 'undefined') {
+      replacedCount += replaceInBankDeep(SUBJECT_TEMPLATES, orig, rep);
+    }
+
+    // 2. Chèn câu mới vào đầu danh sách tương ứng để ưu tiên chọn
+    if (meta && meta.subject) {
+      try {
+        const edLevel = normalizeLevelCode(meta.educationLevel) || meta.educationLevel || 'PRIMARY';
+        const period = normalizePeriodCode(meta.period || 'GK1');
+        const subjKey = normalizeSubject(meta.subject, edLevel);
+        const normLvl = normalizeLevelCode(meta.level || 'H');
+
+        if (ALL_PERIOD_TEMPLATES && ALL_PERIOD_TEMPLATES[edLevel] && ALL_PERIOD_TEMPLATES[edLevel][period]) {
+          if (!ALL_PERIOD_TEMPLATES[edLevel][period][subjKey]) {
+            ALL_PERIOD_TEMPLATES[edLevel][period][subjKey] = {};
+          }
+          const targetObj = ALL_PERIOD_TEMPLATES[edLevel][period][subjKey];
+          if (!Array.isArray(targetObj[normLvl])) {
+            targetObj[normLvl] = [];
+          }
+          if (!targetObj[normLvl].includes(rep)) {
+            targetObj[normLvl].unshift(rep);
+          }
+        }
+      } catch (e) {}
+    }
+
+    return true;
+  }
+
   const SCORE_RANGES = [
     { key: 'EXCELLENT', label: '8.0 - 10 điểm (Tốt / Giỏi)', level: 'T' },
     { key: 'GOOD', label: '6.5 - 7.9 điểm (Khá)', level: 'K' },
@@ -64648,6 +64775,9 @@
     scoreToLevel,
     resetSessionPool,
     clampToMaxLength,
-    applyRemoteData
+    applyRemoteData,
+    applyCustomReplacements,
+    replaceCustomComment,
+    getCustomReplacements: () => customReplacementsList
   };
 });

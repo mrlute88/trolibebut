@@ -1,7 +1,7 @@
 {
-  "version": "1.3.8",
-  "appVersion": "1.3.8",
-  "dataVersion": "2026.11.07.2",
+  "version": "1.4.0",
+  "appVersion": "1.4.0",
+  "dataVersion": "2026.11.08.1",
   "updatedAt": "2026-11-07",
   "author": "Team Tin Học",
   "announcement": {
@@ -9303,9 +9303,9 @@
     }
   },
   "latestRelease": {
-    "version": "1.3.8",
-    "releaseDate": "2026-11-07",
-    "description": "Bản cập nhật v1.2.1: Nhận diện viết tắt TCTV, TCT, TN-XH; đếm ngược tự động lưu phẩm chất - năng lực; đồng bộ dữ liệu đám mây.",
+    "version": "1.4.0",
+    "releaseDate": "2026-11-08",
+    "description": "Bản cập nhật v1.4.0: Thêm chức năng cho phép giáo viên tự thay đổi câu nhận xét theo ý của mình",
     "downloadUrl": "https://github.com/mrlute88/trolibebut"
   }
 }

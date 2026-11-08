@@ -97,6 +97,17 @@
     return;
   }
 
+  // Nạp các câu nhận xét tùy chỉnh / thay thế của Giáo Viên vào OfflineTemplates
+  try {
+    if (Storage && OfflineTemplates && typeof Storage.getCustomReplacements === 'function' && typeof OfflineTemplates.applyCustomReplacements === 'function') {
+      const customReps = await Storage.getCustomReplacements();
+      if (Array.isArray(customReps) && customReps.length > 0) {
+        OfflineTemplates.applyCustomReplacements(customReps);
+        if (Logger) Logger.info('Đã nạp ' + customReps.length + ' câu nhận xét tùy chỉnh của Thầy/Cô vào ngân hàng.');
+      }
+    }
+  } catch (e) {}
+
   // Initialize UI Overlay
   Overlay.initOverlay(deps);
 

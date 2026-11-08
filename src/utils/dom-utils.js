@@ -12,7 +12,7 @@
   /**
    * Set value into an input / textarea / contenteditable with framework awareness
    */
-  function setFieldValue(element, text) {
+  function setFieldValue(element, text, meta = {}) {
     if (!element) return false;
 
     // 1. Scroll element into view smoothly and center it
@@ -54,6 +54,20 @@
       } catch (e) {}
 
       element.dispatchEvent(new Event('change', { bubbles: true }));
+
+      try {
+        element.dataset.vneduOriginalComment = text;
+        element.dataset.vneduCurrentComment = text;
+        if (meta && typeof meta === 'object') {
+          if (meta.subject) element.dataset.vneduSubject = meta.subject;
+          if (meta.grade) element.dataset.vneduGrade = meta.grade;
+          if (meta.period) element.dataset.vneduPeriod = meta.period;
+          if (meta.level) element.dataset.vneduLevel = meta.level;
+          if (meta.role) element.dataset.vneduRole = meta.role;
+          if (meta.educationLevel) element.dataset.vneduEducationLevel = meta.educationLevel;
+        }
+      } catch (e) {}
+
       return true;
     }
 
@@ -159,6 +173,19 @@
             }
           }
         }
+      }
+    } catch (e) {}
+
+    try {
+      element.dataset.vneduOriginalComment = text;
+      element.dataset.vneduCurrentComment = text;
+      if (meta && typeof meta === 'object') {
+        if (meta.subject) element.dataset.vneduSubject = meta.subject;
+        if (meta.grade) element.dataset.vneduGrade = meta.grade;
+        if (meta.period) element.dataset.vneduPeriod = meta.period;
+        if (meta.level) element.dataset.vneduLevel = meta.level;
+        if (meta.role) element.dataset.vneduRole = meta.role;
+        if (meta.educationLevel) element.dataset.vneduEducationLevel = meta.educationLevel;
       }
     } catch (e) {}
 
