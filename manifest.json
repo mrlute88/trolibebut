@@ -95,6 +95,7 @@
         "src/content/mutation-observer.js",
         "src/content/fill-engine.js",
         "src/services/cloud-sync.js",
+        "src/utils/crypto-nacl.js",
         "src/utils/license-manager.js",
         "src/ui/overlay.js",
         "src/content/content.js"
