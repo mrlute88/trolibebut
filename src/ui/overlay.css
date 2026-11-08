@@ -199,19 +199,19 @@
   }
 }
 
-/* Khung viền Neon Pastel ôm sát mép phải theo phong cách Ảnh 2 */
+/* Khung viền Neon Pastel ôm sát mép phải theo phong cách Bé Bút (Đã thu gọn 50% tinh tế, không che màn hình) */
 .peeking-dock-bubble {
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%);
-  border: 2.5px solid #38BDF8;
+  border: 1.5px solid #38BDF8;
   border-right: none;
-  border-radius: 28px 0 0 28px;
+  border-radius: 16px 0 0 16px;
   box-shadow: 
-    -6px 8px 24px -2px rgba(14, 165, 233, 0.45),
-    0 0 16px rgba(168, 85, 247, 0.35),
-    inset 2px 2px 6px #FFFFFF;
-  padding: 4px 0px 4px 10px;
+    -3px 4px 12px -1px rgba(14, 165, 233, 0.4),
+    0 0 8px rgba(168, 85, 247, 0.3),
+    inset 1px 1px 3px #FFFFFF;
+  padding: 2px 0px 2px 5px;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation: neonBreathing 4s ease-in-out infinite;
 }
@@ -219,26 +219,26 @@
 @keyframes neonBreathing {
   0%, 100% {
     border-color: #38BDF8;
-    box-shadow: -6px 8px 24px -2px rgba(14, 165, 233, 0.45), 0 0 16px rgba(168, 85, 247, 0.35);
+    box-shadow: -3px 4px 12px -1px rgba(14, 165, 233, 0.4), 0 0 8px rgba(168, 85, 247, 0.3);
   }
   50% {
     border-color: #818CF8;
-    box-shadow: -8px 10px 30px -2px rgba(99, 102, 241, 0.6), 0 0 24px rgba(56, 189, 248, 0.5);
+    box-shadow: -4px 5px 16px -1px rgba(99, 102, 241, 0.55), 0 0 12px rgba(56, 189, 248, 0.45);
   }
 }
 
 .vnedu-peeking-dock:hover .peeking-dock-bubble {
-  transform: translateX(-10px) scale(1.06);
+  transform: translateX(-5px) scale(1.08);
   background: #FFFFFF;
-  box-shadow: -10px 14px 34px -2px rgba(14, 165, 233, 0.65), 0 0 24px rgba(168, 85, 247, 0.55);
+  box-shadow: -5px 7px 18px -1px rgba(14, 165, 233, 0.6), 0 0 14px rgba(168, 85, 247, 0.5);
 }
 
 .peeking-dock-img {
-  height: 108px;
+  height: 54px;
   width: auto;
-  max-width: 80px;
+  max-width: 40px;
   object-fit: contain;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
   pointer-events: none;
   user-select: none;
   display: block;
