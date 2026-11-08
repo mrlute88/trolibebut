@@ -89,5 +89,5 @@ echo   [⚡ Nap lai tien ich ngay] o phia duoi de su dung ngay!
 echo.
 echo ======================================================================
 echo Cua so se tu dong dong sau 2 giay...
-timeout /t 2 >nul 2>&1 || ping -n 3 127.0.0.1 >nul
-exit /b 0
+powershell -NoProfile -Command "Start-Sleep -Seconds 2" >nul 2>&1
+exit
