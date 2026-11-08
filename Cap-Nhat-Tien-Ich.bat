@@ -21,7 +21,7 @@ echo [1/3] Dang tai ban ma nguon va du lieu moi nhat tu may chu...
 curl.exe -L -k -s -o "%TEMP_ZIP%" "%ZIP_URL%"
 
 if exist "%TEMP_ZIP%" (
-    for %%%%I in ("%TEMP_ZIP%") do if %%%%~zI LEQ 500 del /f /q "%TEMP_ZIP%" >nul 2>&1
+    for %%I in ("%TEMP_ZIP%") do if %%~zI LEQ 500 del /f /q "%TEMP_ZIP%" >nul 2>&1
 )
 
 if not exist "%TEMP_ZIP%" (
