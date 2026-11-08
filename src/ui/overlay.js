@@ -2382,7 +2382,7 @@
               </div>
               <div id="cloud-sync-version-info" style="font-size: 11px; color: #94A3B8; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
                 <span>Dữ liệu: <b style="color: #F8FAFC;" id="cloud-sync-ver-num">2026.11.04.3</b></span>
-                <span>Tiện ích: <b style="color: #38BDF8;" id="cloud-sync-app-ver">v1.4.0</b></span>
+                <span>Tiện ích: <b style="color: #38BDF8;" id="cloud-sync-app-ver">v1.4.1</b></span>
               </div>
               <button type="button" id="btn-trigger-cloud-sync" style="width: 100%; padding: 7px 10px; font-size: 12px; font-weight: 700; color: #F8FAFC; background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 8px; cursor: pointer; transition: all 0.2s ease;">
                 🔄 Kiểm tra &amp; Đồng bộ dữ liệu mới
