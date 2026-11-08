@@ -13,10 +13,23 @@ echo.
 set "TARGET_DIR=%~dp0"
 if "%TARGET_DIR:~-1%"=="\" set "TARGET_DIR=%TARGET_DIR:~0,-1%"
 
-:: Tu dong dang ky giao thuc vnedu-updater de web/tien ich co the mo truc tiep file bat nay
+:: 1. Ghi nho vi tri thu muc hien tai vao he thong
+reg add "HKCU\Software\vnedu-updater" /v "LastPath" /t REG_SZ /d "%~dp0Cap-Nhat-Tien-Ich.bat" /f >nul 2>&1
+
+:: 2. Cai dat trinh khoi chay thong minh vao %LOCALAPPDATA% de luon tim duoc tien ich du co di chuyen sang o dia khac
+if not exist "%LOCALAPPDATA%\vnedu-updater" mkdir "%LOCALAPPDATA%\vnedu-updater" >nul 2>&1
+if exist "%~dp0vnedu-updater-launcher.bat" (
+    copy /y "%~dp0vnedu-updater-launcher.bat" "%LOCALAPPDATA%\vnedu-updater\vnedu-updater-launcher.bat" >nul 2>&1
+)
+
+:: 3. Dang ky giao thuc vnedu-updater de web/tien ich co the mo file bat nay
 reg add "HKCU\Software\Classes\vnedu-updater" /ve /t REG_SZ /d "URL:vnedu-updater Protocol" /f >nul 2>&1
 reg add "HKCU\Software\Classes\vnedu-updater" /v "URL Protocol" /t REG_SZ /d "" /f >nul 2>&1
-reg add "HKCU\Software\Classes\vnedu-updater\shell\open\command" /ve /t REG_SZ /d "cmd.exe /c start \"Cap Nhat vnEdu\" \"%~dp0Cap-Nhat-Tien-Ich.bat\"" /f >nul 2>&1
+if exist "%LOCALAPPDATA%\vnedu-updater\vnedu-updater-launcher.bat" (
+    reg add "HKCU\Software\Classes\vnedu-updater\shell\open\command" /ve /t REG_SZ /d "cmd.exe /c start \"Cap Nhat vnEdu\" \"%LOCALAPPDATA%\vnedu-updater\vnedu-updater-launcher.bat\"" /f >nul 2>&1
+) else (
+    reg add "HKCU\Software\Classes\vnedu-updater\shell\open\command" /ve /t REG_SZ /d "cmd.exe /c start \"Cap Nhat vnEdu\" \"%~dp0Cap-Nhat-Tien-Ich.bat\"" /f >nul 2>&1
+)
 
 set "ZIP_URL=https://github.com/mrlute88/trolibebut/archive/refs/heads/main.zip"
 set "TEMP_ZIP=%TEMP%\vnedu_update_%RANDOM%.zip"
@@ -41,7 +54,7 @@ if not exist "%TEMP_ZIP%" (
     echo Vui long kiem tra lai ket noi mang Internet cua may tinh.
     echo.
     pause
-    exit /b 1
+    exit
 )
 
 echo [2/3] Dang giai nen va cap nhat vao thu muc tien ich...
@@ -57,7 +70,7 @@ if exist "%TEMP_DIR%\trolibebut-main" (
     set "SOURCE_DIR=%TEMP_DIR%"
 )
 
-robocopy "%SOURCE_DIR%" "%TARGET_DIR%" /E /XF "Cap-Nhat-Tien-Ich.bat" /NFL /NDL /NJH /NJS >nul
+robocopy "%SOURCE_DIR%" "%TARGET_DIR%" /E /XF "Cap-Nhat-Tien-Ich.bat" "vnedu-updater-launcher.bat" /NFL /NDL /NJH /NJS >nul
 if errorlevel 8 (
     xcopy "%SOURCE_DIR%\*" "%TARGET_DIR%\" /E /Y /Q >nul 2>&1
 )
@@ -72,7 +85,7 @@ if not exist "%TARGET_DIR%\manifest.json" (
     echo Vui long kiem tra quyen ghi hoac thu chay file voi quyen Administrator.
     echo.
     pause
-    exit /b 1
+    exit
 )
 
 echo.
