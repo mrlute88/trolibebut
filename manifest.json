@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Trợ lý nhận xét vnEdu (Lớp 1 - 12)",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "description": "Hỗ trợ giáo viên nhập nhận xét học sinh thông minh cho tất cả các môn từ lớp 1 đến lớp 12 (Thông tư 27 & Thông tư 22) trên vnEdu. Tuyệt đối không tự bấm Lưu/Ghi.",
   "icons": {
     "16": "icons/icon-16.png",
