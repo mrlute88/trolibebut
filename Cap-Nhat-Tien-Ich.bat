@@ -13,6 +13,11 @@ echo.
 set "TARGET_DIR=%~dp0"
 if "%TARGET_DIR:~-1%"=="\" set "TARGET_DIR=%TARGET_DIR:~0,-1%"
 
+:: Tu dong dang ky giao thuc vnedu-updater de web/tien ich co the mo truc tiep file bat nay
+reg add "HKCU\Software\Classes\vnedu-updater" /ve /t REG_SZ /d "URL:vnedu-updater Protocol" /f >nul 2>&1
+reg add "HKCU\Software\Classes\vnedu-updater" /v "URL Protocol" /t REG_SZ /d "" /f >nul 2>&1
+reg add "HKCU\Software\Classes\vnedu-updater\shell\open\command" /ve /t REG_SZ /d "cmd.exe /c start \"Cap Nhat vnEdu\" \"%~dp0Cap-Nhat-Tien-Ich.bat\"" /f >nul 2>&1
+
 set "ZIP_URL=https://github.com/mrlute88/trolibebut/archive/refs/heads/main.zip"
 set "TEMP_ZIP=%TEMP%\vnedu_update_%RANDOM%.zip"
 set "TEMP_DIR=%TEMP%\vnedu_extract_%RANDOM%"
@@ -111,7 +116,7 @@ if "%OPENED%"=="0" (
 )
 
 :: Hien thi thong bao hop thoai Windows truc tiep den giao vien
-powershell -NoProfile -ExecutionPolicy Bypass -Command "[System.Reflection.Assembly]::LoadWithPartialName('System.Windows.Forms') | Out-Null; [System.Windows.Forms.MessageBox]::Show('Ban moi cua Tien ich Tro ly vnEdu da duoc cap nhat vao may tinh thanh cong!' + [Environment]::NewLine + [Environment]::NewLine + '👉 Thay/Co hay chuyen sang the trinh duyet vua mo (trang Tien ich) va bam nut [Tai lai / Reload] (bieu tuong mui ten xoay tron) de hoan tat nhe!', 'Cap Nhat Thanh Cong - Tro Ly Nhan Xet vnEdu', 0, 64)" >nul 2>&1
+powershell -NoProfile -ExecutionPolicy Bypass -Command "[System.Reflection.Assembly]::LoadWithPartialName('System.Windows.Forms') | Out-Null; [System.Windows.Forms.MessageBox]::Show('Ban moi cua Tien ich Tro ly vnEdu da duoc cap nhat vao may tinh thanh cong!' + [Environment]::NewLine + [Environment]::NewLine + '👉 Thay/Co hay quay lai the web vnEdu va bam nut [Nap lai tien ich ngay] o phia ben duoi de hoan tat nhe!', 'Cap Nhat Thanh Cong - Tro Ly Nhan Xet vnEdu', 0, 64)" >nul 2>&1
 
 color 0a
 echo.
@@ -120,9 +125,9 @@ echo   DA CAP NHAT TIEN ICH THANH CONG!
 echo ======================================================================
 echo.
 echo   * BUOC HOAN TAT CHO THAY/CO:
-echo   1. The quan ly tien ich da duoc mo san tren trinh duyet.
-echo   2. Thay/Co chi can bam vao bieu tuong [Tai lai / Reload] (mui ten xoay tron)
-echo      tai tien ich "Tro ly nhan xet vnEdu" la su dung duoc ngay!
+echo   1. Thay/Co hay quay lai the web vnEdu dang mo tren trinh duyet.
+echo   2. Bam vao nut [⚡ Nap lai tien ich ngay] o phia duoi nut Dong bo
+echo      de he thong nap ma nguon moi nhat va su dung duoc ngay!
 echo.
 echo ======================================================================
 echo Nhan phim bat ky de dong cua so nay.
