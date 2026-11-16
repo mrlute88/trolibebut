@@ -1,9 +1,9 @@
 ========================================================================
-HƯỚNG DẪN CÀI ĐẶT TIỆN ÍCH TRỢ LÝ NHẬN XÉT VNEDU (PHIÊN BẢN v1.2.3)
+HƯỚNG DẪN CÀI ĐẶT TIỆN ÍCH TRỢ LÝ NHẬN XÉT VNEDU (PHIÊN BẢN v2.1.1)
 ========================================================================
 
-Bước 1: Giải nén tệp zip "Tro-Ly-Nhan-Xet-vnEdu-v1.2.3.zip" vào một thư mục trên máy tính.
-        (Ví dụ: D:\tro-ly-nhan-xet-vnedu-v1.2.3 hoặc C:\tro-ly-nhan-xet-vnedu-v1.2.3)
+Bước 1: Giải nén tệp zip "Tro-Ly-Nhan-Xet-vnEdu-v2.1.1.zip" vào một thư mục trên máy tính.
+        (Ví dụ: D:\tro-ly-nhan-xet-vnedu-v2.1.1 hoặc C:\tro-ly-nhan-xet-vnedu-v2.1.1)
 
 Bước 2: Mở trình duyệt Google Chrome, Microsoft Edge, Cốc Cốc hoặc Brave:
         - Trên Google Chrome / Cốc Cốc: Nhập vào thanh địa chỉ: chrome://extensions
@@ -13,7 +13,7 @@ Bước 2: Mở trình duyệt Google Chrome, Microsoft Edge, Cốc Cốc hoặc
 Bước 3: Bật công tắc "Chế độ dành cho nhà phát triển" (Developer mode) ở góc phải trên cùng màn hình.
 
 Bước 4: Bấm vào nút "Tải tiện ích đã giải nén" (Load unpacked).
-        -> Chọn thư mục "tro-ly-nhan-xet-vnedu-v1.2.3" vừa giải nén ở Bước 1.
+        -> Chọn thư mục "tro-ly-nhan-xet-vnedu-v2.1.1" vừa giải nén ở Bước 1.
 
 Bước 5: Mở trang vnEdu (https://vnedu.vn) và vào trang Sổ nhận xét hoặc Sổ điểm chi tiết.
         -> Biểu tượng Trợ lý nhận xét sẽ xuất hiện ở góc dưới bên phải màn hình.
